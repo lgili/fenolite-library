@@ -1,0 +1,547 @@
+{
+  "authors": [
+    "KiCad project (no individual author is named in the demo's files)"
+  ],
+  "conversion": {
+    "outputs_tree": "fenolite-tree-1:ecbd18cf8ca3dc6e1493bb2dd7cca3045160ba240d0e7ea9320498ee3424be17",
+    "steps": [
+      {
+        "argv": [
+          "import",
+          "upstream/demos/kit-dev-coldfire-xilinx_5213/kit-dev-coldfire-xilinx_5213.kicad_pro",
+          "--to",
+          "python",
+          "--out",
+          "out",
+          "--licence",
+          "CC-BY-SA-4.0",
+          "--source",
+          "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/kit-dev-coldfire-xilinx_5213",
+          "--revision",
+          "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "--timestamp",
+          "2026-10-30T00:00:00Z",
+          "--allow-lossy",
+          "--dry-run"
+        ],
+        "tool": "fenolite"
+      },
+      {
+        "argv": [
+          "import",
+          "upstream/demos/kit-dev-coldfire-xilinx_5213/kit-dev-coldfire-xilinx_5213.kicad_pro",
+          "--to",
+          "python",
+          "--out",
+          "out",
+          "--licence",
+          "CC-BY-SA-4.0",
+          "--source",
+          "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/kit-dev-coldfire-xilinx_5213",
+          "--revision",
+          "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "--timestamp",
+          "2026-10-30T00:00:00Z",
+          "--allow-lossy",
+          "--confirm"
+        ],
+        "tool": "fenolite"
+      }
+    ],
+    "tools": [
+      {
+        "commit": "8dab89d61d40a4d1f9044fb284d844839a78d70e",
+        "name": "fenolite",
+        "version": "0.7.0.dev0"
+      }
+    ]
+  },
+  "copyright": [],
+  "evidence": "UNVERIFIED",
+  "featured": null,
+  "fidelity": {
+    "accepted": [
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "net",
+        "id": "A001",
+        "kind": "net",
+        "level": 2,
+        "reason": "Pad 0 of UARTCAN201 (a mounting pin) is on no net upstream; the symbol the import draws has one pin per pad number, so the build puts the pad on a single-pad unconnected-(...) net. Electrically the same; see boards/ISSUES.md.",
+        "where": "UARTCAN201-0"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "net",
+        "id": "A002",
+        "kind": "net",
+        "level": 2,
+        "reason": "Pad 0 of UARTCAN202 (a mounting pin) is on no net upstream; the symbol the import draws has one pin per pad number, so the build puts the pad on a single-pad unconnected-(...) net. Electrically the same; see boards/ISSUES.md.",
+        "where": "UARTCAN202-0"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "net",
+        "id": "A003",
+        "kind": "net",
+        "level": 2,
+        "reason": "Pad 0 of UARTCAN203 (a mounting pin) is on no net upstream; the symbol the import draws has one pin per pad number, so the build puts the pad on a single-pad unconnected-(...) net. Electrically the same; see boards/ISSUES.md.",
+        "where": "UARTCAN203-0"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "lib_ref",
+        "id": "A004",
+        "kind": "footprint-name",
+        "level": 3,
+        "reason": "The import writes a footprint instance that differs from the first footprint of its name (moved fields, edited pads) as a variant footprint <name>_<n> (import.footprint-variant); checked on 2026-10-30: in all 118 differences the built name is the upstream name plus '_<n>'. Footprint-instance overrides (change c0277) will remove this.",
+        "where": "*"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "layer",
+        "id": "A005",
+        "kind": "layer-missing",
+        "level": 6,
+        "reason": "Board layer table: the upstream board has a different set of user layers than the fixed table a DSL board writes (Eco1.User and Eco2.User are added), so the ordinals of the courtyard, edge, fabrication and margin layers shift. The DSL cannot state the layer table and the import does not report it; see boards/ISSUES.md.",
+        "where": "courtyard:16"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "layer",
+        "id": "A006",
+        "kind": "layer-missing",
+        "level": 6,
+        "reason": "Board layer table: the upstream board has a different set of user layers than the fixed table a DSL board writes (Eco1.User and Eco2.User are added), so the ordinals of the courtyard, edge, fabrication and margin layers shift. The DSL cannot state the layer table and the import does not report it; see boards/ISSUES.md.",
+        "where": "courtyard:17"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "layer",
+        "id": "A007",
+        "kind": "layer-missing",
+        "level": 6,
+        "reason": "Board layer table: the upstream board has a different set of user layers than the fixed table a DSL board writes (Eco1.User and Eco2.User are added), so the ordinals of the courtyard, edge, fabrication and margin layers shift. The DSL cannot state the layer table and the import does not report it; see boards/ISSUES.md.",
+        "where": "courtyard:18"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "layer",
+        "id": "A008",
+        "kind": "layer-missing",
+        "level": 6,
+        "reason": "Board layer table: the upstream board has a different set of user layers than the fixed table a DSL board writes (Eco1.User and Eco2.User are added), so the ordinals of the courtyard, edge, fabrication and margin layers shift. The DSL cannot state the layer table and the import does not report it; see boards/ISSUES.md.",
+        "where": "courtyard:19"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "layer",
+        "id": "A009",
+        "kind": "layer-missing",
+        "level": 6,
+        "reason": "Board layer table: the upstream board has a different set of user layers than the fixed table a DSL board writes (Eco1.User and Eco2.User are added), so the ordinals of the courtyard, edge, fabrication and margin layers shift. The DSL cannot state the layer table and the import does not report it; see boards/ISSUES.md.",
+        "where": "edge:14"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "layer",
+        "id": "A010",
+        "kind": "layer-missing",
+        "level": 6,
+        "reason": "Board layer table: the upstream board has a different set of user layers than the fixed table a DSL board writes (Eco1.User and Eco2.User are added), so the ordinals of the courtyard, edge, fabrication and margin layers shift. The DSL cannot state the layer table and the import does not report it; see boards/ISSUES.md.",
+        "where": "edge:16"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "layer",
+        "id": "A011",
+        "kind": "layer-missing",
+        "level": 6,
+        "reason": "Board layer table: the upstream board has a different set of user layers than the fixed table a DSL board writes (Eco1.User and Eco2.User are added), so the ordinals of the courtyard, edge, fabrication and margin layers shift. The DSL cannot state the layer table and the import does not report it; see boards/ISSUES.md.",
+        "where": "fabrication:18"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "layer",
+        "id": "A012",
+        "kind": "layer-missing",
+        "level": 6,
+        "reason": "Board layer table: the upstream board has a different set of user layers than the fixed table a DSL board writes (Eco1.User and Eco2.User are added), so the ordinals of the courtyard, edge, fabrication and margin layers shift. The DSL cannot state the layer table and the import does not report it; see boards/ISSUES.md.",
+        "where": "fabrication:19"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "layer",
+        "id": "A013",
+        "kind": "layer-missing",
+        "level": 6,
+        "reason": "Board layer table: the upstream board has a different set of user layers than the fixed table a DSL board writes (Eco1.User and Eco2.User are added), so the ordinals of the courtyard, edge, fabrication and margin layers shift. The DSL cannot state the layer table and the import does not report it; see boards/ISSUES.md.",
+        "where": "fabrication:20"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "layer",
+        "id": "A014",
+        "kind": "layer-missing",
+        "level": 6,
+        "reason": "Board layer table: the upstream board has a different set of user layers than the fixed table a DSL board writes (Eco1.User and Eco2.User are added), so the ordinals of the courtyard, edge, fabrication and margin layers shift. The DSL cannot state the layer table and the import does not report it; see boards/ISSUES.md.",
+        "where": "fabrication:21"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "layer",
+        "id": "A015",
+        "kind": "layer-missing",
+        "level": 6,
+        "reason": "Board layer table: the upstream board has a different set of user layers than the fixed table a DSL board writes (Eco1.User and Eco2.User are added), so the ordinals of the courtyard, edge, fabrication and margin layers shift. The DSL cannot state the layer table and the import does not report it; see boards/ISSUES.md.",
+        "where": "mechanical:15"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "layer",
+        "id": "A016",
+        "kind": "layer-missing",
+        "level": 6,
+        "reason": "Board layer table: the upstream board has a different set of user layers than the fixed table a DSL board writes (Eco1.User and Eco2.User are added), so the ordinals of the courtyard, edge, fabrication and margin layers shift. The DSL cannot state the layer table and the import does not report it; see boards/ISSUES.md.",
+        "where": "mechanical:17"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "layer",
+        "id": "A017",
+        "kind": "layer-missing",
+        "level": 6,
+        "reason": "Board layer table: the upstream board has a different set of user layers than the fixed table a DSL board writes (Eco1.User and Eco2.User are added), so the ordinals of the courtyard, edge, fabrication and margin layers shift. The DSL cannot state the layer table and the import does not report it; see boards/ISSUES.md.",
+        "where": "user:14"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "layer",
+        "id": "A018",
+        "kind": "layer-missing",
+        "level": 6,
+        "reason": "Board layer table: the upstream board has a different set of user layers than the fixed table a DSL board writes (Eco1.User and Eco2.User are added), so the ordinals of the courtyard, edge, fabrication and margin layers shift. The DSL cannot state the layer table and the import does not report it; see boards/ISSUES.md.",
+        "where": "user:15"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "material",
+        "id": "A019",
+        "kind": "stackup-field",
+        "level": 6,
+        "reason": "Material of a silkscreen row of the stack-up: the DSL stack-up takes no material on a silkscreen row, so the import wrote the stack-up without it (import.item-unexpressed, kind stackup-field).",
+        "where": "B.SilkS"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "material",
+        "id": "A020",
+        "kind": "stackup-field",
+        "level": 6,
+        "reason": "Material of a silkscreen row of the stack-up: the DSL stack-up takes no material on a silkscreen row, so the import wrote the stack-up without it (import.item-unexpressed, kind stackup-field).",
+        "where": "F.SilkS"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "name",
+        "id": "A021",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The build adds the property fenolite.path (the layout lens key) to every footprint; the original has no such field. Not a difference of the design.",
+        "where": "*:fenolite.path"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A022",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.381 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:228600000,55880000-228600000,147320000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A023",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.381 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:71120000,147320000-228600000,147320000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A024",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.381 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:71120000,55880000-228600000,55880000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A025",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.381 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:71120000,55880000-71120000,147320000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "text",
+        "id": "A026",
+        "kind": "text-missing",
+        "level": 7,
+        "reason": "Text on a copper layer: the DSL text call refuses copper layers, so the import left it out (import.item-unexpressed, kind text-layer).",
+        "where": "board:B.Cu:CARTE COLDFIRE"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "text",
+        "id": "A027",
+        "kind": "text-missing",
+        "level": 7,
+        "reason": "Text on a copper layer: the DSL text call refuses copper layers, so the import left it out (import.item-unexpressed, kind text-layer).",
+        "where": "board:F.Cu:CARTE COLDFIRE"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "text",
+        "id": "A028",
+        "kind": "text-missing",
+        "level": 7,
+        "reason": "Text on a copper layer: the DSL text call refuses copper layers, so the import left it out (import.item-unexpressed, kind text-layer).",
+        "where": "board:F.Cu:JTAG_EN\n"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "text",
+        "id": "A029",
+        "kind": "text-missing",
+        "level": 7,
+        "reason": "Text on a copper layer: the DSL text call refuses copper layers, so the import left it out (import.item-unexpressed, kind text-layer).",
+        "where": "board:F.Cu:MOD0"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "text",
+        "id": "A030",
+        "kind": "text-missing",
+        "level": 7,
+        "reason": "Text on a copper layer: the DSL text call refuses copper layers, so the import left it out (import.item-unexpressed, kind text-layer).",
+        "where": "board:F.Cu:MOD1"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "id": "A031",
+        "kind": "render-missing",
+        "level": 8,
+        "reason": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276; level S is skipped as drawn-unavailable), so the sheets differ in name and drawing.",
+        "where": "sheet:*"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "id": "A032",
+        "kind": "render-pixels",
+        "level": 8,
+        "reason": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276; level S is skipped as drawn-unavailable), so the sheets differ in name and drawing.",
+        "where": "sheet:*"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "pixels",
+        "id": "A033",
+        "kind": "render-pixels",
+        "level": 8,
+        "reason": "Pixels of the copper text left out by the import (see the level-7 text-missing entries).",
+        "where": "B.Cu:203350000,57400000-224650000,59450000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "pixels",
+        "id": "A034",
+        "kind": "render-pixels",
+        "level": 8,
+        "reason": "Pixels of the thicker upstream Edge.Cuts stroke (see the level-7 graphic-missing entries).",
+        "where": "Edge.Cuts:70950000,55700000-228800000,147500000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "pixels",
+        "id": "A035",
+        "kind": "render-pixels",
+        "level": 8,
+        "reason": "Pixels of the copper text left out by the import (see the level-7 text-missing entries).",
+        "where": "F.Cu:203350000,57400000-224650000,59450000"
+      }
+    ],
+    "proof": {
+      "against": {
+        "in_out_conn.kicad_sch": "b406e5f8d1903f7d094c1109020a1912a1473c08ffbc0c64640742850f7f7809",
+        "kit-dev-coldfire-xilinx_5213.kicad_pcb": "392cf6bf4b9b62beb435f965ccd7671a46decb17f947b74bfde482acd2132a5e",
+        "kit-dev-coldfire-xilinx_5213.kicad_pro": "d6ca906944730a3eae31ba3d9240c6966424b0d80ba76e80710e39d7b23c4637",
+        "kit-dev-coldfire-xilinx_5213.kicad_sch": "a1109092165ecec0d677142294330258c8990247e804f260d7682fda82602214",
+        "xilinx.kicad_sch": "3750dc3866cce42d96220c39dde5c7c88589207810487581047a71d541b1fb5b"
+      },
+      "date": "2026-10-30T00:00:00Z",
+      "fenolite": "0.7.0.dev0",
+      "levels": {
+        "1": "equal",
+        "2": "accepted",
+        "3": "accepted",
+        "4": "equal",
+        "5": "equal",
+        "6": "accepted",
+        "7": "accepted",
+        "8": "accepted",
+        "S": "skipped"
+      },
+      "script_sha256": "5aa46c8f50c1ad78ecfdaef6a0e294dd7e2349d4e8da578d19ffdffdcc2c3ffe",
+      "tolerances": {
+        "angle_udeg": 0,
+        "frame": "absolute",
+        "length_nm": 0,
+        "length_ppm": 0,
+        "pixel_ppm": 1000,
+        "render_pitch_um": 50
+      }
+    },
+    "tolerances": {
+      "angle_udeg": 0,
+      "length_nm": 0,
+      "length_ppm": 0,
+      "pixel_ppm": 1000
+    }
+  },
+  "id": "kicad-demos/kit-dev-coldfire-xilinx_5213",
+  "import": {
+    "copyright": [],
+    "date": "2026-10-30",
+    "design": "kit-dev-coldfire-xilinx_5213",
+    "equivalence": {
+      "equivalent": true,
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "fenolite": "0.7.0.dev0",
+    "findings": {
+      "import.footprint-variant": 67,
+      "import.item-unexpressed": 2,
+      "import.provenance-missing": 1,
+      "import.schematic-generated": 1,
+      "import.sheet-renamed": 1,
+      "import.symbol-regenerated": 1,
+      "unexpressed.stackup-field": 2,
+      "unexpressed.text-layer": 5
+    },
+    "inputs": [
+      {
+        "file": "in_out_conn.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "b406e5f8d1903f7d094c1109020a1912a1473c08ffbc0c64640742850f7f7809",
+        "version": null
+      },
+      {
+        "file": "kit-dev-coldfire-xilinx_5213.kicad_pcb",
+        "format": "kicad_pcb",
+        "sha256": "392cf6bf4b9b62beb435f965ccd7671a46decb17f947b74bfde482acd2132a5e",
+        "version": 20241229
+      },
+      {
+        "file": "kit-dev-coldfire-xilinx_5213.kicad_pro",
+        "format": "kicad_pro",
+        "sha256": "d6ca906944730a3eae31ba3d9240c6966424b0d80ba76e80710e39d7b23c4637",
+        "version": 3
+      },
+      {
+        "file": "kit-dev-coldfire-xilinx_5213.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "a1109092165ecec0d677142294330258c8990247e804f260d7682fda82602214",
+        "version": null
+      },
+      {
+        "file": "xilinx.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "3750dc3866cce42d96220c39dde5c7c88589207810487581047a71d541b1fb5b",
+        "version": null
+      }
+    ],
+    "licence": "CC-BY-SA-4.0",
+    "notices": [],
+    "schema": "fenolite.import-provenance.v0",
+    "source": {
+      "revision": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+      "url": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/kit-dev-coldfire-xilinx_5213"
+    },
+    "tools": {},
+    "upgrade": []
+  },
+  "kind": "board",
+  "licence_text_sha256": "17a696cf6cf01b8d795151556dfd51cc121c1b678a33d509d6548658c1008391",
+  "modification_notice": "2026-10-30: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; content the Fenolite DSL cannot express yet was left out and is listed in PROVENANCE.json",
+  "origin": "converted",
+  "schema": "fenolite.provenance.v0",
+  "spdx": "CC-BY-SA-4.0",
+  "trademarks": {
+    "marks": [
+      "ColdFire",
+      "Xilinx"
+    ],
+    "note": "product names in the project title, used descriptively",
+    "restricted": false
+  },
+  "upstream": {
+    "archive_sha256": null,
+    "commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+    "licence_files": [
+      "LICENSE.README",
+      "LICENSE.CC-BY-SA-4.0"
+    ],
+    "path": "demos/kit-dev-coldfire-xilinx_5213",
+    "retrieved": "2026-10-30",
+    "source_location": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/kit-dev-coldfire-xilinx_5213",
+    "spdx_expression": "CC-BY-SA-4.0",
+    "url": "https://gitlab.com/kicad/code/kicad"
+  },
+  "version": "1.0.0"
+}

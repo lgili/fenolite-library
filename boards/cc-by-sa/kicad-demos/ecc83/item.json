@@ -1,0 +1,40 @@
+{
+  "depends": [],
+  "executes": true,
+  "files": [
+    "copper.py",
+    "design.lock",
+    "design.py",
+    "fp-lib-table",
+    "lib/Footprints.kicad_sym",
+    "lib/Footprints.pretty/Altech_AK300_1x02_P5.00mm_45-Degree.kicad_mod",
+    "lib/Footprints.pretty/Altech_AK300_1x02_P5.00mm_45-Degree_2.kicad_mod",
+    "lib/Footprints.pretty/Altech_AK300_1x02_P5.00mm_45-Degree_3.kicad_mod",
+    "lib/Footprints.pretty/Altech_AK300_1x02_P5.00mm_45-Degree_4.kicad_mod",
+    "lib/Footprints.pretty/CP_Radial_D10.0mm_P5.00mm.kicad_mod",
+    "lib/Footprints.pretty/C_Disc_D4.7mm_W2.5mm_P5.00mm.kicad_mod",
+    "lib/Footprints.pretty/MountingHole_3.2mm_M3_DIN965_Pad.kicad_mod",
+    "lib/Footprints.pretty/MountingHole_3.2mm_M3_DIN965_Pad_2.kicad_mod",
+    "lib/Footprints.pretty/MountingHole_3.2mm_M3_DIN965_Pad_3.kicad_mod",
+    "lib/Footprints.pretty/MountingHole_3.2mm_M3_DIN965_Pad_4.kicad_mod",
+    "lib/Footprints.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.kicad_mod",
+    "lib/Footprints.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_2.kicad_mod",
+    "lib/Footprints.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_3.kicad_mod",
+    "lib/Footprints.pretty/Valve_ECC-83-1.kicad_mod",
+    "sym-lib-table"
+  ],
+  "id": "kicad-demos/ecc83",
+  "kind": "board",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC-BY-SA-4.0",
+  "summary": "Two-layer through-hole valve amplifier board (project ecc83-pp) from the KiCad demos",
+  "tags": [
+    "2-layer",
+    "audio",
+    "kicad-demo",
+    "through-hole",
+    "valve"
+  ],
+  "title": "ECC83 valve amplifier (KiCad demo ecc83-pp)",
+  "version": "1.0.0"
+}

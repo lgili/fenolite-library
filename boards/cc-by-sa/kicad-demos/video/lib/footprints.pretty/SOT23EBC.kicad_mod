@@ -1,0 +1,141 @@
+(footprint "SOT23EBC"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(descr "Module CMS SOT23 Transistore EBC")
+	(tags "CMS SOT")
+	(property "Reference" "REF**"
+		(at 1.016 -2.159 0)
+		(layer "F.SilkS")
+		(uuid "61f4daf3-522f-4697-9d2b-676e71b2968f")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "SOT23EBC"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "31f48330-b9fb-426c-b00f-cd2ab25c4981")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.2)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "325f08e8-77e2-49fa-8349-e3e67a588311")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "5e786e0f-35c1-4b1a-ae99-b83bacc6d75a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.524 0.381)
+		(end 1.524 0.381)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c47fb1b9-b28b-433e-b789-2c1e1ff68758")
+	)
+	(fp_line
+		(start -1.524 -0.381)
+		(end -1.524 0.381)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8b7ef5ef-cf57-4388-aac6-5d58d2328bfa")
+	)
+	(fp_line
+		(start 1.524 0.381)
+		(end 1.524 -0.381)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0c6d3548-5f07-458f-8807-42376b459903")
+	)
+	(fp_line
+		(start 1.524 -0.381)
+		(end -1.524 -0.381)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f51704d6-8710-4efa-940a-8a1adadc36ce")
+	)
+	(fp_rect
+		(start 1.6 1.6)
+		(end -1.6 -1.6)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "7edde456-15ed-4930-972e-31da814f594b")
+	)
+	(pad "1" smd rect
+		(at -0.889 -1.016)
+		(size 0.9144 0.9144)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fa51e103-028f-4ffd-84ae-4a08895f1414")
+	)
+	(pad "2" smd rect
+		(at 0.889 -1.016)
+		(size 0.9144 0.9144)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "02d66266-3288-4f3a-9548-2869d377554a")
+	)
+	(pad "3" smd rect
+		(at 0 1.016)
+		(size 0.9144 0.9144)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4c987be1-650d-4273-b1c3-2107d66d2ba0")
+	)
+	(embedded_fonts no)
+	(model "SMD_Packages.3dshapes/ST23AK#1.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 0.13 0.15 0.15)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

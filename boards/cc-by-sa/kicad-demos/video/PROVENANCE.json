@@ -1,0 +1,569 @@
+{
+  "authors": [
+    "KiCad project (no individual author is named in the demo's files)"
+  ],
+  "conversion": {
+    "outputs_tree": "fenolite-tree-1:ef4ce18b8108c0ea417a8e50c29e46c36877e2e215edac6f6ef394402f8fe31b",
+    "steps": [
+      {
+        "argv": [
+          "import",
+          "upstream/demos/video/video.kicad_pro",
+          "--to",
+          "python",
+          "--out",
+          "out",
+          "--licence",
+          "CC-BY-SA-4.0",
+          "--source",
+          "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/video",
+          "--revision",
+          "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "--timestamp",
+          "2026-10-30T00:00:00Z",
+          "--allow-lossy",
+          "--dry-run"
+        ],
+        "tool": "fenolite"
+      },
+      {
+        "argv": [
+          "import",
+          "upstream/demos/video/video.kicad_pro",
+          "--to",
+          "python",
+          "--out",
+          "out",
+          "--licence",
+          "CC-BY-SA-4.0",
+          "--source",
+          "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/video",
+          "--revision",
+          "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "--timestamp",
+          "2026-10-30T00:00:00Z",
+          "--allow-lossy",
+          "--confirm"
+        ],
+        "tool": "fenolite"
+      }
+    ],
+    "tools": [
+      {
+        "commit": "8dab89d61d40a4d1f9044fb284d844839a78d70e",
+        "name": "fenolite",
+        "version": "0.7.0.dev0"
+      }
+    ]
+  },
+  "copyright": [],
+  "evidence": "UNVERIFIED",
+  "featured": null,
+  "fidelity": {
+    "accepted": [
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "net",
+        "id": "A001",
+        "kind": "net",
+        "level": 2,
+        "reason": "Pad 0 of J4 (a mounting pin) is on no net upstream; the symbol the import draws has one pin per pad number, so the build puts the pad on a single-pad unconnected-(...) net. Electrically the same; see boards/ISSUES.md.",
+        "where": "J4-0"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "lib_ref",
+        "id": "A002",
+        "kind": "footprint-name",
+        "level": 3,
+        "reason": "The import writes a footprint instance that differs from the first footprint of its name (moved fields, edited pads) as a variant footprint <name>_<n> (import.footprint-variant); checked on 2026-10-30: in all 135 differences the built name is the upstream name plus '_<n>'. Footprint-instance overrides (change c0277) will remove this.",
+        "where": "*"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "dimension",
+        "id": "A003",
+        "kind": "dimension-missing",
+        "level": 7,
+        "reason": "Dimension: the DSL has no dimension call yet (change c0277), so the import left it out (import.item-unexpressed, kind dimension).",
+        "where": "board:Dwgs.User:173609000,154940000-173609000,163195000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "dimension",
+        "id": "A004",
+        "kind": "dimension-missing",
+        "level": 7,
+        "reason": "Dimension: the DSL has no dimension call yet (change c0277), so the import left it out (import.item-unexpressed, kind dimension).",
+        "where": "board:Dwgs.User:224028000,134366000-224028000,154940000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "name",
+        "id": "A005",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The build adds the property fenolite.path (the layout lens key) to every footprint; the original has no such field. Not a difference of the design.",
+        "where": "*:fenolite.path"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "rotation",
+        "id": "A006",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "Reference field of a bottom-side footprint: rotation 270 degrees upstream, 90 degrees after the round trip through the derived variant footprint. Fenolite bug, see boards/ISSUES.md.",
+        "where": "R39:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A007",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:157226000,154940000-157226000,163195000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A008",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:157226000,154940000-159004000,154940000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A009",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:159004000,154940000-159004000,163195000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A010",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:159004000,163195000-173609000,163195000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A011",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:173609000,154940000-173609000,163195000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A012",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:173609000,154940000-185420000,154940000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A013",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:185420000,154940000-194818000,145542000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A014",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:194818000,145542000-204851000,145542000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A015",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:204851000,134366000-204851000,145542000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A016",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:204851000,134366000-216027000,134366000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A017",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:216027000,134366000-290957000,134366000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A018",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:224155000,56515000-365633000,56515000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A019",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:290957000,134366000-360553000,134366000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A020",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:360553000,134366000-365633000,134366000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A021",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:365633000,56515000-365633000,134366000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A022",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:53594000,163195000-68580000,163195000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A023",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:53594000,56515000-224155000,56515000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A024",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:53594000,56515000-53594000,163195000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A025",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:68580000,154940000-68580000,163195000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A026",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:68580000,154940000-94361000,154940000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A027",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:94361000,154940000-94361000,163195000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A028",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.2032 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:94361000,163195000-157226000,163195000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "text",
+        "id": "A029",
+        "kind": "text-missing",
+        "level": 7,
+        "reason": "Text on a copper layer: the DSL text call refuses copper layers, so the import left it out (import.item-unexpressed, kind text-layer).",
+        "where": "board:B.Cu:TEXTE"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "id": "A030",
+        "kind": "render-missing",
+        "level": 8,
+        "reason": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276; level S is skipped as drawn-unavailable), so the sheets differ in name and drawing.",
+        "where": "sheet:*"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "id": "A031",
+        "kind": "render-pixels",
+        "level": 8,
+        "reason": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276; level S is skipped as drawn-unavailable), so the sheets differ in name and drawing.",
+        "where": "sheet:*"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "pixels",
+        "id": "A032",
+        "kind": "render-pixels",
+        "level": 8,
+        "reason": "Pixels of the copper text left out by the import (see the level-7 text-missing entries).",
+        "where": "B.Cu:55750000,150200000-63350000,151750000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "pixels",
+        "id": "A033",
+        "kind": "render-pixels",
+        "level": 8,
+        "reason": "Pixels of the dimension left out by the import (see the level-7 dimension-missing entries).",
+        "where": "Dwgs.User:219600000,134250000-234800000,155050000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "pixels",
+        "id": "A034",
+        "kind": "render-pixels",
+        "level": 8,
+        "reason": "Pixels of the thicker upstream Edge.Cuts stroke (see the level-7 graphic-missing entries).",
+        "where": "Edge.Cuts:157100000,154950000-157150000,163100000"
+      }
+    ],
+    "proof": {
+      "against": {
+        "bus_pci.kicad_sch": "0110ee91bd8eb39ba7c4d08703bca193f72337b25928ad2babc86dc3c54d1cde",
+        "esvideo.kicad_sch": "b736ce2d5a17fa94fcd64c656435031730b3b8524342dd4e1d19a917adbd1d6f",
+        "graphic.kicad_sch": "c09706718277aefb6d9b1ea49825237d026191e6d91d44c7e75aa0eba682900d",
+        "modul.kicad_sch": "59f6d8152af769371bd35a08dc11c1bdf9c3b4e56ab079f389a0584d1a4574c7",
+        "muxdata.kicad_sch": "9b757497857c061632fd09cc3d0a236843c1c164f0b864a78b22c88c1fd96a58",
+        "pal-ntsc.kicad_sch": "970c766b745d299ca0b47b05a51baf628bf114a6bfe007736beb7ccd0548fd09",
+        "rams.kicad_sch": "40a46f70b6731962a4afa5858b54d3bbf55ac3e4b1a95c7c905b698ae99eb0e3",
+        "video.kicad_pcb": "f620675158ddd5c61e5ce9e15f4c92b230ae1df1cbcec6c502b8ce266e4007ea",
+        "video.kicad_pro": "329241ed4d9d176ef51adcec457a7c072e4bbc1b6500738622ebeaeba74d6c7f",
+        "video.kicad_sch": "4d3ced775e49f56704b036bf56b9bf90d3d403b29bc9434eca47a8f18bea5ce1"
+      },
+      "date": "2026-10-30T00:00:00Z",
+      "fenolite": "0.7.0.dev0",
+      "levels": {
+        "1": "equal",
+        "2": "accepted",
+        "3": "accepted",
+        "4": "equal",
+        "5": "equal",
+        "6": "equal",
+        "7": "accepted",
+        "8": "accepted",
+        "S": "skipped"
+      },
+      "script_sha256": "ac2ec7f6ff26a136303e4c6831694458c32b21754f6fd62e16821577816edb81",
+      "tolerances": {
+        "angle_udeg": 0,
+        "frame": "absolute",
+        "length_nm": 0,
+        "length_ppm": 0,
+        "pixel_ppm": 1000,
+        "render_pitch_um": 50
+      }
+    },
+    "tolerances": {
+      "angle_udeg": 0,
+      "length_nm": 0,
+      "length_ppm": 0,
+      "pixel_ppm": 1000
+    }
+  },
+  "id": "kicad-demos/video",
+  "import": {
+    "copyright": [],
+    "date": "2026-10-30",
+    "design": "video",
+    "equivalence": {
+      "equivalent": true,
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "fenolite": "0.7.0.dev0",
+    "findings": {
+      "import.footprint-variant": 68,
+      "import.item-unexpressed": 2,
+      "import.provenance-missing": 1,
+      "import.schematic-generated": 1,
+      "import.sheet-renamed": 5,
+      "import.symbol-regenerated": 1,
+      "unexpressed.dimension": 2,
+      "unexpressed.text-layer": 1
+    },
+    "inputs": [
+      {
+        "file": "bus_pci.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "0110ee91bd8eb39ba7c4d08703bca193f72337b25928ad2babc86dc3c54d1cde",
+        "version": null
+      },
+      {
+        "file": "esvideo.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "b736ce2d5a17fa94fcd64c656435031730b3b8524342dd4e1d19a917adbd1d6f",
+        "version": null
+      },
+      {
+        "file": "graphic.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "c09706718277aefb6d9b1ea49825237d026191e6d91d44c7e75aa0eba682900d",
+        "version": null
+      },
+      {
+        "file": "modul.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "59f6d8152af769371bd35a08dc11c1bdf9c3b4e56ab079f389a0584d1a4574c7",
+        "version": null
+      },
+      {
+        "file": "muxdata.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "9b757497857c061632fd09cc3d0a236843c1c164f0b864a78b22c88c1fd96a58",
+        "version": null
+      },
+      {
+        "file": "pal-ntsc.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "970c766b745d299ca0b47b05a51baf628bf114a6bfe007736beb7ccd0548fd09",
+        "version": null
+      },
+      {
+        "file": "rams.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "40a46f70b6731962a4afa5858b54d3bbf55ac3e4b1a95c7c905b698ae99eb0e3",
+        "version": null
+      },
+      {
+        "file": "video.kicad_pcb",
+        "format": "kicad_pcb",
+        "sha256": "f620675158ddd5c61e5ce9e15f4c92b230ae1df1cbcec6c502b8ce266e4007ea",
+        "version": 20241229
+      },
+      {
+        "file": "video.kicad_pro",
+        "format": "kicad_pro",
+        "sha256": "329241ed4d9d176ef51adcec457a7c072e4bbc1b6500738622ebeaeba74d6c7f",
+        "version": 3
+      },
+      {
+        "file": "video.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "4d3ced775e49f56704b036bf56b9bf90d3d403b29bc9434eca47a8f18bea5ce1",
+        "version": null
+      }
+    ],
+    "licence": "CC-BY-SA-4.0",
+    "notices": [],
+    "schema": "fenolite.import-provenance.v0",
+    "source": {
+      "revision": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+      "url": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/video"
+    },
+    "tools": {},
+    "upgrade": []
+  },
+  "kind": "board",
+  "licence_text_sha256": "17a696cf6cf01b8d795151556dfd51cc121c1b678a33d509d6548658c1008391",
+  "modification_notice": "2026-10-30: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; content the Fenolite DSL cannot express yet was left out and is listed in PROVENANCE.json",
+  "origin": "converted",
+  "schema": "fenolite.provenance.v0",
+  "spdx": "CC-BY-SA-4.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": {
+    "archive_sha256": null,
+    "commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+    "licence_files": [
+      "LICENSE.README",
+      "LICENSE.CC-BY-SA-4.0"
+    ],
+    "path": "demos/video",
+    "retrieved": "2026-10-30",
+    "source_location": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/video",
+    "spdx_expression": "CC-BY-SA-4.0",
+    "url": "https://gitlab.com/kicad/code/kicad"
+  },
+  "version": "1.0.0"
+}

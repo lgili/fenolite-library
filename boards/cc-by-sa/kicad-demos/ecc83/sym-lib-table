@@ -1,0 +1,3 @@
+(sym_lib_table
+	(lib (name Footprints) (type KiCad) (uri ${KIPRJMOD}/lib/Footprints.kicad_sym) (options "") (descr ""))
+)

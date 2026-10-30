@@ -1,0 +1,260 @@
+{
+  "authors": [
+    "KiCad project (no individual author is named in the demo's files)"
+  ],
+  "conversion": {
+    "outputs_tree": "fenolite-tree-1:5b69fbabecca80f91271368407cc626ad745c663675b2033f213f9e3ffb6e0ab",
+    "steps": [
+      {
+        "argv": [
+          "import",
+          "upstream/demos/ecc83/ecc83-pp.kicad_pro",
+          "--to",
+          "python",
+          "--out",
+          "out",
+          "--licence",
+          "CC-BY-SA-4.0",
+          "--source",
+          "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/ecc83",
+          "--revision",
+          "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "--timestamp",
+          "2026-10-30T00:00:00Z",
+          "--allow-lossy",
+          "--dry-run"
+        ],
+        "tool": "fenolite"
+      },
+      {
+        "argv": [
+          "import",
+          "upstream/demos/ecc83/ecc83-pp.kicad_pro",
+          "--to",
+          "python",
+          "--out",
+          "out",
+          "--licence",
+          "CC-BY-SA-4.0",
+          "--source",
+          "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/ecc83",
+          "--revision",
+          "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "--timestamp",
+          "2026-10-30T00:00:00Z",
+          "--allow-lossy",
+          "--confirm"
+        ],
+        "tool": "fenolite"
+      }
+    ],
+    "tools": [
+      {
+        "commit": "8dab89d61d40a4d1f9044fb284d844839a78d70e",
+        "name": "fenolite",
+        "version": "0.7.0.dev0"
+      }
+    ]
+  },
+  "copyright": [],
+  "evidence": "UNVERIFIED",
+  "featured": null,
+  "fidelity": {
+    "accepted": [
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "lib_ref",
+        "id": "A001",
+        "kind": "footprint-name",
+        "level": 3,
+        "reason": "The import writes a footprint instance that differs from the first footprint of its name (moved fields, edited pads) as a variant footprint <name>_<n> (import.footprint-variant); checked on 2026-10-30: in all 9 differences the built name is the upstream name plus '_<n>'. Footprint-instance overrides (change c0277) will remove this.",
+        "where": "*"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "name",
+        "id": "A002",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The build adds the property fenolite.path (the layout lens key) to every footprint; the original has no such field. Not a difference of the design.",
+        "where": "*:fenolite.path"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A003",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.127 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:121285000,136525000-173355000,136525000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A004",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.127 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:121285000,90170000-121285000,136525000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A005",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.127 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:121285000,90170000-173355000,90170000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "field": "graphic",
+        "id": "A006",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.127 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "where": "board:Edge.Cuts:173355000,90170000-173355000,136525000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "id": "A007",
+        "kind": "render-missing",
+        "level": 8,
+        "reason": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276; level S is skipped as drawn-unavailable), so the sheets differ in name and drawing.",
+        "where": "sheet:*"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-30",
+        "id": "A008",
+        "kind": "render-pixels",
+        "level": 8,
+        "reason": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276; level S is skipped as drawn-unavailable), so the sheets differ in name and drawing.",
+        "where": "sheet:*"
+      }
+    ],
+    "proof": {
+      "against": {
+        "ecc83-pp.kicad_pcb": "0ab45f4f8c90ac877e3313a1888d875107f2be3fc2b2f40cfb7927873b35260c",
+        "ecc83-pp.kicad_pro": "8a943fac4b0cc3ed4fa83ccc83a6e15b9326178845ada0aa906df63f0672e975",
+        "ecc83-pp.kicad_sch": "8a2d0359a0f3e647378034d84ab72b09dd7aa42f8b1f5e7fa0ff28ae369beee9",
+        "ecc83-pp_v2.kicad_pcb": "9be2caf4c257a93fc2b3904add1061a4d2e23cde502a7846513ae7db6b214c30",
+        "ecc83-pp_v2.kicad_pro": "8ca4caec049e921d8cae59f2eddb5ca612c18010da8191ea1d30651a00aa07c9",
+        "ecc83-pp_v2.kicad_sch": "80576c542e9ce473538c30ed24b7cd7e9152fe7922ebdb518928aa815b858ff1"
+      },
+      "date": "2026-10-30T00:00:00Z",
+      "fenolite": "0.7.0.dev0",
+      "levels": {
+        "1": "equal",
+        "2": "equal",
+        "3": "accepted",
+        "4": "equal",
+        "5": "equal",
+        "6": "equal",
+        "7": "accepted",
+        "8": "accepted",
+        "S": "skipped"
+      },
+      "script_sha256": "9a0d8fa98db4f972308ee88603ed2fca37c61e9f656db7fce0206ca7bc83a5bb",
+      "tolerances": {
+        "angle_udeg": 0,
+        "frame": "absolute",
+        "length_nm": 0,
+        "length_ppm": 0,
+        "pixel_ppm": 1000,
+        "render_pitch_um": 50
+      }
+    },
+    "tolerances": {
+      "angle_udeg": 0,
+      "length_nm": 0,
+      "length_ppm": 0,
+      "pixel_ppm": 1000
+    }
+  },
+  "id": "kicad-demos/ecc83",
+  "import": {
+    "copyright": [],
+    "date": "2026-10-30",
+    "design": "ecc83-pp",
+    "equivalence": {
+      "equivalent": true,
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "fenolite": "0.7.0.dev0",
+    "findings": {
+      "import.footprint-variant": 8,
+      "import.provenance-missing": 1,
+      "import.schematic-generated": 1,
+      "import.sheet-renamed": 1,
+      "import.symbol-regenerated": 1
+    },
+    "inputs": [
+      {
+        "file": "ecc83-pp.kicad_pcb",
+        "format": "kicad_pcb",
+        "sha256": "0ab45f4f8c90ac877e3313a1888d875107f2be3fc2b2f40cfb7927873b35260c",
+        "version": 20241229
+      },
+      {
+        "file": "ecc83-pp.kicad_pro",
+        "format": "kicad_pro",
+        "sha256": "8a943fac4b0cc3ed4fa83ccc83a6e15b9326178845ada0aa906df63f0672e975",
+        "version": 3
+      },
+      {
+        "file": "ecc83-pp.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "8a2d0359a0f3e647378034d84ab72b09dd7aa42f8b1f5e7fa0ff28ae369beee9",
+        "version": null
+      }
+    ],
+    "licence": "CC-BY-SA-4.0",
+    "notices": [],
+    "schema": "fenolite.import-provenance.v0",
+    "source": {
+      "revision": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+      "url": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/ecc83"
+    },
+    "tools": {},
+    "upgrade": []
+  },
+  "kind": "board",
+  "licence_text_sha256": "17a696cf6cf01b8d795151556dfd51cc121c1b678a33d509d6548658c1008391",
+  "modification_notice": "2026-10-30: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; content the Fenolite DSL cannot express yet was left out and is listed in PROVENANCE.json",
+  "origin": "converted",
+  "schema": "fenolite.provenance.v0",
+  "spdx": "CC-BY-SA-4.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": {
+    "archive_sha256": null,
+    "commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+    "licence_files": [
+      "LICENSE.README",
+      "LICENSE.CC-BY-SA-4.0"
+    ],
+    "path": "demos/ecc83",
+    "retrieved": "2026-10-30",
+    "source_location": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/ecc83",
+    "spdx_expression": "CC-BY-SA-4.0",
+    "url": "https://gitlab.com/kicad/code/kicad"
+  },
+  "version": "1.0.0"
+}

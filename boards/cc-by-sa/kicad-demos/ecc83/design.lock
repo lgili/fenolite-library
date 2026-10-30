@@ -1,0 +1,20 @@
+# Design lock written by fenolite build. Review changes in git; hand edits are honoured.
+schema = "fenolite.lock.v0"
+design = "ecc83-pp"
+
+[refs]
+"racine/C1" = "C1"
+"racine/C2" = "C2"
+"racine/P1" = "P1"
+"racine/P2" = "P2"
+"racine/P3" = "P3"
+"racine/P4" = "P4"
+"racine/P5" = "P5"
+"racine/P6" = "P6"
+"racine/P7" = "P7"
+"racine/P8" = "P8"
+"racine/R1" = "R1"
+"racine/R2" = "R2"
+"racine/R3" = "R3"
+"racine/R4" = "R4"
+"racine/U1" = "U1"

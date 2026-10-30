@@ -1,0 +1,229 @@
+(footprint "subclick_3"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(descr "Connecteur Subclick")
+	(tags "CONN DEV")
+	(property "Reference" "REF**"
+		(at -6.731 0.508 0)
+		(layer "F.SilkS")
+		(uuid "650aeffe-7359-4b06-88d5-1e890e000729")
+		(effects
+			(font
+				(size 1.524 1.016)
+				(thickness 0.3048)
+			)
+		)
+	)
+	(property "Value" "subclick_3"
+		(at -7.493 -2.413 0)
+		(layer "F.SilkS")
+		(uuid "4722e620-b0a6-403a-8a13-1447acab5912")
+		(effects
+			(font
+				(size 2.032 1.27)
+				(thickness 0.3048)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9ab6a994-f25a-4c2e-b2b9-cd1d079c566f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "114be756-8522-4f4c-973e-4542f889b901")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start 13.843 2.54)
+		(end 4.953 2.54)
+		(stroke
+			(width 0.3048)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2e4adad2-9c77-494f-bedb-58fafbe33d64")
+	)
+	(fp_line
+		(start 13.843 -2.54)
+		(end 13.843 2.54)
+		(stroke
+			(width 0.3048)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "517c8a7e-e97f-4e67-b10d-bea9e56b5c07")
+	)
+	(fp_line
+		(start 5.08 3.81)
+		(end 3.81 5.08)
+		(stroke
+			(width 0.3048)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8bbfd03c-90c8-4185-a779-d3b24ea27d60")
+	)
+	(fp_line
+		(start 5.08 -3.81)
+		(end 5.08 3.81)
+		(stroke
+			(width 0.3048)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ec381834-d4ce-426e-be6d-1e4421acf884")
+	)
+	(fp_line
+		(start 4.826 -2.54)
+		(end 13.843 -2.54)
+		(stroke
+			(width 0.3048)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "965d08c0-1b56-443d-b31d-13832ec0ed3c")
+	)
+	(fp_line
+		(start 3.81 5.08)
+		(end -3.81 5.08)
+		(stroke
+			(width 0.3048)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9e3e10e6-339f-4cfa-8ae0-83381836fbe5")
+	)
+	(fp_line
+		(start 3.81 -5.08)
+		(end 5.08 -3.81)
+		(stroke
+			(width 0.3048)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "04afb665-e51a-4ba3-9930-c219b7ae2058")
+	)
+	(fp_line
+		(start -3.81 5.08)
+		(end -5.08 3.81)
+		(stroke
+			(width 0.3048)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "376d4302-4783-41e5-8085-4dc109691560")
+	)
+	(fp_line
+		(start -3.81 -5.08)
+		(end 3.81 -5.08)
+		(stroke
+			(width 0.3048)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "10297c4d-e665-4da4-9637-c312d9f7a7cd")
+	)
+	(fp_line
+		(start -5.08 3.81)
+		(end -5.08 -3.81)
+		(stroke
+			(width 0.3048)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e3c9810d-899d-4415-9d74-767c546d66d3")
+	)
+	(fp_line
+		(start -5.08 -3.81)
+		(end -3.81 -5.08)
+		(stroke
+			(width 0.3048)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "27b6d760-f95a-4e25-a27f-e96a05c5f055")
+	)
+	(fp_rect
+		(start -5.4 -5.4)
+		(end 14.5 5.4)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "5abede26-d85b-4066-a7c6-efb76a0deac2")
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.778 1.778)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f9fd1174-f864-48f5-9693-01703d7dabb5")
+	)
+	(pad "2" thru_hole circle
+		(at -2.54 -2.54)
+		(size 3.048 3.048)
+		(drill 1.524)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a499fb95-82ad-4312-a23e-d79923d44e66")
+	)
+	(pad "2" thru_hole circle
+		(at -2.54 2.54)
+		(size 3.048 3.048)
+		(drill 1.524)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c35c56b8-6e6c-441a-a1c1-1d2979c16ee0")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 -2.54)
+		(size 3.048 3.048)
+		(drill 1.524)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5e72b8fb-4f90-49e6-b637-7cca3237282e")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 2.54)
+		(size 3.048 3.048)
+		(drill 1.524)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fc85006b-7b3d-4019-885c-ee687bc32c76")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/libs/fp.3dshapes/subclick_horiz.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

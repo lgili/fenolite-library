@@ -1,0 +1,238 @@
+(footprint "FSUPCMS"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(property "Reference" "REF**"
+		(at -0.25 0 90)
+		(layer "F.SilkS")
+		(uuid "70db182c-b313-467c-bafc-2dd4858d9850")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "FSUPCMS"
+		(at 0.25 0 90)
+		(layer "F.Fab")
+		(uuid "c50a1b53-444b-447d-be61-3aad5a86b87d")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 360)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e57010a2-2996-41ed-be3c-cd0ac570f442")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 360)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ccda1f9b-0fc9-49d5-bd6f-38e506338a61")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -5.461 2.54)
+		(end 5.588 2.54)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9b2b7c6b-28e7-4da8-9ccc-a866308ce0af")
+	)
+	(fp_line
+		(start -5.461 2.54)
+		(end -5.461 -2.54)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "51d1d0d1-0e92-4bb5-ace1-84501298506d")
+	)
+	(fp_line
+		(start -5.461 2.032)
+		(end -1.27 2.032)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "19805419-441f-42b4-808b-b2e4e2a3875a")
+	)
+	(fp_line
+		(start -1.27 2.032)
+		(end -1.27 2.54)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "08419222-b3a0-46a9-9328-93b2031b2cd5")
+	)
+	(fp_line
+		(start 1.27 2.032)
+		(end 1.27 2.54)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5875807b-c942-415c-b5a0-ea871da069d5")
+	)
+	(fp_line
+		(start 5.588 2.032)
+		(end 1.27 2.032)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "86a3488d-6161-470d-953b-971e9ff5a6c8")
+	)
+	(fp_line
+		(start -5.461 -2.032)
+		(end -1.27 -2.032)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "095089f3-d0e6-4c0c-909c-9d916b0c72df")
+	)
+	(fp_line
+		(start -1.27 -2.032)
+		(end -1.27 -2.54)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4aad58c3-bcb5-43c1-93e6-def8bcdf51aa")
+	)
+	(fp_line
+		(start 1.27 -2.032)
+		(end 1.27 -2.54)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f0110fe1-2e9c-401b-9ea4-9827dda2d261")
+	)
+	(fp_line
+		(start 5.588 -2.032)
+		(end 1.27 -2.032)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c2f6058b-8eb8-4296-bd2c-efffc428b3bb")
+	)
+	(fp_line
+		(start 5.588 -2.54)
+		(end 5.588 2.54)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "264a364d-2c43-4ed7-a2ea-7eef8c3b3ca8")
+	)
+	(fp_line
+		(start 5.588 -2.54)
+		(end -5.461 -2.54)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "dc0e1b9e-1592-4f19-8d0c-6c545108629a")
+	)
+	(fp_line
+		(start -5.75 3)
+		(end -5.75 -3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ab9710bc-5f54-4850-846b-264f3c174062")
+	)
+	(fp_line
+		(start 6 3)
+		(end -5.75 3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b3c6e74a-79d0-46bd-8e30-14cb040521d3")
+	)
+	(fp_line
+		(start -5.75 -3)
+		(end 6 -3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9ea013fb-2961-455f-8916-ebb657a87862")
+	)
+	(fp_line
+		(start 6 -3)
+		(end 6 3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2a80f6ce-c3b5-48e2-8e3d-d64a16e401f5")
+	)
+	(pad "1" smd rect
+		(at -3.175 0 90)
+		(size 3.556 4.191)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e3b46039-7237-4426-995a-13c87fc02ff5")
+	)
+	(pad "2" smd rect
+		(at 3.175 0 90)
+		(size 3.556 4.191)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5e8cb0f1-268f-4e0a-9117-6e6032a24a63")
+	)
+	(embedded_fonts no)
+	(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_2816_7142Metric.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
