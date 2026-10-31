@@ -1,95 +1,10 @@
-2026-10-30: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; content the Fenolite DSL cannot express yet was left out and is listed in PROVENANCE.json
+2026-10-31: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; every item of the board is expressed (no content was left out)
 
 Upstream: the folder demos/kit-dev-coldfire-xilinx_5213 of the KiCad source repository at commit 97acc80c223d75520c03fc44cab63cd9a3202c42,
 https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/kit-dev-coldfire-xilinx_5213
 
-Licence: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). The file
-LICENSE.README of that repository, at that commit, states "Licensed under CC BY-SA 4.0: All the
-demo files provided in demos/*"; no licence file of the demo folder says otherwise. LICENSE here is
-the file LICENSE.CC-BY-SA-4.0 of the same commit, unchanged. This converted item stays under
-CC BY-SA 4.0. No individual author or copyright line is named in the demo's files; the material
-is distributed by the KiCad project.
+Licence: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). LICENSE here is the file LICENSE.CC-BY-SA-4.0 of the same commit, unchanged. This converted item stays under CC-BY-SA-4.0.
 
-Footprints: the footprints in lib/ come from the board itself (each instance brought back to its
-origin by the import); no file of KiCad's official libraries was copied. Footprints derived from
-the KiCad libraries follow the design exception of their licence (CC-BY-SA 4.0 with an exception
-for designs that use the library material, see https://www.kicad.org/libraries/license/). The
-symbols in lib/*.kicad_sym are drawn by Fenolite from the pad numbers of the footprints.
+Footprints: the footprints in lib/ come from the board itself; no file of KiCad's official libraries was copied. The symbols in lib/*.kicad_sym are drawn by Fenolite from the pad numbers of the footprints.
 
-Names of products and companies (for example in the project title) belong to their owners and
-are used only to describe the design. Not endorsed by the authors.
-
-Upstream notices, verbatim:
-
------ LICENSE.README (KiCad repository, commit 97acc80c223d75520c03fc44cab63cd9a3202c42) -----
-The majority of KiCad's source code is developed and distributed under the terms
-of the GPLv3 or later. However, it does include some third-party code licensed
-under other licenses (see below for details).
-
-These licenses are compatible, but a combined works as is will be governed under
-the terms of the GPLv3 (or later). This includes any binary distribution of the
-KiCad EDA suite by the KiCad project or any third party, e.g. Linux distributor.
-
-You are free to use the *sources* under the terms of their respective licenses.
-
-Licensed under Apache License, Version 2.0
- - portions of code in libs/kimath/include/math/util.h
-Licensed under BOOSTv1:
-- clipper2 in thirdparty/clipper2
-- libcontext [https://github.com/boostorg/context] in thirdparty/libcontext
-- pegtl in thirdparty/pegtl
-- picosha2 in thirdparty/picosha2
-- turtle in thirdparty/turtle
-Licensed under ISC:
-- portions of code in include/geometry/polygon_triangulation.h
-Licensed under MIT:
-- argparse in thirdparty/argparse
-- compoundfilereader in thirdparty/compoundfilereader
-- delaunator in thirdparty/delaunator
-- dynamic_bitset in thirdparty/dynamic_bitset
-- fast_float in thirdparty/fast_float
-- fmt in thirdparty/fmt
-- glad in thirdparty/glad
-- json_schema_validator in thirdparty/json_schema_validator
-- magic_enum in thirdparty/magic_enum
-- nanodbc in thirdparty/nanodbc
-- nlohmann/json in thirdparty/nlohmann_json
-- nlohmann/fifo_map in thirdparty/nlohmann_json
-- pboettch/json-schema-validator in thirdparty/json_schema_validator
-- picoSHA2 in thirdparty/picosha2
-- rectpack2d in thirdparty/rectpack2d
-- sentry-native in thirdparty/sentry-native
-- thread-pool in thirdparty/thread-pool
-- tinyspline_lib in thirdparty/tinyspline_lib
-Licensed under BSD2:
-- gzip-hpp in thirdparty/gzip-hpp
-- libpopcnt in thirdparty/libpopcnt
-- nanoflann in thirdparty/nanoflann
-Licensed under GPLv2 (or later):
-- dxflib in thirdparty/dxflib_qcad
-- math_for_graphics in thirdparty/other_math
-- potrace in thirdparty/potrace
-- SutherlandHodgmanClipPoly in thirdparty/other_math
-Licensed under LGPLv2 (or later):
-- libwmf in thirdparty/libwmf
-Licensed under LGPLv2.1 (or later):
-- planegcs in thirdparty/planegcs
-Licensed under MPL 2.0:
-- eigen in thirdparty/eigen
-Licensed under ZLib:
-- nanosvg in thirdparty/nanosvg
-Licensed in the public domain:
-- lemon in thirdparty/lemon
-Licensed under CC BY-SA 4.0:
-- All the demo files provided in demos/*
-Licensed under clause-3 BSD:
-- ibis / kibis files in eeschema/sim/kibis
-- rapidcsv in thirdparty/rapidcsv
-Licensed under CC0:
-- expected in thirdparty/expected
-- uopamp.lib.spice in some directories in qa/data/eeschema/spice_netlists/
-Licensed under GPLv3 (or later):
-- 3dxware_sdk [Copyright 3Dconnexion] in thirdparty/3dxware_sdk
-- zint (fork of https://github.com/zint/zint) in thirdparty/zint
-- GIMP/GEGL in portions of common
-- All remaining code not listed above
+Names of products and companies belong to their owners and are used only to describe the design. Not endorsed by the authors.

@@ -102,9 +102,11 @@ their reasons in each `PROVENANCE.json`): `ecc83`, `sonde_xilinx`, `video`, `int
 (`apache-2.0/kicad-demos/`) and `royalblue54L_feather` (`cern-ohl-p/kicad-demos/`). This supersedes the status
 column of the table above for those rows.
 
-Not updated:
+`kit-dev-coldfire-xilinx_5213` was converted again too (issue 13 was a fault of the proof's layer comparison,
+fixed in Fenolite).
 
-- `kit-dev-coldfire-xilinx_5213`: the item of 2026-10-30 stays. A new conversion imports with nothing left out,
-  but level 6 of the proof reports 14 courtyards on `F.CrtYd` missing in the build (issue 13).
-- `cm5_minima`: imports with nothing left out; the proof differs in 108 user fields (names, layers, sizes), and the
-  footprints with EasyEDA-style names still need the policy review noted above before entry.
+Not entered:
+
+- `cm5_minima`: imports with nothing left out and its fidelity proof passes, but footprints of `CM5IO.pretty`
+  have EasyEDA-style names and EasyEDA 3D model paths: the policy review ("never accepted" for EasyEDA/LCSC
+  library material) must decide before entry. To enter it, check those footprints by hand.

@@ -115,13 +115,13 @@
   "kind": "board",
   "schema": "fenolite.library-item.v0",
   "spdx": "CC-BY-SA-4.0",
-  "summary": "Four-layer development board for a ColdFire MCF5213 microcontroller and a Xilinx device from the KiCad demos",
+  "summary": "Four-layer development board for a Coldfire MCF5213 with a Xilinx CPLD from the KiCad demos",
   "tags": [
     "4-layer",
-    "development-kit",
+    "cpld",
     "kicad-demo",
-    "microcontroller"
+    "mcu"
   ],
-  "title": "ColdFire 5213 development kit with a Xilinx device (KiCad demo)",
+  "title": "Coldfire MCF5213 development kit (KiCad demo)",
   "version": "1.0.0"
 }

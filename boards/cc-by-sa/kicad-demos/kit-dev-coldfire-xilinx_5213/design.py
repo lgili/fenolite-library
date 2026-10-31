@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
 # SPDX-FileCopyrightText: NOASSERTION
-# Converted from https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/kit-dev-coldfire-xilinx_5213@97acc80c223d75520c03fc44cab63cd9a3202c42 by Fenolite 0.7.0.dev0 on 2026-10-30;
+# Converted from https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/kit-dev-coldfire-xilinx_5213@97acc80c223d75520c03fc44cab63cd9a3202c42 by Fenolite 0.7.0.dev0 on 2026-10-31;
 # modified: format conversion to the Fenolite DSL.
 
 import copper
@@ -18,7 +18,7 @@ design.board(
     copper=4,
 )
 design.stackup(
-    stack.silkscreen(color="White"),
+    stack.silkscreen(material="Liquid Photo", color="White"),
     stack.mask(mm("0.01"), material="Dry Film", epsilon_r="3.3", loss_tangent="0", color="Green"),
     stack.copper(mm("0.035")),
     stack.prepreg(mm("0.48"), material="FR4", epsilon_r="4.5", loss_tangent="0.02"),
@@ -28,7 +28,7 @@ design.stackup(
     stack.prepreg(mm("0.48"), material="FR4", epsilon_r="4.5", loss_tangent="0.02"),
     stack.copper(mm("0.035")),
     stack.mask(mm("0.01"), material="Dry Film", epsilon_r="3.3", loss_tangent="0", color="Green"),
-    stack.silkscreen(color="White"),
+    stack.silkscreen(material="Liquid Photo", color="White"),
     finish="ENIG",
 )
 design.title_block(title="Demo Kicad", date="2015-10-09", revision="2")
@@ -1985,6 +1985,33 @@ design.zone(
     min_thickness=mm("0.3"),
     thermal_gap=mm("0.508"),
     thermal_spoke_width=mm("0.508"),
+)
+
+design.text(
+    "B.Cu/text/1",
+    "CARTE COLDFIRE",
+    (mm("113.995"), mm("-41.58")),
+    layer="B.Cu",
+    size=(mm("1.524"), mm("2.032")),
+    thickness=mm("0.3048"),
+)
+design.text(
+    "F.Cu/text/1",
+    "JTAG_EN\n",
+    (mm("8"), mm("-6.5")),
+    layer="F.Cu",
+    size=mm("1"),
+    thickness=mm("0.2"),
+)
+design.text("F.Cu/text/2", "MOD1", (mm("9"), mm("-4")), layer="F.Cu", size=mm("1"), thickness=mm("0.2"))
+design.text("F.Cu/text/3", "MOD0", (mm("9"), mm("-0.5")), layer="F.Cu", size=mm("1"), thickness=mm("0.2"))
+design.text(
+    "F.Cu/text/4",
+    "CARTE COLDFIRE",
+    (mm("113.995"), mm("-41.58")),
+    layer="F.Cu",
+    size=(mm("1.524"), mm("2.032")),
+    thickness=mm("0.3048"),
 )
 
 copper.apply(

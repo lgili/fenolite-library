@@ -166,11 +166,14 @@ fenolite verify-source out/design.py --against upstream/demos/<demo>/<project>.k
   footprints, outlines closed by a footprint) are expressed by change c0277: all 13 demos import with nothing left
   out.
 
-### 13. Courtyards missing from the build of `kit-dev-coldfire-xilinx_5213`
+### 13. Courtyards missing from the build of `kit-dev-coldfire-xilinx_5213` (fixed)
 
 - **Command:** `fenolite verify-source out/design.py --against upstream/demos/kit-dev-coldfire-xilinx_5213/kit-dev-coldfire-xilinx_5213.kicad_pro`
 - **Error:** level 6, 14 `layer-missing` differences such as `{"where": "courtyard:16", "a": "F.CrtYd", "b": ""}`.
 - **Expected:** the courtyards of the upstream footprints are in the built board.
+- **Cause and fix (2026-10-31):** no courtyard was missing. Level 6 matched layers by their row in the table; the
+  upstream table leaves out `Eco1.User` and `Eco2.User`, which the build writes, so every later row moved. The
+  comparison now matches layers by kind and name (Fenolite branch `cac/c0277-dsl-gaps`).
 
 ### 14. A repeated property name is lost
 
