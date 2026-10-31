@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
 # SPDX-FileCopyrightText: NOASSERTION
-# Converted from https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/sonde%20xilinx@97acc80c223d75520c03fc44cab63cd9a3202c42 by Fenolite 0.7.0.dev0 on 2026-10-30;
+# Converted from https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/sonde%20xilinx@97acc80c223d75520c03fc44cab63cd9a3202c42 by Fenolite 0.7.0.dev0 on 2026-10-31;
 # modified: format conversion to the Fenolite DSL.
 
 import copper
@@ -336,6 +336,81 @@ design.zone(
     min_thickness=mm("0.254"),
     thermal_gap=mm("0.508"),
     thermal_spoke_width=mm("0.508"),
+)
+
+design.text(
+    "B.Cu/text/1",
+    "Copper layer",
+    (mm("19.38"), mm("-31.42")),
+    layer="B.Cu",
+    size=mm("1.524"),
+    thickness=mm("0.3048"),
+)
+design.text(
+    "F.Cu/text/1",
+    "Component Side",
+    (mm("18.1"), mm("-31.2")),
+    layer="F.Cu",
+    size=mm("1.524"),
+    thickness=mm("0.3048"),
+)
+design.text(
+    "F.Cu/text/2",
+    "TDO-DONE",
+    (mm("58.115"), mm("-13.64")),
+    layer="F.Cu",
+    size=mm("1.524"),
+    thickness=mm("0.381"),
+)
+design.text(
+    "F.Cu/text/3",
+    "TDI-TIN",
+    (mm("58.115"), mm("-8.56")),
+    layer="F.Cu",
+    size=mm("1.524"),
+    thickness=mm("0.381"),
+)
+design.text(
+    "F.Cu/text/4",
+    "TCK-CCL",
+    (mm("58.115"), mm("-3.48")),
+    layer="F.Cu",
+    size=mm("1.524"),
+    thickness=mm("0.381"),
+)
+design.text(
+    "F.Cu/text/5",
+    "TMS-PROG",
+    (mm("58.115"), mm("2.235")),
+    layer="F.Cu",
+    size=mm("1.524"),
+    thickness=mm("0.381"),
+)
+design.text(
+    "F.Cu/text/6",
+    "VCC",
+    (mm("62.56"), mm("-23.8")),
+    layer="F.Cu",
+    size=mm("1.524"),
+    thickness=mm("0.381"),
+)
+design.text(
+    "F.Cu/text/7",
+    "GND",
+    (mm("62.56"), mm("-18.72")),
+    layer="F.Cu",
+    size=mm("1.524"),
+    thickness=mm("0.381"),
+)
+design.dimension(
+    "Dwgs.User/dimension/1",
+    (mm("83.7"), mm("10.49")),
+    (mm("3.3"), mm("10.5")),
+    offset=mm("-5.08"),
+    size=mm("1.524"),
+    thickness=mm("0.3048"),
+    width=mm("0.3048"),
+    extension_offset=mm("0"),
 )
 
 copper.apply(

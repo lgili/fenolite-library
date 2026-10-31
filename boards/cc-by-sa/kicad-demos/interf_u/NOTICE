@@ -1,0 +1,10 @@
+2026-10-31: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; every item of the board is expressed (no content was left out)
+
+Upstream: the folder demos/interf_u of the KiCad source repository at commit 97acc80c223d75520c03fc44cab63cd9a3202c42,
+https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/interf_u
+
+Licence: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). LICENSE here is the file LICENSE.CC-BY-SA-4.0 of the same commit, unchanged. This converted item stays under CC-BY-SA-4.0.
+
+Footprints: the footprints in lib/ come from the board itself; no file of KiCad's official libraries was copied. The symbols in lib/*.kicad_sym are drawn by Fenolite from the pad numbers of the footprints.
+
+Names of products and companies belong to their owners and are used only to describe the design. Not endorsed by the authors.

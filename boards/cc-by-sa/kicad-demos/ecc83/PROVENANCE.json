@@ -3,7 +3,7 @@
     "KiCad project (no individual author is named in the demo's files)"
   ],
   "conversion": {
-    "outputs_tree": "fenolite-tree-1:5b69fbabecca80f91271368407cc626ad745c663675b2033f213f9e3ffb6e0ab",
+    "outputs_tree": null,
     "steps": [
       {
         "argv": [
@@ -20,29 +20,20 @@
           "--revision",
           "97acc80c223d75520c03fc44cab63cd9a3202c42",
           "--timestamp",
-          "2026-10-30T00:00:00Z",
-          "--allow-lossy",
-          "--dry-run"
+          "2026-10-31T00:00:00Z",
+          "--confirm"
         ],
         "tool": "fenolite"
       },
       {
         "argv": [
-          "import",
+          "verify-source",
+          "out/design.py",
+          "--against",
           "upstream/demos/ecc83/ecc83-pp.kicad_pro",
-          "--to",
-          "python",
-          "--out",
-          "out",
-          "--licence",
-          "CC-BY-SA-4.0",
-          "--source",
-          "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/ecc83",
-          "--revision",
-          "97acc80c223d75520c03fc44cab63cd9a3202c42",
-          "--timestamp",
-          "2026-10-30T00:00:00Z",
-          "--allow-lossy",
+          "--provenance",
+          "out/PROVENANCE.json",
+          "--record",
           "--confirm"
         ],
         "tool": "fenolite"
@@ -50,7 +41,7 @@
     ],
     "tools": [
       {
-        "commit": "8dab89d61d40a4d1f9044fb284d844839a78d70e",
+        "commit": "628954b730629bfaf6beffc7b6a31a0671150ff1",
         "name": "fenolite",
         "version": "0.7.0.dev0"
       }
@@ -63,17 +54,17 @@
     "accepted": [
       {
         "attribution": "fenolite",
-        "decided": "2026-10-30",
+        "decided": "2026-10-31",
         "field": "lib_ref",
         "id": "A001",
         "kind": "footprint-name",
         "level": 3,
-        "reason": "The import writes a footprint instance that differs from the first footprint of its name (moved fields, edited pads) as a variant footprint <name>_<n> (import.footprint-variant); checked on 2026-10-30: in all 9 differences the built name is the upstream name plus '_<n>'. Footprint-instance overrides (change c0277) will remove this.",
+        "reason": "The import writes a footprint instance that differs from the first footprint of its name (moved fields, edited pads) as a variant footprint <name>_<n> (import.footprint-variant).",
         "where": "*"
       },
       {
         "attribution": "fenolite",
-        "decided": "2026-10-30",
+        "decided": "2026-10-31",
         "field": "name",
         "id": "A002",
         "kind": "field-pose",
@@ -83,60 +74,100 @@
       },
       {
         "attribution": "fenolite",
-        "decided": "2026-10-30",
+        "decided": "2026-10-31",
         "field": "graphic",
         "id": "A003",
         "kind": "graphic-missing",
         "level": 7,
-        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.127 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
         "where": "board:Edge.Cuts:121285000,136525000-173355000,136525000"
       },
       {
         "attribution": "fenolite",
-        "decided": "2026-10-30",
+        "decided": "2026-10-31",
         "field": "graphic",
         "id": "A004",
         "kind": "graphic-missing",
         "level": 7,
-        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.127 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
-        "where": "board:Edge.Cuts:121285000,90170000-121285000,136525000"
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:121285000,136525000-173355000,136525000"
       },
       {
         "attribution": "fenolite",
-        "decided": "2026-10-30",
+        "decided": "2026-10-31",
         "field": "graphic",
         "id": "A005",
         "kind": "graphic-missing",
         "level": 7,
-        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.127 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
-        "where": "board:Edge.Cuts:121285000,90170000-173355000,90170000"
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:121285000,90170000-121285000,136525000"
       },
       {
         "attribution": "fenolite",
-        "decided": "2026-10-30",
+        "decided": "2026-10-31",
         "field": "graphic",
         "id": "A006",
         "kind": "graphic-missing",
         "level": 7,
-        "reason": "The same Edge.Cuts segment on both sides; only its stroke width differs (upstream 0.127 mm, the DSL board outline writes 0.1 mm). The board shape is the centre line and is unchanged. The import does not report this loss, see boards/ISSUES.md.",
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:121285000,90170000-121285000,136525000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A007",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:121285000,90170000-173355000,90170000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A008",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:121285000,90170000-173355000,90170000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A009",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
         "where": "board:Edge.Cuts:173355000,90170000-173355000,136525000"
       },
       {
         "attribution": "fenolite",
-        "decided": "2026-10-30",
-        "id": "A007",
-        "kind": "render-missing",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A010",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:173355000,90170000-173355000,136525000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "id": "A011",
+        "kind": "render-pixels",
         "level": 8,
-        "reason": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276; level S is skipped as drawn-unavailable), so the sheets differ in name and drawing.",
+        "reason": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276; level S is skipped as drawn-unavailable).",
         "where": "sheet:*"
       },
       {
         "attribution": "fenolite",
-        "decided": "2026-10-30",
-        "id": "A008",
-        "kind": "render-pixels",
+        "decided": "2026-10-31",
+        "id": "A012",
+        "kind": "render-missing",
         "level": 8,
-        "reason": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276; level S is skipped as drawn-unavailable), so the sheets differ in name and drawing.",
+        "reason": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276).",
         "where": "sheet:*"
       }
     ],
@@ -149,7 +180,7 @@
         "ecc83-pp_v2.kicad_pro": "8ca4caec049e921d8cae59f2eddb5ca612c18010da8191ea1d30651a00aa07c9",
         "ecc83-pp_v2.kicad_sch": "80576c542e9ce473538c30ed24b7cd7e9152fe7922ebdb518928aa815b858ff1"
       },
-      "date": "2026-10-30T00:00:00Z",
+      "date": "2026-10-31T08:06:07Z",
       "fenolite": "0.7.0.dev0",
       "levels": {
         "1": "equal",
@@ -162,7 +193,7 @@
         "8": "accepted",
         "S": "skipped"
       },
-      "script_sha256": "9a0d8fa98db4f972308ee88603ed2fca37c61e9f656db7fce0206ca7bc83a5bb",
+      "script_sha256": "186515737f28e311f55b35a17a18c076873594f30f3901e796c9f6f4a3f5881f",
       "tolerances": {
         "angle_udeg": 0,
         "frame": "absolute",
@@ -171,18 +202,12 @@
         "pixel_ppm": 1000,
         "render_pitch_um": 50
       }
-    },
-    "tolerances": {
-      "angle_udeg": 0,
-      "length_nm": 0,
-      "length_ppm": 0,
-      "pixel_ppm": 1000
     }
   },
   "id": "kicad-demos/ecc83",
   "import": {
     "copyright": [],
-    "date": "2026-10-30",
+    "date": "2026-10-31",
     "design": "ecc83-pp",
     "equivalence": {
       "equivalent": true,
@@ -233,8 +258,8 @@
     "upgrade": []
   },
   "kind": "board",
-  "licence_text_sha256": "17a696cf6cf01b8d795151556dfd51cc121c1b678a33d509d6548658c1008391",
-  "modification_notice": "2026-10-30: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; content the Fenolite DSL cannot express yet was left out and is listed in PROVENANCE.json",
+  "licence_text_sha256": "00ba11b9a22d453aed299954eaca389d8efef441a4673d84e2dc4ae10ebc7ca5",
+  "modification_notice": "2026-10-31: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; every item of the board is expressed (no content was left out)",
   "origin": "converted",
   "schema": "fenolite.provenance.v0",
   "spdx": "CC-BY-SA-4.0",
@@ -247,11 +272,10 @@
     "archive_sha256": null,
     "commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
     "licence_files": [
-      "LICENSE.README",
       "LICENSE.CC-BY-SA-4.0"
     ],
     "path": "demos/ecc83",
-    "retrieved": "2026-10-30",
+    "retrieved": "2026-10-31",
     "source_location": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/ecc83",
     "spdx_expression": "CC-BY-SA-4.0",
     "url": "https://gitlab.com/kicad/code/kicad"

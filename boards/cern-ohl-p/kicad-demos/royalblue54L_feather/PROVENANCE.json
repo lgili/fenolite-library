@@ -1,0 +1,233 @@
+{
+  "authors": [
+    "Lord's Boards"
+  ],
+  "conversion": {
+    "outputs_tree": null,
+    "steps": [
+      {
+        "argv": [
+          "import",
+          "upstream/demos/royalblue54L_feather/RoyalBlue54L-Feather.kicad_pro",
+          "--to",
+          "python",
+          "--out",
+          "out",
+          "--licence",
+          "CERN-OHL-P-2.0",
+          "--source",
+          "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/royalblue54L_feather",
+          "--revision",
+          "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "--timestamp",
+          "2026-10-31T00:00:00Z",
+          "--confirm"
+        ],
+        "tool": "fenolite"
+      },
+      {
+        "argv": [
+          "verify-source",
+          "out/design.py",
+          "--against",
+          "upstream/demos/royalblue54L_feather/RoyalBlue54L-Feather.kicad_pro",
+          "--provenance",
+          "out/PROVENANCE.json",
+          "--record",
+          "--confirm"
+        ],
+        "tool": "fenolite"
+      }
+    ],
+    "tools": [
+      {
+        "commit": "628954b730629bfaf6beffc7b6a31a0671150ff1",
+        "name": "fenolite",
+        "version": "0.7.0.dev0"
+      }
+    ]
+  },
+  "copyright": [],
+  "evidence": "UNVERIFIED",
+  "featured": null,
+  "fidelity": {
+    "accepted": [
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "lib_ref",
+        "id": "A001",
+        "kind": "footprint-name",
+        "level": 3,
+        "reason": "The import writes a footprint instance that differs from the first footprint of its name (moved fields, edited pads) as a variant footprint <name>_<n> (import.footprint-variant).",
+        "where": "*"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "name",
+        "id": "A002",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The build adds the property fenolite.path (the layout lens key) to every footprint; the original has no such field. Not a difference of the design.",
+        "where": "*:fenolite.path"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "id": "A003",
+        "kind": "render-pixels",
+        "level": 8,
+        "reason": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276; level S is skipped as drawn-unavailable).",
+        "where": "sheet:*"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "id": "A004",
+        "kind": "render-missing",
+        "level": 8,
+        "reason": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276).",
+        "where": "sheet:*"
+      }
+    ],
+    "proof": {
+      "against": {
+        "RoyalBlue54L-Feather.kicad_pcb": "535dbe212f43a8bab12b23277e176a94ac9694177258af2981c0e7b08e4b7252",
+        "RoyalBlue54L-Feather.kicad_pro": "a25ffa7ff829d5eaff27b29724b57821ce2ee7fd39ae367b9ea078d290e37690",
+        "RoyalBlue54L-Feather.kicad_sch": "3636dcd5252ae18b2651dce4480a61765bd37b2e601679c3c1465dc8ca21fad8",
+        "nfc_antenna/RoyalBlue54L-NFC-Antenna/RoyalBlue54L-NFC-Antenna.kicad_pcb": "cd87e6d1b20fe0d129d9a9c807af3118c67749eff44b1f032d85c047a814c6dc",
+        "nfc_antenna/RoyalBlue54L-NFC-Antenna/RoyalBlue54L-NFC-Antenna.kicad_pro": "3671c9041c477226ef0a915977f1fbfede9e0206c78c5abf8b51941c41e265ac",
+        "nfc_antenna/RoyalBlue54L-NFC-Antenna/RoyalBlue54L-NFC-Antenna.kicad_sch": "f9e17eb92e5a11eb2db9a6f71835006d4f59fa487ea6c1577565f1b6522c09ab",
+        "sch/Connectors.kicad_sch": "7b78116155a966443ad8a8192fe5ca09668f4bf4e59bc58370762195cf8456c6",
+        "sch/Debugger.kicad_sch": "e6f3273cb98b22ee2a90ee65857cb4035ea11fcf3d19fdddfd0c5d1926ddd2bd",
+        "sch/nPM1300.kicad_sch": "b53b9a766126616e839c10bfeae26aeee85132f48cf1ba84722354d366a63a6b",
+        "sch/nRF54L15.kicad_sch": "d1c824ffcfe88dfa1bded5a341afa8775f4e59c56b95174dd7e8ab081d95caff"
+      },
+      "date": "2026-10-31T08:20:17Z",
+      "fenolite": "0.7.0.dev0",
+      "levels": {
+        "1": "equal",
+        "2": "equal",
+        "3": "accepted",
+        "4": "equal",
+        "5": "equal",
+        "6": "equal",
+        "7": "accepted",
+        "8": "accepted",
+        "S": "skipped"
+      },
+      "script_sha256": "153ec1abe90bbb53bed734a9505220d9bc6f5bbe4a28d8fafb670428799ccb2a",
+      "tolerances": {
+        "angle_udeg": 0,
+        "frame": "absolute",
+        "length_nm": 0,
+        "length_ppm": 0,
+        "pixel_ppm": 1000,
+        "render_pitch_um": 50
+      }
+    }
+  },
+  "id": "kicad-demos/royalblue54L_feather",
+  "import": {
+    "copyright": [],
+    "date": "2026-10-31",
+    "design": "RoyalBlue54L-Feather",
+    "equivalence": {
+      "equivalent": true,
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "fenolite": "0.7.0.dev0",
+    "findings": {
+      "import.footprint-variant": 16,
+      "import.provenance-missing": 1,
+      "import.schematic-generated": 1,
+      "import.sheet-renamed": 4,
+      "import.symbol-regenerated": 1,
+      "import.teardrops-regenerated": 1
+    },
+    "inputs": [
+      {
+        "file": "RoyalBlue54L-Feather.kicad_pcb",
+        "format": "kicad_pcb",
+        "sha256": "535dbe212f43a8bab12b23277e176a94ac9694177258af2981c0e7b08e4b7252",
+        "version": 20241229
+      },
+      {
+        "file": "RoyalBlue54L-Feather.kicad_pro",
+        "format": "kicad_pro",
+        "sha256": "a25ffa7ff829d5eaff27b29724b57821ce2ee7fd39ae367b9ea078d290e37690",
+        "version": 3
+      },
+      {
+        "file": "RoyalBlue54L-Feather.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "3636dcd5252ae18b2651dce4480a61765bd37b2e601679c3c1465dc8ca21fad8",
+        "version": null
+      },
+      {
+        "file": "sch/Connectors.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "7b78116155a966443ad8a8192fe5ca09668f4bf4e59bc58370762195cf8456c6",
+        "version": null
+      },
+      {
+        "file": "sch/Debugger.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "e6f3273cb98b22ee2a90ee65857cb4035ea11fcf3d19fdddfd0c5d1926ddd2bd",
+        "version": null
+      },
+      {
+        "file": "sch/nPM1300.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "b53b9a766126616e839c10bfeae26aeee85132f48cf1ba84722354d366a63a6b",
+        "version": null
+      },
+      {
+        "file": "sch/nRF54L15.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "d1c824ffcfe88dfa1bded5a341afa8775f4e59c56b95174dd7e8ab081d95caff",
+        "version": null
+      }
+    ],
+    "licence": "CERN-OHL-P-2.0",
+    "notices": [],
+    "schema": "fenolite.import-provenance.v0",
+    "source": {
+      "revision": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+      "url": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/royalblue54L_feather"
+    },
+    "tools": {},
+    "upgrade": []
+  },
+  "kind": "board",
+  "licence_text_sha256": "6e471d647db50527d0c75ee5f1a55a74012ab177c73282bef0bdc7f6562b7ded",
+  "modification_notice": "2026-10-31: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; every item of the board is expressed (no content was left out)",
+  "origin": "converted",
+  "schema": "fenolite.provenance.v0",
+  "spdx": "CERN-OHL-P-2.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": {
+    "archive_sha256": null,
+    "commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+    "licence_files": [
+      "demos/royalblue54L_feather/LICENSE"
+    ],
+    "path": "demos/royalblue54L_feather",
+    "retrieved": "2026-10-31",
+    "source_location": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/royalblue54L_feather",
+    "spdx_expression": "CERN-OHL-P-2.0",
+    "url": "https://gitlab.com/kicad/code/kicad"
+  },
+  "version": "1.0.0"
+}

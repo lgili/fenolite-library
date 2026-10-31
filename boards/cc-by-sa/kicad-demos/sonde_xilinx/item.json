@@ -33,13 +33,13 @@
   "kind": "board",
   "schema": "fenolite.library-item.v0",
   "spdx": "CC-BY-SA-4.0",
-  "summary": "Two-layer JTAG probe ('sonde') board for Xilinx devices from the KiCad demos",
+  "summary": "Two-layer JTAG programming probe board for Xilinx parts from the KiCad demos",
   "tags": [
     "2-layer",
     "jtag",
     "kicad-demo",
     "programmer"
   ],
-  "title": "Xilinx JTAG probe (KiCad demo 'sonde xilinx')",
+  "title": "Xilinx JTAG probe (KiCad demo sonde xilinx)",
   "version": "1.0.0"
 }
