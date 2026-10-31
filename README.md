@@ -33,3 +33,11 @@ accepted.
 
 Names and trademarks of the original projects belong to their owners. Their presence here does not imply
 any endorsement of Fenolite.
+
+## Repository licence and use
+
+The repository's own documentation and configuration are licensed under CC0-1.0.
+This licence does not cover the items: each item retains its upstream licence and notices.
+Items are test and benchmark inputs. No item is used for machine-learning training.
+
+See CONTRIBUTING.md for provenance review and contribution requirements.

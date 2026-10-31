@@ -1,0 +1,9 @@
+schema = "fenolite.library-sources.v0"
+
+[sources.spdx]
+title = "SPDX CC0-1.0 licence text"
+url = "https://github.com/spdx/license-list-data/blob/main/text/CC0-1.0.txt"
+
+[sources.kicad]
+title = "KiCad demo boards; individual notices remain authoritative"
+url = "https://gitlab.com/kicad/code/kicad"

@@ -271,6 +271,9 @@
         "S": "skipped"
       },
       "script_sha256": "144263cff0086c1932d441d0d44fba42d43b3ee307749c6e8babd6df654584a1",
+      "skipped": {
+        "S": "drawn-unavailable"
+      },
       "tolerances": {
         "angle_udeg": 0,
         "frame": "absolute",
@@ -369,5 +372,5 @@
     "spdx_expression": "CC-BY-SA-4.0",
     "url": "https://gitlab.com/kicad/code/kicad"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
