@@ -1,0 +1,140 @@
+(kicad_symbol_lib
+	(version 20241209)
+	(generator "fenolite")
+	(symbol "MountingHole_3.2mm_M3_Pad"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "MT"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "MountingHole_3.2mm_M3_Pad"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "MountingHole_3.2mm_M3_Pad_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -2.54) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "MountingHole_3.2mm_M3_Pad_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "MountingHole_3.2mm_M3_Pad_2"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "MT"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "MountingHole_3.2mm_M3_Pad_2"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "MountingHole_3.2mm_M3_Pad_2_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -2.54) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "MountingHole_3.2mm_M3_Pad_2_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "MountingHole_3.2mm_M3_Pad_3"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "MT"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "MountingHole_3.2mm_M3_Pad_3"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "MountingHole_3.2mm_M3_Pad_3_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -2.54) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "MountingHole_3.2mm_M3_Pad_3_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "MountingHole_3.2mm_M3_Pad_4"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "MT"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "MountingHole_3.2mm_M3_Pad_4"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "MountingHole_3.2mm_M3_Pad_4_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -2.54) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "MountingHole_3.2mm_M3_Pad_4_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+)

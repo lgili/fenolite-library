@@ -1,0 +1,202 @@
+(footprint "C0402_36"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(property "Reference" "REF**"
+		(at -1.75 0 270)
+		(layer "F.SilkS")
+		(uuid "50282d53-d0ea-4a1b-a799-5fdce166f28b")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "C0402_36"
+		(at 0 4 180)
+		(layer "F.Fab")
+		(uuid "ee03ceda-adb6-4432-baec-98eb75184b38")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Murata-Electronics-GRM155R61E225KE11D_C385032.html"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5d6e0ea5-2d62-4bce-ae68-71e9579acda7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d7b12ce9-84ca-4ffe-9407-355ce5bb8a7d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.02 -0.5)
+		(end -0.23 -0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9e66825c-c3e2-4d90-8c69-3ac1563efe26")
+	)
+	(fp_line
+		(start 1.02 -0.5)
+		(end 0.23 -0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1fba380e-908a-45e0-8c3a-de1ff7d519e1")
+	)
+	(fp_line
+		(start -1.17 0.35)
+		(end -1.17 -0.35)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "746ae720-174b-462d-ba66-3a819b81c784")
+	)
+	(fp_line
+		(start 1.17 0.35)
+		(end 1.17 -0.35)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "88c5cf29-b64f-4191-8fe4-4dcdec7178dc")
+	)
+	(fp_line
+		(start -0.23 0.5)
+		(end -1.02 0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c705195b-563d-4575-93fe-45a385ee2105")
+	)
+	(fp_line
+		(start 0.23 0.5)
+		(end 1.02 0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d510bca8-986d-475b-bf12-e2f503071a13")
+	)
+	(fp_arc
+		(start -1.02 -0.5)
+		(mid -1.126066 -0.456066)
+		(end -1.17 -0.35)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "996d40c4-0ec7-40ea-8a46-318bbc6d4df6")
+	)
+	(fp_arc
+		(start 1.17 -0.35)
+		(mid 1.126066 -0.456066)
+		(end 1.02 -0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "931b19b3-5e8f-4802-8832-66769748fd71")
+	)
+	(fp_arc
+		(start -1.17 0.35)
+		(mid -1.126066 0.456066)
+		(end -1.02 0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "828b6eaf-3f17-4408-aae6-1266793397ab")
+	)
+	(fp_arc
+		(start 1.02 0.5)
+		(mid 1.126066 0.456066)
+		(end 1.17 0.35)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "248a7231-8316-406c-8291-2c3e76a9e7d9")
+	)
+	(fp_circle
+		(center -0.5 0.25)
+		(end -0.47 0.25)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "1042e8df-8ad6-4ebd-93fa-780dff253c0f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(uuid "387a20c6-e780-4170-b3ec-e94358816b58")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.55 0 360)
+		(size 0.79 0.54)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "278931be-6c23-4385-a99a-8a01de00f26e")
+	)
+	(pad "2" smd rect
+		(at 0.55 0 360)
+		(size 0.79 0.54)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "48ca4bc5-4646-48a4-ac8d-3ad37841f2c7")
+	)
+	(embedded_fonts no)
+	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/C0402_L1.0-W0.5-H0.5.wrl"
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

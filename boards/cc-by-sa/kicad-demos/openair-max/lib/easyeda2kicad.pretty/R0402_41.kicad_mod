@@ -1,0 +1,158 @@
+(footprint "R0402_41"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(property "Reference" "REF**"
+		(at 0.2 -1.3 180)
+		(layer "F.SilkS")
+		(uuid "96491a40-90d0-4b20-bd70-29f1760e2a1a")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "R0402_41"
+		(at 0 4 180)
+		(layer "F.Fab")
+		(uuid "2347877f-eafc-4cff-a178-a20cff5a8512")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://lcsc.com/product-detail/Others_Huaxin-S-T-MR04X1002FTL_C327797.html"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "feaa3bbf-c308-4606-9e6b-5631bc0b4105")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "43d26760-f55c-4bba-80e2-d90fa3c0d25a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.94 -0.5)
+		(end -0.23 -0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "96c4d6ba-f190-46c8-bac7-585ca35192b2")
+	)
+	(fp_line
+		(start 0.94 -0.5)
+		(end 0.23 -0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5446d860-6b88-45e4-a887-5d2263b0dea6")
+	)
+	(fp_line
+		(start -0.94 0.5)
+		(end -0.94 -0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0c52303f-4d73-4e11-9350-eaaaed28a24a")
+	)
+	(fp_line
+		(start -0.23 0.5)
+		(end -0.94 0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c27bc242-6993-448b-9c6e-7a8977ffa6ef")
+	)
+	(fp_line
+		(start 0.23 0.5)
+		(end 0.94 0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d930b5ee-1042-46eb-ac1e-48392bbc5a1e")
+	)
+	(fp_line
+		(start 0.94 0.5)
+		(end 0.94 -0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4d517e8f-b6a5-4c56-92da-846b4b9f3d00")
+	)
+	(fp_circle
+		(center -0.5 0.25)
+		(end -0.47 0.25)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "a0d77aa9-4686-4ad1-815a-a4921ba3cdff")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(uuid "feadf3d7-7f40-41f8-a5d4-51e139e1230c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.43 0 360)
+		(size 0.57 0.54)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "31311935-c376-42de-8f87-fb1d351d0250")
+	)
+	(pad "2" smd rect
+		(at 0.43 0 360)
+		(size 0.57 0.54)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "93f7368a-0c6e-419f-b93a-0088cbadef13")
+	)
+	(embedded_fonts no)
+	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/R0402_L1.0-W0.5-H0.4.wrl"
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

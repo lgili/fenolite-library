@@ -1,0 +1,252 @@
+(footprint "KEY-TH_TS-1096-A1B2-D2"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(property "Reference" "REF**"
+		(at 2.75 3.095 -180)
+		(layer "F.SilkS")
+		(uuid "aa98e23d-8731-4f68-a4c8-4b107e8f8a7a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "KEY-TH_TS-1096-A1B2-D2"
+		(at 0 5.25 -180)
+		(layer "F.Fab")
+		(uuid "2d2a390b-05c8-438c-b0f2-374016d0b3a9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_Yuandi-TS-1096-A1B2-D2_C492993.html"
+		(at 0 0 -180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cf87f8e2-9024-4b12-9cb2-0a77ef8a535c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 -180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "327d59eb-b191-43d3-8576-4ea5946cefd6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start 3.65 -3.5)
+		(end 3.65 0.08)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "baa6d925-a49d-48c3-bcef-d08e6e88067c")
+	)
+	(fp_line
+		(start 3.63 0.08)
+		(end 3.65 0.08)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "aa36011b-ce13-490d-8fbc-cdc12fd2dc3a")
+	)
+	(fp_line
+		(start 1.5 -4.4)
+		(end 1.5 -3.5)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "00c93e37-7001-411e-b1b0-dc8f89466898")
+	)
+	(fp_line
+		(start -1.5 -4.4)
+		(end 1.5 -4.4)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6fe4ae1d-b27f-493d-a449-d73ecb98c70d")
+	)
+	(fp_line
+		(start -1.5 -4.4)
+		(end -1.5 -3.5)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5bceaf70-a1f3-4e16-b125-e9ea882697f4")
+	)
+	(fp_line
+		(start -3.37 0.08)
+		(end 3.37 0.08)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f77b4b50-dd6b-4655-aece-ccb1053209d5")
+	)
+	(fp_line
+		(start -3.65 0.08)
+		(end -3.63 0.08)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "72bd970a-2319-4078-9919-5a513910ec2b")
+	)
+	(fp_line
+		(start -3.65 -3.5)
+		(end 3.65 -3.5)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5cee24d7-0b9b-43df-b262-7b1f5018fda5")
+	)
+	(fp_line
+		(start -3.65 -3.5)
+		(end -3.65 0.08)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "aa6a51b2-a92b-46f9-907c-be5380b2eb20")
+	)
+	(fp_circle
+		(center 3.5 1.25)
+		(end 3.78 1.25)
+		(stroke
+			(width 0.55)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "efc3f038-51c3-4be8-8ce9-525af05fa986")
+	)
+	(fp_circle
+		(center 2.5 -1.25)
+		(end 2.7 -1.25)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "0797991b-c4b5-4d28-8f14-54173c0d02a9")
+	)
+	(fp_circle
+		(center -2.5 -1.25)
+		(end -2.3 -1.25)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "e7eea8ae-3cad-4649-af33-0760e9ddd8cb")
+	)
+	(fp_circle
+		(center -3.5 1.25)
+		(end -3.22 1.25)
+		(stroke
+			(width 0.55)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "dd77665a-65d1-4927-baee-79206012db56")
+	)
+	(fp_circle
+		(center -4.45 -4.53)
+		(end -4.42 -4.53)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "07d76410-160c-4374-b1c8-d536fadade9a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 -180)
+		(layer "F.Fab")
+		(uuid "c9e778d6-11ca-4046-a92f-3fc7b10c6819")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -2.5 -1.25)
+		(size 1.8 1.8)
+		(drill 0.999998)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0ad890e0-2c58-492e-892f-07094914ee55")
+	)
+	(pad "2" thru_hole circle
+		(at 2.5 -1.25)
+		(size 1.8 1.8)
+		(drill 0.999998)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ec5d0619-c06b-4a78-8161-140b02f75ddd")
+	)
+	(pad "3" thru_hole circle
+		(at -3.5 1.25)
+		(size 1.9 1.9)
+		(drill 1.300023)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "09da31cd-3c90-4efa-a5bb-7b81dd1e8725")
+	)
+	(pad "4" thru_hole circle
+		(at 3.5 1.25)
+		(size 1.9 1.9)
+		(drill 1.300023)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e0a6f721-f14b-48cd-b36c-d79cdf489097")
+	)
+	(embedded_fonts no)
+	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/KEY-TH_TS-1096-A1B2-D2.wrl"
+		(offset
+			(xyz -0 0.25 1.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

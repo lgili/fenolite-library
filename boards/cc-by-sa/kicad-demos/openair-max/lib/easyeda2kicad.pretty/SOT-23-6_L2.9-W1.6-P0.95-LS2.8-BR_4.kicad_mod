@@ -1,0 +1,164 @@
+(footprint "SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR_4"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(property "Reference" "REF**"
+		(at 0.87 2.5 0)
+		(layer "F.SilkS")
+		(uuid "8b1ce042-e451-429d-8717-f92cd56e7ff8")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR_4"
+		(at 0 4.95 0)
+		(layer "F.Fab")
+		(uuid "ddaa9f7b-1e3b-4048-ac4c-38a8b0e8876a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://lcsc.com/product-detail/PMIC-Power-Distribution-Switches_TI_TPS27081ADDCR_TPS27081ADDCR_C128404.html"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "28b019ba-f530-4c26-b565-d10d6ab2ba27")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d8336a35-7f33-458b-ac77-4880591e52cd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.9 1.55)
+		(end 0.9 1.55)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "473e5e8e-e2a2-461d-ad71-56352d62ff61")
+	)
+	(fp_line
+		(start -0.9 -1.55)
+		(end 0.9 -1.55)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "108f88c1-f75d-4e6c-9508-ce0fd9b95e97")
+	)
+	(fp_circle
+		(center 1.4 1.65)
+		(end 1.53 1.65)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "6ba564f7-bb3c-4e1c-bef9-62d2e122f1af")
+	)
+	(fp_circle
+		(center 1.4 0.95)
+		(end 1.5 0.95)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "b11b2d3c-0c02-4ec7-b68f-858cab5d2082")
+	)
+	(fp_circle
+		(center 1.4 1.45)
+		(end 1.43 1.45)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "73cc0c6f-796e-40fe-aa3b-cc44b9add3e4")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "72403eaa-2d50-430f-a39a-9cebdc31dd8e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 1.35 0.95)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "22674e4f-af12-496f-9c09-a11edc5b14fd")
+	)
+	(pad "2" smd rect
+		(at 1.35 0)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5d265972-079a-4c9f-882a-7aa910ff0a67")
+	)
+	(pad "3" smd rect
+		(at 1.35 -0.95)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8bed5d7f-5da1-4b5b-b615-0bf9f9bf8894")
+	)
+	(pad "4" smd rect
+		(at -1.35 -0.95)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4de4c348-e9d2-4f97-87b0-6de63994d1b6")
+	)
+	(pad "5" smd rect
+		(at -1.35 0)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "299c0747-835a-4d81-a30d-2966fed0ef3c")
+	)
+	(pad "6" smd rect
+		(at -1.35 0.95)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ace57629-9dd3-4879-aee3-6d5bdb2c369d")
+	)
+	(embedded_fonts no)
+	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/SOT-23-6_L2.9-W1.6-H1.5-LS2.8-P0.95.wrl"
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 180)
+		)
+	)
+)

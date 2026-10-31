@@ -1,0 +1,207 @@
+(footprint "SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(property "Reference" "REF**"
+		(at 0 -6.77 180)
+		(layer "F.SilkS")
+		(uuid "4d078a55-c5eb-46f7-9956-7bfb889afbbd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL"
+		(at 0 6.77 180)
+		(layer "F.Fab")
+		(uuid "89f1fc4c-b739-4b6c-9fd5-d6c26f053c03")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://lcsc.com/product-detail/Others_Microchip-Tech_AT24CM02-SSHD-B_Microchip-Tech-AT24CM02-SSHD-B_C220680.html"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ae7541c9-6d02-49ac-b1c1-b3de4e630a41")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8c27fc9f-4899-4e7b-90d9-c91aef3f8e44")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.53 -1.52)
+		(end -2.53 1.52)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "66a987da-58b0-45ca-806e-85e085405192")
+	)
+	(fp_line
+		(start 2.53 -1.52)
+		(end -2.53 -1.52)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1863891e-e2b1-4023-9aad-9584e394d679")
+	)
+	(fp_line
+		(start -2.53 1.52)
+		(end 2.53 1.52)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d3915184-7fcf-4f40-9265-0e61869f0b50")
+	)
+	(fp_line
+		(start 2.53 1.52)
+		(end 2.53 -1.52)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bf8b1172-9980-4bd3-a416-4d03604a0338")
+	)
+	(fp_circle
+		(center -1.91 0.77)
+		(end -1.76 0.77)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "afd709f1-d2d9-42a1-af64-2607eb7836af")
+	)
+	(fp_circle
+		(center -2.65 2.77)
+		(end -2.5 2.77)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "0e04f45e-ae64-4734-aa2b-ce8afad7a086")
+	)
+	(fp_circle
+		(center -1.91 3.4)
+		(end -1.76 3.4)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "c25332fc-d0d9-48b3-beb6-81c2dde4110f")
+	)
+	(fp_circle
+		(center -2.45 3)
+		(end -2.42 3)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "e0d1e3d9-5538-45af-bdf2-a68ed26cb9cb")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(uuid "c608f0ae-a91b-4de6-af08-884797cb86ef")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd oval
+		(at -1.91 2.77 360)
+		(size 0.59 2.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f4a633c9-59f6-437a-82a3-b5e9b0afce6a")
+	)
+	(pad "2" smd oval
+		(at -0.63 2.77 360)
+		(size 0.59 2.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "04175d05-6c8e-4d97-bc21-ec986d4c006a")
+	)
+	(pad "3" smd oval
+		(at 0.63 2.77 360)
+		(size 0.59 2.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f524bde2-ed88-42f4-b165-d90ee547d41e")
+	)
+	(pad "4" smd oval
+		(at 1.9 2.77 360)
+		(size 0.59 2.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e2465ac8-f7db-49e0-84f7-b7e91d1a7560")
+	)
+	(pad "5" smd oval
+		(at 1.9 -2.77 360)
+		(size 0.59 2.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e2068800-d433-4ae2-8fe9-65db95a0391a")
+	)
+	(pad "6" smd oval
+		(at 0.63 -2.77 360)
+		(size 0.59 2.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b4f0f8b3-10b3-40dc-9f54-4fb2de2ace80")
+	)
+	(pad "7" smd oval
+		(at -0.63 -2.77 360)
+		(size 0.59 2.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "73058a16-2eae-42a0-810b-dac8a7e1efbf")
+	)
+	(pad "8" smd oval
+		(at -1.91 -2.77 360)
+		(size 0.59 2.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "be487075-96f6-4bdb-b4df-8ea743c89565")
+	)
+	(embedded_fonts no)
+	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/SOIC-8_L4.9-W3.9-H1.7-LS6.0-P1.27.wrl"
+		(offset
+			(xyz 1.65 -2.84 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

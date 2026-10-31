@@ -1,0 +1,234 @@
+(footprint "434121025816_3"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(descr "<b>WS-TASV</B><BR>SMT Tact Switch 6.0x3.8 mm,2 pins")
+	(property "Reference" "REF**"
+		(at -0.3 0.55 0)
+		(layer "F.SilkS")
+		(uuid "0522c900-03c1-408f-be1e-54f7dacd8646")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "434121025816_3"
+		(at 1 3.1 0)
+		(layer "F.Fab")
+		(uuid "57361265-f169-46b9-a56d-8591514180cf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/components/products/datasheet/434121025816.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9d81d2e4-9875-416c-b805-381bc0d376c7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f8e0e873-8113-49de-b14d-adf79425a458")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -3.1 -2.05)
+		(end 3.1 -2.05)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "87098fbd-7060-400d-91e9-9198d37b1b9c")
+	)
+	(fp_line
+		(start -3.1 -1.1)
+		(end -3.1 -2.05)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e8d28504-48b0-44db-9883-e349788d9df6")
+	)
+	(fp_line
+		(start -3.1 1.1)
+		(end -3.1 2.05)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7f452c56-4651-4b45-9112-2df61e1e65a0")
+	)
+	(fp_line
+		(start -3.1 2.05)
+		(end 3.1 2.05)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7e87a386-afc7-43ef-bc3c-bb67ca252374")
+	)
+	(fp_line
+		(start 3.1 -2.05)
+		(end 3.1 -1.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "926ceca1-aad5-419b-9b40-956e06b0bf0c")
+	)
+	(fp_line
+		(start 3.1 2.05)
+		(end 3.1 1.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "775d2395-5a07-4f61-9c91-b00672c42e55")
+	)
+	(fp_circle
+		(center -2.6 -1.2)
+		(end -2.5 -1.2)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "e5708ea1-8d88-4fda-8ab2-eb53767acbd0")
+	)
+	(fp_line
+		(start -4.25 -2.25)
+		(end -4.25 2.25)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "525510eb-2b74-4a53-9207-52d9e3f54fa0")
+	)
+	(fp_line
+		(start -4.25 2.25)
+		(end 4.15 2.25)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "6c320017-d2dc-49c2-8758-a1106c0b961d")
+	)
+	(fp_line
+		(start 4.15 -2.25)
+		(end -4.25 -2.25)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "f2c52390-59e3-448c-84fe-097da6b1c2b2")
+	)
+	(fp_line
+		(start 4.15 2.25)
+		(end 4.15 -2.25)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "4a083685-2e1e-4d32-b5c4-25fa68b455f7")
+	)
+	(fp_line
+		(start -3 -1.95)
+		(end -3 1.95)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9b012bb1-8d28-4946-999e-46eff9fb5416")
+	)
+	(fp_line
+		(start -3 1.95)
+		(end 3 1.95)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bc1bf5a0-322e-4673-847e-03df482ae0fe")
+	)
+	(fp_line
+		(start 3 -1.95)
+		(end -3 -1.95)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7ef0f842-c602-497b-bb85-234390c22c48")
+	)
+	(fp_line
+		(start 3 1.95)
+		(end 3 -1.95)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "013cb3fc-f7cb-45e4-82bd-474bf7911049")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -2.3 0.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "cf8cbbd2-82a9-4445-be09-813d15b7bd11")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(pad "1" smd rect
+		(at -3.25 0)
+		(size 1.5 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "a703a0ce-4922-4891-a892-b15f76397bcb")
+	)
+	(pad "2" smd rect
+		(at 3.25 0)
+		(size 1.5 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "71727c36-1612-4b8d-84fe-028161cb9230")
+	)
+	(embedded_fonts no)
+)

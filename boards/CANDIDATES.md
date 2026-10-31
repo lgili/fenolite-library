@@ -93,3 +93,18 @@ Notes:
   footprints for derived boards. Whether every `*-badge` footprint holds the MNT logo was not checked by rendering.
 - **Not confirmed:** the licences of the bms-c1 library submodules; no trademark file exists for Antmicro or Libre
   Solar beyond Apache-2.0 §6 and CERN-OHL.
+
+## Status on 2026-10-31 (Fenolite at change c0277)
+
+Converted with no item left out and a passing fidelity proof (`verify-source`, accepted differences listed with
+their reasons in each `PROVENANCE.json`): `ecc83`, `sonde_xilinx`, `video`, `interf_u`, `pic_programmer`,
+`complex_hierarchy`, `multichannel`, `microwave`, `openair-max` (`cc-by-sa/kicad-demos/`), `tiny_tapeout`
+(`apache-2.0/kicad-demos/`) and `royalblue54L_feather` (`cern-ohl-p/kicad-demos/`). This supersedes the status
+column of the table above for those rows.
+
+Not updated:
+
+- `kit-dev-coldfire-xilinx_5213`: the item of 2026-10-30 stays. A new conversion imports with nothing left out,
+  but level 6 of the proof reports 14 courtyards on `F.CrtYd` missing in the build (issue 13).
+- `cm5_minima`: imports with nothing left out; the proof differs in 108 user fields (names, layers, sizes), and the
+  footprints with EasyEDA-style names still need the policy review noted above before entry.

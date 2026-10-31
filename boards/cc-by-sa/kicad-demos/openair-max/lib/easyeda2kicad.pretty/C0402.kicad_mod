@@ -1,0 +1,202 @@
+(footprint "C0402"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(property "Reference" "REF**"
+		(at -1.9 0 0)
+		(layer "F.SilkS")
+		(uuid "072bac1c-d8c0-4e7c-82b4-c29ee31e47b6")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "C0402"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "accf8dd1-0d56-4ac4-b360-81ea7dbdf30d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://lcsc.com/product-detail/Others_YAGEO-CC0402KRX7R6BB104_C309458.html"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "da6da245-f2a3-4936-af75-4cef7499ee59")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0141fac6-559b-4631-bd96-5660f0d0b891")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.17 -0.35)
+		(end -1.17 0.35)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "720f564f-3241-49aa-983d-97242ced20e5")
+	)
+	(fp_line
+		(start -1.02 0.5)
+		(end -0.23 0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e8765995-5f55-4839-bf7c-1c4ffec0322c")
+	)
+	(fp_line
+		(start -0.23 -0.5)
+		(end -1.02 -0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "266609a8-af92-4e45-a35f-3ad3532e9097")
+	)
+	(fp_line
+		(start 0.23 -0.5)
+		(end 1.02 -0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3045c586-5cc8-4f69-bb37-f46c71a660b7")
+	)
+	(fp_line
+		(start 1.02 0.5)
+		(end 0.23 0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "320ff565-ef7f-449f-a185-82589bd658cb")
+	)
+	(fp_line
+		(start 1.17 -0.35)
+		(end 1.17 0.35)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6607927f-fb24-40bc-b06a-9fbb9c3afd38")
+	)
+	(fp_arc
+		(start -1.17 0.35)
+		(mid -1.126066 0.456066)
+		(end -1.02 0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f8dd4613-2e23-413d-852e-d7604a91b0a4")
+	)
+	(fp_arc
+		(start -1.02 -0.5)
+		(mid -1.126066 -0.456066)
+		(end -1.17 -0.35)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "72f52de8-0a7a-46c0-a32a-8e2a425c56ea")
+	)
+	(fp_arc
+		(start 1.02 0.5)
+		(mid 1.126066 0.456066)
+		(end 1.17 0.35)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "aee502e4-27a0-4a36-8b0a-6b1314398713")
+	)
+	(fp_arc
+		(start 1.17 -0.35)
+		(mid 1.126066 -0.456066)
+		(end 1.02 -0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "518ac8d2-801a-4846-8704-8b28ed562678")
+	)
+	(fp_circle
+		(center -0.5 0.25)
+		(end -0.47 0.25)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "cff22896-dfd5-4f71-bd8f-002a87f40fec")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "b3243447-3fcf-4720-a667-1e319f1ec996")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.55 0)
+		(size 0.79 0.54)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b2a1628b-865e-4bec-b6e3-8c7899bfa669")
+	)
+	(pad "2" smd rect
+		(at 0.55 0)
+		(size 0.79 0.54)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "263648bd-903a-4d82-8c24-50a987df3409")
+	)
+	(embedded_fonts no)
+	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/C0402_L1.0-W0.5-H0.5.wrl"
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

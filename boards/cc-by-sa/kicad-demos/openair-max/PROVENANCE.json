@@ -1,0 +1,2766 @@
+{
+  "authors": [
+    "AirGradient"
+  ],
+  "conversion": {
+    "outputs_tree": null,
+    "steps": [
+      {
+        "argv": [
+          "import",
+          "upstream/demos/openair-max/One-Air-Max.kicad_pro",
+          "--to",
+          "python",
+          "--out",
+          "out",
+          "--licence",
+          "CC-BY-SA-4.0",
+          "--source",
+          "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/openair-max",
+          "--revision",
+          "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "--timestamp",
+          "2026-10-31T00:00:00Z",
+          "--confirm"
+        ],
+        "tool": "fenolite"
+      },
+      {
+        "argv": [
+          "verify-source",
+          "out/design.py",
+          "--against",
+          "upstream/demos/openair-max/One-Air-Max.kicad_pro",
+          "--provenance",
+          "out/PROVENANCE.json",
+          "--record",
+          "--confirm"
+        ],
+        "tool": "fenolite"
+      }
+    ],
+    "tools": [
+      {
+        "commit": "628954b730629bfaf6beffc7b6a31a0671150ff1",
+        "name": "fenolite",
+        "version": "0.7.0.dev0"
+      }
+    ]
+  },
+  "copyright": [],
+  "evidence": "UNVERIFIED",
+  "featured": null,
+  "fidelity": {
+    "accepted": [
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "lib_ref",
+        "id": "A001",
+        "kind": "footprint-name",
+        "level": 3,
+        "reason": "The import writes a footprint instance that differs from the first footprint of its name (moved fields, edited pads) as a variant footprint <name>_<n> (import.footprint-variant).",
+        "where": "*"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "name",
+        "id": "A002",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The build adds the property fenolite.path (the layout lens key) to every footprint; the original has no such field. Not a difference of the design.",
+        "where": "*:fenolite.path"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A003",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "Battery1:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A004",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C11:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A005",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C12:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A006",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C14:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A007",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C15:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A008",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C16:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A009",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C16:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A010",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C17:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A011",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C17:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A012",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C18:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A013",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C18:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A014",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C19:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A015",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C19:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A016",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C1:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A017",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C20:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A018",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C21:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A019",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C21:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A020",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C22:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A021",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C22:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A022",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C23:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A023",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C24:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A024",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C25:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A025",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C26:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A026",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C27:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A027",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C28:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A028",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C29:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A029",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C2:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A030",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C2:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A031",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C30:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A032",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C30:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A033",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C31:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A034",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C31:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A035",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C32:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A036",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C33:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A037",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C33:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A038",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C34:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A039",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C34:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A040",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C35:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A041",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C35:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A042",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C36:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A043",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C36:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A044",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C37:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A045",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C38:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A046",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C39:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A047",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C39:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A048",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C3:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A049",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C40:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A050",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C41:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A051",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C42:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A052",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C42:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A053",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C43:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A054",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C43:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A055",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C44:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A056",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C44:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A057",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C45:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A058",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C46:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A059",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C47:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A060",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C48:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A061",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C49:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A062",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C49:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A063",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C4:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A064",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C50:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A065",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C51:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A066",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C52:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A067",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C53:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A068",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C53:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A069",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C54:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A070",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C55:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A071",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C56:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A072",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C57:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A073",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C58:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A074",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C59:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A075",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C5:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A076",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C5:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A077",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C60:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A078",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C61:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A079",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C61:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A080",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C62:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A081",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C62:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A082",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C63:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A083",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C64:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A084",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C65:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A085",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C66:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A086",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C66:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A087",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C67:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A088",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C68:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A089",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C6:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A090",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C70:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A091",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C71:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A092",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C72:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A093",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C73:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A094",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C73:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A095",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C74:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A096",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C7:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A097",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C8:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A098",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C9:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A099",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C9:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A100",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "CE1:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A101",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "CO2:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A102",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D1:Availability"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A103",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D1:Check_prices"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "name",
+        "id": "A104",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A hidden property whose name repeats another property of the footprint (KiCad names the copy with a suffix); a component holds one property per name, so the build writes the first. See boards/ISSUES.md.",
+        "where": "D1:Description_1"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A105",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D1:HEIGHT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A106",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D1:MANUFACTURER_NAME"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A107",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D1:MANUFACTURER_PART_NUMBER"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A108",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D1:MF"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A109",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D1:MOUSER_PART_NUMBER"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A110",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D1:MOUSER_PRICE-STOCK"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A111",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D1:MP"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A112",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D1:Package"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A113",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D1:Price"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A114",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D1:SnapEDA_Link"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A115",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D2:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A116",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D3:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A117",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D4:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A118",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D4:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A119",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D5:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A120",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D5:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A121",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D6:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A122",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D6:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A123",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D7:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A124",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "D7:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A125",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "F1:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A126",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "F1:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A127",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "FB1:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A128",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "I2C3:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A129",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "IO1:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A130",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "JP2:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A131",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "L1:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A132",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "L2:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A133",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "L3:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A134",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "L3:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A135",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "LED3:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A136",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "NO2:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A137",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "PM1:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A138",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "PM2:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A139",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R10:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A140",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R11:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A141",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R12:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A142",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R12:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A143",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R13:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A144",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R14:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A145",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R14:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A146",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R15:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A147",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R15:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A148",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R16:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A149",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R17:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A150",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R18:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A151",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R19:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A152",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R1:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A153",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R1:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A154",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R20:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A155",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R21:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A156",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R22:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A157",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R22:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A158",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R23:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A159",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R23:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A160",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R24:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A161",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R25:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A162",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R25:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A163",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R26:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A164",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R26:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A165",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R27:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A166",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R28:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A167",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R29:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A168",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R2:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A169",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R2:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A170",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R30:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A171",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R31:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A172",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R32:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A173",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R33:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A174",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R34:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A175",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R35:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A176",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R35:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A177",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R36:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A178",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R37:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A179",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R38:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A180",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R39:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A181",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R3:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A182",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R40:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A183",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R40:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A184",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R41:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A185",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R41:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A186",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R42:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A187",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R43:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A188",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R44:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A189",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R45:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A190",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R46:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A191",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R47:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A192",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R48:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A193",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R49:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A194",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R49:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A195",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R4:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A196",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R50:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A197",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R50:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A198",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R51:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A199",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R52:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A200",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R56:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A201",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R57:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A202",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R57:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A203",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R58:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A204",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R59:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A205",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R5:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A206",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R60:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A207",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R61:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A208",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R62:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A209",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R63:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A210",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R64:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A211",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R65:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A212",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R66:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A213",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R67:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A214",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R69:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A215",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R6:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A216",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R70:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A217",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R71:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A218",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R72:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A219",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R72:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A220",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R73:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A221",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R73:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A222",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R74:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A223",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R75:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A224",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R75:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A225",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R76:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A226",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R77:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A227",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R78:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A228",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R7:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A229",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R7:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A230",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R8:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A231",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R9:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A232",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R9:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A233",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "TP1:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A234",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "TP2:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A235",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U12:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A236",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U13:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A237",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U14:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A238",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U14:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A239",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U15:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A240",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U16:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A241",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U17:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A242",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U18:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A243",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U1:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A244",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U2:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A245",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U3:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A246",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U3:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A247",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U4:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A248",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U4:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A249",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U5:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A250",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U5:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A251",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U6:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A252",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U6:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A253",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U7:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A254",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U8:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A255",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "U8:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A256",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "X1:LCSC Part"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A257",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "X1:Reference"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "id": "A258",
+        "kind": "render-missing",
+        "level": 8,
+        "reason": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276).",
+        "where": "sheet:*"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "id": "A259",
+        "kind": "render-pixels",
+        "level": 8,
+        "reason": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276; level S is skipped as drawn-unavailable).",
+        "where": "sheet:*"
+      }
+    ],
+    "proof": {
+      "against": {
+        "Battery-Holder.kicad_sch": "434f095724ba741e3b15a1a1fedce93b8262ffdd1144a61ef4c0966791279f04",
+        "One-Air-Max.kicad_pcb": "a577ba5e2b337c9b827f3c30256161a1893da8303d278fb7db10dba4f02ea810",
+        "One-Air-Max.kicad_pro": "d64469625e0a2d874a7073dd13145a37ab1d33218cc2150fb55fe6f424911fa5",
+        "One-Air-Max.kicad_sch": "dd5b65cdbfa1735d21bd6b6e00b61b386bb89b8f1c9a282f753ed63c20387f87",
+        "Solar-Module.kicad_sch": "ba1e342f29ba5b6150f6d71bdeefaea6e2c1874482ccc5ddec3293dfa314ca9d"
+      },
+      "date": "2026-10-31T08:53:58Z",
+      "fenolite": "0.7.0.dev0",
+      "levels": {
+        "1": "equal",
+        "2": "equal",
+        "3": "accepted",
+        "4": "equal",
+        "5": "equal",
+        "6": "equal",
+        "7": "accepted",
+        "8": "accepted",
+        "S": "skipped"
+      },
+      "script_sha256": "54a0cdeada53b75191042318d4318282553641cdfd77706848d39de3dcc1f748",
+      "tolerances": {
+        "angle_udeg": 0,
+        "frame": "absolute",
+        "length_nm": 0,
+        "length_ppm": 0,
+        "pixel_ppm": 1000,
+        "render_pitch_um": 50
+      }
+    }
+  },
+  "id": "kicad-demos/openair-max",
+  "import": {
+    "copyright": [],
+    "date": "2026-10-31",
+    "design": "One-Air-Max",
+    "equivalence": {
+      "equivalent": true,
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "fenolite": "0.7.0.dev0",
+    "findings": {
+      "import.board-only": 1,
+      "import.footprint-variant": 160,
+      "import.provenance-missing": 1,
+      "import.schematic-generated": 1,
+      "import.sheet-renamed": 2,
+      "import.symbol-regenerated": 1
+    },
+    "inputs": [
+      {
+        "file": "Battery-Holder.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "434f095724ba741e3b15a1a1fedce93b8262ffdd1144a61ef4c0966791279f04",
+        "version": null
+      },
+      {
+        "file": "One-Air-Max.kicad_pcb",
+        "format": "kicad_pcb",
+        "sha256": "a577ba5e2b337c9b827f3c30256161a1893da8303d278fb7db10dba4f02ea810",
+        "version": 20241229
+      },
+      {
+        "file": "One-Air-Max.kicad_pro",
+        "format": "kicad_pro",
+        "sha256": "d64469625e0a2d874a7073dd13145a37ab1d33218cc2150fb55fe6f424911fa5",
+        "version": 3
+      },
+      {
+        "file": "One-Air-Max.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "dd5b65cdbfa1735d21bd6b6e00b61b386bb89b8f1c9a282f753ed63c20387f87",
+        "version": null
+      },
+      {
+        "file": "Solar-Module.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "ba1e342f29ba5b6150f6d71bdeefaea6e2c1874482ccc5ddec3293dfa314ca9d",
+        "version": null
+      }
+    ],
+    "licence": "CC-BY-SA-4.0",
+    "notices": [],
+    "schema": "fenolite.import-provenance.v0",
+    "source": {
+      "revision": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+      "url": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/openair-max"
+    },
+    "tools": {},
+    "upgrade": []
+  },
+  "kind": "board",
+  "licence_text_sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
+  "modification_notice": "2026-10-31: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; every item of the board is expressed (no content was left out)",
+  "origin": "converted",
+  "schema": "fenolite.provenance.v0",
+  "spdx": "CC-BY-SA-4.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": {
+    "archive_sha256": null,
+    "commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+    "licence_files": [
+      "demos/openair-max/LICENSE.txt"
+    ],
+    "path": "demos/openair-max",
+    "retrieved": "2026-10-31",
+    "source_location": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/openair-max",
+    "spdx_expression": "CC-BY-SA-4.0",
+    "url": "https://gitlab.com/kicad/code/kicad"
+  },
+  "version": "1.0.0"
+}

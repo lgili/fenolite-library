@@ -1,0 +1,359 @@
+(footprint "D_DO-35_SOD27_P7.62mm_Horizontal_7"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
+	(tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
+	(property "Reference" "REF**"
+		(at 1.524 2.159 0)
+		(layer "F.SilkS")
+		(uuid "6573eb78-5601-42dc-ac88-3ea7cf6e17ab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "D_DO-35_SOD27_P7.62mm_Horizontal_7"
+		(at 5.207 2.12 0)
+		(layer "F.Fab")
+		(uuid "24d60083-114f-4604-bccf-36b7e8a82c3c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5ba14d1f-86b0-41e8-b0c1-9ca6cfa4ccf9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e1b77ac7-cdb8-4ebc-a981-6635a1dcf8ed")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start 5.93 -1.12)
+		(end 1.69 -1.12)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4ec4181e-4e35-465a-b3f2-c56d0a4ca5a7")
+	)
+	(fp_line
+		(start 2.53 -1.12)
+		(end 2.53 1.12)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "61db4fb7-e0b9-40db-83b6-8901b2203071")
+	)
+	(fp_line
+		(start 2.41 -1.12)
+		(end 2.41 1.12)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cb98abca-5add-4bb6-80f6-7cd5cd14ad6d")
+	)
+	(fp_line
+		(start 2.29 -1.12)
+		(end 2.29 1.12)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "443d7759-283e-4138-ba37-75f964cc13af")
+	)
+	(fp_line
+		(start 1.69 -1.12)
+		(end 1.69 1.12)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f569a360-7bf0-4a2e-810b-7162d68d34eb")
+	)
+	(fp_line
+		(start 6.58 0)
+		(end 5.93 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "010d5c6b-77cd-432a-a84b-724e989a9477")
+	)
+	(fp_line
+		(start 1.04 0)
+		(end 1.69 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d2fb6b08-274c-4367-8037-be4794565601")
+	)
+	(fp_line
+		(start 5.93 1.12)
+		(end 5.93 -1.12)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4b185659-f5b3-4aff-ba60-f8f446571267")
+	)
+	(fp_line
+		(start 1.69 1.12)
+		(end 5.93 1.12)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e0e2747a-3e62-4098-806d-3df4f537b950")
+	)
+	(fp_line
+		(start 8.67 -1.25)
+		(end -1.05 -1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "99b1bedb-d270-429e-b35e-17f468cbf5cd")
+	)
+	(fp_line
+		(start -1.05 -1.25)
+		(end -1.05 1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "435f787f-e3b6-478d-9b2f-8c919eca5edd")
+	)
+	(fp_line
+		(start 8.67 1.25)
+		(end 8.67 -1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "aeeb5f0e-b56c-463e-b38a-e2c1bdf44e51")
+	)
+	(fp_line
+		(start -1.05 1.25)
+		(end 8.67 1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f2d15c83-46cd-4ea8-b472-a76bb9b52b26")
+	)
+	(fp_line
+		(start 5.81 -1)
+		(end 1.81 -1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1e73d790-4043-4120-a762-8116230100d3")
+	)
+	(fp_line
+		(start 2.51 -1)
+		(end 2.51 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1eb65e59-bd0c-479c-8329-7a074dc45f84")
+	)
+	(fp_line
+		(start 2.41 -1)
+		(end 2.41 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "97e8a000-adb0-4b5e-9569-46b002f10183")
+	)
+	(fp_line
+		(start 2.31 -1)
+		(end 2.31 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b39a235f-e3b8-4ece-ada8-f98b1732d96e")
+	)
+	(fp_line
+		(start 1.81 -1)
+		(end 1.81 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5fb68a53-061d-45bc-a0b6-57db113f4e92")
+	)
+	(fp_line
+		(start 7.62 0)
+		(end 5.81 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d0c8d399-1596-4e9c-8625-cf5c69e51208")
+	)
+	(fp_line
+		(start 0 0)
+		(end 1.81 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "61860f9c-cf07-4cc2-ab94-8414fb5ef04d")
+	)
+	(fp_line
+		(start 5.81 1)
+		(end 5.81 -1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1bcc19dc-337a-40a5-a2f3-0de78f5ac5f7")
+	)
+	(fp_line
+		(start 1.81 1)
+		(end 5.81 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "10ef29d6-ee8c-4e0a-aedf-f4618018ec10")
+	)
+	(fp_text user "K"
+		(at 0 -1.8 0)
+		(layer "F.SilkS")
+		(uuid "568b8416-3697-48ce-8cf9-3ccabc1d6dcf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "K"
+		(at 0 -1.8 0)
+		(layer "F.Fab")
+		(uuid "bcd28cd3-3cc2-4405-94c8-65460da2fdb8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 4.11 0 0)
+		(layer "F.Fab")
+		(uuid "e46f0e92-158e-43e2-9718-8e1c423da853")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges no)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "84d380ab-7974-40b7-b5eb-4f9b04d2b568")
+	)
+	(pad "2" thru_hole oval
+		(at 7.62 0)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges no)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "7b2ce432-6ca7-4fc4-b080-561713a75bef")
+	)
+	(embedded_fonts no)
+	(model "${KICAD6_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-35_SOD27_P7.62mm_Horizontal.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,2008 @@
+(kicad_symbol_lib
+	(version 20241209)
+	(generator "fenolite")
+	(symbol "Altech_AK300_1x02_P5.00mm_45-Degree"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "P"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "Altech_AK300_1x02_P5.00mm_45-Degree"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "Altech_AK300_1x02_P5.00mm_45-Degree_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "Altech_AK300_1x02_P5.00mm_45-Degree_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "Altech_AK300_1x02_P5.00mm_45-Degree_2"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "P"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "Altech_AK300_1x02_P5.00mm_45-Degree_2"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "Altech_AK300_1x02_P5.00mm_45-Degree_2_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "Altech_AK300_1x02_P5.00mm_45-Degree_2_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "Altech_AK300_1x02_P5.00mm_45-Degree_3"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "P"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "Altech_AK300_1x02_P5.00mm_45-Degree_3"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "Altech_AK300_1x02_P5.00mm_45-Degree_3_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "Altech_AK300_1x02_P5.00mm_45-Degree_3_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "Altech_AK300_1x02_P5.00mm_45-Degree_4"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "P"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "Altech_AK300_1x02_P5.00mm_45-Degree_4"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "Altech_AK300_1x02_P5.00mm_45-Degree_4_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "Altech_AK300_1x02_P5.00mm_45-Degree_4_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "Altech_AK300_1x02_P5.00mm_45-Degree_5"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "P"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "Altech_AK300_1x02_P5.00mm_45-Degree_5"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "Altech_AK300_1x02_P5.00mm_45-Degree_5_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "Altech_AK300_1x02_P5.00mm_45-Degree_5_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "Altech_AK300_1x02_P5.00mm_45-Degree_6"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "P"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "Altech_AK300_1x02_P5.00mm_45-Degree_6"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "Altech_AK300_1x02_P5.00mm_45-Degree_6_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "Altech_AK300_1x02_P5.00mm_45-Degree_6_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal_2"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal_2"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal_2_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal_2_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal_3"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal_3"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal_3_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal_3_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal_4"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal_4"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal_4_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal_4_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "CP_Axial_L11.0mm_D6.0mm_P18.00mm_Horizontal"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "CP_Axial_L11.0mm_D6.0mm_P18.00mm_Horizontal"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "CP_Axial_L11.0mm_D6.0mm_P18.00mm_Horizontal_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "CP_Axial_L11.0mm_D6.0mm_P18.00mm_Horizontal_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_Disc_D5.0mm_W2.5mm_P5.00mm"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_2"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_Disc_D5.0mm_W2.5mm_P5.00mm_2"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_2_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_2_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_3"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_Disc_D5.0mm_W2.5mm_P5.00mm_3"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_3_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_3_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_4"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_Disc_D5.0mm_W2.5mm_P5.00mm_4"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_4_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_4_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_5"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_Disc_D5.0mm_W2.5mm_P5.00mm_5"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_5_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_5_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_6"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_Disc_D5.0mm_W2.5mm_P5.00mm_6"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_6_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_6_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_7"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_Disc_D5.0mm_W2.5mm_P5.00mm_7"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_7_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_7_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_8"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_Disc_D5.0mm_W2.5mm_P5.00mm_8"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_8_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_Disc_D5.0mm_W2.5mm_P5.00mm_8_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "DIP-8_W7.62mm_LongPads"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "DIP-8_W7.62mm_LongPads"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "DIP-8_W7.62mm_LongPads_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -20.32) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "DIP-8_W7.62mm_LongPads_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -5.08 0)
+				(length 2.54)
+				(name "3" (effects (font (size 1.27 1.27))))
+				(number "3" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -7.62 0)
+				(length 2.54)
+				(name "4" (effects (font (size 1.27 1.27))))
+				(number "4" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -10.16 0)
+				(length 2.54)
+				(name "5" (effects (font (size 1.27 1.27))))
+				(number "5" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -12.7 0)
+				(length 2.54)
+				(name "6" (effects (font (size 1.27 1.27))))
+				(number "6" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -15.24 0)
+				(length 2.54)
+				(name "7" (effects (font (size 1.27 1.27))))
+				(number "7" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -17.78 0)
+				(length 2.54)
+				(name "8" (effects (font (size 1.27 1.27))))
+				(number "8" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "D_DO-35_SOD27_P7.62mm_Horizontal"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_2"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "D_DO-35_SOD27_P7.62mm_Horizontal_2"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_2_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_2_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_3"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "D_DO-35_SOD27_P7.62mm_Horizontal_3"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_3_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_3_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_4"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "D_DO-35_SOD27_P7.62mm_Horizontal_4"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_4_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_4_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_5"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "D_DO-35_SOD27_P7.62mm_Horizontal_5"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_5_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_5_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_6"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "D_DO-35_SOD27_P7.62mm_Horizontal_6"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_6_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_6_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_7"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "D_DO-35_SOD27_P7.62mm_Horizontal_7"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_7_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_7_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_8"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "D_DO-35_SOD27_P7.62mm_Horizontal_8"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_8_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "D_DO-35_SOD27_P7.62mm_Horizontal_8_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "D_DO-41_SOD81_P12.70mm_Horizontal"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "D_DO-41_SOD81_P12.70mm_Horizontal"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "D_DO-41_SOD81_P12.70mm_Horizontal_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "D_DO-41_SOD81_P12.70mm_Horizontal_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "Potentiometer_Bourns_3266W_Vertical"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "RV"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "Potentiometer_Bourns_3266W_Vertical"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "Potentiometer_Bourns_3266W_Vertical_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -7.62) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "Potentiometer_Bourns_3266W_Vertical_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -5.08 0)
+				(length 2.54)
+				(name "3" (effects (font (size 1.27 1.27))))
+				(number "3" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_10"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_10"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_10_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_10_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_11"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_11"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_11_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_11_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_2"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_2"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_2_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_2_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_3"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_3"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_3_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_3_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_4"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_4"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_4_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_4_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_5"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_5"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_5_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_5_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_6"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_6"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_6_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_6_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_7"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_7"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_7_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_7_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_8"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_8"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_8_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_8_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_9"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_9"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_9_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal_9_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "TO-92_HandSolder"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "Q"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "TO-92_HandSolder"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "TO-92_HandSolder_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -7.62) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "TO-92_HandSolder_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -5.08 0)
+				(length 2.54)
+				(name "3" (effects (font (size 1.27 1.27))))
+				(number "3" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "TO-92_HandSolder_2"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "Q"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "TO-92_HandSolder_2"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "TO-92_HandSolder_2_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -7.62) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "TO-92_HandSolder_2_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -5.08 0)
+				(length 2.54)
+				(name "3" (effects (font (size 1.27 1.27))))
+				(number "3" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "TO-92_HandSolder_3"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "Q"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "TO-92_HandSolder_3"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "TO-92_HandSolder_3_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -7.62) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "TO-92_HandSolder_3_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -5.08 0)
+				(length 2.54)
+				(name "3" (effects (font (size 1.27 1.27))))
+				(number "3" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "TO-92_HandSolder_4"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "Q"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "TO-92_HandSolder_4"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "TO-92_HandSolder_4_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -7.62) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "TO-92_HandSolder_4_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -5.08 0)
+				(length 2.54)
+				(name "3" (effects (font (size 1.27 1.27))))
+				(number "3" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "TO-92_HandSolder_5"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "Q"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "TO-92_HandSolder_5"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "TO-92_HandSolder_5_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -7.62) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "TO-92_HandSolder_5_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -5.08 0)
+				(length 2.54)
+				(name "3" (effects (font (size 1.27 1.27))))
+				(number "3" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "TO-92_HandSolder_6"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "Q"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "TO-92_HandSolder_6"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "TO-92_HandSolder_6_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -7.62) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "TO-92_HandSolder_6_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -5.08 0)
+				(length 2.54)
+				(name "3" (effects (font (size 1.27 1.27))))
+				(number "3" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "TO-92_HandSolder_7"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "TO-92_HandSolder_7"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "TO-92_HandSolder_7_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -7.62) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "TO-92_HandSolder_7_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -5.08 0)
+				(length 2.54)
+				(name "3" (effects (font (size 1.27 1.27))))
+				(number "3" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+)

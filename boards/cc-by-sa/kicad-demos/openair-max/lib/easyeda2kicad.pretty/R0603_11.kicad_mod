@@ -1,0 +1,158 @@
+(footprint "R0603_11"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(property "Reference" "REF**"
+		(at -2.075 -0.075 -90)
+		(layer "F.SilkS")
+		(uuid "e19f7f27-b56b-42f7-8189-663448c21fda")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "R0603_11"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "7ac5e1b9-62c7-41c0-95a7-37c6cc3113bb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_0R-0R-1_C100044.html"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "da196494-f609-4a39-86ca-784dda2451e0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6ebc6b76-56ec-4fcc-88c8-6a33b996d90b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 1.39 0.66)
+		(end 0.43 0.66)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a7d6f73e-f0db-438d-859b-417e63b7fa45")
+	)
+	(fp_line
+		(start -1.39 0.66)
+		(end -0.43 0.66)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "abc877ee-c1f8-4da8-85f6-554fddd25c7d")
+	)
+	(fp_line
+		(start 1.39 -0.66)
+		(end 1.39 0.66)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "95b879d3-0648-47c9-a86c-67b25fe7ce0e")
+	)
+	(fp_line
+		(start 0.43 -0.66)
+		(end 1.39 -0.66)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e2f530b3-778c-4c50-b672-87975214d6d1")
+	)
+	(fp_line
+		(start -0.43 -0.66)
+		(end -1.39 -0.66)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "25ecc6bc-cbee-4f2f-8b75-4e047198fd14")
+	)
+	(fp_line
+		(start -1.39 -0.66)
+		(end -1.39 0.66)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d8a3082f-c41a-433d-8db4-50fdb9867844")
+	)
+	(fp_circle
+		(center -0.8 0.4)
+		(end -0.77 0.4)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "6dcb4775-90d0-4d77-a015-31289654106a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "f2c681f6-8440-46f0-96b4-7493f715f50a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.75 0)
+		(size 0.81 0.86)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ecac233d-9da2-44f1-977b-a0f17ac02e13")
+	)
+	(pad "2" smd rect
+		(at 0.75 0)
+		(size 0.81 0.86)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a5879ad3-def1-475c-b28e-93e8e5d9c45a")
+	)
+	(embedded_fonts no)
+	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/R0603.wrl"
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 270)
+		)
+	)
+)

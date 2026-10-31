@@ -1,0 +1,234 @@
+(footprint "SOT-223-3_TabPin2"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(descr "module CMS SOT223 4 pins")
+	(tags "CMS SOT")
+	(property "Reference" "REF**"
+		(at 3.1 -2.9 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "23732f39-a9b6-4c79-a180-127a3a070231")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SOT-223-3_TabPin2"
+		(at 1.2 -0.05 -90)
+		(layer "F.Fab")
+		(uuid "d40908a5-5841-4a6d-b7fc-e4a6e03db275")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv1117lv.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "64da8ae3-c586-48e3-ab40-824aec1afa3e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f69f596e-cce7-4b72-9ce4-6447cecf624f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 1.91 -3.41)
+		(end 1.91 -2.15)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "baf46beb-053a-4dd6-ae3e-dfe183c8e549")
+	)
+	(fp_line
+		(start -1.85 -3.41)
+		(end 1.91 -3.41)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a6b55861-772d-4f9f-81d0-3a043da6d748")
+	)
+	(fp_line
+		(start 1.91 3.41)
+		(end 1.91 2.15)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a711b439-6298-4f84-9908-0bce4c84a320")
+	)
+	(fp_line
+		(start -1.85 3.41)
+		(end 1.91 3.41)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "93fc19ad-1150-4a77-839a-f40656e9b8b5")
+	)
+	(fp_line
+		(start 4.4 -3.6)
+		(end -4.4 -3.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "76c0e4ef-34ef-4868-a171-a2b9b3104f7c")
+	)
+	(fp_line
+		(start -4.4 -3.6)
+		(end -4.4 3.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b08d8de8-fa61-4038-b9a0-2db818a6471a")
+	)
+	(fp_line
+		(start 4.4 3.6)
+		(end 4.4 -3.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2dfa3081-3286-4bf7-9b2d-acc475446f37")
+	)
+	(fp_line
+		(start -4.4 3.6)
+		(end 4.4 3.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d25b5183-4a36-40bb-8920-9a84feb02510")
+	)
+	(fp_line
+		(start 1.85 -3.35)
+		(end 1.85 3.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "36f60a38-5c69-42d4-9d53-6d0c88bfcddb")
+	)
+	(fp_line
+		(start -0.85 -3.35)
+		(end 1.85 -3.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "295ea146-fd12-4fa2-ace9-bd3501c08f46")
+	)
+	(fp_line
+		(start -1.85 -2.35)
+		(end -0.85 -3.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "758f61fd-2971-4006-b3d8-8363aa9b0aa4")
+	)
+	(fp_line
+		(start -1.85 -2.35)
+		(end -1.85 3.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6a25cb10-de7e-4c5d-8f09-6d91f43a9d29")
+	)
+	(fp_line
+		(start -1.85 3.35)
+		(end 1.85 3.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a6825a2c-e78e-425e-9805-59ef0f2ac325")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 -90)
+		(layer "F.Fab")
+		(uuid "c033d197-4ba0-4c6d-81ad-2d010cf0112e")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -3.15 -2.3)
+		(size 2 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a106617d-794c-4832-bcf0-91c0007efb84")
+	)
+	(pad "2" smd rect
+		(at -3.15 0)
+		(size 2 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8005958d-a393-4561-a11c-fa7cfa713e66")
+	)
+	(pad "2" smd rect
+		(at 3.15 0)
+		(size 2 3.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2b79dbb8-136d-4343-864c-37a0661854f7")
+	)
+	(pad "3" smd rect
+		(at -3.15 2.3)
+		(size 2 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f786fd9e-1dbd-4d7d-a433-8bac657987a3")
+	)
+	(embedded_fonts no)
+	(model "${KICAD6_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-223.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

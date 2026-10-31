@@ -1,0 +1,307 @@
+(footprint "Altech_AK300_1x02_P5.00mm_45-Degree_4"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(descr "Altech AK300 serie terminal block (Script generated with StandardBox.py) (http://www.altechcorp.com/PDFS/PCBMETRC.PDF)")
+	(tags "Altech AK300 serie connector")
+	(property "Reference" "REF**"
+		(at 8.382 -0.127 90)
+		(layer "F.SilkS")
+		(uuid "f6700871-c2a7-471e-ad7f-6409f33fdfcc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Altech_AK300_1x02_P5.00mm_45-Degree_4"
+		(at 2.54 5.66 0)
+		(layer "F.Fab")
+		(uuid "16c05ce2-8335-4625-8206-3e152075c6cc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d3495b79-1256-4c58-8ce9-f570a009601d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b9c4cdf4-1cb3-45f4-a418-8ea009c40f30")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -3 -6.5)
+		(end 0 -6.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5c5260e8-5fe4-4673-845b-a0e4824d122a")
+	)
+	(fp_line
+		(start 7.62 -6.12)
+		(end 7.62 6.62)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c8b17346-76df-421c-9a2a-0d22d95db6f9")
+	)
+	(fp_line
+		(start 7.62 -6.12)
+		(end 7.62 6.62)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e9a8937c-b767-452b-b411-3a38ac372684")
+	)
+	(fp_line
+		(start -2.62 -6.12)
+		(end 7.62 -6.12)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5469daad-81f2-433b-b054-4e13e000afec")
+	)
+	(fp_line
+		(start -2.62 -6.12)
+		(end 7.62 -6.12)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9ee571aa-5ddc-4535-8d29-671f747b0f3b")
+	)
+	(fp_line
+		(start -2.62 -6.12)
+		(end -2.62 6.62)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5c444c6a-89d3-4cbd-9bc5-3cc8d51ff68e")
+	)
+	(fp_line
+		(start -2.62 -6.12)
+		(end -2.62 6.62)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8a780cef-6dd0-4ebf-8c2d-ad606e6ae7a1")
+	)
+	(fp_line
+		(start -3 -3.5)
+		(end -3 -6.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8e2f5519-c251-4c5b-b731-bdd18c871a15")
+	)
+	(fp_line
+		(start -2.62 6.62)
+		(end 7.62 6.62)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "030dcca0-4235-4ba6-a52c-8555a11d20a2")
+	)
+	(fp_line
+		(start -2.62 6.62)
+		(end 7.62 6.62)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "53a32260-c798-4f28-8601-44dc2defa6c4")
+	)
+	(fp_line
+		(start 7.75 -6.25)
+		(end 7.75 6.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "409aa313-9c45-4df9-8b5c-bf50a509d895")
+	)
+	(fp_line
+		(start -2.75 -6.25)
+		(end 7.75 -6.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "498ec769-4a8b-4b93-b09b-735b36a61421")
+	)
+	(fp_line
+		(start -2.75 -6.25)
+		(end -2.75 6.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "33d9d890-18af-4c04-aa5b-d0afde096dbb")
+	)
+	(fp_line
+		(start -2.75 6.75)
+		(end 7.75 6.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a189e6fb-a5f2-4da2-a647-1e2111b03447")
+	)
+	(fp_line
+		(start 7.5 -6)
+		(end 7.5 6.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2bfcf0b8-7ba6-4376-a805-84506b1a5606")
+	)
+	(fp_line
+		(start -2 -6)
+		(end 7.5 -6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e89f18e3-6e11-4df2-ba31-e23e6d1f3ab2")
+	)
+	(fp_line
+		(start -2.5 -5.5)
+		(end -2 -6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d3652898-8ff4-4aa4-af72-41e2fa3b8432")
+	)
+	(fp_line
+		(start 7.5 6.5)
+		(end -2.5 6.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8fb2ee2b-50da-4a16-b9e5-3ce5041b06a9")
+	)
+	(fp_line
+		(start -2.5 6.5)
+		(end -2.5 -5.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "90cbb8ca-5e8e-4c59-b0b6-64f2211c19c3")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2.54 3.2 0)
+		(layer "F.Fab")
+		(uuid "760174e0-6d37-4e4a-8804-b398bfa481b5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 3 3)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges no)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "0f606cd7-11c5-4247-ac4a-9e455f482959")
+	)
+	(pad "2" thru_hole circle
+		(at 5 0)
+		(size 3 3)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges no)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "494d7d22-49a1-4f50-9645-6003a5e73a70")
+	)
+	(embedded_fonts no)
+	(model "${KICAD6_3DMODEL_DIR}/TerminalBlock_Altech.3dshapes/Altech_AK300_1x02_P5.00mm_45-Degree.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

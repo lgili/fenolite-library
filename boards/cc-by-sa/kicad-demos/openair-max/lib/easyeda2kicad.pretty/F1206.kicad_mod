@@ -1,0 +1,180 @@
+(footprint "F1206"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(property "Reference" "REF**"
+		(at 1.765 -1.975 90)
+		(layer "F.SilkS")
+		(uuid "ab6a161f-4441-401d-8c32-df6ffb1b0422")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "F1206"
+		(at 0 4 180)
+		(layer "F.Fab")
+		(uuid "bc9f7270-dd1b-4ea9-b05c-0df71fdb804d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "74f76ae1-09bc-4dcb-81ff-0e78caf64bd2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c669e078-0e34-42ec-9c85-3e02a11d4a07")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.12 -1.09)
+		(end -0.93 -1.09)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "04f59057-8aea-4b41-9cc1-a23361c99de1")
+	)
+	(fp_line
+		(start 2.12 -1.09)
+		(end 0.93 -1.09)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "523045d7-df70-4046-b1d0-f1475fa116af")
+	)
+	(fp_line
+		(start -2.27 0.94)
+		(end -2.27 -0.94)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c220c8e8-f822-4eb0-bd60-93ff3deb8935")
+	)
+	(fp_line
+		(start 2.27 0.94)
+		(end 2.27 -0.94)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "921e9ab4-58bc-43e0-a282-34a69166c36a")
+	)
+	(fp_line
+		(start -0.93 1.09)
+		(end -2.12 1.09)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d9ff8502-34b7-43f4-9cb7-c776505d6308")
+	)
+	(fp_line
+		(start 0.93 1.09)
+		(end 2.12 1.09)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fde736ce-568f-48b9-b76b-f10a3fb4aa22")
+	)
+	(fp_arc
+		(start 0 -0.84)
+		(mid -0.112199 -0.418731)
+		(end 0.001269 0.002199)
+		(stroke
+			(width 0.08)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1f8adf42-cb39-4f09-8b67-40b2fb460e3b")
+	)
+	(fp_arc
+		(start 0 0.84)
+		(mid 0.112199 0.41873)
+		(end -0.001269 -0.002199)
+		(stroke
+			(width 0.08)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "55e40c00-5fb2-40ed-b14b-5916a14635aa")
+	)
+	(fp_circle
+		(center -1.6 0.8)
+		(end -1.57 0.8)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "3865c734-1ac6-4d9d-a219-5e2c558b3ced")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(uuid "6716bb74-4818-45a5-90e1-b64292269dbc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.45 0 360)
+		(size 1.19 1.73)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fb4a7677-4d81-4c2b-85d6-f3fbf1e0f5b0")
+	)
+	(pad "2" smd rect
+		(at 1.45 0 360)
+		(size 1.19 1.73)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ee7c2609-59ea-46f7-a5c4-dfa4a73adb96")
+	)
+	(embedded_fonts no)
+	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/F1206_L3.2-W1.7-H0.6.wrl"
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

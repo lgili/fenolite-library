@@ -1,0 +1,297 @@
+{
+  "authors": [
+    "KiCad project (no individual author is named in the demo's files)"
+  ],
+  "conversion": {
+    "outputs_tree": null,
+    "steps": [
+      {
+        "argv": [
+          "import",
+          "upstream/demos/complex_hierarchy/complex_hierarchy.kicad_pro",
+          "--to",
+          "python",
+          "--out",
+          "out",
+          "--licence",
+          "CC-BY-SA-4.0",
+          "--source",
+          "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/complex_hierarchy",
+          "--revision",
+          "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "--timestamp",
+          "2026-10-31T00:00:00Z",
+          "--confirm"
+        ],
+        "tool": "fenolite"
+      },
+      {
+        "argv": [
+          "verify-source",
+          "out/design.py",
+          "--against",
+          "upstream/demos/complex_hierarchy/complex_hierarchy.kicad_pro",
+          "--provenance",
+          "out/PROVENANCE.json",
+          "--record",
+          "--confirm"
+        ],
+        "tool": "fenolite"
+      }
+    ],
+    "tools": [
+      {
+        "commit": "628954b730629bfaf6beffc7b6a31a0671150ff1",
+        "name": "fenolite",
+        "version": "0.7.0.dev0"
+      }
+    ]
+  },
+  "copyright": [],
+  "evidence": "UNVERIFIED",
+  "featured": null,
+  "fidelity": {
+    "accepted": [
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "lib_ref",
+        "id": "A001",
+        "kind": "footprint-name",
+        "level": 3,
+        "reason": "The import writes a footprint instance that differs from the first footprint of its name (moved fields, edited pads) as a variant footprint <name>_<n> (import.footprint-variant).",
+        "where": "*"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "name",
+        "id": "A002",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The build adds the property fenolite.path (the layout lens key) to every footprint; the original has no such field. Not a difference of the design.",
+        "where": "*:fenolite.path"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A003",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:188595000,51816000-188595000,131826000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A004",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:188595000,51816000-188595000,131826000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A005",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:87900000,131826000-188595000,131826000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A006",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:87900000,131826000-188595000,131826000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A007",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:87900000,51800000-188595000,51816000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A008",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:87900000,51800000-188595000,51816000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A009",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:87900000,51800000-87900000,131826000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A010",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:87900000,51800000-87900000,131826000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "id": "A011",
+        "kind": "render-pixels",
+        "level": 8,
+        "reason": "Pixels of the upstream Edge.Cuts stroke, wider than the stroke the DSL board outline writes; the board shape is the same (see the level-7 graphic-missing entries).",
+        "where": "Edge.Cuts:88000000,131700000-188500000,131750000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "id": "A012",
+        "kind": "render-missing",
+        "level": 8,
+        "reason": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276).",
+        "where": "sheet:*"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "id": "A013",
+        "kind": "render-pixels",
+        "level": 8,
+        "reason": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276; level S is skipped as drawn-unavailable).",
+        "where": "sheet:*"
+      }
+    ],
+    "proof": {
+      "against": {
+        "ampli_ht.kicad_sch": "ef6f503f39f79a94ad6550268565d7418dde96b296f5f2971c97383603da18a3",
+        "complex_hierarchy.kicad_pcb": "d5f4162d4c766448832723d139f9e0fcb88a17c82340f10f6f6dc6c2042f0d69",
+        "complex_hierarchy.kicad_pro": "55438416ca7fd46b5bad22da2693e9c43240060977d06daabcba084aa17e2804",
+        "complex_hierarchy.kicad_sch": "4344cf98eac9e48262bc6092add7c0dffe27b560627d0658e5129250e7226e9e"
+      },
+      "date": "2026-10-31T08:41:25Z",
+      "fenolite": "0.7.0.dev0",
+      "levels": {
+        "1": "equal",
+        "2": "equal",
+        "3": "accepted",
+        "4": "equal",
+        "5": "equal",
+        "6": "equal",
+        "7": "accepted",
+        "8": "accepted",
+        "S": "skipped"
+      },
+      "script_sha256": "9bdbdeb52ac691421698123d761041433d64b4addb697b6fc35b36985e8ceec3",
+      "tolerances": {
+        "angle_udeg": 0,
+        "frame": "absolute",
+        "length_nm": 0,
+        "length_ppm": 0,
+        "pixel_ppm": 1000,
+        "render_pitch_um": 50
+      }
+    }
+  },
+  "id": "kicad-demos/complex_hierarchy",
+  "import": {
+    "copyright": [],
+    "date": "2026-10-31",
+    "design": "complex_hierarchy",
+    "equivalence": {
+      "equivalent": true,
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "fenolite": "0.7.0.dev0",
+    "findings": {
+      "import.footprint-variant": 38,
+      "import.provenance-missing": 1,
+      "import.schematic-generated": 1,
+      "import.symbol-regenerated": 1,
+      "import.teardrops-regenerated": 1
+    },
+    "inputs": [
+      {
+        "file": "ampli_ht.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "ef6f503f39f79a94ad6550268565d7418dde96b296f5f2971c97383603da18a3",
+        "version": null
+      },
+      {
+        "file": "complex_hierarchy.kicad_pcb",
+        "format": "kicad_pcb",
+        "sha256": "d5f4162d4c766448832723d139f9e0fcb88a17c82340f10f6f6dc6c2042f0d69",
+        "version": 20241229
+      },
+      {
+        "file": "complex_hierarchy.kicad_pro",
+        "format": "kicad_pro",
+        "sha256": "55438416ca7fd46b5bad22da2693e9c43240060977d06daabcba084aa17e2804",
+        "version": 3
+      },
+      {
+        "file": "complex_hierarchy.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "4344cf98eac9e48262bc6092add7c0dffe27b560627d0658e5129250e7226e9e",
+        "version": null
+      }
+    ],
+    "licence": "CC-BY-SA-4.0",
+    "notices": [],
+    "schema": "fenolite.import-provenance.v0",
+    "source": {
+      "revision": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+      "url": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/complex_hierarchy"
+    },
+    "tools": {},
+    "upgrade": []
+  },
+  "kind": "board",
+  "licence_text_sha256": "00ba11b9a22d453aed299954eaca389d8efef441a4673d84e2dc4ae10ebc7ca5",
+  "modification_notice": "2026-10-31: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; every item of the board is expressed (no content was left out)",
+  "origin": "converted",
+  "schema": "fenolite.provenance.v0",
+  "spdx": "CC-BY-SA-4.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": {
+    "archive_sha256": null,
+    "commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+    "licence_files": [
+      "LICENSE.CC-BY-SA-4.0"
+    ],
+    "path": "demos/complex_hierarchy",
+    "retrieved": "2026-10-31",
+    "source_location": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/complex_hierarchy",
+    "spdx_expression": "CC-BY-SA-4.0",
+    "url": "https://gitlab.com/kicad/code/kicad"
+  },
+  "version": "1.0.0"
+}

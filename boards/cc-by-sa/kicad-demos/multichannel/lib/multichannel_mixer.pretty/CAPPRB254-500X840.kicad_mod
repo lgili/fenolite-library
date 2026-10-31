@@ -1,0 +1,135 @@
+(footprint "CAPPRB254-500X840"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(descr "Capacitor, Polarized Radial Bead, Pin spacing 2.54mm - Body Diameter 5.5mm X Body Height 8.4mm")
+	(property "Reference" "REF**"
+		(at 3.4 -2.14 0)
+		(layer "F.SilkS")
+		(uuid "aa6b7118-9851-42e7-939b-f6b08733884d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CAPPRB254-500X840"
+		(at 0 3.601 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ab12deed-6efe-4e28-9183-bbef8227f7b5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CTEB_KEMET_T350.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "269b38aa-ffb9-418c-b79c-0fb4eef73503")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "2.2uF"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "578f2ced-cd45-4052-ae07-39eabbf60520")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -0.55 -1.1)
+		(end -0.55 -2.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "103ba448-c3c2-4673-aaa2-d65d5bd5f90b")
+	)
+	(fp_line
+		(start -1.05 -1.6)
+		(end -0.05 -1.6)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d98b21f7-509a-41b4-9aab-713a7789f15d")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.5 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "899f87cd-4f90-4017-bf75-611311448791")
+	)
+	(fp_line
+		(start -0.55 -1.1)
+		(end -0.55 -2.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9173fc7f-feba-46c7-9199-e5956453b461")
+	)
+	(fp_line
+		(start -1.05 -1.6)
+		(end -0.05 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9ae347fc-4d13-4bb1-996f-97b4e5910cf1")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.5 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "cce77919-6891-4036-a014-65764a405041")
+	)
+	(pad "1" thru_hole rect
+		(at -1.27 0)
+		(size 1.5 1.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d60ecc69-015b-431a-beb9-3da4d61e90ff")
+	)
+	(pad "2" thru_hole circle
+		(at 1.27 0)
+		(size 1.5 1.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "952c677e-ba63-4696-bb48-5479e3a7bdce")
+	)
+	(embedded_fonts no)
+)

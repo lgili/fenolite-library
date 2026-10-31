@@ -1,0 +1,238 @@
+(footprint "L0805"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(property "Reference" "REF**"
+		(at -1.78 -1.9 0)
+		(layer "F.SilkS")
+		(uuid "b8d336ff-76da-4719-a564-ad35b3ed3f7d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L0805"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "971c4b69-ad9b-42e5-a4e3-ccf028184d1d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://lcsc.com/product-detail/Ferrite-Beads-And-Chips_600R-25-at100MHz_C108304.html"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0524ced3-3f85-4238-a17c-849fef02e105")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e6fbe3d8-ea82-49ca-b585-1dee36cdfbeb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.94 0.76)
+		(end -1.94 0.64)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7f82e99a-87a8-4884-a9e0-0ed44b3cb093")
+	)
+	(fp_line
+		(start -1.94 0.64)
+		(end -1.94 -0.76)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9554b85d-6bf0-4064-979f-d9b5d91c448e")
+	)
+	(fp_line
+		(start -1.94 -0.76)
+		(end -1.69 -1.02)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b9a62dd3-32d9-4ee8-9df3-2eac402dc514")
+	)
+	(fp_line
+		(start -1.69 1.02)
+		(end -1.94 0.76)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fe98009d-16ed-43bb-a220-da855097902c")
+	)
+	(fp_line
+		(start -1.69 -1.02)
+		(end -1.56 -1.02)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c0fcf497-6fab-41fb-bd96-21b0b04e204d")
+	)
+	(fp_line
+		(start -1.56 -1.02)
+		(end -0.42 -1.02)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2a918198-42bc-4674-87d4-97fdd44b9d82")
+	)
+	(fp_line
+		(start -0.42 1.02)
+		(end -1.69 1.02)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "110e5214-0f60-4ebb-887f-b9895cd4f6d7")
+	)
+	(fp_line
+		(start 0.34 -1.02)
+		(end 1.61 -1.02)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ea69aacc-b19e-4eb3-9207-cc39ecd53332")
+	)
+	(fp_line
+		(start 1.48 1.02)
+		(end 0.34 1.02)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1b28fab8-9034-4164-8633-672c9370576b")
+	)
+	(fp_line
+		(start 1.61 1.02)
+		(end 1.48 1.02)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3a4aa52f-a4dc-40e2-a079-2b68e06bc004")
+	)
+	(fp_line
+		(start 1.61 -1.02)
+		(end 1.87 -0.76)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "59d80343-2641-4fce-b374-2bf97b8b5a52")
+	)
+	(fp_line
+		(start 1.87 0.76)
+		(end 1.61 1.02)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f8a3b289-2abc-44bb-85fe-e8fda2c465cb")
+	)
+	(fp_line
+		(start 1.87 -0.63)
+		(end 1.87 0.76)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fe9987ac-a3cc-4e10-b1f0-3ae2b432ecda")
+	)
+	(fp_line
+		(start 1.87 -0.76)
+		(end 1.87 -0.63)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d22cbeb5-112d-489b-af5f-733027530603")
+	)
+	(fp_circle
+		(center -1 0.64)
+		(end -0.97 0.64)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "c1dabe6d-c31d-407f-baac-6276091dadbf")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "ab622e4d-6bc7-4ede-b33b-e70df1843c64")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.97 0)
+		(size 1.13 1.38)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f52e4a8a-a7e6-44a3-b2fb-521957c899ea")
+	)
+	(pad "2" smd rect
+		(at 0.97 0)
+		(size 1.13 1.38)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "00fefd75-5cd4-490c-9441-6ee7b924ad94")
+	)
+	(embedded_fonts no)
+	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/R0805_L2.0-W1.3-H0.6.wrl"
+		(offset
+			(xyz 0 0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

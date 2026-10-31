@@ -1,0 +1,7 @@
+(fp_lib_table
+	(lib (name BAS16J,135) (type KiCad) (uri ${KIPRJMOD}/lib/BAS16J,135.pretty) (options "") (descr ""))
+	(lib (name Jumper) (type KiCad) (uri ${KIPRJMOD}/lib/Jumper.pretty) (options "") (descr ""))
+	(lib (name TestPoint) (type KiCad) (uri ${KIPRJMOD}/lib/TestPoint.pretty) (options "") (descr ""))
+	(lib (name clipboard) (type KiCad) (uri ${KIPRJMOD}/lib/clipboard.pretty) (options "") (descr ""))
+	(lib (name easyeda2kicad) (type KiCad) (uri ${KIPRJMOD}/lib/easyeda2kicad.pretty) (options "") (descr ""))
+)

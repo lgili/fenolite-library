@@ -1,0 +1,7 @@
+(sym_lib_table
+	(lib (name BAS16J,135) (type KiCad) (uri ${KIPRJMOD}/lib/BAS16J,135.kicad_sym) (options "") (descr ""))
+	(lib (name Jumper) (type KiCad) (uri ${KIPRJMOD}/lib/Jumper.kicad_sym) (options "") (descr ""))
+	(lib (name TestPoint) (type KiCad) (uri ${KIPRJMOD}/lib/TestPoint.kicad_sym) (options "") (descr ""))
+	(lib (name clipboard) (type KiCad) (uri ${KIPRJMOD}/lib/clipboard.kicad_sym) (options "") (descr ""))
+	(lib (name easyeda2kicad) (type KiCad) (uri ${KIPRJMOD}/lib/easyeda2kicad.kicad_sym) (options "") (descr ""))
+)

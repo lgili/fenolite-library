@@ -113,14 +113,12 @@
   "kind": "board",
   "schema": "fenolite.library-item.v0",
   "spdx": "CC-BY-SA-4.0",
-  "summary": "Four-layer PCI video board with seven hierarchical sheets from the KiCad demos",
+  "summary": "Four-layer video board from the KiCad demos",
   "tags": [
     "4-layer",
-    "hierarchical",
     "kicad-demo",
-    "pci",
     "video"
   ],
-  "title": "PCI video board (KiCad demo 'video')",
+  "title": "Video board (KiCad demo video)",
   "version": "1.0.0"
 }

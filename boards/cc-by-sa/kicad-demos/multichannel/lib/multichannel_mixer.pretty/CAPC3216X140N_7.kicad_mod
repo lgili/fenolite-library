@@ -1,0 +1,169 @@
+(footprint "CAPC3216X140N_7"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(descr "Chip Capacitor, Body 3.2x1.6mm, IPC Medium Density")
+	(property "Reference" "REF**"
+		(at -1.6 -2.9 270)
+		(layer "F.SilkS")
+		(uuid "2d69412e-7e67-4e81-9edb-5c3bb03cfcc0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CAPC3216X140N_7"
+		(at 0 2.176 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3fc13957-71ca-45d8-85a0-6de07efaff0a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\CC1206_X7R_VISHAY_VJ.pdf"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "eab5dae2-2b5b-421a-a8bd-d82e02f8c607")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "100nF"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2fa98778-89c5-4afd-8c4d-0c9dfa8f1f22")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 0.5 -0.9)
+		(end -0.5 -0.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "158c0505-455b-4560-b3b6-5cd106783e97")
+	)
+	(fp_line
+		(start 0.5 0.9)
+		(end -0.5 0.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e9234908-734d-4e45-846f-311ca016a6a1")
+	)
+	(fp_line
+		(start -2.35 -1.15)
+		(end -2.35 1.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "58f92c7f-67b1-4576-bd3c-d2251cb0839d")
+	)
+	(fp_line
+		(start 2.35 -1.15)
+		(end -2.35 -1.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1ee777c3-9595-4751-9090-2ebfc0185bdf")
+	)
+	(fp_line
+		(start 2.35 -1.15)
+		(end 2.35 1.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "893d5fd3-b085-4410-b59e-ef5da680ce48")
+	)
+	(fp_line
+		(start 2.35 1.15)
+		(end -2.35 1.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "adf4f7fb-d8ef-4d33-85e2-5dd1e884a253")
+	)
+	(fp_line
+		(start -1.6 -0.8)
+		(end -1.6 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9acb81a6-d3da-43f4-8c84-6739339617ba")
+	)
+	(fp_line
+		(start 1.6 -0.8)
+		(end -1.6 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "78c02054-44d2-49a8-8d0c-1653335e3f07")
+	)
+	(fp_line
+		(start 1.6 -0.8)
+		(end 1.6 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6ee5f8dc-ad12-4b1f-855e-6909bec0aef5")
+	)
+	(fp_line
+		(start 1.6 0.8)
+		(end -1.6 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2896245d-e38e-46a7-a31d-81f919cb80e3")
+	)
+	(pad "1" smd rect
+		(at -1.5 0 360)
+		(size 1.15 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7107607f-ce4f-450f-9804-c9ddf71d5c7b")
+	)
+	(pad "2" smd rect
+		(at 1.5 0 360)
+		(size 1.15 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "85b4f969-ce83-4ab8-91bb-b19f9d8513e8")
+	)
+	(embedded_fonts no)
+)

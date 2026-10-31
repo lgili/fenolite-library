@@ -1,0 +1,116 @@
+(kicad_symbol_lib
+	(version 20241209)
+	(generator "fenolite")
+	(symbol "TT_logo"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "REF_"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "TT_logo"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "TT_logo_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 0) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "TT_logo_1_1"
+		)
+	)
+	(symbol "TT_logo_2"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "TTLOGO"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "TT_logo_2"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "TT_logo_2_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 0) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "TT_logo_2_1_1"
+		)
+	)
+	(symbol "Z2A_logo"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "REF_"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "Z2A_logo"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "Z2A_logo_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 0) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "Z2A_logo_1_1"
+		)
+	)
+	(symbol "Z2A_logo_2"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "Z"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "Z2A_logo_2"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "Z2A_logo_2_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 0) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "Z2A_logo_2_1_1"
+		)
+	)
+)

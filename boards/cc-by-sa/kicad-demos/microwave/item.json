@@ -1,0 +1,26 @@
+{
+  "depends": [],
+  "executes": true,
+  "files": [
+    "design.lock",
+    "design.py",
+    "fp-lib-table",
+    "lib/Imported.kicad_sym",
+    "lib/Imported.pretty/POLY.kicad_mod",
+    "lib/Imported.pretty/POLY_2.kicad_mod",
+    "lib/Imported.pretty/POLY_3.kicad_mod",
+    "sym-lib-table"
+  ],
+  "id": "kicad-demos/microwave",
+  "kind": "board",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC-BY-SA-4.0",
+  "summary": "Two-layer microwave board with shaped copper from the KiCad demos",
+  "tags": [
+    "2-layer",
+    "kicad-demo",
+    "rf"
+  ],
+  "title": "Microwave board (KiCad demo)",
+  "version": "1.0.0"
+}

@@ -1,0 +1,138 @@
+(footprint "IND-SMD_L4.0-W4.0_XGL4020"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(property "Reference" "REF**"
+		(at 1.772653 3 270)
+		(layer "F.SilkS")
+		(uuid "11678756-0bac-4b50-83cc-a2256bd909ff")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "IND-SMD_L4.0-W4.0_XGL4020"
+		(at 0 4 180)
+		(layer "F.Fab")
+		(uuid "a3a9ec64-c037-465e-ba57-5a7345d663bb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e6431cf8-bebc-44c8-8d06-1465e8918488")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "561bfff6-28be-4002-9091-8d07fba9491e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -2 -2)
+		(end 2 -2)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "42c6fea4-a107-478d-a1b3-18ee7210d6ea")
+	)
+	(fp_line
+		(start 2 -2)
+		(end 2 2)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bb552f64-3406-4f0b-8e75-1d2fa73ecafb")
+	)
+	(fp_line
+		(start -2 2)
+		(end -2 -2)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "43248b28-59ce-41bc-a1ce-194a402e2dbd")
+	)
+	(fp_line
+		(start -2 2)
+		(end 2 2)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e877b053-0888-4f3a-aed9-0b24c7747408")
+	)
+	(fp_circle
+		(center -2 2)
+		(end -1.97 2)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "1e110fbd-4824-45b3-9360-0b6b387adb71")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(uuid "293717a6-bbb3-45c9-9518-e1e13a709df6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.19 0 360)
+		(size 0.98 3.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "66662623-92bd-4db8-824c-b7a4b71935f3")
+	)
+	(pad "2" smd rect
+		(at 1.19 0 360)
+		(size 0.98 3.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b94928dc-8d16-438c-80bd-8d1f1ffc8845")
+	)
+	(embedded_fonts no)
+	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/IND-SMD_L4.0-W4.0_XGL4020.wrl"
+		(offset
+			(xyz 0 -0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,148 @@
+(footprint "SOD-323_L1.8-W1.3-LS2.5-RD"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(property "Reference" "REF**"
+		(at 2.7 0.025 0)
+		(layer "F.SilkS")
+		(uuid "442a70c3-9be0-4d7e-aa18-667ba725b163")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SOD-323_L1.8-W1.3-LS2.5-RD"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "79c11e2f-41cb-4fa9-8398-190ee3121488")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://lcsc.com/product-detail/Zener-Diodes_Diodes-Incorporated-MMSZ5246BS-7-F_C151819.html"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8a1b0a0b-3e45-4874-9ef0-d74363ee8edd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "26820e64-a616-44b4-b0bd-d9aff89806f4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.44 0.73)
+		(end -0.44 -0.73)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "10374b6c-85c2-4cb0-b741-116408a0e865")
+	)
+	(fp_line
+		(start 0.91 0.73)
+		(end -0.85 0.73)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8f1a9969-4b07-4f4c-84b0-dcb1ea5a30a5")
+	)
+	(fp_line
+		(start 0.91 0.52)
+		(end 0.91 0.73)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e15edbce-3e83-4485-9cd0-ec82fd35e85d")
+	)
+	(fp_line
+		(start 0.91 -0.53)
+		(end 0.91 -0.73)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d0157840-4130-4bcf-9e4f-402e29657fb3")
+	)
+	(fp_line
+		(start 0.91 -0.73)
+		(end -0.85 -0.73)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a1263cc9-d4ec-4cc7-bf51-2f40b8c03d95")
+	)
+	(fp_circle
+		(center -1.22 0.65)
+		(end -1.19 0.65)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "23eba5ee-4726-468f-b6f5-8e067a0bca92")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "97fca507-7840-4bdf-9797-d749c54d623c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.17 0)
+		(size 1 0.75)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "92b91e62-ba7f-4e80-8e33-572865da7b99")
+	)
+	(pad "2" smd rect
+		(at 1.17 0)
+		(size 1 0.75)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "315ca3a4-4ccd-4428-9da2-120c5c45e071")
+	)
+	(embedded_fonts no)
+	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/SOD-323_L1.7-W1.3-H1.1-LS2.5.wrl"
+		(offset
+			(xyz -0.14 0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 180)
+		)
+	)
+)

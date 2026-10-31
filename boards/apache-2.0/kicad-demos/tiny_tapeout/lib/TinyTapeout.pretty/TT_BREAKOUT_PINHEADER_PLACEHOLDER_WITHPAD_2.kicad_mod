@@ -1,0 +1,121 @@
+(footprint "TT_BREAKOUT_PINHEADER_PLACEHOLDER_WITHPAD_2"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(descr "Placeholder for components that need BOM/POS file inclusion")
+	(property "Reference" "REF**"
+		(at 1.595 26.2 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "946d5058-9fc4-409e-b732-7d3b1f6a5755")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TT_BREAKOUT_PINHEADER_PLACEHOLDER_WITHPAD_2"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4b678ea8-72cb-4447-8f08-32285166c3c0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b5472b4b-53bc-4b75-8e3f-975ddcd196b7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9c9d090f-6b23-4505-b8fb-325258a3cb7a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd board_only)
+	(fp_line
+		(start 0 -0.8)
+		(end 0.2 -0.8)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "64cc28ac-bb47-4e78-9783-fe107ccc2314")
+	)
+	(fp_line
+		(start 0 0)
+		(end 0 -1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "19d8fe26-b4c9-4de4-9871-9be3f8d055e7")
+	)
+	(fp_line
+		(start 0.2 -0.8)
+		(end 0 -1)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "aa6462bb-9089-4891-9ec7-4b423dc10a08")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0.223607 0)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "8fb3e7a9-769e-462f-a5c0-c8e8a648b67f")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0.412311 0)
+		(stroke
+			(width 0.24)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "271978d1-1523-475b-85b6-fa6246dfa43f")
+	)
+	(pad "1" smd roundrect
+		(at 0 0)
+		(size 0.2 0.2)
+		(layers "F.Cu")
+		(roundrect_rratio 0.25)
+		(thermal_bridge_width 0.2)
+		(thermal_bridge_angle 45)
+		(thermal_gap 0.001)
+		(uuid "74facaa9-32b1-44b5-b5fe-65383df360c2")
+	)
+	(embedded_fonts no)
+)

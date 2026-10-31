@@ -1,0 +1,202 @@
+(footprint "SOD2512X80N"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(descr "<b>SOD323F (SC-90)</b><br>")
+	(property "Reference" "REF**"
+		(at -1.225 -1.225 -180)
+		(layer "F.SilkS")
+		(uuid "ff199be3-2437-4afd-83ee-e5ed37a0a60e")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SOD2512X80N"
+		(at 0 2.54 -180)
+		(layer "F.Fab")
+		(uuid "b8e85e0e-9b7f-4d31-bf09-3441181c7380")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 -180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "507be137-80b9-42cf-8d03-46e1adcd2da0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 -180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "71e774ed-dae9-4acd-9c49-b63ad301d00b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "DESCRIPTION" "High-speed switching diodes"
+		(at 0 0 -180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0c8e747a-ea68-4e0c-adf9-9c0cfa55c1f6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 0.85 -0.625)
+		(end -1.7 -0.625)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "10e3fd65-2c10-4085-aed2-624d7c5ff2b8")
+	)
+	(fp_line
+		(start 0.85 0.625)
+		(end -0.85 0.625)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "54fef244-dc40-4545-954b-5bb76b4fe5a6")
+	)
+	(fp_line
+		(start 1.975 -1.15)
+		(end -1.975 -1.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b4b54e64-69c5-4f05-87e6-50bc63617859")
+	)
+	(fp_line
+		(start 1.975 1.15)
+		(end 1.975 -1.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d3a7fdea-c789-4ceb-8f1b-e48db8d1d670")
+	)
+	(fp_line
+		(start 0.85 -0.625)
+		(end -0.85 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9464d7d0-f5cb-4b26-991e-51de8ffb5cc5")
+	)
+	(fp_line
+		(start 0.85 0.625)
+		(end 0.85 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "55f433cf-7f49-47f4-adf9-96847a2968e0")
+	)
+	(fp_line
+		(start -0.3 -0.625)
+		(end -0.85 -0.075)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2711932d-75c1-42c1-965d-7784d11a2762")
+	)
+	(fp_line
+		(start -0.85 -0.625)
+		(end -0.85 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d7d66ce8-cb50-4983-a1a8-f5dc3969f971")
+	)
+	(fp_line
+		(start -0.85 0.625)
+		(end 0.85 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "dfe08ff6-33e2-4fae-b50d-bd1e304b70fa")
+	)
+	(fp_line
+		(start -1.975 -1.15)
+		(end -1.975 1.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "49369088-fbf1-47a3-bf34-5859273711d3")
+	)
+	(fp_line
+		(start -1.975 1.15)
+		(end 1.975 1.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e2d07b2c-4f7b-4ad5-9ee5-448a1ad17fa7")
+	)
+	(pad "1" smd rect
+		(at -1.15 0)
+		(size 1.1 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "8c272c04-1395-4a3a-9d27-3e7db792943f")
+	)
+	(pad "2" smd rect
+		(at 1.15 0)
+		(size 1.1 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "67feae7d-cb1c-47f8-ae33-17a9c7c46047")
+	)
+	(embedded_fonts no)
+	(model "C:/Users/santa/Documents/Kicad/BAS16J_135/BAS16J_135.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

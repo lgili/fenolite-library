@@ -1,0 +1,258 @@
+(footprint "OSC-SMD_L5.0-W3.2"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(property "Reference" "REF**"
+		(at 4.085014 1.51 -90)
+		(layer "F.SilkS")
+		(uuid "edd1e0e2-d903-4198-8c9a-c54d9a8dcd75")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "OSC-SMD_L5.0-W3.2"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "893cf612-f4f0-4b54-a66f-b73183cc47c2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://lcsc.com/product-detail/SMD-Crystal-Resonators_TAE-Zhejiang-Abel-Elec-SMD-5032-2P-14-7456MHZ-20pF-20ppm_C362355.html"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "87bd7638-c214-404b-b399-e3abd01e0d75")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "76346c6b-dad5-471e-8cec-02191b64b845")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 3.32 1.85)
+		(end 3.32 0.7)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "055926b1-5d0b-445e-93f9-76ddaef8df49")
+	)
+	(fp_line
+		(start -3.33 1.85)
+		(end 3.32 1.85)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e14556ab-4d92-4671-896f-95a8a0bf0488")
+	)
+	(fp_line
+		(start 0.51 1.11)
+		(end 0.51 -0.99)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4fabd6f4-5b55-4bbb-9638-632240c9b50f")
+	)
+	(fp_line
+		(start -0.49 1.11)
+		(end -0.49 -0.99)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ebdc8436-e8d2-4483-abc7-13dc1c50f57f")
+	)
+	(fp_line
+		(start 0.21 1.01)
+		(end -0.19 1.01)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "dbcff9a2-1170-49d1-9fb2-1931441716e8")
+	)
+	(fp_line
+		(start -0.19 1.01)
+		(end -0.19 -0.89)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bdb47e72-3852-49d5-9eb5-9ba3d3e67299")
+	)
+	(fp_line
+		(start 3.32 0.7)
+		(end 3.32 -0.7)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ebec84bc-d011-4a14-83e9-e4e8a9d3eda5")
+	)
+	(fp_line
+		(start -3.33 0.7)
+		(end -3.33 1.85)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "23e0283f-9971-43dc-bee6-e7a8a9e81041")
+	)
+	(fp_line
+		(start 0.91 0.01)
+		(end 0.61 0.01)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "857232e2-45bc-4f23-a757-1aeb8da2c112")
+	)
+	(fp_line
+		(start -0.59 0)
+		(end -0.94 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d79f865c-7761-44af-a4e8-1b9986bd7d62")
+	)
+	(fp_line
+		(start 3.32 -0.7)
+		(end 3.32 -1.85)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3d4caddf-d407-4f64-97e1-e1125c0c74d4")
+	)
+	(fp_line
+		(start -3.33 -0.7)
+		(end -3.33 0.7)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6fd935c4-b4ed-40d4-9f1e-c0ace51a29e2")
+	)
+	(fp_line
+		(start 0.21 -0.89)
+		(end 0.21 1.01)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "429fc9a1-5ed0-4e72-9f56-6aef302af96b")
+	)
+	(fp_line
+		(start -0.19 -0.89)
+		(end 0.21 -0.89)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fa3ccfa6-edf9-4a0e-b211-f1b7ebebaa8c")
+	)
+	(fp_line
+		(start 3.32 -1.85)
+		(end -3.33 -1.85)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3b73d648-72ef-404c-849c-958eb3638a51")
+	)
+	(fp_line
+		(start -3.33 -1.85)
+		(end -3.33 -0.7)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a8100a84-49a5-4471-b882-d9a917aad139")
+	)
+	(fp_circle
+		(center -2.5 1.6)
+		(end -2.47 1.6)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "862221ee-a695-4a7f-9dac-e57905a7d138")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "cbffa3ad-68f8-44a1-8cd5-1cb917c0ae24")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.05 0)
+		(size 1.9 2.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f4985f84-53f8-4f36-b072-74b0d6eb3e0f")
+	)
+	(pad "2" smd rect
+		(at 2.05 0)
+		(size 1.9 2.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a9862b20-f9d5-4e2e-bcd2-2b1927ba1fdb")
+	)
+	(embedded_fonts no)
+	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/OSC-SMD_L5.0-W3.2-H1.4.wrl"
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

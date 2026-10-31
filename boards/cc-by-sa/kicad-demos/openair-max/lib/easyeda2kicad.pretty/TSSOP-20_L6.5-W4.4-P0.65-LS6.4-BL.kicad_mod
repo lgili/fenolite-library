@@ -1,0 +1,290 @@
+(footprint "TSSOP-20_L6.5-W4.4-P0.65-LS6.4-BL"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(property "Reference" "REF**"
+		(at 3.78 -2.97 -90)
+		(layer "F.SilkS")
+		(uuid "f1f4ee4a-74e7-4881-bd52-52226641a7d2")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TSSOP-20_L6.5-W4.4-P0.65-LS6.4-BL"
+		(at 0 6.87 0)
+		(layer "F.Fab")
+		(uuid "b484d333-306d-4f7b-a170-a6bb7e9ebf1d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://lcsc.com/product-detail/PMIC-Battery-Management_Texas-Instruments-Texas-Instruments-BQ7790512PWR_C555146.html"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b091070a-4692-4491-8897-130fac21d18b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0e027813-0080-47e1-a0e6-8126eb76b2da")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 3.33 1.77)
+		(end 3.33 -1.77)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e399ae53-d865-4dfd-92d1-a988e59ab046")
+	)
+	(fp_line
+		(start -3.33 1.77)
+		(end 3.33 1.77)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "76ba3d10-8f72-4617-9cbc-1f25227af608")
+	)
+	(fp_line
+		(start 3.33 -1.77)
+		(end -3.33 -1.77)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7e16df0b-ad92-4d0d-a62c-c87384653372")
+	)
+	(fp_line
+		(start -3.33 -1.77)
+		(end -3.33 1.77)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "feaa2082-7f67-4700-9120-c55bd7ff9b09")
+	)
+	(fp_circle
+		(center -3.56 2.87)
+		(end -3.41 2.87)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "6f2f064a-e282-485f-bbb9-5b323fa9be6e")
+	)
+	(fp_circle
+		(center -2.93 1.02)
+		(end -2.78 1.02)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "e416c0d0-a2f0-41bf-892e-a99b3b6a9eb8")
+	)
+	(fp_circle
+		(center -2.93 3.6)
+		(end -2.78 3.6)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "b21eceb5-4e68-4515-a00d-cab90780c3db")
+	)
+	(fp_circle
+		(center -3.25 3.2)
+		(end -3.22 3.2)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "d4961972-4fbd-45fc-aafb-2de5ce427dcd")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "05def0e1-e013-4a85-a865-77b7eab5efb9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd oval
+		(at -2.93 2.87)
+		(size 0.36 1.74)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2f1e5378-da08-4e40-b7b5-b715359ef989")
+	)
+	(pad "2" smd oval
+		(at -2.28 2.87)
+		(size 0.36 1.74)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1a68e2d4-13f2-4c1f-a5a6-9d0e99e82b0a")
+	)
+	(pad "3" smd oval
+		(at -1.63 2.87)
+		(size 0.36 1.74)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8ad643ac-a529-454a-805c-11b73cdb8195")
+	)
+	(pad "4" smd oval
+		(at -0.98 2.87)
+		(size 0.36 1.74)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1868bbf1-79cd-4612-8c0d-8fc929ce48e0")
+	)
+	(pad "5" smd oval
+		(at -0.32 2.87)
+		(size 0.36 1.74)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2962e074-e8f2-47a0-b7d5-26216ec9c305")
+	)
+	(pad "6" smd oval
+		(at 0.33 2.87)
+		(size 0.36 1.74)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d23eac4a-237c-4c97-b099-b0a0d1622f53")
+	)
+	(pad "7" smd oval
+		(at 0.98 2.87)
+		(size 0.36 1.74)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c90489a3-7fbb-4d0c-a777-2135343348c5")
+	)
+	(pad "8" smd oval
+		(at 1.63 2.87)
+		(size 0.36 1.74)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b42e448b-2944-44f1-b60b-762aaca02f38")
+	)
+	(pad "9" smd oval
+		(at 2.28 2.87)
+		(size 0.36 1.74)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "bf67acf0-179b-4dad-80ca-80abbe7005ee")
+	)
+	(pad "10" smd oval
+		(at 2.93 2.87)
+		(size 0.36 1.74)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "71ea8a45-9b14-40f9-acd6-fc3b40013bc7")
+	)
+	(pad "11" smd oval
+		(at 2.93 -2.87)
+		(size 0.36 1.74)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "def7ff3d-2792-479d-92a7-756e89c2ba8c")
+	)
+	(pad "12" smd oval
+		(at 2.28 -2.87)
+		(size 0.36 1.74)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ca4d2248-5668-433e-af0c-391994daa466")
+	)
+	(pad "13" smd oval
+		(at 1.63 -2.87)
+		(size 0.36 1.74)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f21b51a7-09cc-4f58-a606-be11efe41490")
+	)
+	(pad "14" smd oval
+		(at 0.98 -2.87)
+		(size 0.36 1.74)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "10d1be70-53f1-424c-a3a5-3af972203943")
+	)
+	(pad "15" smd oval
+		(at 0.33 -2.87)
+		(size 0.36 1.74)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "922d139a-4f1e-4dd5-8d40-ac2f19be671d")
+	)
+	(pad "16" smd oval
+		(at -0.32 -2.87)
+		(size 0.36 1.74)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4b09f57e-5b10-4111-8610-cbe935094397")
+	)
+	(pad "17" smd oval
+		(at -0.98 -2.87)
+		(size 0.36 1.74)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1e02f82f-db42-4413-a9ad-d6866b1bb788")
+	)
+	(pad "18" smd oval
+		(at -1.63 -2.87)
+		(size 0.36 1.74)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c287d63b-59df-4cbb-b711-003c2f94133d")
+	)
+	(pad "19" smd oval
+		(at -2.28 -2.87)
+		(size 0.36 1.74)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ada23c5c-130e-4942-a6fe-8fe9c1a4e69a")
+	)
+	(pad "20" smd oval
+		(at -2.93 -2.87)
+		(size 0.36 1.74)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "95ab82ac-33ef-4d47-a0c2-7dfb5368efbe")
+	)
+	(embedded_fonts no)
+	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/TSSOP-20_L6.5-W4.4-H1.0-LS6.4-P0.65.wrl"
+		(offset
+			(xyz -911.47 683.72 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 270)
+		)
+	)
+	(model "C:/Users/santa/Documents/Kicad/tssop-20-1.snapshot.2/Сборка _ TSSOP-20.stp"
+		(offset
+			(xyz 0.85 1.2 0.6)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

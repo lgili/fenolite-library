@@ -1,0 +1,1644 @@
+(kicad_symbol_lib
+	(version 20241209)
+	(generator "fenolite")
+	(symbol "C_0402_1005Metric"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_10"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_10"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_10_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_10_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_11"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_11"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_11_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_11_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_12"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_12"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_12_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_12_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_13"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_13"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_13_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_13_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_14"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_14"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_14_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_14_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_15"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_15"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_15_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_15_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_16"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_16"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_16_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_16_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_17"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_17"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_17_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_17_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_18"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_18"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_18_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_18_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_19"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_19"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_19_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_19_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_2"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_2"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_2_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_2_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_20"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_20"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_20_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_20_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_21"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_21"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_21_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_21_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_22"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_22"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_22_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_22_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_23"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_23"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_23_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_23_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_3"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_3"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_3_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_3_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_4"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_4"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_4_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_4_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_5"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_5"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_5_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_5_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_6"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_6"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_6_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_6_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_7"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_7"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_7_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_7_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_8"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_8"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_8_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_8_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0402_1005Metric_9"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0402_1005Metric_9"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0402_1005Metric_9_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0402_1005Metric_9_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0603_1608Metric"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0603_1608Metric"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0603_1608Metric_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0603_1608Metric_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0603_1608Metric_10"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0603_1608Metric_10"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0603_1608Metric_10_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0603_1608Metric_10_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0603_1608Metric_11"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0603_1608Metric_11"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0603_1608Metric_11_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0603_1608Metric_11_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0603_1608Metric_12"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0603_1608Metric_12"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0603_1608Metric_12_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0603_1608Metric_12_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0603_1608Metric_13"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0603_1608Metric_13"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0603_1608Metric_13_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0603_1608Metric_13_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0603_1608Metric_14"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0603_1608Metric_14"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0603_1608Metric_14_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0603_1608Metric_14_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0603_1608Metric_15"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0603_1608Metric_15"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0603_1608Metric_15_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0603_1608Metric_15_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0603_1608Metric_2"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0603_1608Metric_2"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0603_1608Metric_2_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0603_1608Metric_2_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0603_1608Metric_3"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0603_1608Metric_3"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0603_1608Metric_3_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0603_1608Metric_3_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0603_1608Metric_4"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0603_1608Metric_4"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0603_1608Metric_4_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0603_1608Metric_4_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0603_1608Metric_5"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0603_1608Metric_5"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0603_1608Metric_5_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0603_1608Metric_5_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0603_1608Metric_6"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0603_1608Metric_6"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0603_1608Metric_6_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0603_1608Metric_6_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0603_1608Metric_7"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0603_1608Metric_7"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0603_1608Metric_7_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0603_1608Metric_7_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0603_1608Metric_8"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0603_1608Metric_8"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0603_1608Metric_8_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0603_1608Metric_8_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0603_1608Metric_9"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0603_1608Metric_9"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0603_1608Metric_9_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0603_1608Metric_9_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0805_2012Metric"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0805_2012Metric"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0805_2012Metric_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0805_2012Metric_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0805_2012Metric_2"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0805_2012Metric_2"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0805_2012Metric_2_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0805_2012Metric_2_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+	(symbol "C_0805_2012Metric_3"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "C_0805_2012Metric_3"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "C_0805_2012Metric_3_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "C_0805_2012Metric_3_1_1"
+			(pin passive line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+)

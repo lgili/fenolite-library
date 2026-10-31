@@ -1,0 +1,263 @@
+{
+  "authors": [
+    "KiCad project (no individual author is named in the demo's files)"
+  ],
+  "conversion": {
+    "outputs_tree": null,
+    "steps": [
+      {
+        "argv": [
+          "import",
+          "upstream/demos/microwave/microwave.kicad_pro",
+          "--to",
+          "python",
+          "--out",
+          "out",
+          "--licence",
+          "CC-BY-SA-4.0",
+          "--source",
+          "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/microwave",
+          "--revision",
+          "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "--timestamp",
+          "2026-10-31T00:00:00Z",
+          "--confirm"
+        ],
+        "tool": "fenolite"
+      },
+      {
+        "argv": [
+          "verify-source",
+          "out/design.py",
+          "--against",
+          "upstream/demos/microwave/microwave.kicad_pro",
+          "--provenance",
+          "out/PROVENANCE.json",
+          "--record",
+          "--confirm"
+        ],
+        "tool": "fenolite"
+      }
+    ],
+    "tools": [
+      {
+        "commit": "628954b730629bfaf6beffc7b6a31a0671150ff1",
+        "name": "fenolite",
+        "version": "0.7.0.dev0"
+      }
+    ]
+  },
+  "copyright": [],
+  "evidence": "UNVERIFIED",
+  "featured": null,
+  "fidelity": {
+    "accepted": [
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "lib_ref",
+        "id": "A001",
+        "kind": "footprint-name",
+        "level": 3,
+        "reason": "The import writes a footprint instance that differs from the first footprint of its name (moved fields, edited pads) as a variant footprint <name>_<n> (import.footprint-variant).",
+        "where": "*"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "name",
+        "id": "A002",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The build adds the property fenolite.path (the layout lens key) to every footprint; the original has no such field. Not a difference of the design.",
+        "where": "*:fenolite.path"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A003",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:351790000,81280000-351790000,201930000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A004",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:351790000,81280000-351790000,201930000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A005",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:59690000,201930000-351790000,201930000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A006",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:59690000,201930000-351790000,201930000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A007",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:59690000,81280000-351790000,81280000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A008",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:59690000,81280000-351790000,81280000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A009",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:59690000,81280000-59690000,201930000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A010",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:59690000,81280000-59690000,201930000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "id": "A011",
+        "kind": "render-pixels",
+        "level": 8,
+        "reason": "Pixels of the upstream Edge.Cuts stroke, wider than the stroke the DSL board outline writes; the board shape is the same (see the level-7 graphic-missing entries).",
+        "where": "Edge.Cuts:59550000,81150000-351950000,202100000"
+      }
+    ],
+    "proof": {
+      "against": {
+        "microwave.kicad_pcb": "7f17191488b51f8782efc0a3b9ce7b5748a4e771ff0babb34ec0369ffcf43be5",
+        "microwave.kicad_pro": "ea9d9b756ae3b51d485c2dcb904f09aaee0190e4b584f038c3094536e7a9334a"
+      },
+      "date": "2026-10-31T08:42:53Z",
+      "fenolite": "0.7.0.dev0",
+      "levels": {
+        "1": "equal",
+        "2": "equal",
+        "3": "accepted",
+        "4": "equal",
+        "5": "skipped",
+        "6": "equal",
+        "7": "accepted",
+        "8": "accepted",
+        "S": "skipped"
+      },
+      "script_sha256": "9253b680a203087615f3b418c1036065c42bb257125b047fb275b185eac0b9a5",
+      "tolerances": {
+        "angle_udeg": 0,
+        "frame": "absolute",
+        "length_nm": 0,
+        "length_ppm": 0,
+        "pixel_ppm": 1000,
+        "render_pitch_um": 50
+      }
+    }
+  },
+  "id": "kicad-demos/microwave",
+  "import": {
+    "copyright": [],
+    "date": "2026-10-31",
+    "design": "microwave",
+    "equivalence": {
+      "equivalent": true,
+      "levels": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "fenolite": "0.7.0.dev0",
+    "findings": {
+      "import.board-only": 1,
+      "import.footprint-variant": 2,
+      "import.provenance-missing": 1,
+      "import.symbol-regenerated": 1
+    },
+    "inputs": [
+      {
+        "file": "microwave.kicad_pcb",
+        "format": "kicad_pcb",
+        "sha256": "7f17191488b51f8782efc0a3b9ce7b5748a4e771ff0babb34ec0369ffcf43be5",
+        "version": 20241229
+      },
+      {
+        "file": "microwave.kicad_pro",
+        "format": "kicad_pro",
+        "sha256": "ea9d9b756ae3b51d485c2dcb904f09aaee0190e4b584f038c3094536e7a9334a",
+        "version": 3
+      }
+    ],
+    "licence": "CC-BY-SA-4.0",
+    "notices": [],
+    "schema": "fenolite.import-provenance.v0",
+    "source": {
+      "revision": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+      "url": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/microwave"
+    },
+    "tools": {},
+    "upgrade": []
+  },
+  "kind": "board",
+  "licence_text_sha256": "00ba11b9a22d453aed299954eaca389d8efef441a4673d84e2dc4ae10ebc7ca5",
+  "modification_notice": "2026-10-31: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; every item of the board is expressed (no content was left out)",
+  "origin": "converted",
+  "schema": "fenolite.provenance.v0",
+  "spdx": "CC-BY-SA-4.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": {
+    "archive_sha256": null,
+    "commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+    "licence_files": [
+      "LICENSE.CC-BY-SA-4.0"
+    ],
+    "path": "demos/microwave",
+    "retrieved": "2026-10-31",
+    "source_location": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/microwave",
+    "spdx_expression": "CC-BY-SA-4.0",
+    "url": "https://gitlab.com/kicad/code/kicad"
+  },
+  "version": "1.0.0"
+}

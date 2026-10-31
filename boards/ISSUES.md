@@ -157,3 +157,23 @@ fenolite verify-source out/design.py --against upstream/demos/<demo>/<project>.k
 | video | `dimension` 2, `text-layer` 1 |
 | kit-dev-coldfire-xilinx_5213 | `text-layer` 5, `stackup-field` 2 |
 | ecc83 | none |
+
+## Status on 2026-10-31
+
+- **Issue 1 fixed** in Fenolite (branch `cac/c0277-dsl-gaps`): `verify-source` builds with the copper guard in
+  `warn`, so the proof compares boards that break Fenolite's copper rules.
+- **Lossy kinds** of the issues above (via spans, teardrops, copper texts, dimensions, groups, user layers, board-only
+  footprints, outlines closed by a footprint) are expressed by change c0277: all 13 demos import with nothing left
+  out.
+
+### 13. Courtyards missing from the build of `kit-dev-coldfire-xilinx_5213`
+
+- **Command:** `fenolite verify-source out/design.py --against upstream/demos/kit-dev-coldfire-xilinx_5213/kit-dev-coldfire-xilinx_5213.kicad_pro`
+- **Error:** level 6, 14 `layer-missing` differences such as `{"where": "courtyard:16", "a": "F.CrtYd", "b": ""}`.
+- **Expected:** the courtyards of the upstream footprints are in the built board.
+
+### 14. A repeated property name is lost
+
+- **Board:** `openair-max`, footprint `D1`: the hidden property `Description_1` (KiCad's name for a second
+  `Description`) is not in the build; a component holds one property per name. Accepted in the proof with this
+  reason.

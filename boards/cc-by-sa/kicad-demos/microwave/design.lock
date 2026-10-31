@@ -1,0 +1,3 @@
+# Design lock written by fenolite build. Review changes in git; hand edits are honoured.
+schema = "fenolite.lock.v0"
+design = "microwave"

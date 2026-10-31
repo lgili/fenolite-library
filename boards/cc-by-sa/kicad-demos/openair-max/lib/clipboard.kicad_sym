@@ -1,0 +1,88 @@
+(kicad_symbol_lib
+	(version 20241209)
+	(generator "fenolite")
+	(symbol "212a6856-f275-4822-a761-75b07884269b"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "fp_"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "212a6856-f275-4822-a761-75b07884269b"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "212a6856-f275-4822-a761-75b07884269b_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 0) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "212a6856-f275-4822-a761-75b07884269b_1_1"
+		)
+	)
+	(symbol "212a6856-f275-4822-a761-75b07884269b_2"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "fp_"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "212a6856-f275-4822-a761-75b07884269b_2"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "212a6856-f275-4822-a761-75b07884269b_2_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 0) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "212a6856-f275-4822-a761-75b07884269b_2_1_1"
+		)
+	)
+	(symbol "bce4f5f5-1da5-494e-a908-01ed689de916"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "fp_"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "bce4f5f5-1da5-494e-a908-01ed689de916"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "bce4f5f5-1da5-494e-a908-01ed689de916_0_1"
+			(rectangle (start -5.08 2.54) (end 5.08 0) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "bce4f5f5-1da5-494e-a908-01ed689de916_1_1"
+		)
+	)
+)

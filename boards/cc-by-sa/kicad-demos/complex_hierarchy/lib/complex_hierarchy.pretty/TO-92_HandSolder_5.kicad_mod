@@ -1,0 +1,248 @@
+(footprint "TO-92_HandSolder_5"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(descr "TO-92 leads molded, narrow, drill 0.75mm, handsoldering variant with enlarged pads (see NXP sot054_po.pdf)")
+	(tags "to-92 sc-43 sc-43a sot54 PA33 transistor")
+	(property "Reference" "REF**"
+		(at -3.145 -1.651 0)
+		(layer "F.SilkS")
+		(uuid "302cdf22-8937-4456-846a-f7fe5a42ec6d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TO-92_HandSolder_5"
+		(at 1.27 2.79 0)
+		(layer "F.Fab")
+		(uuid "c375e741-d52f-454e-b9d4-2cfc2a99a899")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "eb3143fa-0732-4000-a4c8-a3bbe40fa3b9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8ec8eaef-245a-4c74-98ff-880bcb0bef06")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -0.53 1.85)
+		(end 3.07 1.85)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "97356453-2e87-4147-a12f-d4ceef6ec686")
+	)
+	(fp_arc
+		(start -0.541875 1.841741)
+		(mid -1.247231 -0.581764)
+		(end 0.45 -2.45)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b5be9cf1-077d-4ee1-a83c-a0214fc4e63b")
+	)
+	(fp_arc
+		(start 2.05 -2.45)
+		(mid 3.769931 -0.601036)
+		(end 3.078445 1.827684)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "503635ac-fbef-456c-9237-7ca112bff85a")
+	)
+	(fp_line
+		(start -1.46 -3.05)
+		(end -1.46 2.01)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b039befc-e2cd-4484-84f9-3c9741abc0be")
+	)
+	(fp_line
+		(start -1.46 -3.05)
+		(end 4 -3.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a0ea94fa-860a-42e3-b9b0-3bb8da76ed35")
+	)
+	(fp_line
+		(start 4 2.01)
+		(end -1.46 2.01)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d30df35e-03f2-45cc-8a61-e6dcd37c6bbe")
+	)
+	(fp_line
+		(start 4 2.01)
+		(end 4 -3.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "62336b8c-94c2-4ccb-bc7e-2d7ae695ca9e")
+	)
+	(fp_line
+		(start -0.5 1.75)
+		(end 3 1.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "59b021ea-1fdc-4936-81f3-5f84058a2e36")
+	)
+	(fp_arc
+		(start -0.483625 1.753625)
+		(mid -1.021221 -0.949055)
+		(end 1.27 -2.48)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1fdcfb56-ea0c-4bde-8f41-5e3872ea30d7")
+	)
+	(fp_arc
+		(start 1.27 -2.48)
+		(mid 3.561221 -0.949055)
+		(end 3.023625 1.753625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "dadb6c47-2658-49e2-937b-09a9d8271f73")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 1.27 -4.4 0)
+		(layer "F.Fab")
+		(uuid "c73de5bc-a2c0-4d00-8c5b-36d07d49fdca")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.1 1.8)
+		(drill 0.75
+			(offset 0 0.4)
+		)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges no)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "ebc685ee-c8de-4d29-86c2-91d4cf297401")
+	)
+	(pad "2" thru_hole roundrect
+		(at 1.27 -1.27)
+		(size 1.1 1.8)
+		(drill 0.75
+			(offset 0 -0.4)
+		)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges no)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "2ad7600e-6b2c-48a3-ab93-94e298f1dd61")
+	)
+	(pad "3" thru_hole roundrect
+		(at 2.54 0)
+		(size 1.1 1.8)
+		(drill 0.75
+			(offset 0 0.4)
+		)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges no)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "9f47a673-a56c-4e16-af32-d189449aa6d9")
+	)
+	(embedded_fonts no)
+	(model "${KICAD6_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-92.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,258 @@
+(footprint "LED0603-RD_RED"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(property "Reference" "REF**"
+		(at -2.8 0 -180)
+		(layer "F.SilkS")
+		(uuid "4e3e984a-b342-475a-90af-99049add12cd")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "LED0603-RD_RED"
+		(at 0 4 -180)
+		(layer "F.Fab")
+		(uuid "acf29478-f769-48b9-8a5e-7f4fe89f09e1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Red-LED-SMDLED-80-100mcd_C84263.html"
+		(at 0 0 -180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2e344f5f-16ce-4813-b923-08d257f04515")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 -180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b0aa0917-d05e-4b0d-b7bb-767264d24a8d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 1.39 -0.76)
+		(end 0.24 -0.76)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "10aa098d-f691-4dc4-bb6b-1981e17d8434")
+	)
+	(fp_line
+		(start 1.39 0.72)
+		(end 1.39 -0.76)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a5608468-fff7-4628-b208-2ce1dd78ef66")
+	)
+	(fp_line
+		(start 1.39 0.74)
+		(end 0.24 0.74)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0eb76de2-4dd9-4fed-88bb-d2c0926e59e6")
+	)
+	(fp_line
+		(start 0.22 -0.35)
+		(end 0.22 -0.36)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "503bd7af-18e1-4ada-b97c-499980b7d2d7")
+	)
+	(fp_line
+		(start 0.22 0.32)
+		(end 0.22 -0.36)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7b0030cf-929b-484d-ac1a-f3b404901a7b")
+	)
+	(fp_line
+		(start 0.21 0.32)
+		(end 0.22 0.32)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ee144d2e-7a3b-45fa-adb0-62ad477d5ba4")
+	)
+	(fp_line
+		(start -0.12 -0.01)
+		(end 0.22 -0.35)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cf649dba-aab6-404c-9fcc-d0b6660d49e3")
+	)
+	(fp_line
+		(start -0.12 -0.01)
+		(end 0.22 -0.01)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fcb0f3ac-325d-4194-887f-e3b2b49ad680")
+	)
+	(fp_line
+		(start -0.12 -0.01)
+		(end 0.21 0.32)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "56a84774-b8e6-440a-8ead-46ef01549cb4")
+	)
+	(fp_line
+		(start -1.19 -0.76)
+		(end -0.14 -0.76)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "36feebc3-603b-431b-8880-3bd93bdb1590")
+	)
+	(fp_line
+		(start -1.19 -0.76)
+		(end -1.49 -0.46)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6929df2d-244d-441a-89f0-583f23f12a29")
+	)
+	(fp_line
+		(start -1.19 0.74)
+		(end -0.14 0.74)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "66367bdb-3b11-40c6-8aa8-0b1cbb722de6")
+	)
+	(fp_line
+		(start -1.19 0.74)
+		(end -1.49 0.44)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8319bdc6-6e4b-4733-99bd-3b436dd5abd5")
+	)
+	(fp_line
+		(start -1.49 -0.46)
+		(end -1.49 -0.36)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e5248161-55d2-4a23-8ab2-68e0545cad81")
+	)
+	(fp_line
+		(start -1.49 0.34)
+		(end -1.49 -0.36)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6f4d5a2a-8729-4651-b7fa-18735defaa87")
+	)
+	(fp_line
+		(start -1.49 0.44)
+		(end -1.49 0.34)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0f1da2e8-2d91-4216-9e74-3976156e2645")
+	)
+	(fp_circle
+		(center -0.8 0.4)
+		(end -0.77 0.4)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "e0e0243d-b011-4ed6-94f2-bfe176416454")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 -180)
+		(layer "F.Fab")
+		(uuid "bc902ec6-685e-4e3c-b820-e262040e9b1a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.8 0 -90)
+		(size 0.8 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "905986fc-c352-4109-b012-ee3933d6ef62")
+	)
+	(pad "2" smd rect
+		(at 0.8 0 -90)
+		(size 0.8 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "eacd1701-9d39-4761-8af7-a05b2260c7b5")
+	)
+	(embedded_fonts no)
+	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/LED0603-RD_RED.wrl"
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

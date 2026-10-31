@@ -1,0 +1,189 @@
+(footprint "IND-SMD_L7.1-W6.5-P5.60"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(property "Reference" "REF**"
+		(at 4.65 3.05 -180)
+		(layer "F.SilkS")
+		(uuid "95b57d0e-97f5-4f84-b904-1fea6c022ea5")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "IND-SMD_L7.1-W6.5-P5.60"
+		(at 0 4 -180)
+		(layer "F.Fab")
+		(uuid "3677e251-3530-4f67-b7bd-6bc270c5ae13")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://lcsc.com/product-detail/Power-Inductors_TDK_SPM6530T-1R0M120_1-0uH-20_C87572.html"
+		(at 0 0 -180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3c5c400d-2e69-4333-b015-6277b6824818")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 -180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a3405bb7-9845-41f8-9fad-f06b4fb83f3d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 3.7 -3.4)
+		(end -3.7 -3.4)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0a7e0095-c39f-41e4-b418-0aad79cd9a56")
+	)
+	(fp_line
+		(start 3.7 -1.93)
+		(end 3.7 -3.4)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "15deaad0-88ed-4d4f-926a-8e95cecda287")
+	)
+	(fp_line
+		(start 3.7 3.4)
+		(end 3.7 1.93)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c420f039-9780-463f-9f8a-d2bbdebde639")
+	)
+	(fp_line
+		(start -2.79 -2.54)
+		(end -2.79 -3.3)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "16099cbb-20fc-4c72-b271-ce1d83a2c646")
+	)
+	(fp_line
+		(start -3.56 -2.54)
+		(end -2.79 -2.54)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2acbbf48-aaa1-4c7e-95de-4272c126736f")
+	)
+	(fp_line
+		(start -3.7 -1.93)
+		(end -3.7 -3.4)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c456e3f9-f20c-4f61-8737-e3ce512a0247")
+	)
+	(fp_line
+		(start -3.7 3.4)
+		(end 3.7 3.4)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a6bbbd42-c22f-448d-9a20-1e0f4ddd1dcc")
+	)
+	(fp_line
+		(start -3.7 3.4)
+		(end -3.7 1.93)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cd2864ec-cce1-4e8a-82da-a7ab4a808206")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 1.14 0)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "ea1e9ef8-1eb7-4a7b-bf73-a91586909be3")
+	)
+	(fp_circle
+		(center -3.55 3.25)
+		(end -3.52 3.25)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "78c946b7-a3df-4d27-835e-48b1eca17b92")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 -180)
+		(layer "F.Fab")
+		(uuid "5e933133-0050-4a0b-80f7-6bcb255b61b2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.8 0)
+		(size 2 3.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "057e8e18-ccda-4408-91a8-e5462c1b3a4b")
+	)
+	(pad "2" smd rect
+		(at 2.8 0)
+		(size 2 3.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "96931b22-c148-4129-81a8-78f90af36840")
+	)
+	(embedded_fonts no)
+	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/IND-SMD_L7.1-W6.5-H3.0.wrl"
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

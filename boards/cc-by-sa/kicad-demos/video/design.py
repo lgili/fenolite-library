@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
 # SPDX-FileCopyrightText: NOASSERTION
-# Converted from https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/video@97acc80c223d75520c03fc44cab63cd9a3202c42 by Fenolite 0.7.0.dev0 on 2026-10-30;
+# Converted from https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/video@97acc80c223d75520c03fc44cab63cd9a3202c42 by Fenolite 0.7.0.dev0 on 2026-10-31;
 # modified: format conversion to the Fenolite DSL.
 
 import copper
@@ -3343,6 +3343,34 @@ design.line(
     (mm("260.553"), mm("34.366")),
     layer="Dwgs.User",
     width=mm("0.2032"),
+)
+design.text(
+    "B.Cu/text/1",
+    "TEXTE",
+    (mm("-40.4624"), mm("50.9776")),
+    layer="B.Cu",
+    size=mm("1.524"),
+    thickness=mm("0.2032"),
+)
+design.dimension(
+    "Dwgs.User/dimension/1",
+    (mm("73.609"), mm("54.94")),
+    (mm("73.609"), mm("63.195")),
+    offset=mm("-16.002"),
+    size=mm("1.524"),
+    thickness=mm("0.2"),
+    width=mm("0.2"),
+    extension_offset=mm("0"),
+)
+design.dimension(
+    "Dwgs.User/dimension/2",
+    (mm("124.028"), mm("34.366")),
+    (mm("124.028"), mm("54.94")),
+    offset=mm("-3.175"),
+    size=mm("1.524"),
+    thickness=mm("0.2"),
+    width=mm("0.2"),
+    extension_offset=mm("0"),
 )
 
 copper.apply(

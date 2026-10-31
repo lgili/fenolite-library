@@ -1,0 +1,100 @@
+(footprint "MountingHole_3.2mm_M3_Pad_4"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(descr "Mounting Hole 3.2mm, M3")
+	(tags "mounting hole 3.2mm m3")
+	(property "Reference" "REF**"
+		(at 0 4.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b9ebe63e-8512-4551-b59d-6946c8176067")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "MountingHole_3.2mm_M3_Pad_4"
+		(at 0 1.2 0)
+		(layer "F.Fab")
+		(uuid "0e8d2bb1-ba9e-4308-a77c-f33ffe3ca168")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ea5970b9-d599-4a94-ad31-2038af479de4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cf061ab7-5aae-4e99-84f0-457405d0cedb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(fp_circle
+		(center 0 0)
+		(end 3.2 0)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "3fd8f7ba-4ab4-4ad5-a4cf-09dc7ec89028")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 3.45 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "9cb45e92-7899-40bd-a263-4968daf41b94")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "66674c08-a8e9-47b0-917d-5418121599b7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 6.4 6.4)
+		(drill 3.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ad38ace5-d2c5-4d99-b36b-b5a5c52643a0")
+	)
+	(embedded_fonts no)
+)

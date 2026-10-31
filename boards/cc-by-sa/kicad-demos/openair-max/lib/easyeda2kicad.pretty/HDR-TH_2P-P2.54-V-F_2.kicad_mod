@@ -1,0 +1,143 @@
+(footprint "HDR-TH_2P-P2.54-V-F_2"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "578d48a8-ba54-429a-8bfc-c1a063cbdab2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "HDR-TH_2P-P2.54-V-F_2"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "b022f048-7d28-4366-b0bc-c1f6a98a4aca")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f6e6f1e6-c820-4b25-8d00-22f569afbd85")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ee1f1a0e-9e30-40d3-8980-af72b84d1652")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -2.74 -1.25)
+		(end 2.74 -1.25)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b7c23abc-5527-4f05-9675-b572336754d4")
+	)
+	(fp_line
+		(start -2.74 1.25)
+		(end -2.74 -1.25)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8097492b-8460-4a93-ac2b-40405666ac5a")
+	)
+	(fp_line
+		(start 2.74 -1.25)
+		(end 2.74 1.25)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "50845a35-0cec-43a8-9f17-ec035219631b")
+	)
+	(fp_line
+		(start 2.74 1.25)
+		(end -2.74 1.25)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e55226be-807b-4ee9-ba1c-f0974a779600")
+	)
+	(fp_circle
+		(center -2.74 1.25)
+		(end -2.71 1.25)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "8c2658a2-7a38-41ea-88db-b315361ef8d5")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "393e1a42-9bfa-45ad-b64b-e89df10bf0c7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at -1.27 0)
+		(size 1.7 1.7)
+		(drill 0.999998)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "60c5bf91-5a6b-4eba-9b6d-25849958b50a")
+	)
+	(pad "2" thru_hole circle
+		(at 1.27 0)
+		(size 1.7 1.7)
+		(drill 0.999998)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "59feab37-e698-43b4-af60-cb4595fa5047")
+	)
+	(embedded_fonts no)
+	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/HDR-TH_2P-P2.54-F-LI-1X2P.wrl"
+		(offset
+			(xyz 0 -0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

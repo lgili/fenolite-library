@@ -1,0 +1,3848 @@
+{
+  "authors": [
+    "Pat Deegan"
+  ],
+  "conversion": {
+    "outputs_tree": null,
+    "steps": [
+      {
+        "argv": [
+          "import",
+          "upstream/demos/tiny_tapeout/tinytapeout-demo.kicad_pro",
+          "--to",
+          "python",
+          "--out",
+          "out",
+          "--licence",
+          "Apache-2.0",
+          "--source",
+          "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/tiny_tapeout",
+          "--revision",
+          "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "--timestamp",
+          "2026-10-31T00:00:00Z",
+          "--confirm"
+        ],
+        "tool": "fenolite"
+      },
+      {
+        "argv": [
+          "verify-source",
+          "out/design.py",
+          "--against",
+          "upstream/demos/tiny_tapeout/tinytapeout-demo.kicad_pro",
+          "--provenance",
+          "out/PROVENANCE.json",
+          "--record",
+          "--confirm"
+        ],
+        "tool": "fenolite"
+      }
+    ],
+    "tools": [
+      {
+        "commit": "628954b730629bfaf6beffc7b6a31a0671150ff1",
+        "name": "fenolite",
+        "version": "0.7.0.dev0"
+      }
+    ]
+  },
+  "copyright": [],
+  "evidence": "UNVERIFIED",
+  "featured": null,
+  "fidelity": {
+    "accepted": [
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "lib_ref",
+        "id": "A001",
+        "kind": "footprint-name",
+        "level": 3,
+        "reason": "The import writes a footprint instance that differs from the first footprint of its name (moved fields, edited pads) as a variant footprint <name>_<n> (import.footprint-variant).",
+        "where": "*"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "name",
+        "id": "A002",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The build adds the property fenolite.path (the layout lens key) to every footprint; the original has no such field. Not a difference of the design.",
+        "where": "*:fenolite.path"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A003",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C11:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A004",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C11:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A005",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C11:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A006",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C13:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A007",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C13:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A008",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C13:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A009",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C13:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A010",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C13:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A011",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C15:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A012",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C15:DigikeyPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A013",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C15:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A014",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C15:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A015",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C15:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A016",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C15:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A017",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C18:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A018",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C18:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A019",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C18:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A020",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C18:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A021",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C18:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A022",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C1:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A023",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C1:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A024",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C1:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A025",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C21:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A026",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C21:DigikeyPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A027",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C21:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A028",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C21:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A029",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C21:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A030",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C21:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A031",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C25:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A032",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C25:DigikeyPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A033",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C25:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A034",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C25:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A035",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C25:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A036",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C25:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A037",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C28:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A038",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C28:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A039",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C28:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A040",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C28:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A041",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C28:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A042",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C29:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A043",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C29:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A044",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C29:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A045",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C30:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A046",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C30:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A047",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C32:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A048",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C32:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A049",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C32:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A050",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C33:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A051",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C33:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A052",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C33:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A053",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C37:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A054",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C37:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A055",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C37:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A056",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C38:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A057",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C38:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A058",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C38:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A059",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C39:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A060",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C39:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A061",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C39:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A062",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C3:DNP"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A063",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C3:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A064",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C3:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A065",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C3:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A066",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C41:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A067",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C41:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A068",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C41:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A069",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C42:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A070",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C42:DigikeyPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A071",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C42:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A072",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C42:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A073",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C42:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A074",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C42:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A075",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C43:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A076",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C43:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A077",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C43:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A078",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C43:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A079",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C4:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A080",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C4:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A081",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C4:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A082",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C4:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A083",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C4:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A084",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C56:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A085",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C56:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A086",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C56:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A087",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C56:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A088",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C56:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A089",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C57:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A090",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C57:DigikeyPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A091",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C57:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A092",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C57:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A093",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C57:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A094",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C57:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A095",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C58:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A096",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C58:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A097",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C58:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A098",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C58:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A099",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C58:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A100",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C59:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A101",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C59:DigikeyPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A102",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C59:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A103",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C59:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A104",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C59:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A105",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C59:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A106",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C5:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A107",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C5:DigikeyPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A108",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C5:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A109",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C5:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A110",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C5:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A111",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C5:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A112",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C60:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A113",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C60:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A114",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C60:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A115",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C60:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A116",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C60:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A117",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C61:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A118",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C61:DigikeyPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A119",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C61:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A120",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C61:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A121",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C61:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A122",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "C61:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A123",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C6:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A124",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C6:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A125",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C6:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A126",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C6:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A127",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C6:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A128",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C7:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A129",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C7:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A130",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C7:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A131",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C7:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A132",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C7:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A133",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C9:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A134",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C9:DigikeyPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A135",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C9:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A136",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C9:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A137",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C9:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A138",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "C9:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A139",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "D1:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A140",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "D1:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A141",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "D1:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A142",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "D1:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A143",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "D1:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A144",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "D2:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A145",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "D2:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A146",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "D2:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A147",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "D2:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A148",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "D2:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A149",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "D3:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A150",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "D3:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A151",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "D3:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A152",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "D3:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A153",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "D3:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A154",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "F1:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A155",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "F1:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A156",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "F1:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A157",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "F1:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A158",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "F1:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A159",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "G***#1:Value"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A160",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "J11:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A161",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "J11:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A162",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "J11:Status"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A163",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "J15:MANUFACTURER"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A164",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "J15:MAXIMUM_PACKAGE_HEIGHT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A165",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "J15:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A166",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "J3:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A167",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "J3:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A168",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "J5:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A169",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "J5:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A170",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "J6:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A171",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "J6:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A172",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "J7:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A173",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "J7:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A174",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "J7:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A175",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "J9:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A176",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "MT1:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A177",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "MT1:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A178",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "MT1:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A179",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R15:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A180",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R15:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A181",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R15:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A182",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R15:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A183",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R16:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A184",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R16:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A185",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R16:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A186",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R17:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A187",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R17:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A188",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R17:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A189",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R17:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A190",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R18:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A191",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R18:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A192",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R18:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A193",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R18:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A194",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R19:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A195",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R19:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A196",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R19:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A197",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R19:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A198",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R20:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A199",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R20:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A200",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R20:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A201",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R20:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A202",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R20:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A203",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R21:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A204",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R21:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A205",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R21:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A206",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R21:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A207",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R21:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A208",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R22:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A209",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R22:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A210",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R22:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A211",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R22:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A212",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R23:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A213",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R23:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A214",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R23:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A215",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R23:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A216",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R24:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A217",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R24:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A218",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R24:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A219",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R24:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A220",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R25:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A221",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R25:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A222",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R25:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A223",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R25:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A224",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R26:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A225",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R26:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A226",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R26:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A227",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R26:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A228",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R27:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A229",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R27:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A230",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R27:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A231",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R27:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A232",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R28:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A233",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R28:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A234",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R28:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A235",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R28:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A236",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R29:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A237",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R29:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A238",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R29:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A239",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R29:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A240",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R31:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A241",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R31:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A242",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R31:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A243",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R33:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A244",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R33:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A245",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R33:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A246",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R33:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A247",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R33:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A248",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R34:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A249",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R34:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A250",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R34:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A251",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R34:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A252",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R34:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A253",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R36:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A254",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R36:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A255",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R36:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A256",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R37:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A257",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R37:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A258",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R37:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A259",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R37:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A260",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R38:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A261",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R38:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A262",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R38:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A263",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R38:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A264",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R38:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A265",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R39:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A266",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R39:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A267",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R39:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A268",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R39:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A269",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R39:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A270",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R41:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A271",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R41:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A272",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R41:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A273",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R43:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A274",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R43:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A275",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R43:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A276",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R43:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A277",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R44:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A278",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R44:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A279",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R44:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A280",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R44:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A281",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R45:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A282",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R45:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A283",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R45:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A284",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R45:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A285",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R46:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A286",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R46:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A287",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R46:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A288",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R46:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A289",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R47:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A290",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R47:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A291",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R47:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A292",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R47:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A293",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R48:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A294",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R48:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A295",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R48:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A296",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R48:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A297",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R7:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A298",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R7:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A299",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "R7:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A300",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R8:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A301",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R8:JLC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A302",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R8:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A303",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R8:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A304",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "R8:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A305",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "SW1:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A306",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "SW1:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A307",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "SW1:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A308",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "SW2:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A309",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "SW2:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A310",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "SW2:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A311",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "SW4:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A312",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "SW4:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A313",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "SW4:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A314",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "U1:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A315",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "U1:DigikeyPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A316",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "U1:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A317",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "U1:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A318",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "U2:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A319",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "U2:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A320",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "U2:MPN_ALT"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A321",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "U2:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A322",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "U3:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A323",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "U3:DigikeyPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A324",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "U3:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A325",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "U4:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A326",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "U7:Characteristics"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A327",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "U7:DigikeyPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A328",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The angle of a hidden user property of the footprint (a field KiCad does not draw); the build writes the property from the component at angle 0.",
+        "where": "U7:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A329",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "X1:DigikeyPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A330",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "X1:MPN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A331",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "X1:Part number"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A332",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:+5V"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A333",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:1v8"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A334",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:3v3"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A335",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:3v3"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A336",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:CSB"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A337",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:GND"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A338",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:GND"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A339",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:GND"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A340",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:GND"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A341",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:GND"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A342",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:GND"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A343",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:GND"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A344",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:P29"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A345",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:SCK"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A346",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:SDI"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A347",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:SDO"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A348",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:SPI BI/UART"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A349",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:SPI MASTER"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A350",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:SPI SLAVE"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A351",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:UCK"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A352",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:cEN"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A353",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:cINC"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A354",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:cRST"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A355",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:in2"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A356",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:m00"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A357",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:m33"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A358",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:m35"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A359",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:B.SilkS:m37"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A360",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:80130000,60100000-80209657,60367310-80455000,60499999"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A361",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:80779998,60220001-80830148,60128935-80930000,60100000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A362",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:88570000,60100000-88669853,60128935-88719999,60220000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A363",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:88719999,60220000-88824510,60427310-89045000,60500000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "graphic",
+        "id": "A364",
+        "kind": "graphic-missing",
+        "level": 7,
+        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
+        "where": "board:Edge.Cuts:89369999,60100000-89370000,53900000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "rotation",
+        "id": "A365",
+        "kind": "text-field",
+        "level": 7,
+        "reason": "A text angle that differs by a half turn or a full turn: KiCad draws a text turned by 180 degrees upright, as at 0 degrees, and -90 is 270 (docs/dsl.md, Keep-upright). The text reads the same.",
+        "where": "board:F.SilkS:Input "
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "id": "A366",
+        "kind": "render-pixels",
+        "level": 8,
+        "reason": "Pixels of the upstream Edge.Cuts stroke, wider than the stroke the DSL board outline writes; the board shape is the same (see the level-7 graphic-missing entries).",
+        "where": "Edge.Cuts:89300000,54000000-89400000,60150000"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "id": "A367",
+        "kind": "render-missing",
+        "level": 8,
+        "reason": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276).",
+        "where": "sheet:*"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "id": "A368",
+        "kind": "render-pixels",
+        "level": 8,
+        "reason": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276; level S is skipped as drawn-unavailable).",
+        "where": "sheet:*"
+      }
+    ],
+    "proof": {
+      "against": {
+        "rp2040.kicad_sch": "ee88a17d35fb54070d9c0e38af0d4a656d52f3703559944c1261e1037c577aef",
+        "tinytapeout-demo.kicad_pcb": "0d26bf9b6d561e32cf610d428541d6433e60b45e1838f34f73467e25b9144814",
+        "tinytapeout-demo.kicad_pro": "3d479ef334a9f1b35a487e5b300a995826c7bf180ccc01380b6bb9ca88c8a7a9",
+        "tinytapeout-demo.kicad_sch": "232f8236bc89eed24f7b89509ea422347994ca8e576524f0229e2bd1eca5093d"
+      },
+      "date": "2026-10-31T08:49:35Z",
+      "fenolite": "0.7.0.dev0",
+      "levels": {
+        "1": "equal",
+        "2": "equal",
+        "3": "accepted",
+        "4": "equal",
+        "5": "equal",
+        "6": "equal",
+        "7": "accepted",
+        "8": "accepted",
+        "S": "skipped"
+      },
+      "script_sha256": "720663790fd7e67d327933a0a87def6c6f98121fbbf5733fa1c940c47cc2e5ab",
+      "tolerances": {
+        "angle_udeg": 0,
+        "frame": "absolute",
+        "length_nm": 0,
+        "length_ppm": 0,
+        "pixel_ppm": 1000,
+        "render_pitch_um": 50
+      }
+    }
+  },
+  "id": "kicad-demos/tiny_tapeout",
+  "import": {
+    "copyright": [],
+    "date": "2026-10-31",
+    "design": "tinytapeout-demo",
+    "equivalence": {
+      "equivalent": true,
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "fenolite": "0.7.0.dev0",
+    "findings": {
+      "import.board-only": 1,
+      "import.footprint-variant": 89,
+      "import.provenance-missing": 1,
+      "import.schematic-generated": 1,
+      "import.sheet-renamed": 2,
+      "import.symbol-regenerated": 1
+    },
+    "inputs": [
+      {
+        "file": "rp2040.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "ee88a17d35fb54070d9c0e38af0d4a656d52f3703559944c1261e1037c577aef",
+        "version": null
+      },
+      {
+        "file": "tinytapeout-demo.kicad_pcb",
+        "format": "kicad_pcb",
+        "sha256": "0d26bf9b6d561e32cf610d428541d6433e60b45e1838f34f73467e25b9144814",
+        "version": 20241229
+      },
+      {
+        "file": "tinytapeout-demo.kicad_pro",
+        "format": "kicad_pro",
+        "sha256": "3d479ef334a9f1b35a487e5b300a995826c7bf180ccc01380b6bb9ca88c8a7a9",
+        "version": 3
+      },
+      {
+        "file": "tinytapeout-demo.kicad_sch",
+        "format": "kicad_sch",
+        "sha256": "232f8236bc89eed24f7b89509ea422347994ca8e576524f0229e2bd1eca5093d",
+        "version": null
+      }
+    ],
+    "licence": "Apache-2.0",
+    "notices": [],
+    "schema": "fenolite.import-provenance.v0",
+    "source": {
+      "revision": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+      "url": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/tiny_tapeout"
+    },
+    "tools": {},
+    "upgrade": []
+  },
+  "kind": "board",
+  "licence_text_sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+  "modification_notice": "2026-10-31: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; every item of the board is expressed (no content was left out)",
+  "origin": "converted",
+  "schema": "fenolite.provenance.v0",
+  "spdx": "Apache-2.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": {
+    "archive_sha256": null,
+    "commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+    "licence_files": [
+      "demos/tiny_tapeout/LICENSE.txt"
+    ],
+    "path": "demos/tiny_tapeout",
+    "retrieved": "2026-10-31",
+    "source_location": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/tiny_tapeout",
+    "spdx_expression": "Apache-2.0",
+    "url": "https://gitlab.com/kicad/code/kicad"
+  },
+  "version": "1.0.0"
+}
