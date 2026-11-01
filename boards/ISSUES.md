@@ -180,3 +180,11 @@ fenolite verify-source out/design.py --against upstream/demos/<demo>/<project>.k
 - **Board:** `openair-max`, footprint `D1`: the hidden property `Description_1` (KiCad's name for a second
   `Description`) is not in the build; a component holds one property per name. Accepted in the proof with this
   reason.
+
+## Measured four-board review on 2026-11-01
+
+The [b02 replay review](../docs/conversion-replay-b02.md) and its JSON receipt record actual commands
+on ECC83, sonde xilinx, video and the Coldfire kit. All baseline proofs build in warn mode and compare
+level 2 equal, but level 7 and S differ. Fresh imports all stop with FEN-3004 in source-symbol handling,
+so no regenerated payload or passing fresh proof is claimed. Historical findings and acceptances
+above are retained; the review distinguishes measured improvements from still-open or untested cases.

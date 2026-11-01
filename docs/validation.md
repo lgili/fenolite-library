@@ -56,8 +56,11 @@ records. The public tool pin, human record review, any LibrePCB seed and release
 `tools.kicad_image` now pins the official 9.0.2 linux/amd64 manifest after the root worker's public
 registry body/header digest verification, documented in [authored-devices](authored-devices.md#official-image-research).
 The installer still requires an actual configured-version CLI run before replay, proof or rendering;
-no image pull or CLI execution was performed here. No new board replay or proof was run locally: those operations
-wait for the authorised c0277/c0282 core integration. The old board findings remain release blockers.
+no image pull or CLI execution was performed here. The infrastructure checkpoint performed no new
+board replay or proof. A later [four-board local review](conversion-replay-b02.md) uses exact core
+b02e09fea8145442f0af61f571e58a075385df9e: existing payloads reach comparison, but fresh imports and
+public replay are blocked by source-symbol handling. No board payload/proof record was changed,
+and the same 38 audit findings remain release blockers.
 
 Workflow checks here are source parsing, shell syntax, Python compilation and the explicitly executed
 local block job. They are not a GitHub Actions run or actionlint proof. Actual branch CI, replay/proof,
