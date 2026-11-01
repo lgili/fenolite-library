@@ -10,3 +10,9 @@ status are updated. Preserve upstream licences and notices, do not create new ac
 and keep unperformed KiCad/CI/publication gates open. No CAD enters the Fenolite core repository.
 
 No push, pull request, tag, release or protected-branch action is authorised by this change.
+
+The 2026-11-01 continuation repeats the same four recorded conversions against the frozen model-0
+cut `dbfd6fc36e18300c4a9aef1983f7130fea4e3b71`, verifying its source0 receipt/schema hashes. It records
+actual strict import and available full-proof outcomes separately from unchanged existing-payload
+baselines. Candidates that fail policy stay in temporary scratch; only measured diagnostics and
+issue status enter the repository, with no new accepted difference or public tool-pin update.

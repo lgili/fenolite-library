@@ -188,3 +188,34 @@ on ECC83, sonde xilinx, video and the Coldfire kit. All baseline proofs build in
 level 2 equal, but level 7 and S differ. Fresh imports all stop with FEN-3004 in source-symbol handling,
 so no regenerated payload or passing fresh proof is claimed. Historical findings and acceptances
 above are retained; the review distinguishes measured improvements from still-open or untested cases.
+
+## Frozen model 0 review on 2026-11-01
+
+The later [dbfd6fc3 replay](../docs/conversion-replay-model0.md) uses the same 24 recorded native
+inputs and exact frozen source/schema receipt. ECC83 and sonde now import strictly and confirm in
+scratch with no unexpressed items. Their fresh full proofs compare levels 1–7 and S equal, with zero
+accepted differences, but exit 5 at level 8. All four existing payload proofs still differ at levels
+7 and S. No item/provenance/licence/notice or accepted difference was changed; the 38 audit findings
+remain. This measurement does not close the other nine demos or any native/CI gate.
+
+### 15. Video source drawing and generated circuit disagree on hierarchical net names
+
+- **Measured core:** `dbfd6fc36e18300c4a9aef1983f7130fea4e3b71`.
+- **Actual strict import:** exit 5, FEN-5001 / `import.unequal`. The written-schematic guard reports
+  `RR1-3` on `/DQ31` in code and `/buspci.sch/DQ31` in the drawing (split), with 537 more findings.
+  No plan or fresh design is written; the fresh full proof is not run. The old empty-library-name
+  blocker is no longer the first refusal, but this is not a passing conversion.
+
+### 16. Fresh ECC83 and sonde proofs still fail presentation after level S equals
+
+- **ECC83:** one level-8 `render-pixels` difference, `0/85762` versus `24831/85762`; the change
+  summary lists `#PWR05`/`#PWR07` added and `#FLG05` removed.
+- **Sonde:** two level-8 `render-missing` differences name `sonde xilinx.kicad_sch` and
+  `sonde_xilinx.kicad_sch` on opposite sides. The generated sheet has been renamed.
+- Both actual proofs exit 5. Levels 1–7 and S equal, with no acceptance/exclusion. No renderer
+  tolerance, filename exception or new disposition was added to make the full proof pass.
+
+Issue 5 also has a more precise current refusal: strict Coldfire import exits 7/FEN-7001 for two
+`layer-table` items. It produces no plan, so no new proof of layer preservation exists. The original
+unmapped-power-symbol refusal is not the current first blocker. Native CAD and the remaining
+unmeasured boards remain open.

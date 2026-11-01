@@ -62,6 +62,13 @@ b02e09fea8145442f0af61f571e58a075385df9e: existing payloads reach comparison, bu
 public replay are blocked by source-symbol handling. No board payload/proof record was changed,
 and the same 38 audit findings remain release blockers.
 
+A subsequent [frozen model-0 replay](conversion-replay-model0.md) selects clean exact core
+`dbfd6fc36e18300c4a9aef1983f7130fea4e3b71` and verifies the source0 receipt/schema hashes. All 24
+cached inputs still match. ECC83/sonde strict imports now confirm and their fresh proofs compare levels
+1–7/S equal, but fail presentation. Video stops at written-drawing connectivity and Coldfire refuses
+two layer-table items. The four existing payload proofs and root audit still fail. No payload,
+provenance, source terms, accepted difference or public pin changes; raw diagnostics are retained.
+
 Workflow checks here are source parsing, shell syntax, Python compilation and the explicitly executed
 local block job. They are not a GitHub Actions run or actionlint proof. Actual branch CI, replay/proof,
 release reproducibility and Pages remain unproved.
