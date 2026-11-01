@@ -1,0 +1,34 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Original illustrative data authored for fenolite-library; no manufacturer specifications.
+schema = "fenolite.pins.v0"
+id = "FenoliteDevices:IllustrativeSymbol"
+version = "1.0.0"
+summary = "UNVERIFIED illustrative two-terminal resistor symbol"
+category = "Original examples"
+licence = "CC0-1.0"
+evidence = "UNVERIFIED"
+sources = ["D-0003"]
+
+[[pin]]
+number = "1"
+name = "A"
+type = "passive"
+
+[[pin]]
+number = "2"
+name = "B"
+type = "passive"
+
+[symbol]
+reference = "R"
+value = "IllustrativeResistor"
+pins = [
+  { number = "1", at = ["-5.08mm", "0mm"], length = "2.54mm" },
+  { number = "2", at = ["5.08mm", "0mm"], rotation = "180deg", length = "2.54mm" },
+]
+
+[[symbol.graphic]]
+kind = "rect"
+points = [["-2.54mm", "-1.27mm"], ["2.54mm", "1.27mm"]]
+width = "0.254mm"

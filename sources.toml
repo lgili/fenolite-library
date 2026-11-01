@@ -15,3 +15,19 @@ url = "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
 licence = "CC0-1.0"
 retrieved = "2026-11-01"
 used = "Repository-owned file dedication and the complete CC0 text retained from the existing setup branch."
+
+[sources.D-0003]
+id = "D-0003"
+title = "Original illustrative resistor item set"
+url = "https://github.com/lgili/fenolite-library/blob/cac/c0279-library-infrastructure/docs/authored-devices.md"
+licence = "CC0-1.0"
+retrieved = "2026-11-01"
+used = "All example symbol coordinates, land dimensions, pin mapping and electrical ratings authored here; no manufacturer or upstream device claim."
+
+[sources.D-0004]
+id = "D-0004"
+title = "Official KiCad 9.0.2 amd64 Docker manifest metadata"
+url = "https://hub.docker.com/layers/kicad/kicad/9.0.2-amd64/images/sha256-8a43a0dd03e56d428cc516e2a1bd106260ef2c572288f995af67970d900cf607?tab=layers"
+licence = "GPL-3.0-or-later"
+retrieved = "2026-11-01"
+used = "Official tag and linux/amd64 metadata, plus registry body SHA-256 and Docker-Content-Digest equality verified 2026-11-01. No local container pull, CLI-version proof or Dockerfile/source copying."

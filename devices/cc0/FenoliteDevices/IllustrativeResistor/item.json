@@ -1,0 +1,25 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteDevices:IllustrativeSymbol",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenoliteDevices:IllustrativeLand",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:IllustrativeResistor",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "UNVERIFIED example; coordinates and ratings authored here",
+  "title": "Original illustrative IllustrativeResistor",
+  "version": "1.0.0"
+}

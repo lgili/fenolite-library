@@ -113,6 +113,9 @@ jobs:
           python - <<'PY'
           import hashlib, json, os, subprocess, tomllib
           from pathlib import Path
+          from fenolite.catalog import records
+          from fenolite.backends.kicad.sym import write_symbol_library
+          from fenolite.backends.kicad.mod import prepare_authored_definition, write_footprint
           reports = Path('reports/regenerate'); reports.mkdir(parents=True)
           failures = []
           count = 0
@@ -124,16 +127,29 @@ jobs:
                   if schema not in ('fenolite.pins.v0', 'fenolite.package.v0'): continue
                   count += 1
                   output = root / 'generated'
-                  args = ['fenolite', 'library']
-                  if schema == 'fenolite.pins.v0':
-                      args += ['symbol', str(record), '--out', str(output / (record.stem + '.kicad_sym'))]
+                  if (schema == 'fenolite.pins.v0' and 'pins' in data.get('symbol', {})) or data.get('generator') == 'explicit':
+                      parsed = records.parse_record(record.read_text(), file=str(record))
+                      if schema == 'fenolite.pins.v0':
+                          generated = write_symbol_library((records.symbol_def(parsed),), target=9).encode()
+                          target = output / (record.stem + '.kicad_sym')
+                      else:
+                          definition = prepare_authored_definition(records.footprint_def(parsed))
+                          generated = write_footprint(definition, target=9).encode()
+                          namespace, name = parsed.header.id.split(':', 1)
+                          target = output / (namespace + '.pretty') / (name + '.kicad_mod')
+                      writes = [{'path': str(target), 'sha256': hashlib.sha256(generated).hexdigest()}]
+                      (reports / f'{count}.json').write_text(json.dumps({'method': 'explicit record/backend API', 'record': str(record), 'outputs': writes}, indent=2) + '\n')
                   else:
-                      args += ['generate', str(record), '--out', str(output)]
-                  run = subprocess.run([*args, '--dry-run', '--json'], capture_output=True, text=True)
-                  (reports / f'{count}.json').write_text(run.stdout)
-                  if run.returncode:
-                      failures.append(str(record)); continue
-                  writes = json.loads(run.stdout)['result'].get('plan', [])
+                      args = ['fenolite', 'library']
+                      if schema == 'fenolite.pins.v0':
+                          args += ['symbol', str(record), '--out', str(output / (record.stem + '.kicad_sym'))]
+                      else:
+                          args += ['generate', str(record), '--out', str(output)]
+                      run = subprocess.run([*args, '--dry-run', '--json'], capture_output=True, text=True)
+                      (reports / f'{count}.json').write_text(run.stdout)
+                      if run.returncode:
+                          failures.append(str(record)); continue
+                      writes = json.loads(run.stdout)['result'].get('plan', [])
                   if not writes: failures.append(str(record) + ': no generated output')
                   for write in writes:
                       path = Path(write['path'])

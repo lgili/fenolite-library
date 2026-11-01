@@ -1,0 +1,45 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Original illustrative dimensions authored here; no manufacturer or IPC land-pattern claim.
+schema = "fenolite.package.v0"
+id = "FenoliteDevices:IllustrativeLand"
+version = "1.0.0"
+summary = "UNVERIFIED illustrative two-pad land; dimensions are original example values"
+category = "Original examples"
+licence = "CC0-1.0"
+evidence = "UNVERIFIED"
+sources = ["D-0003"]
+generator = "explicit"
+kind = "smd"
+pins = 2
+
+[body]
+length = "3.6mm"
+width = "1.4mm"
+height = "0.8mm"
+
+[[pad]]
+number = "1"
+shape = "rect"
+size = ["1.2mm", "1.8mm"]
+at = ["-2.1mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "2"
+shape = "rect"
+size = ["1.2mm", "1.8mm"]
+at = ["2.1mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[graphic]]
+kind = "rect"
+layer = "F.Fab"
+points = [["-1.8mm", "-0.7mm"], ["1.8mm", "0.7mm"]]
+width = "0.1mm"
+
+[[graphic]]
+kind = "rect"
+layer = "F.CrtYd"
+points = [["-3.25mm", "-1.5mm"], ["3.25mm", "1.5mm"]]
+width = "0.05mm"

@@ -71,3 +71,9 @@ fenolite blocks index blocks/cc0/FenoliteBlocks/resistor_link --check --json
 The new block/check/seed commands require the future validated feature pin. A missing capability
 fails its CI job; it is never counted as a passing check. Seeded device records are unverified until
 reviewed. Check their licence, source mapping, dimensions and ratings before using them.
+
+An [original illustrative device set](docs/authored-devices.md) now supplies one CC0 symbol, land and
+device closure. Its dimensions and ratings were authored here and remain UNVERIFIED. Individual
+audits, record checks and a local offline get/build proof pass on the documented local fixed core.
+The public tool pin still needs that source-register fix, and the existing board audit failures remain
+visible blockers.

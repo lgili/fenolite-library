@@ -18,8 +18,9 @@
   Passed 2026-11-01: five YAML files parse, shell blocks pass bash -n and 19 Python heredocs compile.
   Public capability guard refuses the four missing feature commands. Clean block core 5d8afc2f and
   clean device core 2c9afd54 each pass their own capability subset; no combined feature proof is claimed.
-  The exact block workflow body passes. File/socket/process negative controls are refused. KiCad's
-  unset image fails explicitly. Publication switches and board concurrency limits are checked.
+  The exact block workflow body passes. File/socket/process negative controls are refused. Image
+  metadata accepts the root-verified digest and rejects a blank negative control; CLI execution
+  remains required and unrun here. Publication switches and board concurrency limits are checked.
   This is local source/probe validation, not actionlint or actual GitHub CI; see docs/validation.md.
 - [x] 5. Record local proofs/blockers, compare board bytes, and make an exact user-signed local commit.
   Proof: focused checks, git diff --check, unchanged boards and clean status after commit.

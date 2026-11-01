@@ -1,0 +1,15 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteDevices:IllustrativeSymbol",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "UNVERIFIED example; coordinates and ratings authored here",
+  "title": "Original illustrative IllustrativeSymbol",
+  "version": "1.0.0"
+}

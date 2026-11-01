@@ -1,0 +1,37 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Original illustrative ratings authored here; not a manufacturer or orderable-part claim.
+schema = "fenolite.device.v1"
+id = "FenoliteDevices:IllustrativeResistor"
+version = "1.0.0"
+summary = "UNVERIFIED illustrative resistor with invented example ratings"
+category = "Original examples"
+licence = "CC0-1.0"
+evidence = "UNVERIFIED"
+sources = ["D-0003"]
+symbol = "FenoliteDevices:IllustrativeSymbol"
+footprint = "FenoliteDevices:IllustrativeLand"
+ref_prefix = "R"
+class = "resistor"
+kind = "resistor"
+value = "2.2k"
+tolerance = "10%"
+ends = ["A", "B"]
+
+[pins]
+A = "1"
+B = "2"
+
+[ratings]
+voltage = { operating = "10V", abs_max = "20V" }
+current = { operating = "6mA", abs_max = "15mA" }
+power = { operating = "75mW", abs_max = "250mW" }
+temperature = { operating = { min = "-10degC", max = "50degC" }, abs_max = { min = "-20degC", max = "70degC" } }
+
+[properties]
+ExampleScope = "Original illustrative data; not a real manufacturer part"
+
+[[part]]
+mpn = "AUTHORED-EXAMPLE-2K2"
+summary = "Original example identifier, not an orderable manufacturer MPN"
+lifecycle = "unknown"

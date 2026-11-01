@@ -1,0 +1,15 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenoliteDevices.pretty/IllustrativeLand.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenoliteDevices:IllustrativeLand",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "UNVERIFIED example; coordinates and ratings authored here",
+  "title": "Original illustrative IllustrativeLand",
+  "version": "1.0.0"
+}

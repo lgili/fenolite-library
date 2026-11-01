@@ -1,0 +1,53 @@
+(footprint "IllustrativeLand"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(descr "UNVERIFIED illustrative two-pad land; dimensions are original example values")
+	(attr smd)
+	(property "Reference" "REF**"
+		(at 0 -2.5 0)
+		(layer "F.SilkS")
+		(uuid "4c8b64ec-f9dd-5bd5-84de-8093a448aa00")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "IllustrativeLand"
+		(at 0 2.5 0)
+		(layer "F.Fab")
+		(uuid "cf368571-c89f-541b-b3ea-d4a940e24ac1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.1 0)
+		(size 1.2 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(pad "2" smd rect
+		(at 2.1 0)
+		(size 1.2 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(fp_rect
+		(start -1.8 -0.7)
+		(end 1.8 0.7)
+		(layer "F.Fab")
+		(width 0.1)
+		(fill no)
+	)
+	(fp_rect
+		(start -3.25 -1.5)
+		(end 3.25 1.5)
+		(layer "F.CrtYd")
+		(width 0.05)
+		(fill no)
+	)
+)

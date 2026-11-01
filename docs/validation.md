@@ -47,13 +47,16 @@ Every existing board file remains unchanged from `first-boards` commit
 `2cdbe73bf3069d22b1959f01cac087f6dbb6cc49`. No proof report or accepted difference was edited by hand.
 
 The public tool pin lacks the newer record, block and seed commands. The records, origin and blocks
-jobs therefore fail their capability guards. Regeneration has no device-kind item to exercise yet;
-the absence of such items is no device-content proof. The first authored device set and any reviewed
-LibrePCB seed remain future work.
+jobs therefore fail their capability guards. An [original UNVERIFIED device closure](authored-devices.md)
+now supplies one symbol, footprint and device. Its item audits, explicit regeneration, record checks,
+six generated review sheets and offline get/build comparison pass locally on detached fixed core
+04a9d07e6e8d0140e9d07e2e89379531ecc03ef5. This includes the D-source reader fix required by these
+records. The public tool pin, human record review, any LibrePCB seed and release proofs remain future work.
 
-`tools.kicad_image` is deliberately unset. A reviewed public image at an immutable SHA-256 digest,
-providing the configured KiCad 9.0.2 CLI, is required for replay, proof and image jobs. They fail with an
-explicit setup error until it is supplied. No new board replay or proof was run locally: those operations
+`tools.kicad_image` now pins the official 9.0.2 linux/amd64 manifest after the root worker's public
+registry body/header digest verification, documented in [authored-devices](authored-devices.md#official-image-research).
+The installer still requires an actual configured-version CLI run before replay, proof or rendering;
+no image pull or CLI execution was performed here. No new board replay or proof was run locally: those operations
 wait for the authorised c0277/c0282 core integration. The old board findings remain release blockers.
 
 Workflow checks here are source parsing, shell syntax, Python compilation and the explicitly executed

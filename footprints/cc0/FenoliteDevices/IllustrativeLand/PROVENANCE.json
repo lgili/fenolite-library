@@ -1,0 +1,33 @@
+{
+  "authors": [
+    "Fenolite contributors"
+  ],
+  "copyright": [
+    "Copyright (c) 2026 Fenolite contributors"
+  ],
+  "evidence": "UNVERIFIED",
+  "featured": null,
+  "id": "FenoliteDevices:IllustrativeLand",
+  "kind": "footprint",
+  "licence_review": {
+    "by": "Luiz Carlos Gili",
+    "date": "2026-11-01",
+    "note": "Author dedication of entirely original example data under the authorised CC0 item task. No upstream design licence or electrical review is claimed."
+  },
+  "licence_text_sha256": "3de3b5118df8d74984d5d56a03ca27484aae85fac8339e6c9faa8b5c4e69460c",
+  "modification_notice": "2026-11-01: original illustrative item authored for fenolite-library; no upstream design material.",
+  "origin": "authored",
+  "schema": "fenolite.provenance.v0",
+  "sources": [
+    "D-0002",
+    "D-0003"
+  ],
+  "spdx": "CC0-1.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": null,
+  "version": "1.0.0"
+}

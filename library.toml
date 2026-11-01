@@ -11,5 +11,6 @@ fenolite = ">=0.7.0.dev0"
 fenolite = "b8b24842c1b792a0fcb37a6a7e5ca0270b90efd6"
 uv = "0.12.23"
 kicad_cli = "9.0.2"
-# Supply a reviewed public image digest before replay/proof/render jobs can run. Never use latest.
-kicad_image = ""
+# Official 9.0.2 linux/amd64 manifest: registry body hash/header verified 2026-11-01.
+# Actual kicad-cli version execution remains a required job; no runtime proof is claimed here.
+kicad_image = "docker.io/kicad/kicad@sha256:8a43a0dd03e56d428cc516e2a1bd106260ef2c572288f995af67970d900cf607"
