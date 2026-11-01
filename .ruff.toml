@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: CC0-1.0
+# Repository-owned configuration; the root LICENSE does not cover item payloads.
+line-length = 100
+target-version = "py311"
+
+[lint]
+select = ["E4", "E7", "E9", "F", "I", "B"]
+
+[lint.flake8-bugbear]
+# param is the immutable metadata declaration in Fenolite's public block signature API.
+extend-immutable-calls = ["fenolite.dsl.param", "param"]

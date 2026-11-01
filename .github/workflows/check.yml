@@ -1,0 +1,372 @@
+name: Library checks
+on:
+  push:
+    branches: ['cac/**', first-boards]
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+    inputs:
+      ref:
+        type: string
+        default: ''
+permissions:
+  contents: read
+concurrency:
+  group: library-checks-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  inventory:
+    runs-on: ubuntu-24.04
+    outputs:
+      blocks: ${{ steps.items.outputs.blocks }}
+      records: ${{ steps.items.outputs.records }}
+      converted: ${{ steps.items.outputs.converted }}
+      boards: ${{ steps.items.outputs.boards }}
+      base: ${{ steps.items.outputs.base }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ inputs.ref || github.ref }}
+          persist-credentials: false
+      - id: items
+        env:
+          PR_BASE: ${{ github.event.pull_request.base.sha }}
+          PUSH_BASE: ${{ github.event.before }}
+        run: |
+          python - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          groups = {name: [] for name in ('blocks', 'records', 'converted', 'boards')}
+          for kind in ('symbols', 'footprints', 'devices', 'blocks', 'boards'):
+              for marker in sorted(Path(kind).rglob('item.json')):
+                  item = json.loads(marker.read_text())
+                  row = {'path': marker.parent.as_posix(), 'id': item['id'], 'kind': item['kind']}
+                  if kind == 'blocks': groups['blocks'].append(row)
+                  if kind in ('symbols', 'footprints', 'devices'): groups['records'].append(row)
+                  if kind == 'boards': groups['boards'].append(row)
+                  provenance = json.loads((marker.parent / 'PROVENANCE.json').read_text())
+                  if provenance['origin'] == 'converted': groups['converted'].append(row)
+          base = os.environ.get('PR_BASE') or os.environ.get('PUSH_BASE')
+          if not base or set(base) == {'0'}:
+              base = subprocess.check_output(['git', 'merge-base', 'HEAD', 'origin/main'], text=True).strip()
+          subprocess.run(['git', 'cat-file', '-e', base + '^{commit}'], check=True)
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              for key, rows in groups.items(): output.write(key + '=' + json.dumps(rows, separators=(',', ':')) + '\n')
+              output.write('base=' + base + '\n')
+          print(json.dumps({'base': base, **groups}, indent=2))
+          PY
+  audit:
+    needs: inventory
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0, ref: '${{ inputs.ref || github.ref }}', persist-credentials: false}
+      - uses: ./.github/actions/fenolite
+        with: {require: 'library audit'}
+      - run: |
+          mkdir -p reports
+          fenolite library audit . --base "$AUDIT_BASE" --json > reports/audit.json
+        env:
+          AUDIT_BASE: ${{ needs.inventory.outputs.base }}
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with: {name: audit, path: reports/}
+  records:
+    needs: inventory
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: '${{ inputs.ref || github.ref }}', persist-credentials: false}
+      - uses: ./.github/actions/fenolite
+        with: {require: 'library check'}
+      - env:
+          ITEMS: ${{ needs.inventory.outputs.records }}
+        run: |
+          python - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          folder = Path('reports/records'); folder.mkdir(parents=True)
+          failures = []
+          items = json.loads(os.environ['ITEMS'])
+          for index, item in enumerate(items):
+              with (folder / f'{index}.json').open('w') as out:
+                  run = subprocess.run(['fenolite', 'library', 'check', item['path'], '--json'], stdout=out)
+              if run.returncode: failures.append(item['id'])
+          print(f'{len(items)} record items checked; zero items gives no record-content proof')
+          if failures: raise SystemExit('Record checks failed: ' + ', '.join(failures))
+          PY
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with: {name: records, path: reports/}
+  regenerate:
+    needs: inventory
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: '${{ inputs.ref || github.ref }}', persist-credentials: false}
+      - uses: ./.github/actions/fenolite
+        with: {require: 'library generate,library symbol'}
+      - env:
+          ITEMS: ${{ needs.inventory.outputs.records }}
+        run: |
+          python - <<'PY'
+          import hashlib, json, os, subprocess, tomllib
+          from pathlib import Path
+          reports = Path('reports/regenerate'); reports.mkdir(parents=True)
+          failures = []
+          count = 0
+          for item in json.loads(os.environ['ITEMS']):
+              root = Path(item['path'])
+              for record in sorted(root.rglob('*.toml')):
+                  data = tomllib.loads(record.read_text())
+                  schema = data.get('schema')
+                  if schema not in ('fenolite.pins.v0', 'fenolite.package.v0'): continue
+                  count += 1
+                  output = root / 'generated'
+                  args = ['fenolite', 'library']
+                  if schema == 'fenolite.pins.v0':
+                      args += ['symbol', str(record), '--out', str(output / (record.stem + '.kicad_sym'))]
+                  else:
+                      args += ['generate', str(record), '--out', str(output)]
+                  run = subprocess.run([*args, '--dry-run', '--json'], capture_output=True, text=True)
+                  (reports / f'{count}.json').write_text(run.stdout)
+                  if run.returncode:
+                      failures.append(str(record)); continue
+                  writes = json.loads(run.stdout)['result'].get('plan', [])
+                  if not writes: failures.append(str(record) + ': no generated output')
+                  for write in writes:
+                      path = Path(write['path'])
+                      if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != write['sha256']:
+                          failures.append(str(path) + ': missing or differs from regeneration')
+          print(f'{count} generated source records compared; zero records gives no regeneration proof')
+          if failures: raise SystemExit('\n'.join(failures))
+          PY
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with: {name: regenerate, path: reports/}
+  versions:
+    needs: inventory
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0, ref: '${{ inputs.ref || github.ref }}', persist-credentials: false}
+      - uses: ./.github/actions/fenolite
+        with: {require: 'library audit'}
+      - env:
+          AUDIT_BASE: ${{ needs.inventory.outputs.base }}
+        run: |
+          mkdir -p reports
+          fenolite library audit . --base "$AUDIT_BASE" --json > reports/versions.json
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with: {name: versions, path: reports/}
+  origin:
+    needs: inventory
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: '${{ inputs.ref || github.ref }}', persist-credentials: false}
+      - uses: ./.github/actions/fenolite
+        with: {require: 'library audit,library seed'}
+      - env:
+          ITEMS: ${{ needs.inventory.outputs.records }}
+        run: |
+          python - <<'PY'
+          import json, os, subprocess, tomllib
+          from pathlib import Path
+          reports = Path('reports/origin'); reports.mkdir(parents=True)
+          failures = []
+          for index, item in enumerate(json.loads(os.environ['ITEMS'])):
+              root = Path(item['path'])
+              provenance = json.loads((root / 'PROVENANCE.json').read_text())
+              with (reports / f'{index}.json').open('w') as out:
+                  run = subprocess.run(['fenolite', 'library', 'audit', '.', '--item', str(root), '--json'], stdout=out)
+              if run.returncode: failures.append(item['id'])
+              if provenance['origin'] != 'seeded': continue
+              for path in sorted(root.rglob('*.toml')):
+                  record = tomllib.loads(path.read_text())
+                  if not str(record.get('schema', '')).startswith('fenolite.'): continue
+                  if record.get('evidence') != 'UNVERIFIED' and not record.get('reviewed_by'):
+                      failures.append(str(path) + ': seeded record is neither UNVERIFIED nor reviewed')
+          if failures: raise SystemExit('\n'.join(failures))
+          PY
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with: {name: origin, path: reports/}
+  blocks:
+    needs: inventory
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: '${{ inputs.ref || github.ref }}', persist-credentials: false}
+      - uses: ./.github/actions/fenolite
+        with: {require: 'blocks index,blocks test'}
+      - run: |
+          ruff check blocks
+          ruff format --check blocks
+      - env:
+          ITEMS: ${{ needs.inventory.outputs.blocks }}
+        run: |
+          python - <<'PY'
+          import ast, json, os, subprocess
+          from pathlib import Path
+          reports = Path('reports/blocks'); reports.mkdir(parents=True)
+          failures = []
+          for index, item in enumerate(json.loads(os.environ['ITEMS'])):
+              root = Path(item['path'])
+              for name, args in (
+                  ('index', ['blocks', 'index', str(root), '--check']),
+                  ('test', ['blocks', 'test', item['id'], '--from', str(root / '__init__.py')]),
+              ):
+                  with (reports / f'{index}-{name}.json').open('w') as out:
+                      run = subprocess.run(['fenolite', *args, '--json'], stdout=out)
+                  if run.returncode: failures.append(item['id'] + ': ' + name)
+              # Only DSL/model/core and stdlib imports are permitted for these reusable blocks.
+              import sys
+              for source in sorted(root.rglob('*.py')):
+                  if {'tests', 'usage'} & set(source.relative_to(root).parts): continue
+                  tree = ast.parse(source.read_text(), filename=str(source))
+                  for node in ast.walk(tree):
+                      names = [a.name for a in node.names] if isinstance(node, ast.Import) else [node.module or ''] if isinstance(node, ast.ImportFrom) and not node.level else []
+                      for name in names:
+                          if name.split('.')[0] not in sys.stdlib_module_names and not any(name == allowed or name.startswith(allowed + '.') for allowed in ('fenolite.dsl', 'fenolite.model', 'fenolite.core')):
+                              failures.append(str(source) + ': forbidden import ' + name)
+              # A fresh subprocess imports only the explicit package and watches for side effects.
+              code = '''import importlib.util, os, pathlib, sys
+          root = pathlib.Path(sys.argv[1]).resolve()
+          def audit(event, args):
+              if event.startswith('socket.') or event in ('subprocess.Popen', 'os.system', 'os.remove', 'os.rename', 'os.mkdir'):
+                  raise RuntimeError('import side effect: ' + event)
+              if event == 'open':
+                  mode, flags = args[1:3]
+                  if (isinstance(mode, str) and any(c in mode for c in 'wax+')) or (isinstance(flags, int) and flags & (os.O_WRONLY | os.O_RDWR | os.O_CREAT | os.O_TRUNC | os.O_APPEND)):
+                      raise RuntimeError('import write: ' + str(args[0]))
+          sys.dont_write_bytecode = True
+          sys.addaudithook(audit)
+          spec = importlib.util.spec_from_file_location('_library_import_probe', root / '__init__.py', submodule_search_locations=[str(root)])
+          module = importlib.util.module_from_spec(spec)
+          sys.modules[spec.name] = module
+          spec.loader.exec_module(module)
+          '''
+              run = subprocess.run(['python', '-c', code, str(root)], capture_output=True, text=True)
+              (reports / f'{index}-import.txt').write_text(run.stdout + run.stderr)
+              if run.returncode: failures.append(item['id'] + ': import side effect')
+          if failures: raise SystemExit('\n'.join(failures))
+          PY
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with: {name: blocks, path: reports/}
+  replay:
+    needs: inventory
+    if: needs.inventory.outputs.converted != '[]'
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        item: ${{ fromJSON(needs.inventory.outputs.converted) }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: '${{ inputs.ref || github.ref }}', persist-credentials: false}
+      - uses: ./.github/actions/fenolite
+        with: {require: 'library replay', kicad: 'true'}
+      - env:
+          ITEM: ${{ matrix.item.path }}
+        run: |
+          mkdir -p reports
+          fenolite library replay "$ITEM" --json > reports/replay.json
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: replay-${{ strategy.job-index }}
+          path: reports/
+  proof:
+    needs: inventory
+    if: needs.inventory.outputs.boards != '[]'
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        item: ${{ fromJSON(needs.inventory.outputs.boards) }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: '${{ inputs.ref || github.ref }}', persist-credentials: false}
+      - uses: ./.github/actions/fenolite
+        with: {require: 'verify-source,library audit', kicad: 'true'}
+      - env:
+          ITEM: ${{ matrix.item.path }}
+        run: |
+          python - <<'PY'
+          import json, os, subprocess, tempfile
+          from pathlib import Path
+          item = Path(os.environ['ITEM'])
+          provenance = json.loads((item / 'PROVENANCE.json').read_text())
+          upstream = provenance['upstream']
+          reports = Path('reports'); reports.mkdir()
+          with tempfile.TemporaryDirectory(prefix='library-proof-') as work:
+              source = Path(work) / 'upstream'
+              subprocess.run(['git', 'init', '-q', str(source)], check=True)
+              subprocess.run(['git', '-C', str(source), 'fetch', '-q', '--depth', '1', upstream['url'], upstream['commit']], check=True)
+              subprocess.run(['git', '-C', str(source), 'checkout', '-q', 'FETCH_HEAD'], check=True)
+              with (reports / 'verify.json').open('w') as out:
+                  verified = subprocess.run(['fenolite', 'verify-source', str(item / 'design.py'), '--against', str(source / upstream['path']), '--provenance', str(item / 'PROVENANCE.json'), '--json'], stdout=out)
+              with (reports / 'proof-gate.json').open('w') as out:
+                  gate = subprocess.run(['fenolite', 'library', 'audit', '.', '--item', str(item), '--proof', str(reports / 'verify.json'), '--json'], stdout=out)
+              if verified.returncode or gate.returncode: raise SystemExit('Current fidelity proof or recorded-status gate failed')
+          PY
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: proof-${{ strategy.job-index }}
+          path: reports/
+  renders:
+    needs: inventory
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0, ref: '${{ inputs.ref || github.ref }}', persist-credentials: false}
+      - uses: ./.github/actions/fenolite
+        with: {require: 'library check', kicad: 'true'}
+      - env:
+          ITEMS: ${{ needs.inventory.outputs.records }}
+          COMPARE_BASE: ${{ needs.inventory.outputs.base }}
+          BOARDS: ${{ needs.inventory.outputs.boards }}
+        continue-on-error: true
+        run: |
+          python - <<'PY'
+          import json, os, shutil, subprocess, tempfile
+          from pathlib import Path
+          reports = Path('reports/sheets'); reports.mkdir(parents=True)
+          baseline = Path(os.environ['RUNNER_TEMP']) / 'library-base'
+          subprocess.run(['git', 'worktree', 'add', '--detach', str(baseline), os.environ['COMPARE_BASE']], check=True)
+          failures = []
+          for index, item in enumerate(json.loads(os.environ['ITEMS'])):
+              args = ['fenolite', 'library', 'check', item['path'], '--sheets', str(reports / str(index))]
+              old = baseline / item['path']
+              if old.is_dir(): args += ['--compare', str(old)]
+              planned = subprocess.run([*args, '--dry-run', '--json'], capture_output=True, text=True)
+              (reports / f'{index}-plan.json').write_text(planned.stdout)
+              if planned.returncode: failures.append(item['id']); continue
+              data = json.loads(planned.stdout)
+              if data['result'].get('plan'):
+                  confirmed = subprocess.run([*args, '--confirm', '--plan', data['result']['plan_id'], '--json'], capture_output=True, text=True)
+                  (reports / f'{index}-receipt.json').write_text(confirmed.stdout)
+                  if confirmed.returncode: failures.append(item['id'])
+          for index, item in enumerate(json.loads(os.environ['BOARDS'])):
+              with tempfile.TemporaryDirectory(prefix='library-render-') as temporary:
+                  source = Path(temporary) / 'item'
+                  shutil.copytree(item['path'], source)
+                  build = Path(temporary) / 'build'
+                  run = subprocess.run(['fenolite', 'build', str(source / 'design.py'), '--out', str(build), '--confirm', '--json'], capture_output=True, text=True)
+                  (reports / f'board-{index}-build.json').write_text(run.stdout)
+                  if run.returncode: failures.append(item['id']); continue
+                  run = subprocess.run(['fenolite', 'render', str(build), '--out', str(reports / f'board-{index}'), '--svg', '--confirm', '--json'], capture_output=True, text=True)
+                  (reports / f'board-{index}-render.json').write_text(run.stdout)
+                  if run.returncode: failures.append(item['id'])
+          if failures: raise SystemExit('Review sheets failed: ' + ', '.join(failures))
+          PY
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with: {name: review-sheets, path: reports/}

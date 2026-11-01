@@ -1,0 +1,155 @@
+{
+  "block": "FenoliteBlocks:resistor_link",
+  "circuit": {
+    "components": [
+      {
+        "id": "cmp_6104712d-0a99-58ee-b224-51801209f2d1",
+        "lib_footprint_ref": "Fenolite:Header_1x2_P2.54",
+        "lib_symbol_ref": "Fenolite:Connector_2",
+        "pin_pad_map": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "2"
+          ]
+        ],
+        "pins": [
+          {
+            "id": "pin_0896bc0e-8dc6-5f47-85ad-0f1a6fcbd408",
+            "name": "Passive",
+            "number": "1"
+          },
+          {
+            "id": "pin_b1c4d44c-aa96-528e-90f8-57264044338f",
+            "name": "Passive",
+            "number": "2"
+          }
+        ],
+        "properties": {
+          "Reference": "J1",
+          "Value": "Conn_1x2_P2.54",
+          "fenolite.device": "Fenolite:Conn_1x2_P2.54",
+          "fenolite.device.sha256": "77ae53caeb2732e9419157e770d920eb114126258389f2a703cc22320ad0a858",
+          "fenolite.path": "J1"
+        },
+        "ref": "J1",
+        "value": "Conn_1x2_P2.54"
+      },
+      {
+        "id": "cmp_2cdaa4ff-ffd1-5898-b918-02b8f1229048",
+        "lib_footprint_ref": "Fenolite:Chip_0603",
+        "lib_symbol_ref": "Fenolite:Resistor",
+        "pin_pad_map": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "2"
+          ]
+        ],
+        "pins": [
+          {
+            "id": "pin_efb1537c-bae5-568c-b4d1-0ecefefa207f",
+            "name": "A",
+            "number": "1"
+          },
+          {
+            "id": "pin_319e61e6-9beb-5789-9898-f7bcc2f123e5",
+            "name": "B",
+            "number": "2"
+          }
+        ],
+        "properties": {
+          "Reference": "R1",
+          "Value": "10k",
+          "fenolite.device": "Fenolite:R_0603",
+          "fenolite.device.sha256": "f7072ca5c0b98c44184e9b928ef1eacb6c65073cfb051c99b3dc862a1f35f475",
+          "fenolite.path": "link/R"
+        },
+        "ref": "R1",
+        "value": "10k"
+      }
+    ],
+    "modules": [
+      {
+        "block": "FenoliteBlocks:resistor_link",
+        "block_version": "1.0.0",
+        "component_ids": [
+          "cmp_2cdaa4ff-ffd1-5898-b918-02b8f1229048"
+        ],
+        "id": "mod_fa907401-e564-5be1-aa4c-9b2a3414405a",
+        "params": [
+          {
+            "name": "resistance",
+            "text": "10k",
+            "type": "str"
+          }
+        ],
+        "path": "link"
+      }
+    ],
+    "nets": [
+      {
+        "id": "net_b486f7cf-6c26-577b-9322-e297240e4ed2",
+        "members": [
+          {
+            "component_id": "cmp_2cdaa4ff-ffd1-5898-b918-02b8f1229048",
+            "pin": "1"
+          },
+          {
+            "component_id": "cmp_6104712d-0a99-58ee-b224-51801209f2d1",
+            "pin": "1"
+          }
+        ],
+        "name": "link/LEFT"
+      },
+      {
+        "id": "net_76ecc3c0-e96a-508c-8fa8-6d0ffb635e32",
+        "members": [
+          {
+            "component_id": "cmp_2cdaa4ff-ffd1-5898-b918-02b8f1229048",
+            "pin": "2"
+          },
+          {
+            "component_id": "cmp_6104712d-0a99-58ee-b224-51801209f2d1",
+            "pin": "2"
+          }
+        ],
+        "name": "link/RIGHT"
+      }
+    ],
+    "ports": [
+      {
+        "id": "prt_130bdee4-d847-577a-ae8a-0211a4c41fdb",
+        "kind": "net",
+        "members": {
+          "net": "net_b486f7cf-6c26-577b-9322-e297240e4ed2"
+        },
+        "name": "LEFT",
+        "owner": "mod_fa907401-e564-5be1-aa4c-9b2a3414405a"
+      },
+      {
+        "id": "prt_518985ca-de5f-5155-a94e-7161c74c232d",
+        "kind": "net",
+        "members": {
+          "net": "net_76ecc3c0-e96a-508c-8fa8-6d0ffb635e32"
+        },
+        "name": "RIGHT",
+        "owner": "mod_fa907401-e564-5be1-aa4c-9b2a3414405a"
+      }
+    ]
+  },
+  "rules": {
+    "id": "rst_79ddd1f3-309e-5f3a-b8e0-d09f3a2dcd3d"
+  },
+  "schema": "fenolite.block-golden.v0",
+  "seed": 0,
+  "timestamp": "2026-01-01T00:00:00Z",
+  "usage": "usage/resistor_link.py",
+  "version": "1.0.0"
+}

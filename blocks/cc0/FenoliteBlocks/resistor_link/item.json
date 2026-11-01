@@ -1,0 +1,18 @@
+{
+  "depends": [],
+  "executes": true,
+  "files": [
+    "__init__.py",
+    "block.json",
+    "golden/resistor_link.json",
+    "tests/test_resistor_link.py",
+    "usage/resistor_link.py"
+  ],
+  "id": "FenoliteBlocks:resistor_link",
+  "kind": "block",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "One generic resistor between independent terminal nets",
+  "title": "Original resistor link",
+  "version": "1.0.0"
+}

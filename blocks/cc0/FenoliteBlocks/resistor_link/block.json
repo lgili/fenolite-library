@@ -1,0 +1,75 @@
+{
+  "fenolite": ">=0.7.0",
+  "id": "FenoliteBlocks:resistor_link",
+  "namespace": "FenoliteBlocks",
+  "record": {
+    "blocks": [],
+    "category": "other",
+    "deprecated": null,
+    "digests": {
+      "definition": "sha256:179b7e3b1734ba05f7682e5f1d3be23d62eb2f64f01ec7d8b6cedaca1c7d9c1a",
+      "interface": "sha256:1f5cb16c352e7605208823510a379306da453961a964ce03c2ac1d9c95fba07d",
+      "record": "sha256:c6557c3992453dc0166a78b96cb2044aa0b71648f06118454d8a47ad83f836a7"
+    },
+    "elaboration": null,
+    "evidence": "INFERRED",
+    "id": "FenoliteBlocks:resistor_link",
+    "licence": "CC0-1.0",
+    "name": "FenoliteBlocks:resistor_link",
+    "nets": [],
+    "params": [
+      {
+        "choices": null,
+        "default": "4.7k",
+        "doc": "Resistor value as a design value string",
+        "max": null,
+        "min": null,
+        "name": "resistance",
+        "required": false,
+        "type": "str",
+        "unit": null
+      }
+    ],
+    "parts": [
+      "R"
+    ],
+    "ports": [
+      {
+        "direction": "inout",
+        "doc": "Resistor terminal 1",
+        "kind": "net",
+        "members": [
+          "net"
+        ],
+        "name": "LEFT",
+        "optional": false
+      },
+      {
+        "direction": "inout",
+        "doc": "Resistor terminal 2",
+        "kind": "net",
+        "members": [
+          "net"
+        ],
+        "name": "RIGHT",
+        "optional": false
+      }
+    ],
+    "replaces": null,
+    "requires": {
+      "devices": [
+        "Fenolite:R_0603"
+      ],
+      "lib_ids": [],
+      "queries": []
+    },
+    "schema": "fenolite.block.v0",
+    "sources": [
+      "D-0001"
+    ],
+    "summary": "Two-terminal generic resistor link",
+    "version": "1.0.0"
+  },
+  "schema": "fenolite.block-item.v0",
+  "version": "1.0.0"
+}

@@ -1,0 +1,148 @@
+name: Library benchmark
+on:
+  schedule:
+    - cron: '23 6 * * 1'
+  workflow_dispatch:
+    inputs:
+      core_ref:
+        description: Exact public candidate core commit (empty uses library.toml)
+        required: false
+        type: string
+      report_issues:
+        description: Open one issue per newly failing board after protected-environment approval
+        required: false
+        default: false
+        type: boolean
+permissions:
+  contents: read
+concurrency:
+  group: library-benchmark
+  cancel-in-progress: false
+jobs:
+  benchmark:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: false}
+      - uses: ./.github/actions/fenolite
+        id: tool
+        with:
+          ref: ${{ inputs.core_ref }}
+          require: 'library replay,library audit,verify-source'
+          kicad: 'true'
+      - name: Read the previous benchmark when available
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          runs = json.loads(subprocess.check_output(['gh', 'run', 'list', '--workflow', 'bench.yml', '--limit', '20', '--json', 'databaseId,status'], text=True))
+          prior = next((run for run in runs if str(run['databaseId']) != os.environ['GITHUB_RUN_ID'] and run['status'] == 'completed'), None)
+          if prior:
+              target = Path(os.environ['RUNNER_TEMP']) / 'previous-benchmark'
+              run = subprocess.run(['gh', 'run', 'download', str(prior['databaseId']), '--name', 'library-benchmark', '--dir', str(target)])
+              if run.returncode: print('Previous artefact unavailable; this run starts a recorded baseline')
+          PY
+      - env:
+          CORE_REF: ${{ steps.tool.outputs.core-ref }}
+        run: |
+          python - <<'PY'
+          import json, os, subprocess, tempfile, time
+          from pathlib import Path
+          from fenolite.library.proof import bench_table
+          reports = Path('reports/benchmark'); reports.mkdir(parents=True)
+          old = next((Path(os.environ['RUNNER_TEMP']) / 'previous-benchmark').rglob('bench.json'), None)
+          previous = {row['id']: row['result'] for row in json.loads(old.read_text())} if old else {}
+          runs = []
+          for index, marker in enumerate(sorted(Path('boards').rglob('item.json'))):
+              item = json.loads(marker.read_text())
+              root = marker.parent
+              provenance = json.loads((root / 'PROVENANCE.json').read_text())
+              started = time.monotonic_ns()
+              row = {'id': item['id'], 'levels': [], 'differences': [], 'fidelity': provenance['fidelity']}
+              with tempfile.TemporaryDirectory(prefix='library-bench-') as temporary:
+                  source = Path(temporary) / 'upstream'
+                  try:
+                      upstream = provenance['upstream']
+                      subprocess.run(['git', 'init', '-q', str(source)], check=True)
+                      subprocess.run(['git', '-C', str(source), 'fetch', '-q', '--depth', '1', upstream['url'], upstream['commit']], check=True)
+                      subprocess.run(['git', '-C', str(source), 'checkout', '-q', 'FETCH_HEAD'], check=True)
+                      with (reports / f'{index}-replay.json').open('w') as out:
+                          replay = subprocess.run(['fenolite', 'library', 'replay', str(root), '--upstream', str(source), '--with-current', '--json'], stdout=out)
+                      row['replay_exit'] = replay.returncode
+                      with (reports / f'{index}-verify.json').open('w') as out:
+                          proof = subprocess.run(['fenolite', 'verify-source', str(root / 'design.py'), '--against', str(source / upstream['path']), '--provenance', str(root / 'PROVENANCE.json'), '--json'], stdout=out)
+                      row['proof_exit'] = proof.returncode
+                      reply = json.loads((reports / f'{index}-verify.json').read_text())
+                      row.update({key: reply.get('result', {}).get(key, []) for key in ('levels', 'differences')})
+                  except (OSError, ValueError, KeyError, subprocess.SubprocessError) as error:
+                      row['failure'] = str(error)
+              row['seconds'] = (time.monotonic_ns() - started) // 1_000_000_000
+              runs.append(row)
+          table = bench_table(runs, previous=previous)
+          by_id = {row['id']: row for row in runs}
+          for row in table:
+              source = by_id[row['id']]
+              if source.get('failure') or source.get('replay_exit', 1) or source.get('proof_exit', 1):
+                  row['result'] = 'fail'
+              row['issue'] = row['result'] == 'fail' and previous.get(row['id']) != 'fail'
+              row['failure'] = source.get('failure')
+              row['replay_exit'] = source.get('replay_exit')
+              row['proof_exit'] = source.get('proof_exit')
+          (reports / 'bench.json').write_text(json.dumps(table, indent=2, sort_keys=True) + '\n')
+          (reports / 'run.json').write_text(json.dumps({'core': os.environ['CORE_REF'], 'boards': len(runs)}, indent=2) + '\n')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('| Board | Result | Seconds | Differences |\n|---|---|---:|---:|\n')
+              for row in table: summary.write(f"| {row['id']} | {row['result']} | {row['seconds']} | {row['differences']} |\n")
+          if any(row['result'] == 'fail' for row in table): raise SystemExit('Benchmark failures retained in artefacts; this optional job does not gate merges')
+          PY
+      - if: always()
+        name: Preserve an explicit not-run report when setup blocks the benchmark
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          target = Path('reports/benchmark'); target.mkdir(parents=True, exist_ok=True)
+          if not (target / 'bench.json').is_file():
+              (target / 'not-run.json').write_text(json.dumps({'status': 'not-run', 'reason': 'A setup or dependency step failed; inspect this job. No board benchmark result is claimed.'}, indent=2) + '\n')
+          PY
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: library-benchmark
+          path: reports/
+          retention-days: 90
+  regression-issues:
+    needs: benchmark
+    if: always() && ((github.event_name == 'workflow_dispatch' && inputs.report_issues) || (github.event_name == 'schedule' && vars.LIBRARY_BENCH_ISSUES_ENABLED == 'true'))
+    runs-on: ubuntu-24.04
+    environment: library-benchmark-issues
+    permissions:
+      actions: read
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: false}
+      - uses: actions/download-artifact@v4
+        with: {name: library-benchmark, path: benchmark}
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import hashlib, json, subprocess
+          from pathlib import Path
+          source = next(Path('benchmark').rglob('bench.json'), None)
+          if source is None: raise SystemExit('Benchmark did not run; no regression issues are created')
+          rows = json.loads(source.read_text())
+          existing = json.loads(subprocess.check_output(['gh', 'issue', 'list', '--state', 'open', '--limit', '1000', '--json', 'title'], text=True))
+          titles = {issue['title'] for issue in existing}
+          for row in rows:
+              title = '[library-bench] ' + row['id']
+              if not row.get('issue') or title in titles: continue
+              body = Path('benchmark') / (hashlib.sha256(row['id'].encode()).hexdigest() + '.md')
+              body.write_text('A newly failing library benchmark was observed.\n\n```json\n' + json.dumps(row, indent=2, sort_keys=True) + '\n```\n\nReview the workflow artefact before changing accepted differences.\n')
+              subprocess.run(['gh', 'issue', 'create', '--title', title, '--body-file', str(body)], check=True)
+          PY

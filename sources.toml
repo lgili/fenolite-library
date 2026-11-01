@@ -1,0 +1,17 @@
+schema = "fenolite.library-sources.v0"
+
+[sources.D-0001]
+id = "D-0001"
+title = "Original FenoliteBlocks resistor link"
+url = "https://github.com/lgili/fenolite-library/tree/cac/c0279-library-infrastructure/blocks/cc0/FenoliteBlocks/resistor_link"
+licence = "CC0-1.0"
+retrieved = "2026-11-01"
+used = "Original two-terminal resistor example and its tests; no upstream design material."
+
+[sources.D-0002]
+id = "D-0002"
+title = "CC0 1.0 Universal legal code"
+url = "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
+licence = "CC0-1.0"
+retrieved = "2026-11-01"
+used = "Repository-owned file dedication and the complete CC0 text retained from the existing setup branch."

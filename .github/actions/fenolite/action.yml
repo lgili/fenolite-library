@@ -1,0 +1,117 @@
+name: Pinned Fenolite
+description: Install the one immutable public core commit and reject missing capabilities
+inputs:
+  ref:
+    description: Optional exact public candidate commit for a manual benchmark
+    default: ''
+  require:
+    description: Comma-separated capability names required by this job
+    default: ''
+  kicad:
+    description: Require the separately pinned KiCad container
+    default: 'false'
+outputs:
+  core-ref:
+    description: Installed core commit
+    value: ${{ steps.pin.outputs.ref }}
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - id: pin
+      shell: bash
+      env:
+        CANDIDATE_REF: ${{ inputs.ref }}
+      run: |
+        python - <<'PY'
+        import os, re, tomllib
+        from pathlib import Path
+        tools = tomllib.loads(Path('library.toml').read_text())['tools']
+        pin = os.environ['CANDIDATE_REF'] or tools['fenolite']
+        if not re.fullmatch(r'[0-9a-f]{40}', pin):
+            raise SystemExit('tools.fenolite must be an exact public 40-hex commit')
+        if not re.fullmatch(r'[0-9]+\.[0-9]+\.[0-9]+', tools['uv']):
+            raise SystemExit('tools.uv must be an exact version')
+        with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+            output.write(f'ref={pin}\n')
+            output.write(f'uv={tools["uv"]}\n')
+        PY
+    - uses: astral-sh/setup-uv@v6
+      with:
+        version: ${{ steps.pin.outputs.uv }}
+    - uses: actions/checkout@v4
+      with:
+        repository: lgili/Fenolite
+        ref: ${{ steps.pin.outputs.ref }}
+        path: .fenolite-core
+        persist-credentials: false
+    - shell: bash
+      env:
+        CORE_REF: ${{ steps.pin.outputs.ref }}
+      run: |
+        test "$(git -C .fenolite-core rev-parse HEAD)" = "$CORE_REF"
+        if ! cmp -s licences.toml .fenolite-core/src/fenolite/cli/data/library-licences.toml; then
+          echo 'licences.toml differs from the selected public core; synchronise it when updating the feature pin.' >&2
+          exit 1
+        fi
+        uv venv "$RUNNER_TEMP/fenolite-venv"
+        VIRTUAL_ENV="$RUNNER_TEMP/fenolite-venv" uv sync --active --frozen --project .fenolite-core --extra dev --extra geo
+        echo "$RUNNER_TEMP/fenolite-venv/bin" >> "$GITHUB_PATH"
+        echo "FENOLITE_STATE_DIR=$RUNNER_TEMP/fenolite-state" >> "$GITHUB_ENV"
+        echo "TMPDIR=$RUNNER_TEMP" >> "$GITHUB_ENV"
+        echo 'PYTHONDONTWRITEBYTECODE=1' >> "$GITHUB_ENV"
+    - shell: bash
+      env:
+        REQUIRED: ${{ inputs.require }}
+      run: |
+        fenolite capabilities --json > "$RUNNER_TEMP/capabilities.json"
+        python - <<'PY'
+        import json, os
+        from pathlib import Path
+        data = json.loads((Path(os.environ['RUNNER_TEMP']) / 'capabilities.json').read_text())
+        available = set()
+        for command in data['result']['commands']:
+            available.add(command['name'])
+            available.update(command.get('verbs', []))
+            available.update(command['name'] + ' ' + action for action in command.get('actions', []))
+        required = {name.strip() for name in os.environ['REQUIRED'].split(',') if name.strip()}
+        missing = sorted(required - available)
+        if missing:
+            raise SystemExit('Pinned core lacks required capabilities: ' + ', '.join(missing)
+                             + '. Update library.toml only after the feature commit is public and validated.')
+        PY
+    - if: inputs.kicad == 'true'
+      shell: bash
+      run: |
+        python - <<'PY'
+        import os, re, tomllib
+        from pathlib import Path
+        tools = tomllib.loads(Path('library.toml').read_text())['tools']
+        image = tools.get('kicad_image', '')
+        if not re.fullmatch(r'[a-zA-Z0-9./_:-]+@sha256:[0-9a-f]{64}', image):
+            raise SystemExit('Set tools.kicad_image to a reviewed public image@sha256 digest before this job can run')
+        if not re.fullmatch(r'[0-9]+\.[0-9]+\.[0-9]+', tools['kicad_cli']):
+            raise SystemExit('tools.kicad_cli must be an exact version')
+        with open(os.environ['GITHUB_ENV'], 'a') as env:
+            env.write(f'FENOLITE_KICAD_IMAGE={image}\n')
+            env.write(f'FENOLITE_KICAD_VERSION={tools["kicad_cli"]}\n')
+        PY
+    - if: inputs.kicad == 'true'
+      shell: bash
+      run: |
+        mkdir -p "$RUNNER_TEMP/kicad-bin"
+        cat > "$RUNNER_TEMP/kicad-bin/kicad-cli" <<'SH'
+        #!/usr/bin/env bash
+        set -euo pipefail
+        exec docker run --rm --user "$(id -u):$(id -g)" \
+          --volume "$GITHUB_WORKSPACE:$GITHUB_WORKSPACE" --volume "$RUNNER_TEMP:$RUNNER_TEMP" \
+          --workdir "$PWD" --entrypoint kicad-cli "$FENOLITE_KICAD_IMAGE" "$@"
+        SH
+        chmod 755 "$RUNNER_TEMP/kicad-bin/kicad-cli"
+        docker pull "$FENOLITE_KICAD_IMAGE"
+        found="$("$RUNNER_TEMP/kicad-bin/kicad-cli" version)"
+        case "$found" in "$FENOLITE_KICAD_VERSION"|"$FENOLITE_KICAD_VERSION".*|"$FENOLITE_KICAD_VERSION"-*|"$FENOLITE_KICAD_VERSION"+*) ;; *) echo "Unexpected KiCad version: $found"; exit 1 ;; esac
+        echo "$RUNNER_TEMP/kicad-bin" >> "$GITHUB_PATH"
+        echo "FENOLITE_KICAD_CLI=$RUNNER_TEMP/kicad-bin/kicad-cli" >> "$GITHUB_ENV"
