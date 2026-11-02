@@ -1,0 +1,773 @@
+{
+  "audit": {
+    "exit_code": 5,
+    "issues": {
+      "library.family-mismatch": 1,
+      "library.licence-text": 2,
+      "library.proof-failed": 12,
+      "library.provenance-invalid": 23
+    },
+    "reply_sha256": "f05b9e9c3eac3f5103607d351424ae195b267a0a6fa68f176cb907c88688b703"
+  },
+  "boards": {
+    "ecc83": {
+      "accepted": [],
+      "confirmed_files": 22,
+      "differences": [
+        {
+          "a": "72/57480",
+          "b": "0/57480",
+          "field": "pixels",
+          "kind": "render-pixels",
+          "level": 8,
+          "where": "sheet:ecc83-pp.kicad_sch:146304000,112649000-147066000,113030000"
+        }
+      ],
+      "dry_import_exit": 0,
+      "equivalent": false,
+      "input_sha256": {
+        "demos/ecc83/ecc83-pp.kicad_pcb": "0ab45f4f8c90ac877e3313a1888d875107f2be3fc2b2f40cfb7927873b35260c",
+        "demos/ecc83/ecc83-pp.kicad_pro": "8a943fac4b0cc3ed4fa83ccc83a6e15b9326178845ada0aa906df63f0672e975",
+        "demos/ecc83/ecc83-pp.kicad_sch": "8a2d0359a0f3e647378034d84ab72b09dd7aa42f8b1f5e7fa0ff28ae369beee9",
+        "demos/ecc83/ecc83-pp_v2.kicad_pcb": "9be2caf4c257a93fc2b3904add1061a4d2e23cde502a7846513ae7db6b214c30",
+        "demos/ecc83/ecc83-pp_v2.kicad_pro": "8ca4caec049e921d8cae59f2eddb5ca612c18010da8191ea1d30651a00aa07c9",
+        "demos/ecc83/ecc83-pp_v2.kicad_sch": "80576c542e9ce473538c30ed24b7cd7e9152fe7922ebdb518928aa815b858ff1"
+      },
+      "levels": [
+        {
+          "compared": 15,
+          "differences": 0,
+          "excluded": 0,
+          "level": 1,
+          "name": "components",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "components": {
+              "a": 15,
+              "b": 15
+            },
+            "ignored": 0
+          }
+        },
+        {
+          "compared": 33,
+          "differences": 0,
+          "excluded": 0,
+          "level": 2,
+          "name": "netlist",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "renamed": 0,
+            "sources": {
+              "a": "board",
+              "b": "board"
+            },
+            "unnumbered": {
+              "a": 0,
+              "b": 0
+            }
+          }
+        },
+        {
+          "compared": 33,
+          "differences": 0,
+          "excluded": 0,
+          "level": 3,
+          "name": "footprints",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "copper_unknown": 0,
+            "footprints": 15
+          }
+        },
+        {
+          "compared": 15,
+          "differences": 0,
+          "excluded": 0,
+          "level": 4,
+          "name": "placement",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "frame": "absolute",
+            "translation": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "compared": 68,
+          "differences": 0,
+          "excluded": 0,
+          "level": 5,
+          "name": "routing",
+          "notices": 1,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "copper_no_net": {
+              "a": 0,
+              "b": 0
+            },
+            "length": {
+              "a": 210998428,
+              "b": 210998428
+            },
+            "nets": 9,
+            "nets_unpaired": {
+              "a": 0,
+              "b": 0
+            },
+            "pieces": {
+              "a": 9,
+              "b": 15
+            },
+            "strict": {
+              "arcs": {
+                "a": 0,
+                "b": 0,
+                "matched": 0
+              },
+              "tracks": {
+                "a": 0,
+                "b": 0,
+                "matched": 59
+              },
+              "vias": {
+                "a": 0,
+                "b": 0,
+                "matched": 0
+              }
+            },
+            "unjudged": 1,
+            "unshaped": {
+              "a": 0,
+              "b": 0
+            },
+            "vias": {
+              "a": 0,
+              "b": 0
+            },
+            "zones_unfilled": {
+              "a": 0,
+              "b": 1
+            }
+          }
+        },
+        {
+          "compared": 30,
+          "differences": 0,
+          "excluded": 0,
+          "level": 6,
+          "name": "rules",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "layers": 20,
+            "netclasses": 0,
+            "rules": 1,
+            "stackup": 9
+          }
+        },
+        {
+          "compared": 65,
+          "differences": 0,
+          "excluded": 0,
+          "level": 7,
+          "name": "geometry",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "dimensions": 0,
+            "footprint_items": 60,
+            "graphics": 4,
+            "holes": 0,
+            "keepouts": 0,
+            "outline": 0,
+            "texts": 0,
+            "zones": 1
+          }
+        },
+        {
+          "compared": 102,
+          "differences": 0,
+          "excluded": 0,
+          "level": "S",
+          "name": "schematic",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "extraction_issues": 0,
+            "instances": 1,
+            "items": 51,
+            "pins": 33,
+            "symbols": 17
+          }
+        },
+        {
+          "compared": 11,
+          "differences": 1,
+          "excluded": 0,
+          "level": 8,
+          "name": "presentation",
+          "notices": 0,
+          "reason": "",
+          "status": "differs",
+          "summary": {
+            "changes": {
+              "sheet:ecc83-pp.kicad_sch": [
+                "#PWR05 added",
+                "#PWR07 added",
+                "#FLG05 removed"
+              ]
+            },
+            "layers": 10,
+            "pitch_nm": {
+              "board": 50000,
+              "sheet": 127000
+            },
+            "pixel_ppm": 1000,
+            "sheets": 1
+          }
+        }
+      ],
+      "proof_error": {
+        "code": "FEN-5001",
+        "hint": "read 'issues' in the envelope",
+        "message": "1 finding(s) of severity error",
+        "retryable": false,
+        "where": "verify-source"
+      },
+      "proof_exit": 5
+    },
+    "kit-dev-coldfire-xilinx_5213": {
+      "accepted": [],
+      "confirmed_files": 113,
+      "differences": [],
+      "dry_import_exit": 0,
+      "equivalent": null,
+      "input_sha256": {
+        "demos/kit-dev-coldfire-xilinx_5213/in_out_conn.kicad_sch": "b406e5f8d1903f7d094c1109020a1912a1473c08ffbc0c64640742850f7f7809",
+        "demos/kit-dev-coldfire-xilinx_5213/kit-dev-coldfire-xilinx_5213.kicad_pcb": "392cf6bf4b9b62beb435f965ccd7671a46decb17f947b74bfde482acd2132a5e",
+        "demos/kit-dev-coldfire-xilinx_5213/kit-dev-coldfire-xilinx_5213.kicad_pro": "d6ca906944730a3eae31ba3d9240c6966424b0d80ba76e80710e39d7b23c4637",
+        "demos/kit-dev-coldfire-xilinx_5213/kit-dev-coldfire-xilinx_5213.kicad_sch": "a1109092165ecec0d677142294330258c8990247e804f260d7682fda82602214",
+        "demos/kit-dev-coldfire-xilinx_5213/xilinx.kicad_sch": "3750dc3866cce42d96220c39dde5c7c88589207810487581047a71d541b1fb5b"
+      },
+      "levels": [],
+      "proof_error": {
+        "code": "FEN-3004",
+        "hint": "the message and where locate the problem",
+        "message": "unsupported schematic rendering of explicit bold; the source style is preserved but no default-font mask is a faithful proof",
+        "retryable": false,
+        "where": "in_out_conn.kicad_sch:text[Volt].effects"
+      },
+      "proof_exit": 3
+    },
+    "sonde_xilinx": {
+      "accepted": [],
+      "confirmed_files": 28,
+      "differences": [
+        {
+          "a": "sheet:sonde xilinx.kicad_sch",
+          "b": "",
+          "field": "layer",
+          "kind": "render-missing",
+          "level": 8,
+          "where": "sheet:sonde xilinx.kicad_sch"
+        },
+        {
+          "a": "",
+          "b": "sheet:sonde_xilinx.kicad_sch",
+          "field": "layer",
+          "kind": "render-missing",
+          "level": 8,
+          "where": "sheet:sonde_xilinx.kicad_sch"
+        }
+      ],
+      "dry_import_exit": 0,
+      "equivalent": false,
+      "input_sha256": {
+        "demos/sonde xilinx/sonde xilinx.kicad_pcb": "d0dee876715fcdd3f656dd6a77cc1141c39bec4d6f8492a3784d38edd6b9a998",
+        "demos/sonde xilinx/sonde xilinx.kicad_pro": "ee60a96f93cc36549b52da9b3eea9547d5ea1e83a671c449668987edfb73a901",
+        "demos/sonde xilinx/sonde xilinx.kicad_sch": "5271d5d1472d4dab645870f97e62785be9eb95b793e1b8cf0d8ca607de95a985"
+      },
+      "levels": [
+        {
+          "compared": 25,
+          "differences": 0,
+          "excluded": 0,
+          "level": 1,
+          "name": "components",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "components": {
+              "a": 25,
+              "b": 25
+            },
+            "ignored": 0
+          }
+        },
+        {
+          "compared": 108,
+          "differences": 0,
+          "excluded": 0,
+          "level": 2,
+          "name": "netlist",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "renamed": 0,
+            "sources": {
+              "a": "board",
+              "b": "board"
+            },
+            "unnumbered": {
+              "a": 0,
+              "b": 0
+            }
+          }
+        },
+        {
+          "compared": 108,
+          "differences": 0,
+          "excluded": 0,
+          "level": 3,
+          "name": "footprints",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "copper_unknown": 0,
+            "footprints": 25
+          }
+        },
+        {
+          "compared": 25,
+          "differences": 0,
+          "excluded": 0,
+          "level": 4,
+          "name": "placement",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "frame": "absolute",
+            "translation": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "compared": 237,
+          "differences": 0,
+          "excluded": 0,
+          "level": 5,
+          "name": "routing",
+          "notices": 1,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "copper_no_net": {
+              "a": 0,
+              "b": 0
+            },
+            "length": {
+              "a": 637755412,
+              "b": 637755412
+            },
+            "nets": 26,
+            "nets_unpaired": {
+              "a": 0,
+              "b": 0
+            },
+            "pieces": {
+              "a": 26,
+              "b": 44
+            },
+            "strict": {
+              "arcs": {
+                "a": 0,
+                "b": 0,
+                "matched": 0
+              },
+              "tracks": {
+                "a": 0,
+                "b": 0,
+                "matched": 208
+              },
+              "vias": {
+                "a": 0,
+                "b": 0,
+                "matched": 3
+              }
+            },
+            "unjudged": 1,
+            "unshaped": {
+              "a": 0,
+              "b": 0
+            },
+            "vias": {
+              "a": 3,
+              "b": 3
+            },
+            "zones_unfilled": {
+              "a": 0,
+              "b": 1
+            }
+          }
+        },
+        {
+          "compared": 30,
+          "differences": 0,
+          "excluded": 0,
+          "level": 6,
+          "name": "rules",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "layers": 20,
+            "netclasses": 0,
+            "rules": 1,
+            "stackup": 9
+          }
+        },
+        {
+          "compared": 114,
+          "differences": 0,
+          "excluded": 0,
+          "level": 7,
+          "name": "geometry",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "dimensions": 1,
+            "footprint_items": 100,
+            "graphics": 4,
+            "holes": 0,
+            "keepouts": 0,
+            "outline": 0,
+            "texts": 8,
+            "zones": 1
+          }
+        },
+        {
+          "compared": 314,
+          "differences": 0,
+          "excluded": 0,
+          "level": "S",
+          "name": "schematic",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "extraction_issues": 0,
+            "instances": 1,
+            "items": 174,
+            "pins": 108,
+            "symbols": 31
+          }
+        },
+        {
+          "compared": 15,
+          "differences": 2,
+          "excluded": 0,
+          "level": 8,
+          "name": "presentation",
+          "notices": 0,
+          "reason": "",
+          "status": "differs",
+          "summary": {
+            "changes": {},
+            "layers": 15,
+            "pitch_nm": {
+              "board": 50000,
+              "sheet": 127000
+            },
+            "pixel_ppm": 1000,
+            "sheets": 0
+          }
+        }
+      ],
+      "proof_error": {
+        "code": "FEN-5001",
+        "hint": "read 'issues' in the envelope",
+        "message": "2 finding(s) of severity error",
+        "retryable": false,
+        "where": "verify-source"
+      },
+      "proof_exit": 5
+    },
+    "video": {
+      "accepted": [],
+      "confirmed_files": 117,
+      "differences": [],
+      "dry_import_exit": 0,
+      "equivalent": true,
+      "input_sha256": {
+        "demos/video/bus_pci.kicad_sch": "0110ee91bd8eb39ba7c4d08703bca193f72337b25928ad2babc86dc3c54d1cde",
+        "demos/video/esvideo.kicad_sch": "b736ce2d5a17fa94fcd64c656435031730b3b8524342dd4e1d19a917adbd1d6f",
+        "demos/video/graphic.kicad_sch": "c09706718277aefb6d9b1ea49825237d026191e6d91d44c7e75aa0eba682900d",
+        "demos/video/modul.kicad_sch": "59f6d8152af769371bd35a08dc11c1bdf9c3b4e56ab079f389a0584d1a4574c7",
+        "demos/video/muxdata.kicad_sch": "9b757497857c061632fd09cc3d0a236843c1c164f0b864a78b22c88c1fd96a58",
+        "demos/video/pal-ntsc.kicad_sch": "970c766b745d299ca0b47b05a51baf628bf114a6bfe007736beb7ccd0548fd09",
+        "demos/video/rams.kicad_sch": "40a46f70b6731962a4afa5858b54d3bbf55ac3e4b1a95c7c905b698ae99eb0e3",
+        "demos/video/video.kicad_pcb": "f620675158ddd5c61e5ce9e15f4c92b230ae1df1cbcec6c502b8ce266e4007ea",
+        "demos/video/video.kicad_pro": "329241ed4d9d176ef51adcec457a7c072e4bbc1b6500738622ebeaeba74d6c7f",
+        "demos/video/video.kicad_sch": "4d3ced775e49f56704b036bf56b9bf90d3d403b29bc9434eca47a8f18bea5ce1"
+      },
+      "levels": [
+        {
+          "compared": 189,
+          "differences": 0,
+          "excluded": 0,
+          "level": 1,
+          "name": "components",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "components": {
+              "a": 189,
+              "b": 189
+            },
+            "ignored": 0
+          }
+        },
+        {
+          "compared": 2080,
+          "differences": 0,
+          "excluded": 0,
+          "level": 2,
+          "name": "netlist",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "renamed": 0,
+            "sources": {
+              "a": "board",
+              "b": "board"
+            },
+            "unnumbered": {
+              "a": 24,
+              "b": 24
+            }
+          }
+        },
+        {
+          "compared": 2118,
+          "differences": 0,
+          "excluded": 0,
+          "level": 3,
+          "name": "footprints",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "copper_unknown": 0,
+            "footprints": 189
+          }
+        },
+        {
+          "compared": 189,
+          "differences": 0,
+          "excluded": 0,
+          "level": 4,
+          "name": "placement",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "frame": "absolute",
+            "translation": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "compared": 9111,
+          "differences": 0,
+          "excluded": 0,
+          "level": 5,
+          "name": "routing",
+          "notices": 2,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "copper_no_net": {
+              "a": 0,
+              "b": 0
+            },
+            "length": {
+              "a": 35416825425,
+              "b": 35416825425
+            },
+            "nets": 371,
+            "nets_unpaired": {
+              "a": 0,
+              "b": 0
+            },
+            "pieces": {
+              "a": 371,
+              "b": 589
+            },
+            "strict": {
+              "arcs": {
+                "a": 0,
+                "b": 0,
+                "matched": 0
+              },
+              "tracks": {
+                "a": 0,
+                "b": 0,
+                "matched": 7932
+              },
+              "vias": {
+                "a": 0,
+                "b": 0,
+                "matched": 808
+              }
+            },
+            "unjudged": 2,
+            "unshaped": {
+              "a": 0,
+              "b": 0
+            },
+            "vias": {
+              "a": 808,
+              "b": 808
+            },
+            "zones_unfilled": {
+              "a": 0,
+              "b": 2
+            }
+          }
+        },
+        {
+          "compared": 36,
+          "differences": 0,
+          "excluded": 0,
+          "level": 6,
+          "name": "rules",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "layers": 22,
+            "netclasses": 0,
+            "rules": 1,
+            "stackup": 13
+          }
+        },
+        {
+          "compared": 800,
+          "differences": 0,
+          "excluded": 0,
+          "level": 7,
+          "name": "geometry",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "dimensions": 2,
+            "footprint_items": 759,
+            "graphics": 36,
+            "holes": 0,
+            "keepouts": 0,
+            "outline": 0,
+            "texts": 1,
+            "zones": 2
+          }
+        },
+        {
+          "compared": 6302,
+          "differences": 0,
+          "excluded": 0,
+          "level": "S",
+          "name": "schematic",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "extraction_issues": 0,
+            "instances": 8,
+            "items": 4072,
+            "pins": 2033,
+            "symbols": 189
+          }
+        },
+        {
+          "compared": 25,
+          "differences": 0,
+          "excluded": 0,
+          "level": 8,
+          "name": "presentation",
+          "notices": 0,
+          "reason": "",
+          "status": "equal",
+          "summary": {
+            "changes": {},
+            "layers": 17,
+            "pitch_nm": {
+              "board": 50000,
+              "sheet": 127000
+            },
+            "pixel_ppm": 1000,
+            "sheets": 8
+          }
+        }
+      ],
+      "proof_error": null,
+      "proof_exit": 0
+    }
+  },
+  "core_commit": "1918e63214a7d0123e1f5fa8ef095c73fd2e1472",
+  "date": "2026-11-02",
+  "format_version": 1,
+  "input_files": 24,
+  "library_base": "4932137d10f74289f7009f2252f67cdf229a471f",
+  "policy": {
+    "accepted_differences_added": 0,
+    "exact_head_ci": false,
+    "final_model0_capture": false,
+    "loss_flags_added": 0,
+    "native_application_proof": false,
+    "payloads_updated": false,
+    "public_tool_pin_updated": false,
+    "tolerance_overrides_added": 0
+  },
+  "raw_replies": {
+    "capabilities.json": "f4eabd607900ba1d8a7dab05a8c2a0732d834c653ccfdfff00c121d3cdf2c6ed",
+    "ecc83/confirm-import.json": "dc35c12ae11d8a21dc88d16317893a6fba34a64f071f0a53f42d05944c2b6750",
+    "ecc83/dry-import.json": "49b003afdf796eae1ff811249a32423b0a92e41641ab01e3a09e58dd06831276",
+    "ecc83/fresh-proof.json": "645d6cfe07aa32ad188d3a6644cf0afbea09155a805b67275f046502e8342912",
+    "kit-dev-coldfire-xilinx_5213/confirm-import.json": "adf677c4b969827911bab724f4975d8e2ee577db086b3d6a2c47dcd09dd8e697",
+    "kit-dev-coldfire-xilinx_5213/dry-import.json": "d33c55b5b2cde25ce2bedf360cd813d5c554356a21e3b8e3316ca56ff7ebb194",
+    "kit-dev-coldfire-xilinx_5213/fresh-proof.json": "e28012abea337cc4f7a1a726176c63d05ef5328b84e784637c4b5c1ce60b4426",
+    "sonde_xilinx/confirm-import.json": "0e4c5b82059ff85165dd19fccd6db6d5483cd9623a8729d83594432abb69d952",
+    "sonde_xilinx/dry-import.json": "6d6cc75647904dd07fa4448ed70d0d7e929d3695d06ff5c80b6863f563823cb0",
+    "sonde_xilinx/fresh-proof.json": "23c3169d869f4cc942790e170bda9baf584ca71a82db9b842b0c981707cd78a9",
+    "video/confirm-import.json": "a4e82a41996004addfac435ab0b3a4f515d86f06b5dbab9782b26bd04e9f87b5",
+    "video/dry-import.json": "fda1a41c1b91c184dac8724636b99946d78436a13745de2d44b92c6f2a71eb53",
+    "video/fresh-proof.json": "4e184686f8fbf4e5816c10b45fffc82fcf5906ee3be888e7b26c4a476d77cfa8"
+  },
+  "unchanged_authoritative_board_files": 958
+}

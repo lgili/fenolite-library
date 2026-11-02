@@ -95,3 +95,26 @@
   and existing item/payload/terms/pin bytes remain unchanged, and JSON/TOML plus SHA assertions and
   strict OpenSpec pass. Four unchanged-payload proofs still exit 5 at 7/S; the actual audit still exits
   5 with 38 findings. This is measured evidence in a signed local commit, not a waived passing baseline.
+
+## 5. Maintainer-host font/context/property continuation — 2026-11-02
+
+- [x] 5.1 Bind the actual signed model-0 core source, available environment,
+  library base and original cached upstream SHA values before fresh commands.
+  Keep the final combined model-0 inventory and prepared model-1 gates open.
+  Proof: source/tree/input hashes and unchanged authoritative item snapshots.
+  Passed on signed core 1918e632: capabilities recorded, original 24 native
+  hashes verified and all 958 authoritative board files unchanged. Final model-0
+  capture and model-1 activation are explicitly not claimed.
+- [x] 5.2 Repeat all four strict dry imports, review successful scratch-only
+  plans, confirm their exact plan IDs and run full default 1–8/S proofs.
+  Record every actual exit, refusal, remaining finding and accepted count.
+  Proof: saved actual replies and all planned/confirmed output SHA values.
+  Passed measured replay: four reviewed dry plans, four exact-ID confirmations
+  and four full default proof invocations. All 280 files match their plans.
+  Video exits 0 at all nine levels; ECC83/sonde exit 5, Coldfire exits 3 with
+  its explicit style refusal and no invented levels. All raw-reply hashes and
+  input identities reconcile with conversion-replay-maintainer-host.json.
+- [ ] 5.3 Diagnose actual remaining findings with original controls; update
+  measured diagnostics and provenance only as actual proofs and policy permit.
+  Preserve upstream terms, earlier outcomes, public tool pin and CI gates.
+  Proof: current audit, source/item/terms invariants and strict OpenSpec.
