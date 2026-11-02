@@ -1,0 +1,3040 @@
+{
+  "audit": {
+    "exit_code": 5,
+    "issues": {
+      "library.family-mismatch": 1,
+      "library.licence-text": 2,
+      "library.proof-failed": 12,
+      "library.provenance-invalid": 23
+    },
+    "reply_sha256": "d5f26228d77dadc3d1f4613bbcc0426094271b19645a8050e6bb306c442c990f",
+    "seconds": 5.3,
+    "stderr_sha256": "6ee5b6c0ef8e1138b8f0aa8c9c9214c211af621ae2821d3c510575d47f39ed33"
+  },
+  "boards": {
+    "ecc83": {
+      "baseline": {
+        "against": {
+          "backend": "kicad",
+          "files": {
+            "ecc83-pp.kicad_pcb": "0ab45f4f8c90ac877e3313a1888d875107f2be3fc2b2f40cfb7927873b35260c",
+            "ecc83-pp.kicad_pro": "8a943fac4b0cc3ed4fa83ccc83a6e15b9326178845ada0aa906df63f0672e975",
+            "ecc83-pp.kicad_sch": "8a2d0359a0f3e647378034d84ab72b09dd7aa42f8b1f5e7fa0ff28ae369beee9"
+          },
+          "name": "ecc83-pp.kicad_pro"
+        },
+        "build": {
+          "copper_check": "warn",
+          "copy": true,
+          "files": 30,
+          "target": "kicad-9"
+        },
+        "comparison_reached": true,
+        "difference_kinds": {
+          "7:graphic-field": 4,
+          "S:item-field": 3,
+          "S:item-missing": 52,
+          "S:sheet-missing": 1,
+          "S:symbol-missing": 17
+        },
+        "equivalent": false,
+        "error": {
+          "code": "FEN-5001",
+          "hint": "read 'issues' in the envelope",
+          "message": "77 finding(s) of severity error",
+          "retryable": false,
+          "where": "verify-source"
+        },
+        "evidence": "INFERRED",
+        "evidence_oracle": null,
+        "exit_code": 5,
+        "fenolite_path_differences": 0,
+        "historical_accepted_matches": 11,
+        "inputs_unchanged": true,
+        "issues": {
+          "equiv.excluded": 3,
+          "equiv.graphic-field": 4,
+          "equiv.item-field": 3,
+          "equiv.item-missing": 52,
+          "equiv.route-unjudged": 1,
+          "equiv.sheet-missing": 1,
+          "equiv.symbol-missing": 17,
+          "fidelity.accepted-unused": 9,
+          "place.outside-outline": 1
+        },
+        "levels": {
+          "1": {
+            "compared": 15,
+            "differences": 0,
+            "excluded": 0,
+            "name": "components",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "components": {
+                "a": 15,
+                "b": 15
+              },
+              "ignored": 0
+            }
+          },
+          "2": {
+            "compared": 33,
+            "differences": 0,
+            "excluded": 0,
+            "name": "netlist",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "renamed": 0,
+              "sources": {
+                "a": "board",
+                "b": "board"
+              },
+              "unnumbered": {
+                "a": 0,
+                "b": 0
+              }
+            }
+          },
+          "3": {
+            "compared": 33,
+            "differences": 0,
+            "excluded": 9,
+            "name": "footprints",
+            "notices": 0,
+            "reason": "",
+            "status": "accepted",
+            "summary": {
+              "copper_unknown": 0,
+              "footprints": 15
+            }
+          },
+          "4": {
+            "compared": 15,
+            "differences": 0,
+            "excluded": 0,
+            "name": "placement",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "frame": "absolute",
+              "translation": [
+                0,
+                0
+              ]
+            }
+          },
+          "5": {
+            "compared": 68,
+            "differences": 0,
+            "excluded": 0,
+            "name": "routing",
+            "notices": 1,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "copper_no_net": {
+                "a": 0,
+                "b": 0
+              },
+              "length": {
+                "a": 210998428,
+                "b": 210998428
+              },
+              "nets": 9,
+              "nets_unpaired": {
+                "a": 0,
+                "b": 0
+              },
+              "pieces": {
+                "a": 9,
+                "b": 15
+              },
+              "strict": {
+                "arcs": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 0
+                },
+                "tracks": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 59
+                },
+                "vias": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 0
+                }
+              },
+              "unjudged": 1,
+              "unshaped": {
+                "a": 0,
+                "b": 0
+              },
+              "vias": {
+                "a": 0,
+                "b": 0
+              },
+              "zones_unfilled": {
+                "a": 0,
+                "b": 1
+              }
+            }
+          },
+          "6": {
+            "compared": 30,
+            "differences": 0,
+            "excluded": 0,
+            "name": "rules",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "layers": 20,
+              "netclasses": 0,
+              "rules": 1,
+              "stackup": 9
+            }
+          },
+          "7": {
+            "compared": 65,
+            "differences": 4,
+            "excluded": 0,
+            "name": "geometry",
+            "notices": 0,
+            "reason": "",
+            "status": "differs",
+            "summary": {
+              "dimensions": 0,
+              "footprint_items": 60,
+              "graphics": 4,
+              "holes": 0,
+              "keepouts": 0,
+              "outline": 0,
+              "texts": 0,
+              "zones": 1
+            }
+          },
+          "8": {
+            "compared": 11,
+            "differences": 0,
+            "excluded": 2,
+            "name": "presentation",
+            "notices": 0,
+            "reason": "",
+            "status": "accepted",
+            "summary": {
+              "changes": {
+                "sheet:ecc83-pp.kicad_sch": [
+                  "#FLG05 removed",
+                  "#FLG07 removed",
+                  "#PWR01 removed"
+                ]
+              },
+              "layers": 10,
+              "pitch_nm": {
+                "board": 50000,
+                "sheet": 127000
+              },
+              "pixel_ppm": 1000,
+              "sheets": 1
+            }
+          },
+          "S": {
+            "compared": 103,
+            "differences": 73,
+            "excluded": 0,
+            "name": "schematic",
+            "notices": 0,
+            "reason": "",
+            "status": "differs",
+            "summary": {
+              "extraction_issues": 0,
+              "instances": 2,
+              "items": 51,
+              "pins": 33,
+              "symbols": 17
+            }
+          }
+        },
+        "raw_log": "logs/ecc83/baseline-proof.stdout.json",
+        "raw_reply_sha256": "3a03324f3749eab6b48753df2d26345d7da3e3993fbf475234065289b99df24f",
+        "seconds": 9.626,
+        "stderr_sha256": "73a007bf317885be9fa63cc42eda9a001cd8720c5460561893baaab669e56606",
+        "tolerances": {
+          "angle_udeg": 0,
+          "frame": "absolute",
+          "length_nm": 0,
+          "length_ppm": 0,
+          "pixel_ppm": 1000,
+          "render_pitch_um": 50
+        }
+      },
+      "fresh_import_confirm": {
+        "error": null,
+        "error_findings": [],
+        "evidence": "INFERRED",
+        "evidence_oracle": null,
+        "exit_code": 0,
+        "inputs_unchanged": true,
+        "issues": {
+          "import.footprint-variant": 8,
+          "import.provenance-missing": 1,
+          "import.sheet-renamed": 1
+        },
+        "plan_id": null,
+        "planned_files": 0,
+        "raw_log": "logs/ecc83/import-confirm.stdout.json",
+        "raw_reply_sha256": "812985f0f0f176cb22ec07e16ed0a0f65ab3062320bc9f228592c8430a0a87b2",
+        "seconds": 4.457,
+        "self_check": {
+          "equivalent": true,
+          "levels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "unexpressed": []
+      },
+      "fresh_import_dry": {
+        "error": null,
+        "error_findings": [],
+        "evidence": "INFERRED",
+        "evidence_oracle": null,
+        "exit_code": 0,
+        "inputs_unchanged": true,
+        "issues": {
+          "import.footprint-variant": 8,
+          "import.provenance-missing": 1,
+          "import.sheet-renamed": 1
+        },
+        "plan_id": "32365b5608715bb2",
+        "planned_files": 22,
+        "raw_log": "logs/ecc83/import-dry.stdout.json",
+        "raw_reply_sha256": "4f077bf547e1b13d412ef93cace8f7935a51669f8ac50514255694fe55dee495",
+        "seconds": 5.481,
+        "self_check": {
+          "equivalent": true,
+          "levels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "unexpressed": []
+      },
+      "fresh_proof": {
+        "against": {
+          "backend": "kicad",
+          "files": {
+            "ecc83-pp.kicad_pcb": "0ab45f4f8c90ac877e3313a1888d875107f2be3fc2b2f40cfb7927873b35260c",
+            "ecc83-pp.kicad_pro": "8a943fac4b0cc3ed4fa83ccc83a6e15b9326178845ada0aa906df63f0672e975",
+            "ecc83-pp.kicad_sch": "8a2d0359a0f3e647378034d84ab72b09dd7aa42f8b1f5e7fa0ff28ae369beee9"
+          },
+          "name": "ecc83-pp.kicad_pro"
+        },
+        "build": {
+          "copper_check": "warn",
+          "copy": true,
+          "files": 29,
+          "target": "kicad-9"
+        },
+        "comparison_reached": true,
+        "difference_kinds": {
+          "8:render-pixels": 1
+        },
+        "differences": [
+          {
+            "a": "0/85762",
+            "b": "24831/85762",
+            "field": "pixels",
+            "kind": "render-pixels",
+            "level": 8,
+            "where": "sheet:ecc83-pp.kicad_sch:158877000,76454000-185166000,102616000"
+          }
+        ],
+        "equivalent": false,
+        "error": {
+          "code": "FEN-5001",
+          "hint": "read 'issues' in the envelope",
+          "message": "1 finding(s) of severity error",
+          "retryable": false,
+          "where": "verify-source"
+        },
+        "evidence": "INFERRED",
+        "evidence_oracle": null,
+        "exit_code": 5,
+        "fenolite_path_differences": 0,
+        "historical_accepted_matches": 0,
+        "inputs_unchanged": true,
+        "issues": {
+          "equiv.render-pixels": 1,
+          "equiv.route-unjudged": 1,
+          "place.outside-outline": 1
+        },
+        "levels": {
+          "1": {
+            "compared": 15,
+            "differences": 0,
+            "excluded": 0,
+            "name": "components",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "components": {
+                "a": 15,
+                "b": 15
+              },
+              "ignored": 0
+            }
+          },
+          "2": {
+            "compared": 33,
+            "differences": 0,
+            "excluded": 0,
+            "name": "netlist",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "renamed": 0,
+              "sources": {
+                "a": "board",
+                "b": "board"
+              },
+              "unnumbered": {
+                "a": 0,
+                "b": 0
+              }
+            }
+          },
+          "3": {
+            "compared": 33,
+            "differences": 0,
+            "excluded": 0,
+            "name": "footprints",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "copper_unknown": 0,
+              "footprints": 15
+            }
+          },
+          "4": {
+            "compared": 15,
+            "differences": 0,
+            "excluded": 0,
+            "name": "placement",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "frame": "absolute",
+              "translation": [
+                0,
+                0
+              ]
+            }
+          },
+          "5": {
+            "compared": 68,
+            "differences": 0,
+            "excluded": 0,
+            "name": "routing",
+            "notices": 1,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "copper_no_net": {
+                "a": 0,
+                "b": 0
+              },
+              "length": {
+                "a": 210998428,
+                "b": 210998428
+              },
+              "nets": 9,
+              "nets_unpaired": {
+                "a": 0,
+                "b": 0
+              },
+              "pieces": {
+                "a": 9,
+                "b": 15
+              },
+              "strict": {
+                "arcs": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 0
+                },
+                "tracks": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 59
+                },
+                "vias": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 0
+                }
+              },
+              "unjudged": 1,
+              "unshaped": {
+                "a": 0,
+                "b": 0
+              },
+              "vias": {
+                "a": 0,
+                "b": 0
+              },
+              "zones_unfilled": {
+                "a": 0,
+                "b": 1
+              }
+            }
+          },
+          "6": {
+            "compared": 30,
+            "differences": 0,
+            "excluded": 0,
+            "name": "rules",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "layers": 20,
+              "netclasses": 0,
+              "rules": 1,
+              "stackup": 9
+            }
+          },
+          "7": {
+            "compared": 65,
+            "differences": 0,
+            "excluded": 0,
+            "name": "geometry",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "dimensions": 0,
+              "footprint_items": 60,
+              "graphics": 4,
+              "holes": 0,
+              "keepouts": 0,
+              "outline": 0,
+              "texts": 0,
+              "zones": 1
+            }
+          },
+          "8": {
+            "compared": 11,
+            "differences": 1,
+            "excluded": 0,
+            "name": "presentation",
+            "notices": 0,
+            "reason": "",
+            "status": "differs",
+            "summary": {
+              "changes": {
+                "sheet:ecc83-pp.kicad_sch": [
+                  "#PWR05 added",
+                  "#PWR07 added",
+                  "#FLG05 removed"
+                ]
+              },
+              "layers": 10,
+              "pitch_nm": {
+                "board": 50000,
+                "sheet": 127000
+              },
+              "pixel_ppm": 1000,
+              "sheets": 1
+            }
+          },
+          "S": {
+            "compared": 102,
+            "differences": 0,
+            "excluded": 0,
+            "name": "schematic",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "extraction_issues": 0,
+              "instances": 1,
+              "items": 51,
+              "pins": 33,
+              "symbols": 17
+            }
+          }
+        },
+        "raw_log": "logs/ecc83/fresh-proof.stdout.json",
+        "raw_reply_sha256": "a2ee91453380be31a74b0fcc288b158c5f31fe3749a32c492ff64be0d194405c",
+        "seconds": 7.405,
+        "stderr_sha256": "95b5efb87876ed62f14fec6114adc1b7855fd37cbb2b85046766d04ca2c1d960",
+        "tolerances": {
+          "angle_udeg": 0,
+          "frame": "absolute",
+          "length_nm": 0,
+          "length_ppm": 0,
+          "pixel_ppm": 1000,
+          "render_pitch_um": 50
+        }
+      },
+      "original_recipe": [
+        "import",
+        "upstream/demos/ecc83/ecc83-pp.kicad_pro",
+        "--to",
+        "python",
+        "--out",
+        "out",
+        "--licence",
+        "CC-BY-SA-4.0",
+        "--source",
+        "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/ecc83",
+        "--revision",
+        "97acc80c223d75520c03fc44cab63cd9a3202c42",
+        "--timestamp",
+        "2026-10-31T00:00:00Z",
+        "--confirm"
+      ],
+      "payload_snapshot_unchanged": {
+        "encoding": "UTF-8 compact JSON of relative-path to file SHA-256, sorted keys, no trailing newline",
+        "files": 25,
+        "sha256": "9317efdeca60918f9c21ff62122bd81ae179d2b955aef663e7be0cb2ce5fb5da"
+      },
+      "plan_review_sha256": "5dce835e0f98415118ffea2bf6b561f9c1e29d6e0a0efb7cff4432474b23b105",
+      "source": {
+        "basis": "cached bytes exactly match the existing recorded native input SHA-256 values",
+        "files": {
+          "ecc83-pp.kicad_pcb": "0ab45f4f8c90ac877e3313a1888d875107f2be3fc2b2f40cfb7927873b35260c",
+          "ecc83-pp.kicad_pro": "8a943fac4b0cc3ed4fa83ccc83a6e15b9326178845ada0aa906df63f0672e975",
+          "ecc83-pp.kicad_sch": "8a2d0359a0f3e647378034d84ab72b09dd7aa42f8b1f5e7fa0ff28ae369beee9",
+          "ecc83-pp_v2.kicad_pcb": "9be2caf4c257a93fc2b3904add1061a4d2e23cde502a7846513ae7db6b214c30",
+          "ecc83-pp_v2.kicad_pro": "8ca4caec049e921d8cae59f2eddb5ca612c18010da8191ea1d30651a00aa07c9",
+          "ecc83-pp_v2.kicad_sch": "80576c542e9ce473538c30ed24b7cd7e9152fe7922ebdb518928aa815b858ff1"
+        },
+        "upstream_commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+        "upstream_path": "demos/ecc83"
+      },
+      "source_terms_sha256_unchanged": {
+        "LICENSE": "00ba11b9a22d453aed299954eaca389d8efef441a4673d84e2dc4ae10ebc7ca5",
+        "NOTICE": "a84286c93359f9320cb5c387a8808d6cf6262c052820102abb1447b05418eba6",
+        "PROVENANCE.json": "5c3aa6a3e286b64dc94d0ce0301291e3c559198ce29aea2f1e0d6d38cb784075",
+        "item.json": "796defbed3d2e8d1eb7420ce3c365c1e7f6bedb9d0cee82a68dfac0158a9839c"
+      },
+      "temporary_candidate_files_sha256": {
+        "PROVENANCE.json": "64cb96a71313f1bacd4d9d7efe6fb17d303d4594937415d4ff7d8cb350ca89a6",
+        "copper.py": "d484984319fd01b871df3c2495bb31307686b03da322632679af6291a83e44b2",
+        "design.lock": "f6ff935387a03a85dfee08c24d0843fcb16e586f9fecddd537d3d0d7aa9a39bd",
+        "design.py": "ae64e00c00ea53567ad9a1a3b76cde2057efdcb25b95332cbaf86b3133601b55",
+        "fp-lib-table": "2ba36e0cbbad1d8fc1c8431ce4c0c3ab0f1f09a39db9822a92fb368e18a0382b",
+        "lib/Footprints.pretty/Altech_AK300_1x02_P5.00mm_45-Degree.kicad_mod": "5130c268558cc6ff0de2167f681b50e292643626a0c7510b6f8d7f614c85908b",
+        "lib/Footprints.pretty/Altech_AK300_1x02_P5.00mm_45-Degree_2.kicad_mod": "edf0cb72e660dd055ff6adffe87d5b75040e739da1608e8096fd51fa8fb343bd",
+        "lib/Footprints.pretty/Altech_AK300_1x02_P5.00mm_45-Degree_3.kicad_mod": "8b5d2c1c6eeeda2c994087dfa8bd1a295e773fd17d2855243c027e91081370f1",
+        "lib/Footprints.pretty/Altech_AK300_1x02_P5.00mm_45-Degree_4.kicad_mod": "1292195777a17544dd3efbfdb3246e419fbba873e8d430dd99334cda38a81f33",
+        "lib/Footprints.pretty/CP_Radial_D10.0mm_P5.00mm.kicad_mod": "09a4a48cf5ee07205f53f79ce82e0c6bac67336338fbe5f7ef603348a8c3c8a2",
+        "lib/Footprints.pretty/C_Disc_D4.7mm_W2.5mm_P5.00mm.kicad_mod": "4b9202f157edc847f2b5fe6dc22a390b128985ab1ffc528bf69d1f13fee27a04",
+        "lib/Footprints.pretty/MountingHole_3.2mm_M3_DIN965_Pad.kicad_mod": "b1d04c61468379eb685e9cc6b37feccdebe8fd67df009b1ba219f001de17253f",
+        "lib/Footprints.pretty/MountingHole_3.2mm_M3_DIN965_Pad_2.kicad_mod": "90c00c9f49209923488070abed2ccc8b423c098ff882717e9f7d1c910f4bbea9",
+        "lib/Footprints.pretty/MountingHole_3.2mm_M3_DIN965_Pad_3.kicad_mod": "0949e28c3b9ca05e53b24987bef106c3c0727aab07e33a1b5ba5bbe0f939bfb8",
+        "lib/Footprints.pretty/MountingHole_3.2mm_M3_DIN965_Pad_4.kicad_mod": "63317ede71cae35a4bc03ce1a53a58be64a85e664fd55b02e761a760b2ad5341",
+        "lib/Footprints.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.kicad_mod": "e540d220e9e0d6d4e8e2e7a2856f3eafae3795c7dcfb44f397b04b37cb044d63",
+        "lib/Footprints.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_2.kicad_mod": "f39d04dbb05c8253c3739c0d5edc01f4f0e50be0f83062c4eb9104b2daee4271",
+        "lib/Footprints.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_3.kicad_mod": "955c91f10ea7adea4d51963544f9b7491cf148a72d17e067f214003df9a34246",
+        "lib/Footprints.pretty/Valve_ECC-83-1.kicad_mod": "27e441a44d5940139fba0706dc8d304db53639001415ceed50d9e46b13f733f6",
+        "lib/ecc83-pp.kicad_sym": "6ccbac8a083ef6221be76cffc0437a5e0e1b3c354703cfff32e0ceeadae8f1c1",
+        "schematic.toml": "e1e7a41c4ef66b4dc8528816e097409f0bc7734b0c356d443c9ec90f3c1a8a1d",
+        "sym-lib-table": "db5d58856777207af48056bc415bf363603875701bce6ed0f1301fc89cfcc2b6"
+      }
+    },
+    "kit-dev-coldfire-xilinx_5213": {
+      "baseline": {
+        "against": {
+          "backend": "kicad",
+          "files": {
+            "in_out_conn.kicad_sch": "b406e5f8d1903f7d094c1109020a1912a1473c08ffbc0c64640742850f7f7809",
+            "kit-dev-coldfire-xilinx_5213.kicad_pcb": "392cf6bf4b9b62beb435f965ccd7671a46decb17f947b74bfde482acd2132a5e",
+            "kit-dev-coldfire-xilinx_5213.kicad_pro": "d6ca906944730a3eae31ba3d9240c6966424b0d80ba76e80710e39d7b23c4637",
+            "kit-dev-coldfire-xilinx_5213.kicad_sch": "a1109092165ecec0d677142294330258c8990247e804f260d7682fda82602214",
+            "xilinx.kicad_sch": "3750dc3866cce42d96220c39dde5c7c88589207810487581047a71d541b1fb5b"
+          },
+          "name": "kit-dev-coldfire-xilinx_5213.kicad_pro"
+        },
+        "build": {
+          "copper_check": "warn",
+          "copy": true,
+          "files": 120,
+          "target": "kicad-9"
+        },
+        "comparison_reached": true,
+        "difference_kinds": {
+          "7:graphic-field": 4,
+          "S:drawn-net": 1,
+          "S:item-field": 12,
+          "S:item-missing": 1950,
+          "S:sheet-missing": 1,
+          "S:symbol-field": 396,
+          "S:symbol-missing": 71,
+          "S:symbol-pose": 132
+        },
+        "equivalent": false,
+        "error": {
+          "code": "FEN-5001",
+          "hint": "read 'issues' in the envelope",
+          "message": "2567 finding(s) of severity error",
+          "retryable": false,
+          "where": "verify-source"
+        },
+        "evidence": "INFERRED",
+        "evidence_oracle": null,
+        "exit_code": 5,
+        "fenolite_path_differences": 0,
+        "historical_accepted_matches": 127,
+        "inputs_unchanged": true,
+        "issues": {
+          "equiv.drawn-net": 1,
+          "equiv.excluded": 6,
+          "equiv.graphic-field": 4,
+          "equiv.item-field": 12,
+          "equiv.item-missing": 1950,
+          "equiv.route-unjudged": 2,
+          "equiv.sheet-missing": 1,
+          "equiv.symbol-field": 396,
+          "equiv.symbol-missing": 71,
+          "equiv.symbol-pose": 132,
+          "fidelity.accepted-unused": 9,
+          "kicad.board.kept-opaque": 2,
+          "kicad.project.class-shadowed": 1,
+          "place.outside-outline": 6
+        },
+        "levels": {
+          "1": {
+            "compared": 160,
+            "differences": 0,
+            "excluded": 0,
+            "name": "components",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "components": {
+                "a": 160,
+                "b": 160
+              },
+              "ignored": 0
+            }
+          },
+          "2": {
+            "compared": 807,
+            "differences": 0,
+            "excluded": 0,
+            "name": "netlist",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "renamed": 0,
+              "sources": {
+                "a": "board",
+                "b": "board"
+              },
+              "unnumbered": {
+                "a": 2,
+                "b": 2
+              }
+            }
+          },
+          "3": {
+            "compared": 825,
+            "differences": 0,
+            "excluded": 118,
+            "name": "footprints",
+            "notices": 0,
+            "reason": "",
+            "status": "accepted",
+            "summary": {
+              "copper_unknown": 0,
+              "footprints": 160
+            }
+          },
+          "4": {
+            "compared": 160,
+            "differences": 0,
+            "excluded": 0,
+            "name": "placement",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "frame": "absolute",
+              "translation": [
+                0,
+                0
+              ]
+            }
+          },
+          "5": {
+            "compared": 3397,
+            "differences": 0,
+            "excluded": 0,
+            "name": "routing",
+            "notices": 2,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "copper_no_net": {
+                "a": 0,
+                "b": 0
+              },
+              "length": {
+                "a": 9412201216,
+                "b": 9412201216
+              },
+              "nets": 209,
+              "nets_unpaired": {
+                "a": 0,
+                "b": 0
+              },
+              "pieces": {
+                "a": 209,
+                "b": 321
+              },
+              "strict": {
+                "arcs": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 0
+                },
+                "tracks": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 2935
+                },
+                "vias": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 253
+                }
+              },
+              "unjudged": 2,
+              "unshaped": {
+                "a": 0,
+                "b": 0
+              },
+              "vias": {
+                "a": 253,
+                "b": 253
+              },
+              "zones_unfilled": {
+                "a": 0,
+                "b": 3
+              }
+            }
+          },
+          "6": {
+            "compared": 34,
+            "differences": 0,
+            "excluded": 2,
+            "name": "rules",
+            "notices": 0,
+            "reason": "",
+            "status": "accepted",
+            "summary": {
+              "layers": 20,
+              "netclasses": 0,
+              "rules": 1,
+              "stackup": 13
+            }
+          },
+          "7": {
+            "compared": 652,
+            "differences": 4,
+            "excluded": 0,
+            "name": "geometry",
+            "notices": 0,
+            "reason": "",
+            "status": "differs",
+            "summary": {
+              "dimensions": 0,
+              "footprint_items": 640,
+              "graphics": 4,
+              "holes": 0,
+              "keepouts": 0,
+              "outline": 0,
+              "texts": 5,
+              "zones": 3
+            }
+          },
+          "8": {
+            "compared": 17,
+            "differences": 0,
+            "excluded": 7,
+            "name": "presentation",
+            "notices": 0,
+            "reason": "",
+            "status": "accepted",
+            "summary": {
+              "changes": {
+                "board": [
+                  "ALLPST101 moved 0.000 mm",
+                  "C102 moved 0.000 mm",
+                  "C102 footprint: kit-dev-coldfire:C_0805_2012Metric \u2192 kit-dev-coldfire:C_0805_2012Metric_2"
+                ],
+                "sheet:kit-dev-coldfire-xilinx_5213.kicad_sch": [
+                  "J201 added",
+                  "#FLG0101 removed",
+                  "#FLG0102 removed"
+                ]
+              },
+              "layers": 16,
+              "pitch_nm": {
+                "board": 50000,
+                "sheet": 127000
+              },
+              "pixel_ppm": 1000,
+              "sheets": 1
+            }
+          },
+          "S": {
+            "compared": 2437,
+            "differences": 2563,
+            "excluded": 0,
+            "name": "schematic",
+            "notices": 0,
+            "reason": "",
+            "status": "differs",
+            "summary": {
+              "extraction_issues": 0,
+              "instances": 4,
+              "items": 1464,
+              "pins": 803,
+              "symbols": 166
+            }
+          }
+        },
+        "raw_log": "logs/kit-dev-coldfire-xilinx_5213/baseline-proof.stdout.json",
+        "raw_reply_sha256": "b0683ac20d7775019bfec3ec4582458d4176c899c5fc091f19325c4b2b10843d",
+        "seconds": 64.366,
+        "stderr_sha256": "108d0db81441631640b9c42bd6f3bc29dad93de0f0b6b3e36dd59b9a4c0773ea",
+        "tolerances": {
+          "angle_udeg": 0,
+          "frame": "absolute",
+          "length_nm": 0,
+          "length_ppm": 0,
+          "pixel_ppm": 1000,
+          "render_pitch_um": 50
+        }
+      },
+      "fresh_import_confirm": {
+        "error": null,
+        "error_findings": [],
+        "evidence": "INFERRED",
+        "evidence_oracle": null,
+        "exit_code": 0,
+        "inputs_unchanged": true,
+        "issues": {
+          "import.footprint-variant": 67,
+          "import.provenance-missing": 1,
+          "import.sheet-renamed": 1
+        },
+        "plan_id": null,
+        "planned_files": 0,
+        "raw_log": "logs/kit-dev-coldfire-xilinx_5213/import-confirm.stdout.json",
+        "raw_reply_sha256": "efe450cdf8cd0f42066dc4716962b07ec68e097253df4fcf9ea90e45a3966ad1",
+        "seconds": 4.101,
+        "self_check": {
+          "equivalent": true,
+          "levels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "unexpressed": []
+      },
+      "fresh_import_dry": {
+        "error": null,
+        "error_findings": [],
+        "evidence": "INFERRED",
+        "evidence_oracle": null,
+        "exit_code": 0,
+        "inputs_unchanged": true,
+        "issues": {
+          "import.footprint-variant": 67,
+          "import.provenance-missing": 1,
+          "import.sheet-renamed": 1
+        },
+        "plan_id": "767c6a7eb8b35c17",
+        "planned_files": 113,
+        "raw_log": "logs/kit-dev-coldfire-xilinx_5213/import-dry.stdout.json",
+        "raw_reply_sha256": "86be04eb0194c37223655e174aa23d73680e0911fbc2098e4e246492e4c430ae",
+        "seconds": 27.663,
+        "self_check": {
+          "equivalent": true,
+          "levels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "unexpressed": []
+      },
+      "fresh_proof": {
+        "against": {
+          "backend": "kicad",
+          "files": {
+            "in_out_conn.kicad_sch": "b406e5f8d1903f7d094c1109020a1912a1473c08ffbc0c64640742850f7f7809",
+            "kit-dev-coldfire-xilinx_5213.kicad_pcb": "392cf6bf4b9b62beb435f965ccd7671a46decb17f947b74bfde482acd2132a5e",
+            "kit-dev-coldfire-xilinx_5213.kicad_pro": "d6ca906944730a3eae31ba3d9240c6966424b0d80ba76e80710e39d7b23c4637",
+            "kit-dev-coldfire-xilinx_5213.kicad_sch": "a1109092165ecec0d677142294330258c8990247e804f260d7682fda82602214",
+            "xilinx.kicad_sch": "3750dc3866cce42d96220c39dde5c7c88589207810487581047a71d541b1fb5b"
+          },
+          "name": "kit-dev-coldfire-xilinx_5213.kicad_pro"
+        },
+        "build": {
+          "copper_check": "warn",
+          "copy": true,
+          "files": 119,
+          "target": "kicad-9"
+        },
+        "comparison_reached": true,
+        "difference_kinds": {
+          "8:render-pixels": 3
+        },
+        "differences": [
+          {
+            "a": "14723/305950",
+            "b": "4224/305950",
+            "field": "pixels",
+            "kind": "render-pixels",
+            "level": 8,
+            "where": "sheet:in_out_conn.kicad_sch:21209000,71501000-32131000,73279000"
+          },
+          {
+            "a": "14978/598360",
+            "b": "2148/598360",
+            "field": "pixels",
+            "kind": "render-pixels",
+            "level": 8,
+            "where": "sheet:kit-dev-coldfire-xilinx_5213.kicad_sch:332740000,244475000-358267000,245999000"
+          },
+          {
+            "a": "15019/566793",
+            "b": "938/566793",
+            "field": "pixels",
+            "kind": "render-pixels",
+            "level": 8,
+            "where": "sheet:xilinx.kicad_sch:44196000,64516000-54610000,65786000"
+          }
+        ],
+        "equivalent": false,
+        "error": {
+          "code": "FEN-5001",
+          "hint": "read 'issues' in the envelope",
+          "message": "3 finding(s) of severity error",
+          "retryable": false,
+          "where": "verify-source"
+        },
+        "evidence": "INFERRED",
+        "evidence_oracle": null,
+        "exit_code": 5,
+        "fenolite_path_differences": 0,
+        "historical_accepted_matches": 0,
+        "inputs_unchanged": true,
+        "issues": {
+          "drawn.net-name-differs": 132,
+          "equiv.render-pixels": 3,
+          "equiv.route-unjudged": 2,
+          "kicad.board.kept-opaque": 2,
+          "kicad.project.class-shadowed": 1,
+          "place.outside-outline": 6
+        },
+        "levels": {
+          "1": {
+            "compared": 160,
+            "differences": 0,
+            "excluded": 0,
+            "name": "components",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "components": {
+                "a": 160,
+                "b": 160
+              },
+              "ignored": 0
+            }
+          },
+          "2": {
+            "compared": 807,
+            "differences": 0,
+            "excluded": 0,
+            "name": "netlist",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "renamed": 0,
+              "sources": {
+                "a": "board",
+                "b": "board"
+              },
+              "unnumbered": {
+                "a": 2,
+                "b": 2
+              }
+            }
+          },
+          "3": {
+            "compared": 825,
+            "differences": 0,
+            "excluded": 0,
+            "name": "footprints",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "copper_unknown": 0,
+              "footprints": 160
+            }
+          },
+          "4": {
+            "compared": 160,
+            "differences": 0,
+            "excluded": 0,
+            "name": "placement",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "frame": "absolute",
+              "translation": [
+                0,
+                0
+              ]
+            }
+          },
+          "5": {
+            "compared": 3397,
+            "differences": 0,
+            "excluded": 0,
+            "name": "routing",
+            "notices": 2,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "copper_no_net": {
+                "a": 0,
+                "b": 0
+              },
+              "length": {
+                "a": 9412201216,
+                "b": 9412201216
+              },
+              "nets": 209,
+              "nets_unpaired": {
+                "a": 0,
+                "b": 0
+              },
+              "pieces": {
+                "a": 209,
+                "b": 321
+              },
+              "strict": {
+                "arcs": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 0
+                },
+                "tracks": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 2935
+                },
+                "vias": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 253
+                }
+              },
+              "unjudged": 2,
+              "unshaped": {
+                "a": 0,
+                "b": 0
+              },
+              "vias": {
+                "a": 253,
+                "b": 253
+              },
+              "zones_unfilled": {
+                "a": 0,
+                "b": 3
+              }
+            }
+          },
+          "6": {
+            "compared": 34,
+            "differences": 0,
+            "excluded": 0,
+            "name": "rules",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "layers": 20,
+              "netclasses": 0,
+              "rules": 1,
+              "stackup": 13
+            }
+          },
+          "7": {
+            "compared": 652,
+            "differences": 0,
+            "excluded": 0,
+            "name": "geometry",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "dimensions": 0,
+              "footprint_items": 640,
+              "graphics": 4,
+              "holes": 0,
+              "keepouts": 0,
+              "outline": 0,
+              "texts": 5,
+              "zones": 3
+            }
+          },
+          "8": {
+            "compared": 19,
+            "differences": 3,
+            "excluded": 0,
+            "name": "presentation",
+            "notices": 0,
+            "reason": "",
+            "status": "differs",
+            "summary": {
+              "changes": {
+                "sheet:in_out_conn.kicad_sch": [
+                  "#PWR100 added",
+                  "#PWR101 added",
+                  "#PWR102 added"
+                ],
+                "sheet:kit-dev-coldfire-xilinx_5213.kicad_sch": [
+                  "#PWR01 added",
+                  "#PWR02 added",
+                  "#PWR03 added"
+                ],
+                "sheet:xilinx.kicad_sch": [
+                  "#PWR51 added",
+                  "#PWR52 added",
+                  "#PWR53 added"
+                ]
+              },
+              "layers": 16,
+              "pitch_nm": {
+                "board": 50000,
+                "sheet": 127000
+              },
+              "pixel_ppm": 1000,
+              "sheets": 3
+            }
+          },
+          "S": {
+            "compared": 2435,
+            "differences": 0,
+            "excluded": 0,
+            "name": "schematic",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "extraction_issues": 0,
+              "instances": 3,
+              "items": 1464,
+              "pins": 803,
+              "symbols": 165
+            }
+          }
+        },
+        "raw_log": "logs/kit-dev-coldfire-xilinx_5213/fresh-proof.stdout.json",
+        "raw_reply_sha256": "d355cb461d3be02cb40d95f463db1f047c5b18ea8b2297371cb5d478f79dff4d",
+        "seconds": 61.019,
+        "stderr_sha256": "4986806ff5a138d7d6e17c6ea3a3ccc318877c705c83ea9eda2406940a0aefaf",
+        "tolerances": {
+          "angle_udeg": 0,
+          "frame": "absolute",
+          "length_nm": 0,
+          "length_ppm": 0,
+          "pixel_ppm": 1000,
+          "render_pitch_um": 50
+        }
+      },
+      "original_recipe": [
+        "import",
+        "upstream/demos/kit-dev-coldfire-xilinx_5213/kit-dev-coldfire-xilinx_5213.kicad_pro",
+        "--to",
+        "python",
+        "--out",
+        "out",
+        "--licence",
+        "CC-BY-SA-4.0",
+        "--source",
+        "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/kit-dev-coldfire-xilinx_5213",
+        "--revision",
+        "97acc80c223d75520c03fc44cab63cd9a3202c42",
+        "--timestamp",
+        "2026-10-31T00:00:00Z",
+        "--confirm"
+      ],
+      "payload_snapshot_unchanged": {
+        "encoding": "UTF-8 compact JSON of relative-path to file SHA-256, sorted keys, no trailing newline",
+        "files": 113,
+        "sha256": "d6943b01e4374673a28e07d3aa621a1cccfc59eeb4c8456e47b3308b0e6ed855"
+      },
+      "plan_review_sha256": "67d86c6e70a1cbb840519fae3e2b31286cdf754dcd2c4f41a8729857ecaac189",
+      "source": {
+        "basis": "cached bytes exactly match the existing recorded native input SHA-256 values",
+        "files": {
+          "in_out_conn.kicad_sch": "b406e5f8d1903f7d094c1109020a1912a1473c08ffbc0c64640742850f7f7809",
+          "kit-dev-coldfire-xilinx_5213.kicad_pcb": "392cf6bf4b9b62beb435f965ccd7671a46decb17f947b74bfde482acd2132a5e",
+          "kit-dev-coldfire-xilinx_5213.kicad_pro": "d6ca906944730a3eae31ba3d9240c6966424b0d80ba76e80710e39d7b23c4637",
+          "kit-dev-coldfire-xilinx_5213.kicad_sch": "a1109092165ecec0d677142294330258c8990247e804f260d7682fda82602214",
+          "xilinx.kicad_sch": "3750dc3866cce42d96220c39dde5c7c88589207810487581047a71d541b1fb5b"
+        },
+        "upstream_commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+        "upstream_path": "demos/kit-dev-coldfire-xilinx_5213"
+      },
+      "source_terms_sha256_unchanged": {
+        "LICENSE": "00ba11b9a22d453aed299954eaca389d8efef441a4673d84e2dc4ae10ebc7ca5",
+        "NOTICE": "356adadd5aaed6be437d2b2730ef74e49e9f34ff26f085f687bab78fdf4aabf9",
+        "PROVENANCE.json": "ebad7e1fe819e4e1780ea4dd3a6e72663442aefb7a96ecd52bb27a5052123fd7",
+        "item.json": "bdfec58dafe66379c271eb228740839412640dcc23ecd003d880d831ac844f75"
+      },
+      "temporary_candidate_files_sha256": {
+        "PROVENANCE.json": "2475ba931c5dbefa37b2ab3e72dda8a4c909de8e57b775461e2eb372f85d4b36",
+        "copper.py": "7fc3b2e9bb2b9ffce6a284425aef0402f44423d9ff41463096ce2f437a3bfe91",
+        "design.lock": "b1edca5aee7b8b01598f3b60c4fb8b998d7a280a392e576a45086661cb54394a",
+        "design.py": "f1189ee1b15eb5e6e39ce5e8615188338f4ef14bf02b6ecb1e17993d39ac391e",
+        "fp-lib-table": "a95c7d1bd16b975df7b80d6e14dfa9ab0bc0d18b3c21d979d1f0faea5f5b1b73",
+        "lib/kit-dev-coldfire-xilinx_5213.kicad_sym": "2c46854c1f369255cba500a5156428412b2868b0651e93849b6516d10244d3c8",
+        "lib/kit-dev-coldfire.pretty/Altech_AK300_1x02_P5.00mm_45-Degree.kicad_mod": "5c85fda9b1aee07d65122411dd47448eef03442fbdbb95ca05436dc47f0cf123",
+        "lib/kit-dev-coldfire.pretty/CP_Radial_D8.0mm_P5.00mm.kicad_mod": "f3805432234c48585013f7079c84796fd331253a731f73888880e5e163e2e19b",
+        "lib/kit-dev-coldfire.pretty/CP_Radial_D8.0mm_P5.00mm_2.kicad_mod": "deb42164cefdbe5cc9df4c6ca54df611f2303dbc9d397dfc3cfd4479849a9083",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric.kicad_mod": "386f9f1e1bb9058d87d1281911baedf70a1f9873aff4018d2d9f3ea4e96571f8",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric_10.kicad_mod": "34ac560ada4a2b2932105ea0bf8f5c5e0dc38f00e441f502a441a87c77a0e31a",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric_11.kicad_mod": "991e37721409ef302d433950e89048b2e94b8b384b041c400918d5f35edef78d",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric_12.kicad_mod": "57f1d4eed5cab72119255d0592b5e9704d49271a615112c504fba5d12b63e6ed",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric_13.kicad_mod": "9f20d50e8a258161c30cbcb4480a1398136846e3905bd40d6fd57d8d2dcb964a",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric_14.kicad_mod": "563ec0842ef22b98b31162147d6673b19491a0fbd07b79766f471f2b78128c42",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric_15.kicad_mod": "964c1b3625fd680e13aaecb12404d4330a2238194a7c062591134848dfb99872",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric_16.kicad_mod": "05552c3c05fbad3f8348e615abbc7cf2546fe4b2e11c96d97859f1717fdb1704",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric_17.kicad_mod": "cda6e8c4f9b5f6f04aa75ba3d8ad3b02530637e26a49e02b74a803bf63dbc159",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric_18.kicad_mod": "d10960354f13fdf5980f0262763c3f948b332d8748a7ad10d6df61204541b71a",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric_19.kicad_mod": "e5b06d79a5434545eb6b5f4bbd566b5771bd72db3b654db7b5ac378c31e15f77",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric_2.kicad_mod": "93e048e3b0afbbbacd83c99ae61aaa83545e624fb4972e1c3ff55725903dd153",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric_20.kicad_mod": "18598b77019246e0a713603cdd2b49db1f80f647b1b565215637c565447e8481",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric_21.kicad_mod": "12c2f4376815d9df0f89d92c8c8cfa53a934fd62b663eb4674b30900bd582143",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric_3.kicad_mod": "99d99e6a13d2882d450bdd53b13b0d98a62bb9d5d4bc026d555072982c984e62",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric_4.kicad_mod": "dfefb669fed8f7e8e089c5ba4ea1487c1e7cfb8a86a767953cbc1355a21ff5a5",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric_5.kicad_mod": "458308c94460bbc227f7b63f0777af6629dcdb9aa08fcc18a762d3496ffbdd2e",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric_6.kicad_mod": "12e7beca24ceb54558b63c643431a0149b589f60038761bf373240410ba256e2",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric_7.kicad_mod": "8a003146f0b973fc592f334e6afa120285e17c47cfc0da6cd5c1eb0c22102cdf",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric_8.kicad_mod": "103da7cd1c4a6d5ee9768b2d28cc2ca32df453708c5ecbdc5d463dc975675f75",
+        "lib/kit-dev-coldfire.pretty/C_0805_2012Metric_9.kicad_mod": "1f0dad23fa365c36eae410ed31ccdeca1cf3a74e83ea469af627c692fcf3903f",
+        "lib/kit-dev-coldfire.pretty/Crystal_HC18-U_Horizontal.kicad_mod": "d60689a0c3309186b883dfe2629d6eee07432aa780ea296cf1099c6bb40c26d3",
+        "lib/kit-dev-coldfire.pretty/DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm.kicad_mod": "6180858e7e67527454ea2a18ad2d1108ee24721bc7a7f89194554aa5d30d0651",
+        "lib/kit-dev-coldfire.pretty/DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm_2.kicad_mod": "65445afd1d254b042d422efa911c00d5fc9e2eb2edfaa72eb0680fb12442b6de",
+        "lib/kit-dev-coldfire.pretty/DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm_3.kicad_mod": "1b622cd73b552531a3f6cfff257847d6e00a3f5b1bfa6576609e5bdf098a69b9",
+        "lib/kit-dev-coldfire.pretty/D_DO-15_P12.70mm_Horizontal.kicad_mod": "8edb6ce6d9adf904d7135d7410930c060cbc8978f6386a4bb71e60e27bf920a4",
+        "lib/kit-dev-coldfire.pretty/D_SOT-23_ANK.kicad_mod": "430c7031cf8f72108fc28fccf6a853861954add6c23e3310a8fbd5c5b97d2262",
+        "lib/kit-dev-coldfire.pretty/FSUPCMS.kicad_mod": "19c46b14716767889a4d9d90b5010e4aed0c083dd599afdd41766a7e21cdd3da",
+        "lib/kit-dev-coldfire.pretty/JACK_ALIM.kicad_mod": "8c69cf7fc5f65d0581e365b69632f4f00edeba690c3184db86caa3903fc9cd21",
+        "lib/kit-dev-coldfire.pretty/LED_1206_3216Metric.kicad_mod": "e664a4b87860b2211b8a2f0bff09829ca8d4d521f6c28d3f2497055547b12237",
+        "lib/kit-dev-coldfire.pretty/LED_1206_3216Metric_2.kicad_mod": "4076570f523669d7a135ba19b76f35630ef42e06e81db62eacd69c5c9c929485",
+        "lib/kit-dev-coldfire.pretty/LED_1206_3216Metric_3.kicad_mod": "44ed0a0db5dbe8bee3095eb2f3b327aa0afad0be333b34de261b43ccbdbbc17f",
+        "lib/kit-dev-coldfire.pretty/LED_1206_3216Metric_4.kicad_mod": "100a1fd8841e76c9495d21592465380d70523a6e0d9069e7401abdd38e63a3c7",
+        "lib/kit-dev-coldfire.pretty/LED_1206_3216Metric_5.kicad_mod": "2195b7a95e871ad6d82e7fd8512e9b18d1a1417dc4a7085bcf4537bf41cba12b",
+        "lib/kit-dev-coldfire.pretty/LED_1206_3216Metric_6.kicad_mod": "493335b3de408bc8660da809c1e957f254d0c7881cfdb05342857f6d48f6116e",
+        "lib/kit-dev-coldfire.pretty/LQFP-100_14x14mm_P0.5mm.kicad_mod": "907938507ee05c4539a7246b970bd02e1ee5a3a42943848e727264e8164aefbc",
+        "lib/kit-dev-coldfire.pretty/PinHeader_1x01_P2.54mm_Vertical.kicad_mod": "b422cb4419d960d62f272ba45cb7e44f5248046b09d8d6e1388bc031be067f72",
+        "lib/kit-dev-coldfire.pretty/PinHeader_1x01_P2.54mm_Vertical_2.kicad_mod": "5016bf517d429e1d65cafae90d762fcd3c86ba8dd5ce3d55dbfab0506dd2e36b",
+        "lib/kit-dev-coldfire.pretty/PinHeader_1x01_P2.54mm_Vertical_3.kicad_mod": "61bd839e400c061da212b3ba11a5a242e5e8d8d3e93032ede1853c3ac5792126",
+        "lib/kit-dev-coldfire.pretty/PinHeader_1x02_P2.54mm_Vertical.kicad_mod": "54b33ddc150ad6e635e2afdbb2c636b43ef64da841fd717f17dbb0164928dbd2",
+        "lib/kit-dev-coldfire.pretty/PinHeader_1x02_P2.54mm_Vertical_2.kicad_mod": "eeb07c1c260992ef9c2ff39dfa68d6a3da7e9e375124b8c8d23f1a6ffa87ece7",
+        "lib/kit-dev-coldfire.pretty/PinHeader_1x02_P2.54mm_Vertical_3.kicad_mod": "a1418c25894d36c3225e9fb97e440379274792b063c1c1aeb0095e62300c95c4",
+        "lib/kit-dev-coldfire.pretty/PinHeader_1x02_P2.54mm_Vertical_4.kicad_mod": "5ce780907708016d3666a94c4062bafcdf7cfef3317229a1840bd39d3ce14530",
+        "lib/kit-dev-coldfire.pretty/PinHeader_1x03_P2.54mm_Vertical.kicad_mod": "1b740f5227800756155a559250a98ed3da4386fe8edbaf839219b4e65bbf35ef",
+        "lib/kit-dev-coldfire.pretty/PinHeader_1x03_P2.54mm_Vertical_2.kicad_mod": "eef3289480e5a09eba167a714ab2a37d81311ec213397f27282d038f915e3c51",
+        "lib/kit-dev-coldfire.pretty/PinHeader_1x06_P2.54mm_Vertical.kicad_mod": "85127b8d0e51fda1634c6bf3efd32ae692e8b556ca8bd46c6e792840678ce89c",
+        "lib/kit-dev-coldfire.pretty/PinHeader_2x02_P2.54mm_Vertical.kicad_mod": "dc77fc90a2ef0aab20c2d0d63d758a96ae4e3c63d402e3d2ba3a36f59c5f5064",
+        "lib/kit-dev-coldfire.pretty/PinHeader_2x03_P2.54mm_Vertical.kicad_mod": "9594c83ebf0b61d525083509794bf27847d2cdfe34bbd8b036bd4fa0878f8363",
+        "lib/kit-dev-coldfire.pretty/PinHeader_2x04_P2.54mm_Vertical.kicad_mod": "7aa6e09cc379da016976bfe4c3e6b6211e5885783731e31ce117b146cb629ea4",
+        "lib/kit-dev-coldfire.pretty/PinHeader_2x04_P2.54mm_Vertical_2.kicad_mod": "cb11cc9757461f59517d4f27c7c3f6fc309bb759287e29b84e36e7ce33f27225",
+        "lib/kit-dev-coldfire.pretty/PinHeader_2x13_P2.54mm_Vertical.kicad_mod": "5d4af92bd20858ec9067b999204618b7ce649294cde357c4e72595eca38ea946",
+        "lib/kit-dev-coldfire.pretty/PinHeader_2x20_P2.54mm_Vertical.kicad_mod": "600ef6ddb71b2945bee6afa71a14b4ecacdc3242ec326abd5e3eb04dcebf55c3",
+        "lib/kit-dev-coldfire.pretty/PinHeader_2x30_P2.54mm_Vertical.kicad_mod": "2a721993aadc15be5c5dcdda37b042477c2f6fa30b6d73546e37de8f2f4bfe4b",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric.kicad_mod": "d646637e62f4f1aeac4f2a6471ae6945466a4d71debfbc8d6c4e63f2c713b1b5",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_10.kicad_mod": "bf84887056de7c02e316dde27107e9d3775580accb8afbde64b37c898eb464ae",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_11.kicad_mod": "8cbf7194e23a9d35919e3ecf319fb7033e32f4171863d18c753d17891b01e4b1",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_12.kicad_mod": "83139d82a2442d876cda289c5ac0cbf6c7651d446dc7bcffc5192ad08676a1e2",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_13.kicad_mod": "2d8a347fba5eb2c36b4c3fb68d6a931927285d78734dcb805776c7d45af8cf67",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_14.kicad_mod": "5228af194b67324f760bf871149dc3e70ad35d81c7f755a193014f535645bddf",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_15.kicad_mod": "fbe55231a9eb9df40a0fda98e36f69c8abb2e304a5b2d2a36bf45087f4f96a4b",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_16.kicad_mod": "2058254974769f772b97fa8f39e0706405dd18bfe7417fab9acae1f293353b1d",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_17.kicad_mod": "ef8bb924367a4538ed47bfdf998957ee249028a8deb14b0bbccebf184f086e66",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_18.kicad_mod": "f72ebb1680a7633d2442dcb642c0404e6b2fb5bb67dc4cb2e17c9b306212631b",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_19.kicad_mod": "5154762d36fe36cd1946e74e23594ce4a7b8a00871b06ee9c2c2f8e176c4404e",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_2.kicad_mod": "4c84179a1892fa1917cc10e52f9c6d7fef5ee5ba076e5ed6ce36cd9cd7217e68",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_20.kicad_mod": "cbd2ffb8b37b34bd8015b2827049ad9b0b6912efba2d85e29e086527dc660b21",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_21.kicad_mod": "2e3d61fe81a47e8fc0bcf05042dba2a8acb332d735505a3a9e9d3b1ef541b755",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_22.kicad_mod": "82a7e0106accfcaf7621105157e194045597a23c733b724ea9d28b7416c688ef",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_23.kicad_mod": "72bae2202ab4a20540f6a84ee1d88f45fb0c723056c7b61539256e59976d5f08",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_24.kicad_mod": "7111e5d30ba76dd849455ba425573c465b6b9303ee7bf0c511c8a2b7c25a578d",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_25.kicad_mod": "0d88481c8316c8aba55c6adae65c42b085e309ef9c73edee6f716247fec1c2c7",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_3.kicad_mod": "b978a957a952a1793ae8ba6685abf5c57597413605084fc6c5298f0213b394af",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_4.kicad_mod": "95e62c7acb73a5385b17b2b8ce181c467d143093381bf894560d09d3f43a6cdb",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_5.kicad_mod": "73bbba2999f0b81bd8e376641d623acedadc7551512dea37bd30e15779808d14",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_6.kicad_mod": "8117a93112f2aeafaf85044c0449120e3c750f068e6c96c2f56e22dcc5876ecd",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_7.kicad_mod": "d739c7c7602e7ea53c21c3dc8ce5ffb2c3cccd60e73e949ba0d1c0133da44d6f",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_8.kicad_mod": "e803ea5b2ca6342994e21909c3f4e3515fe20af4c646b17be28be45bea1475d7",
+        "lib/kit-dev-coldfire.pretty/R_0805_2012Metric_9.kicad_mod": "ca0c8dca19362c1f550a46376c3bd0e050b48ac096576c2154016f8c99c265d5",
+        "lib/kit-dev-coldfire.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder.kicad_mod": "c5d826214accbf0fc8e896f5f23e91b1013e7e5a9e864ff59f6fbb2f9f6a0d01",
+        "lib/kit-dev-coldfire.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_2.kicad_mod": "a35c2dbafcde8ec75483d32f3c48bb53bbbfcf2091ab6c0a25683ce7d3225fb1",
+        "lib/kit-dev-coldfire.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_3.kicad_mod": "a74a7eeb7c808db9a95e7c01b226b57cb8155efa9978aa5295f433b2258f6bae",
+        "lib/kit-dev-coldfire.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.kicad_mod": "ab92c6a619165d86906f0d08dd2adca6ae7c1075cc927753f5b9f53a6d023b84",
+        "lib/kit-dev-coldfire.pretty/SM1206POL.kicad_mod": "04e879dc1690941c8c316688fe3ff29793183ac10d412ee139e0e877e34e4377",
+        "lib/kit-dev-coldfire.pretty/SM1206POL_2.kicad_mod": "2109e7ca55fcad4a40fda946491a2460ef558efeca2c289a68a69063d592477a",
+        "lib/kit-dev-coldfire.pretty/SOIC-14_3.9x8.7mm_P1.27mm.kicad_mod": "bbe4ff2e2965c534abe5a0283bd5a1296d6e47df3bc67ff437b827e577848010",
+        "lib/kit-dev-coldfire.pretty/SOIC-16_3.9x9.9mm_P1.27mm.kicad_mod": "6478e2a830e2672ade6cba2b01d883237bc080cb1c711bb880846006b2752a78",
+        "lib/kit-dev-coldfire.pretty/SOIC-16_3.9x9.9mm_P1.27mm_2.kicad_mod": "5a3ccfab41a5a40e216ac3032281480fbb89cb70c958c58ef3ec893d1b86f9bb",
+        "lib/kit-dev-coldfire.pretty/SOIC-16_3.9x9.9mm_P1.27mm_3.kicad_mod": "b24603c92891dd33ee480746a422f045ecdf0140ac6e2b9d160219639b237c3c",
+        "lib/kit-dev-coldfire.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod": "629fa3b78935eaab71212cc331fb7e2ce88748b08ecf8d8614dc55fcd867c497",
+        "lib/kit-dev-coldfire.pretty/SOT23EBC.kicad_mod": "630a76a563721f2030fb1489a36de0c43c392538ded1dc2320e5ad9162aef926",
+        "lib/kit-dev-coldfire.pretty/SOT353.kicad_mod": "35315f19e9b209ab8241a5cde271f99352b92a22271acfd3418b06e7d978659c",
+        "lib/kit-dev-coldfire.pretty/SW_PUSH_SMALL.kicad_mod": "796cf9e5de9c14e2d04b17b3108a9979ccfd24b5060b49da614f139d7dbd2a32",
+        "lib/kit-dev-coldfire.pretty/SW_PUSH_SMALL_2.kicad_mod": "9102dc8275e761788a53a6b462a6490d6cdfe2d459572a54f3bf421dc29cb6e4",
+        "lib/kit-dev-coldfire.pretty/SW_PUSH_SMALL_3.kicad_mod": "7b3a2ca9f38794b267928b4b974208d5bb7402c7130502d6a49b880f15c18997",
+        "lib/kit-dev-coldfire.pretty/SW_PUSH_SMALL_4.kicad_mod": "b45b3b7d1075dde38589cd8745cf534ad1cf73bf60959271d667308489d682a9",
+        "lib/kit-dev-coldfire.pretty/SW_SPDT.kicad_mod": "217cd7f62d8c12fb05b7b5429ba2f4b2f02694fecc3468d5743c64734898e814",
+        "lib/kit-dev-coldfire.pretty/TO-263-5_TabPin3.kicad_mod": "f8466f3748da1d0ffeb4e8a90ede411785568935575aab7a4b87b3ef370ae76b",
+        "lib/kit-dev-coldfire.pretty/TO-92.kicad_mod": "b94976c83fb97d33ca3232538292bb473bee26672b2b91e2d235b80d7b27e37b",
+        "lib/kit-dev-coldfire.pretty/TQFP-144_20x20mm_P0.5mm.kicad_mod": "eb362be75c58a41b54ae233c1891bf17382e9dff05f1340812f4d2d98aca04c6",
+        "schematic.toml": "ba8eb2717a903b802e0918faf78c3fe28de7138e42ba7ea7a10f7ad1da82ec68",
+        "sheets/__init__.py": "065e170aa2b115c190d347c930ff92a28f9185fab37da8c93fe8beec57572456",
+        "sheets/in_out_conn.py": "4dc98e91079056a6457138293e2f5575d40e74d4f04b3c27f80fae3fa37ba7e1",
+        "sheets/xilinx.py": "bd4deda3bb2a2cdc7c2cfe6282e598fd93f418bdca35eaf741f4d70e6d470555",
+        "sym-lib-table": "a4afa11a91744f95e93750ca37df930196a163cacc4efd72fcfc874e2c3f0744"
+      }
+    },
+    "sonde_xilinx": {
+      "baseline": {
+        "against": {
+          "backend": "kicad",
+          "files": {
+            "sonde xilinx.kicad_pcb": "d0dee876715fcdd3f656dd6a77cc1141c39bec4d6f8492a3784d38edd6b9a998",
+            "sonde xilinx.kicad_pro": "ee60a96f93cc36549b52da9b3eea9547d5ea1e83a671c449668987edfb73a901",
+            "sonde xilinx.kicad_sch": "5271d5d1472d4dab645870f97e62785be9eb95b793e1b8cf0d8ca607de95a985"
+          },
+          "name": "sonde xilinx.kicad_pro"
+        },
+        "build": {
+          "copper_check": "warn",
+          "copy": true,
+          "files": 36,
+          "target": "kicad-9"
+        },
+        "comparison_reached": true,
+        "difference_kinds": {
+          "7:graphic-field": 4,
+          "S:item-field": 3,
+          "S:item-missing": 175,
+          "S:sheet-missing": 1,
+          "S:symbol-missing": 31
+        },
+        "equivalent": false,
+        "error": {
+          "code": "FEN-5001",
+          "hint": "read 'issues' in the envelope",
+          "message": "214 finding(s) of severity error",
+          "retryable": false,
+          "where": "verify-source"
+        },
+        "evidence": "INFERRED",
+        "evidence_oracle": null,
+        "exit_code": 5,
+        "fenolite_path_differences": 0,
+        "historical_accepted_matches": 19,
+        "inputs_unchanged": true,
+        "issues": {
+          "equiv.excluded": 2,
+          "equiv.graphic-field": 4,
+          "equiv.item-field": 3,
+          "equiv.item-missing": 175,
+          "equiv.route-unjudged": 1,
+          "equiv.sheet-missing": 1,
+          "equiv.symbol-missing": 31,
+          "fidelity.accepted-unused": 9,
+          "place.outside-outline": 2
+        },
+        "levels": {
+          "1": {
+            "compared": 25,
+            "differences": 0,
+            "excluded": 0,
+            "name": "components",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "components": {
+                "a": 25,
+                "b": 25
+              },
+              "ignored": 0
+            }
+          },
+          "2": {
+            "compared": 108,
+            "differences": 0,
+            "excluded": 0,
+            "name": "netlist",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "renamed": 0,
+              "sources": {
+                "a": "board",
+                "b": "board"
+              },
+              "unnumbered": {
+                "a": 0,
+                "b": 0
+              }
+            }
+          },
+          "3": {
+            "compared": 108,
+            "differences": 0,
+            "excluded": 16,
+            "name": "footprints",
+            "notices": 0,
+            "reason": "",
+            "status": "accepted",
+            "summary": {
+              "copper_unknown": 0,
+              "footprints": 25
+            }
+          },
+          "4": {
+            "compared": 25,
+            "differences": 0,
+            "excluded": 0,
+            "name": "placement",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "frame": "absolute",
+              "translation": [
+                0,
+                0
+              ]
+            }
+          },
+          "5": {
+            "compared": 237,
+            "differences": 0,
+            "excluded": 0,
+            "name": "routing",
+            "notices": 1,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "copper_no_net": {
+                "a": 0,
+                "b": 0
+              },
+              "length": {
+                "a": 637755412,
+                "b": 637755412
+              },
+              "nets": 26,
+              "nets_unpaired": {
+                "a": 0,
+                "b": 0
+              },
+              "pieces": {
+                "a": 26,
+                "b": 44
+              },
+              "strict": {
+                "arcs": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 0
+                },
+                "tracks": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 208
+                },
+                "vias": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 3
+                }
+              },
+              "unjudged": 1,
+              "unshaped": {
+                "a": 0,
+                "b": 0
+              },
+              "vias": {
+                "a": 3,
+                "b": 3
+              },
+              "zones_unfilled": {
+                "a": 0,
+                "b": 1
+              }
+            }
+          },
+          "6": {
+            "compared": 30,
+            "differences": 0,
+            "excluded": 0,
+            "name": "rules",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "layers": 20,
+              "netclasses": 0,
+              "rules": 1,
+              "stackup": 9
+            }
+          },
+          "7": {
+            "compared": 114,
+            "differences": 4,
+            "excluded": 0,
+            "name": "geometry",
+            "notices": 0,
+            "reason": "",
+            "status": "differs",
+            "summary": {
+              "dimensions": 1,
+              "footprint_items": 100,
+              "graphics": 4,
+              "holes": 0,
+              "keepouts": 0,
+              "outline": 0,
+              "texts": 8,
+              "zones": 1
+            }
+          },
+          "8": {
+            "compared": 15,
+            "differences": 0,
+            "excluded": 3,
+            "name": "presentation",
+            "notices": 0,
+            "reason": "",
+            "status": "accepted",
+            "summary": {
+              "changes": {},
+              "layers": 15,
+              "pitch_nm": {
+                "board": 50000,
+                "sheet": 127000
+              },
+              "pixel_ppm": 1000,
+              "sheets": 0
+            }
+          },
+          "S": {
+            "compared": 315,
+            "differences": 210,
+            "excluded": 0,
+            "name": "schematic",
+            "notices": 0,
+            "reason": "",
+            "status": "differs",
+            "summary": {
+              "extraction_issues": 0,
+              "instances": 2,
+              "items": 174,
+              "pins": 108,
+              "symbols": 31
+            }
+          }
+        },
+        "raw_log": "logs/sonde_xilinx/baseline-proof.stdout.json",
+        "raw_reply_sha256": "de05d245ac1fc9d3f15581bb2581efe02a318f3f4acb2b1bf674b8d1cb5ee62b",
+        "seconds": 12.035,
+        "stderr_sha256": "69aaeedd28dd5bdfd38966ab154a84e6ae2204d53b54507e5295d74e2b8362ac",
+        "tolerances": {
+          "angle_udeg": 0,
+          "frame": "absolute",
+          "length_nm": 0,
+          "length_ppm": 0,
+          "pixel_ppm": 1000,
+          "render_pitch_um": 50
+        }
+      },
+      "fresh_import_confirm": {
+        "error": null,
+        "error_findings": [],
+        "evidence": "INFERRED",
+        "evidence_oracle": null,
+        "exit_code": 0,
+        "inputs_unchanged": true,
+        "issues": {
+          "import.footprint-variant": 12,
+          "import.provenance-missing": 1,
+          "import.sheet-renamed": 1
+        },
+        "plan_id": null,
+        "planned_files": 0,
+        "raw_log": "logs/sonde_xilinx/import-confirm.stdout.json",
+        "raw_reply_sha256": "8e9c49bb930694508844f28eb8dec0f5b30625a89a57748ac73a1b5b46f70371",
+        "seconds": 3.888,
+        "self_check": {
+          "equivalent": true,
+          "levels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "unexpressed": []
+      },
+      "fresh_import_dry": {
+        "error": null,
+        "error_findings": [],
+        "evidence": "INFERRED",
+        "evidence_oracle": null,
+        "exit_code": 0,
+        "inputs_unchanged": true,
+        "issues": {
+          "import.footprint-variant": 12,
+          "import.provenance-missing": 1,
+          "import.sheet-renamed": 1
+        },
+        "plan_id": "6cc0c8c4e44ba2ee",
+        "planned_files": 28,
+        "raw_log": "logs/sonde_xilinx/import-dry.stdout.json",
+        "raw_reply_sha256": "17422a16473e16bbc8df5fcea0ab1fa27d58f306d9d112cace920b48ae8e7053",
+        "seconds": 7.68,
+        "self_check": {
+          "equivalent": true,
+          "levels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "unexpressed": []
+      },
+      "fresh_proof": {
+        "against": {
+          "backend": "kicad",
+          "files": {
+            "sonde xilinx.kicad_pcb": "d0dee876715fcdd3f656dd6a77cc1141c39bec4d6f8492a3784d38edd6b9a998",
+            "sonde xilinx.kicad_pro": "ee60a96f93cc36549b52da9b3eea9547d5ea1e83a671c449668987edfb73a901",
+            "sonde xilinx.kicad_sch": "5271d5d1472d4dab645870f97e62785be9eb95b793e1b8cf0d8ca607de95a985"
+          },
+          "name": "sonde xilinx.kicad_pro"
+        },
+        "build": {
+          "copper_check": "warn",
+          "copy": true,
+          "files": 35,
+          "target": "kicad-9"
+        },
+        "comparison_reached": true,
+        "difference_kinds": {
+          "8:render-missing": 2
+        },
+        "differences": [
+          {
+            "a": "sheet:sonde xilinx.kicad_sch",
+            "b": "",
+            "field": "layer",
+            "kind": "render-missing",
+            "level": 8,
+            "where": "sheet:sonde xilinx.kicad_sch"
+          },
+          {
+            "a": "",
+            "b": "sheet:sonde_xilinx.kicad_sch",
+            "field": "layer",
+            "kind": "render-missing",
+            "level": 8,
+            "where": "sheet:sonde_xilinx.kicad_sch"
+          }
+        ],
+        "equivalent": false,
+        "error": {
+          "code": "FEN-5001",
+          "hint": "read 'issues' in the envelope",
+          "message": "2 finding(s) of severity error",
+          "retryable": false,
+          "where": "verify-source"
+        },
+        "evidence": "INFERRED",
+        "evidence_oracle": null,
+        "exit_code": 5,
+        "fenolite_path_differences": 0,
+        "historical_accepted_matches": 0,
+        "inputs_unchanged": true,
+        "issues": {
+          "drawn.net-name-differs": 12,
+          "equiv.render-missing": 2,
+          "equiv.route-unjudged": 1,
+          "place.outside-outline": 2
+        },
+        "levels": {
+          "1": {
+            "compared": 25,
+            "differences": 0,
+            "excluded": 0,
+            "name": "components",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "components": {
+                "a": 25,
+                "b": 25
+              },
+              "ignored": 0
+            }
+          },
+          "2": {
+            "compared": 108,
+            "differences": 0,
+            "excluded": 0,
+            "name": "netlist",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "renamed": 0,
+              "sources": {
+                "a": "board",
+                "b": "board"
+              },
+              "unnumbered": {
+                "a": 0,
+                "b": 0
+              }
+            }
+          },
+          "3": {
+            "compared": 108,
+            "differences": 0,
+            "excluded": 0,
+            "name": "footprints",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "copper_unknown": 0,
+              "footprints": 25
+            }
+          },
+          "4": {
+            "compared": 25,
+            "differences": 0,
+            "excluded": 0,
+            "name": "placement",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "frame": "absolute",
+              "translation": [
+                0,
+                0
+              ]
+            }
+          },
+          "5": {
+            "compared": 237,
+            "differences": 0,
+            "excluded": 0,
+            "name": "routing",
+            "notices": 1,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "copper_no_net": {
+                "a": 0,
+                "b": 0
+              },
+              "length": {
+                "a": 637755412,
+                "b": 637755412
+              },
+              "nets": 26,
+              "nets_unpaired": {
+                "a": 0,
+                "b": 0
+              },
+              "pieces": {
+                "a": 26,
+                "b": 44
+              },
+              "strict": {
+                "arcs": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 0
+                },
+                "tracks": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 208
+                },
+                "vias": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 3
+                }
+              },
+              "unjudged": 1,
+              "unshaped": {
+                "a": 0,
+                "b": 0
+              },
+              "vias": {
+                "a": 3,
+                "b": 3
+              },
+              "zones_unfilled": {
+                "a": 0,
+                "b": 1
+              }
+            }
+          },
+          "6": {
+            "compared": 30,
+            "differences": 0,
+            "excluded": 0,
+            "name": "rules",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "layers": 20,
+              "netclasses": 0,
+              "rules": 1,
+              "stackup": 9
+            }
+          },
+          "7": {
+            "compared": 114,
+            "differences": 0,
+            "excluded": 0,
+            "name": "geometry",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "dimensions": 1,
+              "footprint_items": 100,
+              "graphics": 4,
+              "holes": 0,
+              "keepouts": 0,
+              "outline": 0,
+              "texts": 8,
+              "zones": 1
+            }
+          },
+          "8": {
+            "compared": 15,
+            "differences": 2,
+            "excluded": 0,
+            "name": "presentation",
+            "notices": 0,
+            "reason": "",
+            "status": "differs",
+            "summary": {
+              "changes": {},
+              "layers": 15,
+              "pitch_nm": {
+                "board": 50000,
+                "sheet": 127000
+              },
+              "pixel_ppm": 1000,
+              "sheets": 0
+            }
+          },
+          "S": {
+            "compared": 314,
+            "differences": 0,
+            "excluded": 0,
+            "name": "schematic",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "extraction_issues": 0,
+              "instances": 1,
+              "items": 174,
+              "pins": 108,
+              "symbols": 31
+            }
+          }
+        },
+        "raw_log": "logs/sonde_xilinx/fresh-proof.stdout.json",
+        "raw_reply_sha256": "37d9a94ed908a0944e6d013630bbb1a047508aa71aef0e3c26aed5ec15b76c4d",
+        "seconds": 9.695,
+        "stderr_sha256": "ca8a902a96fa337855a39e4f69d2afdf0dec8437c1e3a132f01ddf50618cbcd5",
+        "tolerances": {
+          "angle_udeg": 0,
+          "frame": "absolute",
+          "length_nm": 0,
+          "length_ppm": 0,
+          "pixel_ppm": 1000,
+          "render_pitch_um": 50
+        }
+      },
+      "original_recipe": [
+        "import",
+        "upstream/demos/sonde xilinx/sonde xilinx.kicad_pro",
+        "--to",
+        "python",
+        "--out",
+        "out",
+        "--licence",
+        "CC-BY-SA-4.0",
+        "--source",
+        "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/sonde%20xilinx",
+        "--revision",
+        "97acc80c223d75520c03fc44cab63cd9a3202c42",
+        "--timestamp",
+        "2026-10-31T00:00:00Z",
+        "--confirm"
+      ],
+      "payload_snapshot_unchanged": {
+        "encoding": "UTF-8 compact JSON of relative-path to file SHA-256, sorted keys, no trailing newline",
+        "files": 31,
+        "sha256": "98bb2d3adc58d324785024b5e54fb329114ae9616888b16d4cfd7e62e5d326b3"
+      },
+      "plan_review_sha256": "72f8ab15d7127f234106251b36800fc80818c2b8a50e02bf079d39e622a28c17",
+      "source": {
+        "basis": "cached bytes exactly match the existing recorded native input SHA-256 values",
+        "files": {
+          "sonde xilinx.kicad_pcb": "d0dee876715fcdd3f656dd6a77cc1141c39bec4d6f8492a3784d38edd6b9a998",
+          "sonde xilinx.kicad_pro": "ee60a96f93cc36549b52da9b3eea9547d5ea1e83a671c449668987edfb73a901",
+          "sonde xilinx.kicad_sch": "5271d5d1472d4dab645870f97e62785be9eb95b793e1b8cf0d8ca607de95a985"
+        },
+        "upstream_commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+        "upstream_path": "demos/sonde xilinx"
+      },
+      "source_terms_sha256_unchanged": {
+        "LICENSE": "00ba11b9a22d453aed299954eaca389d8efef441a4673d84e2dc4ae10ebc7ca5",
+        "NOTICE": "6faf8084c5d2c1e489f031e414322078cfad6963a6b1abc8f34b8b8781dc0096",
+        "PROVENANCE.json": "1bb37b39c8ae2379771339cb3e880464c94d86d17b4186feedc24ab1a68e74d9",
+        "item.json": "e3959a54096c00104eaf3c2c66b69d69fbdfeb63d4366687b154657642c044d6"
+      },
+      "temporary_candidate_files_sha256": {
+        "PROVENANCE.json": "b0934a8b8b073eafe0c549780eda2519b55a3c34301ef958d79523ae87a02391",
+        "copper.py": "4e1b9f0ff9f6ecbffb39f785b2478716e545cacfd65c8fdf0ddf55e3db9247c0",
+        "design.lock": "ef1749b289127ec292fa597d919db2927c6f613ad63e29a56467d2cd3055d633",
+        "design.py": "54d2457f7061e1e3137ef0ccc21534241a3206641dbda3c540f9f99742f0ea52",
+        "fp-lib-table": "13093a2e16b8205c97f56d2b7fbf2cf3f918b3084525a0e3ac2fb5bb7ab59092",
+        "lib/sonde-xilinx.pretty/C_Axial_L5.1mm_D3.1mm_P12.50mm_Horizontal.kicad_mod": "58ed409390e13613c374b5497ac490785a4cf4f2372f7cd06cbc0996f014193d",
+        "lib/sonde-xilinx.pretty/C_Disc_D5.1mm_W3.2mm_P5.00mm.kicad_mod": "a47f8f5d78e3e04ff3539d77b80b823e780d4ad8ae812eccacd7f0ba9919f6d3",
+        "lib/sonde-xilinx.pretty/C_Disc_D5.1mm_W3.2mm_P5.00mm_2.kicad_mod": "700fc53cff4deef8bd4185c10cf81ae9d347496770a974118bc8a5cc681c7f49",
+        "lib/sonde-xilinx.pretty/C_Disc_D5.1mm_W3.2mm_P5.00mm_3.kicad_mod": "06247eb969e081328e1953bace8807bdc8447a13f932af532ddc3bbd8a27523c",
+        "lib/sonde-xilinx.pretty/C_Disc_D5.1mm_W3.2mm_P5.00mm_4.kicad_mod": "c11d77a7b494a1b929903d89b143c8ec47088045421a3fb7cf8df351f1aa7476",
+        "lib/sonde-xilinx.pretty/DIP-14_W7.62mm_LongPads.kicad_mod": "558ed13beca10859568b74ee5aee8b8c4e2206dd658eb69b0d2efba6ad569923",
+        "lib/sonde-xilinx.pretty/DSUB-25_Male_EdgeMount_P2.77mm.kicad_mod": "27d929665bedb8b852ac7908def01db3bce092881b3056d92b89dc0f6e859ca4",
+        "lib/sonde-xilinx.pretty/DSUB-9_Male_EdgeMount_P2.77mm.kicad_mod": "464c1570d81d2617065a7f7a7eafca695fc3ac340a56834a36d99c676a4eb67e",
+        "lib/sonde-xilinx.pretty/D_A-405_P7.62mm_Horizontal.kicad_mod": "2c344c61c206d39646510ab511046c2c35886d9b9dea709cc81ce5dcbdb7e75d",
+        "lib/sonde-xilinx.pretty/D_A-405_P7.62mm_Horizontal_2.kicad_mod": "bfc7da794b2cfdc032b4ce2c139055468218a0ab7f81bd3da78e2dd9fc1e9ead",
+        "lib/sonde-xilinx.pretty/PinHeader_1x06_P2.54mm_Vertical.kicad_mod": "4e7e1ed4be8851fb27965a049c5b2c3150554c858b5143d0a2502e81d01374e1",
+        "lib/sonde-xilinx.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.kicad_mod": "c41297ea68964f76eae1bcffe10720deb6c5735988f97ced83b7b16432fa8695",
+        "lib/sonde-xilinx.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_2.kicad_mod": "8fd3842ec1214a87f40ab122683b78ac3f6468c3a8706e6233d4026c28329425",
+        "lib/sonde-xilinx.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_3.kicad_mod": "5c299e99afe953a21268cd2076177b01220bd3d247e78a67235cb17bdd3975b5",
+        "lib/sonde-xilinx.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_4.kicad_mod": "8a94a93da88edaa76e53f3000cada73a6b81640128e64824b647316364b321c0",
+        "lib/sonde-xilinx.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_5.kicad_mod": "ddac6bd1e088ce0180c3acbaaa6aed1ebb9e70bb28ff36b28994a70c20c32cc5",
+        "lib/sonde-xilinx.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_6.kicad_mod": "960d9d27eca6e7238a17357f295b15de6d33f47ce38737f1f4db29b0975475e5",
+        "lib/sonde-xilinx.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_7.kicad_mod": "204ca002e268e9c8148791109c4b99c0a06bd10b38acb6852c7a6d87e1186608",
+        "lib/sonde-xilinx.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_8.kicad_mod": "658a2ba9950f59c2d13a942ac2295c013c9a8da3ed846ea87647e648d44a1e9f",
+        "lib/sonde-xilinx.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_9.kicad_mod": "f07093fb68677492f139c92af59c3e5a1075cb67d22c43987f197142f3c1119b",
+        "lib/sonde_xilinx.kicad_sym": "44a82e8bef4bd4682ed2eef9c5bc3df5d7fdaaad894da29f5e63d9a52efa3e2a",
+        "schematic.toml": "0f15dce799e9cdbb2ec485916438b0e8efb854a7ce4de74c2a89b4abab15871d",
+        "sym-lib-table": "130a251453ef5df9ebcf15292edf5eb9ba93043f0f45c94bd5fcd399b643c57b"
+      }
+    },
+    "video": {
+      "baseline": {
+        "against": {
+          "backend": "kicad",
+          "files": {
+            "bus_pci.kicad_sch": "0110ee91bd8eb39ba7c4d08703bca193f72337b25928ad2babc86dc3c54d1cde",
+            "esvideo.kicad_sch": "b736ce2d5a17fa94fcd64c656435031730b3b8524342dd4e1d19a917adbd1d6f",
+            "graphic.kicad_sch": "c09706718277aefb6d9b1ea49825237d026191e6d91d44c7e75aa0eba682900d",
+            "modul.kicad_sch": "59f6d8152af769371bd35a08dc11c1bdf9c3b4e56ab079f389a0584d1a4574c7",
+            "muxdata.kicad_sch": "9b757497857c061632fd09cc3d0a236843c1c164f0b864a78b22c88c1fd96a58",
+            "pal-ntsc.kicad_sch": "970c766b745d299ca0b47b05a51baf628bf114a6bfe007736beb7ccd0548fd09",
+            "rams.kicad_sch": "40a46f70b6731962a4afa5858b54d3bbf55ac3e4b1a95c7c905b698ae99eb0e3",
+            "video.kicad_pcb": "f620675158ddd5c61e5ce9e15f4c92b230ae1df1cbcec6c502b8ce266e4007ea",
+            "video.kicad_pro": "329241ed4d9d176ef51adcec457a7c072e4bbc1b6500738622ebeaeba74d6c7f",
+            "video.kicad_sch": "4d3ced775e49f56704b036bf56b9bf90d3d403b29bc9434eca47a8f18bea5ce1"
+          },
+          "name": "video.kicad_pro"
+        },
+        "build": {
+          "copper_check": "warn",
+          "copy": true,
+          "files": 123,
+          "target": "kicad-9"
+        },
+        "comparison_reached": true,
+        "difference_kinds": {
+          "7:graphic-field": 22,
+          "S:drawn-net": 1,
+          "S:item-field": 22,
+          "S:item-missing": 2091,
+          "S:sheet-missing": 9,
+          "S:symbol-field": 371,
+          "S:symbol-missing": 5,
+          "S:symbol-pose": 109
+        },
+        "equivalent": false,
+        "error": {
+          "code": "FEN-5001",
+          "hint": "read 'issues' in the envelope",
+          "message": "2630 finding(s) of severity error",
+          "retryable": false,
+          "where": "verify-source"
+        },
+        "evidence": "INFERRED",
+        "evidence_oracle": null,
+        "exit_code": 5,
+        "fenolite_path_differences": 0,
+        "historical_accepted_matches": 153,
+        "inputs_unchanged": true,
+        "issues": {
+          "equiv.drawn-net": 1,
+          "equiv.excluded": 5,
+          "equiv.graphic-field": 22,
+          "equiv.item-field": 22,
+          "equiv.item-missing": 2091,
+          "equiv.route-unjudged": 2,
+          "equiv.sheet-missing": 9,
+          "equiv.symbol-field": 371,
+          "equiv.symbol-missing": 5,
+          "equiv.symbol-pose": 109,
+          "fidelity.accepted-unused": 45,
+          "kicad.board.kept-opaque": 6,
+          "kicad.project.class-shadowed": 1,
+          "place.courtyard-overlap": 2,
+          "place.outside-outline": 7
+        },
+        "levels": {
+          "1": {
+            "compared": 189,
+            "differences": 0,
+            "excluded": 0,
+            "name": "components",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "components": {
+                "a": 189,
+                "b": 189
+              },
+              "ignored": 0
+            }
+          },
+          "2": {
+            "compared": 2080,
+            "differences": 0,
+            "excluded": 0,
+            "name": "netlist",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "renamed": 0,
+              "sources": {
+                "a": "board",
+                "b": "board"
+              },
+              "unnumbered": {
+                "a": 24,
+                "b": 24
+              }
+            }
+          },
+          "3": {
+            "compared": 2118,
+            "differences": 0,
+            "excluded": 135,
+            "name": "footprints",
+            "notices": 0,
+            "reason": "",
+            "status": "accepted",
+            "summary": {
+              "copper_unknown": 0,
+              "footprints": 189
+            }
+          },
+          "4": {
+            "compared": 189,
+            "differences": 0,
+            "excluded": 0,
+            "name": "placement",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "frame": "absolute",
+              "translation": [
+                0,
+                0
+              ]
+            }
+          },
+          "5": {
+            "compared": 9111,
+            "differences": 0,
+            "excluded": 0,
+            "name": "routing",
+            "notices": 2,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "copper_no_net": {
+                "a": 0,
+                "b": 0
+              },
+              "length": {
+                "a": 35416825425,
+                "b": 35416825425
+              },
+              "nets": 371,
+              "nets_unpaired": {
+                "a": 0,
+                "b": 0
+              },
+              "pieces": {
+                "a": 371,
+                "b": 589
+              },
+              "strict": {
+                "arcs": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 0
+                },
+                "tracks": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 7932
+                },
+                "vias": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 808
+                }
+              },
+              "unjudged": 2,
+              "unshaped": {
+                "a": 0,
+                "b": 0
+              },
+              "vias": {
+                "a": 808,
+                "b": 808
+              },
+              "zones_unfilled": {
+                "a": 0,
+                "b": 2
+              }
+            }
+          },
+          "6": {
+            "compared": 36,
+            "differences": 0,
+            "excluded": 0,
+            "name": "rules",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "layers": 22,
+              "netclasses": 0,
+              "rules": 1,
+              "stackup": 13
+            }
+          },
+          "7": {
+            "compared": 800,
+            "differences": 22,
+            "excluded": 1,
+            "name": "geometry",
+            "notices": 0,
+            "reason": "",
+            "status": "differs",
+            "summary": {
+              "dimensions": 2,
+              "footprint_items": 759,
+              "graphics": 36,
+              "holes": 0,
+              "keepouts": 0,
+              "outline": 0,
+              "texts": 1,
+              "zones": 2
+            }
+          },
+          "8": {
+            "compared": 18,
+            "differences": 0,
+            "excluded": 17,
+            "name": "presentation",
+            "notices": 0,
+            "reason": "",
+            "status": "accepted",
+            "summary": {
+              "changes": {
+                "board": [
+                  "C10 footprint: footprints:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder \u2192 footprints:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_2",
+                  "C11 footprint: footprints:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder \u2192 footprints:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_3",
+                  "C12 footprint: footprints:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder \u2192 footprints:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_3"
+                ],
+                "sheet:video.kicad_sch": [
+                  "#GND01 removed",
+                  "#GND02 removed",
+                  "#GND03 removed"
+                ]
+              },
+              "layers": 17,
+              "pitch_nm": {
+                "board": 50000,
+                "sheet": 127000
+              },
+              "pixel_ppm": 1000,
+              "sheets": 1
+            }
+          },
+          "S": {
+            "compared": 3628,
+            "differences": 2608,
+            "excluded": 0,
+            "name": "schematic",
+            "notices": 0,
+            "reason": "",
+            "status": "differs",
+            "summary": {
+              "extraction_issues": 0,
+              "instances": 13,
+              "items": 1499,
+              "pins": 2033,
+              "symbols": 83
+            }
+          }
+        },
+        "raw_log": "logs/video/baseline-proof.stdout.json",
+        "raw_reply_sha256": "697f3ae86ec88d025c2220baa49495ce99d231c031710f67c994321887bef032",
+        "seconds": 134.553,
+        "stderr_sha256": "5d7b5ad297a814f767ee0635b05753b6bae84b8d88c49b8f9ce9eb02195a3137",
+        "tolerances": {
+          "angle_udeg": 0,
+          "frame": "absolute",
+          "length_nm": 0,
+          "length_ppm": 0,
+          "pixel_ppm": 1000,
+          "render_pitch_um": 50
+        }
+      },
+      "fresh_import_confirm": {
+        "error": null,
+        "error_findings": [],
+        "evidence": "INFERRED",
+        "evidence_oracle": null,
+        "exit_code": 0,
+        "inputs_unchanged": true,
+        "issues": {
+          "import.footprint-variant": 68,
+          "import.provenance-missing": 1,
+          "import.sheet-renamed": 6
+        },
+        "plan_id": null,
+        "planned_files": 0,
+        "raw_log": "logs/video/import-confirm.stdout.json",
+        "raw_reply_sha256": "1425bd666e36fa2f3f0372eb3abc263dcb3db26ccd9fb0d9e130fc9fedcff0ef",
+        "seconds": 3.944,
+        "self_check": {
+          "equivalent": true,
+          "levels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "unexpressed": []
+      },
+      "fresh_import_dry": {
+        "error": null,
+        "error_findings": [],
+        "evidence": "INFERRED",
+        "evidence_oracle": null,
+        "exit_code": 0,
+        "inputs_unchanged": true,
+        "issues": {
+          "import.footprint-variant": 68,
+          "import.provenance-missing": 1,
+          "import.sheet-renamed": 6
+        },
+        "plan_id": "285f41182fea1a43",
+        "planned_files": 117,
+        "raw_log": "logs/video/import-dry.stdout.json",
+        "raw_reply_sha256": "37c9906f28995aad3872ce5e7f6b56a67a271e349145c951c9f1907b5bf17544",
+        "seconds": 54.61,
+        "self_check": {
+          "equivalent": true,
+          "levels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "unexpressed": []
+      },
+      "fresh_proof": {
+        "against": {
+          "backend": "kicad",
+          "files": {
+            "bus_pci.kicad_sch": "0110ee91bd8eb39ba7c4d08703bca193f72337b25928ad2babc86dc3c54d1cde",
+            "esvideo.kicad_sch": "b736ce2d5a17fa94fcd64c656435031730b3b8524342dd4e1d19a917adbd1d6f",
+            "graphic.kicad_sch": "c09706718277aefb6d9b1ea49825237d026191e6d91d44c7e75aa0eba682900d",
+            "modul.kicad_sch": "59f6d8152af769371bd35a08dc11c1bdf9c3b4e56ab079f389a0584d1a4574c7",
+            "muxdata.kicad_sch": "9b757497857c061632fd09cc3d0a236843c1c164f0b864a78b22c88c1fd96a58",
+            "pal-ntsc.kicad_sch": "970c766b745d299ca0b47b05a51baf628bf114a6bfe007736beb7ccd0548fd09",
+            "rams.kicad_sch": "40a46f70b6731962a4afa5858b54d3bbf55ac3e4b1a95c7c905b698ae99eb0e3",
+            "video.kicad_pcb": "f620675158ddd5c61e5ce9e15f4c92b230ae1df1cbcec6c502b8ce266e4007ea",
+            "video.kicad_pro": "329241ed4d9d176ef51adcec457a7c072e4bbc1b6500738622ebeaeba74d6c7f",
+            "video.kicad_sch": "4d3ced775e49f56704b036bf56b9bf90d3d403b29bc9434eca47a8f18bea5ce1"
+          },
+          "name": "video.kicad_pro"
+        },
+        "build": {
+          "copper_check": "warn",
+          "copy": true,
+          "files": 123,
+          "target": "kicad-9"
+        },
+        "comparison_reached": true,
+        "difference_kinds": {
+          "8:render-pixels": 8
+        },
+        "differences": [
+          {
+            "a": "25708/530268",
+            "b": "3070/530268",
+            "field": "pixels",
+            "kind": "render-pixels",
+            "level": 8,
+            "where": "sheet:bus_pci.kicad_sch:26035000,218313000-32385000,219583000"
+          },
+          {
+            "a": "9358/226567",
+            "b": "1264/226567",
+            "field": "pixels",
+            "kind": "render-pixels",
+            "level": 8,
+            "where": "sheet:esvideo.kicad_sch:136906000,133731000-142494000,135509000"
+          },
+          {
+            "a": "22061/409275",
+            "b": "3160/409275",
+            "field": "pixels",
+            "kind": "render-pixels",
+            "level": 8,
+            "where": "sheet:graphic.kicad_sch:107696000,95631000-120904000,97409000"
+          },
+          {
+            "a": "1680/106514",
+            "b": "1140/106514",
+            "field": "pixels",
+            "kind": "render-pixels",
+            "level": 8,
+            "where": "sheet:modul.kicad_sch:172085000,24003000-178435000,25273000"
+          },
+          {
+            "a": "14357/231274",
+            "b": "956/231274",
+            "field": "pixels",
+            "kind": "render-pixels",
+            "level": 8,
+            "where": "sheet:muxdata.kicad_sch:172466000,99441000-185674000,101219000"
+          },
+          {
+            "a": "5804/224548",
+            "b": "890/224548",
+            "field": "pixels",
+            "kind": "render-pixels",
+            "level": 8,
+            "where": "sheet:pal-ntsc.kicad_sch:52451000,37338000-54356000,38862000"
+          },
+          {
+            "a": "45076/628284",
+            "b": "954/628284",
+            "field": "pixels",
+            "kind": "render-pixels",
+            "level": 8,
+            "where": "sheet:rams.kicad_sch:99060000,126111000-106680000,127889000"
+          },
+          {
+            "a": "24972/1329051",
+            "b": "140/1329051",
+            "field": "pixels",
+            "kind": "render-pixels",
+            "level": 8,
+            "where": "sheet:video.kicad_sch:175260000,146685000-197993000,148209000"
+          }
+        ],
+        "equivalent": false,
+        "error": {
+          "code": "FEN-5001",
+          "hint": "read 'issues' in the envelope",
+          "message": "8 finding(s) of severity error",
+          "retryable": false,
+          "where": "verify-source"
+        },
+        "evidence": "INFERRED",
+        "evidence_oracle": null,
+        "exit_code": 5,
+        "fenolite_path_differences": 0,
+        "historical_accepted_matches": 0,
+        "inputs_unchanged": true,
+        "issues": {
+          "drawn.bus-member-unknown": 374,
+          "drawn.dangling": 979,
+          "drawn.net-name-differs": 296,
+          "equiv.render-pixels": 8,
+          "equiv.route-unjudged": 2,
+          "kicad.board.kept-opaque": 6,
+          "kicad.project.class-shadowed": 1,
+          "kicad.sch.unconnected-name-unproven": 7,
+          "place.courtyard-overlap": 2,
+          "place.outside-outline": 7
+        },
+        "levels": {
+          "1": {
+            "compared": 189,
+            "differences": 0,
+            "excluded": 0,
+            "name": "components",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "components": {
+                "a": 189,
+                "b": 189
+              },
+              "ignored": 0
+            }
+          },
+          "2": {
+            "compared": 2080,
+            "differences": 0,
+            "excluded": 0,
+            "name": "netlist",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "renamed": 0,
+              "sources": {
+                "a": "board",
+                "b": "board"
+              },
+              "unnumbered": {
+                "a": 24,
+                "b": 24
+              }
+            }
+          },
+          "3": {
+            "compared": 2118,
+            "differences": 0,
+            "excluded": 0,
+            "name": "footprints",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "copper_unknown": 0,
+              "footprints": 189
+            }
+          },
+          "4": {
+            "compared": 189,
+            "differences": 0,
+            "excluded": 0,
+            "name": "placement",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "frame": "absolute",
+              "translation": [
+                0,
+                0
+              ]
+            }
+          },
+          "5": {
+            "compared": 9111,
+            "differences": 0,
+            "excluded": 0,
+            "name": "routing",
+            "notices": 2,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "copper_no_net": {
+                "a": 0,
+                "b": 0
+              },
+              "length": {
+                "a": 35416825425,
+                "b": 35416825425
+              },
+              "nets": 371,
+              "nets_unpaired": {
+                "a": 0,
+                "b": 0
+              },
+              "pieces": {
+                "a": 371,
+                "b": 589
+              },
+              "strict": {
+                "arcs": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 0
+                },
+                "tracks": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 7932
+                },
+                "vias": {
+                  "a": 0,
+                  "b": 0,
+                  "matched": 808
+                }
+              },
+              "unjudged": 2,
+              "unshaped": {
+                "a": 0,
+                "b": 0
+              },
+              "vias": {
+                "a": 808,
+                "b": 808
+              },
+              "zones_unfilled": {
+                "a": 0,
+                "b": 2
+              }
+            }
+          },
+          "6": {
+            "compared": 36,
+            "differences": 0,
+            "excluded": 0,
+            "name": "rules",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "layers": 22,
+              "netclasses": 0,
+              "rules": 1,
+              "stackup": 13
+            }
+          },
+          "7": {
+            "compared": 800,
+            "differences": 0,
+            "excluded": 0,
+            "name": "geometry",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "dimensions": 2,
+              "footprint_items": 759,
+              "graphics": 36,
+              "holes": 0,
+              "keepouts": 0,
+              "outline": 0,
+              "texts": 1,
+              "zones": 2
+            }
+          },
+          "8": {
+            "compared": 25,
+            "differences": 8,
+            "excluded": 0,
+            "name": "presentation",
+            "notices": 0,
+            "reason": "",
+            "status": "differs",
+            "summary": {
+              "changes": {
+                "sheet:bus_pci.kicad_sch": [
+                  "#PWR06 added",
+                  "#PWR07 added",
+                  "#PWR08 added"
+                ],
+                "sheet:esvideo.kicad_sch": [
+                  "#PWR117 added",
+                  "#PWR118 added",
+                  "#PWR119 added"
+                ],
+                "sheet:graphic.kicad_sch": [
+                  "#PWR100 added",
+                  "#PWR101 added",
+                  "#PWR102 added"
+                ],
+                "sheet:modul.kicad_sch": [
+                  "#PWR180 added",
+                  "#PWR181 added",
+                  "#PWR182 added"
+                ],
+                "sheet:muxdata.kicad_sch": [
+                  "#PWR177 added",
+                  "#PWR178 added",
+                  "#PWR179 added"
+                ],
+                "sheet:pal-ntsc.kicad_sch": [
+                  "#PWR138 added",
+                  "#PWR139 added",
+                  "#PWR140 added"
+                ],
+                "sheet:rams.kicad_sch": [
+                  "#PWR161 added",
+                  "#PWR162 added",
+                  "#PWR163 added"
+                ],
+                "sheet:video.kicad_sch": [
+                  "#PWR01 added",
+                  "#PWR02 added",
+                  "#PWR03 added"
+                ]
+              },
+              "layers": 17,
+              "pitch_nm": {
+                "board": 50000,
+                "sheet": 127000
+              },
+              "pixel_ppm": 1000,
+              "sheets": 8
+            }
+          },
+          "S": {
+            "compared": 6302,
+            "differences": 0,
+            "excluded": 0,
+            "name": "schematic",
+            "notices": 0,
+            "reason": "",
+            "status": "equal",
+            "summary": {
+              "extraction_issues": 0,
+              "instances": 8,
+              "items": 4072,
+              "pins": 2033,
+              "symbols": 189
+            }
+          }
+        },
+        "raw_log": "logs/video/fresh-proof.stdout.json",
+        "raw_reply_sha256": "df492ddc666ee7578466add8771ef8a6fd6552b8dd515ab42cb60348332687a1",
+        "seconds": 127.849,
+        "stderr_sha256": "8c2a2cc2428e22310aafe7bab5d1922cac647cdaab7aeb80c73b8c848a9fb320",
+        "tolerances": {
+          "angle_udeg": 0,
+          "frame": "absolute",
+          "length_nm": 0,
+          "length_ppm": 0,
+          "pixel_ppm": 1000,
+          "render_pitch_um": 50
+        }
+      },
+      "original_recipe": [
+        "import",
+        "upstream/demos/video/video.kicad_pro",
+        "--to",
+        "python",
+        "--out",
+        "out",
+        "--licence",
+        "CC-BY-SA-4.0",
+        "--source",
+        "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/video",
+        "--revision",
+        "97acc80c223d75520c03fc44cab63cd9a3202c42",
+        "--timestamp",
+        "2026-10-31T00:00:00Z",
+        "--confirm"
+      ],
+      "payload_snapshot_unchanged": {
+        "encoding": "UTF-8 compact JSON of relative-path to file SHA-256, sorted keys, no trailing newline",
+        "files": 111,
+        "sha256": "e8456daa228b9e4f23a4c2529c23265891f57a068656ab681f0067e760df4d1a"
+      },
+      "plan_review_sha256": "1e7ae0308f225efb24cc1b152bc486a5ba4b50cb2324edf330ae9b8b9f7b3c49",
+      "source": {
+        "basis": "cached bytes exactly match the existing recorded native input SHA-256 values",
+        "files": {
+          "bus_pci.kicad_sch": "0110ee91bd8eb39ba7c4d08703bca193f72337b25928ad2babc86dc3c54d1cde",
+          "esvideo.kicad_sch": "b736ce2d5a17fa94fcd64c656435031730b3b8524342dd4e1d19a917adbd1d6f",
+          "graphic.kicad_sch": "c09706718277aefb6d9b1ea49825237d026191e6d91d44c7e75aa0eba682900d",
+          "modul.kicad_sch": "59f6d8152af769371bd35a08dc11c1bdf9c3b4e56ab079f389a0584d1a4574c7",
+          "muxdata.kicad_sch": "9b757497857c061632fd09cc3d0a236843c1c164f0b864a78b22c88c1fd96a58",
+          "pal-ntsc.kicad_sch": "970c766b745d299ca0b47b05a51baf628bf114a6bfe007736beb7ccd0548fd09",
+          "rams.kicad_sch": "40a46f70b6731962a4afa5858b54d3bbf55ac3e4b1a95c7c905b698ae99eb0e3",
+          "video.kicad_pcb": "f620675158ddd5c61e5ce9e15f4c92b230ae1df1cbcec6c502b8ce266e4007ea",
+          "video.kicad_pro": "329241ed4d9d176ef51adcec457a7c072e4bbc1b6500738622ebeaeba74d6c7f",
+          "video.kicad_sch": "4d3ced775e49f56704b036bf56b9bf90d3d403b29bc9434eca47a8f18bea5ce1"
+        },
+        "upstream_commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+        "upstream_path": "demos/video"
+      },
+      "source_terms_sha256_unchanged": {
+        "LICENSE": "00ba11b9a22d453aed299954eaca389d8efef441a4673d84e2dc4ae10ebc7ca5",
+        "NOTICE": "42ab2af0f9b83ec3724f8aa6aa708a0932aca05a478aaefb9221c752873ee55e",
+        "PROVENANCE.json": "b46cc06a0acd356389430fa1e38e3fef6959ccbd50267174af404497b9b0498c",
+        "item.json": "cf2534cb8b2d0ae24f35085ac1c70bf1f20c29f7034d4fcd2e65fd7beab29448"
+      },
+      "temporary_candidate_files_sha256": {
+        "PROVENANCE.json": "a74cde47d53718bade86cc435441a5b1d93d1edc4fe3156774643e259e3ac393",
+        "copper.py": "9616864b0bc7fec70b7e84a74b39ddc86744664fd39336670dbd9fe4057289d7",
+        "design.lock": "07d18a4e086fb5b40f1c51f15fcbe52ab690e0ac62a85f9f91f891beb898c31f",
+        "design.py": "68744b95c624c11c92b8624a5852ca177047a6a99086caa0fda8b623ebcf2c11",
+        "fp-lib-table": "54c139af962a14597937d98e6c6ed8d40e9adb7df5aaaf7f6c0bd03262b32593",
+        "lib/footprints.pretty/BUSPCI.kicad_mod": "263eb2db46bf32752874615c8923033df60c49cdbd13565c4a9656aa1d915db7",
+        "lib/footprints.pretty/CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder.kicad_mod": "24248faaa370d9bd5a29072d5dfb24bdd84cdfd7f649fd9722bab1c86f698bf3",
+        "lib/footprints.pretty/CV3-30PF.kicad_mod": "23e316d59bfaad24263538372d6a894cf133a06efc4f7a0d4c81f2aca25ed8e8",
+        "lib/footprints.pretty/C_Disc_D3.0mm_W2.0mm_P2.50mm.kicad_mod": "04d2e2e4ab6ec2dbb9f4faba83d4514092f61b3f36ca3483a4f64bbd999e6bc7",
+        "lib/footprints.pretty/C_Disc_D3.0mm_W2.0mm_P2.50mm_2.kicad_mod": "d09b2836b32e8ac7418069ce3cb9bbead894a93653027e8ff6cf4806bc5272c9",
+        "lib/footprints.pretty/Crystal_HC18-U_Horizontal.kicad_mod": "4f0eccd34e1cfba8714bc656e47198b035216a425fe121750e2752860a5bacb9",
+        "lib/footprints.pretty/Crystal_HC18-U_Vertical.kicad_mod": "95f39448f69df6c88d00431dcda55f8e83c931c573e4e1bec09238fdda9755ee",
+        "lib/footprints.pretty/Crystal_HC18-U_Vertical_2.kicad_mod": "5099f421e7cc8685afa7178c539f9792cb8c0bb30f7b7e2db8c8c1425c544844",
+        "lib/footprints.pretty/DIP-8_W7.62mm.kicad_mod": "6364d157a8532f2f03e7cc6eeeee87e5b8bfe263502c7be68df29c8f1830d6ff",
+        "lib/footprints.pretty/DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset14.56mm_Housed_MountingHolesOffset15.98mm.kicad_mod": "b4bf64565c1b9ca949044560e588893486d403aeaa1d048fbd3f5200f69b864f",
+        "lib/footprints.pretty/D_DO-34_SOD68_P7.62mm_Horizontal.kicad_mod": "a63fbff91dbe07510cccc203570527d29ca703ecf095906bc8486ed69cbf82a1",
+        "lib/footprints.pretty/LED_D3.0mm.kicad_mod": "a4f1a97baa2f9137cc00cad624b28689da7b5a5f911da66adc0d06b170b1c28e",
+        "lib/footprints.pretty/LRTDK.kicad_mod": "f1f77a2f84b6d1eac2337d5800012922dd49379bae9f12f6d854b1b5ba5ab56c",
+        "lib/footprints.pretty/PLCC68.kicad_mod": "e4c988d3129ea1e79284b2262837eca59c951981c1023e9a4e10c3dedc315389",
+        "lib/footprints.pretty/PLCC84.kicad_mod": "760e37e1e2ade8b21eac98990954f27ceba7b8062ad21f0c85c1e68c67e67acc",
+        "lib/footprints.pretty/PQFP-100_14x20mm_P0.65mm.kicad_mod": "afa09fef0e8401cc67f178db3d80b25c8ec471c609a7cb3610a49c267fff7bf3",
+        "lib/footprints.pretty/PQFP-160_28x28mm_P0.65mm.kicad_mod": "a5b7764cd08e2d1e3a2a8f220c32280003bace91fe919d8cace7376ea7243dea",
+        "lib/footprints.pretty/PQFP-160_28x28mm_P0.65mm_2.kicad_mod": "98063f9ed88746da144e81b662434900bc5e388172a5f65b37152c159e6ad74b",
+        "lib/footprints.pretty/PinHeader_1x01_P2.54mm_Vertical.kicad_mod": "a01fe00e44bedb8b48256f00d6c2a956b7602b047caae9e69c86c0e49d5f7e55",
+        "lib/footprints.pretty/PinHeader_1x01_P2.54mm_Vertical_2.kicad_mod": "135575fd33223ecbd496aa86359065876bb9a1077e9f00656dd4aab5b8a055ae",
+        "lib/footprints.pretty/PinHeader_1x01_P2.54mm_Vertical_3.kicad_mod": "7553a15f1852a433c2c9fc2a253efc2561968e0a0aad20552a9e7ce649b3ad4d",
+        "lib/footprints.pretty/PinHeader_1x02_P2.54mm_Vertical.kicad_mod": "1fcb5b03c04694e0372526b07fb3d311417a7e3fefc5ce577d0fb378a3db85fd",
+        "lib/footprints.pretty/PinHeader_1x02_P2.54mm_Vertical_2.kicad_mod": "eb4a111b1aeb3f1899c305d2034e0b6c688836b7154522d320c741bd8d93e080",
+        "lib/footprints.pretty/PinHeader_1x02_P2.54mm_Vertical_3.kicad_mod": "62ce7fe9f4f560717a0549e03158d066f883411db1aa770721bebac6bc053a81",
+        "lib/footprints.pretty/PinHeader_1x05_P2.54mm_Vertical.kicad_mod": "52645a5978560c040e2b98dc0933f79261b51e127c5ae68cc588530ece590e65",
+        "lib/footprints.pretty/Potentiometer_Bourns_3314G_Vertical.kicad_mod": "aff103cdc5c1b6b8bb975cc12db947f6a4e14007557ce7ae34564e027040e1bf",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder.kicad_mod": "364bd5ac3050613422350a51c2d0284d80bdee9f62f89d9c469f6ec82dd04a53",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_10.kicad_mod": "d4dba3793a63584046a39b10a28b458f15acc80b3a9af86f2d3e785002dc8194",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_11.kicad_mod": "7a2f1ffb15aa6b164fb50b060fecb0a06d3b357b9cf92f62828cd499171e6308",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_12.kicad_mod": "6174c8a6f0ba964118f9b82000a0096819a2650e71b71efdd349066cdf306590",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_13.kicad_mod": "3935af582b38c7ab6c43190e6be91af843e1734784ffe0a6b45bd019ade0083e",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_14.kicad_mod": "65a67d37755ab89007a36a6a7ab33efba0c71f8130ec86c23018d1482f06715f",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_15.kicad_mod": "a3504dbcd9493b1b700ac5edc7dcef41ab5f5cc787e03a7d6cd0244ab0daf15f",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_16.kicad_mod": "364affdd1e3ec2cce48c21e7a58f03ab8c718d5a591f2303847e6315378d86b7",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_17.kicad_mod": "a95c5128cc4c1333de51fd7d7850553f641ad8a7af00197708d249f2ed4b571d",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_18.kicad_mod": "b5c2a9ab66c78c7fb73b7c32940bb1f6b8646e4385aa5e8b64d198ecbbfe4ba6",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_19.kicad_mod": "dca8d1742ba10cd24c813d146ba6783a27ec7d5516ae813ae5fd6957778efe68",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_2.kicad_mod": "4d68b069411b3b6f76e6e2000820f68fdb55206b65ade2ce3396ddd16496c783",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_20.kicad_mod": "73b3430b68294f0bb4396138547ddf22b18bc3d21d93e37e13e34931e4dfe0b9",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_21.kicad_mod": "1f2745a9be26bb5c8519fc5fcc0ac8565854cfafb1e2e32edc818075a287c9b2",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_22.kicad_mod": "c00fb74eed1e8b8a6ceb66214a257331c0d71f66bf4cb5b962464d093ca831e0",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_23.kicad_mod": "440c3d09d6d8848a2bfa9057b3a649ce66ccdd8b16abc16fe2b0fa2480be9e4e",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_24.kicad_mod": "5abff85f6e78e3b132416e3cba6ed30e90b4b725127a44d84c6adb465ad1b79b",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_25.kicad_mod": "c113e688ca6c568ef224822acb6b4dcf92230c7aec08d8ba795a2d40c1370aad",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_26.kicad_mod": "2e5bd34ada3628abab70b74acf47147619c8456c6d02cf4e918ec47ee7f06023",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_27.kicad_mod": "d145a3eb1911fc2863d2d9836c481777ab03d151d7cb4ef88039870e48df3c7b",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_28.kicad_mod": "42b63012792513c65e3e0047b49ad61e8aec68b3aa407ec39ab8227faf80d82a",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_29.kicad_mod": "201d54025657f84d6e9b55ff5c77ac718883a2e0b0dd4464df688979a628668e",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_3.kicad_mod": "dbe919340261e4ff078af2b40a25bc739086d8db0ee8dcd84e57a99ce05a47a2",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_30.kicad_mod": "7182bff26d4dc9432032d83bd5615e58046ab1d93d64f0e53397a5e28890e263",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_31.kicad_mod": "290912f9115d45bfebb53c6c8027e33dedf0d8d9c8028bdf18212749cee501d0",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_32.kicad_mod": "743774593d7787261adf6b1eff165c49f4b027fc1f1c6809535ae88d946c0783",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_33.kicad_mod": "6932c9967bb37d15d7158811d93ac65a995b7d8af7fa8252ae67b1a984f0e1a5",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_34.kicad_mod": "959ba6291af5100c6e3fb9cf51c92d61d85c4f779317751bb215c61a0f294b14",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_35.kicad_mod": "899274c870873fecdf7f876dec0ef68acf5d938af62bdd2c7f2f3388c6d8bfee",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_36.kicad_mod": "d820bc064bd5ea08ed7f66b64268cfc15031f434fc93151a28fc994f505c79c8",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_37.kicad_mod": "034ad1499efe9db65a1bcc99860319d927c52190db5f42f34854e40b2e48595e",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_38.kicad_mod": "0247c0cee7f7d6f4f827dff11f7b333c8e02f40bd18f2cc791efb0e9e054c0d9",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_39.kicad_mod": "0fd8f0b22d1865b5f91b3cce68c63feded411af1265c1b6ad9f8dd5c2eb8908c",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_4.kicad_mod": "faf6ec37360f8e703617244a2f2ffba50324e8030504cbfea4d10e7aad17f4c6",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_40.kicad_mod": "9a20055ab93c86cc8489f321a8cf004a79a099067e80f7b64804996583731671",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_41.kicad_mod": "fc3f1c533e19bc49669757740a93300d5c35bdf8d1628547384a914aa2368e38",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_42.kicad_mod": "f9dd8c1286f749e2b2bdcbf0654d7300ac41ab0af2cdc3dee123242363e9caea",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_5.kicad_mod": "8e5f4df0c628fb35edd4a81395fd85efcddab80441ceb19bea86982ed19c19fd",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_6.kicad_mod": "2fd0727823853a6acaa9e0028f9defe7ff048389c10d40ae0fa9a69d53e332d5",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_7.kicad_mod": "b3596e6916002cb2f16fcd4e00fa749478377e264be4a096e03104793157e2c3",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_8.kicad_mod": "3b4e46bcd3e7121a941629e89db65b6372cc5024643be599a922435c52f9d49a",
+        "lib/footprints.pretty/R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_9.kicad_mod": "ced8d5b633cbe8d1e7412a0a903063776b7d28008045229dc6d51d723110ed89",
+        "lib/footprints.pretty/R_1210_3225Metric_Pad1.30x2.65mm_HandSolder.kicad_mod": "fbf8552449a96a75cac635fcec23ef538627ce5888f93ca234a4ec17cab4b6f5",
+        "lib/footprints.pretty/R_1210_3225Metric_Pad1.30x2.65mm_HandSolder_2.kicad_mod": "a0823f0f147f0a7a2ec5d1f25d39fb178ae000ab9ff4cf17d42a8cce50e78931",
+        "lib/footprints.pretty/R_1210_3225Metric_Pad1.30x2.65mm_HandSolder_3.kicad_mod": "8f14a9676b398b3ed8502edf5876958ca43115cfcd18086c3a8f1f52edd7a047",
+        "lib/footprints.pretty/R_1210_3225Metric_Pad1.30x2.65mm_HandSolder_4.kicad_mod": "50e3cc5606aead1f30f8e165019c55fd2b2a397fb6ba3a6691af7e310caf556a",
+        "lib/footprints.pretty/R_1210_3225Metric_Pad1.30x2.65mm_HandSolder_5.kicad_mod": "b0690ee5d343de8156a6cefba0042fcc3e08cb00d0363cc6c6ee33485b19d425",
+        "lib/footprints.pretty/R_1210_3225Metric_Pad1.30x2.65mm_HandSolder_6.kicad_mod": "ca8f4d1b30b658740e27fc59590cebe3d6a8bc723d5cdfd44a4dce1ac6961356",
+        "lib/footprints.pretty/R_1210_3225Metric_Pad1.30x2.65mm_HandSolder_7.kicad_mod": "484de9f8cdf325bf3e1ea19e34358e241dcb415987da6f5aa96b68def7b04b1a",
+        "lib/footprints.pretty/R_1812_4532Metric_Pad1.30x3.40mm_HandSolder.kicad_mod": "86956905fc490978828b4fac0a31b61862ee04df23abed20373da7b1da4211a2",
+        "lib/footprints.pretty/R_1812_4532Metric_Pad1.30x3.40mm_HandSolder_2.kicad_mod": "41a808f35484c285fe495ae8f2762e5c8855cccc04fb99d25dd904c77da87b01",
+        "lib/footprints.pretty/R_Array_SIP9.kicad_mod": "31ddf912df8cf84a7aacd340757243ce39b1a146890b5396472b650e68d1a123",
+        "lib/footprints.pretty/R_Array_SIP9_2.kicad_mod": "0bcaea0ba255d922347c3daed972c395f59cb43f2b625f06c97a2ccc0d198e36",
+        "lib/footprints.pretty/R_Array_SIP9_3.kicad_mod": "a1054ca4bf264f0ebfe21e4c162f61f6fce0db657040a6da325946038c669ccd",
+        "lib/footprints.pretty/R_Array_SIP9_4.kicad_mod": "d6ca00c0c780f383925da54e8aab5debcc98680e8ab0dec8fa165043b4db4f47",
+        "lib/footprints.pretty/R_Array_SIP9_5.kicad_mod": "86acca30c4ba78f95bba77f3e87e43d5738d6ed6b0cef788285fe14eb2253ca5",
+        "lib/footprints.pretty/SOIC-20W_7.5x12.8mm_P1.27mm.kicad_mod": "f6d2e0114c323d205ef5d986abb978b4cb4ed1dbbfaeedfeae7979aaf7a710aa",
+        "lib/footprints.pretty/SOIC-20W_7.5x12.8mm_P1.27mm_2.kicad_mod": "10725f1588257114425125a6fb22d79eafb78d5bc6e65f664b0dd34a8b742257",
+        "lib/footprints.pretty/SOIC-20W_7.5x12.8mm_P1.27mm_3.kicad_mod": "6a59ebd3e50418473dc0c60ca5c22613f1d99e628921e291bb854f014f90847e",
+        "lib/footprints.pretty/SOIC-24W_7.5x15.4mm_P1.27mm.kicad_mod": "fc816a89fdeaa305b00b53968697630a2fbe1d4064d79f9df0fecaedcac0d48f",
+        "lib/footprints.pretty/SOIC-28W_7.5x17.9mm_P1.27mm.kicad_mod": "7803e0181b2ffc456852f49ecfd1e6f841f013f83690d42772f016b436eea955",
+        "lib/footprints.pretty/SOT23EBC.kicad_mod": "7ede503c571a6bc43ef26105853d9b77b9a20a145d57b1b1b2ffcfaa6ea7d80d",
+        "lib/footprints.pretty/SSOP-8_3.95x5.21x3.27mm_P1.27mm.kicad_mod": "46ea8c341f6cc48d18c3d19bf9d7816380f09d8297211842e78d1b9fe849b7e6",
+        "lib/footprints.pretty/SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm.kicad_mod": "1808818661eb9ffc23dcfce3f1292cc9471ebf3163173717e004dc9284a1eea0",
+        "lib/footprints.pretty/SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm_2.kicad_mod": "d17133c11b1dc0aa65c2080bb489b648c54d4b0b58a6659d73b3ce3a9ca8b578",
+        "lib/footprints.pretty/SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm_3.kicad_mod": "5634d022e8f2f9e4cf35eb2c22feb9a7bf0f9e25b7a6ef91cfa46ae8c9ba8820",
+        "lib/footprints.pretty/TQFP-100_14x14mm_P0.5mm.kicad_mod": "7b4a42c22bb0c2fb45138a557a792fb05fe31f52ee068b8b463f6f327a961525",
+        "lib/footprints.pretty/sim72.kicad_mod": "b52f35b2ec712cbbc5fc75a78005a32e06bb09a8f57e4cb939cd912d7c4bc133",
+        "lib/footprints.pretty/sim72_2.kicad_mod": "82e405b3c2276da30c9e9d76c671a5efba3341e03e39d2dddc4ed93f208303e1",
+        "lib/footprints.pretty/sim72_3.kicad_mod": "cc102d17635a1b88b23644b543704df3b9d324051a26b00ba0f37e1ea6f6e975",
+        "lib/footprints.pretty/subclick.kicad_mod": "ac63658dacdf7f6c668a158a1a5730cb8363b1ea9c964a4c27182b81d00e9a07",
+        "lib/footprints.pretty/subclick_2.kicad_mod": "342942a02bba860bb425e48adb3ec5a2629cc0ecfcd1d74b8a68b18dcb1aced9",
+        "lib/footprints.pretty/subclick_3.kicad_mod": "bd122eb20ad80a5e705f01a51182c7b6dca35bcb24912484be9dd4e4bb981991",
+        "lib/footprints.pretty/subclick_4.kicad_mod": "7b6917a107ba59df2d5cdd1dc881aab4c2caef1c56a676ab1a128b92457cfb60",
+        "lib/power.kicad_sym": "8711f1661cfe395546f61bc687ead02e5ff44b9bd109c6b1de6f8d703251a7b6",
+        "lib/video_schlib.kicad_sym": "662d61a943adb9a39c7e4a116d1022b2a198c592176e34d044758bf3857c5b2c",
+        "schematic.toml": "d3a91b3d841ccfe63a7d55d7c4e7d5d2c491a276ebc0540a23cd5c7211405f36",
+        "sheets/__init__.py": "0b8ca14402acdf144d95be934df6823960637d0a3ddb13fec7c5917ed43db043",
+        "sheets/bus_pci.py": "be78cd8b75ccc1c65d74e8378581d87b308a5950f80e2b8541c09aad29ed236a",
+        "sheets/esvideo.py": "7adf8935d775f92437dbf0e727edb8f75bf48b648f5173b42182cf7cf2aa0097",
+        "sheets/graphic.py": "501ad597c1d677b5813ee0d5d291fb531eebce4512a3e9db5b0381e00f142d25",
+        "sheets/modul.py": "161e0fb3f2c7ed4033b55a3278a8b39329b6723115f93abc9198f38728d79fde",
+        "sheets/muxdata.py": "71f0e4b5672f3665f6e3b8a806ee02dd81dffc8aac59630aefc67220a29ad523",
+        "sheets/pal_ntsc.py": "3e0ab707a59feae64923f30ff6fed17bf7ad6d9a5da744b64e3d3386ab34da19",
+        "sheets/rams.py": "c5c0f06bd20949c62881b2946b8abfc6c4c8ed1c9ad3bf78bf0a4fab86b8c30e",
+        "sym-lib-table": "84d6dde7f044346c3845293ce0cd4fd354271ae5ead830fa8bc97d2723a28152"
+      }
+    }
+  },
+  "core": {
+    "cli": "v0",
+    "commit": "695dee0f1bdf2cff066edad0220c63cf064ae0a2",
+    "model": "0",
+    "source0_receipt_sha256": "24c6e31dd0b9b3352f3af350742125e474cc47ed0fff805475a866a4ce20a778",
+    "source0_schema_hashes": {
+      "schemas/fenolite.artifacts.v0.json": "070827300faf99d3dc3cdfe5febb6eff44954275ff9781b5867570e341a1d483",
+      "schemas/fenolite.convert.v0.json": "da245824df6f0bfa97a62cf789c24e78c91f5796c3c40e379be93300a383a47b",
+      "schemas/fenolite.drawn-schematic.v0.json": "f5353076aef98836d8c710ea8268ac7d5d1ecd059c721d71643f1b8d517e48ca",
+      "schemas/fenolite.envelope.v0.json": "e7c2349886963b39da8dc4b8a4905f06a479c397c1658683c7c5cd451d3c3179",
+      "schemas/fenolite.equivalent.v0.json": "fa6946051b371780cb10a8ee2868a0d91064c179e9c2d5e9d25f69bcec9076cb",
+      "schemas/fenolite.error.v0.json": "4ccca1753323192fd7a0c324a4b35b17e0dda1c1c567e924baa5015b4c4affb2",
+      "schemas/fenolite.import.v0.json": "e0604146a682cc177099606a882de51d56a6723245ed3a74ac8e85a210e996ee",
+      "schemas/fenolite.model.v0/board.json": "40d1b811b40b4d892884235494698f4b8a748f5c1ff58dc38873d42899758a72",
+      "schemas/fenolite.model.v0/circuit.json": "694702ed95be4dd3f670f6c8646958785339b66d0c7bf3122d696baf58d08b82",
+      "schemas/fenolite.model.v0/drawing_sheet.json": "4500bb23a2fce883051f62484f5eaf352a58285035281e51d964a9845ef33e42",
+      "schemas/fenolite.model.v0/findings.json": "3279e1641eca3defc462e40db3694068b7c3522c9390952d379b0b14cd915a8d",
+      "schemas/fenolite.model.v0/library.json": "3ac0fba9963522d4218c273d40b2c98f2214da48cae94afe04c1506d67dd65c7",
+      "schemas/fenolite.model.v0/manufacturing.json": "bc76a1d81fbb814d25589661b0e422e535858e1efb98a9cf46ccb44a9ab61625",
+      "schemas/fenolite.model.v0/meta.json": "1b04ab4e33d308f54713cce5db5abe12d555a17f670a3962ea693c58dbb48557",
+      "schemas/fenolite.model.v0/panel.json": "aaec6f35af4462d7c3ccdb2536a553b479a548dda0715e62848dbdc309ddc819",
+      "schemas/fenolite.model.v0/rules.json": "6fb55b35bbc68e9d521503d10be3f2ec3e0d0b969ed000bf70bc156465c17fab",
+      "schemas/fenolite.model.v0/schematic.json": "a050e795711f85a773670f320e578e010e394acf76523653ccdd35d67d005151",
+      "schemas/fenolite.placement-request.v0.json": "1412d64a0cdf261a06877812db30ab003e4b49ff22cbc3e59a0e82ec007c9b86",
+      "schemas/fenolite.review.v0.json": "755f54e5fb54cfba93017fb95e6ce8e5f46708e9dd2087ec247ab179c2447d7f",
+      "schemas/fenolite.verify-source.v0.json": "facf501e81b2db6a6ec6492a26608aecab21ffc3713a3f350f1679695e9df4f9"
+    },
+    "tree": "88473c0ca98666eeac31e81b70d47b06340d7db7",
+    "tree_clean": true,
+    "version": "fenolite 0.7.0.dev0"
+  },
+  "date": "2026-11-02",
+  "format_version": 1,
+  "input_files": 24,
+  "library_base": "e22897fe934623bd20a965dc5a8e70efc5458810",
+  "policy": {
+    "altium_run": false,
+    "cached_inputs_unchanged": true,
+    "existing_item_files_unchanged": true,
+    "external_ci_run": false,
+    "library_replay_rerun": false,
+    "native_tool_oracle_run": false,
+    "new_accepted_differences": 0,
+    "notes": [
+      "Actual targeted import and verify-source commands; integer levels1-8 plusS are default, not filtered.",
+      "Fresh candidates have no accepted differences and remain outside the repository; actual proof outcomes are retained without inferred success.",
+      "Baseline proof uses unchanged historical provenance; accepted is not equal.",
+      "An absolute writable FENOLITE_STATE_DIR is used for local plans; every confirmed output hash is checked against the actual reviewed plan.",
+      "Input bytes match recorded SHA-256 values; this is not a fresh upstream fetch.",
+      "Raw replies and temporary candidate files remain in local validation scratch, not in the core or library payloads.",
+      "All CLI evidence labels are retained; equal geometry/netlist labels do not assert native DRC or routing safety."
+    ],
+    "public_tool_pin_changed": false
+  },
+  "source0_receipt": "L10 model-0 source-receipt.json"
+}

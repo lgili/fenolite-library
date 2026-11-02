@@ -69,6 +69,14 @@ cached inputs still match. ECC83/sonde strict imports now confirm and their fres
 two layer-table items. The four existing payload proofs and root audit still fail. No payload,
 provenance, source terms, accepted difference or public pin changes; raw diagnostics are retained.
 
+The [L10 continuation](conversion-replay-lote10.md), exact source
+`695dee0f1bdf2cff066edad0220c63cf064ae0a2`, now measures successful strict imports and reviewed
+confirmations for all four boards. Their fresh full proofs compare every level 1–7 and S equal with
+accepted count zero, but all still exit 5 at presentation. The old video connectivity and Coldfire
+layer-table refusals clear for these inputs. All existing payload/provenance/terms/acceptance bytes
+and public pins remain unchanged, and the audit still has 38 findings. This does not claim native
+GUI/DRC, exact-head external CI or an independent rendering oracle.
+
 Workflow checks here are source parsing, shell syntax, Python compilation and the explicitly executed
 local block job. They are not a GitHub Actions run or actionlint proof. Actual branch CI, replay/proof,
 release reproducibility and Pages remain unproved.

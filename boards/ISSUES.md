@@ -219,3 +219,26 @@ Issue 5 also has a more precise current refusal: strict Coldfire import exits 7/
 `layer-table` items. It produces no plan, so no new proof of layer preservation exists. The original
 unmapped-power-symbol refusal is not the current first blocker. Native CAD and the remaining
 unmeasured boards remain open.
+
+## Measured L10 continuation on 2026-11-02
+
+The [695dee0f review](../docs/conversion-replay-lote10.md) repeats the four original strict recipes
+against the same 24 input hashes. All four imports now plan and confirm with no unexpressed items;
+all four fresh full proofs compare levels 1–7 and S equal, with zero accepted differences.
+**Every full proof still exits 5 at level 8.** Existing payload/provenance/licence/notice/acceptance
+bytes and the public tool pin remain unchanged; the actual audit still reports 38 findings.
+
+| Item | Remaining fresh level-8 finding |
+|---|---|
+| ecc83 | One `render-pixels` schematic region, with the same power-reference change summary as the earlier review |
+| sonde_xilinx | Two `render-missing` entries for the spaced source sheet name versus the underscored generated name |
+| video | Eight `render-pixels` entries, one per source sheet; summaries list added `#PWR` references |
+| kit-dev-coldfire-xilinx_5213 | Three `render-pixels` entries, one per source sheet; summaries list added `#PWR` references |
+
+For these exact inputs, issue 15's hierarchical-net guard and issue 5's layer-table refusal are no
+longer current blockers: the actual strict imports and complete levels 1–7/S comparisons pass.
+Fresh level 7 equality now covers all four boards for issue 4, and fresh level S equality covers all
+four for issue 10. The presentation failures of issue 16 extend to the video and kit measurements;
+the summaries alone do not identify their root cause or establish harmlessness. The report retains
+every located region/count without accepting it. Findings about other demos and native DRC/GUI
+behavior are not closed by these four comparisons.

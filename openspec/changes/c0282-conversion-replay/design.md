@@ -43,3 +43,20 @@ Save full command replies outside the repositories and commit compact actual dia
 states, input/tool/source hashes and dated ISSUES notes. Keep all nonzero exits/skips visible. No source
 reader patch, model migration, native Altium claim, external CI, public tool-pin update or publication
 is part of this replay. Coordinate reader blockers with the core source owner rather than editing the cut.
+
+## L10 native-bus/layer replay — Decided 2026-11-02
+
+Continue from external signed e22897fe on a new isolated branch. Await the coordinator's exact clean
+model-0 L10 cut and source receipt; a moving branch is not a measured candidate. Reuse and rehash the
+same 24 cached native inputs. Prioritize strict video and Coldfire imports after the native bus and
+technical-layer repairs, then repeat ECC83/sonde. Review/confirm only actual plans and run default full
+1–8/S proofs from fresh provenance with no loss, acceptance or tolerance flags. Preserve original item,
+licence, notice and accepted-difference bytes until actual policy-satisfying proofs exist. Save failures
+and every per-level status alongside source/input/raw-reply SHA values; do not imply native GUI, exact
+CI or publication. All CAD and temporary derivatives stay outside core. Existing model0/b02 reports
+remain historical measurements of their own exact sources.
+
+Supplied clean source: `695dee0f1bdf2cff066edad0220c63cf064ae0a2`, tree
+`88473c0ca98666eeac31e81b70d47b06340d7db7`. The read-only model-0 receipt records 172 classes,
+1225 fields, 40 extension keys and 20 active-v0 schema hashes, with the historical model/KEEP fields
+unchanged. Its capture scope is metadata only, not a whole-suite, GUI, native or release proof.

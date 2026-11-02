@@ -16,3 +16,8 @@ cut `dbfd6fc36e18300c4a9aef1983f7130fea4e3b71`, verifying its source0 receipt/sc
 actual strict import and available full-proof outcomes separately from unchanged existing-payload
 baselines. Candidates that fail policy stay in temporary scratch; only measured diagnostics and
 issue status enter the repository, with no new accepted difference or public tool-pin update.
+
+The 2026-11-02 L10 continuation uses exact clean model-0 source
+`695dee0f1bdf2cff066edad0220c63cf064ae0a2`. It records all four now-unblocked strict imports and
+actual default full proofs, including remaining presentation failures. Original item payloads and
+acceptances stay unchanged until a candidate really satisfies the library's full proof policy.

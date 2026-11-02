@@ -19,12 +19,15 @@
   No b02 plan existed. Completed command execution on frozen dbfd6fc3: both strict dry runs and
   exact-plan confirmations exit 0; both fresh proofs run all nine levels with zero accepted differences
   and exit 5 at presentation only. Levels 1–7/S equal. This is measured execution, not a passing proof.
-- [ ] 1.3 Run the same commands for video and the Coldfire kit; report any real blocker immediately.
+- [x] 1.3 Run the same commands for video and the Coldfire kit; report any real blocker immediately.
   Proof: actual saved CLI replies and receipt summary.
   Partial measured 2026-11-01: both baseline proofs exit 5; fresh imports exit 3/FEN-3004
   (video empty source library name; Coldfire unmapped power symbol). No fresh plan/proof exists.
   Frozen dbfd6fc3 continuation: video now exits 5/FEN-5001 at the written-drawing connectivity guard;
-  kit exits 7/FEN-7001 for two layer-table items. No plan/confirmation/fresh proof, so this remains open.
+  kit exits 7/FEN-7001 for two layer-table items. No plan/confirmation/fresh proof existed at that cut.
+  L10 execution completed on 2026-11-02: both strict imports and exact-plan confirmations exit 0;
+  both actual full proofs run all nine levels, equal at 1–7/S with accepted zero, but exit 5 at level 8.
+  This closes command execution/diagnostics, not overall fidelity or the payload-refresh gate.
 - [x] 1.4 Exercise public library replay for all four records with --with-current and the explicit
   local upstream input tree. Preserve step failures and output mismatches; do not repair digests from
   unproduced outputs. Proof: actual replay replies, exit codes and unchanged library item digests.
@@ -39,6 +42,8 @@
   Proof: per-item audit, repeated payload digest comparison and source-term byte comparison.
   Still open at dbfd6fc3: neither fresh candidate passes all levels, and video/kit produce no plan.
   Existing payload/provenance/item/licence/notice bytes and acceptances remain unchanged by policy.
+  Still open at L10 695dee0f: all four fresh imports confirm, but all four full proofs fail presentation.
+  No item payload or recorded proof is replaced, and no new accepted difference is introduced.
 - [x] 2.2 Compare measured outcomes with the twelve original issues and later entries 13–14. Update
   measured status and one changelog entry. Proof: status matches saved CLI replies; JSON/TOML parse;
   strict OpenSpec validation; clean signed local commit.
@@ -66,3 +71,27 @@
   Passed diagnostic reconciliation: JSON/TOML parse and source/input/payload/terms SHA assertions;
   strict OpenSpec valid without warnings. Actual audit still exits 5 with the same 38 findings, retained
   as blockers. Only documentation/diagnostics change, in the signed local review commit.
+
+## 4. L10 strict source continuation — 2026-11-02
+
+- [x] 4.1 Verify the supplied clean L10 model-0 source/tree/schema receipt, separate private core/venv,
+  external e22897fe base and the same 24 cached input hashes. Proof: actual source/input receipt.
+  Selected immutable source 695dee0f1bdf2cff066edad0220c63cf064ae0a2 and its supplied read-only
+  model-0 capture; no claim about whole-suite/native gates follows from source selection.
+  Passed: exact clean source/tree and all 20 schema hashes checked before/after actual commands;
+  all 24 cached source files match their original records. The private frozen dev/geo install is offline.
+- [x] 4.2 Prioritize video and Coldfire strict fresh imports, then ECC83/sonde. Review/confirm only
+  real successful plans and execute every available fresh default 1–8/S proof. Record refusals/not-run
+  proofs explicitly, with no new acceptance/loss/tolerance flags. Proof: actual raw replies and statuses.
+  Completed actual execution: all four strict dry imports and reviewed confirmations exit 0, with
+  no unexpressed items. Every fresh full proof runs all 1–8/S levels, equal at 1–7/S with accepted zero;
+  every proof exits 5 at presentation (video eight, kit three, ECC83 one pixel finding; sonde two
+  missing-sheet findings). All 280 confirmed files match the reviewed plan SHA values. No full pass.
+- [x] 4.3 Reconcile the four-board diagnostics/ISSUES against the L10 source and historical reports;
+  preserve source terms and item payloads until actual proofs permit replacement. Proof: raw-reply
+  reconciliation, all-input/payload/terms SHA invariants, current audit, JSON/TOML, strict OpenSpec and
+  signed local review commit. Full/native/CI/publication gates remain separately open with root.
+  Passed diagnostic reconciliation: actual saved replies match the JSON/ISSUES summary, all inputs
+  and existing item/payload/terms/pin bytes remain unchanged, and JSON/TOML plus SHA assertions and
+  strict OpenSpec pass. Four unchanged-payload proofs still exit 5 at 7/S; the actual audit still exits
+  5 with 38 findings. This is measured evidence in a signed local commit, not a waived passing baseline.
