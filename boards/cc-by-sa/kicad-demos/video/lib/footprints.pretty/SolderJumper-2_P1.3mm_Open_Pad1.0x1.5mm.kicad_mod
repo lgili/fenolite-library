@@ -5,7 +5,7 @@
 	(descr "SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, open")
 	(tags "solder jumper open")
 	(property "Reference" "REF**"
-		(at 0 -1.8 -180)
+		(at 0 -1.8 180)
 		(layer "F.SilkS")
 		(uuid "0a86410c-7cd1-4f03-9cd8-c177b02d8f8e")
 		(effects
@@ -16,7 +16,7 @@
 		)
 	)
 	(property "Value" "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-		(at 0 1.9 -180)
+		(at 0 1.9 180)
 		(layer "F.Fab")
 		(uuid "c5e29baa-846e-446d-b98d-a0e90af5eaf3")
 		(effects

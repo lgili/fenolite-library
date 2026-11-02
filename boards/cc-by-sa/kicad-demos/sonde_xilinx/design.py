@@ -15,6 +15,7 @@ design.board(
         (mm("83.7"), mm("10.49")),
         (mm("3.3"), mm("10.49")),
     ),
+    outline_width=mm("0.2"),
 )
 design.stackup(
     stack.silkscreen(color="White"),
@@ -64,154 +65,145 @@ design.rules.minimum(
 
 c1 = Part(
     "C1",
-    "sonde-xilinx:C_Axial_L5.1mm_D3.1mm_P12.50mm_Horizontal",
+    "sonde_xilinx:CP",
     footprint="sonde-xilinx:C_Axial_L5.1mm_D3.1mm_P12.50mm_Horizontal",
     value="1uF",
 )
-c2 = Part(
-    "C2",
-    "sonde-xilinx:C_Disc_D5.1mm_W3.2mm_P5.00mm",
-    footprint="sonde-xilinx:C_Disc_D5.1mm_W3.2mm_P5.00mm",
-    value="100pF",
-)
+c2 = Part("C2", "sonde_xilinx:C", footprint="sonde-xilinx:C_Disc_D5.1mm_W3.2mm_P5.00mm", value="100pF")
 c3 = Part(
     "C3",
-    "sonde-xilinx:C_Disc_D5.1mm_W3.2mm_P5.00mm_2",
-    footprint="sonde-xilinx:C_Disc_D5.1mm_W3.2mm_P5.00mm_2",
+    "sonde_xilinx:C",
+    footprint="sonde-xilinx:C_Disc_D5.1mm_W3.2mm_P5.00mm",
+    footprint_definition="sonde-xilinx:C_Disc_D5.1mm_W3.2mm_P5.00mm_2",
     value="100pF",
 )
 c4 = Part(
     "C4",
-    "sonde-xilinx:C_Disc_D5.1mm_W3.2mm_P5.00mm_3",
-    footprint="sonde-xilinx:C_Disc_D5.1mm_W3.2mm_P5.00mm_3",
+    "sonde_xilinx:C",
+    footprint="sonde-xilinx:C_Disc_D5.1mm_W3.2mm_P5.00mm",
+    footprint_definition="sonde-xilinx:C_Disc_D5.1mm_W3.2mm_P5.00mm_3",
     value="100pF",
 )
 c5 = Part(
     "C5",
-    "sonde-xilinx:C_Disc_D5.1mm_W3.2mm_P5.00mm_4",
-    footprint="sonde-xilinx:C_Disc_D5.1mm_W3.2mm_P5.00mm_4",
+    "sonde_xilinx:C",
+    footprint="sonde-xilinx:C_Disc_D5.1mm_W3.2mm_P5.00mm",
+    footprint_definition="sonde-xilinx:C_Disc_D5.1mm_W3.2mm_P5.00mm_4",
     value="100pF",
 )
-d1 = Part(
-    "D1",
-    "sonde-xilinx:D_A-405_P7.62mm_Horizontal",
-    footprint="sonde-xilinx:D_A-405_P7.62mm_Horizontal",
-    value="BAT46",
-)
+d1 = Part("D1", "sonde_xilinx:DIODESCH", footprint="sonde-xilinx:D_A-405_P7.62mm_Horizontal", value="BAT46")
 d2 = Part(
     "D2",
-    "sonde-xilinx:D_A-405_P7.62mm_Horizontal_2",
-    footprint="sonde-xilinx:D_A-405_P7.62mm_Horizontal_2",
+    "sonde_xilinx:DIODESCH",
+    footprint="sonde-xilinx:D_A-405_P7.62mm_Horizontal",
+    footprint_definition="sonde-xilinx:D_A-405_P7.62mm_Horizontal_2",
     value="BAT46",
 )
 j1 = Part(
     "J1",
-    "sonde-xilinx:DSUB-25_Male_EdgeMount_P2.77mm",
+    "sonde_xilinx:DB25",
     footprint="sonde-xilinx:DSUB-25_Male_EdgeMount_P2.77mm",
     value="DB25MALE",
 )
-j2 = Part(
-    "J2",
-    "sonde-xilinx:DSUB-9_Male_EdgeMount_P2.77mm",
-    footprint="sonde-xilinx:DSUB-9_Male_EdgeMount_P2.77mm",
-    value="DB9MALE",
-)
+j2 = Part("J2", "sonde_xilinx:DB9", footprint="sonde-xilinx:DSUB-9_Male_EdgeMount_P2.77mm", value="DB9MALE")
 p1 = Part(
     "P1",
-    "sonde-xilinx:PinHeader_1x06_P2.54mm_Vertical",
+    "sonde_xilinx:CONN_6",
     footprint="sonde-xilinx:PinHeader_1x06_P2.54mm_Vertical",
     value="CONN_6",
 )
 r1 = Part(
     "R1",
-    "sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "sonde_xilinx:R",
     footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
     value="100",
 )
 r2 = Part(
     "R2",
-    "sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_4",
-    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_4",
+    "sonde_xilinx:R",
+    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_4",
     value="5,1K",
 )
 r4 = Part(
     "R4",
-    "sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_3",
-    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_3",
+    "sonde_xilinx:R",
+    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_3",
     value="47",
 )
 r5 = Part(
     "R5",
-    "sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_5",
-    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_5",
+    "sonde_xilinx:R",
+    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_5",
     value="1K",
 )
 r6 = Part(
     "R6",
-    "sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_6",
-    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_6",
+    "sonde_xilinx:R",
+    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_6",
     value="100",
 )
 r7 = Part(
     "R7",
-    "sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_7",
-    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_7",
+    "sonde_xilinx:R",
+    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_7",
     value="100",
 )
 r8 = Part(
     "R8",
-    "sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_8",
-    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_8",
+    "sonde_xilinx:R",
+    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_8",
     value="100",
 )
 r9 = Part(
     "R9",
-    "sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_9",
-    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_9",
+    "sonde_xilinx:R",
+    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_9",
     value="100",
 )
 r10 = Part(
     "R10",
-    "sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_2",
-    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_2",
+    "sonde_xilinx:R",
+    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_2",
     value="100",
 )
 r11 = Part(
     "R11",
-    "sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_3",
-    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_3",
+    "sonde_xilinx:R",
+    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_3",
     value="100",
 )
 r12 = Part(
     "R12",
-    "sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_3",
-    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_3",
+    "sonde_xilinx:R",
+    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_3",
     value="100",
 )
 r13 = Part(
     "R13",
-    "sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_3",
-    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_3",
+    "sonde_xilinx:R",
+    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_3",
     value="100",
 )
 r14 = Part(
     "R14",
-    "sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_3",
-    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_3",
+    "sonde_xilinx:R",
+    footprint="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="sonde-xilinx:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_3",
     value="100",
 )
-u1 = Part(
-    "U1",
-    "sonde-xilinx:DIP-14_W7.62mm_LongPads",
-    footprint="sonde-xilinx:DIP-14_W7.62mm_LongPads",
-    value="74LS125",
-)
-u2 = Part(
-    "U2",
-    "sonde-xilinx:DIP-14_W7.62mm_LongPads",
-    footprint="sonde-xilinx:DIP-14_W7.62mm_LongPads",
-    value="74LS125",
-)
+u1 = Part("U1", "sonde_xilinx:74LS125_1", footprint="sonde-xilinx:DIP-14_W7.62mm_LongPads", value="74LS125")
+u2 = Part("U2", "sonde_xilinx:74LS125_2", footprint="sonde-xilinx:DIP-14_W7.62mm_LongPads", value="74LS125")
 
 racine = Module("racine")
 
@@ -444,3 +436,5 @@ copper.apply(
         "VCC": vcc,
     },
 )
+
+design.load_schematic("schematic.toml")

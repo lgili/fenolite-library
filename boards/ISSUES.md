@@ -242,3 +242,13 @@ four for issue 10. The presentation failures of issue 16 extend to the video and
 the summaries alone do not identify their root cause or establish harmlessness. The report retains
 every located region/count without accepting it. Findings about other demos and native DRC/GUI
 behavior are not closed by these four comparisons.
+
+## Passing Video/Sonde refresh on 2026-11-02
+
+The [signed de6c6f2f refresh](../docs/item-refresh-maintainer-host.md) supersedes
+the earlier Video/Sonde presentation failures for these exact recorded inputs.
+Both current items pass all nine levels without acceptance and their portable
+recipes reproduce their packaged trees. Historical measurements above remain.
+ECC83 still differs in visible footprint namespace text; Coldfire explicitly
+refuses unsupported visible bold text. The root audit retains 32 findings in
+other items, and native/manual/CI gates remain open.

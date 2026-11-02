@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+- Refresh Video and Sonde to 1.0.1 on signed core de6c6f2f: actual full nine-level
+  proofs pass without acceptance and both portable replays reproduce their
+  packaged trees. Preserve upstream terms and public tool pin; the root audit
+  retains 32 unrelated findings. See docs/item-refresh-maintainer-host.md.
+
 - Repeat the four strict conversions on signed core 1918e632: Video passes all
   nine levels without acceptance; ECC83 and sonde retain presentation findings,
   and Coldfire explicitly refuses unsupported bold rendering. Preserve existing

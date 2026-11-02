@@ -6,7 +6,6 @@
     "design.lock",
     "design.py",
     "fp-lib-table",
-    "lib/footprints.kicad_sym",
     "lib/footprints.pretty/BUSPCI.kicad_mod",
     "lib/footprints.pretty/CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder.kicad_mod",
     "lib/footprints.pretty/CV3-30PF.kicad_mod",
@@ -107,6 +106,17 @@
     "lib/footprints.pretty/subclick_2.kicad_mod",
     "lib/footprints.pretty/subclick_3.kicad_mod",
     "lib/footprints.pretty/subclick_4.kicad_mod",
+    "lib/power.kicad_sym",
+    "lib/video_schlib.kicad_sym",
+    "schematic.toml",
+    "sheets/__init__.py",
+    "sheets/bus_pci.py",
+    "sheets/esvideo.py",
+    "sheets/graphic.py",
+    "sheets/modul.py",
+    "sheets/muxdata.py",
+    "sheets/pal_ntsc.py",
+    "sheets/rams.py",
     "sym-lib-table"
   ],
   "id": "kicad-demos/video",
@@ -120,5 +130,5 @@
     "video"
   ],
   "title": "Video board (KiCad demo video)",
-  "version": "1.0.0"
+  "version": "1.0.1"
 }

@@ -6,7 +6,6 @@
     "design.lock",
     "design.py",
     "fp-lib-table",
-    "lib/sonde-xilinx.kicad_sym",
     "lib/sonde-xilinx.pretty/C_Axial_L5.1mm_D3.1mm_P12.50mm_Horizontal.kicad_mod",
     "lib/sonde-xilinx.pretty/C_Disc_D5.1mm_W3.2mm_P5.00mm.kicad_mod",
     "lib/sonde-xilinx.pretty/C_Disc_D5.1mm_W3.2mm_P5.00mm_2.kicad_mod",
@@ -27,6 +26,8 @@
     "lib/sonde-xilinx.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_7.kicad_mod",
     "lib/sonde-xilinx.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_8.kicad_mod",
     "lib/sonde-xilinx.pretty/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_9.kicad_mod",
+    "lib/sonde_xilinx.kicad_sym",
+    "schematic.toml",
     "sym-lib-table"
   ],
   "id": "kicad-demos/sonde_xilinx",
@@ -41,5 +42,5 @@
     "programmer"
   ],
   "title": "Xilinx JTAG probe (KiCad demo sonde xilinx)",
-  "version": "1.0.0"
+  "version": "1.0.1"
 }

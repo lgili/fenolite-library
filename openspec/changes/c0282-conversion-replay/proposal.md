@@ -21,3 +21,9 @@ The 2026-11-02 L10 continuation uses exact clean model-0 source
 `695dee0f1bdf2cff066edad0220c63cf064ae0a2`. It records all four now-unblocked strict imports and
 actual default full proofs, including remaining presentation failures. Original item payloads and
 acceptances stay unchanged until a candidate really satisfies the library's full proof policy.
+
+The later maintainer-host continuation on signed core de6c6f2f permits replacing
+only the actually passing Video and Sonde candidates. Reviewed CLI record plans,
+complete zero-acceptance proofs, exact portable replay trees, independently
+verified upstream hashes and preserved terms are required. Remaining diagnostics,
+the older public tool pin and all native/CI/publication gates stay explicit.

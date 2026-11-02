@@ -1,0 +1,1135 @@
+# Drawn schematic of a Fenolite design (docs/drawn-schematic.md). Code owns the nets.
+schema = "fenolite.drawn-schematic.v0"
+root = "root"
+
+[[sheet]]
+key = "root"
+paper = "A4"
+
+[sheet.title_block]
+title = "PARALLEL CABLE III"
+date = "Sun 22 Mar 2015"
+revision = "1"
+
+[[sheet.symbol]]
+part = "racine/J1"
+unit = 1
+at = [44.45, 71.12]
+rotation = 0
+mirror = "y"
+fields.Reference = { at = [43.18, 36.83], rotation = 0, font = { size = [1.778, 1.778] } }
+fields.Value = { at = [45.72, 105.41], rotation = 0, font = { size = [1.778, 1.778] } }
+fields.Footprint = { at = [44.45, 71.12], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [44.45, 71.12], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/R1"
+unit = 1
+at = [100.33, 25.4]
+rotation = 270
+fields.Reference = { at = [100.33, 27.432], rotation = 90 }
+fields.Value = { at = [100.33, 25.4], rotation = 90 }
+fields.Footprint = { at = [100.33, 25.4], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [100.33, 25.4], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/R4"
+unit = 1
+at = [100.33, 40.64]
+rotation = 270
+fields.Reference = { at = [100.33, 42.672], rotation = 90 }
+fields.Value = { at = [100.33, 40.64], rotation = 90 }
+fields.Footprint = { at = [100.33, 40.64], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [100.33, 40.64], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/R6"
+unit = 1
+at = [100.33, 57.15]
+rotation = 270
+fields.Reference = { at = [100.33, 59.182], rotation = 90 }
+fields.Value = { at = [100.33, 57.15], rotation = 90 }
+fields.Footprint = { at = [100.33, 57.15], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [100.33, 57.15], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/R10"
+unit = 1
+at = [100.33, 83.82]
+rotation = 270
+fields.Reference = { at = [100.33, 85.852], rotation = 90 }
+fields.Value = { at = [100.33, 83.82], rotation = 90 }
+fields.Footprint = { at = [100.33, 83.82], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [100.33, 83.82], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/R9"
+unit = 1
+at = [100.33, 106.68]
+rotation = 270
+fields.Reference = { at = [100.33, 108.712], rotation = 90 }
+fields.Value = { at = [100.33, 106.68], rotation = 90 }
+fields.Footprint = { at = [100.33, 106.68], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [100.33, 106.68], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/U2"
+unit = 1
+at = [118.11, 40.64]
+rotation = 0
+mirror = "y"
+fields.Reference = { at = [118.11, 38.1], rotation = 0, justify = "left bottom" }
+fields.Value = { at = [116.84, 44.45], rotation = 0, justify = "left top" }
+fields.Footprint = { at = [118.11, 40.64], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [118.11, 40.64], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/U1"
+unit = 1
+at = [137.16, 48.26]
+rotation = 0
+fields.Reference = { at = [137.16, 45.72], rotation = 0, justify = "left bottom" }
+fields.Value = { at = [138.43, 52.07], rotation = 0, justify = "left top" }
+fields.Footprint = { at = [137.16, 48.26], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [137.16, 48.26], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/U1"
+unit = 2
+at = [138.43, 66.04]
+rotation = 0
+symbol = "sonde_xilinx:74LS125_6"
+fields.Reference = { at = [138.43, 63.5], rotation = 0, justify = "left bottom" }
+fields.Value = { at = [139.7, 69.8246], rotation = 0, justify = "left top" }
+fields.Footprint = { at = [138.43, 66.04], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [138.43, 66.04], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/U1"
+unit = 3
+at = [138.43, 83.82]
+rotation = 0
+symbol = "sonde_xilinx:74LS125_7"
+fields.Reference = { at = [138.43, 81.28], rotation = 0, justify = "left bottom" }
+fields.Value = { at = [139.7, 87.6046], rotation = 0, justify = "left top" }
+fields.Footprint = { at = [138.43, 83.82], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [138.43, 83.82], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/U1"
+unit = 4
+at = [138.43, 106.68]
+rotation = 0
+symbol = "sonde_xilinx:74LS125"
+fields.Reference = { at = [138.43, 104.14], rotation = 0, justify = "left bottom" }
+fields.Value = { at = [139.7, 110.4646], rotation = 0, justify = "left top" }
+fields.Footprint = { at = [138.43, 106.68], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [138.43, 106.68], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/U2"
+unit = 2
+at = [43.18, 175.26]
+rotation = 0
+symbol = "sonde_xilinx:74LS125_3"
+fields.Reference = { at = [43.18, 172.72], rotation = 0, justify = "left bottom" }
+fields.Value = { at = [44.45, 179.07], rotation = 0, justify = "left top", font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [43.18, 175.26], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [43.18, 175.26], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/U2"
+unit = 3
+at = [43.18, 158.75]
+rotation = 0
+symbol = "sonde_xilinx:74LS125_4"
+fields.Reference = { at = [43.18, 156.21], rotation = 0, justify = "left bottom" }
+fields.Value = { at = [44.45, 162.56], rotation = 0, justify = "left top", font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [43.18, 158.75], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [43.18, 158.75], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/U2"
+unit = 4
+at = [43.18, 142.24]
+rotation = 0
+symbol = "sonde_xilinx:74LS125_5"
+fields.Reference = { at = [43.18, 139.7], rotation = 0, justify = "left bottom" }
+fields.Value = { at = [44.45, 146.05], rotation = 0, justify = "left top", font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [43.18, 142.24], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [43.18, 142.24], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/D1"
+unit = 1
+at = [114.3, 25.4]
+rotation = 0
+mirror = "y"
+fields.Reference = { at = [114.3, 22.86], rotation = 0 }
+fields.Value = { at = [114.3, 27.94], rotation = 0 }
+fields.Footprint = { at = [114.3, 25.4], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [114.3, 25.4], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/D2"
+unit = 1
+at = [180.34, 25.4]
+rotation = 0
+mirror = "y"
+fields.Reference = { at = [180.34, 22.86], rotation = 0 }
+fields.Value = { at = [180.34, 27.94], rotation = 0 }
+fields.Footprint = { at = [180.34, 25.4], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [180.34, 25.4], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/R2"
+unit = 1
+at = [149.86, 33.02]
+rotation = 0
+fields.Reference = { at = [146.05, 27.94], rotation = 0 }
+fields.Value = { at = [149.86, 33.02], rotation = 90 }
+fields.Footprint = { at = [149.86, 33.02], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [149.86, 33.02], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/R5"
+unit = 1
+at = [157.48, 33.02]
+rotation = 0
+fields.Reference = { at = [153.67, 27.94], rotation = 0 }
+fields.Value = { at = [157.48, 33.02], rotation = 90 }
+fields.Footprint = { at = [157.48, 33.02], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [157.48, 33.02], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/R14"
+unit = 1
+at = [168.91, 48.26]
+rotation = 270
+fields.Reference = { at = [168.91, 50.292], rotation = 90 }
+fields.Value = { at = [168.91, 48.26], rotation = 90 }
+fields.Footprint = { at = [168.91, 48.26], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [168.91, 48.26], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/C4"
+unit = 1
+at = [160.02, 113.03]
+rotation = 0
+fields.Reference = { at = [161.29, 110.49], rotation = 0, justify = "left" }
+fields.Value = { at = [161.29, 115.57], rotation = 0, justify = "left" }
+fields.Footprint = { at = [160.02, 113.03], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [160.02, 113.03], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/C1"
+unit = 1
+at = [165.1, 31.75]
+rotation = 0
+fields.Reference = { at = [166.37, 29.21], rotation = 0, justify = "left" }
+fields.Value = { at = [166.37, 34.2646], rotation = 0, justify = "left" }
+fields.Footprint = { at = [165.1, 31.75], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [165.1, 31.75], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/P1"
+unit = 1
+at = [224.79, 71.12]
+rotation = 0
+fields.Reference = { at = [223.52, 71.12], rotation = 90, font = { size = [1.524, 1.524] } }
+fields.Value = { at = [226.06, 71.12], rotation = 90, font = { size = [1.524, 1.524] } }
+fields.Footprint = { at = [224.79, 71.12], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [224.79, 71.12], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/J2"
+unit = 1
+at = [271.78, 99.06]
+rotation = 0
+mirror = "x"
+fields.Reference = { at = [271.78, 113.03], rotation = 0, font = { size = [1.778, 1.778] } }
+fields.Value = { at = [271.78, 85.1662], rotation = 0, font = { size = [1.778, 1.778] } }
+fields.Footprint = { at = [271.78, 99.06], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [271.78, 99.06], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/R11"
+unit = 1
+at = [168.91, 66.04]
+rotation = 270
+fields.Reference = { at = [168.91, 68.072], rotation = 90 }
+fields.Value = { at = [168.91, 66.04], rotation = 90 }
+fields.Footprint = { at = [168.91, 66.04], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [168.91, 66.04], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/R7"
+unit = 1
+at = [100.33, 66.04]
+rotation = 270
+fields.Reference = { at = [100.33, 68.072], rotation = 90 }
+fields.Value = { at = [100.33, 66.04], rotation = 90 }
+fields.Footprint = { at = [100.33, 66.04], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [100.33, 66.04], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/R8"
+unit = 1
+at = [100.33, 73.66]
+rotation = 270
+fields.Reference = { at = [100.33, 75.692], rotation = 90 }
+fields.Value = { at = [100.33, 73.66], rotation = 90 }
+fields.Footprint = { at = [100.33, 73.66], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [100.33, 73.66], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/R13"
+unit = 1
+at = [168.91, 106.68]
+rotation = 270
+fields.Reference = { at = [168.91, 108.712], rotation = 90 }
+fields.Value = { at = [168.91, 106.68], rotation = 90 }
+fields.Footprint = { at = [168.91, 106.68], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [168.91, 106.68], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/R12"
+unit = 1
+at = [168.91, 83.82]
+rotation = 270
+fields.Reference = { at = [168.91, 85.852], rotation = 90 }
+fields.Value = { at = [168.91, 83.82], rotation = 90 }
+fields.Footprint = { at = [168.91, 83.82], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [168.91, 83.82], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/C3"
+unit = 1
+at = [160.02, 54.61]
+rotation = 0
+fields.Reference = { at = [161.29, 52.07], rotation = 0, justify = "left" }
+fields.Value = { at = [161.29, 57.15], rotation = 0, justify = "left" }
+fields.Footprint = { at = [160.02, 54.61], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [160.02, 54.61], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/C2"
+unit = 1
+at = [160.02, 72.39]
+rotation = 0
+fields.Reference = { at = [161.29, 69.85], rotation = 0, justify = "left" }
+fields.Value = { at = [161.29, 74.93], rotation = 0, justify = "left" }
+fields.Footprint = { at = [160.02, 72.39], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [160.02, 72.39], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/C5"
+unit = 1
+at = [160.02, 90.17]
+rotation = 0
+fields.Reference = { at = [161.29, 87.63], rotation = 0, justify = "left" }
+fields.Value = { at = [161.29, 92.71], rotation = 0, justify = "left" }
+fields.Footprint = { at = [160.02, 90.17], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [160.02, 90.17], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "sonde_xilinx:GND"
+net = "GND"
+at = [29.21, 185.42]
+rotation = 0
+fields.Value = { at = [29.21, 187.198], rotation = 0, hide = true, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [29.21, 185.42], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [29.21, 185.42], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "sonde_xilinx:GND"
+net = "GND"
+at = [118.11, 50.8]
+rotation = 0
+fields.Value = { at = [118.11, 52.578], rotation = 0, hide = true, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [118.11, 50.8], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [118.11, 50.8], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "sonde_xilinx:GND"
+net = "GND"
+at = [63.5, 44.45]
+rotation = 0
+fields.Value = { at = [63.5, 46.228], rotation = 0, hide = true, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [63.5, 44.45], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [63.5, 44.45], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "sonde_xilinx:GND"
+net = "GND"
+at = [160.02, 119.38]
+rotation = 0
+fields.Value = { at = [160.02, 121.158], rotation = 0, hide = true, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [160.02, 119.38], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [160.02, 119.38], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "sonde_xilinx:GND"
+net = "GND"
+at = [157.48, 40.64]
+rotation = 0
+fields.Value = { at = [157.48, 42.418], rotation = 0, hide = true, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [157.48, 40.64], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [157.48, 40.64], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "sonde_xilinx:GND"
+net = "GND"
+at = [165.1, 38.1]
+rotation = 0
+fields.Value = { at = [165.1, 39.878], rotation = 0, hide = true, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [165.1, 38.1], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [165.1, 38.1], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "sonde_xilinx:GND"
+net = "GND"
+at = [214.63, 67.31]
+rotation = 270
+fields.Value = { at = [212.852, 67.31], rotation = 0, hide = true, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [214.63, 67.31], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [214.63, 67.31], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "sonde_xilinx:PWR_FLAG"
+net = "PWR_FLAG"
+at = [259.08, 121.92]
+rotation = 0
+fields.Value = { at = [259.08, 116.078], rotation = 0, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [259.08, 121.92], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [259.08, 121.92], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "sonde_xilinx:GND"
+net = "GND"
+at = [259.08, 123.19]
+rotation = 0
+fields.Value = { at = [259.08, 124.968], rotation = 0, hide = true, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [259.08, 123.19], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [259.08, 123.19], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "sonde_xilinx:VCC"
+net = "VCC"
+at = [147.32, 24.13]
+rotation = 0
+fields.Value = { at = [147.32, 21.59], rotation = 0, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [147.32, 24.13], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [147.32, 24.13], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "sonde_xilinx:PWR_FLAG"
+net = "PWR_FLAG"
+at = [154.94, 24.13]
+rotation = 0
+fields.Value = { at = [154.94, 18.288], rotation = 0, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [154.94, 24.13], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [154.94, 24.13], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "sonde_xilinx:GND"
+net = "GND"
+at = [63.5, 69.85]
+rotation = 0
+fields.Value = { at = [63.5, 71.628], rotation = 0, hide = true, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [63.5, 69.85], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [63.5, 69.85], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "sonde_xilinx:GND"
+net = "GND"
+at = [160.02, 60.96]
+rotation = 0
+fields.Value = { at = [160.02, 62.738], rotation = 0, hide = true, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [160.02, 60.96], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [160.02, 60.96], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "sonde_xilinx:GND"
+net = "GND"
+at = [160.02, 78.74]
+rotation = 0
+fields.Value = { at = [160.02, 80.518], rotation = 0, hide = true, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [160.02, 78.74], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [160.02, 78.74], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "sonde_xilinx:GND"
+net = "GND"
+at = [160.02, 96.52]
+rotation = 0
+fields.Value = { at = [160.02, 98.298], rotation = 0, hide = true, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [160.02, 96.52], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [160.02, 96.52], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "sonde_xilinx:GND"
+net = "GND"
+at = [255.27, 91.44]
+rotation = 270
+fields.Value = { at = [253.492, 91.44], rotation = 0, hide = true, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [255.27, 91.44], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [255.27, 91.44], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "sonde_xilinx:GND"
+net = "GND"
+at = [125.73, 50.8]
+rotation = 0
+fields.Value = { at = [125.73, 52.578], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [125.73, 50.8], rotation = 0, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [125.73, 50.8], rotation = 0, font = { size = [1.524, 1.524] } }
+
+[[sheet.wire]]
+pts = [[165.1, 25.4], [165.1, 26.67]]
+
+[[sheet.wire]]
+pts = [[59.69, 66.04], [55.88, 66.04]]
+
+[[sheet.wire]]
+pts = [[106.68, 57.15], [137.16, 57.15]]
+
+[[sheet.wire]]
+pts = [[129.54, 40.64], [149.86, 40.64]]
+
+[[sheet.wire]]
+pts = [[189.23, 48.26], [175.26, 48.26]]
+
+[[sheet.wire]]
+pts = [[149.86, 106.68], [160.02, 106.68]]
+
+[[sheet.wire]]
+pts = [[59.69, 45.72], [55.88, 45.72]]
+
+[[sheet.wire]]
+pts = [[63.5, 69.85], [63.5, 68.58]]
+
+[[sheet.wire]]
+pts = [[260.35, 99.06], [210.82, 99.06]]
+
+[[sheet.wire]]
+pts = [[91.44, 86.36], [55.88, 86.36]]
+
+[[sheet.wire]]
+pts = [[149.86, 66.04], [160.02, 66.04]]
+
+[[sheet.wire]]
+pts = [[208.28, 104.14], [208.28, 74.93]]
+
+[[sheet.wire]]
+pts = [[109.22, 25.4], [106.68, 25.4]]
+
+[[sheet.wire]]
+pts = [[29.21, 166.37], [43.18, 166.37]]
+
+[[sheet.wire]]
+pts = [[160.02, 95.25], [160.02, 96.52]]
+
+[[sheet.wire]]
+pts = [[127, 83.82], [106.68, 83.82]]
+
+[[sheet.wire]]
+pts = [[184.15, 72.39], [184.15, 66.04]]
+
+[[sheet.wire]]
+pts = [[157.48, 25.4], [165.1, 25.4]]
+
+[[sheet.wire]]
+pts = [[148.59, 48.26], [149.86, 48.26]]
+
+[[sheet.wire]]
+pts = [[149.86, 39.37], [149.86, 40.64]]
+
+[[sheet.wire]]
+pts = [[260.35, 96.52], [259.08, 96.52]]
+
+[[sheet.wire]]
+pts = [[259.08, 91.44], [260.35, 91.44]]
+
+[[sheet.wire]]
+pts = [[160.02, 107.95], [160.02, 106.68]]
+
+[[sheet.wire]]
+pts = [[157.48, 25.4], [157.48, 26.67]]
+
+[[sheet.wire]]
+pts = [[205.74, 77.47], [215.9, 77.47]]
+
+[[sheet.wire]]
+pts = [[29.21, 142.24], [29.21, 149.86]]
+
+[[sheet.wire]]
+pts = [[29.21, 158.75], [31.75, 158.75]]
+
+[[sheet.wire]]
+pts = [[55.88, 81.28], [86.36, 81.28]]
+
+[[sheet.wire]]
+pts = [[29.21, 149.86], [29.21, 158.75]]
+
+[[sheet.wire]]
+pts = [[86.36, 73.66], [93.98, 73.66]]
+
+[[sheet.wire]]
+pts = [[29.21, 158.75], [29.21, 166.37]]
+
+[[sheet.wire]]
+pts = [[86.36, 91.44], [86.36, 83.82]]
+
+[[sheet.wire]]
+pts = [[208.28, 74.93], [215.9, 74.93]]
+
+[[sheet.wire]]
+pts = [[147.32, 25.4], [149.86, 25.4]]
+
+[[sheet.wire]]
+pts = [[55.88, 50.8], [59.69, 50.8]]
+
+[[sheet.wire]]
+pts = [[259.08, 123.19], [259.08, 121.92]]
+
+[[sheet.wire]]
+pts = [[137.16, 57.15], [137.16, 55.88]]
+
+[[sheet.wire]]
+pts = [[59.69, 45.72], [59.69, 50.8]]
+
+[[sheet.wire]]
+pts = [[83.82, 96.52], [83.82, 66.04]]
+
+[[sheet.wire]]
+pts = [[189.23, 69.85], [189.23, 48.26]]
+
+[[sheet.wire]]
+pts = [[29.21, 142.24], [31.75, 142.24]]
+
+[[sheet.wire]]
+pts = [[160.02, 78.74], [160.02, 77.47]]
+
+[[sheet.wire]]
+pts = [[121.92, 73.66], [138.43, 73.66]]
+
+[[sheet.wire]]
+pts = [[63.5, 43.18], [55.88, 43.18]]
+
+[[sheet.wire]]
+pts = [[58.42, 25.4], [93.98, 25.4]]
+
+[[sheet.wire]]
+pts = [[91.44, 106.68], [91.44, 86.36]]
+
+[[sheet.wire]]
+pts = [[63.5, 44.45], [63.5, 43.18]]
+
+[[sheet.wire]]
+pts = [[184.15, 74.93], [208.28, 74.93]]
+
+[[sheet.wire]]
+pts = [[149.86, 83.82], [160.02, 83.82]]
+
+[[sheet.wire]]
+pts = [[259.08, 106.68], [260.35, 106.68]]
+
+[[sheet.wire]]
+pts = [[160.02, 67.31], [160.02, 66.04]]
+
+[[sheet.wire]]
+pts = [[29.21, 175.26], [31.75, 175.26]]
+
+[[sheet.wire]]
+pts = [[160.02, 48.26], [160.02, 49.53]]
+
+[[sheet.wire]]
+pts = [[205.74, 109.22], [205.74, 77.47]]
+
+[[sheet.wire]]
+pts = [[260.35, 104.14], [208.28, 104.14]]
+
+[[sheet.wire]]
+pts = [[127, 106.68], [106.68, 106.68]]
+
+[[sheet.wire]]
+pts = [[81.28, 57.15], [93.98, 57.15]]
+
+[[sheet.wire]]
+pts = [[29.21, 166.37], [29.21, 175.26]]
+
+[[sheet.wire]]
+pts = [[259.08, 91.44], [259.08, 96.52]]
+
+[[sheet.wire]]
+pts = [[186.69, 106.68], [186.69, 77.47]]
+
+[[sheet.wire]]
+pts = [[138.43, 91.44], [121.92, 91.44]]
+
+[[sheet.wire]]
+pts = [[29.21, 175.26], [29.21, 182.88]]
+
+[[sheet.wire]]
+pts = [[149.86, 48.26], [160.02, 48.26]]
+
+[[sheet.wire]]
+pts = [[260.35, 109.22], [205.74, 109.22]]
+
+[[sheet.wire]]
+pts = [[55.88, 76.2], [81.28, 76.2]]
+
+[[sheet.wire]]
+pts = [[149.86, 40.64], [149.86, 48.26]]
+
+[[sheet.wire]]
+pts = [[189.23, 69.85], [213.36, 69.85]]
+
+[[sheet.wire]]
+pts = [[260.35, 88.9], [238.76, 88.9]]
+
+[[sheet.wire]]
+pts = [[160.02, 118.11], [160.02, 119.38]]
+
+[[sheet.wire]]
+pts = [[58.42, 25.4], [58.42, 93.98]]
+
+[[sheet.wire]]
+pts = [[259.08, 101.6], [259.08, 106.68]]
+
+[[sheet.wire]]
+pts = [[194.31, 25.4], [238.76, 25.4]]
+
+[[sheet.wire]]
+pts = [[154.94, 25.4], [157.48, 25.4]]
+
+[[sheet.wire]]
+pts = [[147.32, 25.4], [147.32, 24.13]]
+
+[[sheet.wire]]
+pts = [[210.82, 72.39], [215.9, 72.39]]
+
+[[sheet.wire]]
+pts = [[184.15, 74.93], [184.15, 83.82]]
+
+[[sheet.wire]]
+pts = [[215.9, 64.77], [194.31, 64.77]]
+
+[[sheet.wire]]
+pts = [[55.88, 40.64], [93.98, 40.64]]
+
+[[sheet.wire]]
+pts = [[121.92, 73.66], [121.92, 91.44]]
+
+[[sheet.wire]]
+pts = [[210.82, 99.06], [210.82, 72.39]]
+
+[[sheet.wire]]
+pts = [[118.11, 50.8], [118.11, 48.26]]
+
+[[sheet.wire]]
+pts = [[55.88, 91.44], [86.36, 91.44]]
+
+[[sheet.wire]]
+pts = [[184.15, 83.82], [175.26, 83.82]]
+
+[[sheet.wire]]
+pts = [[213.36, 93.98], [213.36, 69.85]]
+
+[[sheet.wire]]
+pts = [[160.02, 106.68], [162.56, 106.68]]
+
+[[sheet.wire]]
+pts = [[260.35, 93.98], [213.36, 93.98]]
+
+[[sheet.wire]]
+pts = [[93.98, 106.68], [91.44, 106.68]]
+
+[[sheet.wire]]
+pts = [[165.1, 38.1], [165.1, 36.83]]
+
+[[sheet.wire]]
+pts = [[255.27, 91.44], [259.08, 91.44]]
+
+[[sheet.wire]]
+pts = [[121.92, 114.3], [138.43, 114.3]]
+
+[[sheet.wire]]
+pts = [[214.63, 67.31], [215.9, 67.31]]
+
+[[sheet.wire]]
+pts = [[125.73, 48.26], [125.73, 50.8]]
+
+[[sheet.wire]]
+pts = [[106.68, 73.66], [121.92, 73.66]]
+
+[[sheet.wire]]
+pts = [[119.38, 25.4], [147.32, 25.4]]
+
+[[sheet.wire]]
+pts = [[127, 66.04], [106.68, 66.04]]
+
+[[sheet.wire]]
+pts = [[185.42, 25.4], [194.31, 25.4]]
+
+[[sheet.wire]]
+pts = [[238.76, 25.4], [238.76, 88.9]]
+
+[[sheet.wire]]
+pts = [[29.21, 182.88], [43.18, 182.88]]
+
+[[sheet.wire]]
+pts = [[160.02, 83.82], [162.56, 83.82]]
+
+[[sheet.wire]]
+pts = [[157.48, 40.64], [157.48, 39.37]]
+
+[[sheet.wire]]
+pts = [[184.15, 72.39], [210.82, 72.39]]
+
+[[sheet.wire]]
+pts = [[149.86, 25.4], [154.94, 25.4]]
+
+[[sheet.wire]]
+pts = [[184.15, 66.04], [175.26, 66.04]]
+
+[[sheet.wire]]
+pts = [[58.42, 93.98], [55.88, 93.98]]
+
+[[sheet.wire]]
+pts = [[186.69, 77.47], [205.74, 77.47]]
+
+[[sheet.wire]]
+pts = [[86.36, 83.82], [93.98, 83.82]]
+
+[[sheet.wire]]
+pts = [[59.69, 50.8], [59.69, 66.04]]
+
+[[sheet.wire]]
+pts = [[81.28, 76.2], [81.28, 57.15]]
+
+[[sheet.wire]]
+pts = [[63.5, 68.58], [55.88, 68.58]]
+
+[[sheet.wire]]
+pts = [[259.08, 101.6], [260.35, 101.6]]
+
+[[sheet.wire]]
+pts = [[86.36, 81.28], [86.36, 73.66]]
+
+[[sheet.wire]]
+pts = [[149.86, 25.4], [149.86, 26.67]]
+
+[[sheet.wire]]
+pts = [[213.36, 69.85], [215.9, 69.85]]
+
+[[sheet.wire]]
+pts = [[175.26, 106.68], [186.69, 106.68]]
+
+[[sheet.wire]]
+pts = [[121.92, 91.44], [121.92, 114.3]]
+
+[[sheet.wire]]
+pts = [[165.1, 25.4], [175.26, 25.4]]
+
+[[sheet.wire]]
+pts = [[154.94, 24.13], [154.94, 25.4]]
+
+[[sheet.wire]]
+pts = [[160.02, 66.04], [162.56, 66.04]]
+
+[[sheet.wire]]
+pts = [[43.18, 149.86], [29.21, 149.86]]
+
+[[sheet.wire]]
+pts = [[160.02, 48.26], [162.56, 48.26]]
+
+[[sheet.wire]]
+pts = [[55.88, 96.52], [83.82, 96.52]]
+
+[[sheet.wire]]
+pts = [[194.31, 64.77], [194.31, 25.4]]
+
+[[sheet.wire]]
+pts = [[160.02, 85.09], [160.02, 83.82]]
+
+[[sheet.wire]]
+pts = [[259.08, 96.52], [259.08, 101.6]]
+
+[[sheet.wire]]
+pts = [[160.02, 60.96], [160.02, 59.69]]
+
+[[sheet.wire]]
+pts = [[83.82, 66.04], [93.98, 66.04]]
+
+[[sheet.wire]]
+pts = [[29.21, 182.88], [29.21, 185.42]]
+
+[[sheet.junction]]
+at = [259.08, 91.44]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [194.31, 25.4]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [213.36, 69.85]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [29.21, 182.88]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [160.02, 83.82]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [59.69, 50.8]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [29.21, 166.37]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [149.86, 40.64]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [121.92, 91.44]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [160.02, 106.68]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [149.86, 25.4]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [157.48, 25.4]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [205.74, 77.47]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [208.28, 74.93]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [259.08, 101.6]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [160.02, 66.04]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [29.21, 158.75]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [29.21, 149.86]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [259.08, 96.52]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [154.94, 25.4]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [29.21, 175.26]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [210.82, 72.39]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [121.92, 73.66]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [149.86, 48.26]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [160.02, 48.26]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [147.32, 25.4]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [165.1, 25.4]
+diameter = 1.016
+
+[[sheet.no_connect]]
+at = [54.61, 175.26]
+
+[[sheet.no_connect]]
+at = [55.88, 88.9]
+
+[[sheet.no_connect]]
+at = [54.61, 142.24]
+
+[[sheet.no_connect]]
+at = [54.61, 158.75]
+
+[[sheet.no_connect]]
+at = [55.88, 55.88]
+
+[[sheet.no_connect]]
+at = [55.88, 71.12]
+
+[[sheet.no_connect]]
+at = [55.88, 48.26]
+
+[[sheet.no_connect]]
+at = [55.88, 73.66]
+
+[[sheet.no_connect]]
+at = [55.88, 101.6]
+
+[[sheet.no_connect]]
+at = [55.88, 53.34]
+
+[[sheet.no_connect]]
+at = [55.88, 78.74]
+
+[[sheet.no_connect]]
+at = [55.88, 60.96]
+
+[[sheet.no_connect]]
+at = [55.88, 58.42]
+
+[[sheet.no_connect]]
+at = [55.88, 99.06]
+
+[[sheet.no_connect]]
+at = [55.88, 63.5]
+
+[[sheet.no_connect]]
+at = [55.88, 83.82]
+
+[[sheet.label]]
+kind = "local"
+text = "TMS-PROG"
+at = [205.74, 96.52]
+rotation = 90
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "TDI-DIN-D0"
+at = [60.96, 96.52]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "CTRL-D3"
+at = [60.96, 81.28]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PWR_3,3-5V"
+at = [240.03, 88.9]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "VCC_SENSE-ERROR*"
+at = [66.04, 25.4]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "TD0-PROG-D4"
+at = [60.96, 76.2]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "TMS-PROG"
+at = [191.77, 77.47]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "TMS-PROG-D2"
+at = [60.96, 86.36]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "CLK-D1"
+at = [60.96, 91.44]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "DONE-SELECT*"
+at = [66.04, 40.64]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "TD0-DONE"
+at = [191.77, 69.85]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "TDI-DIN"
+at = [191.77, 72.39]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "TCK-CCLK"
+at = [191.77, 74.93]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PWR_3,3-5V"
+at = [195.58, 64.77]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"

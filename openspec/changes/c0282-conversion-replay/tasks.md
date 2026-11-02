@@ -118,3 +118,17 @@
   measured diagnostics and provenance only as actual proofs and policy permit.
   Preserve upstream terms, earlier outcomes, public tool pin and CI gates.
   Proof: current audit, source/item/terms invariants and strict OpenSpec.
+- [x] 5.4 Replace only the newly passing Video and sonde payloads using their
+  reviewed import plans. Generate fresh fidelity records through reviewed
+  verify-source record plans; never edit a proof's result. Preserve upstream
+  licence/notices/attribution, date the conversion update, compute the actual
+  output tree and reconcile declared payload files and portable replay steps.
+  Proof: complete packaged-item proofs with zero acceptance, current item/root
+  audits, immutable terms and actual plan/output/tree hashes.
+  Passed: both 1.0.1 items have complete nine-level equality with zero
+  acceptance; two-step actual replays reproduce their packaged payload trees.
+  Selected items have no audit findings; all 32 other findings are unchanged.
+  JSON/TOML, original licence bytes, old NOTICE suffixes, unchanged public pin
+  and strict OpenSpec pass. Private-list staged scan: zero hits in 53 files.
+  The complete library residue scan retains four findings in untouched OpenAir
+  files; no complete root audit or native/CI gate is claimed.

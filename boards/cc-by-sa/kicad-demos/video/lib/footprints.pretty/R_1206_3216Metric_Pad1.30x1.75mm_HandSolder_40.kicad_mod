@@ -5,7 +5,7 @@
 	(descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 	(tags "resistor handsolder")
 	(property "Reference" "REF**"
-		(at -4.643 0.377 -180)
+		(at -4.643 0.377 180)
 		(layer "F.SilkS")
 		(uuid "3892f2f2-63ed-4df6-8075-25043a29dbb8")
 		(effects
@@ -16,7 +16,7 @@
 		)
 	)
 	(property "Value" "R_1206_3216Metric_Pad1.30x1.75mm_HandSolder_40"
-		(at 0 1.82 -180)
+		(at 0 1.82 180)
 		(layer "F.Fab")
 		(uuid "c7c4f087-2c51-4670-b581-3b59d9e9a4c5")
 		(effects
@@ -156,7 +156,7 @@
 		(uuid "7d3dadf0-7167-46da-bac9-7e57f5f01105")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(uuid "7d5d8b03-abf6-46f9-a36b-4f8949578c1b")
 		(effects

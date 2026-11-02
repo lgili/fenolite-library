@@ -77,3 +77,8 @@ device closure. Its dimensions and ratings were authored here and remain UNVERIF
 audits, record checks and a local offline get/build proof pass on the documented local fixed core.
 The public tool pin still needs that source-register fix, and the existing board audit failures remain
 visible blockers.
+
+The [2026-11-02 two-item refresh](docs/item-refresh-maintainer-host.md) records
+Video and Sonde 1.0.1 with all nine fidelity levels equal and exact portable
+replays on the signed local core. The root audit retains 32 findings in other
+items; the public tool pin and UNVERIFIED evidence remain unchanged.
