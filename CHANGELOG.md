@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Record fresh strict all-level equality for Tiny, Complex, Multichannel, Interf and ECC83 on clean diagnostic corec2f555d0; preserve Royal’s genuine derived-cache failures and all existing payload bytes. Public pin, release eligibility and CI remain pending.
+
 - Record Luiz Carlos Gili’s explicit approval of the four CURRENT renderer
   sheets and exact reviewed CLI acceptance receipts (c0338/c0333), retaining
   all warnings. This does not close CI or release gates.
