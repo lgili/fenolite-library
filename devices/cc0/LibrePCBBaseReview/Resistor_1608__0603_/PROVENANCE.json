@@ -1,0 +1,52 @@
+{
+  "authors": [
+    "LibrePCB Base"
+  ],
+  "conversion": {
+    "outputs_tree": "fenolite-tree-1:42904255608e896442569e4c288214d1cd923e2d682781fc066d9b655510dee2",
+    "steps": [
+      {
+        "argv": [
+          "library",
+          "seed",
+          "--from-librepcb",
+          "upstream",
+          "--commit",
+          "662a148d46ac785a84fd68b98e311322771a0bc2",
+          "--library",
+          "LibrePCB Base",
+          "--into",
+          "output",
+          "--namespace",
+          "LibrePCBBaseReview",
+          "--confirm"
+        ],
+        "tool": "fenolite"
+      }
+    ],
+    "tools": [
+      {
+        "name": "fenolite",
+        "version": "0.7.0.dev0"
+      }
+    ]
+  },
+  "copyright": [],
+  "evidence": "UNVERIFIED",
+  "id": "LibrePCBBaseReview:Resistor_1608__0603_",
+  "kind": "device",
+  "licence_text_sha256": "0dd25be0803b1e2764b0323560013cdd5ad9ca92ba4780bd7db0cbe6ce821dd8",
+  "modification_notice": "2026-11-02: converted from LibrePCB Base at 662a148d46ac785a84fd68b98e311322771a0bc2 by Fenolite 0.7.0.dev0; format change only; UNVERIFIED; Internal function names normalized: [{\"component\":\"ef80cd5e-2689-47ee-8888-31d04fc99174\",\"component_sha256\":\"6371221ac52a980f8116082d69a67489db12e7e9f03818543d1396303b979acc\",\"normalized\":\"Pin_1\",\"original\":\"1\",\"signal\":\"3452d36e-1ce8-4b7c-8e5b-90c2e4929ed8\"},{\"component\":\"ef80cd5e-2689-47ee-8888-31d04fc99174\",\"component_sha256\":\"6371221ac52a980f8116082d69a67489db12e7e9f03818543d1396303b979acc\",\"normalized\":\"Pin_2\",\"original\":\"2\",\"signal\":\"ad623f98-9e73-49c3-9404-f7cfa99d17cd\"}]; 2026-11-02: explicit CC0 artwork curation: only resistor symbol pin1/pin2 graphical lengths 2000000nm -> 2032000nm (8x254000nm); anchors, visible names/numbers, function maps, footprint dimensions unchanged; raw source retained; UNVERIFIED and unreviewed",
+  "origin": "seeded",
+  "schema": "fenolite.provenance.v0",
+  "sources": [
+    "D-0005"
+  ],
+  "spdx": "CC0-1.0",
+  "upstream": {
+    "commit": "662a148d46ac785a84fd68b98e311322771a0bc2",
+    "spdx_expression": "CC0-1.0",
+    "url": "https://github.com/LibrePCB-Libraries/LibrePCB_Base.lplib"
+  },
+  "version": "1.0.0"
+}

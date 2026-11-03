@@ -1,0 +1,26 @@
+{
+  "depends": [
+    {
+      "id": "LibrePCBBaseReview:Resistor",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "LibrePCBBaseReview:RESC1608__0603_",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "record.toml"
+  ],
+  "id": "LibrePCBBaseReview:Resistor_1608__0603_",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Seeded from LibrePCB Base: Resistor 1608 (0603)",
+  "tags": [],
+  "title": "Resistor_1608__0603_",
+  "version": "1.0.0"
+}

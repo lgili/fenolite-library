@@ -1,0 +1,52 @@
+{
+  "authors": [
+    "LibrePCB Base"
+  ],
+  "conversion": {
+    "outputs_tree": "fenolite-tree-1:966b431160178bfacfaa4efdcacf419e08737aca15a360d239ba7dbb2c62963a",
+    "steps": [
+      {
+        "argv": [
+          "library",
+          "seed",
+          "--from-librepcb",
+          "upstream",
+          "--commit",
+          "662a148d46ac785a84fd68b98e311322771a0bc2",
+          "--library",
+          "LibrePCB Base",
+          "--into",
+          "output",
+          "--namespace",
+          "LibrePCBBaseReview",
+          "--confirm"
+        ],
+        "tool": "fenolite"
+      }
+    ],
+    "tools": [
+      {
+        "name": "fenolite",
+        "version": "0.7.0.dev0"
+      }
+    ]
+  },
+  "copyright": [],
+  "evidence": "UNVERIFIED",
+  "id": "LibrePCBBaseReview:RESC1608__0603__Density_Level_A__max_protrusion_",
+  "kind": "footprint",
+  "licence_text_sha256": "0dd25be0803b1e2764b0323560013cdd5ad9ca92ba4780bd7db0cbe6ce821dd8",
+  "modification_notice": "2026-11-02: converted from LibrePCB Base at 662a148d46ac785a84fd68b98e311322771a0bc2 by Fenolite 0.7.0.dev0; format change only; UNVERIFIED",
+  "origin": "seeded",
+  "schema": "fenolite.provenance.v0",
+  "sources": [
+    "D-0005"
+  ],
+  "spdx": "CC0-1.0",
+  "upstream": {
+    "commit": "662a148d46ac785a84fd68b98e311322771a0bc2",
+    "spdx_expression": "CC0-1.0",
+    "url": "https://github.com/LibrePCB-Libraries/LibrePCB_Base.lplib"
+  },
+  "version": "1.0.0"
+}

@@ -1,0 +1,86 @@
+schema = "fenolite.package.v0"
+id = "LibrePCBBaseReview:RESC1608__0603_"
+version = "1.0.0"
+summary = "Seeded from LibrePCB Base: RESC1608 (0603)"
+licence = "CC0-1.0"
+evidence = "CORPUS-VERIFIED (review 2026-11-03)"
+sources = ["D-0005"]
+origin = { library = "LibrePCB Base", version = "662a148d46ac785a84fd68b98e311322771a0bc2", element = "2a40ad27-1ab7-41ee-8f60-d70df83927a5", licence = "CC0-1.0" }
+generator = "explicit"
+kind = "smd"
+
+[[pad]]
+number = "2"
+key = "65ab6c75-b264-4fed-b445-d3d98c956008"
+shape = "rect"
+size = ["0.75mm", "0.8mm"]
+at = ["0.775mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "1"
+key = "ad768910-1573-409f-81d4-d4c7692ab494"
+shape = "rect"
+size = ["0.75mm", "0.8mm"]
+at = ["-0.775mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[graphic]]
+key = "61d980d5-7846-4bad-8d9c-c55025b65ac9"
+kind = "polygon"
+layer = "F.Fab"
+points = [["-0.8mm", "0.4mm"], ["-0.4mm", "0.4mm"], ["-0.4mm", "-0.4mm"], ["-0.8mm", "-0.4mm"], ["-0.8mm", "0.4mm"]]
+filled = true
+
+[[graphic]]
+key = "42d928e5-a698-4e73-a2c3-daa18d9bcebc"
+kind = "polygon"
+layer = "F.Fab"
+points = [["0.8mm", "0.4mm"], ["0.4mm", "0.4mm"], ["0.4mm", "-0.4mm"], ["0.8mm", "-0.4mm"], ["0.8mm", "0.4mm"]]
+filled = true
+
+[[graphic]]
+key = "0a2eedee-dd2a-466e-86f4-08012e5965fb"
+kind = "line"
+layer = "F.Fab"
+points = [["-0.4mm", "0.325mm"], ["0.4mm", "0.325mm"]]
+width = "0.15mm"
+
+[[graphic]]
+key = "054a240b-3c07-4385-af01-d92b8727d12a"
+kind = "line"
+layer = "F.Fab"
+points = [["-0.4mm", "-0.325mm"], ["0.4mm", "-0.325mm"]]
+width = "0.15mm"
+
+[[graphic]]
+key = "b40cd9c4-416b-46bc-bace-e2d65db4ae45"
+kind = "line"
+layer = "F.SilkS"
+points = [["-0.175mm", "0.475mm"], ["0.175mm", "0.475mm"]]
+width = "0.15mm"
+
+[[graphic]]
+key = "a93564e3-5945-430f-a442-ba2da0b14f7f"
+kind = "line"
+layer = "F.SilkS"
+points = [["-0.175mm", "-0.475mm"], ["0.175mm", "-0.475mm"]]
+width = "0.15mm"
+
+[[graphic]]
+key = "8d41c43d-1f8e-4bbe-bfe2-b8f816b8957b"
+kind = "polygon"
+layer = "F.CrtYd"
+points = [["-1.4mm", "0.65mm"], ["1.4mm", "0.65mm"], ["1.4mm", "-0.65mm"], ["-1.4mm", "-0.65mm"], ["-1.4mm", "0.65mm"]]
+width = "0.1mm"
+
+[[reviewed_by]]
+who = "Luiz Carlos Gili"
+date = "2026-11-03"
+version = "1.0.0"
+digest = "af92ab847efdbd4307a1db62ef1aa279a6167f1465df8087f45ae1ef598c408b"
+evidence = "CORPUS-VERIFIED"
+sheet_sha256 = "f6c1ca207c154b2d3b15adc2e59d1ddcd95140366ca95c6e441433016668853b"
+previous_evidence = "UNVERIFIED"
+fenolite_version = "0.7.0.dev0"
+record_sha256 = "b13dcf473f61a5bbe4c1d5d7ba60c016aabb6ece8d93c2ec52372c4afd3da397"

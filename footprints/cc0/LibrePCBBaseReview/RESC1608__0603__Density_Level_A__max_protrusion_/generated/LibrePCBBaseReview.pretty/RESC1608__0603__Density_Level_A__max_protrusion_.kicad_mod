@@ -1,0 +1,91 @@
+(footprint "RESC1608__0603__Density_Level_A__max_protrusion_"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(descr "Seeded from LibrePCB Base: RESC1608 (0603)_Density Level A (max protrusion)")
+	(attr smd)
+	(property "Reference" "REF**"
+		(at 0 -1.925 0)
+		(layer "F.SilkS")
+		(uuid "f40b0892-8be5-5990-be24-5e75a364d398")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "RESC1608__0603__Density_Level_A__max_protrusion_"
+		(at 0 1.925 0)
+		(layer "F.Fab")
+		(uuid "242339b2-92cd-5db2-9eb8-c2bd709b2348")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "2" smd rect
+		(at 0.875 0)
+		(size 0.95 0.85)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(pad "1" smd rect
+		(at -0.875 0)
+		(size 0.95 0.85)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(fp_poly
+		(pts
+			(xy -0.8 0.4) (xy -0.4 0.4) (xy -0.4 -0.4) (xy -0.8 -0.4) (xy -0.8 0.4)
+		)
+		(layer "F.Fab")
+		(width 0)
+		(fill yes)
+	)
+	(fp_poly
+		(pts
+			(xy 0.8 0.4) (xy 0.4 0.4) (xy 0.4 -0.4) (xy 0.8 -0.4) (xy 0.8 0.4)
+		)
+		(layer "F.Fab")
+		(width 0)
+		(fill yes)
+	)
+	(fp_line
+		(start -0.4 0.325)
+		(end 0.4 0.325)
+		(layer "F.Fab")
+		(width 0.15)
+		(fill no)
+	)
+	(fp_line
+		(start -0.4 -0.325)
+		(end 0.4 -0.325)
+		(layer "F.Fab")
+		(width 0.15)
+		(fill no)
+	)
+	(fp_line
+		(start -0.175 0.475)
+		(end 0.175 0.475)
+		(layer "F.SilkS")
+		(width 0.15)
+		(fill no)
+	)
+	(fp_line
+		(start -0.175 -0.475)
+		(end 0.175 -0.475)
+		(layer "F.SilkS")
+		(width 0.15)
+		(fill no)
+	)
+	(fp_poly
+		(pts
+			(xy -1.85 0.925) (xy 1.85 0.925) (xy 1.85 -0.925) (xy -1.85 -0.925) (xy -1.85 0.925)
+		)
+		(layer "F.CrtYd")
+		(width 0.1)
+		(fill no)
+	)
+)

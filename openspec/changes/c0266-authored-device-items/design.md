@@ -30,3 +30,18 @@ Proof update 2026-11-01: initial core 7645b893's S-only library-check reader rej
 registered D-id. The separate core worker fixed that boundary in 04a9d07e6e8d0140e9d07e2e89379531ecc03ef5.
 Final record, generation, sheet and offline proofs use an immutable local copy of that clean commit;
 no alias, waiver or core-worktree modification was used here. The public workflow pin stays unchanged.
+
+
+## Reviewed LibrePCB subset integration —2026-11-03
+
+Core c0338/c0266 additionally requires the first reviewed seeded subset. The
+maintainer explicitly re-approved four current sheets after their source
+reference was corrected to D-0005. Preserve source D-0001 for the original
+FenoliteBlocks item and D-0004 for official KiCad image metadata. Keep the
+source registry's prior bytes unchanged and add only D-0005. Integrate the two
+footprints, resistor symbol and resistor device with only their already-reviewed
+dependencies. Preserve original CC0 terms, notices, earlier approval receipts
+and the real stale-review/collision history. CLI dry-run/exact-plan confirmations
+materialize the new approval; generated native definitions are declared and
+compared by the existing regeneration workflow. No other item, board payload,
+public core pin, CI or release status changes.

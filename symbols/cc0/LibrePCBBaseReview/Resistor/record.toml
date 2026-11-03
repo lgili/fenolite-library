@@ -1,0 +1,45 @@
+schema = "fenolite.pins.v0"
+id = "LibrePCBBaseReview:Resistor"
+version = "1.0.0"
+summary = "Seeded from LibrePCB Base: Resistor"
+licence = "CC0-1.0"
+evidence = "CORPUS-VERIFIED (review 2026-11-03)"
+sources = ["D-0005"]
+origin = { library = "LibrePCB Base", version = "662a148d46ac785a84fd68b98e311322771a0bc2", element = "ef80cd5e-2689-47ee-8888-31d04fc99174", licence = "CC0-1.0" }
+
+[[pin]]
+number = "1"
+name = "1"
+type = "passive"
+
+[[pin]]
+number = "2"
+name = "2"
+type = "passive"
+
+[symbol]
+reference = "R"
+value = ""
+units = [{ unit = 1, body_style = 1, name = "1" }]
+pins = [
+  { number = "1", at = ["-5.08mm", "0mm"], length = "2.032mm" },
+  { number = "2", at = ["5.08mm", "0mm"], rotation = "180deg", length = "2.032mm" },
+]
+
+[[symbol.graphic]]
+kind = "polygon"
+points = [["-3.08mm", "-1.016mm"], ["-3.08mm", "1.016mm"], ["3.08mm", "1.016mm"], ["3.08mm", "-1.016mm"], ["-3.08mm", "-1.016mm"]]
+unit = 1
+body_style = 1
+
+[[reviewed_by]]
+who = "Luiz Carlos Gili"
+date = "2026-11-03"
+version = "1.0.0"
+digest = "ec564da8f0087e3bda5711c7931fe193c954818abd785a28b1e98881316562fd"
+evidence = "CORPUS-VERIFIED"
+sheet_sha256 = "819badf53f69895b5dfa5566d93daffc6d99243004ba81565a9dd55331cff584"
+previous_evidence = "UNVERIFIED"
+fenolite_version = "0.7.0.dev0"
+record_sha256 = "3b92c415cfa180193bb4cab0d30ea35805e54f976359ffa2befc0143a55ea514"
+accepted_codes = ["library.pin-grid"]

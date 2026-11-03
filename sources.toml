@@ -31,3 +31,11 @@ url = "https://hub.docker.com/layers/kicad/kicad/9.0.2-amd64/images/sha256-8a43a
 licence = "GPL-3.0-or-later"
 retrieved = "2026-11-01"
 used = "Official tag and linux/amd64 metadata, plus registry body SHA-256 and Docker-Content-Digest equality verified 2026-11-01. No local container pull, CLI-version proof or Dockerfile/source copying."
+
+[sources.D-0005]
+id = "D-0005"
+title = "LibrePCB Base: reviewed resistor subset"
+url = "https://github.com/LibrePCB-Libraries/LibrePCB_Base.lplib"
+licence = "CC0-1.0"
+retrieved = "2026-11-03"
+used = "Four items from immutable commit 662a148d46ac785a84fd68b98e311322771a0bc2; two resistor-symbol graphical pin lengths curated from 2000000nm to 2032000nm. Earlier review preserved but stale after source-id correction; new exact-sheet review required."

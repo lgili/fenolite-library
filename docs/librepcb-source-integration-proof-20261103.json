@@ -1,0 +1,56 @@
+{
+  "library_base": "c62d7b8117a7d53fa580d6b76ffbacce8fe824fa",
+  "core_source": "99a972bb1189d2407e6a67a561fdf1fddd2e1992",
+  "existing_D0001_D0004_source_mapping_and_bytes_preserved": true,
+  "new_source": "D-0005",
+  "new_items": 4,
+  "new_payload_files": 23,
+  "old_items": 16,
+  "new_total_items": 20,
+  "unchanged_existing_tracked_files": 1055,
+  "no_old_payload_replaced": true,
+  "old_licences_notices_approvals_preserved": true,
+  "backups_preserved_externally_not_payload": true,
+  "four_exact_approved_sheet_CLI_confirmations": true,
+  "record_check_exit": 0,
+  "record_check_errors": 0,
+  "record_check_warnings": 4,
+  "new_item_audits_exit": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "root_audit_exit": 5,
+  "old_errors": 21,
+  "new_errors": 21,
+  "all_old_findings_identical": true,
+  "native_regenerate_existing_workflow": {
+    "records": 3,
+    "exit": 0,
+    "log_sha256": "37c046f0be8b266e95ff6ab0539f45fa9e0ebdfbff4cb25692584cac1bb0810f"
+  },
+  "focused_check_review_tests": {
+    "passed": 33,
+    "seconds": "3.21",
+    "log_sha256": "a3283c823ccb1094060ab302a1c66d1ebc2fd6f2552a54da2b8e868a6a39a45e"
+  },
+  "licence_tests": {
+    "passed": 13,
+    "skipped": 0,
+    "log_sha256": "793172cea1a3c0ec9a4a66e92a7dcf526149750b8b093a927afc5027b01537bc"
+  },
+  "approval_receipt_sha256": "8ff3e4b0d79c0d9cec90697bb94c79503da10d29149874dd00d5629d91079cf9",
+  "before_audit_sha256": "c4103a4b71c8f1daf4971f4d0a2ae84779f13274d7797f18a8a518acf697b8f4",
+  "after_audit_sha256": "15f0caf9b04871653091f8041ec8994d65ca7d41e8724ff62d34107ce5a93ff3",
+  "record_check_sha256": "6df46f185faead336f67aa5bb52a7b944cb47d16b73e37eb20ba19938418d551",
+  "item_audit_sha256": [
+    "93c2be29f0be7ab389cb3f862069bcf8943ea8655bacd5f7e087515758391b78",
+    "059bbb91f7360d74a794a32f92fabbd0461aafffcf992923fc3d84ac557ecaf3",
+    "73d59ce44aa4c6ba5d362475684a4921f9974ea735552956321df4162d7fe96f",
+    "fadd16464c779c228780be515d404f927c0d260394d5e77ae8caac77d61b8e49"
+  ],
+  "public_pin_changed": false,
+  "CI_or_release_complete": false,
+  "scope": "Local integration only. Existing board errors remain errors, no push/PR/release/Pages or whole-suite claim."
+}

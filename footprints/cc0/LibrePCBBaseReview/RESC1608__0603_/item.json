@@ -1,0 +1,16 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/LibrePCBBaseReview.pretty/RESC1608__0603_.kicad_mod",
+    "record.toml"
+  ],
+  "id": "LibrePCBBaseReview:RESC1608__0603_",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Seeded from LibrePCB Base: RESC1608 (0603)",
+  "tags": [],
+  "title": "RESC1608__0603_",
+  "version": "1.0.0"
+}

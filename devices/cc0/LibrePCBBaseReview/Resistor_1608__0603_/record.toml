@@ -1,0 +1,28 @@
+schema = "fenolite.device.v1"
+id = "LibrePCBBaseReview:Resistor_1608__0603_"
+version = "1.0.0"
+summary = "Seeded from LibrePCB Base: Resistor 1608 (0603)"
+licence = "CC0-1.0"
+evidence = "CORPUS-VERIFIED (review 2026-11-03)"
+sources = ["D-0005"]
+origin = { library = "LibrePCB Base", version = "662a148d46ac785a84fd68b98e311322771a0bc2", element = "483a71eb-318e-448e-82ff-f02efc4821aa", licence = "CC0-1.0" }
+symbol = "LibrePCBBaseReview:Resistor"
+footprint = "LibrePCBBaseReview:RESC1608__0603_"
+ref_prefix = "R"
+value = "Resistor_1608__0603_"
+
+[pins]
+Pin_1 = "1"
+Pin_2 = "2"
+
+[[reviewed_by]]
+who = "Luiz Carlos Gili"
+date = "2026-11-03"
+version = "1.0.0"
+digest = "5cff60a035db825b5d5cd2ecfd2057d48c5567ad6fa0fabf7ac10373a43657f7"
+evidence = "CORPUS-VERIFIED"
+sheet_sha256 = "d70d469378d613482f3e272bf4ad933479ffc4ebfa9d2820d9d993836ddbcdb3"
+previous_evidence = "UNVERIFIED"
+fenolite_version = "0.7.0.dev0"
+record_sha256 = "c1b726a85270a3c874d65b05fb8a428c3450378e94d29e971d0c8989c2af9fd9"
+accepted_codes = ["library.pin-grid"]

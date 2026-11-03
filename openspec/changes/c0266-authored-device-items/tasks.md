@@ -30,5 +30,16 @@
   changes validate. The root registry receipt authorises the official image pin; its expected-version
   CLI job stays required and unrun here. Board tree remains 15fa5f749fbeb0a4a020b947d4f2a6f2bf5c55b7.
   Exact user identity, one sign-off and clean local commit verified; no push, tag or release performed.
+- [x] 5.1 Integrate only the four exactly re-approved LibrePCB resistor-subset items from core c0338, with a collision-free D-source mapping, contractual exact-sheet review confirmations and declared deterministic native outputs. Preserve every prior item/source and the existing failed audit findings. Proof: source-ID parser, four CLI dry/confirm receipts, exact regeneration, focused checks and before/after root audit. No CI/release is inferred.
+
 - [ ] 6. Complete human/external CI and release proofs only when separately authorised.
   Open: no review/oracle, upstream seed, push, PR, tag or published release is performed here.
+
+Local integration2026-11-03: all four exact D-0005 sheets explicitly approved
+and materialized by CLI dry-run/plan/confirm. Four new items/23payload files;
+all old sources/items/licences/notices/approvals preserved. All four item
+audits exit0; record check exit0/zero errors/four unchanged pin-grid warnings.
+Existing regeneration body compares three native outputs;33focused review/check
+tests and13licence tests pass. Root audit remains exit5 with exactly21old board
+errors. See docs/librepcb-source-integration-{approval,proof}-20261103.json.
+Task6/public CI/release remains open. No commit, push, pin or publication.

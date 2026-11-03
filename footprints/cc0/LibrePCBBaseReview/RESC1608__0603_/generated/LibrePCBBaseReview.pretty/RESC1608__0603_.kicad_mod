@@ -1,0 +1,91 @@
+(footprint "RESC1608__0603_"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(descr "Seeded from LibrePCB Base: RESC1608 (0603)")
+	(attr smd)
+	(property "Reference" "REF**"
+		(at 0 -1.65 0)
+		(layer "F.SilkS")
+		(uuid "adb0906d-b69f-57f3-8a45-ac3bbc5649a9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "RESC1608__0603_"
+		(at 0 1.65 0)
+		(layer "F.Fab")
+		(uuid "7495c16f-2b05-5e46-95b2-4d436823bd3d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "2" smd rect
+		(at 0.775 0)
+		(size 0.75 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(pad "1" smd rect
+		(at -0.775 0)
+		(size 0.75 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(fp_poly
+		(pts
+			(xy -0.8 0.4) (xy -0.4 0.4) (xy -0.4 -0.4) (xy -0.8 -0.4) (xy -0.8 0.4)
+		)
+		(layer "F.Fab")
+		(width 0)
+		(fill yes)
+	)
+	(fp_poly
+		(pts
+			(xy 0.8 0.4) (xy 0.4 0.4) (xy 0.4 -0.4) (xy 0.8 -0.4) (xy 0.8 0.4)
+		)
+		(layer "F.Fab")
+		(width 0)
+		(fill yes)
+	)
+	(fp_line
+		(start -0.4 0.325)
+		(end 0.4 0.325)
+		(layer "F.Fab")
+		(width 0.15)
+		(fill no)
+	)
+	(fp_line
+		(start -0.4 -0.325)
+		(end 0.4 -0.325)
+		(layer "F.Fab")
+		(width 0.15)
+		(fill no)
+	)
+	(fp_line
+		(start -0.175 0.475)
+		(end 0.175 0.475)
+		(layer "F.SilkS")
+		(width 0.15)
+		(fill no)
+	)
+	(fp_line
+		(start -0.175 -0.475)
+		(end 0.175 -0.475)
+		(layer "F.SilkS")
+		(width 0.15)
+		(fill no)
+	)
+	(fp_poly
+		(pts
+			(xy -1.4 0.65) (xy 1.4 0.65) (xy 1.4 -0.65) (xy -1.4 -0.65) (xy -1.4 0.65)
+		)
+		(layer "F.CrtYd")
+		(width 0.1)
+		(fill no)
+	)
+)

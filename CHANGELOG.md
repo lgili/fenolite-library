@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Integrate the four explicitly re-approved LibrePCB resistor-subset records with corrected D-0005 source, exact contractual review receipts and deterministic native outputs. Preserve earlier approvals and all existing board audit/CI/release blockers.
+
 - Preserve exact963f9cc0 diagnostic proof/record receipts for nine passing board conversions, including Microwave’s measured no-copper/no-schematic scopes. Retain Video L6, Royal L7, root-path alias and OpenAir blockers explicitly; authoritative board data and the public tool pin remain unchanged.
 
 - Record fresh strict all-level equality for Tiny, Complex, Multichannel, Interf and ECC83 on clean diagnostic corec2f555d0; preserve Royal’s genuine derived-cache failures and all existing payload bytes. Public pin, release eligibility and CI remain pending.

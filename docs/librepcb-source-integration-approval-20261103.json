@@ -1,0 +1,243 @@
+{
+  "decision_quote": "Aprovo os quatro itens com a origem corrigida",
+  "date": "2026-11-03",
+  "review_request_sha256": "8d2ee64f13349d0c34d5eb6fafbcae7a5b0d241f85df3d501c39d08694a3e874",
+  "previous_approval_receipt_sha256": "4ea25cdafbc651bf47ed709bd5d8b0b88aeda6cb0d58bad450d05bda41acffb8",
+  "previous_approvals_preserved": true,
+  "source_mapping_before": {
+    "D-0001": {
+      "id": "D-0001",
+      "title": "Original FenoliteBlocks resistor link",
+      "url": "https://github.com/lgili/fenolite-library/tree/cac/c0279-library-infrastructure/blocks/cc0/FenoliteBlocks/resistor_link",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-11-01",
+      "used": "Original two-terminal resistor example and its tests; no upstream design material."
+    },
+    "D-0002": {
+      "id": "D-0002",
+      "title": "CC0 1.0 Universal legal code",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-11-01",
+      "used": "Repository-owned file dedication and the complete CC0 text retained from the existing setup branch."
+    },
+    "D-0003": {
+      "id": "D-0003",
+      "title": "Original illustrative resistor item set",
+      "url": "https://github.com/lgili/fenolite-library/blob/cac/c0279-library-infrastructure/docs/authored-devices.md",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-11-01",
+      "used": "All example symbol coordinates, land dimensions, pin mapping and electrical ratings authored here; no manufacturer or upstream device claim."
+    },
+    "D-0004": {
+      "id": "D-0004",
+      "title": "Official KiCad 9.0.2 amd64 Docker manifest metadata",
+      "url": "https://hub.docker.com/layers/kicad/kicad/9.0.2-amd64/images/sha256-8a43a0dd03e56d428cc516e2a1bd106260ef2c572288f995af67970d900cf607?tab=layers",
+      "licence": "GPL-3.0-or-later",
+      "retrieved": "2026-11-01",
+      "used": "Official tag and linux/amd64 metadata, plus registry body SHA-256 and Docker-Content-Digest equality verified 2026-11-01. No local container pull, CLI-version proof or Dockerfile/source copying."
+    }
+  },
+  "source_mapping_after": {
+    "D-0001": {
+      "id": "D-0001",
+      "title": "Original FenoliteBlocks resistor link",
+      "url": "https://github.com/lgili/fenolite-library/tree/cac/c0279-library-infrastructure/blocks/cc0/FenoliteBlocks/resistor_link",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-11-01",
+      "used": "Original two-terminal resistor example and its tests; no upstream design material."
+    },
+    "D-0002": {
+      "id": "D-0002",
+      "title": "CC0 1.0 Universal legal code",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-11-01",
+      "used": "Repository-owned file dedication and the complete CC0 text retained from the existing setup branch."
+    },
+    "D-0003": {
+      "id": "D-0003",
+      "title": "Original illustrative resistor item set",
+      "url": "https://github.com/lgili/fenolite-library/blob/cac/c0279-library-infrastructure/docs/authored-devices.md",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-11-01",
+      "used": "All example symbol coordinates, land dimensions, pin mapping and electrical ratings authored here; no manufacturer or upstream device claim."
+    },
+    "D-0004": {
+      "id": "D-0004",
+      "title": "Official KiCad 9.0.2 amd64 Docker manifest metadata",
+      "url": "https://hub.docker.com/layers/kicad/kicad/9.0.2-amd64/images/sha256-8a43a0dd03e56d428cc516e2a1bd106260ef2c572288f995af67970d900cf607?tab=layers",
+      "licence": "GPL-3.0-or-later",
+      "retrieved": "2026-11-01",
+      "used": "Official tag and linux/amd64 metadata, plus registry body SHA-256 and Docker-Content-Digest equality verified 2026-11-01. No local container pull, CLI-version proof or Dockerfile/source copying."
+    },
+    "D-0005": {
+      "id": "D-0005",
+      "title": "LibrePCB Base: reviewed resistor subset",
+      "url": "https://github.com/LibrePCB-Libraries/LibrePCB_Base.lplib",
+      "licence": "CC0-1.0",
+      "retrieved": "2026-11-03",
+      "used": "Four items from immutable commit 662a148d46ac785a84fd68b98e311322771a0bc2; two resistor-symbol graphical pin lengths curated from 2000000nm to 2032000nm. Earlier review preserved but stale after source-id correction; new exact-sheet review required."
+    }
+  },
+  "existing_source_register_bytes_preserved": true,
+  "authoritative_payload_files": [
+    {
+      "file": "symbols/cc0/LibrePCBBaseReview/Resistor/LICENSE",
+      "sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
+      "bytes": 6555
+    },
+    {
+      "file": "symbols/cc0/LibrePCBBaseReview/Resistor/NOTICE",
+      "sha256": "b3675fafb497f0eb7b028efd11374e8e947440f6659f6f3a6879eba64ffe9506",
+      "bytes": 396
+    },
+    {
+      "file": "symbols/cc0/LibrePCBBaseReview/Resistor/PROVENANCE.json",
+      "sha256": "439ce6de311080eb5d11f59b4b74c0fba6b982325a1074a7088c3aa1a792b083",
+      "bytes": 1639
+    },
+    {
+      "file": "symbols/cc0/LibrePCBBaseReview/Resistor/generated/record.kicad_sym",
+      "sha256": "3858ab6a799eddbb1b2b3233d040cabb9942e68a433a97aa11e3ee37cf93153c",
+      "bytes": 1278
+    },
+    {
+      "file": "symbols/cc0/LibrePCBBaseReview/Resistor/item.json",
+      "sha256": "e14ee467874655c5dbeba2328d089a7261ff232bbf8a22efc640a739aeef03b6",
+      "bytes": 342
+    },
+    {
+      "file": "symbols/cc0/LibrePCBBaseReview/Resistor/record.toml",
+      "sha256": "b7a8e0809625c9820e78e2dfd30142a4fbfbdf0b68291b4cbc0e1650320cb874",
+      "bytes": 1377
+    },
+    {
+      "file": "footprints/cc0/LibrePCBBaseReview/RESC1608__0603_/LICENSE",
+      "sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
+      "bytes": 6555
+    },
+    {
+      "file": "footprints/cc0/LibrePCBBaseReview/RESC1608__0603_/NOTICE",
+      "sha256": "50818028eaa02e3f52179446bf8f1e946f0c09f98a0c78f2792adb1ad42f0e11",
+      "bytes": 140
+    },
+    {
+      "file": "footprints/cc0/LibrePCBBaseReview/RESC1608__0603_/PROVENANCE.json",
+      "sha256": "57187e83abfcbb860cc0282e8056f5aa64dc1019fdbcceddb74f14d38f9dbb24",
+      "bytes": 1393
+    },
+    {
+      "file": "footprints/cc0/LibrePCBBaseReview/RESC1608__0603_/generated/LibrePCBBaseReview.pretty/RESC1608__0603_.kicad_mod",
+      "sha256": "3a9310a41c5121ec04a94d94df51ef3b2cbaad539d1024516f0e0c96281aef0b",
+      "bytes": 1555
+    },
+    {
+      "file": "footprints/cc0/LibrePCBBaseReview/RESC1608__0603_/item.json",
+      "sha256": "ebaebbc0ff951dbc7e37b47de6410bfa3e115b764604ced50d97e78b3981abfa",
+      "bytes": 401
+    },
+    {
+      "file": "footprints/cc0/LibrePCBBaseReview/RESC1608__0603_/record.toml",
+      "sha256": "ba8ea3bbfecc809216ce175d47301f855f936c595c0f7eaba2ef54fc3d269d87",
+      "bytes": 2520
+    },
+    {
+      "file": "footprints/cc0/LibrePCBBaseReview/RESC1608__0603__Density_Level_A__max_protrusion_/LICENSE",
+      "sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
+      "bytes": 6555
+    },
+    {
+      "file": "footprints/cc0/LibrePCBBaseReview/RESC1608__0603__Density_Level_A__max_protrusion_/NOTICE",
+      "sha256": "50818028eaa02e3f52179446bf8f1e946f0c09f98a0c78f2792adb1ad42f0e11",
+      "bytes": 140
+    },
+    {
+      "file": "footprints/cc0/LibrePCBBaseReview/RESC1608__0603__Density_Level_A__max_protrusion_/PROVENANCE.json",
+      "sha256": "3c9d07e66cd38447ee28cc51b25d09c3a2fbb4d11b8d7934637f4019c4bd7d0b",
+      "bytes": 1426
+    },
+    {
+      "file": "footprints/cc0/LibrePCBBaseReview/RESC1608__0603__Density_Level_A__max_protrusion_/generated/LibrePCBBaseReview.pretty/RESC1608__0603__Density_Level_A__max_protrusion_.kicad_mod",
+      "sha256": "b1d7c970493e82addd52ec7e9d4879add564e63e1f7829ad6c11d6250a33d161",
+      "bytes": 1668
+    },
+    {
+      "file": "footprints/cc0/LibrePCBBaseReview/RESC1608__0603__Density_Level_A__max_protrusion_/item.json",
+      "sha256": "479e9f433ab5337c71eb98128be33b4d1756b3a1070c3c7ce90e1552a10c7c75",
+      "bytes": 533
+    },
+    {
+      "file": "footprints/cc0/LibrePCBBaseReview/RESC1608__0603__Density_Level_A__max_protrusion_/record.toml",
+      "sha256": "e8f4670c57c2bd75a74adb4c9528d5c25623adf405b34ee576708a3922727f4a",
+      "bytes": 2598
+    },
+    {
+      "file": "devices/cc0/LibrePCBBaseReview/Resistor_1608__0603_/LICENSE",
+      "sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673",
+      "bytes": 6555
+    },
+    {
+      "file": "devices/cc0/LibrePCBBaseReview/Resistor_1608__0603_/NOTICE",
+      "sha256": "7df3dfb0139cdd523170ea88f686f956fe4c82776f1628161c97f1907d55dd00",
+      "bytes": 881
+    },
+    {
+      "file": "devices/cc0/LibrePCBBaseReview/Resistor_1608__0603_/PROVENANCE.json",
+      "sha256": "76d407f064a7057d6164b99d91dcfeb9b9eb7b71f13f9ed9463460c873e6d744",
+      "bytes": 2176
+    },
+    {
+      "file": "devices/cc0/LibrePCBBaseReview/Resistor_1608__0603_/item.json",
+      "sha256": "5eaa3e3ae3b743d85f4e900f0d688fbf91b401d39ffa232d56c845591f29b28a",
+      "bytes": 566
+    },
+    {
+      "file": "devices/cc0/LibrePCBBaseReview/Resistor_1608__0603_/record.toml",
+      "sha256": "b8af2caaeb6605ca0607458a9d6b5d9bb0d5c11a4729315c0682f93d49e6d4c3",
+      "bytes": 1030
+    }
+  ],
+  "exact_CLI_acceptances": [
+    {
+      "id": "LibrePCBBaseReview:Resistor",
+      "record": "symbols/cc0/LibrePCBBaseReview/Resistor/record.toml",
+      "approved_sheet_sha256": "819badf53f69895b5dfa5566d93daffc6d99243004ba81565a9dd55331cff584",
+      "plan_id": "0d69d8e11e5a6bed",
+      "accepted_record_sha256": "b7a8e0809625c9820e78e2dfd30142a4fbfbdf0b68291b4cbc0e1650320cb874",
+      "dry_sha256": "b144867ac51293bc10b68d1820b00a14652f6ab297e4d57ad51c8e1e14d46d6b",
+      "confirm_sha256": "a210a5b86b4ba5f08357181dcbad1a16c813189c896c6c7a42c5937b38e6436c"
+    },
+    {
+      "id": "LibrePCBBaseReview:RESC1608__0603_",
+      "record": "footprints/cc0/LibrePCBBaseReview/RESC1608__0603_/record.toml",
+      "approved_sheet_sha256": "f6c1ca207c154b2d3b15adc2e59d1ddcd95140366ca95c6e441433016668853b",
+      "plan_id": "ecdffeec1af14dc8",
+      "accepted_record_sha256": "ba8ea3bbfecc809216ce175d47301f855f936c595c0f7eaba2ef54fc3d269d87",
+      "dry_sha256": "a2fa5c56786ff5ad65c14279165d225aeaa7a60fd9ac1b084d4bfce0acc1983f",
+      "confirm_sha256": "0127680f989e5aa7c1615a65d81804f15df5cdde1d136296be3a05433155921a"
+    },
+    {
+      "id": "LibrePCBBaseReview:RESC1608__0603__Density_Level_A__max_protrusion_",
+      "record": "footprints/cc0/LibrePCBBaseReview/RESC1608__0603__Density_Level_A__max_protrusion_/record.toml",
+      "approved_sheet_sha256": "729ac30f7a47edd31b078610db89ddbaa797b1867b69c3e9aa4720c27fb439c1",
+      "plan_id": "b1b0ff82921113c3",
+      "accepted_record_sha256": "e8f4670c57c2bd75a74adb4c9528d5c25623adf405b34ee576708a3922727f4a",
+      "dry_sha256": "d9529ce352f897a4564d198484d3fea1aaa37d0eca425c911eb1787412cc232e",
+      "confirm_sha256": "7779f009618ddf3554960198857e2563e54dce80f5920c955e99bbb0e82c5d22"
+    },
+    {
+      "id": "LibrePCBBaseReview:Resistor_1608__0603_",
+      "record": "devices/cc0/LibrePCBBaseReview/Resistor_1608__0603_/record.toml",
+      "approved_sheet_sha256": "d70d469378d613482f3e272bf4ad933479ffc4ebfa9d2820d9d993836ddbcdb3",
+      "plan_id": "b6f395491cb6d4cd",
+      "accepted_record_sha256": "b8af2caaeb6605ca0607458a9d6b5d9bb0d5c11a4729315c0682f93d49e6d4c3",
+      "dry_sha256": "bdaa7cae3263f609d6ebdbe3130bae29a9b985dac1f55e71bc882c629b1acd73",
+      "confirm_sha256": "d3a097541b8edf07cad9512629587e7f42d492b29826d777d6e336da4b997a9c"
+    }
+  ],
+  "staging_audit_identical21_errors": true,
+  "source_register_sha256": "340254828f437e5a86622bf8ae02deaab0b342a4981de48265820e7db400f78b",
+  "new_user_approval_only_for_four_D0005_sheets": true,
+  "CI_or_release_passed": false
+}
