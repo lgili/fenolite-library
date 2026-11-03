@@ -10,7 +10,8 @@ fenolite = ">=0.7.0.dev0"
 # This baseline lacks c0262/c0270/c0273/c0266 commands; their CI guards deliberately fail.
 fenolite = "b8b24842c1b792a0fcb37a6a7e5ca0270b90efd6"
 uv = "0.12.23"
-kicad_cli = "9.0.2"
-# Official 9.0.2 linux/amd64 manifest: registry body hash/header verified 2026-11-01.
-# Actual kicad-cli version execution remains a required job; no runtime proof is claimed here.
-kicad_image = "docker.io/kicad/kicad@sha256:8a43a0dd03e56d428cc516e2a1bd106260ef2c572288f995af67970d900cf607"
+kicad_cli = "10.0.6"
+# Official immutable 10.0.6 index + linux/amd64 manifest/config verified against registry bytes.
+# Required for derived padvia proofs; historical 9.0.2 pin is recorded in docs/kicad10-ci-pin-review.json.
+# Actual container CLI/version remains a required CI gate; metadata is not an execution proof.
+kicad_image = "docker.io/kicad/kicad@sha256:18693567392b80da435f9fa952ce3a3e534c66eb5a6033f5b9c80aa3b19dd3ec"

@@ -1,0 +1,56 @@
+{
+  "actual_container_cli_executed": false,
+  "actual_container_version_verified": false,
+  "candidate_image": "docker.io/kicad/kicad@sha256:18693567392b80da435f9fa952ce3a3e534c66eb5a6033f5b9c80aa3b19dd3ec",
+  "candidate_version": "10.0.6",
+  "compressed_layer_bytes": 808790802,
+  "config_architecture": "amd64",
+  "config_digest": {
+    "bytes": 6736,
+    "content_type": "application/octet-stream",
+    "docker_content_digest": null,
+    "sha256": "sha256:1398ad98bb7f066ff8b445e2be96131f0f461a7765ff0078a0b207461b705f51"
+  },
+  "config_labels": {
+    "org.opencontainers.image.licenses": "GPL-3.0-or-later",
+    "org.opencontainers.image.source": "https://gitlab.com/kicad/kicad-ci/kicad-cli-docker"
+  },
+  "config_os": "linux",
+  "current_exact_tag": {
+    "bytes": 403,
+    "content_type": "application/vnd.docker.distribution.manifest.list.v2+json",
+    "docker_content_digest": "sha256:18693567392b80da435f9fa952ce3a3e534c66eb5a6033f5b9c80aa3b19dd3ec",
+    "sha256": "sha256:18693567392b80da435f9fa952ce3a3e534c66eb5a6033f5b9c80aa3b19dd3ec"
+  },
+  "document_type": "candidate-tool-pin-review",
+  "existing_core_pin_source": "core .github/workflows/ci.yml and nightly.yml use the same immutable digest",
+  "historical_library_image": "docker.io/kicad/kicad@sha256:8a43a0dd03e56d428cc516e2a1bd106260ef2c572288f995af67970d900cf607",
+  "historical_library_version": "9.0.2",
+  "linux_amd64_descriptor": {
+    "digest": "sha256:40568bc95527f3a673a31a9b59badf512e71046c2d5068a364503c525f946a4e",
+    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+    "platform": {
+      "architecture": "amd64",
+      "os": "linux"
+    },
+    "size": 3041
+  },
+  "linux_amd64_manifest": {
+    "bytes": 3041,
+    "content_type": "application/vnd.docker.distribution.manifest.v2+json",
+    "docker_content_digest": "sha256:40568bc95527f3a673a31a9b59badf512e71046c2d5068a364503c525f946a4e",
+    "sha256": "sha256:40568bc95527f3a673a31a9b59badf512e71046c2d5068a364503c525f946a4e"
+  },
+  "manifest": {
+    "bytes": 403,
+    "content_type": "application/vnd.docker.distribution.manifest.list.v2+json",
+    "docker_content_digest": "sha256:18693567392b80da435f9fa952ce3a3e534c66eb5a6033f5b9c80aa3b19dd3ec",
+    "sha256": "sha256:18693567392b80da435f9fa952ce3a3e534c66eb5a6033f5b9c80aa3b19dd3ec"
+  },
+  "observed_utc": "2026-11-03T04:26:43.845072+00:00",
+  "official_publisher_url": "https://hub.docker.com/r/kicad/kicad",
+  "reason": "Local Docker daemon unavailable; existing CI action must execute immutable image and exact version gate. Metadata is not a runtime proof.",
+  "registry_repository": "kicad/kicad",
+  "review_driver_sha256": "b10a40c09be53d1b649d06bafaa2122552c48a06dea485f3c8fd9ae034b139da",
+  "tag_matches_core_digest": true
+}

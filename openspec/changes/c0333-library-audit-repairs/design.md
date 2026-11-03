@@ -16,3 +16,7 @@ Fresh board replacements require actual dry-run/plan/confirm import, default com
 recorded provenance and portable replay. Diagnostic snapshots are immutable and explicitly not final
 validation. No private paths, new runtime dependency, copied parser implementation or official KiCad
 library material enters the core. Keep unsuccessful proofs and source-owner blockers visible.
+
+## KiCad10 replay CI pin
+
+Derived padvia proofs require actual KiCad10; the historical9.0.2 library container pin cannot execute that contract. Review the official kicad/kicad10.0.6 immutable digest already selected by the core, verify registry body/header digests and linux/amd64 descriptor/config metadata without claiming executed version. A corresponding actual container `kicad-cli version` must still pass locally or in the existing CI action's exact version gate. Preserve the old9pin as historical observation and retain the public core SHA until root supplies its validated public replacement. No publication or CI-green claim follows from metadata preparation.

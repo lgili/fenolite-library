@@ -66,3 +66,7 @@ measured in core455 drill-offset refusal and corrected/proved by signedcore
 3a54137a. Compact raw-reply hashes and statuses are recorded in
 docs/cac-library-combined-0366024d.json. These remain localdiagnostics, not
 finalpublicpin/CI/payload completion; tasks2.x/3.x remain open.
+
+- [ ] 3.3 Prepare reviewed immutable official KiCad10.0.6 container pin for replay CI, preserve historical9.0.2 observation, validate registry/source metadata and require actual container version plus exact-head CI before claiming completion.
+
+CI pin preparation: official Docker Hub publisher and registry kicad/kicad10.0.6 tag resolve to the same immutable index as the core, body/header SHA18693567392b80da435f9fa952ce3a3e534c66eb5a6033f5b9c80aa3b19dd3ec. Exact linux/amd64 child manifest/config digests and compressed layer bytes are recorded in docs/kicad10-ci-pin-review.json; metadata is not native execution. Local Docker daemon is unavailable, so the existing CI action's docker pull + exact kicad-cli version gate remains REQUIRED and task3.3 stays open. Public core tool pin and all board payload/source/licence bytes remain unchanged.

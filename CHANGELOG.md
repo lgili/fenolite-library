@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+- Prepare the reviewed official KiCad10.0.6 immutable CI container pin required
+  by common-tool derived padvia proofs (c0333). Registry manifests/config hashes
+  reconcile with the core pin; historical9.0.2 is retained in the review record.
+  Actual container version execution, final public core pin and CI remain pending.
+
 - Record actual local combined-source full proof equality for Tiny Tapeout,
   Multichannel, Interf and ECC83 with zero accepted differences; retain the
   measured Complex cache blocker and immutable payload/source terms. Public
