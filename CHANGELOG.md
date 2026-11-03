@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+- Record Luiz Carlos Gili’s explicit approval of the four CURRENT renderer
+  sheets and exact reviewed CLI acceptance receipts (c0338/c0333), retaining
+  all warnings. This does not close CI or release gates.
+
 - Prepare the reviewed official KiCad10.0.6 immutable CI container pin required
   by common-tool derived padvia proofs (c0333). Registry manifests/config hashes
   reconcile with the core pin; historical9.0.2 is retained in the review record.
