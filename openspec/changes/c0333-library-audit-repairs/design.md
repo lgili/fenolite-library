@@ -1,0 +1,19 @@
+# Scoped factual repairs and real replay
+
+Read CONTRIBUTING.md, POLICY.md and the closed licence registry first. The current 32 audit findings
+include seven raw-versus-normalised licence-hash mistakes whose existing text is already approved.
+Correct those factual hashes while preserving LICENSE, all payloads and fidelity bytes. Record a patch
+metadata version and dated notice without dropping the original notice. The first iteration must show
+exactly those seven findings disappear and every other finding remains unchanged.
+
+Treat family/path and logical-id corrections separately. Upstream paths keep their original case and
+immutable URLs; only library identity/path is canonicalised. Preserve every payload byte.
+
+The Apache tiny_tapeout and CC-BY-SA OpenAir licence texts have been checked byte-for-byte against
+KiCad's official mirror at the recorded commit. A new normalised digest still requires the actual
+CODEOWNER decision requested by root; no inferred approval is entered here.
+
+Fresh board replacements require actual dry-run/plan/confirm import, default complete fidelity proof,
+recorded provenance and portable replay. Diagnostic snapshots are immutable and explicitly not final
+validation. No private paths, new runtime dependency, copied parser implementation or official KiCad
+library material enters the core. Keep unsuccessful proofs and source-owner blockers visible.

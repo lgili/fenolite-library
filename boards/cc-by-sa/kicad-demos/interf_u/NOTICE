@@ -1,3 +1,5 @@
+2026-11-02: corrected licence_text_sha256 to the already-approved normalised digest; conversion payload and historical fidelity records unchanged.
+
 2026-10-31: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; every item of the board is expressed (no content was left out)
 
 Upstream: the folder demos/interf_u of the KiCad source repository at commit 97acc80c223d75520c03fc44cab63cd9a3202c42,

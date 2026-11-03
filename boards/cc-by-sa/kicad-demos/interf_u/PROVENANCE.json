@@ -345,8 +345,8 @@
     "upgrade": []
   },
   "kind": "board",
-  "licence_text_sha256": "00ba11b9a22d453aed299954eaca389d8efef441a4673d84e2dc4ae10ebc7ca5",
-  "modification_notice": "2026-10-31: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; every item of the board is expressed (no content was left out)",
+  "licence_text_sha256": "17a696cf6cf01b8d795151556dfd51cc121c1b678a33d509d6548658c1008391",
+  "modification_notice": "2026-11-02: corrected licence_text_sha256 to the already-approved normalised digest; conversion payload and historical fidelity records unchanged.",
   "origin": "converted",
   "schema": "fenolite.provenance.v0",
   "spdx": "CC-BY-SA-4.0",
@@ -367,5 +367,5 @@
     "spdx_expression": "CC-BY-SA-4.0",
     "url": "https://gitlab.com/kicad/code/kicad"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }

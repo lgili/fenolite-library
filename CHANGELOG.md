@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+- Correct seven raw-versus-normalised licence-digest records using an already
+  approved text (c0333); retain every payload, licence, original notice and
+  historical fidelity result. Metadata versions become 1.0.1. The diagnostic
+  audit reduces 32 findings to 25 without waiving the remaining blockers.
+
 - Refresh Video and Sonde to 1.0.1 on signed core de6c6f2f: actual full nine-level
   proofs pass without acceptance and both portable replays reproduce their
   packaged trees. Preserve upstream terms and public tool pin; the root audit

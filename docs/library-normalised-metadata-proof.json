@@ -1,0 +1,51 @@
+{
+  "after_findings": 25,
+  "artifacts_sha256": {
+    "audit-after-metadata.json": "bdaaab14e2599c79b8641d3f7fe3ea9cac60095dd578ed8d5aebbc2ec0e3e955",
+    "audit-before-metadata.json": "b8aeb7ddc004ca3c4f00e69043c7834d9d2a074ec683513eb8432469d7bd1f8a",
+    "core-snapshot.json": "05a98fcc02328bbc28c31f91f44f22a5bf618d6779482888ca9a2e8048dc4cc8",
+    "normalised-metadata-receipt.json": "109614ab54e9d4951851d6292ee243f748dade875ee6ff28d8635968c0fbf381"
+  },
+  "before_findings": 32,
+  "core_source_commit": "8aea3ace7aa29759cd6069aadffebfb7cdc99e40",
+  "library_base_commit": "08b464fb934199165c7bc53ad8339ff24dbe1760",
+  "removed": [
+    {
+      "code": "library.provenance-invalid",
+      "message": "boards/cc-by-sa/kicad-demos/complex_hierarchy: licence_text_sha256 says 00ba11b9a22d453aed299954eaca389d8efef441a4673d84e2dc4ae10ebc7ca5 and LICENSE gives 17a696cf6cf01b8d795151556dfd51cc121c1b678a33d509d6548658c1008391",
+      "where": "boards/cc-by-sa/kicad-demos/complex_hierarchy"
+    },
+    {
+      "code": "library.provenance-invalid",
+      "message": "boards/cc-by-sa/kicad-demos/ecc83: licence_text_sha256 says 00ba11b9a22d453aed299954eaca389d8efef441a4673d84e2dc4ae10ebc7ca5 and LICENSE gives 17a696cf6cf01b8d795151556dfd51cc121c1b678a33d509d6548658c1008391",
+      "where": "boards/cc-by-sa/kicad-demos/ecc83"
+    },
+    {
+      "code": "library.provenance-invalid",
+      "message": "boards/cc-by-sa/kicad-demos/interf_u: licence_text_sha256 says 00ba11b9a22d453aed299954eaca389d8efef441a4673d84e2dc4ae10ebc7ca5 and LICENSE gives 17a696cf6cf01b8d795151556dfd51cc121c1b678a33d509d6548658c1008391",
+      "where": "boards/cc-by-sa/kicad-demos/interf_u"
+    },
+    {
+      "code": "library.provenance-invalid",
+      "message": "boards/cc-by-sa/kicad-demos/kit-dev-coldfire-xilinx_5213: licence_text_sha256 says 00ba11b9a22d453aed299954eaca389d8efef441a4673d84e2dc4ae10ebc7ca5 and LICENSE gives 17a696cf6cf01b8d795151556dfd51cc121c1b678a33d509d6548658c1008391",
+      "where": "boards/cc-by-sa/kicad-demos/kit-dev-coldfire-xilinx_5213"
+    },
+    {
+      "code": "library.provenance-invalid",
+      "message": "boards/cc-by-sa/kicad-demos/microwave: licence_text_sha256 says 00ba11b9a22d453aed299954eaca389d8efef441a4673d84e2dc4ae10ebc7ca5 and LICENSE gives 17a696cf6cf01b8d795151556dfd51cc121c1b678a33d509d6548658c1008391",
+      "where": "boards/cc-by-sa/kicad-demos/microwave"
+    },
+    {
+      "code": "library.provenance-invalid",
+      "message": "boards/cc-by-sa/kicad-demos/multichannel: licence_text_sha256 says 00ba11b9a22d453aed299954eaca389d8efef441a4673d84e2dc4ae10ebc7ca5 and LICENSE gives 17a696cf6cf01b8d795151556dfd51cc121c1b678a33d509d6548658c1008391",
+      "where": "boards/cc-by-sa/kicad-demos/multichannel"
+    },
+    {
+      "code": "library.provenance-invalid",
+      "message": "boards/cc-by-sa/kicad-demos/pic_programmer: licence_text_sha256 says 00ba11b9a22d453aed299954eaca389d8efef441a4673d84e2dc4ae10ebc7ca5 and LICENSE gives 17a696cf6cf01b8d795151556dfd51cc121c1b678a33d509d6548658c1008391",
+      "where": "boards/cc-by-sa/kicad-demos/pic_programmer"
+    }
+  ],
+  "schema": "fenolite.library-normalised-metadata-proof.v0",
+  "unrelated_findings_unchanged": true
+}
