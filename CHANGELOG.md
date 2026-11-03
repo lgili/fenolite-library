@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Preserve exact963f9cc0 diagnostic proof/record receipts for nine passing board conversions, including Microwave’s measured no-copper/no-schematic scopes. Retain Video L6, Royal L7, root-path alias and OpenAir blockers explicitly; authoritative board data and the public tool pin remain unchanged.
+
 - Record fresh strict all-level equality for Tiny, Complex, Multichannel, Interf and ECC83 on clean diagnostic corec2f555d0; preserve Royal’s genuine derived-cache failures and all existing payload bytes. Public pin, release eligibility and CI remain pending.
 
 - Record Luiz Carlos Gili’s explicit approval of the four CURRENT renderer

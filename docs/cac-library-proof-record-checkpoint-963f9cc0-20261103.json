@@ -1,0 +1,780 @@
+{
+  "authoritative_board_files_unchanged": 969,
+  "boards": {
+    "complex_hierarchy": {
+      "accepted": [],
+      "confirmation_sha256": "74e8a4a1b227773e42e11b28aa01812c46237ec656f7f019e31eae32ce4686a2",
+      "difference_kinds": [],
+      "generated_record_sha256": "10d6ea22042aec45a00ac7edce769450b2d8241a632263738a74bd05af9f4258",
+      "levels": {
+        "1": {
+          "reason": "",
+          "status": "equal"
+        },
+        "2": {
+          "reason": "",
+          "status": "equal"
+        },
+        "3": {
+          "reason": "",
+          "status": "equal"
+        },
+        "4": {
+          "reason": "",
+          "status": "equal"
+        },
+        "5": {
+          "reason": "",
+          "status": "equal"
+        },
+        "6": {
+          "reason": "",
+          "status": "equal"
+        },
+        "7": {
+          "reason": "",
+          "status": "equal"
+        },
+        "8": {
+          "reason": "",
+          "status": "equal"
+        },
+        "S": {
+          "reason": "",
+          "status": "equal"
+        }
+      },
+      "proof_exit": 0,
+      "proof_sha256": "1ed2a3bdf4ad8dec4e40e2d5c02af3805d107c1f89486272616fc98bf8f108cd",
+      "source_verification": {
+        "files": {
+          "ampli_ht.kicad_sch": "ef6f503f39f79a94ad6550268565d7418dde96b296f5f2971c97383603da18a3",
+          "complex_hierarchy.kicad_pcb": "d5f4162d4c766448832723d139f9e0fcb88a17c82340f10f6f6dc6c2042f0d69",
+          "complex_hierarchy.kicad_pro": "55438416ca7fd46b5bad22da2693e9c43240060977d06daabcba084aa17e2804",
+          "complex_hierarchy.kicad_sch": "4344cf98eac9e48262bc6092add7c0dffe27b560627d0658e5129250e7226e9e"
+        },
+        "public_upstream": {
+          "archive_sha256": null,
+          "commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "licence_files": [
+            "LICENSE.CC-BY-SA-4.0"
+          ],
+          "path": "demos/complex_hierarchy",
+          "retrieved": "2026-10-31",
+          "source_location": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/complex_hierarchy",
+          "spdx_expression": "CC-BY-SA-4.0",
+          "url": "https://gitlab.com/kicad/code/kicad"
+        }
+      }
+    },
+    "ecc83": {
+      "accepted": [],
+      "confirmation_sha256": "a1711ca4213bfecd57a66ae5b6ab5ac651f13d9cfd1a19191006d86d2e2df7f2",
+      "difference_kinds": [],
+      "generated_record_sha256": "8e0c6dc4ad780d45b4d3c0492c760ba040900f9d5e9d95232a89cda3022a3e4d",
+      "levels": {
+        "1": {
+          "reason": "",
+          "status": "equal"
+        },
+        "2": {
+          "reason": "",
+          "status": "equal"
+        },
+        "3": {
+          "reason": "",
+          "status": "equal"
+        },
+        "4": {
+          "reason": "",
+          "status": "equal"
+        },
+        "5": {
+          "reason": "",
+          "status": "equal"
+        },
+        "6": {
+          "reason": "",
+          "status": "equal"
+        },
+        "7": {
+          "reason": "",
+          "status": "equal"
+        },
+        "8": {
+          "reason": "",
+          "status": "equal"
+        },
+        "S": {
+          "reason": "",
+          "status": "equal"
+        }
+      },
+      "proof_exit": 0,
+      "proof_sha256": "012bdd416cb74810b6df8ddd256fd490b689ce4ff1f0f0bdff7b54618561985b",
+      "source_verification": {
+        "files": {
+          "ecc83-pp.kicad_pcb": "0ab45f4f8c90ac877e3313a1888d875107f2be3fc2b2f40cfb7927873b35260c",
+          "ecc83-pp.kicad_pro": "8a943fac4b0cc3ed4fa83ccc83a6e15b9326178845ada0aa906df63f0672e975",
+          "ecc83-pp.kicad_sch": "8a2d0359a0f3e647378034d84ab72b09dd7aa42f8b1f5e7fa0ff28ae369beee9"
+        },
+        "public_upstream": {
+          "archive_sha256": null,
+          "commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "licence_files": [
+            "LICENSE.CC-BY-SA-4.0"
+          ],
+          "path": "demos/ecc83",
+          "retrieved": "2026-10-31",
+          "source_location": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/ecc83",
+          "spdx_expression": "CC-BY-SA-4.0",
+          "url": "https://gitlab.com/kicad/code/kicad"
+        }
+      }
+    },
+    "interf_u": {
+      "accepted": [],
+      "confirmation_sha256": "8b68c453b7ca56eca3c2882876eb1371facdf0d81cf18fc68b4073ad738983f2",
+      "difference_kinds": [],
+      "generated_record_sha256": "ad5eb7c64d22fe9bb4cb5cee752e48c190e8244b219bbdc046fe0c6e19ac64d7",
+      "levels": {
+        "1": {
+          "reason": "",
+          "status": "equal"
+        },
+        "2": {
+          "reason": "",
+          "status": "equal"
+        },
+        "3": {
+          "reason": "",
+          "status": "equal"
+        },
+        "4": {
+          "reason": "",
+          "status": "equal"
+        },
+        "5": {
+          "reason": "",
+          "status": "equal"
+        },
+        "6": {
+          "reason": "",
+          "status": "equal"
+        },
+        "7": {
+          "reason": "",
+          "status": "equal"
+        },
+        "8": {
+          "reason": "",
+          "status": "equal"
+        },
+        "S": {
+          "reason": "",
+          "status": "equal"
+        }
+      },
+      "proof_exit": 0,
+      "proof_sha256": "e9712bc447c97b46c0ab8757c4b9d3cfdc19d2176d0e6e4e4c6b87a1cc3ed433",
+      "source_verification": {
+        "files": {
+          "interf_u.kicad_pcb": "a740ce7fde77ab6af191e23ece21e57d36bb3c29325879248520dcd9ab47b57e",
+          "interf_u.kicad_pro": "b9908a96e6113e6e51f488482108dc87aa5d9bcd838f9e3345c85e0db09bffa9",
+          "interf_u.kicad_sch": "b3b8c3b199382f414e4b4b6661978f9b72e0879a99453cdfbbb6dd366c5a5a13"
+        },
+        "public_upstream": {
+          "archive_sha256": null,
+          "commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "licence_files": [
+            "LICENSE.CC-BY-SA-4.0"
+          ],
+          "path": "demos/interf_u",
+          "retrieved": "2026-10-31",
+          "source_location": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/interf_u",
+          "spdx_expression": "CC-BY-SA-4.0",
+          "url": "https://gitlab.com/kicad/code/kicad"
+        }
+      }
+    },
+    "kit-dev-coldfire-xilinx_5213": {
+      "accepted": [],
+      "confirmation_sha256": "662bb6ffc4cd04425cf8e54037e3742a46c2bdbfa142b641b27804b2412882a5",
+      "difference_kinds": [],
+      "generated_record_sha256": "c080b9b6bef334da74f23376150162f451d57d9ccf37552b20a2728ecdbe4ff9",
+      "levels": {
+        "1": {
+          "reason": "",
+          "status": "equal"
+        },
+        "2": {
+          "reason": "",
+          "status": "equal"
+        },
+        "3": {
+          "reason": "",
+          "status": "equal"
+        },
+        "4": {
+          "reason": "",
+          "status": "equal"
+        },
+        "5": {
+          "reason": "",
+          "status": "equal"
+        },
+        "6": {
+          "reason": "",
+          "status": "equal"
+        },
+        "7": {
+          "reason": "",
+          "status": "equal"
+        },
+        "8": {
+          "reason": "",
+          "status": "equal"
+        },
+        "S": {
+          "reason": "",
+          "status": "equal"
+        }
+      },
+      "proof_exit": 0,
+      "proof_sha256": "9da99d3d9a0f0e6c6f18a451dac2015d9d460a07e1feb75a1692ded7e4411d78",
+      "source_verification": {
+        "files": {
+          "in_out_conn.kicad_sch": "b406e5f8d1903f7d094c1109020a1912a1473c08ffbc0c64640742850f7f7809",
+          "kit-dev-coldfire-xilinx_5213.kicad_pcb": "392cf6bf4b9b62beb435f965ccd7671a46decb17f947b74bfde482acd2132a5e",
+          "kit-dev-coldfire-xilinx_5213.kicad_pro": "d6ca906944730a3eae31ba3d9240c6966424b0d80ba76e80710e39d7b23c4637",
+          "kit-dev-coldfire-xilinx_5213.kicad_sch": "a1109092165ecec0d677142294330258c8990247e804f260d7682fda82602214",
+          "xilinx.kicad_sch": "3750dc3866cce42d96220c39dde5c7c88589207810487581047a71d541b1fb5b"
+        },
+        "public_upstream": {
+          "archive_sha256": null,
+          "commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "licence_files": [
+            "LICENSE.CC-BY-SA-4.0"
+          ],
+          "path": "demos/kit-dev-coldfire-xilinx_5213",
+          "retrieved": "2026-10-31",
+          "source_location": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/kit-dev-coldfire-xilinx_5213",
+          "spdx_expression": "CC-BY-SA-4.0",
+          "url": "https://gitlab.com/kicad/code/kicad"
+        }
+      }
+    },
+    "microwave": {
+      "accepted": [],
+      "confirmation_sha256": "a285b3b3aeef59c139e486e7ee5683bd6d6382e51253e8332dd3aa16f06707f0",
+      "difference_kinds": [],
+      "generated_record_sha256": "2419913f04f2d95db31b24be7146c0c0295df1b1f20869e023c0e368da7561e9",
+      "levels": {
+        "1": {
+          "reason": "",
+          "status": "equal"
+        },
+        "2": {
+          "reason": "",
+          "status": "equal"
+        },
+        "3": {
+          "reason": "",
+          "status": "equal"
+        },
+        "4": {
+          "reason": "",
+          "status": "equal"
+        },
+        "5": {
+          "reason": "no-copper",
+          "status": "skipped"
+        },
+        "6": {
+          "reason": "",
+          "status": "equal"
+        },
+        "7": {
+          "reason": "",
+          "status": "equal"
+        },
+        "8": {
+          "reason": "",
+          "status": "equal"
+        },
+        "S": {
+          "reason": "no-schematic",
+          "status": "skipped"
+        }
+      },
+      "proof_exit": 0,
+      "proof_sha256": "aa2898a939e75e94d9a888d36d92b5262986c8a1851cc857e745d89ee812c8e6",
+      "source_scope_receipt": {
+        "actual_skip_reasons": {
+          "5": "no-copper",
+          "S": "no-schematic"
+        },
+        "adjacent_source_schematic_exists": false,
+        "gate_contract": "c0281 task7.2, library.proof.derive",
+        "generated_provenance_sha256": "2419913f04f2d95db31b24be7146c0c0295df1b1f20869e023c0e368da7561e9",
+        "library_gate": "pass",
+        "source_board_sha256": "7f17191488b51f8782efc0a3b9ce7b5748a4e771ff0babb34ec0369ffcf43be5",
+        "tracks": 0,
+        "vias": 0,
+        "zones": 0
+      },
+      "source_verification": {
+        "files": {
+          "microwave.kicad_pcb": "7f17191488b51f8782efc0a3b9ce7b5748a4e771ff0babb34ec0369ffcf43be5",
+          "microwave.kicad_pro": "ea9d9b756ae3b51d485c2dcb904f09aaee0190e4b584f038c3094536e7a9334a"
+        },
+        "public_upstream": {
+          "archive_sha256": null,
+          "commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "licence_files": [
+            "LICENSE.CC-BY-SA-4.0"
+          ],
+          "path": "demos/microwave",
+          "retrieved": "2026-10-31",
+          "source_location": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/microwave",
+          "spdx_expression": "CC-BY-SA-4.0",
+          "url": "https://gitlab.com/kicad/code/kicad"
+        }
+      }
+    },
+    "multichannel": {
+      "accepted": [],
+      "confirmation_sha256": "6982188b075737b193f81b12439d7b89ddc387ef4e3048f6a714472711b86f6c",
+      "difference_kinds": [],
+      "generated_record_sha256": "8d28fe2ca7f04a158220a017417bc19f3d6648eb9f7ed7e50049f16a704c5f1e",
+      "levels": {
+        "1": {
+          "reason": "",
+          "status": "equal"
+        },
+        "2": {
+          "reason": "",
+          "status": "equal"
+        },
+        "3": {
+          "reason": "",
+          "status": "equal"
+        },
+        "4": {
+          "reason": "",
+          "status": "equal"
+        },
+        "5": {
+          "reason": "",
+          "status": "equal"
+        },
+        "6": {
+          "reason": "",
+          "status": "equal"
+        },
+        "7": {
+          "reason": "",
+          "status": "equal"
+        },
+        "8": {
+          "reason": "",
+          "status": "equal"
+        },
+        "S": {
+          "reason": "",
+          "status": "equal"
+        }
+      },
+      "proof_exit": 0,
+      "proof_sha256": "9bd0a3c42231da9494890c2c36bf1fc1faf11eccf85063bc551ad10804a22b7c",
+      "source_verification": {
+        "files": {
+          "channel_strip.kicad_sch": "2c98b5d37f5b60c9187474017d7b754e8b4a1d45f4115dcbecf1a745ab175e0e",
+          "multichannel_mixer.kicad_pcb": "44b7c119a0d05c98e9f294659879184038a5f6c30073c04d9536990429ca413e",
+          "multichannel_mixer.kicad_pro": "ea1bc47355f707e1c4743af3e1c29e939bb5eaf4621c071bdac3841c43545538",
+          "multichannel_mixer.kicad_sch": "e47aecee9416d51fb5aed36d008a0442d3d6d68abfc5224bcdb5c5bb4a690fcf"
+        },
+        "public_upstream": {
+          "archive_sha256": null,
+          "commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "licence_files": [
+            "LICENSE.CC-BY-SA-4.0"
+          ],
+          "path": "demos/multichannel",
+          "retrieved": "2026-10-31",
+          "source_location": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/multichannel",
+          "spdx_expression": "CC-BY-SA-4.0",
+          "url": "https://gitlab.com/kicad/code/kicad"
+        }
+      }
+    },
+    "openair-max": {
+      "reason": "Legacy source mismatch/private model paths remain blocked; independent coherent official-source/assets investigation is owned by the coordinator.",
+      "status": "pending-root-owned-investigation",
+      "this_source_replay_claimed": false
+    },
+    "pic_programmer": {
+      "accepted": [],
+      "confirmation_sha256": "320bcb6c3d556f9fec84437a92679c48c5f3ac84a3d8279adc58f0c0b42893fd",
+      "difference_kinds": [],
+      "generated_record_sha256": "132a9b00da8bbe033eb72f6e4a6a155b7baa19277def1b57a637428b8cd48eca",
+      "levels": {
+        "1": {
+          "reason": "",
+          "status": "equal"
+        },
+        "2": {
+          "reason": "",
+          "status": "equal"
+        },
+        "3": {
+          "reason": "",
+          "status": "equal"
+        },
+        "4": {
+          "reason": "",
+          "status": "equal"
+        },
+        "5": {
+          "reason": "",
+          "status": "equal"
+        },
+        "6": {
+          "reason": "",
+          "status": "equal"
+        },
+        "7": {
+          "reason": "",
+          "status": "equal"
+        },
+        "8": {
+          "reason": "",
+          "status": "equal"
+        },
+        "S": {
+          "reason": "",
+          "status": "equal"
+        }
+      },
+      "proof_exit": 0,
+      "proof_sha256": "05f68349ec1354c4756f031c921cc6b3a5bea7f5cb1e9d1eca4f2438245e0486",
+      "source_verification": {
+        "files": {
+          "pic_programmer.kicad_pcb": "1ca70b620506818eb0227e2863bbd573d1fec1672072dc43d0dbe8475e69c8fb",
+          "pic_programmer.kicad_pro": "9233d7a30fcb4cccd1f0261f9709d13fd8043cc66cc24bb73ee20c23429d62d7",
+          "pic_programmer.kicad_sch": "cf92bff8aebe19e45444f13b2ccd1c8ad578df6a226acd5381e2eff95e2fc08f",
+          "pic_sockets.kicad_sch": "8cbf575b53b205280ca277df8affc6477cf20c5d06c63c267cd6fb19b6d771ae"
+        },
+        "public_upstream": {
+          "archive_sha256": null,
+          "commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "licence_files": [
+            "LICENSE.CC-BY-SA-4.0"
+          ],
+          "path": "demos/pic_programmer",
+          "retrieved": "2026-10-31",
+          "source_location": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/pic_programmer",
+          "spdx_expression": "CC-BY-SA-4.0",
+          "url": "https://gitlab.com/kicad/code/kicad"
+        }
+      }
+    },
+    "royalblue54l_feather": {
+      "accepted": [],
+      "difference_kinds": [
+        {
+          "field": "regenerated_geometry",
+          "kind": "zone-field",
+          "level": 7,
+          "where": "board:derived:padvia"
+        },
+        {
+          "field": "teardrop",
+          "kind": "opaque-count",
+          "level": 7,
+          "where": "board:opaque:teardrop"
+        }
+      ],
+      "levels": {
+        "1": {
+          "reason": "",
+          "status": "equal"
+        },
+        "2": {
+          "reason": "",
+          "status": "equal"
+        },
+        "3": {
+          "reason": "",
+          "status": "equal"
+        },
+        "4": {
+          "reason": "",
+          "status": "equal"
+        },
+        "5": {
+          "reason": "",
+          "status": "equal"
+        },
+        "6": {
+          "reason": "",
+          "status": "equal"
+        },
+        "7": {
+          "reason": "",
+          "status": "differs"
+        },
+        "8": {
+          "reason": "",
+          "status": "equal"
+        },
+        "S": {
+          "reason": "",
+          "status": "equal"
+        }
+      },
+      "proof_exit": 5,
+      "proof_sha256": "f5ea67a4f7e556d78bda48ca9c715455c29074d51b640285663e85975c8f4292",
+      "source_verification": {
+        "files": {
+          "RoyalBlue54L-Feather.kicad_pcb": "535dbe212f43a8bab12b23277e176a94ac9694177258af2981c0e7b08e4b7252",
+          "RoyalBlue54L-Feather.kicad_pro": "a25ffa7ff829d5eaff27b29724b57821ce2ee7fd39ae367b9ea078d290e37690",
+          "RoyalBlue54L-Feather.kicad_sch": "3636dcd5252ae18b2651dce4480a61765bd37b2e601679c3c1465dc8ca21fad8",
+          "sch/Connectors.kicad_sch": "7b78116155a966443ad8a8192fe5ca09668f4bf4e59bc58370762195cf8456c6",
+          "sch/Debugger.kicad_sch": "e6f3273cb98b22ee2a90ee65857cb4035ea11fcf3d19fdddfd0c5d1926ddd2bd",
+          "sch/nPM1300.kicad_sch": "b53b9a766126616e839c10bfeae26aeee85132f48cf1ba84722354d366a63a6b",
+          "sch/nRF54L15.kicad_sch": "d1c824ffcfe88dfa1bded5a341afa8775f4e59c56b95174dd7e8ab081d95caff"
+        },
+        "public_upstream": {
+          "archive_sha256": null,
+          "commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "licence_files": [
+            "demos/royalblue54L_feather/LICENSE"
+          ],
+          "path": "demos/royalblue54L_feather",
+          "retrieved": "2026-10-31",
+          "source_location": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/royalblue54L_feather",
+          "spdx_expression": "CERN-OHL-P-2.0",
+          "url": "https://gitlab.com/kicad/code/kicad"
+        }
+      }
+    },
+    "sonde_xilinx": {
+      "accepted": [],
+      "confirmation_sha256": "fc27792bbc218f5f1f046fa2174d2158fb050fc3a84d673abe61bc7bf2b80bea",
+      "difference_kinds": [],
+      "generated_record_sha256": "1f9468886b00122d985b50711e128c823e5b8f88595047daa3d22c8b663eadfd",
+      "levels": {
+        "1": {
+          "reason": "",
+          "status": "equal"
+        },
+        "2": {
+          "reason": "",
+          "status": "equal"
+        },
+        "3": {
+          "reason": "",
+          "status": "equal"
+        },
+        "4": {
+          "reason": "",
+          "status": "equal"
+        },
+        "5": {
+          "reason": "",
+          "status": "equal"
+        },
+        "6": {
+          "reason": "",
+          "status": "equal"
+        },
+        "7": {
+          "reason": "",
+          "status": "equal"
+        },
+        "8": {
+          "reason": "",
+          "status": "equal"
+        },
+        "S": {
+          "reason": "",
+          "status": "equal"
+        }
+      },
+      "proof_exit": 0,
+      "proof_sha256": "e349de20230dcf4e52fcac6cd63eb0ea058d0041da22fa044af56a045662029d",
+      "source_verification": {
+        "files": {
+          "sonde xilinx.kicad_pcb": "d0dee876715fcdd3f656dd6a77cc1141c39bec4d6f8492a3784d38edd6b9a998",
+          "sonde xilinx.kicad_pro": "ee60a96f93cc36549b52da9b3eea9547d5ea1e83a671c449668987edfb73a901",
+          "sonde xilinx.kicad_sch": "5271d5d1472d4dab645870f97e62785be9eb95b793e1b8cf0d8ca607de95a985"
+        },
+        "public_upstream": {
+          "archive_sha256": null,
+          "commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "licence_files": [
+            "LICENSE.CC-BY-SA-4.0"
+          ],
+          "path": "demos/sonde xilinx",
+          "retrieved": "2026-10-31",
+          "source_location": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/sonde%20xilinx",
+          "spdx_expression": "CC-BY-SA-4.0",
+          "url": "https://gitlab.com/kicad/code/kicad"
+        }
+      }
+    },
+    "tiny_tapeout": {
+      "accepted": [],
+      "confirmation_sha256": "aa4a051a18fd1faac822209a17693fcea9c3268438c9e4bca356269aa91b7bb6",
+      "difference_kinds": [],
+      "generated_record_sha256": "5cd2a72019945a3037c76cb6d820ca00d9eff9e4a8491f8c0e2c909c0242a61c",
+      "levels": {
+        "1": {
+          "reason": "",
+          "status": "equal"
+        },
+        "2": {
+          "reason": "",
+          "status": "equal"
+        },
+        "3": {
+          "reason": "",
+          "status": "equal"
+        },
+        "4": {
+          "reason": "",
+          "status": "equal"
+        },
+        "5": {
+          "reason": "",
+          "status": "equal"
+        },
+        "6": {
+          "reason": "",
+          "status": "equal"
+        },
+        "7": {
+          "reason": "",
+          "status": "equal"
+        },
+        "8": {
+          "reason": "",
+          "status": "equal"
+        },
+        "S": {
+          "reason": "",
+          "status": "equal"
+        }
+      },
+      "proof_exit": 0,
+      "proof_sha256": "6536eb04980ed1172f2cf66573bb3dd72fa394e9905206e5a2c1a8af60a15104",
+      "source_verification": {
+        "files": {
+          "rp2040.kicad_sch": "ee88a17d35fb54070d9c0e38af0d4a656d52f3703559944c1261e1037c577aef",
+          "tinytapeout-demo.kicad_pcb": "0d26bf9b6d561e32cf610d428541d6433e60b45e1838f34f73467e25b9144814",
+          "tinytapeout-demo.kicad_pro": "3d479ef334a9f1b35a487e5b300a995826c7bf180ccc01380b6bb9ca88c8a7a9",
+          "tinytapeout-demo.kicad_sch": "232f8236bc89eed24f7b89509ea422347994ca8e576524f0229e2bd1eca5093d"
+        },
+        "public_upstream": {
+          "archive_sha256": null,
+          "commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "licence_files": [
+            "demos/tiny_tapeout/LICENSE.txt"
+          ],
+          "path": "demos/tiny_tapeout",
+          "retrieved": "2026-10-31",
+          "source_location": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/tiny_tapeout",
+          "spdx_expression": "Apache-2.0",
+          "url": "https://gitlab.com/kicad/code/kicad"
+        }
+      }
+    },
+    "video": {
+      "accepted": [],
+      "difference_kinds": [
+        {
+          "field": "nets",
+          "kind": "netclass-members",
+          "level": 6,
+          "where": "native-project:netclass:Default"
+        }
+      ],
+      "levels": {
+        "1": {
+          "reason": "",
+          "status": "equal"
+        },
+        "2": {
+          "reason": "",
+          "status": "equal"
+        },
+        "3": {
+          "reason": "",
+          "status": "equal"
+        },
+        "4": {
+          "reason": "",
+          "status": "equal"
+        },
+        "5": {
+          "reason": "",
+          "status": "equal"
+        },
+        "6": {
+          "reason": "",
+          "status": "differs"
+        },
+        "7": {
+          "reason": "",
+          "status": "equal"
+        },
+        "8": {
+          "reason": "",
+          "status": "equal"
+        },
+        "S": {
+          "reason": "",
+          "status": "equal"
+        }
+      },
+      "proof_exit": 5,
+      "proof_sha256": "050ad8a6f2c73f329ab2faa38205ad25cd8e71131ce34db606e4cc33ba221e92",
+      "source_verification": {
+        "files": {
+          "bus_pci.kicad_sch": "0110ee91bd8eb39ba7c4d08703bca193f72337b25928ad2babc86dc3c54d1cde",
+          "esvideo.kicad_sch": "b736ce2d5a17fa94fcd64c656435031730b3b8524342dd4e1d19a917adbd1d6f",
+          "graphic.kicad_sch": "c09706718277aefb6d9b1ea49825237d026191e6d91d44c7e75aa0eba682900d",
+          "modul.kicad_sch": "59f6d8152af769371bd35a08dc11c1bdf9c3b4e56ab079f389a0584d1a4574c7",
+          "muxdata.kicad_sch": "9b757497857c061632fd09cc3d0a236843c1c164f0b864a78b22c88c1fd96a58",
+          "pal-ntsc.kicad_sch": "970c766b745d299ca0b47b05a51baf628bf114a6bfe007736beb7ccd0548fd09",
+          "rams.kicad_sch": "40a46f70b6731962a4afa5858b54d3bbf55ac3e4b1a95c7c905b698ae99eb0e3",
+          "video.kicad_pcb": "f620675158ddd5c61e5ce9e15f4c92b230ae1df1cbcec6c502b8ce266e4007ea",
+          "video.kicad_pro": "329241ed4d9d176ef51adcec457a7c072e4bbc1b6500738622ebeaeba74d6c7f",
+          "video.kicad_sch": "4d3ced775e49f56704b036bf56b9bf90d3d403b29bc9434eca47a8f18bea5ce1"
+        },
+        "public_upstream": {
+          "archive_sha256": null,
+          "commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "licence_files": [
+            "LICENSE.CC-BY-SA-4.0"
+          ],
+          "path": "demos/video",
+          "retrieved": "2026-10-31",
+          "source_location": "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/video",
+          "spdx_expression": "CC-BY-SA-4.0",
+          "url": "https://gitlab.com/kicad/code/kicad"
+        }
+      }
+    }
+  },
+  "ci_or_release_complete": false,
+  "core_commit": "963f9cc0bca9dd200e40f08c158fc271ce01a998",
+  "notes": [
+    "This is a source-bound diagnostic and generated-proof-record inventory, not an authoritative payload refresh or release.",
+    "All prior errors and refusal replies remain archived; no status or data was quarantined or silently removed.",
+    "Microwave uses the existing c0281 gate only for measured source no-copper/no-schematic scopes; its nine levels are not all equal.",
+    "Sonde passes on a canonical path; the separate root-alias FEN1001 is a real pending runtime repair, not hidden by this measurement."
+  ],
+  "source_is_final_public_pin": false
+}
