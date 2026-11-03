@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+- Measure all ten remaining converted boards on immutable diagnostic core d348705f
+  (c0333): Microwave passes without acceptance; nine retain explicit blockers.
+  Preserve all 969 authoritative files and the public tool pin pending final CI.
+
 - Register three preserved original licence texts after explicit CODEOWNER
   approval, with exact upstream/hash and separate decision records (c0333).
   Correct factual digest metadata without changing licences or proof results;

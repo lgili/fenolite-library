@@ -1,0 +1,137 @@
+{
+  "authoritative_files_unchanged": 969,
+  "boards": {
+    "complex_hierarchy": {
+      "accepted": null,
+      "differences": null,
+      "dry_exit": 0,
+      "proof_error": {
+        "code": "FEN-3004",
+        "hint": "the message and where locate the problem",
+        "message": "unsupported schematic rendering of explicit thickness, bold, italic; the source style is preserved but no default-font mask is a faithful proof",
+        "retryable": false,
+        "where": "ampli_ht.kicad_sch:text[Filter:\nFc =1000Hz].effects"
+      },
+      "proof_exit": 3
+    },
+    "ecc83": {
+      "accepted": [],
+      "differences": [
+        {
+          "a": "72/57480",
+          "b": "0/57480",
+          "field": "pixels",
+          "kind": "render-pixels",
+          "level": 8,
+          "where": "sheet:ecc83-pp.kicad_sch:146304000,112649000-147066000,113030000"
+        }
+      ],
+      "dry_exit": 0,
+      "proof_error": {
+        "code": "FEN-5001",
+        "hint": "read 'issues' in the envelope",
+        "message": "1 finding(s) of severity error",
+        "retryable": false,
+        "where": "verify-source"
+      },
+      "proof_exit": 5
+    },
+    "interf_u": {
+      "accepted": null,
+      "differences": null,
+      "dry_exit": 0,
+      "proof_error": {
+        "code": "FEN-3004",
+        "hint": "the message and where locate the problem",
+        "message": "unsupported schematic rendering of explicit thickness, bold, italic; the source style is preserved but no default-font mask is a faithful proof",
+        "retryable": false,
+        "where": "interf_u.kicad_sch:text[Selection].effects"
+      },
+      "proof_exit": 3
+    },
+    "kit-dev-coldfire-xilinx_5213": {
+      "accepted": null,
+      "differences": null,
+      "dry_exit": 0,
+      "proof_error": {
+        "code": "FEN-3004",
+        "hint": "the message and where locate the problem",
+        "message": "unsupported schematic rendering of explicit bold; the source style is preserved but no default-font mask is a faithful proof",
+        "retryable": false,
+        "where": "in_out_conn.kicad_sch:text[Volt].effects"
+      },
+      "proof_exit": 3
+    },
+    "microwave": {
+      "accepted": [],
+      "differences": [],
+      "dry_exit": 0,
+      "proof_error": null,
+      "proof_exit": 0
+    },
+    "multichannel": {
+      "accepted": null,
+      "differences": null,
+      "dry_exit": 0,
+      "proof_error": {
+        "code": "FEN-3004",
+        "hint": "the message and where locate the problem",
+        "message": "unsupported drawn font: unsupported or repeated font attribute 'color'",
+        "retryable": false,
+        "where": "multichannel_mixer.kicad_sch:text[WARNING, this is just a demo board, not a working audio mixer. If you'll make one, it won't work :-)].effects.font"
+      },
+      "proof_exit": 3
+    },
+    "openair-max": {
+      "accepted": null,
+      "differences": null,
+      "dry_exit": 5,
+      "proof_error": null,
+      "proof_exit": null
+    },
+    "pic_programmer": {
+      "accepted": null,
+      "differences": null,
+      "dry_exit": 0,
+      "proof_error": {
+        "code": "FEN-3004",
+        "hint": "the message and where locate the problem",
+        "message": "unsupported schematic rendering of explicit thickness, bold, italic; the source style is preserved but no default-font mask is a faithful proof",
+        "retryable": false,
+        "where": "pic_programmer.kicad_sch:text[VPP (13V) power].effects"
+      },
+      "proof_exit": 3
+    },
+    "royalblue54l_feather": {
+      "accepted": null,
+      "differences": null,
+      "dry_exit": 0,
+      "proof_error": {
+        "code": "FEN-3004",
+        "hint": "the message and where locate the problem",
+        "message": "unsupported schematic rendering of explicit thickness, bold; the source style is preserved but no default-font mask is a faithful proof",
+        "retryable": false,
+        "where": "RoyalBlue54L-Feather.kicad_sch:property[Sheetname].effects"
+      },
+      "proof_exit": 3
+    },
+    "tiny_tapeout": {
+      "accepted": null,
+      "differences": null,
+      "dry_exit": 0,
+      "proof_error": {
+        "code": "FEN-3004",
+        "hint": "the message and where locate the problem",
+        "message": "unsupported schematic rendering of explicit thickness, bold; the source style is preserved but no default-font mask is a faithful proof",
+        "retryable": false,
+        "where": "rp2040.kicad_sch:text[RP2040 Basic Support].effects"
+      },
+      "proof_exit": 3
+    }
+  },
+  "core_commit": "d348705f6344a542c842e8cd8bd4423e75c9bca7",
+  "final_source_validation": false,
+  "library_commit": "ab04d3ffece14051d700cf8d53f5c23c4f030ea1",
+  "schema": "fenolite.library-replay-diagnostic.v0",
+  "summary_sha256": "6ca00ea9598186ef13e4ec5223f810a10e053d3543b11e56810da2b2cf9b3b11"
+}

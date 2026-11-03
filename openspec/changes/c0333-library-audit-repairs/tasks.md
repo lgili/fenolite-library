@@ -43,3 +43,9 @@ in docs/licence-text-codeowner-review-20261102.json. All three are verified
 byte-identical to the recorded upstream commit. No text, payload or fidelity
 record changes. Audit27→21 removes exactly three licence and three hash
 findings; the remaining conversion/proof findings are unchanged.
+
+Diagnostic replay d348705f: all ten remaining boards attempted, with exact input
+source hashes and reviewed write plans in external artifacts. Microwave passes
+without acceptance; six boards refuse styles, Multichannel refuses font colour,
+ECC83 reports a presentation finding, OpenAir import reports a finding. All 969
+authoritative files are unchanged. This does not tick final-source task 2.1.
