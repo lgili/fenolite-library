@@ -8,7 +8,9 @@ Eight-layer Feather-format nRF54L board by Lord's Boards from the KiCad demos, c
 
 ## Fidelity proof (`fenolite verify-source`)
 
-Result: **pass-with-accepted**. Each accepted difference is listed with its reason in `PROVENANCE.json` (`fidelity.accepted`).
+Historical recorded result (2026-10-31): **pass-with-accepted**. Each accepted difference is listed with its original reason in `PROVENANCE.json` (`fidelity.accepted`).
+
+The metadata repair of 2026-11-03 records the checksum of the unchanged historical payload and restores the already documented `drawn-unavailable` reason for level S. It does not rerun import, replay or verify-source. Separate development rebuilds still have two unaccepted level-7 findings (regenerated pad/via geometry and teardrop representation), tracked by c0355. Those candidates have not replaced this historical payload or proof. No current-runtime fidelity qualification or release is claimed.
 
 | level | status |
 |---|---|

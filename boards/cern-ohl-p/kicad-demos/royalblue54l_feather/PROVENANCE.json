@@ -3,7 +3,7 @@
     "Lord's Boards"
   ],
   "conversion": {
-    "outputs_tree": null,
+    "outputs_tree": "fenolite-tree-1:36398699ce9d3d37002024633c731798842759e46e43023a8f1d4af24b1b4198",
     "steps": [
       {
         "argv": [
@@ -118,6 +118,9 @@
         "S": "skipped"
       },
       "script_sha256": "153ec1abe90bbb53bed734a9505220d9bc6f5bbe4a28d8fafb670428799ccb2a",
+      "skipped": {
+        "S": "drawn-unavailable"
+      },
       "tolerances": {
         "angle_udeg": 0,
         "frame": "absolute",
@@ -208,7 +211,7 @@
   },
   "kind": "board",
   "licence_text_sha256": "63f8502ea2967423467f3762efffaaba56c81997f3fe9696e17cc4e5fb3fa31e",
-  "modification_notice": "2026-11-02: recorded the normalised hash of the preserved upstream licence text after explicit CODEOWNER approval; original licence, payload and historical fidelity records unchanged.",
+  "modification_notice": "2026-11-03: recorded the digest of the unchanged historical payload and restored its previously documented drawn-unavailable skip reason; no new replay, comparison or geometry acceptance.",
   "origin": "converted",
   "schema": "fenolite.provenance.v0",
   "spdx": "CERN-OHL-P-2.0",
@@ -229,5 +232,5 @@
     "spdx_expression": "CERN-OHL-P-2.0",
     "url": "https://gitlab.com/kicad/code/kicad"
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }

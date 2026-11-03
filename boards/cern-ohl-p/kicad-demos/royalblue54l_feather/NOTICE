@@ -1,3 +1,5 @@
+2026-11-03: recorded the digest of the unchanged historical payload and restored its previously documented drawn-unavailable skip reason; no new replay, comparison or geometry acceptance.
+
 2026-11-02: recorded the normalised hash of the preserved upstream licence text after explicit CODEOWNER approval; original licence, payload and historical fidelity records unchanged.
 
 2026-11-02: canonicalised the library licence-family path and logical identity where required; original upstream paths, payloads, licence and historical fidelity records unchanged.

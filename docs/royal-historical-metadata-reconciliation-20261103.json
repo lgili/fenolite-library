@@ -1,0 +1,554 @@
+{
+  "OpenSpec_task": {
+    "core_commit": "2a098a244d8b3ea66f9ae4956fe935b520b93173",
+    "literal_requirement": "- [ ] 4.3 In `lgili/fenolite-library`: the blocks jobs of `check.yml` (record-file check, version rules,\n  c0270 tests and usage builds, import-graph and no-side-effect tests, sources) and a first authored\n  `FenoliteBlocks` item. Proof: that repository's pull request green, and `fenolite library audit . --json`",
+    "path": "openspec/changes/c0273-block-packages/tasks.md",
+    "portion": "Root/per-item schema audit only; actual external PR/CI and release gates remain open.",
+    "task": "4.3",
+    "task_file_sha256": "bc740d2b2b5e6900a96a4802a7e2ecc133ef56bfcbb5376f10e58cc57c5b1d84"
+  },
+  "actual_CI_PR_release_completed": false,
+  "actual_static_validation": {
+    "Royal_payload_tree_unchanged": "fenolite-tree-1:36398699ce9d3d37002024633c731798842759e46e43023a8f1d4af24b1b4198",
+    "Royal_version_audit": {
+      "command": "fenolite library audit <library-checkout> --item boards/cern-ohl-p/kicad-demos/royalblue54l_feather --base 8b38b308411b9c7e36d44f65625f648798910378 --json",
+      "exit": 0,
+      "issues": 0,
+      "log_sha256": "a9619b5c18882c85d1f9db7ce7adb405b8e3bc02e1f1ff24c45ac69e0854994e"
+    },
+    "all_other_items_rows_byte_values_unchanged": 19,
+    "audited_scope": "Schema/provenance/licence/recorded historical proof only; no current fidelity qualification.",
+    "no_native_or_replay": true,
+    "post_audit_change_scope": "This root docs receipt only; audited item inputs unchanged.",
+    "root_audit": {
+      "command": "fenolite library audit <library-checkout> --json",
+      "exit": 0,
+      "issues": 0,
+      "items": 20,
+      "log_sha256": "e0da7a470bd77be61c3d75354bc62d7c2227627447e91de65ebd7efd894788a8"
+    },
+    "root_before": {
+      "issues": 2,
+      "log_sha256": "b7f2762734bedb4e41ab6c411775874f56e90f6310cf0d4192e68547db5eeec7"
+    },
+    "same_item_paths_before_after": true,
+    "status": "passed"
+  },
+  "date": "2026-11-03",
+  "external_review_manifest_sha256": "4238d0bef04312a84c817114fafef72e10d3d877d4f67b21678487bd9f6ddb64",
+  "external_review_packet": "fenolite-cac-organization-20261103/cac-tasks-agent/royal-historical-metadata-review-v1",
+  "historical_payload": {
+    "all_bytes_equal_to_first_commit": true,
+    "expected_payload_tree": "fenolite-tree-1:36398699ce9d3d37002024633c731798842759e46e43023a8f1d4af24b1b4198",
+    "files": 67,
+    "first_commit": "e1d4308a31a0caf35de45b5fee629528e0a893b7",
+    "first_path": "boards/cern-ohl-p/kicad-demos/royalblue54L_feather",
+    "manifest": [
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "copper.py",
+        "sha256": "83b0d4d8604f6ac85d9cabb482c97df550fd06717814e6ad2e0fdbc275998208",
+        "size": 119489
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "design.lock",
+        "sha256": "9554644d4a0da6c5221721e5997e0278dd82c6a803a8293c93f36c06e4ee2499",
+        "size": 1672
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "design.py",
+        "sha256": "153ec1abe90bbb53bed734a9505220d9bc6f5bbe4a28d8fafb670428799ccb2a",
+        "size": 47382
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "fp-lib-table",
+        "sha256": "0f6f4ec826a6cf793671eee06bdbd9570427250fd41d5eee67b9652b885465db",
+        "size": 2198
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Button_Switch_SMD.kicad_sym",
+        "sha256": "1b6b03ed887cc8f587dcaf69c7766fce4cb5ad840118bf2bf6e0eb18cfeea4ef",
+        "size": 2452
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Button_Switch_SMD.pretty/SW_Push_1P1T_NO_Vertical_Wuerth_434133025816.kicad_mod",
+        "sha256": "a5cd96cd1b19f950c1f1e2b9dd393675d6b0b581ed38a51028a1662adeaed29b",
+        "size": 6515
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Button_Switch_SMD.pretty/SW_Push_1P1T_NO_Vertical_Wuerth_434133025816_2.kicad_mod",
+        "sha256": "9fc725eeb9f4b3aa7daf9e3bd5a1c5736336aed3f275f89e8ab03df60085eaea",
+        "size": 6522
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Capacitor_SMD.kicad_sym",
+        "sha256": "0997ffac791e5d5a0ea7a2d3691ca75bd741b776c220ff955847577b90b3d85e",
+        "size": 10938
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Capacitor_SMD.pretty/C_0402_1005Metric.kicad_mod",
+        "sha256": "45be02384cde1aa825d52c844c018817ef8b767ba3deca5fb8b084dfb4294d7f",
+        "size": 4088
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Capacitor_SMD.pretty/C_0402_1005Metric_2.kicad_mod",
+        "sha256": "e59c5bdad8955c2680bb1cc85b97f6e18dbf1960f14f7973c8acb4cc3b285655",
+        "size": 4095
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Capacitor_SMD.pretty/C_0402_1005Metric_3.kicad_mod",
+        "sha256": "59a01c0ca5644715c3d0443e31c5411659770aeec3a75a3018fc2255ec58f8e7",
+        "size": 4074
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Capacitor_SMD.pretty/C_0402_1005Metric_4.kicad_mod",
+        "sha256": "ec6cbf781edd1da84d5847a951d584d8428d9bb45f6714a99e2c5b1e5bf6fa47",
+        "size": 4083
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Capacitor_SMD.pretty/C_0402_1005Metric_5.kicad_mod",
+        "sha256": "04ad99fb6cdde3adfbf3fbcda5bf6044f1a8ceea2acfa0527e18c15d98a32378",
+        "size": 4074
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Capacitor_SMD.pretty/C_0402_1005Metric_6.kicad_mod",
+        "sha256": "dfbb3903b25f5f9ce5d1f9a0e736b3b9b4953eb1a8af5fa88d1f6ab9d6ccd88f",
+        "size": 4076
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Capacitor_SMD.pretty/C_0603_1608Metric.kicad_mod",
+        "sha256": "0506b8431e8324e864811bb3cd68e5839ff3ba3c8c1a6089881bd099bc8c7987",
+        "size": 4056
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Capacitor_SMD.pretty/C_0603_1608Metric_2.kicad_mod",
+        "sha256": "5b39c9b22a243cfe9fc1cb30537ae438189085f0d0657edd776aaf51fbaed81e",
+        "size": 4062
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Capacitor_SMD.pretty/C_0603_1608Metric_3.kicad_mod",
+        "sha256": "c9a393a07d557fbea315e89d0b4226421d264b53a0e97ee0a85a9b508573e3f9",
+        "size": 4069
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Capacitor_SMD.pretty/C_0603_1608Metric_4.kicad_mod",
+        "sha256": "44d260bf6a7e14105a94a532f98b7c1bdeab4a9d93bc414414832ce055791796",
+        "size": 4060
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Connector.kicad_sym",
+        "sha256": "708865105b887b13c54b40338b27117ed35235e88ede4d1047bec9c20e6d420d",
+        "size": 1935
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Connector.pretty/Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical.kicad_mod",
+        "sha256": "bffa6cf1bfba53acb958d18ac4d9f12f02c811149c1253f221ddd7566b20d60c",
+        "size": 4600
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Connector_JST.kicad_sym",
+        "sha256": "6c52b029f789e7173d623de31c83f1c810a2dd8e91c86d91500c9dac15ac51fd",
+        "size": 3147
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Connector_JST.pretty/JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal.kicad_mod",
+        "sha256": "d6a343607a164a62e4d54b8a9ee159a2648c419ecfdc1ca2783a4744c3d6eb5a",
+        "size": 7146
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Connector_JST.pretty/JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.kicad_mod",
+        "sha256": "7b38a2e321c3273133344fe6a8ac619a266a85e155ce413d5c5ad58a677b0aec",
+        "size": 6636
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Crystal.kicad_sym",
+        "sha256": "ea8fb18f8466b01cfba4a104987edd152558c8fc5249a1dca1cbea81f6e417f9",
+        "size": 2673
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Crystal.pretty/Crystal_SMD_2016-4Pin_2.0x1.6mm.kicad_mod",
+        "sha256": "da81f33969f597b904b46e9aab360290bfda169087fcae5488ff77dd3949f4e5",
+        "size": 5516
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Crystal.pretty/Crystal_SMD_3215-2Pin_3.2x1.5mm.kicad_mod",
+        "sha256": "f727d44fcc31f5f47dad138070ece04d832e4ffc719540a3136cc9d012c2bec8",
+        "size": 3837
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Inductor_SMD.kicad_sym",
+        "sha256": "a7082362c059ce70568db379c5a6c7f032a834bf819b8aa9e1bfffd989866d14",
+        "size": 1145
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Inductor_SMD.pretty/L_0603_1608Metric.kicad_mod",
+        "sha256": "4fefc0708b31b38040cbcce400d5bd91275ed3d52770f19251c9e1a5e9db05b6",
+        "size": 4011
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Jumper.kicad_sym",
+        "sha256": "0ef552c1df2b37a75c6e25e4e1746b68d62690d7e34041ba4b0eaf6ae71a7979",
+        "size": 1274
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Jumper.pretty/SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm.kicad_mod",
+        "sha256": "d7b7af0e14441cd3edde4f7b31d3a8d0da5d3e8798fd7e81e94043b8bce7387f",
+        "size": 4620
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/LED_SMD.kicad_sym",
+        "sha256": "9ea194ddc852fb17ebc7a4b1d13dd90f35c58a90313b468710dd26702e049c1f",
+        "size": 2593
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/LED_SMD.pretty/LED_0603_1608Metric.kicad_mod",
+        "sha256": "dd76e2fdce4a064659315a9c6ba54e1dbecbab187e6ac6c5a1585fddb3bf7e46",
+        "size": 4345
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/LED_SMD.pretty/LED_Wurth_150044M155260.kicad_mod",
+        "sha256": "118a225871be7bc51764eae4ba69d50fb524fcaef631d7b71954b2eef72b71b6",
+        "size": 5186
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/LordsBoards-Symbol.kicad_sym",
+        "sha256": "7ba492a6d6086f63851c79f4cd7a97d39e90c5aeb9d62ab072447c84d9c1843c",
+        "size": 850
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/LordsBoards-Symbol.pretty/LordsBoardsLogo_Small_Silk.kicad_mod",
+        "sha256": "9982add8eb6d526b2d6b43a81b5b72e649201e5db59e1a296a68af59c058b3fd",
+        "size": 104751
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/MountingHole.kicad_sym",
+        "sha256": "f07a2aad661576c1bf9f718a29cfc9daac0187be0a65deb128f9ceb30bc66102",
+        "size": 815
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/MountingHole.pretty/MountingHole_2.5mm.kicad_mod",
+        "sha256": "085ce685c4e3b17428f63154476b09a669b0a2a4ea0b848c091183784cf50f27",
+        "size": 1728
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Package_DFN_QFN.kicad_sym",
+        "sha256": "b33115c0a716facec00ac63011231b721329cd85e3eed0ce01842853b148121b",
+        "size": 18009
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Package_DFN_QFN.pretty/QFN-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm_ThermalVias.kicad_mod",
+        "sha256": "cb2159585478af7613c773c1e79e76f4d64c1d82631d0ce2d2aa431eec311147",
+        "size": 31299
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Package_DFN_QFN.pretty/QFN-40-1EP_5x5mm_P0.4mm_EP3.6x3.6mm_ThermalVias.kicad_mod",
+        "sha256": "2747245912fcf77a6da2a3fe76e26e9ad219f2383ffd198841bb2461062d25b8",
+        "size": 19676
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Package_DFN_QFN.pretty/Texas_RGY_R-PVQFN-N16_EP2.05x2.55mm.kicad_mod",
+        "sha256": "b6cb24737fb96a3a3bba3098b5fe1786bdeb7a0a64be9124d0fe6ffe65c3de93",
+        "size": 16715
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Package_SON.kicad_sym",
+        "sha256": "483c598e162d1bb1b2054858586a661fc74d3a365e86459d59f3e9e6e9342505",
+        "size": 2423
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Package_SON.pretty/Winbond_USON-8-1EP_3x2mm_P0.5mm_EP0.2x1.6mm.kicad_mod",
+        "sha256": "b512181fbdfb3bd79d81825eca82f0e1759e1f3d5efa0060a2478874656b98aa",
+        "size": 7935
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Package_TO_SOT_SMD.kicad_sym",
+        "sha256": "9d4e81ff49bac037d91eb28ec745af1d45012f3fddd8d473b9e6d9227584c963",
+        "size": 1607
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Package_TO_SOT_SMD.pretty/SOT-553.kicad_mod",
+        "sha256": "7bd584fd87f2a0438c982969d614ff8d7888d3175997ba31be2943cf753c8c7d",
+        "size": 4819
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Resistor_SMD.kicad_sym",
+        "sha256": "1d774c8266ec35246ad7803cd4a4f80a481f40dcd95a204450992b71cd967aa3",
+        "size": 5501
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Resistor_SMD.pretty/R_0402_1005Metric.kicad_mod",
+        "sha256": "59d1353c25aaddd7077961b1c64115a38fae172697439bef08cd0cc241773784",
+        "size": 4073
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Resistor_SMD.pretty/R_0402_1005Metric_2.kicad_mod",
+        "sha256": "cf6f407ed18362feb8c7dcea4e2ead5b5e99cafd6424d49370489f9c2f7972d4",
+        "size": 4098
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Resistor_SMD.pretty/R_0402_1005Metric_3.kicad_mod",
+        "sha256": "4aab64d161ef315f6fbbd11e406d7916afb9129cba30f8ca93b6a8a5a3951eac",
+        "size": 4077
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Resistor_SMD.pretty/R_0402_1005Metric_4.kicad_mod",
+        "sha256": "f2384ce23e2506e130ed0f66d53317a084be0a86be0a0c2f60514090762e6bdd",
+        "size": 4086
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/Resistor_SMD.pretty/R_0402_1005Metric_5.kicad_mod",
+        "sha256": "5b8cda98c3ba833357796eb928a957cc8c5dbd4d04b986bfeb1f0ffaa1d7b1bb",
+        "size": 3647
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/RoyalBlue54L-Feather-Connector_FFC-FPC.kicad_sym",
+        "sha256": "cf9f9162552114b9b306e108281a1e74eecf0032b917d7b586486e4cbe2e85f2",
+        "size": 1917
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/RoyalBlue54L-Feather-Connector_FFC-FPC.pretty/CONN-SMD_5P-P0.50_HCTL_HC-FPC-05-09-5RLTAG.kicad_mod",
+        "sha256": "75c09477dc3b41229305f13e4ccaffcb39fe6ef64907cfc70f37db4374908794",
+        "size": 5880
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/RoyalBlue54L-Feather-Connector_PinHeader_2.54mm.kicad_sym",
+        "sha256": "9be38451039347cc340bd877380fd2f5f0da2399aeeb3fbf52f1180c353d35d9",
+        "size": 6383
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/RoyalBlue54L-Feather-Connector_PinHeader_2.54mm.pretty/PinHeader_1x12_P2.54mm_Vertical.kicad_mod",
+        "sha256": "ea2ec1261adcc38b6a36a4357d9106c6e275bb961788aee27ef1e9783909ba8d",
+        "size": 7818
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/RoyalBlue54L-Feather-Connector_PinHeader_2.54mm.pretty/PinHeader_1x16_P2.54mm_Vertical.kicad_mod",
+        "sha256": "ab06592dcbaf8b16f3350ed9932b612413985b90dca96ddecea599cd3d7fb09c",
+        "size": 9200
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/TestPoint.kicad_sym",
+        "sha256": "ff0c792f74d8fd1925ef289d391acce2da6be203d98de3bdd1861db7dc77174a",
+        "size": 4723
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/TestPoint.pretty/TestPoint_Pad_D1.5mm.kicad_mod",
+        "sha256": "78d9710f2bbcc6214deb26821f4d21d8e117e9789a01effc07e9d6acd5f0835d",
+        "size": 1726
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/TestPoint.pretty/TestPoint_Pad_D1.5mm_2.kicad_mod",
+        "sha256": "b085a5a8d506c46ed3d9fcab735df95cdb74ff0cb0a6afef06e0c039e1839e77",
+        "size": 1729
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/TestPoint.pretty/TestPoint_Pad_D1.5mm_3.kicad_mod",
+        "sha256": "c9627da4e393f126ea9970eeb1b6bf3a1c19943060c3478afa0d8c71496dff70",
+        "size": 1719
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/TestPoint.pretty/TestPoint_Pad_D2.0mm.kicad_mod",
+        "sha256": "bef9861b0fdfc5f57b04f966c0c26bcfd5389e2b3f2aba03c4a15d1fdd2b4496",
+        "size": 1943
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/TestPoint.pretty/TestPoint_Pad_D2.0mm_2.kicad_mod",
+        "sha256": "1340782b2e828691998b5d5ddedce9658a50379518eeb74d6fbe08f5b9d126f3",
+        "size": 1964
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/marbastlib-various.kicad_sym",
+        "sha256": "c7a450282f701eec52ee3a48b475c8ac86b4f0afcbfaad61288f5d20abea53c7",
+        "size": 3771
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/marbastlib-various.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod",
+        "sha256": "d9c35997bf6ea4adfdb3491c00de2d6f033de60238379d98eb4c900605b10600",
+        "size": 6724
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/nordic-lib-kicad-nrf54-modules.kicad_sym",
+        "sha256": "33ddfb90e4147d51f9336b51e611755e63a348e22a8fa3c47ccc836a46cb8374",
+        "size": 8475
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "lib/nordic-lib-kicad-nrf54-modules.pretty/BM15x-LGA-45_15.8x10mm.kicad_mod",
+        "sha256": "e57ea7dddb41528e11d2661cf2d825b82c786707a037ef8c0a822666c4a63805",
+        "size": 11856
+      },
+      {
+        "equal_to_first_committed_conversion": true,
+        "path": "sym-lib-table",
+        "sha256": "50a0e13c8be14ffaa314521038bc723a81b5d625af5cea3b7eae5439fe4546ce",
+        "size": 2256
+      }
+    ],
+    "tree_role": "Expected checksum of preserved payload; no replay outputs were produced in this repair."
+  },
+  "independent_current_gate": {
+    "changed_or_accepted_by_this_repair": false,
+    "core_proof_path": "openspec/changes/c0355-verified-native-identity/royal-fresh-project-context-proof.json",
+    "core_proof_sha256": "23c9cfb47e5d00588979efd22639f602e4548486f3e1ed5af0aacee0a458d79d",
+    "two_fresh_L7_findings_remain_open": true
+  },
+  "item": "boards/cern-ohl-p/kicad-demos/royalblue54l_feather",
+  "library_base": "8b38b308411b9c7e36d44f65625f648798910378",
+  "new_version": "1.0.2",
+  "old_version": "1.0.1",
+  "preserved": {
+    "LICENSE_sha256": "6e471d647db50527d0c75ee5f1a55a74012ab177c73282bef0bdc7f6562b7ded",
+    "accepted_entries": [
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "lib_ref",
+        "id": "A001",
+        "kind": "footprint-name",
+        "level": 3,
+        "reason": "The import writes a footprint instance that differs from the first footprint of its name (moved fields, edited pads) as a variant footprint <name>_<n> (import.footprint-variant).",
+        "where": "*"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "field": "name",
+        "id": "A002",
+        "kind": "field-pose",
+        "level": 7,
+        "reason": "The build adds the property fenolite.path (the layout lens key) to every footprint; the original has no such field. Not a difference of the design.",
+        "where": "*:fenolite.path"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "id": "A003",
+        "kind": "render-pixels",
+        "level": 8,
+        "reason": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276; level S is skipped as drawn-unavailable).",
+        "where": "sheet:*"
+      },
+      {
+        "attribution": "fenolite",
+        "decided": "2026-10-31",
+        "id": "A004",
+        "kind": "render-missing",
+        "level": 8,
+        "reason": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276).",
+        "where": "sheet:*"
+      }
+    ],
+    "all67_payload_bytes": true,
+    "all_previous_NOTICE_bytes_preserved_as_suffix": true,
+    "evidence": "UNVERIFIED",
+    "historical_proof_fields_except_added_skip_reason": {
+      "against": {
+        "RoyalBlue54L-Feather.kicad_pcb": "535dbe212f43a8bab12b23277e176a94ac9694177258af2981c0e7b08e4b7252",
+        "RoyalBlue54L-Feather.kicad_pro": "a25ffa7ff829d5eaff27b29724b57821ce2ee7fd39ae367b9ea078d290e37690",
+        "RoyalBlue54L-Feather.kicad_sch": "3636dcd5252ae18b2651dce4480a61765bd37b2e601679c3c1465dc8ca21fad8",
+        "nfc_antenna/RoyalBlue54L-NFC-Antenna/RoyalBlue54L-NFC-Antenna.kicad_pcb": "cd87e6d1b20fe0d129d9a9c807af3118c67749eff44b1f032d85c047a814c6dc",
+        "nfc_antenna/RoyalBlue54L-NFC-Antenna/RoyalBlue54L-NFC-Antenna.kicad_pro": "3671c9041c477226ef0a915977f1fbfede9e0206c78c5abf8b51941c41e265ac",
+        "nfc_antenna/RoyalBlue54L-NFC-Antenna/RoyalBlue54L-NFC-Antenna.kicad_sch": "f9e17eb92e5a11eb2db9a6f71835006d4f59fa487ea6c1577565f1b6522c09ab",
+        "sch/Connectors.kicad_sch": "7b78116155a966443ad8a8192fe5ca09668f4bf4e59bc58370762195cf8456c6",
+        "sch/Debugger.kicad_sch": "e6f3273cb98b22ee2a90ee65857cb4035ea11fcf3d19fdddfd0c5d1926ddd2bd",
+        "sch/nPM1300.kicad_sch": "b53b9a766126616e839c10bfeae26aeee85132f48cf1ba84722354d366a63a6b",
+        "sch/nRF54L15.kicad_sch": "d1c824ffcfe88dfa1bded5a341afa8775f4e59c56b95174dd7e8ab081d95caff"
+      },
+      "date": "2026-10-31T08:20:17Z",
+      "fenolite": "0.7.0.dev0",
+      "levels": {
+        "1": "equal",
+        "2": "equal",
+        "3": "accepted",
+        "4": "equal",
+        "5": "equal",
+        "6": "equal",
+        "7": "accepted",
+        "8": "accepted",
+        "S": "skipped"
+      },
+      "script_sha256": "153ec1abe90bbb53bed734a9505220d9bc6f5bbe4a28d8fafb670428799ccb2a",
+      "tolerances": {
+        "angle_udeg": 0,
+        "frame": "absolute",
+        "length_nm": 0,
+        "length_ppm": 0,
+        "pixel_ppm": 1000,
+        "render_pitch_um": 50
+      }
+    },
+    "import_record_verbatim": true,
+    "previous_NOTICE_sha256": "7017ffed3936922e9d86b918427b94b6671948fdc946a392f89885fe622bde4a",
+    "upstream_and_licence_unchanged": true
+  },
+  "restored_historical_S_reason": {
+    "accepted_entry": "A003",
+    "first_payload_commit": "e1d4308a31a0caf35de45b5fee629528e0a893b7",
+    "literal": "The build generates its own schematic: the drawn schematic of the original is not imported yet (change c0276; level S is skipped as drawn-unavailable)."
+  },
+  "schema": "fenolite.library.historical-metadata-reconciliation.v0",
+  "scope": "Metadata repair of the unchanged historical payload only. No fresh fidelity qualification, replay, native test, accepted difference or release."
+}
