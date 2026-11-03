@@ -1,3 +1,5 @@
+2026-11-02: recorded the normalised hash of the preserved upstream licence text after explicit CODEOWNER approval; original licence, payload and historical fidelity records unchanged.
+
 2026-11-02: canonicalised the library licence-family path and logical identity where required; original upstream paths, payloads, licence and historical fidelity records unchanged.
 
 2026-10-31: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; every item of the board is expressed (no content was left out)

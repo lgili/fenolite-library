@@ -1,0 +1,45 @@
+{
+  "after_findings": 21,
+  "artifact_sha256": {
+    "applied-approval-proof.json": "a98b2615b33f3df6acd3eb1884050ddce20232d038fc0a1f359f0b87641b9535",
+    "audit-after-approved-texts.json": "15a10424244b713b27c8d4dcabaf1bd0a73b80808ecd08f144c95b9bf0339875",
+    "audit-after-identities.json": "34474903c88d2dbd270ba3d779730ab429ba5a72c4c39532ab6c046690951534"
+  },
+  "before_findings": 27,
+  "core_source_commit": "8aea3ace7aa29759cd6069aadffebfb7cdc99e40",
+  "decision_record": "licence-text-codeowner-review-20261102.json",
+  "remaining_findings_unchanged": true,
+  "removed": [
+    {
+      "code": "library.licence-text",
+      "message": "boards/apache/kicad-demos/tiny_tapeout: LICENSE (normalised SHA-256 95cef6332b35354c12f9d666ab9ff47002e6f7ef937924896882b2e0cdb7a0d6) is no text listed for Apache-2.0",
+      "where": "boards/apache/kicad-demos/tiny_tapeout"
+    },
+    {
+      "code": "library.provenance-invalid",
+      "message": "boards/apache/kicad-demos/tiny_tapeout: licence_text_sha256 says 0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594 and LICENSE gives 95cef6332b35354c12f9d666ab9ff47002e6f7ef937924896882b2e0cdb7a0d6",
+      "where": "boards/apache/kicad-demos/tiny_tapeout"
+    },
+    {
+      "code": "library.licence-text",
+      "message": "boards/cc-by-sa/kicad-demos/openair-max: LICENSE (normalised SHA-256 ccdefbf85316f7d282d272f7be48c2624f6892f46fce7c8b5287fc9256861f7d) is no text listed for CC-BY-SA-4.0",
+      "where": "boards/cc-by-sa/kicad-demos/openair-max"
+    },
+    {
+      "code": "library.provenance-invalid",
+      "message": "boards/cc-by-sa/kicad-demos/openair-max: licence_text_sha256 says 28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5 and LICENSE gives ccdefbf85316f7d282d272f7be48c2624f6892f46fce7c8b5287fc9256861f7d",
+      "where": "boards/cc-by-sa/kicad-demos/openair-max"
+    },
+    {
+      "code": "library.licence-text",
+      "message": "boards/cern-ohl-p/kicad-demos/royalblue54l_feather: LICENSE (normalised SHA-256 63f8502ea2967423467f3762efffaaba56c81997f3fe9696e17cc4e5fb3fa31e) is no text listed for CERN-OHL-P-2.0",
+      "where": "boards/cern-ohl-p/kicad-demos/royalblue54l_feather"
+    },
+    {
+      "code": "library.provenance-invalid",
+      "message": "boards/cern-ohl-p/kicad-demos/royalblue54l_feather: licence_text_sha256 says 6e471d647db50527d0c75ee5f1a55a74012ab177c73282bef0bdc7f6562b7ded and LICENSE gives 63f8502ea2967423467f3762efffaaba56c81997f3fe9696e17cc4e5fb3fa31e",
+      "where": "boards/cern-ohl-p/kicad-demos/royalblue54l_feather"
+    }
+  ],
+  "schema": "fenolite.library-codeowner-text-proof.v0"
+}

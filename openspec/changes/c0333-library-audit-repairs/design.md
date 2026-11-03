@@ -9,9 +9,8 @@ exactly those seven findings disappear and every other finding remains unchanged
 Treat family/path and logical-id corrections separately. Upstream paths keep their original case and
 immutable URLs; only library identity/path is canonicalised. Preserve every payload byte.
 
-The Apache tiny_tapeout and CC-BY-SA OpenAir licence texts have been checked byte-for-byte against
-KiCad's official mirror at the recorded commit. A new normalised digest still requires the actual
-CODEOWNER decision requested by root; no inferred approval is entered here.
+The Apache tiny_tapeout, CC-BY-SA OpenAir and CERN RoyalBlue licence texts have been checked byte-for-byte against
+KiCad's official mirror at the recorded commit. The actual CODEOWNER decisions are recorded separately for the first two texts and RoyalBlue; no approval is inferred.
 
 Fresh board replacements require actual dry-run/plan/confirm import, default complete fidelity proof,
 recorded provenance and portable replay. Diagnostic snapshots are immutable and explicitly not final

@@ -1,0 +1,68 @@
+{
+  "approval_provenance": "Maintainer replies in the coordinating CAC chat, relayed explicitly by root to the library agent. No inferred approval.",
+  "codeowner": "@lgili",
+  "date": "2026-11-02",
+  "decision": "approved registration of the three preserved original texts only",
+  "name": "Luiz Carlos Gili",
+  "quotes": [
+    {
+      "items": [
+        "tiny_tapeout",
+        "openair-max"
+      ],
+      "quote": "Aprovo registrar os dois textos originais verificados"
+    },
+    {
+      "items": [
+        "royalblue54l_feather"
+      ],
+      "quote": "Aprovo registrar esse texto original verificado"
+    }
+  ],
+  "rows": [
+    {
+      "byte_identical": true,
+      "item": "boards/apache/kicad-demos/tiny_tapeout",
+      "normalised_digest": "95cef6332b35354c12f9d666ab9ff47002e6f7ef937924896882b2e0cdb7a0d6",
+      "normalised_upstream_digest": "95cef6332b35354c12f9d666ab9ff47002e6f7ef937924896882b2e0cdb7a0d6",
+      "official_mirror_url": "https://github.com/KiCad/kicad-source-mirror/blob/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/tiny_tapeout/LICENSE.txt",
+      "official_url": "https://gitlab.com/kicad/code/kicad/-/blob/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/tiny_tapeout/LICENSE.txt",
+      "packaged_bytes": 10174,
+      "packaged_sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "spdx": "Apache-2.0",
+      "upstream_bytes": 10174,
+      "upstream_commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+      "upstream_file": "demos/tiny_tapeout/LICENSE.txt",
+      "upstream_sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "byte_identical": true,
+      "item": "boards/cc-by-sa/kicad-demos/openair-max",
+      "normalised_digest": "ccdefbf85316f7d282d272f7be48c2624f6892f46fce7c8b5287fc9256861f7d",
+      "normalised_upstream_digest": "ccdefbf85316f7d282d272f7be48c2624f6892f46fce7c8b5287fc9256861f7d",
+      "official_mirror_url": "https://github.com/KiCad/kicad-source-mirror/blob/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/openair-max/LICENSE.txt",
+      "official_url": "https://gitlab.com/kicad/code/kicad/-/blob/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/openair-max/LICENSE.txt",
+      "packaged_bytes": 20138,
+      "packaged_sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
+      "spdx": "CC-BY-SA-4.0",
+      "upstream_bytes": 20138,
+      "upstream_commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+      "upstream_file": "demos/openair-max/LICENSE.txt",
+      "upstream_sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
+    },
+    {
+      "byte_identical": true,
+      "item": "boards/cern-ohl-p/kicad-demos/royalblue54l_feather",
+      "normalised_digest": "63f8502ea2967423467f3762efffaaba56c81997f3fe9696e17cc4e5fb3fa31e",
+      "official_mirror_url": "https://github.com/KiCad/kicad-source-mirror/blob/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/royalblue54L_feather/LICENSE",
+      "official_url": "https://gitlab.com/kicad/code/kicad/-/blob/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/royalblue54L_feather/LICENSE",
+      "packaged_sha256": "6e471d647db50527d0c75ee5f1a55a74012ab177c73282bef0bdc7f6562b7ded",
+      "spdx": "CERN-OHL-P-2.0",
+      "upstream_commit": "97acc80c223d75520c03fc44cab63cd9a3202c42",
+      "upstream_file": "demos/royalblue54L_feather/LICENSE",
+      "upstream_sha256": "6e471d647db50527d0c75ee5f1a55a74012ab177c73282bef0bdc7f6562b7ded"
+    }
+  ],
+  "schema": "fenolite.licence-text-codeowner-decision.v0",
+  "scope": "Record the existing preserved upstream licence text digests; no licence/payload rewrite, relicense, fidelity waiver or evidence promotion."
+}

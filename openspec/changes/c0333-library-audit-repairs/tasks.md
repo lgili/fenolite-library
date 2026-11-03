@@ -6,7 +6,7 @@
 
 - [x] 1.1 Correct the seven already-approved normalised licence digests without changing payload/licence/fidelity bytes. Record consistent metadata versions and preserve notices. Proof: source-bound audit changes exactly seven findings; byte invariants; JSON validation.
 - [x] 1.2 Correct canonical library family/path and lowercase logical identity without rewriting upstream paths or payloads. Proof: focused item/root audits and byte invariants.
-- [ ] 1.3 Only after a real CODEOWNER decision, register the two preserved upstream text digests and factual provenance hashes. Proof: actual decision record, upstream byte comparison, registry equality and focused audit.
+- [x] 1.3 Only after a real CODEOWNER decision, register the three preserved upstream text digests and factual provenance hashes. Proof: actual decision record, upstream byte comparison, registry equality and focused audit.
 
 ## 2. Actual conversions
 
@@ -34,3 +34,12 @@ notice is preserved. Both identity errors disappear. Audit now reports 27
 findings: fixing the unreadable RoyalBlue id exposes four existing inner
 findings; it does not create or waive them. Other findings are exactly
 unchanged after path mapping.
+
+CODEOWNER review proof: Luiz Carlos Gili (@lgili, the root CODEOWNERS entry)
+explicitly approved the original Tiny Tapeout/Apache and OpenAir/CC-BY-SA
+texts, then separately approved the newly exposed RoyalBlue/CERN text. The
+exact quotes, immutable original URLs and raw/normalised hashes are recorded
+in docs/licence-text-codeowner-review-20261102.json. All three are verified
+byte-identical to the recorded upstream commit. No text, payload or fidelity
+record changes. Audit27→21 removes exactly three licence and three hash
+findings; the remaining conversion/proof findings are unchanged.

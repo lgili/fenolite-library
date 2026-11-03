@@ -207,8 +207,8 @@
     "upgrade": []
   },
   "kind": "board",
-  "licence_text_sha256": "6e471d647db50527d0c75ee5f1a55a74012ab177c73282bef0bdc7f6562b7ded",
-  "modification_notice": "2026-11-02: canonicalised the library licence-family path and logical identity where required; original upstream paths, payloads, licence and historical fidelity records unchanged.",
+  "licence_text_sha256": "63f8502ea2967423467f3762efffaaba56c81997f3fe9696e17cc4e5fb3fa31e",
+  "modification_notice": "2026-11-02: recorded the normalised hash of the preserved upstream licence text after explicit CODEOWNER approval; original licence, payload and historical fidelity records unchanged.",
   "origin": "converted",
   "schema": "fenolite.provenance.v0",
   "spdx": "CERN-OHL-P-2.0",

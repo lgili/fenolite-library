@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+- Register three preserved original licence texts after explicit CODEOWNER
+  approval, with exact upstream/hash and separate decision records (c0333).
+  Correct factual digest metadata without changing licences or proof results;
+  audit findings reduce from27 to21, all still-visible conversion/proof work.
+
 - Canonicalise Tiny Tapeout's Apache family path and RoyalBlue's lowercase
   library identity (c0333), preserving payloads and original upstream names.
   The now-readable RoyalBlue record exposes previously masked proof and
