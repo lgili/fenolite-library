@@ -1,3 +1,4 @@
 (sym_lib_table
-	(lib (name Footprints) (type KiCad) (uri ${KIPRJMOD}/lib/Footprints.kicad_sym) (options "") (descr ""))
+	(version 7)
+	(lib (name "ecc83-pp") (type "KiCad") (uri "${KIPRJMOD}/lib/ecc83-pp.kicad_sym") (options "") (descr ""))
 )

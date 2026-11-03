@@ -1,7 +1,7 @@
 (footprint "PQFN-8_L5.8-W4.9-P1.27-LS6.0-BL"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(property "Reference" "REF**"
 		(at -3.58 3.07 0)
 		(layer "F.SilkS")
@@ -48,7 +48,14 @@
 			)
 		)
 	)
+	(units
+		(unit
+			(name "A")
+			(pins "4" "5" "6" "7" "8" "1" "2" "3")
+		)
+	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start 2.58 3.08)
 		(end 2.58 3.08)
@@ -197,48 +204,64 @@
 		(at -1.91 2.97)
 		(size 0.57 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "S_1")
+		(pintype "passive")
 		(uuid "9eb9f1fd-6580-4bca-94fb-1c992c7dd014")
 	)
 	(pad "2" smd oval
 		(at -0.63 2.97)
 		(size 0.57 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "S_2")
+		(pintype "passive")
 		(uuid "6062caf2-a1d8-4c5e-8492-6f39a01e45f6")
 	)
 	(pad "3" smd oval
 		(at 0.63 2.97)
 		(size 0.57 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "S_3")
+		(pintype "passive")
 		(uuid "600e5de8-47d6-4232-9efc-d68396579694")
 	)
 	(pad "4" smd oval
 		(at 1.9 2.97)
 		(size 0.57 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "G_4")
+		(pintype "passive")
 		(uuid "7b69aa6d-cba2-4ecb-bfd9-a847809e65cb")
 	)
 	(pad "5" smd oval
 		(at 1.9 -2.97)
 		(size 0.57 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "D_5")
+		(pintype "passive")
 		(uuid "621bb6d4-a2fa-4947-b78f-6ce4870be943")
 	)
 	(pad "6" smd oval
 		(at 0.63 -2.97)
 		(size 0.57 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "S_6")
+		(pintype "passive")
 		(uuid "b201f1b4-cc7d-4038-8ccb-7c008a6a7542")
 	)
 	(pad "7" smd oval
 		(at -0.63 -2.97)
 		(size 0.57 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "S_7")
+		(pintype "passive")
 		(uuid "c445b0da-fd8a-450d-a475-722fe48fa3d4")
 	)
 	(pad "8" smd oval
 		(at -1.91 -2.97)
 		(size 0.57 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "S_8")
+		(pintype "passive")
 		(uuid "7c3c36f6-4b9f-433e-825a-307d250d5d14")
 	)
 	(pad "9" smd rect
@@ -248,7 +271,7 @@
 		(uuid "3bb1ac73-1987-4a66-a577-9a27a910f050")
 	)
 	(embedded_fonts no)
-	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/PQFN-8_L5.8-W4.9-H1.0-P1.27-LS6.0-BL.wrl"
+	(model "${KIPRJMOD}/../../libraries/easyeda2kicad/easyeda2kicad.3dshapes/PQFN-8_L5.8-W4.9-H1.0-P1.27-LS6.0-BL.wrl"
 		(offset
 			(xyz -912.5 688.62 -0)
 		)
@@ -257,17 +280,6 @@
 		)
 		(rotate
 			(xyz 0 0 0)
-		)
-	)
-	(model "C:/Users/santa/Documents/Kicad/CSD18534Q5A.STEP"
-		(offset
-			(xyz 0 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz -90 0 -90)
 		)
 	)
 )

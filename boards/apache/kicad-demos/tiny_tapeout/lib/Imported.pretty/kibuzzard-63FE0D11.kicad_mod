@@ -1,7 +1,7 @@
 (footprint "kibuzzard-63FE0D11"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "Generated with KiBuzzard")
 	(tags "kb_params=eyJBbGlnbm1lbnRDaG9pY2UiOiAiQ2VudGVyIiwgIkNhcExlZnRDaG9pY2UiOiAiWyIsICJDYXBSaWdodENob2ljZSI6ICJdIiwgIkZvbnRDb21ib0JveCI6ICJVYnVudHVNb25vLUIiLCAiSGVpZ2h0Q3RybCI6ICIxLjMiLCAiTGF5ZXJDb21ib0JveCI6ICJGLlNpbGtTIiwgIk11bHRpTGluZVRleHQiOiAiR1BJTyIsICJQYWRkaW5nQm90dG9tQ3RybCI6ICIxMCIsICJQYWRkaW5nTGVmdEN0cmwiOiAiNSIsICJQYWRkaW5nUmlnaHRDdHJsIjogIjUiLCAiUGFkZGluZ1RvcEN0cmwiOiAiMTAiLCAiV2lkdGhDdHJsIjogIjYifQ==")
 	(property "Reference" "REF**"

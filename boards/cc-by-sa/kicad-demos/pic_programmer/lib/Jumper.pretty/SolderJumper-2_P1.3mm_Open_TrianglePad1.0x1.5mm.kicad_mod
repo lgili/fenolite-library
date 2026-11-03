@@ -157,6 +157,8 @@
 		(at -0.725 0)
 		(size 0.3 0.3)
 		(layers "F.Cu" "F.Mask")
+		(pinfunction "1_1")
+		(pintype "passive")
 		(zone_connect 2)
 		(thermal_bridge_angle 45)
 		(options
@@ -178,6 +180,8 @@
 		(at 0.725 0)
 		(size 0.3 0.3)
 		(layers "F.Cu" "F.Mask")
+		(pinfunction "2_2")
+		(pintype "passive")
 		(zone_connect 2)
 		(thermal_bridge_angle 45)
 		(options

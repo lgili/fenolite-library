@@ -1,11 +1,11 @@
 (footprint "C1206_9"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(property "Reference" "REF**"
-		(at -2.86 -2.2 -90)
+		(at -2.86 -2.2 90)
 		(layer "F.SilkS")
-		(uuid "1a4fc8f9-f53c-444c-a263-3d56ed9adbdb")
+		(uuid "5ee00882-4d03-480d-ba89-9ad783b846f7")
 		(effects
 			(font
 				(size 0.6 0.6)
@@ -14,9 +14,9 @@
 		)
 	)
 	(property "Value" "C1206_9"
-		(at 0 4 -180)
+		(at 0 4 180)
 		(layer "F.Fab")
-		(uuid "fc87e464-0386-4968-a4ca-c8337520e6f3")
+		(uuid "39dfd476-6da2-4528-9245-2c72a543311a")
 		(effects
 			(font
 				(size 1 1)
@@ -25,10 +25,10 @@
 		)
 	)
 	(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_10uF-106-10-16V_C109464.html"
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "1e8739ad-7f99-416c-9462-3cd30bf87e02")
+		(uuid "d3f34d4c-1533-4940-a3db-03588efe2a38")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -37,10 +37,10 @@
 		)
 	)
 	(property "Description" ""
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "5ccc2344-96a7-4564-a9c8-03ad55c57ebc")
+		(uuid "803ee9b7-81dc-47d3-9bd8-1b4c65de3db1")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -48,7 +48,14 @@
 			)
 		)
 	)
+	(units
+		(unit
+			(name "A")
+			(pins "1" "2")
+		)
+	)
 	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start 2.56 -0.94)
 		(end 2.56 0.94)
@@ -165,7 +172,7 @@
 		(uuid "9bbd341c-0ab4-4c0b-a058-108c78f43601")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(uuid "4e2dd3b2-a2d9-4aa9-97a4-bc0d47b5444b")
 		(effects
@@ -179,16 +186,20 @@
 		(at -1.59 0)
 		(size 1.49 1.73)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "1_1")
+		(pintype "input")
 		(uuid "ba1814c9-75e0-43f9-83e7-851af886c640")
 	)
 	(pad "2" smd rect
 		(at 1.59 0)
 		(size 1.49 1.73)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "2_2")
+		(pintype "input")
 		(uuid "0e52a906-c764-43f9-902a-1d26f26d8026")
 	)
 	(embedded_fonts no)
-	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/C1206_L3.2-W1.6-H1.3.wrl"
+	(model "${KIPRJMOD}/../../libraries/easyeda2kicad/easyeda2kicad.3dshapes/C1206_L3.2-W1.6-H1.3.wrl"
 		(offset
 			(xyz 0 -0 0)
 		)

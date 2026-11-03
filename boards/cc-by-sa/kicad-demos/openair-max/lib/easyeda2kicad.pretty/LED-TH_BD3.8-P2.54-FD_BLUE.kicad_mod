@@ -1,7 +1,7 @@
 (footprint "LED-TH_BD3.8-P2.54-FD_BLUE"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(property "Reference" "REF**"
 		(at 0.21 2.66 -180)
 		(layer "F.SilkS")
@@ -48,7 +48,14 @@
 			)
 		)
 	)
+	(units
+		(unit
+			(name "A")
+			(pins "2" "1")
+		)
+	)
 	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start 1.59 0.95)
 		(end 1.59 0.94)
@@ -161,6 +168,8 @@
 		(drill 0.900024)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "A_1")
+		(pintype "unspecified")
 		(uuid "7e14e8ba-3e16-468f-9dbb-1dac1b70ca00")
 	)
 	(pad "2" thru_hole circle
@@ -169,10 +178,12 @@
 		(drill 0.900024)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "K_2")
+		(pintype "unspecified")
 		(uuid "92494e93-17a0-47ac-9df6-7b2ecccaa311")
 	)
 	(embedded_fonts no)
-	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/LED-TH_BD3.8-P2.54-FD_BLUE.wrl"
+	(model "${KIPRJMOD}/../../libraries/easyeda2kicad/easyeda2kicad.3dshapes/LED-TH_BD3.8-P2.54-FD_BLUE.wrl"
 		(offset
 			(xyz -0.2 0 0)
 		)

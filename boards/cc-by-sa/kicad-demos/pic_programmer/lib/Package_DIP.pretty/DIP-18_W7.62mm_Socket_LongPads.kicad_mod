@@ -224,6 +224,8 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.15625)
+		(pinfunction "RA2_1")
+		(pintype "bidirectional+no_connect")
 		(uuid "18b2f7b0-01bb-495d-9012-bd7b258fad02")
 	)
 	(pad "2" thru_hole oval
@@ -232,6 +234,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "RA3_2")
+		(pintype "bidirectional+no_connect")
 		(uuid "2aea0c58-c9ff-4745-a7ab-7881c040d3f8")
 	)
 	(pad "3" thru_hole oval
@@ -240,6 +244,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "T0ckl_3")
+		(pintype "output+no_connect")
 		(uuid "3ec5b314-1b5a-4fda-9c7c-387eec2f7629")
 	)
 	(pad "4" thru_hole oval
@@ -248,6 +254,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "MCLR_4")
+		(pintype "input")
 		(uuid "780d53fc-b68f-462e-ba11-148014e25fab")
 	)
 	(pad "5" thru_hole oval
@@ -256,6 +264,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "VSS_5")
+		(pintype "power_in")
 		(uuid "a273b0cf-623c-4d6f-b31c-ff9897866902")
 	)
 	(pad "6" thru_hole oval
@@ -264,6 +274,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "RB0_6")
+		(pintype "bidirectional+no_connect")
 		(uuid "5114a6dc-dc0f-4cf2-a7b5-5fa595391281")
 	)
 	(pad "7" thru_hole oval
@@ -272,6 +284,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "RB1_7")
+		(pintype "bidirectional+no_connect")
 		(uuid "70c849b5-a619-4a1f-bd04-b575dda9dde9")
 	)
 	(pad "8" thru_hole oval
@@ -280,6 +294,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "RB2_8")
+		(pintype "bidirectional+no_connect")
 		(uuid "c17c40d9-cdf9-4d15-a214-405aaac24040")
 	)
 	(pad "9" thru_hole oval
@@ -288,6 +304,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "RB3_9")
+		(pintype "bidirectional+no_connect")
 		(uuid "3291deb7-aeb5-4f67-8dd6-7b06a98f598c")
 	)
 	(pad "10" thru_hole oval
@@ -296,6 +314,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "RB4_10")
+		(pintype "bidirectional+no_connect")
 		(uuid "da826d92-687d-4fb3-8fdf-7f33f570ea77")
 	)
 	(pad "11" thru_hole oval
@@ -304,6 +324,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "RB5_11")
+		(pintype "bidirectional+no_connect")
 		(uuid "8cb90b3a-cac4-4f25-b035-c75de446c7ae")
 	)
 	(pad "12" thru_hole oval
@@ -312,6 +334,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "ICSPC/RB6_12")
+		(pintype "bidirectional")
 		(uuid "9c19e8e8-f25c-4f60-9a43-187ff08aa55b")
 	)
 	(pad "13" thru_hole oval
@@ -320,6 +344,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "ICSPD/RB7_13")
+		(pintype "bidirectional")
 		(uuid "2fffef2a-1856-48ee-814b-d6d4269a1824")
 	)
 	(pad "14" thru_hole oval
@@ -328,6 +354,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "VDD_14")
+		(pintype "power_in")
 		(uuid "ad7eb14f-6c5c-4996-a54a-7ce82fc42954")
 	)
 	(pad "15" thru_hole oval
@@ -336,6 +364,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "OSC2/CLKO_15")
+		(pintype "output+no_connect")
 		(uuid "8b866077-ae0b-4488-ad72-0a1ce876fafb")
 	)
 	(pad "16" thru_hole oval
@@ -344,6 +374,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "OSC1/CLKI_16")
+		(pintype "input+no_connect")
 		(uuid "78909bdc-c5a6-44e3-a872-9511d980568f")
 	)
 	(pad "17" thru_hole oval
@@ -352,6 +384,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "RA0_17")
+		(pintype "bidirectional+no_connect")
 		(uuid "82df7286-b4aa-4339-88f7-1dd4e150be64")
 	)
 	(pad "18" thru_hole oval
@@ -360,6 +394,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "RA1_18")
+		(pintype "bidirectional+no_connect")
 		(uuid "82997bc4-f017-4b8b-8d81-e248aae2c873")
 	)
 	(embedded_fonts no)

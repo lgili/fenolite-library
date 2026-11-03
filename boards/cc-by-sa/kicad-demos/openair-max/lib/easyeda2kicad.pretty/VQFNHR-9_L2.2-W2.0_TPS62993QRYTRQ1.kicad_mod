@@ -1,11 +1,11 @@
 (footprint "VQFNHR-9_L2.2-W2.0_TPS62993QRYTRQ1"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(property "Reference" "REF**"
-		(at 1.99 -1.05 -90)
+		(at 1.99 -1.05 90)
 		(layer "F.SilkS")
-		(uuid "2f73d63a-c403-44d0-b8dc-0c6edb8297e9")
+		(uuid "6b984d92-c89e-431a-9be5-18531435ab32")
 		(effects
 			(font
 				(size 0.6 0.6)
@@ -14,9 +14,9 @@
 		)
 	)
 	(property "Value" "VQFNHR-9_L2.2-W2.0_TPS62993QRYTRQ1"
-		(at 0 4.95 -180)
+		(at 0 4.95 180)
 		(layer "F.Fab")
-		(uuid "762ad330-2848-4e0f-933f-13ba8b36079d")
+		(uuid "78c3de0c-1107-43da-bafe-0068db0bc282")
 		(effects
 			(font
 				(size 1 1)
@@ -25,10 +25,10 @@
 		)
 	)
 	(property "Datasheet" ""
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "28f4fdf2-7251-4a58-bcd7-e0926e7461dc")
+		(uuid "8e572556-c35b-401d-a60a-fdeb21b038b5")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -37,10 +37,10 @@
 		)
 	)
 	(property "Description" ""
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "e6320d33-da4e-4c27-a91e-0fee06aee7d0")
+		(uuid "1eb77eec-8ba6-4464-b467-699e37a2879f")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -48,7 +48,14 @@
 			)
 		)
 	)
+	(units
+		(unit
+			(name "A")
+			(pins "1" "2" "3" "4" "5" "9" "8" "7" "6")
+		)
+	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_circle
 		(center -2 -0.3)
 		(end -1.8 -0.3)
@@ -123,7 +130,7 @@
 		(uuid "8dfdbc6c-0531-403a-9bf5-3ad446ae0f0b")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(uuid "86aabbbe-37c2-4d80-a42c-6ad4b3bd8838")
 		(effects
@@ -137,18 +144,24 @@
 		(at -0.76 -0.25)
 		(size 0.88 0.25)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "PG_1")
+		(pintype "unspecified")
 		(uuid "0fea06ed-9d9e-4c8c-8162-917b67aa2f00")
 	)
 	(pad "2" smd rect
 		(at -0.76 0.25)
 		(size 0.88 0.25)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "SW_2")
+		(pintype "unspecified")
 		(uuid "cd2eb0e1-ca60-4166-beba-140aa5fb614c")
 	)
 	(pad "3" smd custom
 		(at -0.79 0.95)
 		(size 0.01 0.01)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "VOS_3")
+		(pintype "unspecified")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -170,6 +183,8 @@
 		(at 0.79 0.95)
 		(size 0.01 0.01)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "GND_4")
+		(pintype "unspecified")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -191,18 +206,24 @@
 		(at 0.76 0.25)
 		(size 0.88 0.25)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "EN_5")
+		(pintype "unspecified")
 		(uuid "8713420e-d7ac-4aae-841d-4acf841b08cc")
 	)
 	(pad "6" smd rect
 		(at 0.76 -0.25)
 		(size 0.88 0.25)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "VIN_6")
+		(pintype "unspecified")
 		(uuid "7b8cda16-c2a5-4ba9-b786-0e7390813104")
 	)
 	(pad "7" smd custom
 		(at 0.79 -0.95)
 		(size 0.01 0.01)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "MODE/S-CONF_7")
+		(pintype "unspecified")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -224,12 +245,16 @@
 		(at 0 -0.95)
 		(size 0.25 0.65)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "SS/TR_8")
+		(pintype "unspecified")
 		(uuid "fc21614c-63a1-4e14-99f8-7cbfd8a155c2")
 	)
 	(pad "9" smd custom
 		(at -0.79 -0.95)
 		(size 0.01 0.01)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "FB/VSET_9")
+		(pintype "unspecified")
 		(thermal_bridge_angle 90)
 		(options
 			(clearance outline)
@@ -248,7 +273,7 @@
 		(uuid "45f08385-c50e-4bed-85bd-76f56a62b284")
 	)
 	(embedded_fonts no)
-	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/VQFNHR-9_L2.2-W2.0_TPS62993QRYTRQ1.wrl"
+	(model "${KIPRJMOD}/../../libraries/easyeda2kicad/easyeda2kicad.3dshapes/VQFNHR-9_L2.2-W2.0_TPS62993QRYTRQ1.wrl"
 		(offset
 			(xyz 0 -0 -0)
 		)

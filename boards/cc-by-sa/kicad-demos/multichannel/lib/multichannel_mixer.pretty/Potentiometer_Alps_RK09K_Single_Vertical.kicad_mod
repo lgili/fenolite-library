@@ -1,7 +1,7 @@
 (footprint "Potentiometer_Alps_RK09K_Single_Vertical"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "113004U 1130A6S 11300DR 1130A8G 1130081 1130A5R 1130AP5 1130AST  D1130C3W D1130C1B D1130C3C D1130C2P Potentiometer, vertical, Alps RK09K Single, https://tech.alpsalpine.com/prod/e/pdf/potentiometer/rotarypotentiometers/rk09k/rk09k.pdf")
 	(tags "Potentiometer vertical Alps RK09K RK09D Single Snapin")
 	(property "Reference" "REF**"
@@ -251,6 +251,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "1")
+		(pintype "passive")
 		(uuid "8da816fd-ac43-4094-8bb9-8c6d6b8e4eb6")
 	)
 	(pad "2" thru_hole circle
@@ -259,6 +261,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "2")
+		(pintype "passive")
 		(uuid "6a225a39-39bb-4308-b9b3-e92f720bb8eb")
 	)
 	(pad "3" thru_hole circle
@@ -267,6 +271,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "3")
+		(pintype "passive")
 		(uuid "cb82a97e-d3bf-475f-9e22-904fbaf27340")
 	)
 	(pad "MP" thru_hole roundrect

@@ -1,11 +1,11 @@
 (footprint "C0402_40"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(property "Reference" "REF**"
-		(at -1.8 -0.05 90)
+		(at 0.325 -1.15 180)
 		(layer "F.SilkS")
-		(uuid "366e49fa-ec59-4551-86aa-108373e1fd5a")
+		(uuid "c4ab1edf-2bab-4839-a32d-30c4d6435958")
 		(effects
 			(font
 				(size 0.6 0.6)
@@ -14,9 +14,9 @@
 		)
 	)
 	(property "Value" "C0402_40"
-		(at 0 4 0)
+		(at 0 4 180)
 		(layer "F.Fab")
-		(uuid "951891f1-a474-407a-9012-98d430c41bfe")
+		(uuid "7c5e28e7-c3c9-4d00-95d8-c9694af824f2")
 		(effects
 			(font
 				(size 1 1)
@@ -25,10 +25,10 @@
 		)
 	)
 	(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL05A105KP5NNNC_1uF-105-10-10V_C14445.html"
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "9e6a4161-893d-4fbd-8df5-338e24d34e39")
+		(uuid "8de3516b-94ce-4fea-bac4-2977da627721")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -37,10 +37,10 @@
 		)
 	)
 	(property "Description" ""
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "d6f2982b-7dea-4b5b-9e92-949eab284f97")
+		(uuid "99eb613b-e18c-4ae7-98db-1c4ffdb101d3")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -48,27 +48,14 @@
 			)
 		)
 	)
+	(units
+		(unit
+			(name "A")
+			(pins "1" "2")
+		)
+	)
 	(attr smd)
-	(fp_line
-		(start 0.23 0.5)
-		(end 1.02 0.5)
-		(stroke
-			(width 0.15)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "12d40611-57a0-4105-ab52-08c35225ae75")
-	)
-	(fp_line
-		(start -0.23 0.5)
-		(end -1.02 0.5)
-		(stroke
-			(width 0.15)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "b4f9fad0-6b3f-46ab-8a5f-77c89e00a9f2")
-	)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start 1.17 0.35)
 		(end 1.17 -0.35)
@@ -77,17 +64,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "3f1c56c5-3c3d-4c5f-bd6f-21bb82773cb5")
-	)
-	(fp_line
-		(start -1.17 0.35)
-		(end -1.17 -0.35)
-		(stroke
-			(width 0.15)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "c349fe2a-1523-4b28-87b7-9c7b6c4256b1")
+		(uuid "c2c3d284-3a3e-443e-8fa3-e20bfbe48e6a")
 	)
 	(fp_line
 		(start 1.02 -0.5)
@@ -97,7 +74,27 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "6ad5b573-f163-4834-ab8a-07bfbd26677b")
+		(uuid "4aff8f81-44b2-4f4d-82d2-46fd5998a9d6")
+	)
+	(fp_line
+		(start 0.23 0.5)
+		(end 1.02 0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8d28b048-5bf8-49b6-bf16-5275bd837321")
+	)
+	(fp_line
+		(start -0.23 0.5)
+		(end -1.02 0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "24891203-9c1d-4fda-8d53-bee5397a38f0")
 	)
 	(fp_line
 		(start -1.02 -0.5)
@@ -107,29 +104,17 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "84562030-db63-4a17-90b8-d23230b00706")
+		(uuid "57486dc4-4715-48bf-98c4-5d5f7f8442af")
 	)
-	(fp_arc
-		(start 1.02 0.5)
-		(mid 1.126066 0.456066)
-		(end 1.17 0.35)
-		(stroke
-			(width 0.15)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "cc1f98ab-930a-4cc2-b673-12cb36d57162")
-	)
-	(fp_arc
+	(fp_line
 		(start -1.17 0.35)
-		(mid -1.126066 0.456066)
-		(end -1.02 0.5)
+		(end -1.17 -0.35)
 		(stroke
 			(width 0.15)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "8f18e7be-4833-4ed0-a6a7-198d2fe2a17b")
+		(uuid "c713ac47-2aa1-4b75-bb0a-a64f1675dd5d")
 	)
 	(fp_arc
 		(start 1.17 -0.35)
@@ -140,7 +125,18 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "7cf9f821-7b63-4e9f-8fc0-de00c583222f")
+		(uuid "0cce32d9-1b76-4eff-b635-b5bf54189777")
+	)
+	(fp_arc
+		(start 1.02 0.5)
+		(mid 1.126066 0.456066)
+		(end 1.17 0.35)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f491f10b-cd76-4303-8173-24122bc7a8c1")
 	)
 	(fp_arc
 		(start -1.02 -0.5)
@@ -151,7 +147,18 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "9af27ca9-4986-426c-adc9-25e27a8a62a8")
+		(uuid "d613ca2a-eef9-4dad-8b1e-5deae4eee0e2")
+	)
+	(fp_arc
+		(start -1.17 0.35)
+		(mid -1.126066 0.456066)
+		(end -1.02 0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8e89eb7f-9889-4a11-8b8c-3d74b8853df3")
 	)
 	(fp_circle
 		(center -0.5 0.25)
@@ -162,12 +169,12 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "637cb16e-8240-443b-aa22-ecbd64dbbc92")
+		(uuid "8680e2e8-e191-48cb-ac31-ea0766c05fa1")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
-		(uuid "890514dc-6be8-4c7a-b42d-10e2bd7d8136")
+		(uuid "284e8f1e-0342-4f16-8956-5c75f5b73c9c")
 		(effects
 			(font
 				(size 1 1)
@@ -179,16 +186,20 @@
 		(at -0.55 0)
 		(size 0.79 0.54)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "854933cf-f706-4184-8c2f-2159703768bc")
+		(pinfunction "1_1")
+		(pintype "input")
+		(uuid "073896d0-6836-4c9e-b470-d2ecea604e4e")
 	)
 	(pad "2" smd rect
 		(at 0.55 0)
 		(size 0.79 0.54)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "1f216f7b-c651-473b-a218-54a4644d261b")
+		(pinfunction "2_2")
+		(pintype "input")
+		(uuid "54de8164-f409-4297-abbd-14db8d9eaeb3")
 	)
 	(embedded_fonts no)
-	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/C0402_L1.0-W0.5-H0.5.wrl"
+	(model "${KIPRJMOD}/../../libraries/easyeda2kicad/easyeda2kicad.3dshapes/C0402_L1.0-W0.5-H0.5.wrl"
 		(offset
 			(xyz 0 -0 -0)
 		)

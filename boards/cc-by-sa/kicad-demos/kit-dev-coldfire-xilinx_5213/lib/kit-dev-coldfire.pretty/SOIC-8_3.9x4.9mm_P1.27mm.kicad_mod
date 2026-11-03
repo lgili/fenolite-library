@@ -1,7 +1,7 @@
 (footprint "SOIC-8_3.9x4.9mm_P1.27mm"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 	(tags "SOIC SO")
 	(property "Reference" "REF**"
@@ -211,6 +211,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "TxD")
+		(pintype "input")
 		(uuid "012f12eb-609f-4aa5-819c-09cc853248b6")
 	)
 	(pad "2" smd roundrect
@@ -218,6 +220,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "8e6645f7-d7eb-470b-9084-8353828942fc")
 	)
 	(pad "3" smd roundrect
@@ -225,6 +229,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "VCC")
+		(pintype "power_in")
 		(uuid "450071cb-e481-4868-b3a8-07a138fda4b6")
 	)
 	(pad "4" smd roundrect
@@ -232,6 +238,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "RxD")
+		(pintype "output")
 		(uuid "74a0b200-d343-49ff-b519-221ec8c0410c")
 	)
 	(pad "5" smd roundrect
@@ -239,6 +247,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "Vref")
+		(pintype "output")
 		(uuid "e2b2ffd7-d098-4b4a-a128-b1109343f746")
 	)
 	(pad "6" smd roundrect
@@ -246,6 +256,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "CAN-")
+		(pintype "bidirectional")
 		(uuid "c41d8be0-ef36-48dc-8eae-291807b0feb1")
 	)
 	(pad "7" smd roundrect
@@ -253,6 +265,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "CAN+")
+		(pintype "bidirectional")
 		(uuid "08833f90-c6bc-43e1-928b-b1ebb08b8e02")
 	)
 	(pad "8" smd roundrect
@@ -260,6 +274,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "Rsl")
+		(pintype "input")
 		(uuid "c308548b-9c16-4313-afdf-9bc6fe3146e3")
 	)
 	(embedded_fonts no)

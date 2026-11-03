@@ -526,6 +526,8 @@
 		(drill 1.1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "VI_1")
+		(pintype "input")
 		(uuid "a9765069-b814-4db5-89b2-bb641bbd4b5f")
 	)
 	(pad "2" thru_hole oval
@@ -534,6 +536,8 @@
 		(drill 1.1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "GND_2")
+		(pintype "input")
 		(uuid "00bbbb0f-c898-49d4-9524-34f2608bdde3")
 	)
 	(pad "3" thru_hole oval
@@ -542,6 +546,8 @@
 		(drill 1.1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "VO_3")
+		(pintype "power_out")
 		(uuid "59d3d5fb-39ca-4db0-a611-f1a4882be6fb")
 	)
 	(embedded_fonts no)

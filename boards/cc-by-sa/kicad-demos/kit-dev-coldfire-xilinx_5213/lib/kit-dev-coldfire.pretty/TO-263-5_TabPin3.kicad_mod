@@ -1,7 +1,7 @@
 (footprint "TO-263-5_TabPin3"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "TO-263/D2PAK/DDPAK SMD package, http://www.infineon.com/cms/en/product/packages/PG-TO263/PG-TO263-5-1/")
 	(tags "D2PAK DDPAK TO-263 D2PAK-5 TO-263-5 SOT-426")
 	(property "Reference" "REF**"
@@ -391,6 +391,8 @@
 		(size 4.6 1.1)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.227273)
+		(pinfunction "OUT")
+		(pintype "power_out")
 		(uuid "a6efb99f-2c32-43bf-b518-59b77b2ec36a")
 	)
 	(pad "2" smd roundrect
@@ -398,6 +400,8 @@
 		(size 4.6 1.1)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.227273)
+		(pinfunction "SENSE")
+		(pintype "input")
 		(uuid "c48166a5-a9d3-4b95-adfc-ff2fae492b5a")
 	)
 	(pad "3" smd roundrect
@@ -405,6 +409,8 @@
 		(size 4.6 1.1)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.227273)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "cd9a1878-dd66-4bbe-af1b-b0aaa2bf0535")
 	)
 	(pad "3" smd roundrect
@@ -412,6 +418,8 @@
 		(size 4.55 5.25)
 		(layers "F.Cu" "F.Paste")
 		(roundrect_rratio 0.054945)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "0e37bea3-e787-4aab-b8ad-11e8bd7b1ead")
 	)
 	(pad "3" smd roundrect
@@ -419,6 +427,8 @@
 		(size 4.55 5.25)
 		(layers "F.Cu" "F.Paste")
 		(roundrect_rratio 0.054945)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "c7f3c761-fa6f-4245-8fa2-8cb82c1658c8")
 	)
 	(pad "3" smd roundrect
@@ -426,6 +436,8 @@
 		(size 9.4 10.8)
 		(layers "F.Cu" "F.Mask")
 		(roundrect_rratio 0.026596)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "a8ec9059-788a-4793-8a94-17b8661e597b")
 	)
 	(pad "3" smd roundrect
@@ -433,6 +445,8 @@
 		(size 4.55 5.25)
 		(layers "F.Cu" "F.Paste")
 		(roundrect_rratio 0.054945)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "47651810-21c3-4c7b-ab10-a278d2e77d99")
 	)
 	(pad "3" smd roundrect
@@ -440,6 +454,8 @@
 		(size 4.55 5.25)
 		(layers "F.Cu" "F.Paste")
 		(roundrect_rratio 0.054945)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "04cf2be3-05fa-4a3a-bb22-02dbbaf61b3e")
 	)
 	(pad "4" smd roundrect
@@ -447,6 +463,8 @@
 		(size 4.6 1.1)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.227273)
+		(pinfunction "SHDN")
+		(pintype "input+no_connect")
 		(uuid "6b5ce15f-e9c3-4cc5-9554-7c9362feb56a")
 	)
 	(pad "5" smd roundrect
@@ -454,6 +472,8 @@
 		(size 4.6 1.1)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.227273)
+		(pinfunction "IN")
+		(pintype "input")
 		(uuid "050ed6bf-0704-4a1d-a640-94579856e0f4")
 	)
 	(embedded_fonts no)

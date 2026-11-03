@@ -1,7 +1,7 @@
 (footprint "SOIC-8_5.23x5.23mm_P1.27mm"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "SOIC, 8 Pin (http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf#page=68), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 	(tags "SOIC SO")
 	(property "Reference" "REF**"
@@ -249,6 +249,8 @@
 		(size 1.6 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "~{CS}")
+		(pintype "input")
 		(uuid "b162f606-5084-47c7-bfd3-487b9a054150")
 	)
 	(pad "2" smd roundrect
@@ -256,6 +258,8 @@
 		(size 1.6 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "DO(IO1)")
+		(pintype "bidirectional")
 		(uuid "0101e0e9-7ddc-42ba-a92b-0ca8c6ad6b15")
 	)
 	(pad "3" smd roundrect
@@ -263,6 +267,8 @@
 		(size 1.6 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "IO2")
+		(pintype "bidirectional")
 		(uuid "6549640e-15aa-4c51-90f7-b24044784951")
 	)
 	(pad "4" smd roundrect
@@ -270,6 +276,8 @@
 		(size 1.6 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "a845d618-5f35-4127-8de5-7defc2539316")
 	)
 	(pad "5" smd roundrect
@@ -277,6 +285,8 @@
 		(size 1.6 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "DI(IO0)")
+		(pintype "bidirectional")
 		(uuid "651348b5-07ba-440f-9ddc-349687e5fc3d")
 	)
 	(pad "6" smd roundrect
@@ -284,6 +294,8 @@
 		(size 1.6 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "CLK")
+		(pintype "input")
 		(uuid "d16c62ea-2f37-4752-8da3-ee4ab7cb5752")
 	)
 	(pad "7" smd roundrect
@@ -291,6 +303,8 @@
 		(size 1.6 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "IO3")
+		(pintype "bidirectional")
 		(uuid "7e2afb87-ea81-4840-8aaf-f58a644bc466")
 	)
 	(pad "8" smd roundrect
@@ -298,6 +312,8 @@
 		(size 1.6 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "VCC")
+		(pintype "power_in")
 		(uuid "aa9c9933-55f4-414a-9bae-aacb1b40ba3c")
 	)
 	(embedded_fonts no)

@@ -1,0 +1,3733 @@
+# Drawn schematic of a Fenolite design (docs/drawn-schematic.md). Code owns the nets.
+schema = "fenolite.drawn-schematic.v0"
+root = "root"
+
+[[sheet]]
+key = "root"
+paper = "A3"
+
+[sheet.title_block]
+title = "UNIVERSAL INTERFACE"
+date = "Sun 22 Mar 2015"
+revision = "2B"
+organization = "KICAD"
+doc_id = "Comment 1"
+responsible = "Comment 2"
+approver = "Comment 3"
+
+[[sheet.symbol]]
+part = "BUS1"
+unit = 1
+at = [57.15, 74.93]
+rotation = 0
+fields.Reference = { at = [55.88, 33.02], rotation = 0, font = { size = [1.778, 1.778] } }
+fields.Value = { at = [55.88, 118.11], rotation = 0, font = { size = [1.778, 1.778] } }
+fields.Footprint = { at = [55.9308, 120.396], rotation = 0, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [57.15, 74.93], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "U1"
+unit = 1
+at = [132.08, 99.06]
+rotation = 0
+fields.Reference = { at = [135.89, 81.28], rotation = 0, font = { size = [1.524, 1.524] } }
+fields.Value = { at = [137.16, 115.57], rotation = 0, font = { size = [1.524, 1.524] } }
+fields.Footprint = { at = [142.24, 118.11], rotation = 0, font = { size = [0.762, 0.762] } }
+fields.Datasheet = { at = [132.08, 99.06], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "U8"
+unit = 1
+at = [189.23, 44.45]
+rotation = 0
+fields.Reference = { at = [195.58, 20.32], rotation = 0, font = { size = [1.778, 1.778] } }
+fields.Value = { at = [198.12, 66.04], rotation = 0, font = { size = [1.778, 1.778] } }
+fields.Footprint = { at = [200.66, 68.58], rotation = 0, font = { size = [0.762, 0.762] } }
+fields.Datasheet = { at = [189.23, 44.45], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "R4"
+unit = 1
+at = [350.52, 26.67]
+rotation = 270
+fields.Reference = { at = [350.52, 24.13], rotation = 90 }
+fields.Value = { at = [350.52, 26.67], rotation = 90 }
+fields.Footprint = { at = [351.0534, 28.2702], rotation = 90, font = { size = [0.381, 0.381] } }
+fields.Datasheet = { at = [350.52, 26.67], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "R5"
+unit = 1
+at = [350.52, 38.1]
+rotation = 270
+fields.Reference = { at = [350.52, 35.56], rotation = 90 }
+fields.Value = { at = [350.52, 38.1], rotation = 90 }
+fields.Footprint = { at = [350.6216, 39.7002], rotation = 90, font = { size = [0.381, 0.381] } }
+fields.Datasheet = { at = [350.52, 38.1], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "D1"
+unit = 1
+at = [372.11, 38.1]
+rotation = 90
+fields.Reference = { at = [374.8532, 36.1696], rotation = 90, justify = "right" }
+fields.Value = { at = [374.8532, 38.5064], rotation = 90, justify = "right" }
+fields.Footprint = { at = [374.8532, 40.4368], rotation = 90, justify = "right", font = { size = [0.762, 0.762] } }
+fields.Datasheet = { at = [372.11, 38.1], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "D2"
+unit = 1
+at = [361.95, 49.53]
+rotation = 90
+fields.Reference = { at = [364.6932, 47.5996], rotation = 90, justify = "right" }
+fields.Value = { at = [364.6932, 49.9364], rotation = 90, justify = "right" }
+fields.Footprint = { at = [364.6932, 51.8668], rotation = 90, justify = "right", font = { size = [0.762, 0.762] } }
+fields.Datasheet = { at = [361.95, 49.53], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "U9"
+unit = 1
+at = [284.48, 144.78]
+rotation = 0
+fields.Reference = { at = [284.48, 74.93], rotation = 0, font = { size = [1.778, 1.778] } }
+fields.Value = { at = [284.48, 214.63], rotation = 0, font = { size = [1.778, 1.778] } }
+fields.Footprint = { at = [284.48, 217.17], rotation = 0 }
+fields.Datasheet = { at = [284.48, 144.78], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "U2"
+unit = 1
+at = [111.76, 175.26]
+rotation = 0
+fields.Reference = { at = [115.57, 147.32], rotation = 0, font = { size = [1.524, 1.524] } }
+fields.Value = { at = [120.65, 203.2], rotation = 0, font = { size = [1.524, 1.524], bold = true, italic = true } }
+fields.Footprint = { at = [120.65, 205.74], rotation = 0, font = { size = [0.762, 0.762] } }
+fields.Datasheet = { at = [111.76, 175.26], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "C6"
+unit = 1
+at = [25.4, 243.84]
+rotation = 0
+fields.Reference = { at = [27.94, 242.57], rotation = 0, justify = "left" }
+fields.Value = { at = [27.94, 245.11], rotation = 0, justify = "left" }
+fields.Footprint = { at = [22.86, 243.84], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [25.4, 243.84], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "C5"
+unit = 1
+at = [41.91, 243.84]
+rotation = 0
+fields.Reference = { at = [44.45, 242.57], rotation = 0, justify = "left" }
+fields.Value = { at = [44.45, 245.11], rotation = 0, justify = "left" }
+fields.Footprint = { at = [39.37, 243.84], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [41.91, 243.84], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "C4"
+unit = 1
+at = [55.88, 243.84]
+rotation = 0
+fields.Reference = { at = [58.42, 242.57], rotation = 0, justify = "left" }
+fields.Value = { at = [58.42, 245.11], rotation = 0, justify = "left" }
+fields.Footprint = { at = [53.34, 243.84], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [55.88, 243.84], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "C1"
+unit = 1
+at = [72.39, 243.84]
+rotation = 0
+fields.Reference = { at = [75.3872, 241.5032], rotation = 0, justify = "left" }
+fields.Value = { at = [75.3872, 243.84], rotation = 0, justify = "left" }
+fields.Footprint = { at = [69.85, 250.19], rotation = 90, justify = "left", font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [72.39, 243.84], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "R1"
+unit = 1
+at = [354.33, 93.98]
+rotation = 270
+fields.Reference = { at = [354.33, 91.44], rotation = 90 }
+fields.Value = { at = [354.33, 93.98], rotation = 90 }
+fields.Footprint = { at = [354.33, 96.52], rotation = 90, font = { size = [0.381, 0.381] } }
+fields.Datasheet = { at = [354.33, 93.98], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "R2"
+unit = 1
+at = [375.92, 93.98]
+rotation = 270
+fields.Reference = { at = [375.92, 91.44], rotation = 90 }
+fields.Value = { at = [375.92, 93.98], rotation = 90 }
+fields.Footprint = { at = [375.92, 96.52], rotation = 90, font = { size = [0.381, 0.381] } }
+fields.Datasheet = { at = [375.92, 93.98], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "X1"
+unit = 1
+at = [354.33, 105.41]
+rotation = 0
+fields.Reference = { at = [354.33, 100.33], rotation = 0, font = { size = [1.778, 1.778] } }
+fields.Value = { at = [354.33, 110.49], rotation = 0 }
+fields.Footprint = { at = [354.33, 111.76], rotation = 0, font = { size = [0.762, 0.762] } }
+fields.Datasheet = { at = [354.33, 105.41], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "C2"
+unit = 1
+at = [342.9, 115.57]
+rotation = 0
+fields.Reference = { at = [349.25, 114.3], rotation = 0 }
+fields.Value = { at = [349.25, 116.84], rotation = 0 }
+fields.Footprint = { at = [349.25, 118.11], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [342.9, 115.57], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "C3"
+unit = 1
+at = [365.76, 115.57]
+rotation = 0
+fields.Reference = { at = [372.11, 114.3], rotation = 0 }
+fields.Value = { at = [372.11, 116.84], rotation = 0 }
+fields.Footprint = { at = [372.11, 118.11], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [365.76, 115.57], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "U5"
+unit = 1
+at = [195.58, 229.87]
+rotation = 0
+fields.Reference = { at = [195.58, 200.66], rotation = 0, font = { size = [1.778, 1.778] } }
+fields.Value = { at = [195.58, 260.35], rotation = 0, font = { size = [1.778, 1.778] } }
+fields.Footprint = { at = [195.58, 262.89], rotation = 0 }
+fields.Datasheet = { at = [195.58, 229.87], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "R3"
+unit = 1
+at = [163.83, 251.46]
+rotation = 270
+fields.Reference = { at = [163.83, 253.492], rotation = 90 }
+fields.Value = { at = [163.83, 251.46], rotation = 90 }
+fields.Footprint = { at = [161.4678, 254.4064], rotation = 90, font = { size = [0.381, 0.381] } }
+fields.Datasheet = { at = [163.83, 251.46], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "P1"
+unit = 1
+at = [382.27, 182.88]
+rotation = 0
+mirror = "x"
+fields.Reference = { at = [383.54, 217.17], rotation = 0, font = { size = [1.778, 1.778] } }
+fields.Value = { at = [381, 148.59], rotation = 0, font = { size = [1.778, 1.778] } }
+fields.Footprint = { at = [387.35, 177.8], rotation = 90, font = { size = [0.508, 0.508] } }
+fields.Datasheet = { at = [382.27, 182.88], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "RR1"
+unit = 1
+at = [69.85, 210.82]
+rotation = 270
+fields.Reference = { at = [69.85, 212.09], rotation = 90, font = { size = [1.778, 1.778] } }
+fields.Value = { at = [78.232, 211.328], rotation = 90, font = { size = [1.778, 1.778] } }
+fields.Footprint = { at = [71.12, 214.63], rotation = 90, font = { size = [0.762, 0.762] } }
+fields.Datasheet = { at = [69.85, 210.82], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "JP1"
+unit = 1
+at = [43.18, 184.15]
+rotation = 0
+mirror = "x"
+fields.Reference = { at = [43.18, 195.58], rotation = 0, font = { size = [1.778, 1.778] } }
+fields.Value = { at = [43.18, 184.15], rotation = 90, font = { size = [1.778, 1.778] } }
+fields.Footprint = { at = [43.18, 198.12], rotation = 0, font = { size = [0.508, 0.508] } }
+fields.Datasheet = { at = [43.18, 184.15], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "U3"
+unit = 1
+at = [133.35, 49.53]
+rotation = 0
+fields.Reference = { at = [137.16, 33.02], rotation = 0, justify = "bottom", font = { size = [1.524, 1.524] } }
+fields.Value = { at = [140.97, 66.04], rotation = 0, justify = "top", font = { size = [1.524, 1.524] } }
+fields.Footprint = { at = [140.97, 68.58], rotation = 0, font = { size = [0.762, 0.762] } }
+fields.Datasheet = { at = [133.35, 49.53], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:GND"
+net = "GND"
+at = [33.02, 36.83]
+rotation = 270
+fields.Value = { at = [31.242, 36.83], rotation = 0, hide = true, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [33.02, 36.83], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [33.02, 36.83], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:GND"
+net = "GND"
+at = [33.02, 113.03]
+rotation = 270
+fields.Value = { at = [31.242, 113.03], rotation = 0, hide = true, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [33.02, 113.03], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [33.02, 113.03], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:GND"
+net = "GND"
+at = [361.95, 53.34]
+rotation = 0
+fields.Value = { at = [361.95, 55.118], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [361.95, 53.34], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [361.95, 53.34], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:GND"
+net = "GND"
+at = [372.11, 41.91]
+rotation = 0
+fields.Value = { at = [372.11, 43.688], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [372.11, 41.91], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [372.11, 41.91], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:GND"
+net = "GND"
+at = [172.72, 26.67]
+rotation = 270
+fields.Value = { at = [170.942, 26.67], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [172.72, 26.67], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [172.72, 26.67], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:VCC"
+net = "VCC"
+at = [205.74, 26.67]
+rotation = 270
+fields.Value = { at = [209.55, 26.67], rotation = 90, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [205.74, 26.67], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [205.74, 26.67], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:GND"
+net = "GND"
+at = [372.11, 154.94]
+rotation = 270
+fields.Value = { at = [370.332, 154.94], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [372.11, 154.94], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [372.11, 154.94], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:VCC"
+net = "VCC"
+at = [83.82, 201.93]
+rotation = 270
+fields.Value = { at = [87.63, 201.93], rotation = 90, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [83.82, 201.93], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [83.82, 201.93], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:GND"
+net = "GND"
+at = [189.23, 67.31]
+rotation = 0
+fields.Value = { at = [189.23, 69.088], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [189.23, 67.31], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [189.23, 67.31], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:VCC"
+net = "VCC"
+at = [25.4, 237.49]
+rotation = 0
+fields.Value = { at = [25.4, 234.95], rotation = 0, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [25.4, 237.49], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [25.4, 237.49], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:VCC"
+net = "VCC"
+at = [189.23, 19.05]
+rotation = 0
+fields.Value = { at = [189.23, 15.24], rotation = 0 }
+
+[[sheet.power]]
+symbol = "interf_u:PWR_FLAG"
+net = "PWR_FLAG"
+at = [72.39, 237.49]
+rotation = 0
+fields.Value = { at = [72.39, 231.648], rotation = 0, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [72.39, 237.49], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [72.39, 237.49], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:PWR_FLAG"
+net = "PWR_FLAG"
+at = [72.39, 250.19]
+rotation = 180
+fields.Value = { at = [72.39, 256.032], rotation = 0, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [72.39, 250.19], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [72.39, 250.19], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:GND"
+net = "GND"
+at = [25.4, 250.19]
+rotation = 0
+fields.Value = { at = [25.4, 251.968], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [25.4, 250.19], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [25.4, 250.19], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:GND"
+net = "GND"
+at = [34.29, 195.58]
+rotation = 0
+fields.Value = { at = [34.29, 197.358], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [34.29, 195.58], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [34.29, 195.58], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:GND"
+net = "GND"
+at = [120.65, 64.77]
+rotation = 0
+fields.Value = { at = [120.65, 66.548], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [120.65, 64.77], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [120.65, 64.77], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:GND"
+net = "GND"
+at = [342.9, 119.38]
+rotation = 0
+fields.Value = { at = [342.9, 121.158], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [342.9, 119.38], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [342.9, 119.38], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:GND"
+net = "GND"
+at = [365.76, 119.38]
+rotation = 0
+fields.Value = { at = [365.76, 121.158], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [365.76, 119.38], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [365.76, 119.38], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:VCC"
+net = "VCC"
+at = [33.02, 107.95]
+rotation = 90
+fields.Value = { at = [29.21, 107.95], rotation = 90, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [33.02, 107.95], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [33.02, 107.95], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:VCC"
+net = "VCC"
+at = [33.02, 41.91]
+rotation = 90
+fields.Value = { at = [29.21, 41.91], rotation = 90, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [33.02, 41.91], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [33.02, 41.91], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:VCC"
+net = "VCC"
+at = [255.27, 76.2]
+rotation = 0
+fields.Value = { at = [255.27, 73.66], rotation = 0, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [255.27, 76.2], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [255.27, 76.2], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:VCC"
+net = "VCC"
+at = [158.75, 251.46]
+rotation = 0
+fields.Value = { at = [158.75, 248.92], rotation = 0, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [158.75, 251.46], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [158.75, 251.46], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:GND"
+net = "GND"
+at = [133.35, 69.85]
+rotation = 0
+fields.Value = { at = [133.35, 71.628], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [133.35, 69.85], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [133.35, 69.85], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:VCC"
+net = "VCC"
+at = [133.35, 29.21]
+rotation = 0
+fields.Value = { at = [133.35, 25.4], rotation = 0 }
+
+[[sheet.power]]
+symbol = "interf_u:VCC"
+net = "VCC"
+at = [132.08, 78.74]
+rotation = 0
+fields.Value = { at = [132.08, 74.93], rotation = 0 }
+
+[[sheet.power]]
+symbol = "interf_u:VCC"
+net = "VCC"
+at = [111.76, 144.78]
+rotation = 0
+fields.Value = { at = [111.76, 140.97], rotation = 0 }
+
+[[sheet.power]]
+symbol = "interf_u:GND"
+net = "GND"
+at = [132.08, 119.38]
+rotation = 0
+fields.Value = { at = [132.08, 121.158], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [132.08, 119.38], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [132.08, 119.38], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "interf_u:GND"
+net = "GND"
+at = [111.76, 205.74]
+rotation = 0
+fields.Value = { at = [111.76, 207.518], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [111.76, 205.74], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [111.76, 205.74], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.wire]]
+pts = [[213.36, 205.74], [220.98, 205.74]]
+
+[[sheet.wire]]
+pts = [[204.47, 36.83], [218.44, 36.83]]
+
+[[sheet.wire]]
+pts = [[33.02, 36.83], [34.29, 36.83]]
+
+[[sheet.wire]]
+pts = [[312.42, 167.64], [322.58, 167.64]]
+
+[[sheet.wire]]
+pts = [[86.36, 165.1], [99.06, 165.1]]
+
+[[sheet.wire]]
+pts = [[80.01, 87.63], [92.71, 87.63]]
+
+[[sheet.wire]]
+pts = [[312.42, 132.08], [323.85, 132.08]]
+
+[[sheet.wire]]
+pts = [[312.42, 137.16], [323.85, 137.16]]
+
+[[sheet.wire]]
+pts = [[312.42, 205.74], [322.58, 205.74]]
+
+[[sheet.wire]]
+pts = [[72.39, 182.88], [49.53, 182.88]]
+
+[[sheet.wire]]
+pts = [[80.01, 201.93], [80.01, 172.72]]
+
+[[sheet.wire]]
+pts = [[373.38, 180.34], [373.38, 185.42]]
+
+[[sheet.wire]]
+pts = [[372.11, 154.94], [373.38, 154.94]]
+
+[[sheet.wire]]
+pts = [[72.39, 237.49], [72.39, 238.76]]
+
+[[sheet.wire]]
+pts = [[373.38, 154.94], [373.38, 160.02]]
+
+[[sheet.wire]]
+pts = [[354.33, 26.67], [372.11, 26.67]]
+
+[[sheet.wire]]
+pts = [[312.42, 149.86], [323.85, 149.86]]
+
+[[sheet.wire]]
+pts = [[256.54, 132.08], [245.11, 132.08]]
+
+[[sheet.wire]]
+pts = [[88.9, 198.12], [99.06, 198.12]]
+
+[[sheet.wire]]
+pts = [[80.01, 52.07], [92.71, 52.07]]
+
+[[sheet.wire]]
+pts = [[34.29, 67.31], [21.59, 67.31]]
+
+[[sheet.wire]]
+pts = [[213.36, 213.36], [220.98, 213.36]]
+
+[[sheet.wire]]
+pts = [[25.4, 238.76], [41.91, 238.76]]
+
+[[sheet.wire]]
+pts = [[204.47, 49.53], [205.74, 49.53]]
+
+[[sheet.wire]]
+pts = [[36.83, 190.5], [34.29, 190.5]]
+
+[[sheet.wire]]
+pts = [[162.56, 52.07], [162.56, 59.69]]
+
+[[sheet.wire]]
+pts = [[213.36, 203.2], [220.98, 203.2]]
+
+[[sheet.wire]]
+pts = [[146.05, 41.91], [173.99, 41.91]]
+
+[[sheet.wire]]
+pts = [[172.72, 26.67], [173.99, 26.67]]
+
+[[sheet.wire]]
+pts = [[312.42, 83.82], [322.58, 83.82]]
+
+[[sheet.wire]]
+pts = [[55.88, 247.65], [55.88, 248.92]]
+
+[[sheet.wire]]
+pts = [[119.38, 93.98], [106.68, 93.98]]
+
+[[sheet.wire]]
+pts = [[80.01, 62.23], [91.44, 62.23]]
+
+[[sheet.wire]]
+pts = [[120.65, 49.53], [107.95, 49.53]]
+
+[[sheet.wire]]
+pts = [[177.8, 251.46], [167.64, 251.46]]
+
+[[sheet.wire]]
+pts = [[34.29, 185.42], [34.29, 187.96]]
+
+[[sheet.wire]]
+pts = [[177.8, 241.3], [167.64, 241.3]]
+
+[[sheet.wire]]
+pts = [[72.39, 182.88], [72.39, 190.5]]
+
+[[sheet.wire]]
+pts = [[177.8, 228.6], [167.64, 228.6]]
+
+[[sheet.wire]]
+pts = [[374.65, 177.8], [360.68, 177.8]]
+
+[[sheet.wire]]
+pts = [[120.65, 52.07], [120.65, 54.61]]
+
+[[sheet.wire]]
+pts = [[358.14, 105.41], [365.76, 105.41]]
+
+[[sheet.wire]]
+pts = [[312.42, 78.74], [322.58, 78.74]]
+
+[[sheet.wire]]
+pts = [[158.75, 251.46], [160.02, 251.46]]
+
+[[sheet.wire]]
+pts = [[86.36, 193.04], [86.36, 195.58]]
+
+[[sheet.wire]]
+pts = [[256.54, 167.64], [245.11, 167.64]]
+
+[[sheet.wire]]
+pts = [[77.47, 175.26], [77.47, 195.58]]
+
+[[sheet.wire]]
+pts = [[49.53, 185.42], [69.85, 185.42]]
+
+[[sheet.wire]]
+pts = [[144.78, 88.9], [153.67, 88.9]]
+
+[[sheet.wire]]
+pts = [[373.38, 175.26], [373.38, 180.34]]
+
+[[sheet.wire]]
+pts = [[256.54, 96.52], [245.11, 96.52]]
+
+[[sheet.wire]]
+pts = [[80.01, 41.91], [92.71, 41.91]]
+
+[[sheet.wire]]
+pts = [[177.8, 248.92], [167.64, 248.92]]
+
+[[sheet.wire]]
+pts = [[80.01, 97.79], [92.71, 97.79]]
+
+[[sheet.wire]]
+pts = [[80.01, 107.95], [92.71, 107.95]]
+
+[[sheet.wire]]
+pts = [[213.36, 218.44], [220.98, 218.44]]
+
+[[sheet.wire]]
+pts = [[312.42, 208.28], [322.58, 208.28]]
+
+[[sheet.wire]]
+pts = [[312.42, 147.32], [323.85, 147.32]]
+
+[[sheet.wire]]
+pts = [[256.54, 208.28], [245.11, 208.28]]
+
+[[sheet.wire]]
+pts = [[374.65, 210.82], [360.68, 210.82]]
+
+[[sheet.wire]]
+pts = [[80.01, 95.25], [92.71, 95.25]]
+
+[[sheet.wire]]
+pts = [[255.27, 83.82], [256.54, 83.82]]
+
+[[sheet.wire]]
+pts = [[67.31, 187.96], [99.06, 187.96]]
+
+[[sheet.wire]]
+pts = [[205.74, 49.53], [218.44, 49.53]]
+
+[[sheet.wire]]
+pts = [[312.42, 86.36], [322.58, 86.36]]
+
+[[sheet.wire]]
+pts = [[312.42, 152.4], [323.85, 152.4]]
+
+[[sheet.wire]]
+pts = [[62.23, 175.26], [49.53, 175.26]]
+
+[[sheet.wire]]
+pts = [[33.02, 107.95], [34.29, 107.95]]
+
+[[sheet.wire]]
+pts = [[34.29, 180.34], [34.29, 182.88]]
+
+[[sheet.wire]]
+pts = [[374.65, 160.02], [373.38, 160.02]]
+
+[[sheet.wire]]
+pts = [[146.05, 46.99], [173.99, 46.99]]
+
+[[sheet.wire]]
+pts = [[213.36, 220.98], [220.98, 220.98]]
+
+[[sheet.wire]]
+pts = [[346.71, 26.67], [335.28, 26.67]]
+
+[[sheet.wire]]
+pts = [[36.83, 180.34], [34.29, 180.34]]
+
+[[sheet.wire]]
+pts = [[177.8, 243.84], [167.64, 243.84]]
+
+[[sheet.wire]]
+pts = [[373.38, 185.42], [373.38, 190.5]]
+
+[[sheet.wire]]
+pts = [[256.54, 182.88], [245.11, 182.88]]
+
+[[sheet.wire]]
+pts = [[34.29, 187.96], [34.29, 190.5]]
+
+[[sheet.wire]]
+pts = [[119.38, 86.36], [106.68, 86.36]]
+
+[[sheet.wire]]
+pts = [[312.42, 185.42], [322.58, 185.42]]
+
+[[sheet.wire]]
+pts = [[77.47, 195.58], [77.47, 201.93]]
+
+[[sheet.wire]]
+pts = [[374.65, 157.48], [360.68, 157.48]]
+
+[[sheet.wire]]
+pts = [[120.65, 46.99], [107.95, 46.99]]
+
+[[sheet.wire]]
+pts = [[374.65, 182.88], [360.68, 182.88]]
+
+[[sheet.wire]]
+pts = [[80.01, 39.37], [92.71, 39.37]]
+
+[[sheet.wire]]
+pts = [[312.42, 180.34], [322.58, 180.34]]
+
+[[sheet.wire]]
+pts = [[74.93, 201.93], [74.93, 177.8]]
+
+[[sheet.wire]]
+pts = [[85.09, 175.26], [85.09, 172.72]]
+
+[[sheet.wire]]
+pts = [[33.02, 113.03], [34.29, 113.03]]
+
+[[sheet.wire]]
+pts = [[177.8, 233.68], [167.64, 233.68]]
+
+[[sheet.wire]]
+pts = [[312.42, 154.94], [323.85, 154.94]]
+
+[[sheet.wire]]
+pts = [[374.65, 172.72], [360.68, 172.72]]
+
+[[sheet.wire]]
+pts = [[312.42, 190.5], [322.58, 190.5]]
+
+[[sheet.wire]]
+pts = [[256.54, 99.06], [245.11, 99.06]]
+
+[[sheet.wire]]
+pts = [[67.31, 201.93], [67.31, 187.96]]
+
+[[sheet.wire]]
+pts = [[312.42, 175.26], [322.58, 175.26]]
+
+[[sheet.wire]]
+pts = [[312.42, 193.04], [322.58, 193.04]]
+
+[[sheet.wire]]
+pts = [[80.01, 105.41], [92.71, 105.41]]
+
+[[sheet.wire]]
+pts = [[346.71, 38.1], [335.28, 38.1]]
+
+[[sheet.wire]]
+pts = [[177.8, 213.36], [167.64, 213.36]]
+
+[[sheet.wire]]
+pts = [[256.54, 180.34], [245.11, 180.34]]
+
+[[sheet.wire]]
+pts = [[80.01, 54.61], [92.71, 54.61]]
+
+[[sheet.wire]]
+pts = [[62.23, 172.72], [62.23, 175.26]]
+
+[[sheet.wire]]
+pts = [[374.65, 152.4], [360.68, 152.4]]
+
+[[sheet.wire]]
+pts = [[177.8, 203.2], [167.64, 203.2]]
+
+[[sheet.wire]]
+pts = [[25.4, 237.49], [25.4, 238.76]]
+
+[[sheet.wire]]
+pts = [[213.36, 215.9], [220.98, 215.9]]
+
+[[sheet.wire]]
+pts = [[312.42, 142.24], [323.85, 142.24]]
+
+[[sheet.wire]]
+pts = [[49.53, 190.5], [64.77, 190.5]]
+
+[[sheet.wire]]
+pts = [[361.95, 38.1], [361.95, 45.72]]
+
+[[sheet.wire]]
+pts = [[256.54, 198.12], [245.11, 198.12]]
+
+[[sheet.wire]]
+pts = [[312.42, 96.52], [322.58, 96.52]]
+
+[[sheet.wire]]
+pts = [[374.65, 198.12], [360.68, 198.12]]
+
+[[sheet.wire]]
+pts = [[63.5, 177.8], [63.5, 175.26]]
+
+[[sheet.wire]]
+pts = [[256.54, 127], [245.11, 127]]
+
+[[sheet.wire]]
+pts = [[255.27, 76.2], [255.27, 78.74]]
+
+[[sheet.wire]]
+pts = [[34.29, 175.26], [36.83, 175.26]]
+
+[[sheet.wire]]
+pts = [[119.38, 96.52], [106.68, 96.52]]
+
+[[sheet.wire]]
+pts = [[256.54, 93.98], [245.11, 93.98]]
+
+[[sheet.wire]]
+pts = [[374.65, 167.64], [360.68, 167.64]]
+
+[[sheet.wire]]
+pts = [[358.14, 93.98], [365.76, 93.98]]
+
+[[sheet.wire]]
+pts = [[34.29, 175.26], [34.29, 177.8]]
+
+[[sheet.wire]]
+pts = [[312.42, 139.7], [323.85, 139.7]]
+
+[[sheet.wire]]
+pts = [[107.95, 109.22], [119.38, 109.22]]
+
+[[sheet.wire]]
+pts = [[36.83, 187.96], [34.29, 187.96]]
+
+[[sheet.wire]]
+pts = [[205.74, 59.69], [204.47, 59.69]]
+
+[[sheet.wire]]
+pts = [[144.78, 91.44], [153.67, 91.44]]
+
+[[sheet.wire]]
+pts = [[146.05, 39.37], [173.99, 39.37]]
+
+[[sheet.wire]]
+pts = [[36.83, 182.88], [34.29, 182.88]]
+
+[[sheet.wire]]
+pts = [[41.91, 248.92], [55.88, 248.92]]
+
+[[sheet.wire]]
+pts = [[365.76, 93.98], [372.11, 93.98]]
+
+[[sheet.wire]]
+pts = [[62.23, 201.93], [62.23, 193.04]]
+
+[[sheet.wire]]
+pts = [[312.42, 144.78], [323.85, 144.78]]
+
+[[sheet.wire]]
+pts = [[69.85, 201.93], [69.85, 185.42]]
+
+[[sheet.wire]]
+pts = [[381, 93.98], [379.73, 93.98]]
+
+[[sheet.wire]]
+pts = [[85.09, 172.72], [80.01, 172.72]]
+
+[[sheet.wire]]
+pts = [[49.53, 193.04], [62.23, 193.04]]
+
+[[sheet.wire]]
+pts = [[256.54, 195.58], [245.11, 195.58]]
+
+[[sheet.wire]]
+pts = [[342.9, 93.98], [342.9, 105.41]]
+
+[[sheet.wire]]
+pts = [[120.65, 62.23], [120.65, 64.77]]
+
+[[sheet.wire]]
+pts = [[66.04, 177.8], [74.93, 177.8]]
+
+[[sheet.wire]]
+pts = [[107.95, 36.83], [120.65, 36.83]]
+
+[[sheet.wire]]
+pts = [[146.05, 49.53], [157.48, 49.53]]
+
+[[sheet.wire]]
+pts = [[177.8, 236.22], [167.64, 236.22]]
+
+[[sheet.wire]]
+pts = [[256.54, 177.8], [245.11, 177.8]]
+
+[[sheet.wire]]
+pts = [[86.36, 195.58], [77.47, 195.58]]
+
+[[sheet.wire]]
+pts = [[374.65, 205.74], [360.68, 205.74]]
+
+[[sheet.wire]]
+pts = [[312.42, 177.8], [322.58, 177.8]]
+
+[[sheet.wire]]
+pts = [[256.54, 106.68], [245.11, 106.68]]
+
+[[sheet.wire]]
+pts = [[256.54, 81.28], [255.27, 81.28]]
+
+[[sheet.wire]]
+pts = [[256.54, 124.46], [245.11, 124.46]]
+
+[[sheet.wire]]
+pts = [[49.53, 177.8], [63.5, 177.8]]
+
+[[sheet.wire]]
+pts = [[256.54, 134.62], [245.11, 134.62]]
+
+[[sheet.wire]]
+pts = [[80.01, 49.53], [92.71, 49.53]]
+
+[[sheet.wire]]
+pts = [[256.54, 172.72], [245.11, 172.72]]
+
+[[sheet.wire]]
+pts = [[177.8, 218.44], [167.64, 218.44]]
+
+[[sheet.wire]]
+pts = [[256.54, 170.18], [245.11, 170.18]]
+
+[[sheet.wire]]
+pts = [[99.06, 193.04], [86.36, 193.04]]
+
+[[sheet.wire]]
+pts = [[33.02, 41.91], [34.29, 41.91]]
+
+[[sheet.wire]]
+pts = [[34.29, 177.8], [34.29, 180.34]]
+
+[[sheet.wire]]
+pts = [[83.82, 201.93], [82.55, 201.93]]
+
+[[sheet.wire]]
+pts = [[83.82, 193.04], [83.82, 185.42]]
+
+[[sheet.wire]]
+pts = [[119.38, 88.9], [106.68, 88.9]]
+
+[[sheet.wire]]
+pts = [[374.65, 175.26], [373.38, 175.26]]
+
+[[sheet.wire]]
+pts = [[312.42, 127], [323.85, 127]]
+
+[[sheet.wire]]
+pts = [[312.42, 106.68], [326.39, 106.68]]
+
+[[sheet.wire]]
+pts = [[373.38, 160.02], [373.38, 165.1]]
+
+[[sheet.wire]]
+pts = [[72.39, 248.92], [72.39, 250.19]]
+
+[[sheet.wire]]
+pts = [[256.54, 175.26], [245.11, 175.26]]
+
+[[sheet.wire]]
+pts = [[80.01, 113.03], [92.71, 113.03]]
+
+[[sheet.wire]]
+pts = [[312.42, 200.66], [322.58, 200.66]]
+
+[[sheet.wire]]
+pts = [[86.36, 157.48], [99.06, 157.48]]
+
+[[sheet.wire]]
+pts = [[73.66, 181.61], [73.66, 182.88]]
+
+[[sheet.wire]]
+pts = [[99.06, 175.26], [85.09, 175.26]]
+
+[[sheet.wire]]
+pts = [[99.06, 190.5], [72.39, 190.5]]
+
+[[sheet.wire]]
+pts = [[374.65, 187.96], [360.68, 187.96]]
+
+[[sheet.wire]]
+pts = [[365.76, 93.98], [365.76, 105.41]]
+
+[[sheet.wire]]
+pts = [[144.78, 101.6], [153.67, 101.6]]
+
+[[sheet.wire]]
+pts = [[69.85, 185.42], [82.55, 185.42]]
+
+[[sheet.wire]]
+pts = [[256.54, 121.92], [245.11, 121.92]]
+
+[[sheet.wire]]
+pts = [[34.29, 182.88], [34.29, 185.42]]
+
+[[sheet.wire]]
+pts = [[256.54, 114.3], [245.11, 114.3]]
+
+[[sheet.wire]]
+pts = [[146.05, 44.45], [173.99, 44.45]]
+
+[[sheet.wire]]
+pts = [[256.54, 104.14], [245.11, 104.14]]
+
+[[sheet.wire]]
+pts = [[25.4, 248.92], [41.91, 248.92]]
+
+[[sheet.wire]]
+pts = [[312.42, 187.96], [322.58, 187.96]]
+
+[[sheet.wire]]
+pts = [[80.01, 57.15], [92.71, 57.15]]
+
+[[sheet.wire]]
+pts = [[119.38, 104.14], [106.68, 104.14]]
+
+[[sheet.wire]]
+pts = [[144.78, 93.98], [153.67, 93.98]]
+
+[[sheet.wire]]
+pts = [[255.27, 78.74], [255.27, 81.28]]
+
+[[sheet.wire]]
+pts = [[146.05, 36.83], [173.99, 36.83]]
+
+[[sheet.wire]]
+pts = [[177.8, 256.54], [167.64, 256.54]]
+
+[[sheet.wire]]
+pts = [[83.82, 185.42], [99.06, 185.42]]
+
+[[sheet.wire]]
+pts = [[256.54, 101.6], [245.11, 101.6]]
+
+[[sheet.wire]]
+pts = [[256.54, 193.04], [245.11, 193.04]]
+
+[[sheet.wire]]
+pts = [[365.76, 105.41], [365.76, 111.76]]
+
+[[sheet.wire]]
+pts = [[373.38, 170.18], [373.38, 175.26]]
+
+[[sheet.wire]]
+pts = [[312.42, 91.44], [322.58, 91.44]]
+
+[[sheet.wire]]
+pts = [[41.91, 247.65], [41.91, 248.92]]
+
+[[sheet.wire]]
+pts = [[34.29, 190.5], [34.29, 193.04]]
+
+[[sheet.wire]]
+pts = [[80.01, 90.17], [92.71, 90.17]]
+
+[[sheet.wire]]
+pts = [[107.95, 39.37], [120.65, 39.37]]
+
+[[sheet.wire]]
+pts = [[312.42, 198.12], [322.58, 198.12]]
+
+[[sheet.wire]]
+pts = [[161.29, 31.75], [173.99, 31.75]]
+
+[[sheet.wire]]
+pts = [[374.65, 185.42], [373.38, 185.42]]
+
+[[sheet.wire]]
+pts = [[177.8, 231.14], [167.64, 231.14]]
+
+[[sheet.wire]]
+pts = [[119.38, 91.44], [106.68, 91.44]]
+
+[[sheet.wire]]
+pts = [[86.36, 152.4], [99.06, 152.4]]
+
+[[sheet.wire]]
+pts = [[80.01, 110.49], [92.71, 110.49]]
+
+[[sheet.wire]]
+pts = [[205.74, 26.67], [204.47, 26.67]]
+
+[[sheet.wire]]
+pts = [[49.53, 187.96], [67.31, 187.96]]
+
+[[sheet.wire]]
+pts = [[374.65, 195.58], [360.68, 195.58]]
+
+[[sheet.wire]]
+pts = [[64.77, 190.5], [64.77, 201.93]]
+
+[[sheet.wire]]
+pts = [[256.54, 144.78], [245.11, 144.78]]
+
+[[sheet.wire]]
+pts = [[312.42, 162.56], [322.58, 162.56]]
+
+[[sheet.wire]]
+pts = [[204.47, 34.29], [218.44, 34.29]]
+
+[[sheet.wire]]
+pts = [[63.5, 175.26], [77.47, 175.26]]
+
+[[sheet.wire]]
+pts = [[374.65, 200.66], [360.68, 200.66]]
+
+[[sheet.wire]]
+pts = [[374.65, 208.28], [360.68, 208.28]]
+
+[[sheet.wire]]
+pts = [[256.54, 147.32], [245.11, 147.32]]
+
+[[sheet.wire]]
+pts = [[34.29, 69.85], [21.59, 69.85]]
+
+[[sheet.wire]]
+pts = [[66.04, 180.34], [49.53, 180.34]]
+
+[[sheet.wire]]
+pts = [[177.8, 238.76], [167.64, 238.76]]
+
+[[sheet.wire]]
+pts = [[256.54, 116.84], [245.11, 116.84]]
+
+[[sheet.wire]]
+pts = [[373.38, 165.1], [373.38, 170.18]]
+
+[[sheet.wire]]
+pts = [[86.36, 170.18], [99.06, 170.18]]
+
+[[sheet.wire]]
+pts = [[213.36, 208.28], [220.98, 208.28]]
+
+[[sheet.wire]]
+pts = [[312.42, 121.92], [323.85, 121.92]]
+
+[[sheet.wire]]
+pts = [[25.4, 247.65], [25.4, 248.92]]
+
+[[sheet.wire]]
+pts = [[72.39, 190.5], [72.39, 201.93]]
+
+[[sheet.wire]]
+pts = [[312.42, 114.3], [326.39, 114.3]]
+
+[[sheet.wire]]
+pts = [[256.54, 149.86], [245.11, 149.86]]
+
+[[sheet.wire]]
+pts = [[256.54, 190.5], [245.11, 190.5]]
+
+[[sheet.wire]]
+pts = [[144.78, 96.52], [153.67, 96.52]]
+
+[[sheet.wire]]
+pts = [[36.83, 193.04], [34.29, 193.04]]
+
+[[sheet.wire]]
+pts = [[374.65, 193.04], [360.68, 193.04]]
+
+[[sheet.wire]]
+pts = [[373.38, 190.5], [374.65, 190.5]]
+
+[[sheet.wire]]
+pts = [[177.8, 254], [167.64, 254]]
+
+[[sheet.wire]]
+pts = [[86.36, 160.02], [99.06, 160.02]]
+
+[[sheet.wire]]
+pts = [[36.83, 177.8], [34.29, 177.8]]
+
+[[sheet.wire]]
+pts = [[25.4, 248.92], [25.4, 250.19]]
+
+[[sheet.wire]]
+pts = [[86.36, 154.94], [99.06, 154.94]]
+
+[[sheet.wire]]
+pts = [[177.8, 220.98], [167.64, 220.98]]
+
+[[sheet.wire]]
+pts = [[120.65, 59.69], [120.65, 62.23]]
+
+[[sheet.wire]]
+pts = [[82.55, 180.34], [99.06, 180.34]]
+
+[[sheet.wire]]
+pts = [[342.9, 105.41], [342.9, 111.76]]
+
+[[sheet.wire]]
+pts = [[55.88, 248.92], [72.39, 248.92]]
+
+[[sheet.wire]]
+pts = [[256.54, 205.74], [245.11, 205.74]]
+
+[[sheet.wire]]
+pts = [[205.74, 49.53], [205.74, 59.69]]
+
+[[sheet.wire]]
+pts = [[25.4, 238.76], [25.4, 240.03]]
+
+[[sheet.wire]]
+pts = [[312.42, 81.28], [322.58, 81.28]]
+
+[[sheet.wire]]
+pts = [[86.36, 162.56], [99.06, 162.56]]
+
+[[sheet.wire]]
+pts = [[374.65, 203.2], [360.68, 203.2]]
+
+[[sheet.wire]]
+pts = [[107.95, 111.76], [119.38, 111.76]]
+
+[[sheet.wire]]
+pts = [[256.54, 185.42], [245.11, 185.42]]
+
+[[sheet.wire]]
+pts = [[72.39, 247.65], [72.39, 248.92]]
+
+[[sheet.wire]]
+pts = [[312.42, 134.62], [323.85, 134.62]]
+
+[[sheet.wire]]
+pts = [[80.01, 46.99], [92.71, 46.99]]
+
+[[sheet.wire]]
+pts = [[342.9, 105.41], [350.52, 105.41]]
+
+[[sheet.wire]]
+pts = [[342.9, 93.98], [350.52, 93.98]]
+
+[[sheet.wire]]
+pts = [[62.23, 193.04], [83.82, 193.04]]
+
+[[sheet.wire]]
+pts = [[177.8, 205.74], [167.64, 205.74]]
+
+[[sheet.wire]]
+pts = [[204.47, 46.99], [218.44, 46.99]]
+
+[[sheet.wire]]
+pts = [[177.8, 215.9], [167.64, 215.9]]
+
+[[sheet.wire]]
+pts = [[312.42, 203.2], [322.58, 203.2]]
+
+[[sheet.wire]]
+pts = [[372.11, 26.67], [372.11, 34.29]]
+
+[[sheet.wire]]
+pts = [[177.8, 210.82], [167.64, 210.82]]
+
+[[sheet.wire]]
+pts = [[41.91, 238.76], [41.91, 240.03]]
+
+[[sheet.wire]]
+pts = [[256.54, 203.2], [245.11, 203.2]]
+
+[[sheet.wire]]
+pts = [[256.54, 91.44], [245.11, 91.44]]
+
+[[sheet.wire]]
+pts = [[204.47, 39.37], [218.44, 39.37]]
+
+[[sheet.wire]]
+pts = [[107.95, 44.45], [120.65, 44.45]]
+
+[[sheet.wire]]
+pts = [[204.47, 44.45], [218.44, 44.45]]
+
+[[sheet.wire]]
+pts = [[177.8, 208.28], [167.64, 208.28]]
+
+[[sheet.wire]]
+pts = [[204.47, 41.91], [218.44, 41.91]]
+
+[[sheet.wire]]
+pts = [[312.42, 93.98], [342.9, 93.98]]
+
+[[sheet.wire]]
+pts = [[381, 93.98], [381, 88.9]]
+
+[[sheet.wire]]
+pts = [[124.46, 152.4], [137.16, 152.4]]
+
+[[sheet.wire]]
+pts = [[80.01, 102.87], [92.71, 102.87]]
+
+[[sheet.wire]]
+pts = [[374.65, 170.18], [373.38, 170.18]]
+
+[[sheet.wire]]
+pts = [[374.65, 213.36], [360.68, 213.36]]
+
+[[sheet.wire]]
+pts = [[373.38, 154.94], [374.65, 154.94]]
+
+[[sheet.wire]]
+pts = [[72.39, 238.76], [72.39, 240.03]]
+
+[[sheet.wire]]
+pts = [[374.65, 162.56], [360.68, 162.56]]
+
+[[sheet.wire]]
+pts = [[144.78, 99.06], [153.67, 99.06]]
+
+[[sheet.wire]]
+pts = [[55.88, 238.76], [72.39, 238.76]]
+
+[[sheet.wire]]
+pts = [[256.54, 88.9], [245.11, 88.9]]
+
+[[sheet.wire]]
+pts = [[204.47, 31.75], [218.44, 31.75]]
+
+[[sheet.wire]]
+pts = [[64.77, 181.61], [64.77, 190.5]]
+
+[[sheet.wire]]
+pts = [[66.04, 177.8], [66.04, 180.34]]
+
+[[sheet.wire]]
+pts = [[312.42, 119.38], [323.85, 119.38]]
+
+[[sheet.wire]]
+pts = [[256.54, 78.74], [255.27, 78.74]]
+
+[[sheet.wire]]
+pts = [[312.42, 165.1], [322.58, 165.1]]
+
+[[sheet.wire]]
+pts = [[107.95, 52.07], [120.65, 52.07]]
+
+[[sheet.wire]]
+pts = [[41.91, 238.76], [55.88, 238.76]]
+
+[[sheet.wire]]
+pts = [[312.42, 195.58], [322.58, 195.58]]
+
+[[sheet.wire]]
+pts = [[119.38, 101.6], [106.68, 101.6]]
+
+[[sheet.wire]]
+pts = [[381, 88.9], [312.42, 88.9]]
+
+[[sheet.wire]]
+pts = [[312.42, 182.88], [322.58, 182.88]]
+
+[[sheet.wire]]
+pts = [[177.8, 226.06], [167.64, 226.06]]
+
+[[sheet.wire]]
+pts = [[80.01, 85.09], [92.71, 85.09]]
+
+[[sheet.wire]]
+pts = [[256.54, 142.24], [245.11, 142.24]]
+
+[[sheet.wire]]
+pts = [[20.32, 39.37], [34.29, 39.37]]
+
+[[sheet.wire]]
+pts = [[80.01, 172.72], [62.23, 172.72]]
+
+[[sheet.wire]]
+pts = [[374.65, 180.34], [373.38, 180.34]]
+
+[[sheet.wire]]
+pts = [[162.56, 59.69], [173.99, 59.69]]
+
+[[sheet.wire]]
+pts = [[86.36, 167.64], [99.06, 167.64]]
+
+[[sheet.wire]]
+pts = [[74.93, 177.8], [99.06, 177.8]]
+
+[[sheet.wire]]
+pts = [[80.01, 100.33], [92.71, 100.33]]
+
+[[sheet.wire]]
+pts = [[213.36, 210.82], [220.98, 210.82]]
+
+[[sheet.wire]]
+pts = [[34.29, 193.04], [34.29, 195.58]]
+
+[[sheet.wire]]
+pts = [[80.01, 44.45], [92.71, 44.45]]
+
+[[sheet.wire]]
+pts = [[146.05, 52.07], [162.56, 52.07]]
+
+[[sheet.wire]]
+pts = [[255.27, 81.28], [255.27, 83.82]]
+
+[[sheet.wire]]
+pts = [[107.95, 41.91], [120.65, 41.91]]
+
+[[sheet.wire]]
+pts = [[73.66, 182.88], [99.06, 182.88]]
+
+[[sheet.wire]]
+pts = [[119.38, 99.06], [106.68, 99.06]]
+
+[[sheet.wire]]
+pts = [[36.83, 185.42], [34.29, 185.42]]
+
+[[sheet.wire]]
+pts = [[177.8, 223.52], [167.64, 223.52]]
+
+[[sheet.wire]]
+pts = [[55.88, 238.76], [55.88, 240.03]]
+
+[[sheet.wire]]
+pts = [[80.01, 92.71], [92.71, 92.71]]
+
+[[sheet.wire]]
+pts = [[64.77, 181.61], [73.66, 181.61]]
+
+[[sheet.wire]]
+pts = [[256.54, 187.96], [245.11, 187.96]]
+
+[[sheet.wire]]
+pts = [[204.47, 54.61], [218.44, 54.61]]
+
+[[sheet.wire]]
+pts = [[256.54, 119.38], [245.11, 119.38]]
+
+[[sheet.wire]]
+pts = [[144.78, 104.14], [153.67, 104.14]]
+
+[[sheet.wire]]
+pts = [[354.33, 38.1], [361.95, 38.1]]
+
+[[sheet.wire]]
+pts = [[144.78, 86.36], [153.67, 86.36]]
+
+[[sheet.wire]]
+pts = [[82.55, 185.42], [82.55, 180.34]]
+
+[[sheet.wire]]
+pts = [[374.65, 165.1], [373.38, 165.1]]
+
+[[sheet.bus]]
+pts = [[104.14, 86.36], [104.14, 88.9]]
+
+[[sheet.bus]]
+pts = [[104.14, 83.82], [104.14, 86.36]]
+
+[[sheet.bus]]
+pts = [[95.25, 105.41], [95.25, 107.95]]
+
+[[sheet.bus]]
+pts = [[104.14, 91.44], [104.14, 93.98]]
+
+[[sheet.bus]]
+pts = [[83.82, 154.94], [83.82, 157.48]]
+
+[[sheet.bus]]
+pts = [[95.25, 49.53], [95.25, 52.07]]
+
+[[sheet.bus]]
+pts = [[95.25, 90.17], [95.25, 92.71]]
+
+[[sheet.bus]]
+pts = [[95.25, 41.91], [95.25, 44.45]]
+
+[[sheet.bus]]
+pts = [[83.82, 135.89], [83.82, 149.86]]
+
+[[sheet.bus]]
+pts = [[95.25, 54.61], [95.25, 57.15]]
+
+[[sheet.bus]]
+pts = [[83.82, 152.4], [83.82, 154.94]]
+
+[[sheet.bus]]
+pts = [[95.25, 95.25], [95.25, 97.79]]
+
+[[sheet.bus]]
+pts = [[95.25, 87.63], [95.25, 90.17]]
+
+[[sheet.bus]]
+pts = [[83.82, 149.86], [83.82, 152.4]]
+
+[[sheet.bus]]
+pts = [[83.82, 165.1], [83.82, 167.64]]
+
+[[sheet.bus]]
+pts = [[95.25, 57.15], [95.25, 59.69]]
+
+[[sheet.bus]]
+pts = [[83.82, 160.02], [83.82, 162.56]]
+
+[[sheet.bus]]
+pts = [[95.25, 110.49], [95.25, 113.03]]
+
+[[sheet.bus]]
+pts = [[104.14, 88.9], [104.14, 91.44]]
+
+[[sheet.bus]]
+pts = [[95.25, 113.03], [95.25, 115.57]]
+
+[[sheet.bus]]
+pts = [[95.25, 44.45], [95.25, 46.99]]
+
+[[sheet.bus]]
+pts = [[104.14, 93.98], [104.14, 96.52]]
+
+[[sheet.bus]]
+pts = [[95.25, 100.33], [95.25, 102.87]]
+
+[[sheet.bus]]
+pts = [[95.25, 97.79], [95.25, 100.33]]
+
+[[sheet.bus]]
+pts = [[104.14, 62.23], [104.14, 83.82]]
+
+[[sheet.bus]]
+pts = [[95.25, 52.07], [95.25, 54.61]]
+
+[[sheet.bus]]
+pts = [[95.25, 102.87], [95.25, 105.41]]
+
+[[sheet.bus]]
+pts = [[95.25, 62.23], [104.14, 62.23]]
+
+[[sheet.bus]]
+pts = [[95.25, 135.89], [83.82, 135.89]]
+
+[[sheet.bus]]
+pts = [[83.82, 162.56], [83.82, 165.1]]
+
+[[sheet.bus]]
+pts = [[104.14, 96.52], [104.14, 99.06]]
+
+[[sheet.bus]]
+pts = [[83.82, 157.48], [83.82, 160.02]]
+
+[[sheet.bus]]
+pts = [[95.25, 92.71], [95.25, 95.25]]
+
+[[sheet.bus]]
+pts = [[95.25, 46.99], [95.25, 49.53]]
+
+[[sheet.bus]]
+pts = [[104.14, 99.06], [104.14, 101.6]]
+
+[[sheet.bus]]
+pts = [[95.25, 107.95], [95.25, 110.49]]
+
+[[sheet.bus]]
+pts = [[95.25, 59.69], [95.25, 62.23]]
+
+[[sheet.bus]]
+pts = [[95.25, 115.57], [95.25, 135.89]]
+
+[[sheet.bus_entry]]
+at = [92.71, 97.79]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [92.71, 52.07]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [92.71, 105.41]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [83.82, 152.4]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [92.71, 46.99]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [83.82, 167.64]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [92.71, 41.91]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [92.71, 102.87]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [83.82, 160.02]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [92.71, 107.95]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [104.14, 91.44]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [92.71, 100.33]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [92.71, 92.71]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [104.14, 93.98]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [83.82, 162.56]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [83.82, 157.48]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [92.71, 110.49]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [92.71, 49.53]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [104.14, 88.9]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [104.14, 96.52]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [104.14, 86.36]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [92.71, 113.03]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [104.14, 101.6]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [92.71, 90.17]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [92.71, 44.45]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [92.71, 54.61]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [92.71, 57.15]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [92.71, 85.09]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [92.71, 87.63]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [104.14, 83.82]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [92.71, 39.37]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [83.82, 154.94]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [104.14, 99.06]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [83.82, 165.1]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [83.82, 149.86]
+size = [2.54, 2.54]
+
+[[sheet.bus_entry]]
+at = [92.71, 95.25]
+size = [2.54, 2.54]
+
+[[sheet.junction]]
+at = [373.38, 154.94]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [373.38, 160.02]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [34.29, 182.88]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [72.39, 248.92]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [365.76, 93.98]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [255.27, 81.28]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [41.91, 248.92]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [373.38, 170.18]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [342.9, 93.98]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [25.4, 238.76]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [34.29, 177.8]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [72.39, 190.5]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [77.47, 195.58]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [373.38, 185.42]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [64.77, 190.5]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [55.88, 238.76]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [80.01, 172.72]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [34.29, 193.04]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [34.29, 185.42]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [69.85, 185.42]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [41.91, 238.76]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [255.27, 78.74]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [34.29, 187.96]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [365.76, 105.41]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [25.4, 248.92]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [205.74, 49.53]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [342.9, 105.41]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [34.29, 190.5]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [34.29, 180.34]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [120.65, 52.07]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [74.93, 177.8]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [373.38, 165.1]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [373.38, 175.26]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [373.38, 180.34]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [72.39, 238.76]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [55.88, 248.92]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [67.31, 187.96]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [120.65, 62.23]
+diameter = 0.8128
+
+[[sheet.junction]]
+at = [62.23, 193.04]
+diameter = 0.8128
+
+[[sheet.no_connect]]
+at = [312.42, 210.82]
+
+[[sheet.no_connect]]
+at = [80.01, 77.47]
+
+[[sheet.no_connect]]
+at = [173.99, 49.53]
+
+[[sheet.no_connect]]
+at = [34.29, 110.49]
+
+[[sheet.no_connect]]
+at = [256.54, 154.94]
+
+[[sheet.no_connect]]
+at = [80.01, 80.01]
+
+[[sheet.no_connect]]
+at = [312.42, 160.02]
+
+[[sheet.no_connect]]
+at = [34.29, 59.69]
+
+[[sheet.no_connect]]
+at = [34.29, 90.17]
+
+[[sheet.no_connect]]
+at = [312.42, 124.46]
+
+[[sheet.no_connect]]
+at = [34.29, 46.99]
+
+[[sheet.no_connect]]
+at = [34.29, 97.79]
+
+[[sheet.no_connect]]
+at = [34.29, 54.61]
+
+[[sheet.no_connect]]
+at = [312.42, 99.06]
+
+[[sheet.no_connect]]
+at = [80.01, 64.77]
+
+[[sheet.no_connect]]
+at = [256.54, 137.16]
+
+[[sheet.no_connect]]
+at = [34.29, 102.87]
+
+[[sheet.no_connect]]
+at = [34.29, 95.25]
+
+[[sheet.no_connect]]
+at = [173.99, 52.07]
+
+[[sheet.no_connect]]
+at = [256.54, 129.54]
+
+[[sheet.no_connect]]
+at = [312.42, 116.84]
+
+[[sheet.no_connect]]
+at = [34.29, 72.39]
+
+[[sheet.no_connect]]
+at = [256.54, 157.48]
+
+[[sheet.no_connect]]
+at = [312.42, 104.14]
+
+[[sheet.no_connect]]
+at = [80.01, 67.31]
+
+[[sheet.no_connect]]
+at = [34.29, 100.33]
+
+[[sheet.no_connect]]
+at = [80.01, 36.83]
+
+[[sheet.no_connect]]
+at = [312.42, 170.18]
+
+[[sheet.no_connect]]
+at = [34.29, 77.47]
+
+[[sheet.no_connect]]
+at = [34.29, 64.77]
+
+[[sheet.no_connect]]
+at = [34.29, 80.01]
+
+[[sheet.no_connect]]
+at = [146.05, 54.61]
+
+[[sheet.no_connect]]
+at = [256.54, 160.02]
+
+[[sheet.no_connect]]
+at = [34.29, 87.63]
+
+[[sheet.no_connect]]
+at = [34.29, 85.09]
+
+[[sheet.no_connect]]
+at = [312.42, 129.54]
+
+[[sheet.no_connect]]
+at = [34.29, 57.15]
+
+[[sheet.no_connect]]
+at = [256.54, 139.7]
+
+[[sheet.no_connect]]
+at = [256.54, 165.1]
+
+[[sheet.no_connect]]
+at = [312.42, 109.22]
+
+[[sheet.no_connect]]
+at = [256.54, 152.4]
+
+[[sheet.no_connect]]
+at = [173.99, 54.61]
+
+[[sheet.no_connect]]
+at = [312.42, 172.72]
+
+[[sheet.no_connect]]
+at = [34.29, 62.23]
+
+[[sheet.no_connect]]
+at = [34.29, 92.71]
+
+[[sheet.no_connect]]
+at = [80.01, 72.39]
+
+[[sheet.no_connect]]
+at = [312.42, 101.6]
+
+[[sheet.no_connect]]
+at = [34.29, 52.07]
+
+[[sheet.no_connect]]
+at = [312.42, 157.48]
+
+[[sheet.no_connect]]
+at = [80.01, 59.69]
+
+[[sheet.no_connect]]
+at = [34.29, 105.41]
+
+[[sheet.no_connect]]
+at = [59.69, 201.93]
+
+[[sheet.no_connect]]
+at = [256.54, 200.66]
+
+[[sheet.no_connect]]
+at = [34.29, 82.55]
+
+[[sheet.no_connect]]
+at = [34.29, 44.45]
+
+[[sheet.no_connect]]
+at = [80.01, 82.55]
+
+[[sheet.no_connect]]
+at = [80.01, 74.93]
+
+[[sheet.no_connect]]
+at = [256.54, 210.82]
+
+[[sheet.no_connect]]
+at = [34.29, 49.53]
+
+[[sheet.no_connect]]
+at = [34.29, 74.93]
+
+[[sheet.no_connect]]
+at = [256.54, 162.56]
+
+[[sheet.no_connect]]
+at = [312.42, 111.76]
+
+[[sheet.no_connect]]
+at = [80.01, 69.85]
+
+[[sheet.label]]
+kind = "local"
+text = "PC-DB0"
+at = [107.95, 86.36]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MD5"
+at = [246.38, 182.88]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "BUST+"
+at = [313.69, 177.8]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA6"
+at = [170.18, 218.44]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA15"
+at = [246.38, 116.84]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-WR"
+at = [157.48, 46.99]
+rotation = 180
+font = { size = [1.524, 1.524] }
+justify = "right bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "LED1"
+at = [335.28, 26.67]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MD0"
+at = [246.38, 170.18]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MD1"
+at = [214.63, 205.74]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA4"
+at = [170.18, 213.36]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA15"
+at = [170.18, 241.3]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "WR-"
+at = [170.18, 256.54]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A1"
+at = [313.69, 121.92]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA12"
+at = [170.18, 233.68]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A8"
+at = [88.9, 154.94]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA12"
+at = [246.38, 124.46]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-DB6"
+at = [82.55, 41.91]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "BIT1"
+at = [361.95, 203.2]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A10"
+at = [82.55, 87.63]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "OE-"
+at = [170.18, 254]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "BIT5"
+at = [361.95, 182.88]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA3"
+at = [170.18, 210.82]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "CLKLCA"
+at = [246.38, 99.06]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-DB3"
+at = [82.55, 49.53]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A2"
+at = [82.55, 107.95]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA6"
+at = [246.38, 121.92]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "BIT1"
+at = [313.69, 198.12]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "SLCT+"
+at = [361.95, 152.4]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "SEL_LPT"
+at = [207.01, 41.91]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "STROBE"
+at = [361.95, 213.36]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-DB4"
+at = [82.55, 46.99]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA0"
+at = [246.38, 198.12]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "D0"
+at = [246.38, 93.98]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-DB6"
+at = [107.95, 101.6]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "BIT4"
+at = [361.95, 187.96]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "BIT2"
+at = [313.69, 195.58]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-DB[0..7]"
+at = [104.14, 76.2]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A3"
+at = [107.95, 44.45]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA3"
+at = [246.38, 142.24]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "BIT0"
+at = [361.95, 208.28]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-RD"
+at = [313.69, 139.7]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MD7"
+at = [214.63, 220.98]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA2"
+at = [246.38, 144.78]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "BIT0"
+at = [313.69, 208.28]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A0"
+at = [313.69, 127]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA14"
+at = [246.38, 127]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "D2"
+at = [147.32, 91.44]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "SLCTIN-"
+at = [313.69, 200.66]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA16"
+at = [246.38, 190.5]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "DIR"
+at = [207.01, 44.45]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA11"
+at = [246.38, 134.62]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA9"
+at = [246.38, 167.64]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-AEN"
+at = [91.44, 62.23]
+rotation = 180
+font = { size = [1.524, 1.524] }
+justify = "right bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "SLCT+"
+at = [313.69, 162.56]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-IOW"
+at = [107.95, 46.99]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "D5"
+at = [147.32, 99.06]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "D1"
+at = [313.69, 137.16]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "WR_REG"
+at = [207.01, 49.53]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A[0..11]"
+at = [95.25, 120.65]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "CLKLCA"
+at = [207.01, 46.99]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA10"
+at = [246.38, 203.2]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "LED2"
+at = [335.28, 38.1]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A3"
+at = [82.55, 105.41]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A7"
+at = [82.55, 95.25]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "D7"
+at = [147.32, 104.14]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "ENBBUF"
+at = [107.95, 111.76]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-DB5"
+at = [82.55, 44.45]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "BIT4"
+at = [313.69, 190.5]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "REF9"
+at = [50.8, 185.42]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "D6"
+at = [147.32, 101.6]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-DB5"
+at = [107.95, 99.06]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A1"
+at = [82.55, 110.49]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA1"
+at = [170.18, 205.74]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A4"
+at = [313.69, 86.36]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "D5"
+at = [313.69, 152.4]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA14"
+at = [170.18, 238.76]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "REF11"
+at = [50.8, 190.5]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A5"
+at = [82.55, 100.33]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A9"
+at = [82.55, 90.17]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A7"
+at = [313.69, 81.28]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A0"
+at = [107.95, 39.37]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-DB7"
+at = [82.55, 39.37]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA2"
+at = [170.18, 208.28]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A11"
+at = [88.9, 160.02]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "BIT3"
+at = [361.95, 193.04]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A9"
+at = [88.9, 157.48]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "DONE"
+at = [246.38, 91.44]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "BIT5"
+at = [313.69, 185.42]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A6"
+at = [82.55, 97.79]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A6"
+at = [313.69, 83.82]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MD1"
+at = [246.38, 172.72]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "D2"
+at = [313.69, 142.24]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "LED1"
+at = [246.38, 96.52]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA8"
+at = [246.38, 114.3]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "RSTL"
+at = [149.86, 52.07]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MATCHL"
+at = [125.73, 152.4]
+rotation = 0
+font = { size = [1.524, 1.524], thickness = 0.3048, bold = true, italic = true }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-IOW"
+at = [21.59, 67.31]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A7"
+at = [88.9, 165.1]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "INIT-"
+at = [361.95, 200.66]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A3"
+at = [313.69, 96.52]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-IOR"
+at = [21.59, 69.85]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "ERROR-"
+at = [313.69, 203.2]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A9"
+at = [313.69, 134.62]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "STROBE"
+at = [245.11, 205.74]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-DB2"
+at = [107.95, 91.44]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MD6"
+at = [246.38, 185.42]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PROG-"
+at = [246.38, 88.9]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A2"
+at = [313.69, 119.38]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "LED2"
+at = [246.38, 101.6]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA0"
+at = [170.18, 203.2]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "D1"
+at = [147.32, 88.9]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-RD"
+at = [157.48, 49.53]
+rotation = 180
+font = { size = [1.524, 1.524] }
+justify = "right bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A2"
+at = [107.95, 41.91]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "BUST+"
+at = [361.95, 162.56]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PE+"
+at = [313.69, 175.26]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-DB0"
+at = [82.55, 57.15]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA9"
+at = [170.18, 226.06]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-RST"
+at = [20.32, 39.37]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MD3"
+at = [246.38, 177.8]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "CLKLCA"
+at = [313.69, 114.3]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "ACK"
+at = [361.95, 167.64]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "BIT6"
+at = [361.95, 177.8]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A4"
+at = [82.55, 102.87]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-DB1"
+at = [82.55, 54.61]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "D3"
+at = [147.32, 93.98]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "OE-"
+at = [246.38, 195.58]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "REF8"
+at = [50.8, 180.34]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MD2"
+at = [246.38, 175.26]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "CS1-"
+at = [246.38, 193.04]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PROG-"
+at = [207.01, 39.37]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "8MH-OUT"
+at = [345.44, 88.9]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-AEN"
+at = [88.9, 198.12]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA5"
+at = [246.38, 106.68]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "REF4"
+at = [50.8, 177.8]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA5"
+at = [170.18, 215.9]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A6"
+at = [88.9, 167.64]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA4"
+at = [246.38, 119.38]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-DB1"
+at = [107.95, 88.9]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "D0"
+at = [147.32, 86.36]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "CS1-"
+at = [170.18, 248.92]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A10"
+at = [88.9, 162.56]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A8"
+at = [313.69, 78.74]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA7"
+at = [246.38, 149.86]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA13"
+at = [170.18, 236.22]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA16"
+at = [170.18, 243.84]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "BIT7"
+at = [361.95, 172.72]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "WR-"
+at = [246.38, 104.14]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-DB2"
+at = [82.55, 52.07]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "D4"
+at = [313.69, 154.94]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-DB3"
+at = [107.95, 93.98]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A0"
+at = [82.55, 113.03]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA13"
+at = [246.38, 132.08]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "AUTOFD-"
+at = [361.95, 210.82]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A11"
+at = [82.55, 85.09]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "D7"
+at = [313.69, 167.64]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-DB7"
+at = [107.95, 104.14]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "SLCTIN-"
+at = [361.95, 195.58]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "SEL_LPT"
+at = [313.69, 106.68]
+rotation = 0
+font = { size = [1.524, 1.524], italic = true }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MD6"
+at = [214.63, 218.44]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "D6"
+at = [313.69, 165.1]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA11"
+at = [170.18, 231.14]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PE+"
+at = [361.95, 157.48]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MD4"
+at = [214.63, 213.36]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "INIT-"
+at = [313.69, 205.74]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "D0"
+at = [207.01, 34.29]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-DB4"
+at = [107.95, 96.52]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MD0"
+at = [214.63, 203.2]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "REF10"
+at = [50.8, 193.04]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A4"
+at = [88.9, 170.18]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "DIR"
+at = [107.95, 109.22]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-RD"
+at = [207.01, 54.61]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA10"
+at = [170.18, 228.6]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "D3"
+at = [313.69, 149.86]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "ERROR-"
+at = [361.95, 205.74]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "ENBBUF"
+at = [207.01, 31.75]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "REF7"
+at = [50.8, 187.96]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "D4"
+at = [147.32, 96.52]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MD5"
+at = [214.63, 215.9]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-RST"
+at = [107.95, 52.07]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "AUTOFD-"
+at = [245.11, 208.28]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "REF5"
+at = [50.8, 175.26]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-IOR"
+at = [107.95, 49.53]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "BIT3"
+at = [313.69, 193.04]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MD7"
+at = [246.38, 187.96]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA7"
+at = [170.18, 220.98]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "REF6"
+at = [50.8, 182.88]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "BIT2"
+at = [361.95, 198.12]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A1"
+at = [107.95, 36.83]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-AEN"
+at = [313.69, 147.32]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "BIT7"
+at = [313.69, 182.88]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MD2"
+at = [214.63, 208.28]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-WR"
+at = [313.69, 132.08]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "DONE"
+at = [207.01, 36.83]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A8"
+at = [82.55, 92.71]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA1"
+at = [246.38, 147.32]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MD4"
+at = [246.38, 180.34]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A5"
+at = [88.9, 152.4]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "ACK"
+at = [313.69, 180.34]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A10"
+at = [313.69, 144.78]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "BIT6"
+at = [313.69, 187.96]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MATCHL"
+at = [161.29, 31.75]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MD3"
+at = [214.63, 210.82]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "MA8"
+at = [170.18, 223.52]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PC-A5"
+at = [313.69, 91.44]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.opaque]]
+kicad = "(text \"Selection\" (exclude_from_sim no) (at 36.068 171.704 0) (effects (font (size 2.032 2.032) (thickness 0.4064) (bold yes) (italic yes)) (justify left bottom)) (uuid \"9b579b23-c567-4c2c-933c-bd5ff67aee70\"))"
+
+[[sheet.opaque]]
+kicad = "(image (at 280.67 267.97) (uuid \"8f1071be-8761-403a-b532-574368508050\") (data \"iVBORw0KGgoAAAANSUhEUgAAAOUAAAEOCAIAAAD5X0e0AAAAA3NCSVQICAjb4U/gAAAgAElEQVR4\" \"nOy9d5RdR5UuvndVnXxz386SWt2KtiUn2SDLEUxwwmaG4Q0DzBDfAzPzGAxMeMMMs8yQfwzwBpNt\" \"eGvwRMYwONtgki1jbCxbtpIVWrmDuvt2940nVe3fH9V9ddUty8qp+1taWvecW6eq7unv7LNT7cLf\" \"/e53MItZnCHAIAhO9RxmMYvDwosvvshO9RxmMYsjwCxfZ3EmQdQ/vfjii6dwHrOYxcth+fLl9c/i\" \"5b6YxSxOB0wRo7P6wCzOJMzydRZnEmb5OoszCbN8ncWZhFm+zuJMgnjlJrM4PEgpH3ro4fHx8SVL\" \"Fl9yySWnejpnJ2b5esTYs2fPXXd9j4imnI/j+K67vjc2NnbRRRddf/11UsrGb9/znnd3dXWdxGme\" \"nZjl62FBKUVEX/rSPz7zzDPFYunxxx8/ROPnnnvuueeem3Jy9eonm5pyRBTH8Yc+9KFrr33tiZzv\" \"WYtZvr4CRkZGEPGRRx79/Oe/0NfXVy6Xj66fJ554ov75ueeenzt37re+9Y2mpibXdROJxHGa7NmP\" \"Wb6+LPbu3btz586PfvTjvb29cRzXarXj1XN/f39/f//VV79GSvn2t//R+9//voULF3qed7z6P4sx\" \"6x84OPr6+j7ykduuvfb1a9euLZVKx5GsdZRKpWq1euedd61adcVXvvLVhx9+RCl13Ec5yzArX6ei\" \"UqncccfXn3nmmQceePDkjKiU+sxnPpvP5//oj972xje+cVa1PQRm+XoAwjD8m7/5xF13fW+KdX8S\" \"MFYY/trX7njooYeXLTvvU5+6fdGiRSd5AmcEZvk6Ad/3S6XSpz/9mTvvvOuUvJcVgWCwdevWrVu3\" \"9vZu/+d//n+tra2ZTObkz+R0xqz+CgAQhuG3vvXtc84573vf+/5JIysCIRDixKEikJMjv/DCCytX\" \"rnrve983ODh4ciZzpmCWrxBF0de//o1PfOJvK5VKHMcnYUTGmGUZyYST8GzTEJxzAASAxgiE7/sP\" \"PfTw//7fH+7v7z8JUzpTMKsPQLlc/vKXv3LSxCpjzHEsz3Mdx+FcBEEQBH6t5odhpOJYHhg1u+++\" \"+5WiFSte95GP/Inj2CdnhqczZjpfwzC8/fZPjY6OnpzhGIIp0LYtx3E1OOdBEFSr1WqlUiwVAz+I\" \"Y6kaWPvAAw88/PDqwcGRL37x46ZpnJx5nraY0Xyt1Wr/5//8zXe/e+fJ01kZM0zLth3XdTOZjOd5\" \"lmVLKYPAHxsbc1y3UCjUKqUgPICyUo595zv/5DjW5z730ZMzz9MWM5qv3/3und/+9ndO2nCIaBoC\" \"2QQcx06lUslkEoBqtZppmqZpAUBRcFYq1gLZ+BQRldau/eXg4DtaW1tP2oRPQ8xce6u/v3/16tUn\" \"dUgiGceMIefcMAzODdu2PM/LZnPZbDafzyeTSc9LeJ7nJlKWZTA84OJf/OKxD3/4z2e4+TVz5euz\" \"z6659977TuaIBCAJpFRESghhWRNarGmaiBAEoW2bruvEcRRFkZI2A1Xzo0bF4N5770PEO+74Wj6f\" \"P5kzP30wQ+Xr3r17v/CFL578cYmAcw4AjDHOGeecMaYPGWOGYRqGYdu2ZVmWbRuWrRs34sEHH+rr\" \"6zv5Mz9NMEP5um3btueff/6UDI0IhmFomgKAlHGlUq5Wq77vh2FIRIhoWbZpWpZl2Y7F+QF/oyiK\" \"/uf//MCOHTtOwdRPA8xEvhaLxQ984NaTExqYAsYQkQGgEAIRlVJBEJRKpbGx8fHx8XK57Pt+HEs8\" \"AFM7eeGFFz74wVunL3CYCZiJfH344UdGRkZO/rgIYArU8jKO4zAMS6XS8PBIoVAoFEbGxsbK5XKl\" \"Ui6Xi1EUSSmllEpKBjSNsdDbu/3xx5+YPsRZjxlnbxHRN77xzVKpdArGRiRgSikpZRhGtVpNKwC1\" \"Wq1Wq/m+rwMHUsac8ziOfT8IoziKDyJId+/efffdd1911ZWn4FecUsw4voZheArTohnniKiUDIJa\" \"qYRRFGlBq6OyURRXq1UplWCAnAdBpNTLvvUfeujhH//4v3/v9958Un/AqcaM4+vtt3/qVJUUJ6Ig\" \"CDnnnPuIWKv5RBAENb9WC6NYShkEkX6WYgBAeWgNdXh4+PnnX7zlllsYm64vnLWYcXwdHh4+VZYK\" \"AnCgKIoAII5jINKKQeCH8sApEQC88iTpS1/67pVXXvu61606UTM+/TCz7K3169dv2LDxVI1OALEi\" \"JBVFoe/7YRSVS+VqLZBH+fygUiMPPnjPqdHFTxFmFl9/+tOfPfvss6dwAoogjCkMo2rVr1b9+JgV\" \"6e997/sDAwPHY2pnBmacPnBqoetl6M9SHgezj4h83z/2fs4UzCz5evYhDMMPfvBDlUrlVE/kJGGW\" \"r2c8BgYGZk7hghnE176+vpOdQHhSUCqVTlqphFOOGcTXF1548f77HzjVswAA4AjTswKOGqVS6c47\" \"7zpu3Z3emLW3pgHB5IjcAJIkVaSOj7tWMFAEDEEROI6lADnnjKGU2gsbHhfz66zHLF8BABCRIRgG\" \"R8aBCBkzDMMQXEekQr8WSThG0koCIiAAIqj6oes6hiGSyZTnua6bKJWKfX39lUpFqZmYdXX4mOUr\" \"METLNhGAFClFJCNuWI7jJBKe63q+7w8P7atWKsFhS1r9qp/SVF+qFACQUlCp1KpVPwhCpXJNTfn2\" \"9rZ8Pr9ly5bh4ZFZyh4CM0h/PSg456bJpZRRHAdhGARhGJPv++PjxWq1ppTK5XJd87vT2ZxpcHwl\" \"IYuTuukU9ZSIlFKIZNuGlqw6S6tSqfX3D2zdunVoaGjOnDnnnntuOpU4jEjsVOzatevnP//FkV51\" \"JmJWvlIsIY4PqO5GBL4fDA7uGxkppNOpjo6OOXM6DcFHhoZr4aGyvAmAAKbIR8ZYMplob2tvymXS\" \"2YwQRhD4hcLojh07RkdGokgODu6rVcpB4Le2trW1tZUr1Sg6smpzu3fvvueee1772tcc0VVnImY6\" \"XxutHFOwVCrlJhJRFJXLlXK54vtBGI4opXp6ejrnzJVShkPDUh5c/iEC0QFkdSyjpa29o6Ojs7Mj\" \"n29OppKpZNJxHAAKw2jv3r0b1q/fuGnT0NDwWLG8adPmKIoz2Vw+Pz44ODxzXKpHhJnOVwAgAssy\" \"2tpaFy7oWbR4UT7fqpTs6+vbtGnTxo2bisXS2FhxcHCwra0tk80VS5VKpXrQfoQQcTyRBIiIiYTb\" \"09OzePHifD6fyWRSqaRpmpZl27YNAJZpLljQc+mll65Zs+aBBx7Yvn1Hreb39fXPncNSqXS5XCmV\" \"ZkrI6ogwy1ewbXPp0iUrVqzo6elubm7O5Zo45+Pj4wsWLGhvb1+z5rm+vr7du/cWi6VEwhWCaTk6\" \"BYgQR/HkaWxqyp1zztLFixfncrlEImHbtus6tu0YhmFZlhDcdRzbthljLc15x3F+9KMfb9++fXxs\" \"1K9VHMc1hBCCT9FSZgGzfOWc9fR0X3bZZfPnz29qasrlspl0xjCMXDaTyaRM00inM08++eT27TsK\" \"hTE/8MVELcGphBUIEoAIELGpKXv++ecvXLigubnZdd1MOm3atiGEaZqu4xiGAIBUOmMYBhEJIS6+\" \"+KJSqfzQQw/09/VXa2EQhIlkwrbNcvn4F6E/0zGj+UpEqVRy+fLz29raEwkvnU5lMhnHcQEgDJTn\" \"JlpaWpVSiEAkd+/aFYUhCMER4mnyVU74VsmyzIULFyxY0NPW1trS0ppKJh3XsS2bc86FMIRgnHEu\" \"LMu0LLtardZqPhB0d88//4ILxsfHw3BcKoiCANmM/tO8HGb0TeGcd3XNnzOnM5n0komkbdlCGHqt\" \"HwFxwZPJRK2WWbJkcaVSHi2Mjo6N+0F0UK+WNrMYY62tLd3d85uamlpaWud0djTlm5PJhGEYhmEK\" \"IYQQUkrGGBFJKZWS1QojICFET3fP7l27XiyuU7H0gwjwyJabh2F4PG7J6Y6Zy1ci8jyns7M9mUyl\" \"0mnX85KpZDabTSQ8wzCIQCk5d+7c0dHRwsiIEGLzS5sKhQIBO4R31DTE0qVLFy1a0tPT093d3dnZ\" \"kU5nTNM0DCEEB0DGtPpLSqkwjFtamkeb8o7jBEFYKBS6uubv2LFzZGRUwcF05EPi3/7t31etWvWe\" \"97z72O7K6Y6Zy1cGlM9lOzvndHS0LejuaW1ra27OJxIJ0zR0kRUAiKK4q6srCILunp4dO3a8tHlb\" \"reYfpILFJFJJ99xzz7nwgvMXLV48d+5cz3N1Y0QEwCiKCoWRMIxSqWQikXAcS0rZ3JxPp1PpTBYR\" \"wzDc3rttbHTsKCJcUsqZkAU7c/lKAOl0uru7a/my5T0LetLpNCIWi8UwDDkX2WyGc6ZtI9d1uru7\" \"r7nmNQ8+8OC23u2IU2taaSBCvqV96dJz5nd3d3Z2ep5XJ3YUxdu2bfvZzx5b+9ya8WKpa/78lStX\" \"XnPN1U1NOQBwHHvJkkWpVDKVSvX29r60ZVu1Uj3EUzGTMXP5yoXI5Vt6ehbN7+7O5XJhGP761088\" \"+OADfX19nuddfPHFN9xwfXf3fF3oSgh+4YUXLFmyePuOnY2dIABnoJdhIWJzc3Mmk7Fth3MOQDqV\" \"QEr55JNP/tM//dMvfvGrcqlkWWYqnXnsscfWrFnznve8a+HChdpl29bWtmLFxRs3bly9+snqy7h4\" \"ZzFD+aodSe3tbYsWLcrlMojw+ONPfOITn1i3bp1hiObm5qeffvq559bcdttty5adp0Vda2vrucvO\" \"/+WvHvf9ABE1yUzLQAAZRAQAgJ7naaPKNE19FRGsXfviF7/4//3sZ4+FYZRIJFaufFV3d/fu3Xvv\" \"u+++4eHhP//zP1+yZDFjiAgtLS2XXnpJZ2d7X9+MLvJ6CMyofBfW+HxaltXV1dXS0kwEe/bsveuu\" \"u9aseU7F8ZLFi2+88cbly5evXfvCd7975549fQBARLZtnXvO0lTCtW3TMgVnQACMccYmag0yBMsy\" \"hRCN5Qf37Ru6+wc/eOyxx6IoZgw5Ks55V1fXa15z1UUXXfTE6tV333338PCINq6EEPPnd7W1tXE+\" \"qwwcHDOKrx5AfrIYBRmGmU6nOeecsy1btjz55G8AQBIEYZBKJRctWjRnzpz77rvv0UcfDcMIABhj\" \"zc3Npu0AkTAMw7Rsy0wmE47rASCQYgxse3/5Sx0GW7Pmuf/+yX1BEGmTq1wN1q5d+/TTzwRBuHjx\" \"4pZ800/++79feOGFyRot1NSU7+qan0gkZtXXg2JG8TUEOGA3eMY4EVWrtd/85jfDw8P6Db5nT/+6\" \"deuJKJ/Px3F8//33691j4liapul5rmkI13VSqURnZ0d3d8/ixYuWLl3S0tKMyJSUCHWiYbFY/PnP\" \"H9u9e3dd3BLR4ODQ7373zLZtvdVqNdeU6+/vW7t2re/7WsdIJBILFy50XXdGVst8Zcwo/dUHKE2m\" \"U4MQ3DQNxpiUcu3aF6Nowj9fKpW2bduWyWRs225uzvf2btu9e1drawsA6HLY3DCISH9WSnlewrad\" \"ZCo9MrxPKhU3bDw7PFz47W+fVko1GvumaQRBsGHD+kqlTISGaW3cuHF0dLy93QYApVRHR4dpmnWf\" \"2iwaMYP4apqWaVr1OBARESnGWBzLsbGx/YsCiAYHBrZt27Zo0cJEIrl585YNGzZccsklUspqteb7\" \"QRCEYRiBUpVyZWhoyDAMx3E8zytXqtu29fb39y1dujSOYyF4pVIeGBio007vFIeIUsZbtmzp6+tr\" \"b2+3LGtwcLDuOiUibbSd/PtzRmAG3ZfXvvY1f/EXH//MZz6rD5WiMIyCIDAMw3FsxzEDP4wVEYBf\" \"LRcKI0NDmeHhkWq1umfPXqVISrl165bS+Hi14sOkf0BDCJ5KJaMoLJfLP/vZY4sXL8nlcqZpSBkr\" \"tV/cKqV0TUIAIKJKper7tVpNb24YAgAiSCnrmxrMYjpmEF8BIJFI1D/r0kBEZJpGR0cH55xwIvEq\" \"kqpQGM1kClEUEFEURVEkt/Vu/+nPHqvUqqYBlkGmAAIkBTGhVFJGJRlREFHv9u07d+5YsmQJkRbh\" \"B+ihjWuzpFSjo0WlFOfMMPTGhdoFNqsJvCxmFl/rQMQoCkulYhiGSrnzu7rCMKqvNYhiKhRGZfxS\" \"GEZKEQCNjQ797KF7ygO/u/q8aE4LSycwYYMEDGLFQVSCuBqp8XHo3ctUMLT2hXUrVlySzWYSiaRt\" \"O680F2pqynueqw+UUtVqZXZxwcthhvIVAHzfHxoa8n1fCLH8/OWu5/nBWP1bKdVoYZwQLNupVYsv\" \"rv4hG/jh+15b6JrP8k2cM+IKCammmGcASSEVVQPYPUQv7d43MvrTpx5vzeXekUgkli5dumnTS4eQ\" \"l4yxRYsWJhIJLVaVUuPjxSAITso9OPMwQ/mqk0v6+wcqlQpjbPny5asuu+yhhx5StF8xVYAcoTMT\" \"WkM/9LezFV2jHXmRyjOLY6ggUCQkukCAQAoFwwRRJofLFlBY3rZr/MsbVm9fcOH7r7lq1aMP3V8N\" \"1EEZq5Q655ylr3vda1OpJBFJqarV6vbt20ul8kFaz2LG8hUAlFK7du3es2fPokWLmpry73r3u7b1\" \"9m7dui2KYh34z7hwYTe7YSU7r3MEApSMSQBDQSwIEEyCiBERSIn7hmlggPwaVCLsmcPmz8eL2sZr\" \"4b8UX/hlT3blqy5sX/3snjDCKeu8iVQ2m/nDP/wfF110kT4jZVwojG7cuDGOI50je2puzWmMmWyH\" \"4sDAYG9vb7lc5pxfe+1r3/a2P3RdVynFEBa24x9dyd73en7+PKxJPlpExyY3gYhIAIqBNAFNhhwR\" \"yXTIcCEkGBlVu/fJUhmBs4Qbt6d3nZf54Z/dPPieG/n53ehaoBQopfNfZS6Xfe973/2+974nmUxq\" \"agZBuGnTpk2bXioWy0dB1rVr1xYKhRNwo04jzFz5isiK46Mb1q8fHh5OpZLpdOZ973v/2Nj43T/4\" \"Qbs7+pbL+LldLJUE11JOFlwL2pqZZyIjAAmMgwRkQCgQAdNpyKRUbR4bHYktGxIpEi4ImYxlLZmS\" \"V13CLzxXrHtJPr1W/mYDbO9XxTAxr3vR2/7wD97x9re3tbdralarfqEw+vTTT2/fvv3o/AN33/0v\" \"b3vb26699rXH+1adRpjJfAXfD9etW7979+62tjbLstraWz/8Z+9rMfaKffcvbI28BCWSkE2CmwDD\" \"QQsRiCLRsH2bQBOBTN2d64HMNac5NwxDMKMkZBpkKBVhSBmHrng1XnKuuKGfenezbX2Ymbf4tde9\" \"PteU08zU23Ft2rTpF7/4ZalUnvW/vhxmLl8BAJBt2bp17dq1bW3tjAnbEmO7nz039SIzlWkyz4Fk\" \"AtwEOjbjiJITEBAAKiAGgBArMC0QJgMgQgfA5pwLwRhzGGaU8hk1c0BwfUVjTCpTqGUeds+jFcWg\" \"UnqstGZozdZXGU0rcm2LGOejY8VHH31k7doXZp2vh8BM46sBIPT+VgCACOPjxQcffPDcc89NpZLF\" \"HY/u/e1XjKjftsF00PbIcABsBATJiCESEiggAQqAceAcmMEAAZngAhEFGpyUAhEjZJmySAmEcWAB\" \"JwAJkpCZLBmibcWBVSxFq+PSU8Wh1Na1neO+2DUcrn18K8MYkE1fLz4LjZnGVxvAAojqWS9EtHHj\" \"puee+SWOPhHuvM+Te00LPQtsm2wTbQaWAuCABESkGIABgAAICKAUcABAIDCICLkE4IwxJBfRI5TI\" \"fVI1hDG91AAFIDOAhBAVw+AWAxWrXHW0s1qoFFmHo9KXK0bw5AZe8+UsZQ+KmcbXEkAF9qf8ARHY\" \"rDq67u6Rajmf4JbFHEsJE7hA0wTGICSyAFEBIKACQpAMUQAwNBghAiJyIwR0kZsAjJMHwAABiIDG\" \"gFeBmJboTCBgBGbEQCCgpSRyVH6s/FSyyU2PD3U0gWtGMsSntnA/OAXbh5/+mGl8PQBE0JrFNy6X\" \"F82t5GwmGJiCbIGCk2EAF0AGCoEIQAxIm0AIxIAIDKZrZzICD6AKQKA8RAu4CyQBCKECECPUABlw\" \"Y2J9NiIgMCWBFAAAQ+aazCRSTdwyHbf26mWFvkK8e4R6B46irubZj5lrhxJBwoZrl8NVy0Q2xQwB\" \"piDBgRlkWSgEMgCTgYFAAhgBQwAOgMAZcAaAgBwBifEQwEbuAQMkE4ABWgADgNuADQMREAECgAJE\" \"UDEoBSiAcQACKUnKSPkyrqKTN5JWIi+XzId5eTq6TWHHxsZeudGZjJnF17a2tmQyqT9zBvNbcPk8\" \"zCTIYGQaaAoSBnEDhImmAVy/e2hCDVAIAEACJQBjEzoFIhLZAIKRyeRyZAkABIhAEQABRiDjiX+A\" \"ICNgfIKpShJhtYq7e1XvJrlrx55qaS9RKGJgBMLg4qj+Mh/5yG07d+585XZnLGYWX9/2tj9885tv\" \"AQAATLpsRQ+055EjMQacg+BgcLQMNARwAchRMkBEZMAAgQCYfrcjcESGAIDM5hyRZZHlmNEPUAVV\" \"BtoBbDdACIAgDOACkE3sXqAUyAhkqCJVGlUvbYx++zv54vNqcEcYDBb80lClAkNjVChjJI9GwJbL\" \"ZSnP5qqGM1V/RUh5xpymKCEACRBBcGUIsMz9zk8CsJCRdrsyvboWCUGGxEwEBsgZoCBwQVnADJIR\" \"gCLoR9UP3AAAkPFExoCMQRhACoiUVDKCnTvivn41ViRDGU1pyjnkV0MZ4VgJC+M4UpxapHsWGjNL\" \"vtZBBK5JaReBsYlqQQCMI3BCA5gAxsDgCEBIwBEVJwDQO7+aDurHnDFk3GSYQ3BIxQAKcBfA6MQu\" \"MEQwkQBOgAxkDEQkVWEEnn1GvbhexqPUbuGiVjUvr2wTVExhTBFR0ScZRUfnzwqC4PbbP3UWpyPO\" \"VPkKgIyEIARABMbRNMEyGAdARgwBEDlDEsQUok6etpADIaGSxAwGAAQpBA9RciNFKgTajjQCkyuz\" \"ARkoOUFcAAAIArZnV7RuvZQ11pHCtA2co2EC44gIKiIAMgCIMCIBEB3FjyKiJ55YrXfvOD636TTD\" \"DJWvQOT70bjPAonMRGaCMIiZigklJhUCYsQJiZE0CQQgEXIENlFniBtMKY6QRPCULCFtRSwAF6AI\" \"GAcpQUYEnAgIUCkYGaG1T8drfgtmDRdnqckDQ6DFuRAEQCoiACCJXBJncT0CN23Wryx0+/r6Pvzh\" \"Pz9+d+r0wsyVr8Ml9uQWHKtQewbmdFI6jdxEYQDjIARyDpwmSgsigGIEBhICMxgpQkBAQAbEykQh\" \"YIGohkRAChBIKVCoiBQqIBbVaO9u2rQ5qgxTZ4Zn02CbYAidJiB1SW5AgpgRYcVXfUM4XlYT2kQD\" \"DIMLYUgpdf2OQ+AsLlQ4Q/mKCGWfntoEpXHVlVcjJRZKXLYAHRuEIMNAwRCIiCFyIAYKECSAAEDg\" \"tq7lBpzXGMQEsWA+yBiYABUTsliCiogISal9/dS7TQ3tVTbHRc3Mc8k0EFDHDgA5ggKKCSSPY1NK\" \"f8MutaaXBTEhHiBKheDd3fMXL15cLlc2bNhQGB6OX36J1+bNW+69976bb37TCb2HpwQzlK8AAETl\" \"Sjw4jvObICirDRtgdJxetYy1tYIFoBCkABNBAQGB4BibCEaKmEBWk9JjVOPcB/IZA9ALFVUsFcpI\" \"SYUypNF9sG6d3L5TpQ1ozUJzChyHDC4Y15kGk1t1EUQBVGqKYVQow89eMDbtldO3OCQix3EXLlxk\" \"mmZLS/Pzzz3fPzD4cstmBgYGfv7zn8/y9ewDDZZ4fxFaUxEp6N9Dv4nU+cvNxfMhxYgBEAOGGBkA\" \"SMCT3EyRYoA2FwZCTDIgbVYRkkIVUxSqWomGC7CjV23arEBBZ1J1NvNMmgwBJudMSAAABMYRAGQE\" \"cSyLFV6uMSGs3rG5O8cryAYR4ymqKhGUSsWxsbE5c+b09Cxoaspv27Zt/fr1lUrFrx5kr9ByuRxF\" \"0eQy8bMHM5yvoAi3j6faO6Anp0RUGivEv3lGjhVh0XxsSTHXJuWiIYhZGANJSYZIKFVgPECSQIQE\" \"MgTfV6WCKpfUngE5vJftHgAIVXsOOnKQSaLtKM5BIEchdZCMMYxjkgH3I6MSMl/1ULa9bM3Pz1l4\" \"pdk3VPzRzp27pmxmhAi1Wq2vry+fz1uW1dzckkwmurq6CoXRjRvX79ixq1o9YDOZf/mXf121atV7\" \"3/uek3kzTwJmNF8RAUjVQuV7r56zfF7Q93hpYHMUyjXP4/YdrLM17shjpo15KRA2cVYyBAS8HMTj\" \"MpRRBCSxWsZCQe0bUnEZ/KoKJE9wdU4rug7zHPAsEhyQEwBEJEGiRCCC2CcZqTBKkNdK+ZVW8lVo\" \"5S3hpSlamZq7Z8/uQqEwOjreOFUiqFZre/bsmTNnTkdHBwC5bsK23ba2tmQyUSqVK5U9UxK9H3/8\" \"8ZtvflM+nz+p9/QEY0bzlSMoKaWUc+Z2dyx+Tdw6b+9z343GdjGAUZ/WvUTbd1IuR06KbAuRMQEF\" \"5FCqUSQZxJIUF5IHVQKArAeZDJomOCaaBpiGEojIiRECMQkKEcKI4gjCGGqhg1YbZq/irct5optE\" \"WsURkFJopFPqqiuv2rBh09jYi42veKVUsViWcldzc3Nzc4tlWQCglOScNzXl29s7CoVCrRY0Ftr4\" \"93//j3e/+91XX33Vyb+xJw4zmq9SAWeQyWSXL1+eSCQhcRHSu/qe+5bpDyUTjCHjSDGiocgxgQwZ\" \"V1Eq5VjMjtEyuYHM4sCb0RYkBCAhKeIMGAMEFIxJqRQgEkgFoYRQoowxYhnIvspof52RWcTMlGGI\" \"OI4k8TgmAGJczJ03t7OzY9269VMyAYjI94Pdu3cvWrSoo6NT19dAZKZpLlu2jDHcsH5dqVShhuze\" \"f/iHT5933r+eTSJ2RvOVMbAsM5fNtrY0M8RYgte2IrfolrGN/2lERRSMMbIZpG3R1Ay5Vs4UAXFS\" \"FIagIi7LikuUJBEBlF5oQCQRkZTEWBIwUhJiRVHEa6GKpAGJBaLzRv/rEjMAACAASURBVJF/NQqP\" \"uDBNwRhjzCTDCIIgjkJSyjSMfFMT51ypqVYUIpSKxU2bNqXTac9LKKUYU4iQzzfNmzdv65atiiqN\" \"SsGaNWt27NhxNvF1psa3AAAAGXcTScd1wygiAM45Im9ecH1mwc0RT4e+9AOqBVDyqVqkqIQEDIEJ\" \"jgaAGUtHADJlcm6iEEwI5CCRJMQRRjH4IVVr6IdQ9KEUZn3VBM1XGgveI9quQZEgUgAQRZF+g3PO\" \"EZFxrovFdvd0JxOuMS2nUElZHBvdsmVzoVAgUqZpKqWq1eqOHTt27NgZhcGUrNlarfbHf/yuZ599\" \"9mTd0ROOmSVfN27cuGnTS/uPiYTgRFSPGCEiM5yWxW/gIIvbHlDBuFIYlmVRcItROqFMTrFgFIKM\" \"ESSCxJgkEoulUgRKgSTwQ4olAIEkxhgLUGAyx7LXGPlXC6cZZA2YKSUChKQkY8w0TcMwECEMIwSI\" \"omjpkiWLFi18bs2aKXsrSwVSUbVSHRwcTKfTpmlKKUul0p49e7Zt21aq1BqVAY0dO3Z88pN//8AD\" \"95/wm3tSMLP4+sgjjz7zzDMNJyb2MpDx/nh9LKXhNOcWX88ZjWx5MPDLFAIrKqYwrJJtksV1lUxE\" \"JlFhrECRUoqCCMOIlAKpII6BcTQEADNYaoXoeKPIXoBoAEVIRARCcC6EZVq247iua1mW3lSxXC4W\" \"i0VhGK9/wxs3b94SjY1Pzxjw/WDTpk3Dw0PZbC6RSI6OFnbu3Dk+Xny5qoYbNmz8yU/uveWWm4/z\" \"3TwVmFl8jaIDI+9EMoqklDhZn4JzjkopRWBkskt+j4z0vpd+WCuNU6zCSAYheBYYBujVBYiMMWCg\" \"/BDimGoBSanFIVkmGqZAcw7lltptr4P0OQgAcVExh9DmTAghHNdNJBKJRMI0Tdu2dX36pqZMqVTe\" \"u7d/2bJl87t7nn9+7cRKr8ZfEctdu3bv2rU7lUpms9nx8fHR0fE4li9Xt2BgYOAXv/jFLF/PJBDR\" \"j3/831/+8lcOPAlSSqWUlDEAIGNANFFbhRRyI7fwepFoH1j/E39kc1Sr+YEsmWibNK1vCEOKlaYW\" \"WpbhehxTi7Ht9bx5JQqXCAgoVobgjDE0TMN1vXw+n0gkLMs0TYNzrusTWpYFgC0tkZTxVVddueWl\" \"jZVKTU17y8exJIJCYXxsrEh0kOSYRiDi3T+4+8orrnjLH7zleNzLU4mZwtfe3t5bb/1QsVhsPKkA\" \"w1jGccwZN03LsiyplO/XlJTALZA1QEh1vspM95R3PTmy/YlqsTfyK76vAHAynxoBiDHBmInADFNa\" \"XquVXWa2tlnNF6M3H4ABKCklAAnDFIZh247ruplMxvM813VNc+JPoJ1Tut53JpORUl599dVPPbn6\" \"6aefgWl8BR3sAJqeaTAdnHNE9eyzv7v+hutd1z3WW3lKMSP4GsfxvffeNz3LTgjOGAohck255pYW\" \"IuX7AREFga+kJO4oKRmAk2x2z70x2X5eqe/58dGd8fh2CoqgGIBBWEMgw864Xorb8+xkSuR6rGwP\" \"c9oBFKqAgJGMGHcAgQth247rOul0yvM8y7LqZNWoy0jbtvL5/AUXXHDNa6/dvGVLYXT8oJQ9TCgl\" \"4xjvuOOOG2688Yorrjjqfk4HzAi+1mq1O+74+vSFeCSlYzvXXXf9woWLk8lEFEVKURzHcRwrKQGA\" \"84mtjQmF07TYyc5P+lFU3h1VRiD2UUnAGgChmbQTOe60GXYGuAMAGFcJeRRFwkoQCACyLNu0bM91\" \"Pc9zHNd13frOcgeFaZodHe1vuummxx9/fPXq3xzLz1eKgjAyDX7XXXctX748nU4fS2+nFmc/X8Mw\" \"/Lu/++Tg4OD0rwjg8iuu+OM/eWd7W1sUxbVaTcrY9/3pLRljAKjQcFzDdpcqRUgRUKy3ilfAuOEB\" \"SJITOiwxAcCY4SEyyxJCCNu2TctKJBKO42jrih2yxAAiGIZYtnzZNddcs2HDhnK5Ut8h7ChABFwY\" \"Dz30oFJ0553fPXPzts7+eMGnP/2Z73znu2qacFVKzevqeutb/6Br3lzLsvQuQqZp2bbNGDbmjuht\" \"BZSSetMuIMWQkBnIHSYcYSYYM0FFJCUAgYowrgAKZNyyLMu2E8lkMpVKJJPpdNp1XdM0bds8NFk1\" \"iCiR8N58y83Llp0nBGcIx7KtbBxLxtgLL6wdGBg4+l5ONc5yvg4ODm5a/6LgzDJ5I0OIyHWs6657\" \"w8qVlzHGGUPbtjwv4Xme53mu6wkxKYEQ2aRWcCAIgIhUHEcTPNZgBgkXEQ3TMkzTdV3HcRKJhOd5\" \"juNYluW6Dj94hwcbg+icc8+98cYbM5k0AcpjWOQdhlEURv39fX/xF3959L2capzNfB0cHPyLj3/s\" \"V48/nkwlHM+zLaNOWc7YJStW/P7vv6WpqWniDGeGwS3LSqfTmUza9dwJEXtgNIGxV6YaY8JxPc/z\" \"0ulUMplMJpOJRCKZTHie6ziWEIdLVg3btq677o0XX7zCde0junA6/FpNRtHmzZufeuqpY+zqVOGs\" \"5WuhULjtttseevgR07J09Ijz/SK2pbXlf7ztbcuXn6+9Qvok58w0Ddd1Uql0Op02LetgJdcOLeKQ\" \"c2E7jud5ruu4rpdMJl3X9TwdwRJHZ+YvXLjopptuam5uMfgxFd6OFdRq4ebNmz/0oT87MM53xuCs\" \"5evAwMAjDz8CSuqXr5RSKkLGAcA2+OWXr3rNa17jeY5pGnUOMcYYQ865ZVmu67muh9Ok6SF2ckNE\" \"wzS9RCKZTHqep0nveW4y6emNlRHx0D6BgyKKYsb461//ule96hLDYMfg1wIAkERSqo0bNz733PPH\" \"1NEpwtnJ1+3bt7/3ve+v1vxKLRwbK5ZK5UqlFoRRFCtEXLB48Vvf+tb29nYhBGNsSmQIEWzbdBw7\" \"kUg4rouHCBw1gCE6rpfNZrPZbDqd1gqr5zk6n0YpdTgG1kEhBDdNMXfunDe84Q2pdPZQgawjwac+\" \"9Q/PP3/mUfYs5OtLL730znf+ydq1awGAiIIg1DtqM4ZAKpNJXXfddVdccUU6nTKMg7vzENEwTM/z\" \"EomEEMYrVqkQhpFMZ9LpdCaTSSQSyWQym81YlskY03rI4RtYB50MAAhhrLjk0nOWLgEVHxfCjoyM\" \"PPXUb+P4DKuKfBby9Zvf/NaaNWsaz0RRrJSKImkYfNl559100025XO7QAXfLMh3HyWaz+eZm1/UM\" \"0xTCaHQU6L2MGeO27WQymXQ6nc1mNcVd1wEAIfhx3TmDFi1csOqKK23HPV77yP3VX/31nXfedWbt\" \"VXu28fWJJ5547LGfH/QrpVQm23T9DTeee+65UwKh08EYJhJuOp1uaWnpnDOntbU1k826rmc7rv6X\" \"SKZS6Uyuqam5pbm1tTWbzWYyKc9zTdPgfKqOcewgIsdx3viGNyxcuEAdJ76GYfjtb3/nzBKxZ1V8\" \"66mnnvpf/+uD27dvn/4VETmOfeWVl1933Ruy2VcOSCIi59xxmG1bnudVq9VarVatVokUIgph6He9\" \"bdtCCNM0ELFRuzgxG2jR+Recf8GFF61bv/Fw0lwOB9u2bfvkJ//+05/+ByHODCacGbM8HPz2t799\" \"5zv/ZO/evQf9loiamvI33HDD4sVLdPLe4fSJiIhgmoIxT6uhUsaMccuyDUMwxkzTkFK9orQ+LiCi\" \"ZDL56le/6t577xsfL77yBYeBKIq+9rU7GGOf/OTf2fax+ndPAs4SvtZqtQ984NaXIysACCEuv/yy\" \"1117rePYNC0D+hUhBLcsizEWx7FhCM65EBNW1FG4qI4BdM455zQ15Wq12itWfTtMKKW+8pWvcs7/\" \"+q//yvO849LnicNZor/ed9/9B81oqaOjo+Pmm9+kkwaPbgjOmWEYpmkahmlZ5rGY/EcNKeX8+d1t\" \"bW3H3Uj60pf+8XOf+/xBc31OK5wNfP2P//jPj33s44fYGsWyzKuvvuLVr16pXaFHMYRSSkqp3bXi\" \"6LbCOE5oaWk+//zl4thyXw6Ku+763pR89tMQZzxf77nnRx/72MeHh4cP0aa1tfWGG27wPI9ISamO\" \"wljRoSlE1KbVMcz36KFnzjm76KKLhWnx420hjY+P33bbR0ul0vHt9vjizObrM88886d/+mcjIyOH\" \"aMM5O//88xYuXMg5n7SyjoavRIdV3vrEQXt8lYJFixZ5nkvqZRcYHnX/P/rRj2+99UOjo6PHs9/j\" \"ijOYr1EUrV795Pj4+CHaGBw7O9ouX3WFbdl6aaEu43MUwwnBGWNxLKU82Q52pVQUxVJKpUgp1dbW\" \"Nq9rvgI8EV6ze+750W23ffTQ76tTiDOVr1LKO+74+ic/+feHaMMQXc+dO6+rs7OjHpo6RhHJGCql\" \"ThpllVJxHEupoiiOolivR0+n0ytWXMwQ6cSEpv7jP/7zL//yrw791jpVOFP9WV/96v/97Gc/N7We\" \"wBQgIuPt7e2O40ZRKKUuAnxMhI0iCQBEdKLdWESkORrHsWWZevFZHMc6TrFkyRIuOCkJcEJ26vq3\" \"f/v3OI6//vU76ttBniY48/hKRF/96v/9zGc+W6vVDqOx8jwXGdZqNZ1FwBiLotiY3O/ilS4HXREI\" \"EeJYxvGERkHEfD/UIYNjVyLjONZrHCZtQZJSAWi+RlEU+b6vYxycc03Zrq55yWSqVq0EYaSOYV3X\" \"IfBf/3WPUuqb3/zGaUXZM4+v//Vf93zyk39/OFFvIvK8RFNTPgjCSqVSKpVs2+ac27YVRbEQQu8G\" \"/zLXAgBEUcQ5C8NYZwNKKcMwDMNQV7zS7DfNiZUzOhim9eOJgkWoTTRdDGb/rGDCgJsQjIyxKIoM\" \"Q0ip9BtDqwFxHEdRGEWRlFKnzxqGiYiWZWUy2WQyWS6XDQ5xdGyvjJe/e/fc86NsNvu1r/3TCej+\" \"KHGG8bVUKj311FOHmaKBQOl0Op1Ox1FUq9bKpZJeaAAAlmX6fsA5tyyhFNSTU3V5QCJSiqRURBSG\" \"gaaObkBEUspqtcoYs21bR7y03aPjXmEYWZaIIqldYFEkOUelaDJtfKKWDGNMB6jqrPX9oF6uMI6j\" \"KIqJlN69SEopBFeKTDMyTYsxlk6nu7u7BvcNqPDEuizWrVvf29vb09NzQkc5fJxJfK1Wq7ff/qlv\" \"fOObh9MYEQyDZ7OZZDIplarWakapCAhKKb2gCgA0EXXJjCmXK0VSSiml7/thGEo54TzSTjGlZBSF\" \"YRjqiJdlWTqRgDEGQHGslCLGQErFGOodtsIwUor0VUopIhXHkojiOEZEKaX2VulBtSMCJjwDUZ3T\" \"QgjPk4xhLpdbuXLl+vXri+PjgPKECFgAAHjqqac+9KE//cY3vn6aUPZM4uvY2NgPfnD34bREBMex\" \"ESGbzbiuS0RRFFWrNcEZEIRhEASB4zg6CcswDC3/EIFzLqU0DIMo1hJRJ1z7vh9FoVJKC2DGuG0b\" \"AKhf07ofLaQRmS7myjnTgYkoikzT0NeGYVir1aIolFJGURyGoeZio+Goh0Bt/iPGUTRRSpuxKIr0\" \"Zre5pqZbbnnz5pc2P/jQw0ThCbndk/jVr359660f+v73v9fR0XFCBzocnDF8jaLotts+etgBQzRN\" \"QwjD85KMMS29hBDVGgdgBMAYlzIWQmiNkDG0LIMIOGeMoZSxTg6MIrCsBAAwxorFGEARkRCGaZqa\" \"7jripa0urQqbpqaWToVBXQ9LSqXrZQvBLcvUOQxagmqBqmMBcRxxzoFITlCWKSkZ51rf0IqK7/va\" \"8Orq6vrIbR+pVKq/+OWvDmp6Msb0w3DsYY7Vq5/cuXPnLF+PALt27Vq79oXDbMwYWpZt21YikdCF\" \"MIjIMAzLNC3bNk2TMca54FwIIUzTFEK7C/SOABMAAO1G0Fy3LMv3CREdx3EcxzCEdmlNsdimH9bB\" \"2ERXnAsppeNI3/drtVocx1pJqDMM2WQgjhSpA6oOKBkDUZkxy7LOOefcv/7rvypXyk888eSUvIhU\" \"KtHR0RHH0djY+NhYUT8SR3jL90NK+YEP3PrrX/8yk8kcdSfHBWcMXz/xib/duXPnYTY2OBec69eo\" \"YRhElEgkLNNMJJKpdNqyLMuyHMcxTcNxHP13bMy3qnNOf0BE0xSVCugEbdM0HMc6osnrfhhjjmMT\" \"kes62ooyTdN13TiOgiDUKTXRJABAScmQMcGVUhMOCwQgIKJarVYul23bvuTSFR/+8If7+/u3bu2t\" \"MxIRLMvK5/O5XLZQGN23b3DPnj6/VjsWT+3AwMDq1U/ecMP1pyp9QuPM4Ouvf/34iy+uO/z2jGEU\" \"R6ZlZbM5znnC85LJpOM46UwmkUjYtm0Yhm1bjDEtI7XVrykbx3JKSQsiimOltVLTNG37UGTVvoXp\" \"0YQ4ltpWIwIhBAByzmzb1nqt9gNEURQEQRzHQeDrAKx2ZtHkpvRKKkQkII4YBEG1WrVt6/Wvf91L\" \"L236x3/86sjIiCYTEQwPjyBuXrx4kW3bHR2diGx4aF+5XInj+Ohic6VS6XOf+/z11183y9dXxqOP\" \"Ptrb23v47dPZrFKyvb29u3t+Op1Kp9Ke5yWSiUQiqUtXxLGcsjgWEaVUWg3VYXoheBxLnZalPamM\" \"McbYlMzXemMAiONY221SSkTWuIZ7UsSidsfq9noOiBBF0nEcIgrDMIpipWSt5geBH0VRGIZBEEql\" \"4igC7UxQkigOgsD3/XK5kstl3/GOt2/evOVf//XfwjCerEoDQ0Mjoe9zw8znm3K5nOs6w8MjxfGx\" \"ai04utJxmzdv/va3v3PrrR88imuPF84Avj766E+///3/d4gGUzal0Ba9ZZkrV756TmdnJpNJJlO6\" \"1prnuZpzljUhVrV6OmGPE8EEpQCRAYAmq/6gXQEAoJMShRBRFOsyg9r5pRfMNHZFRPUHg3NWjx1o\" \"TOZbkRC8PpAQjg5x2bYdRVEYRtqlEASBDnRJKZEhKQqDoFQqcc4sy2ppbn3/+9730sYNv3nqacB6\" \"pgSNFUtEUCyWqtXq3LnzurtTQ0ND4+PjhULB94/Yq1AqlZ555plZvr4ChoeHC4XCQb/iDB3bZMKo\" \"VGo6wk5ErmsTqXPOWX7ppa/K5nLZbDaVSjmOq4sQCqH3DGJKKc0VrQDUbSyY5HHjQIwxLf80m7WI\" \"ra/YrrtvJwlN9c+GweVkKVnNXSmlVgb0uJwfwGCYlMG2bdm2rT3EjuP4vl+rVU3T1GJVgiQpoyga\" \"Hy9alu04ziWXXvL2d/7x5i29wyMjDXlbiAhRFPX3D1arta6uee3tHY5jKyVHRkaPQsqOjIwUCoVc\" \"LnekFx4vnKn5WdpP1NLa0jl3Xi6Xq+uLmk+pVOqaa66ZN29eJpNxXS+VSrvu/lprOnDFGGt8KddT\" \"roggjnXm3kSISykCQO1VMAxD65NKHcDp+t5uOgdg8loAwHq9jElBy/VstfNBd6L3I9BbGOgO9TeG\" \"IRzH9jwvk0lnMrlMJqODHY7jCMNQUsZxPDY2Vi6XiOhNN920cuWrD7pQJ47jkZHChg0bBgcH8vnm\" \"BQsW5vNN4shTdl7xXXeicbrzdd++fffdd9/0867r9vTM7+rqYowVi0UdLyUCHW1ateryyy5b2dTU\" \"lMtls9mMaYrGJayTBD2gImw9S1CzBACISAgOgESKMWRML5RFw+AANOk0nXCjaoVEc45zNvn2309B\" \"zUjNYz2iNvLqU0IE/QjV3bH1b01T2LaVTHrpCaQSCc+2bUSM47hcqYyOjtVqtY7Ojre/449yuezL\" \"ua58P9y6Zev23q2O43R0dCQT7lHYTj/96U+PyJY4vjjd+bpr166f/OTeKSc50pzO9u7u7lKptGPH\" \"ztHR4uQSF+KczZ0755prrm5ra8tms56XcBybc64U6VTAOrSBNclRFII3/vEYw0n3KgBoIwm1egoA\" \"dcdCPUxQN8vqvoV6h5P/I6JuPyG/J7udjv3eNJ0RVj90HMvz3GQypSvKO67LGCOlisVisVgKgvCa\" \"a15zxRWXH2ItZBCGO3bs3rlzZzKZbG3vsCzzlf8GB+JXv/r1Eflqji9Od74eBESpdKajs7NQGN21\" \"a1e1Wmtc8kpEl1xyyQUXXJjPN3uem0i4jHFdeFAIJnWZQiJE1CfrJrw+E0WxThiEhrCQFpZTFtay\" \"/Vt2TQ0jNR7qbmFy2bc+1FE0AJrMbtHlkuK6eG5sWfcB68+WZdm2nclkUqmU67paykZRVCyOl0rF\" \"XC77rne9K5U6SAbg5MOBevuuPXv25HK5plzWOPKFi3/7t3+3Y8eOI73quOC05isRbds29dXDGObz\" \"uXQ6PTAwUC5XG5VIBJrb2XHddTcsWLBABwV0NxPfolYlWaPQahwLAHSS4WSkVOkPAMA545xHUdzI\" \"RZ2wor2nBz3Uo+iXOzQQuk5BLYx1BE4bgo3Kw5TMw7pHzLIMz3NTqWQqlfQ8T9e5KJcrxWKJSF16\" \"6aWrVl02fZc5wdE2ueCcMRYE4b59+6Io6pwz1zvy9NadO3ceTvLxicBpzdfh4eGPfvRjjdoYEQnD\" \"zGRzpVJpdHR02lfGZZdfccklF9u2ZVkGIhxo+kzAMIRmkhal2kLSRNHntf6qydSocWoLqX5GHzLG\" \"tH9g+mF9FK2uaMW08VGpExcmJWjdBNQeX91YX9hoijGGjmMnk6lMJuN5E1K2UqmMjo7n87m3/sFb\" \"Mpl0481BRGGalutmsqlsNuV5Tuj7e3bvNk2rvb3ddZ0jigIopX71q1+fksJbpzVfYVp9YMYwl8s4\" \"jrNnz55K5YBHXAi+YEHPLbfc3NzcHMcTgrDB9KFGA0tTSntVtXowqXfSlD7r4q2+EJyxeuMJD2u9\" \"/ZTD+ij6FS+EmAxUwWS64AHWWB3623psYtJftp/0MBnddV03mUx6nmsYRhAEo6MFpejKq6++/PLL\" \"iSZmouPJtm27rqu9JZlM2rTt8WJxcHCgtbWtta3FEEdQn1ZK+fnPf2H6fmYnAacvX6WUn/nMZw9c\" \"Dk+ubXZ2dsZx3N8/2MgMAEi49i0337xq1eWTZNp//6efIdpvfmnDSCmlQ6bTElYmLtem0uTc6ksO\" \"sdFu04fTR5k0sBrNOGzsUz8V9SnVO6krFVqZ0V8SgXadcs5c19bREB1wVopGR8c62tuuuPIK23bq\" \"Dl2d+ZBMJjOZTC6XS6czyWTCNI3h4eEg8Dva2xOed6SVu2fl6wFQSj3xxOpGoYjImpqbW1pahoaG\" \"qtVqI68QYe68rt9/y1uamnIwYdzQFH94g3GjBer+365FrGaSvqpRedXQ8S39rTbUiAhxIgVx0m47\" \"wISqj6IrbDa+oLXUb7TG6pVjqGExY93egkn1d7Ilr8/KdZ1sNpvLZVtaWtLptM7/uuyyy3p6erSN\" \"SDTxTrAsR++wrHcBcV03iqK+vj4hjGzTfh/24WBwcHCKqnZycPrytbe3t1qtNp5JOOb8rvmMsaGh\" \"4SneU89z3vx7b16yZHGdxIiog0m65YHGzYS+qN0FABDHsu66n2zGhJhqYOlv69aPNrDqw00bhdH+\" \"tVwT7aHB/GrIf50wy+qxg3oFmvooOuSrT+qWUiot4RhD0zRSqVQ6nW5qasrlMozhggULzj9/uRbG\" \"Og/dNC3DEHpFkGVZtu1Ylk1EAwODo6Oj7e0d2Wz2iNyx69atP/legtOXr7ff/qnGSq4csbmtrSmf\" \"7+vbWy6XD3ALIHZ3d99www3aUp5cwgo6S7rujKxTqm64NIaaGnurf67nv0qp6rU2dM9woPlVj281\" \"mlCaYXV7S49S95dNCXc1xg4a5dakGbd/0c5kgJch7i+GIAR3HMtxLP0eaG1tufDCC5PJJOcohDAM\" \"Q/+vzcHJiUnDEDKOBgcHTdPs7Ox0jyRPcsOGDV/4whcPv/1xwenL1ynvGss2W1vbyuVyb++Oxhc9\" \"Y5hMejfd9KalS5fqd2tD0aGJT1NiS5MCbirqFlXdnzVp1ysheN1Uanwd1w91oGtKTLXR3qoLY23k\" \"TbG3ACaW4kz/7dPDXXXi1qX49N/CubFixcVtba2GIRxnYjsnAIiiqFKphGFYrVb1NrlK0djY+NjY\" \"WFNTUzqTPaIY7cmvJX+a8vU///OHjz/+ROOZRDKVyWS2b99RLJYaRSBjbNmyZTfccEMymZxcErh/\" \"TdVkm/2xJZh44x9gCWlbZzIBayIJgbGJ8FJdnjGGde1W86z+5GhSNga0pkAvPKxbVJM6CRyoheNk\" \"b7zec8OPPfjb+mU2oFMLFy6cN2+OzkcDgDAMfd+vVqujo6OFQqFYHK9UKlEsFUEYhn19fbZtt7a0\" \"iCPZWvbRR396//0PHH77Y8dpytdNmzY11sMRgre3t4dBONC3t1GcMMY8z7322muXL1/GGOqlWvVE\" \"rfqfvK5K6uXXjfaWZqE+rDOj3p5zFkUx5zwIQt2tJkfdwDpQ0E4ZRU2ZQ2MtzvqSrMYp1etzaY2z\" \"3hInqs1NPCFanZ1MmaDJR2jih+tDImpra1u4cJFeYh6GYa1WHR4eHhgYGBkZHh0drVSqeuccACCC\" \"sbGxarXa3dOTyWQOv2bT4ODg1q1bD/ePejxwOuYTlkqlKZWyEwkvn88NDg5WG7I2EdE0jYULF1x9\" \"9VXJZFL/OethUkScnsunP+NkzitMW/pSX1wgpUTEatWPosiyTMexGxf9wYFqbqNF1TgKHJhPOMX8\" \"qs+hcUr65aDf/oi8PpDebQ4aUrwZE3Es68pJnd/1FROWZS5bdp5t26VSOY4rhuGTUlIRkIq0XG2o\" \"Jub74bbe3stXrWrKZYeHhg5/DcKuXbuq1arruod7wbHhdJSvjzzy6D//8w/qh0LwtrZWIcTg4OCB\" \"ChMJwS+88MLzzjsPJhMC68YNAEzJ5dPhorolpNcF1C/U39Zz/IQQiIxzFoZhuVzR7/F6nKxuYE23\" \"qOqjTM8nrDeeDEBMzKHROKs/RfWu9C+R8v9n702DJTmOM8HPPSIy63iv39EHuhtnAyBugDhIghQP\" \"SLx1rC5SpESJWs2aZNRIo7WdXbM1raQZk83O2M6SWpEYUdIMiebpCwAAIABJREFUR4cNtYIOUiLX\" \"RJAiRfEEIIIgAUIEQRIE0AAajb6Pd9SrqswI9/0RmVFZ9fp1v9eNPtZs3Rqwl5WZkZmVXhH+uX/u\" \"ng6TprMiNrpv1p9rBNXklltu6XQ6g8FwMBiu9FaGg8GgP+wPSj9KsRnJ0cOHDx8+lGWt1V0dTyJ/\" \"+If/ecJyO6tywenrwYMH//qv/zptqmq73d658+KY59k8koGtW7a87nV3bdmyWVWaAa2mpwmjcPzo\" \"DUXIUpMAq5kmcQKTp2kwGKpqg+6kMYc2wa8TIqrGsBPRslFQbeIe0maznHIz9yaGM7AqhNbYOwny\" \"mPmKK67YvHlLpeiC8qSFNYphceTwkU0zU87ZDflVz6UX9oLT1xdeeOGTn/xU2iSiTZumrbX7X9jr\" \"y7EUju5U96W3vvSVr3xlTPafwOwT4Iaoii2tDjUlkzRRBFPRzIjNY0oWGqs8asO3eT916YyxYZsk\" \"xmYEK52SbqmJ+VIEK46gqjHxJg4bK3FErS3LENeZlFLQNJo3b9584403rLNMbBlkaXm51Wp3Oh2z\" \"EdLWe9/7vv3796//+DORC05fjx4dY7Fkzu3cubMsyyPHjjfTkbvdzpatW77/+3/g4ot3JqZf03s/\" \"AW7Srqhn6aVGrIPGBIYa4kTPQAixhGVl6Ee4k4IIq1FdY9hRfKu5mQIETd9CE/PFwEUkNwJIHya1\" \"40br5Obe6M1ocCGQZe6Wm29eZ2sQVV1eXjLGzMzM2I10E3n44YfPWRX5C0tfjxw58p73/HIdMQeg\" \"01PtmZmZAwcO9Hpj1MEsc7t27Xrta1/TauWpzGVkr6Km9kXg0gwmYVUgKhXErBl90bCLs1c0MKxr\" \"uHhifCsxBtMnCUU141spZ8Y0arSkAEHdCnkir2b0u6p5C5Q+T7Zv4ok3z43mbBwwugtE9Kqrr1pv\" \"KxvVYX9gjJubm8szQ2evKNcZyAWkr6r6mc/8Q0otZICZ57dua7Vax44db0KKuDjedtttu3btqjc5\" \"gqQGIZBSKhUaSAg1wGrqQRIRiRZqcumnuoLxAFpFIKQq/3syMAtAJKyCX9VVGj+nUWwsbqabSbqo\" \"qiLReJVmPKLem7CmpCMjyMsyt3PnxScvmDAaByiDEsE5p8rr11bv/ac//ZlzQ3+5gPQ1hHD33f8p\" \"cgaYIECeZzt3bB8MBseOHWu8PGSZ27Zt2+tf/4bp6anmCOORJ43pMTUSaiIqbaAckyL7aTP+HV9/\" \"nHejwq3VWKaJt0S0CX0aIE8TVEpXj4gq3U3cjOM0cVX8KaIR0Er+CpERvaEJAdOJ8/NzmzZt2shb\" \"0BBCGcL6QVQI4f3v/8C5YXBfQPr6u7/7/u9+97vxbyYwkGVZp9M9dOhwvz9oOEpRlv6GG26MfI4J\" \"sNxMyZqIb40DrDHow8yJkJXMyljL0vtSRFN47ITxrbhZ4y0wn4BAGEFbnQ4+5sFIOpruNv1xwlSI\" \"lAWe7ipxdJqmeZQsy7dv37EhCB+CF5G1wmnnVy4Ufe33+w8++GDqrxcUAkxNdZnp8OFDzSNjmOCV\" \"d945Pz/X9FzWTD9uoiutqc0Tb5HG+YQR3yRtFtHBYOi9VxXV6CiV2uQw6SoY+RY4XZcaeVerL5ru\" \"bcKmbBLDm6EvY0zKKW8uuHGcRHFsQsB4k6nsYafTvvzyy9b5FohgLcdSSKeROnsO5ELR1z/4gz9s\" \"urFUQUQzs3MLxxcOHTjQtOTyPLvqqitvuvnmLMuiKyeR8ONriwlY0TBM8xaN6IUjS3ScTzgyPeOk\" \"FfEKGjmDMak1ArKYbAOM5jmMo7o4YOI0Ji9EvGKkIiTfPlApd0KHCVfF2onxF4UG8GrSX5oQsI6T\" \"mThtG2Pm5ubW/yISX2JDMhwOH3/88Y2edRpyQejr3r17H3jggYkPO532/NzckaNHCz+2IIrI1Vdf\" \"vWvXFbFkEEbwBaqjBCyqMmC5mb8VsflafMImJ7DyMNU/k6Rt0Syu9WyEfuLfE0GpxlVMxF5cF+lA\" \"leA1GjbOi837j4eleS4drKpNeiFVhQvsxImoXBCYmZlZ54tQxcpK/zS6yB45cuQ3f/PfbPSs05AL\" \"Ql+/+tWHmpMrAIbOz812Ou2JxmWR4HLttddt27YNSJyPMaZfk+/cLF2RZo6JTdSpHWmc6I2v1Vfj\" \"7It61U5WQUykmQiPoYZTKYcsSpwmmxcdHyeVNTD1uUAVs5WJg9MNp71NUR2zHPLMTXU763H/14aE\" \"Hw6Hp9Gy9NzI+dfX733ve+973+9MfEiEVqvlfVhZXp74vNNp79q1a2qqq6p1GesR0w81umpKVKzo\" \"Vkf9yqlBpGqOM3En1rrVSV2N+6Em1kGd5gqA2TTDVOn4tCxMyHjowUS148bDxHhbfefxEUYpOs1M\" \"imZAy2XZzKbpdRqjkdYzHBbnMsS6ITnP+rqwsPBzP/fzjzzyyMTnbCyIRZTGY4kiMjs7d+WVVxjj\" \"UMVdR+SPdMxE5Ak1EGGmqKCoVCf2HahULfXanCDzR7dAE9Ul1WlanKsIhJT8a82LxvKGjaFCs8ZM\" \"89xU7TCW0mBm5tEB0SpoQEAT9044aI3h6ZlZNqcm4sXvZ2Vl5ULuKn+e9fXRR//5hFWzjTXWmixz\" \"kDHb31p79dVXX3bZ5dGvPrG8Vuea2MZtLH+rUfnCRqO2eVbUszRHqmrsroHKeKCaCZWSWLgJ8rz3\" \"KWbRvGgjvmWTe6gR32ryG6ubSRGs5hPFcgTx3wTeipdIQBOrEteYud1ur6eZNxFNT28iosFg5D1c\" \"vxw7duyJJ57Y6FkblfOpryLyG7/xm6sbFhMgIQDUauVNbhsRpqa6V1xxxZYtW6KzJuKMZm1AjNP7\" \"T8QnjJce4xPGd5zwU1zHywa9ppkbgwaBsIl1xlFdrLWR4lvV3xPnpu8hRhPSytCkOE5cdAJvpWS1\" \"WKe76dONvrD4Na6VNjP2tRO1223vS11VG2Y98vjjj99991nvLHc+9fXP//yeZkZhU4xhEXEu4/GJ\" \"odvtbN++PcuyJuxoSErYqkj4a7lmYt2hibPqKP/Ee43whZoHE0Wn+uSR0ZPQiJaNbj5l+aXEstUB\" \"TFWt2YarR65OnHjwiNWahkftrK2uRYQsy1MTxpNI1NeVlb6c8wbk65fzpq8f+chHf/3X/7cTFiIW\" \"BcjE7E2MFblAlmXT09MNr1PirFS0krgOMpvaA8pN2zEBLDRwyYTrPrEHa4l+e2pWKiYiY2wj3BVC\" \"CLW5iSbcoTFe1VisoWGMcjSnGzkCBqvuMJ0YHzzZ0EmY2ZgxZ60xJo7M66BgZ5Y77dag378wIwVR\" \"zo++hiCPPPLPa1XNBtQYEzsHThhSzmXN9rvMVBtqY+tgXcyiQi3jfMI1c0rXWDE1evtTJClduuEc\" \"GMsaT6huYkCum9BO2C2xVmHzHuIcGX8MJyyZGMO8dcrrWLZwevD0oTFmdQPH1eLyvN3pDgb/v76u\" \"ks985r4PfOBPVq16lVDVqkqaxFNUzqzO3NxctBaaxmIkNTcHSWz8tTZVUxRgxH89kcqSc67mAFT5\" \"4hNwDQ2mX9xlrU0Mr2Z8Cw281byHOuNcmvG2+OwRbK0umZgkJWwlTwUa7i2AWq1Wlp26zuumTZv6\" \"/f7Sci/Ihauw50FfFxcX//7v/1b12FqMCmM4y7Ky9MPhcJwbT3med7tdIo5R9WaNCYwSpKpQE05a\" \"q0JVaydDBd3i5FSnVU1U3x7pYoxvNUBeYvqNAmzNe2jGtybuMN1Ds742GnU6kumyqmRiaNzbGARs\" \"XjQeMMECO6EQ0fz85kOHDg8Gw5O9vPMt50Ff9+7de5Ia+ESU51m73Z6ennbOdrvd5q5up9PtdGuO\" \"X/V5Wq9Xj1Yz/UblCpss/eSTSuZvbSACIEBXk7Wb8a3xC5l6WT+xWpxwRV6LQDghTWQWub/Ngyeq\" \"IDbOCqsQ4ZpirZma6h4+fEjCeajitn45//GtphCh1cqmprrtdts5R0SbN29u6qHLsix39cFU45JY\" \"TW2ES2icG8Uc2xAAtes+RTubbTbi/03VgVsi0oqjJS1vUleTlqcPJyCgruJnjd/haCiA4uVSzKIs\" \"fbour0rASj+t5l1NxCxi6oT3JRGd3H5V1fn5+SzLlpeXL9RAbCUXlr5mljud9vT0pqmpqW632+1O\" \"7dixI5kN1prZ2dk8b8U5bAL6pEmokSxVZbHGmS8eEFF8+rte2Ku9cSZOtmCUSBKo4w6j+FaDh+AT\" \"fyAqYrqHWH8ghKpUUSpm0Yzyx9tLDN1mumKUqMFNh0CN6ioFrR+Hx0mPcSmwzbL3a8nmzZuXlpaG\" \"/f6FGoit5Fzrq4g8/PAja9Vd0qokhIslH2Oh/jS/bto0femll2ZZnqaThFdQww7UWAdVuChESzSZ\" \"gHFBTzDOORvfawI3AIpispdaAuPN+Fa8Aa4rqCVDNnb+rue/RO3zaNjZOiJzTRAIR2kUSeJZsYAN\" \"Gjk8zaDahHnatASImOhk/qwsc1NT3aNHjxZrGCQXjpxrfV1aWvrN3/yttdz4RVGurPSXlpaWl5fK\" \"shgOh5ump/MsEeeqhKdEAkz4BuO1xxrF1UytWGPF1dYpCXVFgIVGXBfj5L04pSX1bd5D8+B4D0mb\" \"m3gLjRKFqjECJ80bbjg0QnqWxjRfxUcmPF+oFpyTKeLs7IwqlpaWVhseF5pccPWI+v3i4IGDw0Ff\" \"VTqd7rZt2zrd6ZV+1ck3qocq6qTWkSfcWit1K1ciajofogs9iffeGBtz9+LMl4K60VpoWHsnqLVW\" \"lj5Nz/Hc+gbG5jCqKm+OdU+ewIQT3g8RBWLcoWImNNFbOrjeNXZjdVFOidTvdICqxi6ek190Lc7Z\" \"rVu3LC8vLS0tnV5f2XMpF+DvSUsfFpeW9+/f//TTTx8+fHh2djbuIEKe51mWxalugkeHOpqvOlZf\" \"u95EBDQAmMfohTU3b6TUTRvDOVeHiFK5ilFsaWJCGg938UQJuiaEqsu2NZPG1FpDxOPoLbVYAhrl\" \"4eOzpEdrljKItJgGQJSlpcWJirlNmZ2d2bRpZmlpaTgsT+NtnWO54ObXKCJYWFgk4m3bts3NzcaY\" \"jXNZ1BvnjGpKsqsWYqoEkTaafJmx4AUReR/iXJiIqkBCY9VqG1928sAbExPENZqk8d6YR5N3CBI1\" \"ElUYaaz0Wn3wqIMcasM0ucaING2izqaMU2z8JBEDnLMpLSy1oo0/iYgsUc/f0XAPoSItHD9+vN8f\" \"q1SO2mAwxkxPT5el7/f70cdCaQmDruEkPJ9ygepr7PMLLOzZs2dmZmZqqruy0idKdmQE1NQ4Xqzl\" \"aM4m4lKdEjiCVtHmi+Ex5tjyWGrKCMe8VmYOY/xRE6e9OGZzGkbDOR83m7vSDSShqihBdQ9x1U7Q\" \"sDlm9DAkgJguVOv0WPgAVS5aNWy6bdQMr4WFxeGwaF5CVbMsa7fz2Mig11tiJssMy61WyxjW4EVk\" \"WPjSr6b1nFi63e4NN9ywniPPRC5QfY1SFMUzzzx75ZVXvuQlL3nqqadEZDAYpnhjAsvGsHNVC5dk\" \"zjbVxfsQZ6b0OuPelCqTpA4vVRZCdEuJKHOFaSJjYXW8IOZzA6O9IhoVJtoPcRYXkebsK6JAVQY0\" \"6lak7MRAdHS0pcl+4tz6uoEb5YnSZn1LXJblwYMHmvZrnmedTueii7bNzMwQUb/fX1np+7Ik0qnp\" \"brfbjaSZODf3er3BYNDr9aO5Hxs9nPBl3Xrrrb/6q7+yrvd6BnIe9PUka4xzVhsRcu+D9yu7d+++\" \"7rprb7/9tmPHji4sLKSweD3LnnioCQhFRGkTjUk3rbYJ1E9EibTRnate0CvaShw2hJDYiWkRR53r\" \"Fw9OuYMAxXLEyVEaQX19VvP/VZitcUvUvMNYpT6OmYBmOqZOAcLKSv+55/akcpytVrZjx46tW7f2\" \"+/39+/cXRVEWRa+3XAy9QHu9fooUxkbg1tq5uTnv/XA4LIpipd8vBv1h4c+Xm/Zc6+v09PTv/M77\" \"fuEX/kX0R1qDmSl39UXhuktoZpOwkUPHzDef4+cO2aXlYVzj+iu93U89ed0NN+7adeVgMFhcXECD\" \"ehJjQqk2YPTMNypPUTo4bibrFrUuogGbEhhKNxyDT02fQD1aRDajgFZzb21PV+t+c2+c0cvSJ+pq\" \"MnATqyZGFiKpIGHiOi0sBsPiH6PORzWBcBQPiz+J5eXes88+F49ptbKtW7e2Wq3Dhw8fOXxwebkf\" \"q8NAVUEABoNh8j0PVnoLC+2YDj47O5sICb3e8p49zx8/vriWE/2syrnWV2a+/fbbduzYuff5Z3fO\" \"82uvp++/HVddajdvo/mu5ob6iiOH9L6H/Z99znzjafVeg+DoscXHHnvs1ltvv/HGG5eWlofDMs4f\" \"EXYkupNz1hgT8/qToZmcX/EDIuO9p4pNonEWjEsnaig2vmSLtRwTb6JjAZWfNZW3oNpXYGIybY2E\" \"OF2ljhtXt4Hxwkex+mc9x1fAsZnLFRfiBBYTuIw/1GQANJ80HiMie/Y8t2/fPiLK82zz5s1EtO+F\" \"vb3eivdNs7Rpdlcf9wdlf1gCWF7uHTx4sNvtbt++/ZJLLr3++uuuuurqRx/9xvN7ng8+pGEuvnjn\" \"i6Yla8t5sAd27dp19+++9//6t//9214rt1yBHVt16zbOW5XDqAvMT9POi/Tqy+RD9+IzD6FfAISF\" \"haV/fvSRbrd94403LS0txr5wqxFJ+iPOTwncJHOWiBKFJc56kbnXRD9RfRNcS4ZjWYYGqjMR5FHN\" \"Coh7ayQ0uocE46ICNaf2dNF4D9FWTotDYy81wWKqOl8byhV2xIiKWZkHRVE+/PAj+/fvd87Mzc0Y\" \"w7G403pek1b/IbY5WFrq9Xo9Zp6entq1a1eWOWvdnueeC/2hAjt27Hj/+3/3TDVjHXJ+8Na1l7Z+\" \"8Y3uykuHF23F7GzW7ow3iQWm2/SKm3hm3m7qho9/WZb6IMLK8tKDX/kKEWWZu+uu123ePF/PXifw\" \"IqfAadwU0YnYjY4XRI+bdRmsyhER59kQKjf+BKpzztQz3wilNW8p/YRS9CsBrOg7m7iH+BtpzM3x\" \"lsYQFUa5aNVVIgoktlT9QjgGgVWxsLj80NceHvQHnW670+keO3bstHNfVXV5ubdv375ut0tEeZ5v\" \"3769t7x84MCB0ktzFjirch70dbh84PA3/+Cy7WF+1rQ2ibOkAZPxbUbeousu43/1kyCij30pLPVR\" \"Bl1cWn7kkUfa7baI3HXXXZs3z8cVMKKQxszn4wuL8BwAqmbBknzpEc4n10GN7kelNpNEvYyoKFmi\" \"aXM1fFwLAiaABSBW76pN6tUQCukOU+5h3JsOTldRlWLxmeLQQ35wVJWYKYhGq3dlaXmmeHDHPGk2\" \"FYJfXl4RWfP2Tinxx7OysrJnzx5rzWAwaLXbbKyWk3SLsyfnQ1+XXgiH75/ZJN0pWCgjqKzSV4AZ\" \"LUfXXM7v+VEQ8ce+LAu9IKU/duz4/ffft7CwsLi4+Na3vmXHju0Y9VnVRjHAyEZN4cqKsoQG1gFG\" \"8aHmfLwaSaQUmnRkE0KleEENksh7H9t1pCW+ge0SoyVle3PzZpqIDWMuVW4eXNusUhy8f+HxD+ny\" \"g9YMbUZBMyBEfe0E/h9ef+ill9gvPea/9I1+UZanraxE1Gpl8UHKslxeXj5+/PjKyrKxVjGMk+5p\" \"Dr0ROdf6unzoO9++9193rOSZYx62rBVYxhqRQIJzdMMu/uUfU0P2b78kx3s6GAwOH/Zf+cpXFhcX\" \"B4P+j/zIj1x88cUTXvf6XWoyA5rvOBUDTF6kOj5U2ZQxZJXKT5SlzzLXjDahti/j3wmfpb2RZFOD\" \"oYqB1TRMV3+SIFRc+muApRMPlexaETHGFovPrXz397Hwue504bqEdiw9pwBpqTSg66+hS7ZjsRj+\" \"49eLBMhOT7rdztzcPBH1er3l5eWlxYVBf2Vuyuyc6/zZh/94amrq1EOcsZxTfVXVJz79P8vCN7Ip\" \"m5mSgKAmtwKFCtao0wOX0Q1X0nt+VBjmr77ol1Yqf9MTTzxxzz1/0e8P3v72t+/cuaPp/09eKuZR\" \"UKoJuVTVe3HO1NCK0kSY2P4iITpxIhKKmKYJgxLeaj7gRAgqXTQanc2LNgFW7TEduQUiwFLVWAQu\" \"TfBUd/li5rIMg73/4Bf/qdVCNmVohiizqFky6qEtgXLmTRHQLzNCsVYO0nreXXTNLi4uDofD4XDQ\" \"Wxlsavl3fL+85qXty+eegN625it88eSc6uuRpz5TLD7tDKxjcMnsQKEsszw7Be3SOFxxBf3sm7G4\" \"bD/2IHzpy9IvL/eefPLJv/qrv1xZWfnpn37npZdeakyeONQTXp40J6F2TEZ41HAbVSu8tabfL51z\" \"ZVmisTqjoY5xYnWu0rM07ASqW/9Fm2mVqwFWHDbpa+NgKhaeGPaWTTfAGwxUyxK5pWgcO5DREOxi\" \"MPsOHpUSp62shpC18u5Ud3l5eTgceF8OVvplUVx5mdx1o3nZjWKO/VbhntHWK/L5N5zeJdYp51Rf\" \"jz7xcR7sa+VkOVhHRAp1zEED+KTgUoFuRtdeZn72B+nISvjiNxAEZekXji/sLsuPfOQjCwuL7/qZ\" \"d153/fWdTht1HumEi8AYk5yLqwNaNdaJqMjWl0W/P+A6Tbeu2jJi643HpdAo2BHitN286ORD1RBq\" \"1SZN7E1VkVcPIoHLoSlcKJY0CwQDbZXUbjArQnnsWP/IYkfIA6cJjJTQauXW2OXlpeFwqKr9/nC6\" \"Sy+/xVy9i9uzZdZZ0uUPDI7uJPpANnfX6V1lPXLu9HXvI3929HufyAwZ12I3MAaqAngmBVWL2Frr\" \"CQnUaHeGbrtWfuFNeuQYPbpbAZQ+HF9cKvxz9977iYWFY+94xzu/7/teOTU1Fbl8abVNACvFS1Mm\" \"TGI8NTNG6rJA6isJzKxaMWli1Cqap3U8aYTq0rCjmycQUbyHFKSImzVWoya9oQmw6tAdR/pLiuRV\" \"v0YCMSCkyh7WBm+IaEAiCgO1BKDsy+HDtLRUEk4/HCWCQa932IeyLIuiJCIGrtiev+6Wcna7ui4J\" \"YIy2sue1fBT4/7i+qoSDj/8/z37hP2RYyDomaw2JFUTG5s4GJmV7ipVKjZISW82n6aU30I+/xrxw\" \"LBw8Vrkwe72V/fv2fepTnzpw4MDBgwfe9KY3bt26lZmiSx41wJrwxhMR0QjNpAg71U1ciRhVk4wy\" \"z110liUzI+H0Bm4bG3ZCQdciEE7wISPeSuHldJVUtbO5aY0xDDIhMmkVDCgEPCTN1AcEYGVRjx/V\" \"XpEpBcCftkkwKALKXiSDZ5ndPhPe9lp/4422PaUqECFAibG4+3cC397Z8prTu8op5azr6/ILDyzu\" \"/9aeL/2W0X6eW2czawdZTtaCiZgxngpwYqFAAEiplen8Fn7DK7DngN7zBe0XVWmH/spKWZYPPvjV\" \"I0eO7t69+20/+barX3J1zLGWukHrBPzCuD8hzl5EZAyp6tTUFDNHP64xVkQnaIrJJIhT3ephU+wt\" \"XbR5etL1GrqN4a2yrGKzKaw64QCpPlcpta1qgVKFAQaq/jOhJM/wosMVFAMtyhIqZ+JyqsNdSoAx\" \"/LqX6hvvxNwWlQBfKkIAq3HIXa934Gv5zCuMO3WFjtOQM9XXI09/7vgL/8wQNJabEsahA10EcOTb\" \"H146erhlfbvlrOPMFXkbTLCGjIFiIykOCiPU7erOnfKjrzVP79cvfrPKzPYCPywVvccf/9a+ffsO\" \"HTr88z//8zfccH2n006p2026dNxMSKj6LhptAaO2RVIO0cgNVLMER6m58cgmXfoEN34izFebGcA4\" \"3kqbIqN634maiCoUF2t2wLZmyBIApkCiyeMcgoaAcqjFgrBgrhVaRoZrFUfYiDDhxovlh1/FO7eB\" \"VVmhgYyKKgWBCfr0V+9u7/iJqfnLz/hSJ5AN66uKSCi+94+/7QeH2PLKvof7x58jjhWsVMJMkEFA\" \"ydJS8gAyV3Y7WSd3zhVZVjoHY8DMxDmTGLPBL1DgQHMzfM0uffcb9LlD9ul9Iy5VUZQSwsHiwMc/\" \"/vGFhYV3v/vnXvWqV0UEFnl9GOH9EU6ayN+Kh0X3uGqCgU2WYKS5MBq4rebceGubgf6xvRjHfFQH\" \"1VZjvigpkcFWTRUVkJjxEseJnlZV+FK1Xd2jAqWqAibYUHoALYf5rmYWzDjD0oOiuHQeb3tluPFq\" \"k08xQBLUeAjBKUQBBfvBmdjKJ5eN6auqPnP/Bw48/tH+0oEWjuQtbbUwPcdk4ENuUfqwMvSliBah\" \"D2JL0soya4ssA1GwjrMWmDnLssx5thqNuY2JIHOY2ca3Xoe3vYp+7170h57q2/M+BJEjR4588pOf\" \"PHTw4Nve/va3vOUtO3ZcZC3HGq7JEMQoMWZk0Sa2YfJ9pss2yVBpYW1an2lzNfw6YXyriauSTZzi\" \"BYkQk2yMZCrE4vchhMGg6PcHxpH6aF5UET2rNPA6HHr01SimurxjMzp5WFzRM9FXVcx08MMvN993\" \"M81McSnkCoXABAQGSDNPDLKyFThbXIIN6KuE8tkH/2D3l/9DqyWzbW7nmmVgAzJKDNUhRF3wLUUp\" \"JpTOckFQ44YmA7Naw84REbvMGS4ry/W0RBX5NDZfTK+7Qx59Rv7hEYhWE2BMOxoOy+Hw+Bc///nd\" \"zzy7d+/en/iJn7j22mucs9HZP4GTmmoR02UTVG8enDgrVAeoUhgiEbjSUHHpbwKs1dGsNBo14lur\" \"MrQklR2gukDi8eNLvV5vMOj3+8PWyorx6hwFYS+gAK/KQiIKr6SAwkGu2ILLt+jRZRR1S/kNEa4j\" \"rm3neP1N/EMvx46LoFYFpAL28FAXiAyUgABVBz3dV3sq2YC+Ht/3jSe/9O+mWzrdgcuMc4GdGkPJ\" \"gSgCb4hULYRaQyVYBjOIyGUOELbOMjtbMJ+AMLABUVhCe4avvlzf/hrz/GF867mxeYOgohiU4ckn\" \"n/rwhz+8uLj4zne+4+abb8qyvPbGw3tJs2xy1tI4z2hQbhg9AAAgAElEQVQ8LSxmIkR0pSGIcynx\" \"qzJGG/zX6EkAGvBrIr5FVFEQa7w1AlhUBwXibF49FEFVjx9fOHz4cK/XK8sSIOsDCYKHdRkhBAQI\" \"SQA8gof3EAETLpqjl19tji6H3QchyiIy9OuyZeO1GZifwutupJ96HV+8VTkjEDhAQCwaKWcKZQV5\" \"DMqe4GzV3Vivvvqid+DRv8wR2rlptcFmaC1cbplhbIzSiIp6r0QhwgsRMMNYR8TWkGFSFcPeWD09\" \"p0qicVEgLcnm6G6lW67HD++lF47g6DKSCzXafQqIyLPP7vmLe/786JHDP/Oun73jjjvm5qpmVM6Z\" \"lBs9AXcmKILNtLBmDKJZXqAZR02bE9EvWhXfStZwE2Cl1p6oZsHEzJJer3fw4MFebyXUVdlUI+NM\" \"JRRqOPITy9o8V9XSqwrY0LWXYGlAvQL7jpGi/oJOKgQYRu5w6TzuupHedDtftkNbbVKAfJ15Rgyj\" \"EHVECCiEDS3y+dfXwcL+b/5VK7O5I0JhHVkLl3HuGBUuBQBjrarzfghVY2AM5Y6IlU2JQGRBfNoe\" \"QIAggKhaIg4iwi6nmS34vpeaB74tD3w7oXaExpsQkQMHD9/7yU8dOHjobW972xvf+MaLL94ZjchG\" \"QmLESWMUwbQ5EYiqnrSB2yZyU9NmPTVS8yrNQdbiNE4E52KuX78/OHr02HA4bBZr4dCDBgkoS2Uj\" \"NvoHlEJQAKRwllyGvKS5aX7VNeoMPvuofG//qe0BIrQdrthKd1yJG3fxNRfT1lnkmbIlxyAig+jh\" \"UStE0Tdi4IBOrrSB7t4bk3Xpq4Twzb//kyB9NsZknOXIW+SytjHCXBKBAFUI1FkoKDMmqLVUEBFx\" \"YAtiUnNG5CDEBdHDmPj7Ji01yzE9S1deIj92J3/v+XBw8cQnquLokWP3felLzz///J49z7/rXe+6\" \"8srLE8DnurBmcqw2s6BSICrWEG4CrMaRYzTFVNAgEVWTcVxnkFugidImOY1phHSAig4H/cXFxaIY\" \"a47l1VkQR5cLqPSemRgaJHYMhWE4g8yJCqhrXnVNuHSeHnoaD+/GUl8jJdyriX0PvCA3yCzmpnDV\" \"DrrpErp0h9kyrTNt6k5RpyUuI2NBAAe1hpRgLImoJYIABGaZn9dV6cMvmqxLX9mY69/wcw/v+ZAz\" \"A2YhQ8QwtkDtPyUCGKzErN4Ie4IpjScyIIYG4AzQ1UgIzNCAYJRBWYGhJZNpdyvdcQO/6nHc+1Dw\" \"a+BfUV0ZFE8++eQf//EfPfnk997znvfceutLu91OzZQdKUdUO6xKtIpB1EiTEgnW2uTknziyOY42\" \"EgFqfKYhSDOtpRmyqh6UYspraMA4r9KP8G7M7c8Oyn5gjPXM3Mq48BLD2oZhMgpBrdN2gCoRk2W+\" \"6mJsn5c7r6WFnh5ZpMW+DgsloypMRPMztGNats1g05RxjjKjziBvaTvTVm5abTEWxiJzbAwFUtMo\" \"bR+vm03DLz/npnedSXhiLVmXvqrI8v7HGaWjQACxAqRqiMr4ssgBCmaowArFTbXVA9AaF1FZV3Br\" \"TOKAUbUE7NW1qCW8bYf84J38zWf1qX2y1rckIoNBcejQ4U9/+u+PHDnyi7/4i294w+s3bdoUUU5a\" \"8SMwatJf0gi1eoHZ1kciKl9So7iJ8fhWnb8FjFu6Kb6FqpACpTgZMzHblDWu4MLbRuZ3eqigdVgh\" \"BBl6spYqFy+BGGTABtYiCwSIIbIKZ81UF6ooPeqfOIEZUHZkYCxBDDlC7pBnaLW53UHWDllO1rE1\" \"ICYimNgVjKECsoh9kKZteeBr/+slP/h547p4sWWd+uq/96W7RaG2CuoRqeUSILYVOIwWLDEkQMPZ\" \"ZUIqNHJjuFBkMJY6s3TTlXjjbbz3iJy8DFQIYdDvP/TQVxeOH184fvzHfvzH5+dnAVhrIoUgNdJI\" \"mwl+nfBeaqph5fQBdCJshlWl4BonVwAr+ciaAAsNJvhapbdDEO8zx/2yUGNHfeeYIaJMcI7EQ0QJ\" \"Yhml16DkLLyHKFoZvJhYeIhYoWxYYgYunHYyONasTZ0WMqetNhlL1pAhwCoHYkPVr6WZa0totw4t\" \"7f7I7DW/cLI3cVqyXrzFWAghsIgbFb8lQ6CAuOiPjjR1YnE9EahfY4rVDU6u8aoEDhSgYCIh6iNv\" \"E2Z4blt49Y301e/Qw09NphY2JQTp94f9QfH1hx/pf/CDy73eT/3U2y+6aBvG467NTWpU+4lWZhNR\" \"NQMQGI9gJZM0za/Rn5XYhglgEaE5TurYloIUAFLLpGS/ikgZxKiD5gYDBYyB92otsYEIjIEGMMPa\" \"yh0QzTMBMocgEIULwtAABsGSRNYXGJlV60CWXEZZrnmGds7MxAZsoFKXlKVY4qH6xiQAii56Rx7/\" \"7UKx7dpf2PALPqmsW1+zGZGiRMxlA0BeHLg0JwqaT36y1tx0er4CAhlwIBCE1QIQtRk6m/m6K8Jb\" \"bufdB+X48pp1XxD7e6mKlE888cQf/dEfZVn20+9856aZ6SbAokZqYbNsUU1FnbBQxVo7gbfiwU16\" \"IRHFNMMTJo1hHMY17VdUZQdExnskVYbycIWtUWtUxJdqLQevIBhLWsJYJYYzBCFy6ixCiVJgCaIQ\" \"gToQSKBESiA2sQ4cjAUzMocsR6uFLGPnaMSkG/2Yx18Nwwdns9D1/YVH/13uts5c+cMbf8dryrqW\" \"bbbZzT/2+5JvFbEC5wNE1JelwpKFBpzck7eW6py2OU4ENmDAClFJpi9OdGbebL6Ev+8W87KX2LV6\" \"YE8M0+8Pn9n99F/8xT1f/OIXVlb60ZpMcaz0fzToVM1YVFLrusaRaSzrlec/Zuk0jc7m6fEw1Nkm\" \"cdGPfTK47neMOs5sjG2U7Y5DSenhQT6seK+h7g7GhqDg+C0ZuIxMBpdry5ncGpej1Vbr4HLkOdot\" \"dQ6tljoH69RlyHI4B+O43eVWOzouyRhQg/Z5wncXgvGlcbaESObKvHO8WPya+Bez4cx6zUzXmjFo\" \"Q4OGEN1/BCVICC8K8t+4CBQVJ0w94JVUprq4+jJ98+168bye0r8Ypd8fPP6tx/7vP//zJ554ImZu\" \"JdiEum1s3b616tSaehKlQSJsR5UUUDXKapZxRV0IO/Gzks1ab4413GpW/IxXj2m3E3YwEaugH1ql\" \"h5fgS5IA7wWRp8UVXdMYWAdjQTawC5k1meUsJ2eJrJKBy9UYshnZjKylLOc8p5ZTG080cWU4Ndw3\" \"JrANShA1GdNsxv2n7j7wzfcH/6I1/F6vvioQVCQQgwGVUFk/qlaETz8EcLpCBkRVuMsQEcEH8BTn\" \"c/x9t9Bb7qBOvq5xguD48aXHHvvWfffdv7KyEvNaqVHgLU2ZsSULEWrvKVRHMChuUp1LY62JQA11\" \"LfnYNSlNxlH1eVVPpSj1iRXwShHaicMUGoInv+yDQih49R6qEFXDBIW1ZC0ZC8PIcnI5GUfkgs3U\" \"WHWWRv8cZRllGeUZMgebUd6mSKbLcza83jlJI25hCmqNoampbOHJ333h678r8uJU7l6vvhLUoRQw\" \"QOIRAqInkeCZz2d73AAEgIZkS7GEfJq2bKa3vpKvv3S9X3EQPbDvhS9/+cvPPPNsKl+cJCKhECS1\" \"GYqf1+WzqblZ19euDk7TZFrWyzI1zTKr70/qctv1iaOli4isdbEf2EhlFVAMfbf0ECHTaLokqpUX\" \"1pJzZCxs/c9lZDNyGbmWZm1yLTI5uRzOoZUhHuwcrI0TMxlDlta7iBoCAgwF45SN5CZsm+alb//B\" \"Y1/8r6fX9ntC1q+vwmYliPfBRxeGCEIwqgRROX+VxFnBgA9qSjJBOh1ks7jqMvrpu9zmudY6w4LH\" \"F5eefPLJI0eOoE5zTY2HqqvUqjlh3U7kGiQ01oz3Jn1NeCtKo3j8qOFWM7SWMF880lrbarWadBxm\" \"BlFJAwG8aOmrHouqMEyGiAkEZI6dI2ZYB5vBGBhGdPuzgYl6aeEsshzGIctgbfVrqYLTtF5NqRY9\" \"hgSGwpB0rN8yt+Kf+j+feeADesaz7AbsAQlEZEhcDJpLgDExng8yG+OnvViSqEEWpAoNBKb2LM/O\" \"0B034I03l3a9hgotLS2l/ss8as8+ajOUdC7WKkx742YCWGiAszjaeIcFSgqaPKymbrjVPLGJ22LS\" \"rGEyBml+JcLS0uKxxZ5RD4DABE61B6Izv66BqJnjdss4S9GWtQ4ug8uQZ7AGmQMzXAY2kU0PZjjH\" \"zjEBwqq0AYsv8m+s87BgiwB0u3T5RQv+2f+w/9HfkTOzZderr2w7c1fcpRKbP7AEiMB7HnnEzodR\" \"UP2a66QRKsBB8xbn87xti771DrzkYlpflVIqiqLfX8GozFZFAkzO1+RL4rpjUdwbN2XUM7GCU8m0\" \"jUU3EgKLCjqBt1BrebpKs9Ns5U8wITOSmGJlWX7py1/+7je/Oiw9E8CqpABEQUQSEFQBWI6hKDUE\" \"48hlbC2xqdSPuVr3natc5s6SMWQdE4MIjikDnUabI4KKaACzsbBoT/HWrVo+/R8PfevuM4Ff6/cP\" \"bLrslb+miqBWwcFHSprQWWOOrV+IAYGNhXhKaKmuQ+15vv5y+sFX8HRnnXN/NZOi8i5JXWgtTXUj\" \"gBUhFBphp5jbmPxTTaDWGH3Up7g5ZsxliL6F1GizTqQZ9d0UNaJ1GQTVZ5999vOf/8K+g3t0KFBo\" \"qKYMZqgoGzCRMWADJhgTnfpkmJyjzFGEYqv/uYxc5Q4jw0SmCptv2PgkWBPjwd4KmNFp0fwMl8/+\" \"3pFH/s2h73x8g8NVspF8GIUGUl+oJ8rJWCjIq3NUEslZY5SvTxggkIILqErWpu40yUX0+pfiO8/x\" \"PzwspZxsRVPV6elNO3Zsj0pW01KjJYDxCNZoxQdWg7ORy6kujRYS5zUZDBiLO9DEFIs6P3Yc4igg\" \"QUpVAfTYsWP3fuLe/c99y24NqiyNuvjBV9pZEf5ra40dGJASCgKD+AQ/YwIMEQxiri3bKrROdJoZ\" \"A8YEZcQ0B/FwjrbNDlcO/enR5/8OvLTl6p8FNjZ7b2SiV1JlqKiQekgAIIySSMWfe4/WZMw6CgMk\" \"5Eu4NrW38JWX809/v7nupL4CVe22szvvvPOWW25Jg1Ld+6r25Ffwqwmh4qaIxL2xrndz5AiwmvYr\" \"V+24Kmdt+rDmuFT9jmtdr4aNim5sRuyKojj8wtMf/ehHvvjFz0/b/lQLlsQxyFYs5GgvKCAhLhbx\" \"Vqrod3Aa9c8SOZ78Zwyp0wi/wChZyVWafSbBHQjIgG2k8snUtO6cPZjt+e3vfvzNC3v/adg7vl5v\" \"+cb0lU2gPMAGylVJFSrqA4OJ7cbXizMWDQCggkRQQlwSAyzDGHSmqD1PN+/SH3mF2dQ58fctInme\" \"ff/r3/BLv/RLW7ZsKcsyNraMe1N8NXpJY+SpUdSo6h+b4lt1sCDEFvdArL5h0uloAKzU6CZGJeKY\" \"xnDibjd9wCJaFgNIuW/fC3/98U996pP3Li+vgDMN6pVKIQJMHcSvvh9AAtRU5KDosXZMJoPJYHPY\" \"HMbA5jAOxsHmsA5GiSzIwDi4SL4zZ8peiuyRaiiCBlhLuTu2c9NjK4/89Lc+9q6lfV9fPn5sPUNt\" \"4EYIpaEV0pKlh6owtDXGaKSynzWK7poSuYVc2a9xIjEAqcoAOgQZ6sxyPsN3XkevvhbNpTtyWIn0\" \"0ksvfcc73vHrv/7rt99+mzEcHfKRwJ8my3H4NWoq65yt2SqVkRCdTVFBRcYCWlijyEBU33gwxumL\" \"TW8DEYaFfu3hb/7xH/3xZz7z2ePHF30QS0FrahhqT1Z8PkMgVmWIaoKkWMXXqDSJa+YngRvv8Syt\" \"mWShgAF1WuXsTO+Krf+0/wvvOvDYuizaDdiviox5E9OC18xqUFUJFTtHAayukX0Ohca/ZfKqQdVy\" \"a4pmdphLF/0P38HfeV6eOSTGMIjzPLvyyitf9rI73vrWt955553bt2+POdwxuz9FsIAqy280+Fh3\" \"WSQ+YdpoFGmLKVmj/TqqkS083uM9toSNxMUTlqDzPnz961//4H/6vS/fd39RlkHgjIJgWUWIoGBM\" \"1JVjIXaAEk5UDvr8SqLvOSJkZtvcoi/+dHjsZfnczSc/cQP6yggGQyBGO1SCgoLqsKohcNZLf07K\" \"6kUqumPJRIYuSq9i0epg0w5z87X48Vfjc49vufy6Oy+//PKrrtp12213XHfdNXNz88aYmCAVB0lY\" \"J9GmYnwLJ+ITojZDxymCE5s0sTeG9bVOl01sw3pvNa3GA6zl5eXe5z73uQ984O4H7n+gLD2IVJEZ\" \"ne3AMTwgCglAXhMGLAEIrCpkzYtQ0+XsCTG4BBsblr5dLnzrxdRXRRAMARAFVJQKgYINRRRZlXU/\" \"LVbriyJE9U2RMkiH6onI0vS8+m14w6209aLZG9/yM6+5602dTjs63lW1KIpVaS1jVCysqlmUNsf5\" \"r6Mj46aOZWhRgmuN0aqD09KvjWZdcdI9cuToJz5x79133/3YY4+n/AIm5EYyy2SY6ra3BI2qLAHC\" \"MErMkOaruXBEAYKGSlVUAtSfmlCzIX0lIKb6BRVLahxBLRvWECKrMBpDsVK2jlPOzgRgbkii78aC\" \"ClUE6EDQYma05mj7ChZXdj/32L29l79mdnY2BB8rr9QFsCIBhahKsQqxAlwq2ZLwUyT7pc1G3Guy\" \"dntZhlhpvubLVq254nl1h85qtLgZreGowd6HJ5544iMf+cg999yze/czMt5+2BrkFjkLrBEFmExE\" \"4gQ2qOCX4JS1H8+xqIKi78Ig1lNUZVURWRe/YL2rePDDY0//Y7S4GAQljcUSIGlOjUTY6nfcvLbW\" \"xD/B2V2cdHSJjMgAEhAKhcJ1uDNDl2/TlT2f+eoXPz4Y9HnUwHtEBawjWJSofQlgRZshArW4GQF+\" \"QlQ14XAMYMUP0ibGABbS3oS3mhbFo9945H3vfe/vf/CDTz21e7LoMSGzlFkSVNTKANJIF1CoxDo3\" \"lcl07l03JxMBUHkJNMCXZljC+6F46DoaK6+//sCxPQ/955wAoJRgQQBZQwSn8AgCU7VfqzzMzdWH\" \"xjf1nCxPAZkhVUSGhXVwXZ6Z1Ru2H/vmA//lJTfeeePNt8ZElGiCxlKBUWsnes+mUFMcuLEZUpgK\" \"DSpM5MjGSgZ11nhlv6a7q0sfc3MzDVWWxT/8w2d/7/c+eN+X7xsMhqvXJibkDp1cLBMEDBgRAptY\" \"nZvABEh0l5zlOWIjohKpMIBAYERNEB4OV1RQljZG704u67YHFBJUDAA4tkTCJlaLUA3KtgpgVJP8\" \"GgvQCCGdJXBGVdIfAcrxNal6EgYTOtMInrcP80OLT//jx/5g2/Z/v2XLVox3JqpGqRb0uIiPhZrG\" \"G8mmbjBjrTGNobodnKbeGNSoitXsYYuqBoLhqhUoHzx46J57/uJP/uRPv/Od7yRn2YREfSWgEKiS\" \"BBWJrgoiwDJFGj0DKRX0ghCCBhChDFp4UtWyHAav4qlzyds7F7/+lAOsV1+LlUMgVUHhtZUnhRSC\" \"B1QDuM7eTqGUk932WbOoqrWPAQ9iOCUYHRQUyUc2R7tTXrxFnv3OJ77w6Vt/8md+eXXuVJoFE4Ew\" \"TboYby2LVTlYje5cq+OuABI4M+PnmsjbKgr/8MMPf+hDH/rkJz959OjxaOae4BkBZuSZOgMREh9U\" \"uCbTICZ+cKr5tG4q4FmVynXDEKFCch98MSxCQDHQEAzPv2nHK/+jyWdPOc766rv44tuf+DXxy5zB\" \"GKoS25kMc6zmTlRPrrVpslbNgbMtlcWmoxvQ+s0R0M5RttGe4cu2LHzts/91x2XX3PmqH4ggvZ75\" \"QrOuGypEBaqHCyEwR3+WGmMihE+IKup0ah8XT2kiqmYIIJ4LgNkURfHMM7v/5m8+9t/+24d3794d\" \"ubAneUxVQMlytNclBNJYoCzuFVVDyvXkKmunfJ4TqVY8wJfkQ16WUhSFH6ovUQ5pUHa6V7x6PcqK\" \"9c+voexnRjRWDXEhb1Orxc4ZMj7OpilGApw3ZR0VJhCAoQpDcIqgGgIpIAoHyRkXzfK+g9/+1F++\" \"b35++w033QxoAlhxpGaJ91QCA+P13mKZQa36GpjU5DtqajxLNSZnG5EQM6C16kcXx6SiKJ577qnP\" \"fvZzH/3oRx966Gu93grGo1wnFGa0M7CJSz6xIVKIEqDMREpGyBAq3ur58w8kbpcqVNhLVpQy6A98\" \"IWFggqfF/tSmm/7FFa/5lXUOuC7N2vvIh0PveUOwTC4DZzG/QpkqurhI7eS7AJYepHCX1t9UgBfN\" \"cxQBgeFILdOOzXb3d77yx//lA//yf/rNq6/atXqQFN8CortlFEFIh0T9qDmp2rSEoq+AmeLktirc\" \"pWXpDx069OlPf+ZvPvqRBx986OixY2sZAJNPBzhGZhFZrDEcHlQFkDAqFawCPt94q6J2ECRw4U1R\" \"lIOVMhTwPhsOaWG52Hr7r+167f9IvN75/9T6qiKHnvh7P1x2ecz+QauFdottpLnUtbEIZ69I7fpE\" \"KzukuiUgNkjiQFa19FqAPIiUjNVWrlmLt02XX/zCxxZW9Ff/1a9de+11eZ7FCFYMHzRLYKhWhL2E\" \"mbDKlo2HJas0cayaACs2JwohLCws3n//A/fcc899992/b98+VV1fDjoAEKGVETOF+Mjx6gQmECEE\" \"NQZMVJFL1ipWctYkfv/qgUjwFZTiyqIoilAW4gsMB63B0LR2veuam350+qJbNtSZ49SPsvsrv3/0\" \"2c93MrQzyjLKclgD5yjOJlWkwFwAEZTaa1aV7IwuYQEBFG24gQQiBCVmZ0JGsnmGLp/rfeGzn3hu\" \"z953v/vdb37zm7Zu3ZJlLhIImyUwav+/N8Y0k6qb7gLU4a5kvxJRnYftABRFWZbF/v37H3nkkY9/\" \"7OP33f/Avn37vS+JTtDk++SPmuWtzBRGhA0ZZwAEjclRMejAnp2lEmdYF3qjUnMXtYQoQTWIHZa+\" \"GA59CV9IUeaDfhjyJrfjtVe94d+69vRGr3BqfQ2Do7n1uQWI8oyNCSAKQTWDBaEER46PqbH5unMp\" \"X3xprH2jeJsHCOw1MKFQKMgRO27n2jGyfZZ3Hl585KH7v/34t+6995Nvf/vbXvGKl2/btq3Vyok4\" \"yxwqO7XiZ8XBE96Kn6Qu9NGlFTMWAY4ureGw6PV6e/fuffrp3V976KH77rvvW48/vry4OCx9PGnD\" \"T0ma88BU+QsEJo4OV0vxFRgjCgEbCYHPwuS6OloZ2e0aoODgRYFhyb4sQhlEUA4QCh6UObpX0ZZL\" \"b3rL72RTFxm7voz7cTnF0/SO7F584es2OvMIbGAcqaAo4ciICZapiipRhbo0QM8JvfCE5nIyOmO5\" \"vIgC2SLz1C80COCBIgQQEfKc57vyku04ulw+f+TQ3/7t395333133vny17zmtdddd/3ll1+2efP8\" \"1NRUluVEVce5WPS97txCqsJsjKEY/RJBCF4krKwMFhePHzx4eN++fU8++b2nn3760UcefeLJJxcX\" \"FkKoSzqdLg4yBMtKIGY4hmEhQ6oUXZvxS2BS6IvsyWqCp+pda4VbVACQDzYEDIbBF8EHL4F8YVXC\" \"YKCLy+CZ2697/ftmLzkFo+Xkcgp9Pb7nwcVnvzDdJcswBBH4Uq0j79VYsiDYupZiqOxFMlWoLb6O\" \"5GDC2u02z1yqioh1bcc0AcSv0gipAataQSkKRQ4xzNai7TDTxtZNZu+CkWFx8ODBv/u7ez//+S9u\" \"27btJS+5+rLLLtuxY/vll18xNze3ZcuWTdPT7U671WpFZmBZlr3ecghhOBz2ej1VWVkZ7tv3wt69\" \"ew8c2L9v34HDhw8f3L/vwKHD/f4KtKoCeOYP287QzogZxlBm4KLPigmQ4MnaapGJeOvFtdNUIB7s\" \"qvcrvsqZUVBZ2mEpxcCXRfBD44MRX/YGtFJkl7/6f+ny5u62W89QWXFKfY3TKgBRlFATxEq0XNWX\" \"wWRWPAixNQmIkAoRRL1hM0oAqqoYvXgqW2UgyaqgWp18TAwoPGm0YF1GZaEwpASFEtSxWoMW63xX\" \"p/OwsoI49S0sLB4/vvD0009nWdbpdLrdTqfTmZrqdjvdTTMzeZ4bYwaDwcrKSm95eTAcqqr3PgRf\" \"lr7X6x07tjAYDCp3WFX2hdbhpFqvOINOjlYOZrKskT/Jokj2GIMQ2NAJk7ROQyoIFYCYcOqVECBE\" \"rFLCqyuGZVGUZRmKPpVle9Avi6BLA7fjtvfsuv5HZ3bcYlzrRbiP9dZ/VQQBBBrgh0SkbEAiot4o\" \"KWkseBrdizXBmTSoUjXDsa3zimJY4UV6c1QHb5qqMKYWBGNIBV4hsQejVyjF3GfLah0Zh26m8109\" \"toSVElSzrkKQfn8wGAyPHj1amxmj1kKJ3QKMNZlPGlqHW19kY56APENu2bLmTplhSaAcm4aHKuEW\" \"zCABv1i0OIKUpEqixou1KEVb8IFYikK9H5aFFn2URdbr62JvuBxeMr39mlf+wv/hWrOutWFQdRI5\" \"hb6yoQBTerFG4SkYaKZlEXepaohfh7UMWJRg9kQ2OlEMhVjOgw3EV34XNuORsInw7Wl8uSc9RQVe\" \"lDRW4I3zBDFpCBrD7hACYA3NdtQ5oBgN2JgPR3+uzigc3fvoxI0/xUaECIa1ReoAqkiJ0PhEErvi\" \"KGLa6RnfiQo0IAj7kKkqCCJFKSQi3g8lqC9RFBpK+IKPLA2G7ppy05Wvfvv7puZ2Gvvid407hb6q\" \"QASiBIKoFgFUwDL5oM5CAlkHZgQvRP2qYJOBiDdWvNq4FhkDBsUa6hYeqhqgWlU2BlX/r4ReZJvB\" \"CnlBEPigALTU0kMCvNfCIwQlaOZoU5tmO7q0cgGRQ9aSGC+IoqJpSfMBNqgGAkOEVSi2M9yY/aoj\" \"FAVBCKyKMlAIpUgJIDIfSw/xFEoqChkUutKng0fRtze9+mfed8m1r37RHznJKfRVFCHIsKCYraGF\" \"FiWcVWNIWloW5BzYKFki1Vg1hE0JoCwDc+Caf4gUd2MAAA9+SURBVBmbPQBwYlVLYzNGEE/MQetO\" \"JtFgEF+HdvXMmh/VIA9AtVYGiEcQkiC+RChGfMucpe1o8zQdWNBBeUHxm08tPmgQ9lWGPYrqC1Rj\" \"kJkqq3s98aMKYFCNqDxEqfSmDKVK8B4q8TtUVQTPRSnDAfWHurCE48OZa1//G9M77rjk2pef1Yc9\" \"hb5uvebNO1/6rn2P3tMfgC0ZA0MqASAdFnBWnQHHGqIwsTQzlMl6ULQCFSDrQKRACUBcACmVBUGN\" \"ZWZHgOUiqGVVw0JGIYSYzBi5vdyIr44zaRLeqhJygJRbFw3lGF8JXoPXUKLwOixQ9GngUSp5H8oA\" \"NgRCbtHJYM2YSXAhCiGzlckhoqGkEDR49ZakVBlwIPUEoiA2lyBsBQopT5CWrR4wVSAKGLnPoSgL\" \"F4RVtCyH3ktVfqqAKsSz9+pLGZRY6oW9h80tP/S/v/TKV2+97KVszroX8xT6mrXnrv/B94Yg+/75\" \"L8nHGpGjJpHGwhoxBDLECM7CGpAqO2UiS4aMQMmXkvoah0yYCRQAEIl1QgQmUYgxGbMjKgnGZQFE\" \"YEGAhIrHSWYUlSCuoVt8B3V9F03mMEN8RSEIAaIoAooC5RDLAxoOxJcahBhCIMMa6wldyIqahFCl\" \"bovEKmaQoN6jEBgRI1ClEOCDGiZf5Fk+hEI9hGBiDCWuPFwRhateKTaaqsZLrLxUhCC+FFWUfSMl\" \"iWgQLX1QxaDAQj8/2p+/4q5/ecMP/AqvmwBwhrIORnc+fdN/9/4gbuX4873j+47ue9xaYSImOEtE\" \"ygTmYDJmhbMKaCwQzcYbBhtlEIwaYgWKPhkmsgKCsQheiGEtiLUsh8xErARflM5Ya7k0lmNVtBEX\" \"O+lUXciE6qki0oFFwRYSAGaIDgoZDjV4hCHKoQ6GVBQoSx0WGjzKQKVXH6go15OOcaHIMNCKx0pA\" \"4bX0VHrNco6mmg+gQkFUDApmZrahAAFkQFqxf9hCtXI+JqMrYlOIl4BYqsaX8CVCSVJq8Ci9D4Jh\" \"iUGhhxd46y3v/om3/Xsy7pwpK9bpz7JZ546f+iCAA7u/9sSDf5U7K7733Qf+nKUwRq2BMWSGwlBn\" \"iZlAai2sUQDWRjchqipKChtjTgYKZBbWIObSOMvEWpdsKNiUMRxvrDrDhkEQbVA5x7AaVdEXSqRP\" \"Je+pLDQoSUBZqC+oLFAMqRhKr6/DIUoP76MzDiH67C54MbVDQhQS1AcUHiI6HAozDw05q5bZlwqB\" \"98pcKom1lgMIEr8xCVW1FQ0x2YtFESQMRSnAl0pAUagElH32JQ2KUHqIoiyx1JOZK39w53W33f5D\" \"/9pmL45Xdf2ysejyRbtedtGulwEoh725y16JUBDTP//jBxf2f0eBnPH/tnf+sXbX5R1/P8/n8/2c\" \"c3+0t7cFL6U/LqUtLTejLQ1lFhc3DFNDxIhxjBhn4oasEpcQWYh0GmNkA2eks0zmNsNM5tAsy+aP\" \"melkBidDBRyYm1A6bNCKXWkLbe+953w/P59nf3zPbSuGUWnL6cX7+uPmk5OTnO/zvc8538/neT8/\" \"jNF2C4C42c6rrRaB1HAz4akp2O8V4BtSz02TfGr80Fo1VdO71Fir7DR6XzkKZJyDqyoQsYqh3DQw\" \"a7atzRGtkVtETRMtL2IUKUYRQc4ao/qkOSOmUgdNGaUgJg0ZIVEnkQClzIGf2OYCRZEyUkZIKBk+\" \"whiNUY1FSrBWK1IhSkGNTWqMgJmzIQthYrGapQDcxGtt0/xTipQMVUSvKiyZRVDX0g0lJGq+2Edn\" \"dHTtNRuv/eTgyNK+mP8ysyGq1tC6re9s1kvGt8TOYbZuz+P/OvmtvwpkkGasUWvQqhCzGtNITlJZ\" \"bgSkqmKQ9h5EvVwNNqyVgRI5o64SQzBOXUWlqDElBrWVEpNhtVaNdaxsOUq2RGogjSxMWXKxqpJS\" \"kiIxIieNXn1AThSihggfECJ81E6Ez0gFKWkqFAvJsWqEsxVRqCJlKdIrJwhRnaPKqmGJgWvS5jFF\" \"RLOF9aKaSjNDmwRZk4oxDlJEJaXUjLhr5s+nqJo5ZZQkKcNHnakpRvFBu4GGV735139nx+DIWL/M\" \"Pw3ZO0uWTTSL0WUTG668saTw7/e+L3YP5s6R6SOHLAsZVBbMYJKeUuoLM5r80so2CfxN1ibYGm/U\" \"WTFE1MVgG5UjZwngFKVpaAqosdFYNON9iDKzU2VikRJKLgqkoKWg9uq95oSSqQ6Y6aqPGgK811wQ\" \"ElIin1A3fyNmZY0XZXx83LlfIl/zl4WI9u3bNzMTgNIrQztOL0yts62yklAWbdTHkNCqIEI+E3th\" \"QAvNqrFqrQJIMROBTTOZIzb1wI36UxJyVs02F8lSYiQfkLPOdOGD1kEPTLlFa99w1Xs+M7hwyZkz\" \"/yU5ndlmrjXkWkMA3v7HX2Vjn3j4/h/e/9lWlW1l/PSzz/74MWe0SYlnRuOdAIi1MgAJAdbCVGwY\" \"nmBYK0c+wRp1TluVsqEWGWYlq8xKBJC4dgBgjBdtlAsAkIIYtBT4oClRXauPlJLUXjs1QtBugC+I\" \"Bd0Mn5AFHa/PTWvKIMKCBQuuuGLrL+r91tqPf/zOFStWyMk17X4ZGGPuuusvvvOdXdYGYAB4DgAR\" \"HTky893vPgp4KHyEEoVCoaCbsLBoKSgFPiqRgDgxdROJCghFYAyXqjk/NDX3ygZE2oRUc0ZJKplj\" \"0iwpZUoJISJl5KRdj0PTZEY3jpz/G+/YdtvQgpEzZPhJQiH0xnlNTk5ecsmpps+8GAee2f2D+/+u\" \"5ei/v/1Pnan/HWCtDJxFU2FkGMxgQ5aVmawFGzLQlus10ncW1oJ6b4BhOEPsYAAywgRnTaONpiwC\" \"hcAHTRkpUUzqPWLUma7WEdMdLQUzAT7DJ+oEdAMOdeiZw7r3oIZM11//u5s3b77ppvedOJmt7zzz\" \"zIF77vmc6mGAjHQf+dbfV0iLB2XpIl0yhNFhqhwGWhhwaDmuHLsWrNHmONuyzEbBCjQxGWA2W6gU\" \"iCBFjZlKoVSQC1LSkjRECQkHZ9iNXX7Ne+9euuLivhh+oltOTk6+Qv56/OMf/kZn6tkB5374va9N\" \"PvilipUJ7UqJYSsaqGAMWRW2bA0MKTFaLbasriLDqCpCrwkKiMlWYg2sJSaqWEkhglRECrLARypJ\" \"Y9KuR0za6cJHrSPqiJDhM9UZdaBpjwPT+NF+eX4G1poHH/zPTZs2nen7cCo8d2j/H7z9stidWtSW\" \"sYVYMqyLh+Ac2i0aasO5ZoARG4apULEwwxpYAwUdC4QDUKGYekKuD9TbGUeNGSGhDjrV0dbYpdds\" \"++vzxyf6ZewL/PWVrmS95PI3NYuVE6/fevVNlbUH9j39+U/dUnFpK2bq6cpqxWQhzDCWWo7qqC2r\" \"1iibJrAPttagGMtV72ABnu0uM9uPCSWLj5Kzdj1CRAhaR5SCOsFnxEJZkDLqiJlIU15ta+GQ5ttu\" \"++DERN/+NyfJotFzt33gz3be/v6s1Ik6EDFQAdQ8iyBRVdUphCglTYaZwUaJyUJ6whioKEEhipIg\" \"RUVUBHWQlOEDZjyO1Dzwmg3X3vTZ16xY12+Lj9OvymuMnnP+6DnnA1ix5tK1G19PgGr5hx03H3r2\" \"R1rZ5w8/H6cOVEbaTgcdWhUqS9YooxliVoiUSFpW2DBBmQQEYtYsqsiCUjRExAhR5KzdAJ/gM1Km\" \"JOgmiMBHhGwWLF56zpqL7/zkTmvtyMjIGT1OnRaMMStXrc9i6pRbFt1IzipbMhk+oO0AgKDGNLWH\" \"0kQPQWBjaDafRxRaVHujbDRlKopSUAdM13ToqLbHfvNdt3763KUr+2nqL9A3fz2GsXZ0yXnNettH\" \"74OqsdUD//al7/3HFyv2ux//9oDJbacLWmoNnCPHsJVaUoVGC5Cw4aYVZcmlKdgoBarwURUIqdkk\" \"wCf4glQQEmJGnTATaeWarbfe/unl4+PmzGvfp5GFi8ZWXXT5T/c8VCc6WmtlwKRa0CjKTlGKgmCN\" \"clEiOEu5iJA60/SQQsrKTAVcmlB0RhbyXjuRDk1p+7zLfn/7p842Z8XZ4K8nYmczJq+8+torr762\" \"7s58+b6dLGnXYw/89KlHFgygnTBglA2cVcKsGkyiIEuq2gv4NyUxsQBAndBs0ZIgZqoTUkYuOOqr\" \"C9dvueUjnxi/8ML+WfwyWT4+futHP7HjY+9/evfjzSuiWgRQLUoxotWCMciFLKuCclYAotJ0QGsm\" \"yQOqWupEOVHO2s3o1Hqko6MXXP7uD9xz3vKz8bacXf76AgYGh6+/YTuAPbvf9vTux/7lc3ccPrxv\" \"qIW2Q8v0qkGZYLhJ8kfLoM6oGLkcF1eLIGTyGVkQMzqRYkY38vLVr735wztWrV3fTwtPgdXrNtz8\" \"obvv/NCN+368CwBAIWlIGM7adjSQ0XZqDMRACZnBRCoaU1PATE1aoAJ1wkyttdduQjfy4uWbfu/m\" \"v1yxqj/RgJfkrPbXY6xet/HCizasmdiikh976Otf+8IOzcEgVQbEaFk0Bc3OqACx+f1Q5NILoIoi\" \"ZKTc2wykQmMr1/3JHXdfsHpNf+06Rdas37j9jnvv3P6eg/v3Ptfp1gndqNORhtsYbutAJsu9TtyV\" \"JVBvpljKCoYShaQ+wQed8vDJwAwOn7vphu07l41f1G/LXpRXOp516gRfB9+5d+dH9jzxfRJ/aP9P\" \"HCsThloQheGmIKRXydQk3RWBKHymbsLgyNJzxi7+4O13rbhgdb9NOQ2oamf66FNPPv7nH/7Dqef3\" \"VYyBCu1KBx3aFZxRZnIWLaNsqAAoGrW3PaiF68AhEbUXDY+sveGWj42vnhheuLDfNv0cfY6/ni6a\" \"Dj8/2bPrvr/5U8v05ORDcfpgIyXI7DguUWQhBUKGaw9t3PJbMcvbrt+2+bUv3Wd0zvH9B7/5lX/8\" \"W2to8tEHJHYrA2fVGRjDhrViBWAJWRGFRVBEUwFVI6t/7Q2vu+rNv/2Wd544fvHs4VXiry/gG1/5\" \"/P69T7lW68nJRx/+r28SUZmdQrF56xsvmrh04cjit153o7FzY//zsskp/fMXPhO6U//zxA8efeh+\" \"JgDa1M8de4+orp3YctkVV/mQRpeMXXPde8/m2Eif9YIzxJve+q5m8bO9e173xkcMs6gSSFUu3rBl\" \"+cpXw6P/ZLBVdd27/wjAz/bu2TX5yDFJ+cQ0SSll1ZqJNes39uMCT5VXib8eY9nK1ct+Zbzz/+HV\" \"eh/OopSOeeZ5Seb9dZ65xLy/zjOXmPfXeeYS8/46z1zi5+IDk5OT/bqOeeY5GY7769wVC+b51WF+\" \"PzDPXGLeX+eZS/wflL1i0+6li2sAAAAASUVORK5CYIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\" \"ABADAAAAAAAAMAAAAAAAAABzrEXMUFUAAEYAAABQAAAAIAAAAFEAAABGAAAAUAAAAAAAAAAAAAAA\" \"MQAAAAAAAADg8h2ZVVUAAFDrGZlVVQAAAAAAADVtbQBkAAAAAAAAAHADAAAAAAAAMAAAAAAAAAAz\" \"TUDMUFUAAES/hP8ABZf/hB+P/wAFl/9k74n/8DCe/6ADAAAAAAAAcAAAAAAAAACDPkPMUFUAAAAA\" \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\" \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOEDAAAAAAAAQMwSWFVVAADgvRuZ\" \"VVUAAAAAAAAAAPA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\" \"AAAAAAAAAAAA8D8A6BmZVVUAAEYAAAAAAAAARgAAAAAAAABjAAAAYQAAAAAAAAAAAAAAAAAAAAAA\" \"AAABAAAAAAAAAJEAAAAAAAAAwC8dmVVVAADAzxuZVVUAAMA9HJlVVQAA4D0cmVVVAADgPRyZVVUA\" \"ADDPG5lVVQAAcM8bmVVVAABwzxuZVVUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA\" \"RL+E/wAFl/9AYAoAAAAAAPArBwAAAAAAAQAAAG8AAAAgAQAAAAAAABACAAAAAAAAwMQbmVVVAAAw\" \"xxuZVVUAAAAAAAAAAAAAoMkbmVVVAAAQzBuZVVUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\" \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\" \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\" \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\" \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\" \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\" \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\" \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\"))"

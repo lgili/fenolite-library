@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
 # SPDX-FileCopyrightText: NOASSERTION
-# Converted from https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/microwave@97acc80c223d75520c03fc44cab63cd9a3202c42 by Fenolite 0.7.0.dev0 on 2026-10-31;
+# Converted from https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/microwave@97acc80c223d75520c03fc44cab63cd9a3202c42 by Fenolite 0.7.0.dev0 on 2026-11-03;
 # modified: format conversion to the Fenolite DSL.
 
 from fenolite.dsl import Design, Part, mm
@@ -14,19 +14,26 @@ design.board(
         (mm("251.79"), mm("101.93")),
         (mm("-40.31"), mm("101.93")),
     ),
+    outline_width=mm("0.3048"),
 )
 
-design.rules.minimum(
+design.rules.netclass(
+    "Default",
+    clearance=mm("0.254"),
     track_width=mm("0.254"),
     via_diameter=mm("0.889"),
-    hole_size=mm("0.508"),
-    edge_clearance=mm("0.1524"),
+    via_drill=mm("0.635"),
+    diff_pair_width=mm("0.2"),
+    diff_pair_gap=mm("0.25"),
+    diff_pair_via_gap=mm("0.25"),
+    nets=(),
 )
 
 poly_1 = Part(
     "POLY",
     "Imported:POLY",
-    footprint="Imported:POLY",
+    footprint="POLY",
+    footprint_definition="Imported:POLY",
     value="VAL**",
     name="POLY_1",
     board_only=True,
@@ -34,7 +41,8 @@ poly_1 = Part(
 poly_2 = Part(
     "POLY",
     "Imported:POLY_2",
-    footprint="Imported:POLY_2",
+    footprint="POLY",
+    footprint_definition="Imported:POLY_2",
     value="VAL**",
     name="POLY_2",
     board_only=True,
@@ -42,7 +50,8 @@ poly_2 = Part(
 poly_3 = Part(
     "POLY",
     "Imported:POLY_3",
-    footprint="Imported:POLY_3",
+    footprint="POLY",
+    footprint_definition="Imported:POLY_3",
     value="VAL**",
     name="POLY_3",
     board_only=True,
@@ -50,7 +59,8 @@ poly_3 = Part(
 poly_4 = Part(
     "POLY",
     "Imported:POLY_3",
-    footprint="Imported:POLY_3",
+    footprint="POLY",
+    footprint_definition="Imported:POLY_3",
     value="VAL**",
     name="POLY_4",
     board_only=True,
@@ -83,4 +93,10 @@ design.line(
     (mm("103.50988"), mm("20.55348")),
     layer="Dwgs.User",
     width=mm("0.3048"),
+)
+
+design.kicad_project(
+    "native/project.kicad_pro",
+    sha256="ea9d9b756ae3b51d485c2dcb904f09aaee0190e4b584f038c3094536e7a9334a",
+    preserve_minimums=True,
 )

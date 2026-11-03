@@ -1,7 +1,7 @@
 (footprint "DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm_3"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "9-pin D-Sub connector, horizontal/angled (90 deg), THT-mount, female, pitch 2.77x2.84mm, pin-PCB-offset 7.7mm, distance of mounting holes 25mm, distance of mounting holes to PCB edge 9.12mm, see https://disti-assets.s3.amazonaws.com/tonar/files/datasheets/16730.pdf")
 	(tags "9-pin D-Sub connector horizontal angled 90deg THT female pitch 2.77x2.84mm pin-PCB-offset 7.7mm mounting-holes-distance 25mm mounting-hole-offset 9.12mm")
 	(property "Reference" "REF**"
@@ -448,6 +448,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "1")
+		(pintype "passive")
 		(uuid "9c048926-7d85-4870-80ac-c7847e4189b2")
 	)
 	(pad "2" thru_hole circle
@@ -456,6 +458,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "2")
+		(pintype "passive")
 		(uuid "8ee50b85-2c8f-43d0-b5f0-8bfff3684bc6")
 	)
 	(pad "3" thru_hole circle
@@ -464,6 +468,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "3")
+		(pintype "passive")
 		(uuid "1068eed9-f79c-4746-802d-4eed20941b3b")
 	)
 	(pad "4" thru_hole circle
@@ -472,6 +478,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "4")
+		(pintype "passive")
 		(uuid "6d4ebd49-7ace-4768-a08f-8066e9f4cba9")
 	)
 	(pad "5" thru_hole circle
@@ -480,6 +488,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "5")
+		(pintype "passive")
 		(uuid "cc622561-ae2a-4683-a35d-b9b7f9199212")
 	)
 	(pad "6" thru_hole circle
@@ -488,6 +498,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "P6")
+		(pintype "passive")
 		(uuid "3ab803de-4649-405c-a2e7-2919535f511d")
 	)
 	(pad "7" thru_hole circle
@@ -496,6 +508,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "P7")
+		(pintype "passive")
 		(uuid "be34ee75-ab69-4a97-bad1-20b25a589dec")
 	)
 	(pad "8" thru_hole circle
@@ -504,6 +518,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "P8")
+		(pintype "passive")
 		(uuid "49914e81-bc4e-447f-b3f0-40ea1c09c705")
 	)
 	(pad "9" thru_hole circle
@@ -512,6 +528,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "P9")
+		(pintype "passive+no_connect")
 		(uuid "da90ec4b-b21e-495f-b7bc-00a64817ecc1")
 	)
 	(embedded_fonts no)

@@ -1,0 +1,422 @@
+# Drawn schematic of a Fenolite design (docs/drawn-schematic.md). Code owns the nets.
+schema = "fenolite.drawn-schematic.v0"
+root = "root"
+
+[[sheet]]
+key = "root"
+paper = "A4"
+
+[sheet.title_block]
+title = "ECC Push-Pull"
+date = "Sat 21 Mar 2015"
+revision = "0.1"
+
+[[sheet.symbol]]
+part = "racine/R1"
+unit = 1
+at = [157.48, 85.09]
+rotation = 180
+fields.Reference = { at = [154.94, 85.09], rotation = 0 }
+fields.Value = { at = [157.48, 85.09], rotation = 90 }
+fields.Footprint = { at = [159.512, 85.0392], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [157.48, 85.09], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/R2"
+unit = 1
+at = [154.94, 127]
+rotation = 0
+fields.Reference = { at = [152.4, 127], rotation = 0 }
+fields.Value = { at = [154.94, 127], rotation = 90 }
+fields.Footprint = { at = [156.8196, 127], rotation = 90, font = { size = [0.762, 0.762] } }
+fields.Datasheet = { at = [154.94, 127], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/R4"
+unit = 1
+at = [144.78, 127]
+rotation = 0
+fields.Reference = { at = [142.24, 125.73], rotation = 0 }
+fields.Value = { at = [144.78, 127], rotation = 90 }
+fields.Footprint = { at = [146.7104, 127.0508], rotation = 90, font = { size = [0.762, 0.762] } }
+fields.Datasheet = { at = [144.78, 127], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/R3"
+unit = 1
+at = [185.42, 85.09]
+rotation = 0
+fields.Reference = { at = [182.88, 85.09], rotation = 0 }
+fields.Value = { at = [185.42, 85.09], rotation = 90 }
+fields.Footprint = { at = [187.4266, 85.09], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [185.42, 85.09], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/C2"
+unit = 1
+at = [175.26, 76.2]
+rotation = 270
+fields.Reference = { at = [175.26, 72.39], rotation = 90 }
+fields.Value = { at = [175.26, 80.01], rotation = 90 }
+fields.Footprint = { at = [175.26, 81.28], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [175.26, 76.2], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/P1"
+unit = 1
+at = [127, 110.49]
+rotation = 180
+fields.Reference = { at = [127, 105.41], rotation = 0, font = { size = [1.016, 1.016] } }
+fields.Value = { at = [127, 110.49], rotation = 0, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [127, 115.57], rotation = 0, font = { size = [0.381, 0.381] } }
+fields.Datasheet = { at = [127, 110.49], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/P2"
+unit = 1
+at = [207.01, 78.74]
+rotation = 0
+fields.Reference = { at = [207.01, 73.66], rotation = 0, font = { size = [1.016, 1.016] } }
+fields.Value = { at = [208.28, 78.74], rotation = 90, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [207.01, 83.82], rotation = 0, font = { size = [0.381, 0.381] } }
+fields.Datasheet = { at = [207.01, 78.74], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/P3"
+unit = 1
+at = [41.91, 53.34]
+rotation = 0
+mirror = "y"
+fields.Reference = { at = [41.91, 48.26], rotation = 0, font = { size = [1.016, 1.016] } }
+fields.Value = { at = [40.64, 53.34], rotation = 90, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [41.91, 58.42], rotation = 0, font = { size = [0.381, 0.381] } }
+fields.Datasheet = { at = [41.91, 53.34], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/C1"
+unit = 1
+at = [86.36, 57.15]
+rotation = 0
+mirror = "y"
+fields.Reference = { at = [92.71, 55.88], rotation = 0, justify = "left" }
+fields.Value = { at = [93.98, 58.42], rotation = 0, justify = "left" }
+fields.Footprint = { at = [91.44, 59.69], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [86.36, 57.15], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/P4"
+unit = 1
+at = [41.91, 91.44]
+rotation = 180
+fields.Reference = { at = [43.18, 91.44], rotation = 90, font = { size = [1.016, 1.016] } }
+fields.Value = { at = [40.64, 91.44], rotation = 90, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [43.18, 96.52], rotation = 0, font = { size = [0.381, 0.381] } }
+fields.Datasheet = { at = [41.91, 91.44], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/U1"
+unit = 1
+at = [160.02, 64.77]
+rotation = 0
+fields.Reference = { at = [163.83, 55.88], rotation = 0 }
+fields.Value = { at = [153.67, 72.39], rotation = 0 }
+fields.Footprint = { at = [166.37, 64.77], rotation = 90, font = { size = [0.762, 0.762] } }
+fields.Datasheet = { at = [160.02, 64.77], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/U1"
+unit = 2
+at = [157.48, 107.95]
+rotation = 0
+fields.Reference = { at = [161.29, 99.06], rotation = 0 }
+fields.Value = { at = [162.56, 116.84], rotation = 0 }
+fields.Footprint = { at = [162.56, 118.11], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Datasheet = { at = [157.48, 107.95], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/U1"
+unit = 3
+at = [63.5, 74.93]
+rotation = 0
+fields.Reference = { at = [63.5, 63.5], rotation = 0 }
+fields.Value = { at = [63.5, 66.04], rotation = 0 }
+fields.Footprint = { at = [57.15, 74.93], rotation = 90, hide = true, font = { size = [0.762, 0.762] } }
+fields.Datasheet = { at = [63.5, 74.93], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/P5"
+unit = 1
+at = [158.75, 177.8]
+rotation = 0
+fields.Reference = { at = [160.782, 177.8], rotation = 0, justify = "left", font = { size = [1.016, 1.016] } }
+fields.Value = { at = [158.75, 176.403], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [158.75, 177.8], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [158.75, 177.8], rotation = 0, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/P6"
+unit = 1
+at = [158.75, 180.34]
+rotation = 0
+fields.Reference = { at = [160.782, 180.34], rotation = 0, justify = "left", font = { size = [1.016, 1.016] } }
+fields.Value = { at = [158.75, 178.943], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [158.75, 180.34], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [158.75, 180.34], rotation = 0, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/P7"
+unit = 1
+at = [158.75, 182.88]
+rotation = 0
+fields.Reference = { at = [160.782, 182.88], rotation = 0, justify = "left", font = { size = [1.016, 1.016] } }
+fields.Value = { at = [158.75, 181.483], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [158.75, 182.88], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [158.75, 182.88], rotation = 0, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "racine/P8"
+unit = 1
+at = [158.75, 185.42]
+rotation = 0
+fields.Reference = { at = [160.782, 185.42], rotation = 0, justify = "left", font = { size = [1.016, 1.016] } }
+fields.Value = { at = [158.75, 184.023], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [158.75, 185.42], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [158.75, 185.42], rotation = 0, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "ecc83-pp:PWR_FLAG"
+net = "PWR_FLAG"
+at = [53.34, 55.88]
+rotation = 270
+fields.Value = { at = [59.182, 55.88], rotation = 0, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [53.34, 55.88], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [53.34, 55.88], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "ecc83-pp:GND"
+net = "GND"
+at = [144.78, 132.08]
+rotation = 0
+fields.Value = { at = [144.78, 133.858], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [144.78, 132.08], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [144.78, 132.08], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "ecc83-pp:GND"
+net = "GND"
+at = [154.94, 132.08]
+rotation = 0
+fields.Value = { at = [154.94, 133.858], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [154.94, 132.08], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [154.94, 132.08], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "ecc83-pp:GND"
+net = "GND"
+at = [185.42, 90.17]
+rotation = 0
+fields.Value = { at = [185.42, 91.948], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [185.42, 90.17], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [185.42, 90.17], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "ecc83-pp:GND"
+net = "GND"
+at = [195.58, 83.82]
+rotation = 0
+fields.Value = { at = [195.58, 85.598], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [195.58, 83.82], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [195.58, 83.82], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "ecc83-pp:GND"
+net = "GND"
+at = [86.36, 62.23]
+rotation = 0
+mirror = "y"
+fields.Value = { at = [86.36, 64.008], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [86.36, 62.23], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [86.36, 62.23], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "ecc83-pp:PWR_FLAG"
+net = "PWR_FLAG"
+at = [76.2, 49.53]
+rotation = 0
+fields.Value = { at = [76.2, 43.688], rotation = 0, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [76.2, 49.53], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [76.2, 49.53], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "ecc83-pp:GND"
+net = "GND"
+at = [50.8, 57.15]
+rotation = 0
+mirror = "y"
+fields.Value = { at = [50.8, 58.928], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [50.8, 57.15], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [50.8, 57.15], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "ecc83-pp:GND"
+net = "GND"
+at = [138.43, 116.84]
+rotation = 0
+fields.Value = { at = [138.43, 118.618], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [138.43, 116.84], rotation = 0, font = { size = [1.524, 1.524] } }
+fields.Datasheet = { at = [138.43, 116.84], rotation = 0, font = { size = [1.524, 1.524] } }
+
+[[sheet.wire]]
+pts = [[185.42, 76.2], [198.12, 76.2]]
+
+[[sheet.wire]]
+pts = [[198.12, 81.28], [195.58, 81.28]]
+
+[[sheet.wire]]
+pts = [[86.36, 53.34], [86.36, 50.8]]
+
+[[sheet.wire]]
+pts = [[195.58, 81.28], [195.58, 83.82]]
+
+[[sheet.wire]]
+pts = [[138.43, 116.84], [138.43, 113.03]]
+
+[[sheet.wire]]
+pts = [[144.78, 107.95], [144.78, 123.19]]
+
+[[sheet.wire]]
+pts = [[50.8, 57.15], [50.8, 55.88]]
+
+[[sheet.wire]]
+pts = [[157.48, 76.2], [157.48, 81.28]]
+
+[[sheet.wire]]
+pts = [[149.86, 64.77], [149.86, 93.98]]
+
+[[sheet.wire]]
+pts = [[185.42, 76.2], [185.42, 81.28]]
+
+[[sheet.wire]]
+pts = [[86.36, 50.8], [160.02, 50.8]]
+
+[[sheet.wire]]
+pts = [[50.8, 50.8], [76.2, 50.8]]
+
+[[sheet.wire]]
+pts = [[171.45, 76.2], [157.48, 76.2]]
+
+[[sheet.wire]]
+pts = [[138.43, 113.03], [135.89, 113.03]]
+
+[[sheet.wire]]
+pts = [[179.07, 76.2], [185.42, 76.2]]
+
+[[sheet.wire]]
+pts = [[60.96, 88.9], [60.96, 86.36]]
+
+[[sheet.wire]]
+pts = [[76.2, 49.53], [76.2, 50.8]]
+
+[[sheet.wire]]
+pts = [[157.48, 74.93], [157.48, 76.2]]
+
+[[sheet.wire]]
+pts = [[63.5, 93.98], [50.8, 93.98]]
+
+[[sheet.wire]]
+pts = [[86.36, 62.23], [86.36, 60.96]]
+
+[[sheet.wire]]
+pts = [[53.34, 55.88], [50.8, 55.88]]
+
+[[sheet.wire]]
+pts = [[63.5, 86.36], [63.5, 93.98]]
+
+[[sheet.wire]]
+pts = [[50.8, 88.9], [60.96, 88.9]]
+
+[[sheet.wire]]
+pts = [[149.86, 93.98], [157.48, 93.98]]
+
+[[sheet.wire]]
+pts = [[157.48, 93.98], [157.48, 97.79]]
+
+[[sheet.wire]]
+pts = [[135.89, 107.95], [144.78, 107.95]]
+
+[[sheet.wire]]
+pts = [[160.02, 50.8], [160.02, 54.61]]
+
+[[sheet.wire]]
+pts = [[154.94, 130.81], [154.94, 132.08]]
+
+[[sheet.wire]]
+pts = [[152.4, 64.77], [149.86, 64.77]]
+
+[[sheet.wire]]
+pts = [[157.48, 88.9], [157.48, 93.98]]
+
+[[sheet.wire]]
+pts = [[144.78, 130.81], [144.78, 132.08]]
+
+[[sheet.wire]]
+pts = [[76.2, 50.8], [86.36, 50.8]]
+
+[[sheet.wire]]
+pts = [[66.04, 88.9], [66.04, 86.36]]
+
+[[sheet.wire]]
+pts = [[154.94, 118.11], [154.94, 123.19]]
+
+[[sheet.wire]]
+pts = [[185.42, 90.17], [185.42, 88.9]]
+
+[[sheet.wire]]
+pts = [[60.96, 88.9], [66.04, 88.9]]
+
+[[sheet.wire]]
+pts = [[144.78, 107.95], [149.86, 107.95]]
+
+[[sheet.junction]]
+at = [76.2, 50.8]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [185.42, 76.2]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [86.36, 50.8]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [60.96, 88.9]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [144.78, 107.95]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [50.8, 55.88]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [157.48, 93.98]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [157.48, 76.2]
+diameter = 1.016
+
+[[sheet.no_connect]]
+at = [154.94, 177.8]
+
+[[sheet.no_connect]]
+at = [154.94, 180.34]
+
+[[sheet.no_connect]]
+at = [154.94, 185.42]
+
+[[sheet.no_connect]]
+at = [154.94, 182.88]

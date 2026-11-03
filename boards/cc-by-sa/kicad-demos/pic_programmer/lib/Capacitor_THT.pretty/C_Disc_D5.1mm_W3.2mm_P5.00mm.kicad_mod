@@ -155,6 +155,7 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pintype "passive")
 		(uuid "ea4138ad-e674-483c-b45b-160098381211")
 	)
 	(pad "2" thru_hole circle
@@ -163,6 +164,7 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pintype "passive")
 		(uuid "e0909086-44aa-4d3f-ad6b-3616163cca97")
 	)
 	(embedded_fonts no)

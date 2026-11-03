@@ -1,32 +1,9 @@
-# Open Air Max (AirGradient, KiCad demo)
+# Open Air Max — AirGradient author-source candidate1.0.2
 
-Outdoor air-quality monitor board by AirGradient from the KiCad demos, converted to Fenolite code: `design.py`, `copper.py` (tracks, arcs and vias as tables) and the board's own footprints in `lib/`.
+External review candidate only; the stable item ID retains its historical namespace. Actual upstream is Open-Air-Foundation/pcb-openair-max-main, author commit89aacf5013fc0ffe4b988a2e3c5a227bce3c4983, PCB/openair-max. AirGradient attribution and CC-BY-SA-4.0 remain; LICENSE bytes match the already reviewed1.0.1 item.
 
-- **Upstream:** [`demos/openair-max`](https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/openair-max) of the KiCad source repository, commit `97acc80c223d`.
-- **Licence:** CC-BY-SA-4.0 (`LICENSE`); see `NOTICE`.
-- **Converted:** 2026-10-31 with Fenolite 0.7.0.dev0 (commit `628954b73062`), `fenolite import --to python`, with no item left out.
+The candidate originates from five coherent CAD documents plus the active author DRU. Exact full levels1–8/S proof has no accepted differences; see PROVENANCE after the recorded verification. All27 notices and unjudged rule/property scope remain visible. Raw DRU preservation and bounded referenced-attribute context do not claim original cache equality or equivalent native DRC results.
 
-## Fidelity proof (`fenolite verify-source`)
+All233 source3D references are portable nominal paths. No STEP/STP/WRL vendor models or official library files are included;3D geometry, authorship, licences and equality are not judged. No model licence is inferred from the board licence.
 
-Result: **pass-with-accepted**. Each accepted difference is listed with its reason in `PROVENANCE.json` (`fidelity.accepted`).
-
-| level | status |
-|---|---|
-| 1 | equal |
-| 2 | equal |
-| 3 | accepted |
-| 4 | equal |
-| 5 | equal |
-| 6 | equal |
-| 7 | accepted |
-| 8 | accepted |
-| S | skipped |
-
-## Reproduce
-
-In a folder holding `upstream/` (the KiCad repository at the commit above):
-
-```sh
-fenolite import upstream/demos/openair-max/One-Air-Max.kicad_pro --to python --out out --licence CC-BY-SA-4.0 --source https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/openair-max --revision 97acc80c223d75520c03fc44cab63cd9a3202c42 --timestamp 2026-10-31T00:00:00Z --confirm
-fenolite verify-source out/design.py --against "upstream/demos/openair-max/One-Air-Max.kicad_pro" --provenance <this folder>/PROVENANCE.json
-```
+Historical1.0.1 evidence and NOTICE remain in the external review packet. The old incoherent KiCad-demo647pin/155group source is not waived, silently repaired or presented as this revision. No authoritative item, publication, release or Pages action has occurred.

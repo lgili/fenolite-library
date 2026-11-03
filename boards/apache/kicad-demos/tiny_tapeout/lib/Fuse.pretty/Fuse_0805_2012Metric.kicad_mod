@@ -1,7 +1,7 @@
 (footprint "Fuse_0805_2012Metric"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "Fuse SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 	(tags "fuse")
 	(property "Reference" "REF**"
@@ -170,6 +170,7 @@
 		(size 0.975 1.4)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pintype "passive")
 		(uuid "373be994-b759-41a4-bf56-84d5ba91c48c")
 	)
 	(pad "2" smd roundrect
@@ -177,6 +178,7 @@
 		(size 0.975 1.4)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pintype "passive")
 		(uuid "56ca5951-d562-4c84-a26b-4de9d353140d")
 	)
 	(embedded_fonts no)

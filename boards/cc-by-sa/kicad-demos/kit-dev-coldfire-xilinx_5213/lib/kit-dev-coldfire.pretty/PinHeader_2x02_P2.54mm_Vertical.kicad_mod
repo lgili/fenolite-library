@@ -1,7 +1,7 @@
 (footprint "PinHeader_2x02_P2.54mm_Vertical"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "Through hole straight pin header, 2x02, 2.54mm pitch, double rows")
 	(tags "Through hole pin header THT 2x02 2.54mm double row")
 	(property "Reference" "REF**"
@@ -240,6 +240,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "1")
+		(pintype "passive")
 		(uuid "048aae8b-e690-4d09-bfa3-58ba0f85c348")
 	)
 	(pad "2" thru_hole oval
@@ -248,6 +250,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "2")
+		(pintype "passive")
 		(uuid "90df8e2d-e267-4416-9d9b-ba83ce999d90")
 	)
 	(pad "3" thru_hole oval
@@ -256,6 +260,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "3")
+		(pintype "passive")
 		(uuid "1b1b720c-52b0-4fea-8638-181b458c90ec")
 	)
 	(pad "4" thru_hole oval
@@ -264,6 +270,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "4")
+		(pintype "passive")
 		(uuid "88e4aac3-e206-40a0-b490-8c6fadc378dd")
 	)
 	(embedded_fonts no)

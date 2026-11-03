@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
 # SPDX-FileCopyrightText: NOASSERTION
-# Converted from https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/ecc83@97acc80c223d75520c03fc44cab63cd9a3202c42 by Fenolite 0.7.0.dev0 on 2026-10-31;
+# Converted from https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/ecc83@97acc80c223d75520c03fc44cab63cd9a3202c42 by Fenolite 0.7.0.dev0 on 2026-11-03;
 # modified: format conversion to the Fenolite DSL.
 
 import copper
@@ -15,6 +15,7 @@ design.board(
         (mm("73.355"), mm("36.525")),
         (mm("21.285"), mm("36.525")),
     ),
+    outline_width=mm("0.127"),
 )
 design.stackup(
     stack.silkscreen(color="White"),
@@ -36,93 +37,97 @@ net_u1a_g = Net("Net-(U1A-G)")
 net_u1a_k = Net("Net-(U1A-K)")
 net_u1b_k = Net("Net-(U1B-K)")
 
-design.rules.minimum(via_diameter=mm("0.4"), edge_clearance=mm("0.01"))
+design.rules.netclass(
+    "Default",
+    clearance=mm("0.4"),
+    track_width=mm("0.8"),
+    via_diameter=mm("1.2"),
+    via_drill=mm("0.6"),
+    diff_pair_width=mm("0.2"),
+    diff_pair_gap=mm("0.25"),
+    diff_pair_via_gap=mm("0.25"),
+    nets=(),
+)
 
-c1 = Part(
-    "C1",
-    "Footprints:CP_Radial_D10.0mm_P5.00mm",
-    footprint="Footprints:CP_Radial_D10.0mm_P5.00mm",
-    value="10uF",
-)
-c2 = Part(
-    "C2",
-    "Footprints:C_Disc_D4.7mm_W2.5mm_P5.00mm",
-    footprint="Footprints:C_Disc_D4.7mm_W2.5mm_P5.00mm",
-    value="680nF",
-)
-p1 = Part(
-    "P1",
-    "Footprints:Altech_AK300_1x02_P5.00mm_45-Degree",
-    footprint="Footprints:Altech_AK300_1x02_P5.00mm_45-Degree",
-    value="IN",
-)
+c1 = Part("C1", "ecc83-pp:CP", footprint="Capacitor_THT:CP_Radial_D10.0mm_P5.00mm", value="10uF")
+c2 = Part("C2", "ecc83-pp:C", footprint="Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm", value="680nF")
+p1 = Part("P1", "ecc83-pp:CONN_2", footprint="Footprints:Altech_AK300_1x02_P5.00mm_45-Degree", value="IN")
 p2 = Part(
     "P2",
-    "Footprints:Altech_AK300_1x02_P5.00mm_45-Degree_2",
-    footprint="Footprints:Altech_AK300_1x02_P5.00mm_45-Degree_2",
+    "ecc83-pp:CONN_2",
+    footprint="Footprints:Altech_AK300_1x02_P5.00mm_45-Degree",
+    footprint_definition="Footprints:Altech_AK300_1x02_P5.00mm_45-Degree_2",
     value="OUT",
 )
 p3 = Part(
     "P3",
-    "Footprints:Altech_AK300_1x02_P5.00mm_45-Degree_3",
-    footprint="Footprints:Altech_AK300_1x02_P5.00mm_45-Degree_3",
+    "ecc83-pp:CONN_2",
+    footprint="Footprints:Altech_AK300_1x02_P5.00mm_45-Degree",
+    footprint_definition="Footprints:Altech_AK300_1x02_P5.00mm_45-Degree_3",
     value="POWER",
 )
 p4 = Part(
     "P4",
-    "Footprints:Altech_AK300_1x02_P5.00mm_45-Degree_4",
-    footprint="Footprints:Altech_AK300_1x02_P5.00mm_45-Degree_4",
+    "ecc83-pp:CONN_2",
+    footprint="Footprints:Altech_AK300_1x02_P5.00mm_45-Degree",
+    footprint_definition="Footprints:Altech_AK300_1x02_P5.00mm_45-Degree_4",
     value="CONN_2",
 )
 p5 = Part(
     "P5",
-    "Footprints:MountingHole_3.2mm_M3_DIN965_Pad",
+    "ecc83-pp:CONN_1",
     footprint="Footprints:MountingHole_3.2mm_M3_DIN965_Pad",
     value="MOUNTING_HOLE",
 )
 p6 = Part(
     "P6",
-    "Footprints:MountingHole_3.2mm_M3_DIN965_Pad_2",
-    footprint="Footprints:MountingHole_3.2mm_M3_DIN965_Pad_2",
+    "ecc83-pp:CONN_1",
+    footprint="Footprints:MountingHole_3.2mm_M3_DIN965_Pad",
+    footprint_definition="Footprints:MountingHole_3.2mm_M3_DIN965_Pad_2",
     value="MOUNTING_HOLE",
 )
 p7 = Part(
     "P7",
-    "Footprints:MountingHole_3.2mm_M3_DIN965_Pad_3",
-    footprint="Footprints:MountingHole_3.2mm_M3_DIN965_Pad_3",
+    "ecc83-pp:CONN_1",
+    footprint="Footprints:MountingHole_3.2mm_M3_DIN965_Pad",
+    footprint_definition="Footprints:MountingHole_3.2mm_M3_DIN965_Pad_3",
     value="MOUNTING_HOLE",
 )
 p8 = Part(
     "P8",
-    "Footprints:MountingHole_3.2mm_M3_DIN965_Pad_4",
-    footprint="Footprints:MountingHole_3.2mm_M3_DIN965_Pad_4",
+    "ecc83-pp:CONN_1",
+    footprint="Footprints:MountingHole_3.2mm_M3_DIN965_Pad",
+    footprint_definition="Footprints:MountingHole_3.2mm_M3_DIN965_Pad_4",
     value="MOUNTING_HOLE",
 )
 r1 = Part(
     "R1",
-    "Footprints:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
-    footprint="Footprints:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "ecc83-pp:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
     value="1.5K",
 )
 r2 = Part(
     "R2",
-    "Footprints:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_2",
-    footprint="Footprints:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_2",
+    "ecc83-pp:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_2",
     value="1.5K",
 )
 r3 = Part(
     "R3",
-    "Footprints:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_2",
-    footprint="Footprints:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_2",
+    "ecc83-pp:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_2",
     value="100K",
 )
 r4 = Part(
     "R4",
-    "Footprints:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_3",
-    footprint="Footprints:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_3",
+    "ecc83-pp:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_3",
     value="47K",
 )
-u1 = Part("U1", "Footprints:Valve_ECC-83-1", footprint="Footprints:Valve_ECC-83-1", value="ECC83")
+u1 = Part("U1", "ecc83-pp:ECC83", footprint="Footprints:Valve_ECC-83-1", value="ECC83")
 
 racine = Module("racine")
 
@@ -184,4 +189,12 @@ copper.apply(
         "Net-(U1A-K)": net_u1a_k,
         "Net-(U1B-K)": net_u1b_k,
     },
+)
+
+design.load_schematic("schematic.toml")
+
+design.kicad_project(
+    "native/project.kicad_pro",
+    sha256="8a943fac4b0cc3ed4fa83ccc83a6e15b9326178845ada0aa906df63f0672e975",
+    preserve_minimums=True,
 )

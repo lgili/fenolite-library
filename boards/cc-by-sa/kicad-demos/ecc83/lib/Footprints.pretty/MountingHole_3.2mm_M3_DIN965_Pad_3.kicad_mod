@@ -1,7 +1,7 @@
 (footprint "MountingHole_3.2mm_M3_DIN965_Pad_3"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "Mounting Hole 3.2mm, M3, DIN965")
 	(tags "mounting hole 3.2mm m3 din965")
 	(property "Reference" "REF**"
@@ -92,6 +92,8 @@
 		(drill 3.2)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "1")
+		(pintype "passive+no_connect")
 		(uuid "f4ac570c-5d1b-4481-8a1c-82f0cf4dcaaa")
 	)
 	(embedded_fonts no)

@@ -224,6 +224,8 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.15625)
+		(pinfunction "1_1")
+		(pintype "passive")
 		(uuid "7d664cb6-a9d5-4852-9576-0d909c8309ee")
 	)
 	(pad "2" thru_hole oval
@@ -232,6 +234,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "2_2")
+		(pintype "passive+no_connect")
 		(uuid "b3c39a3b-067f-4e37-8cbc-dcd040212775")
 	)
 	(pad "3" thru_hole oval
@@ -240,6 +244,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "3_3")
+		(pintype "passive+no_connect")
 		(uuid "be4b4c38-5dc3-4de4-adcb-6bccd53234a8")
 	)
 	(pad "4" thru_hole oval
@@ -248,6 +254,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "4_4")
+		(pintype "passive+no_connect")
 		(uuid "fd60d76c-db03-4894-b95e-7f6a78c0ea00")
 	)
 	(pad "5" thru_hole oval
@@ -256,6 +264,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "5_5")
+		(pintype "passive+no_connect")
 		(uuid "a32883b9-2eb1-46ed-aa2e-c8de5f2143e1")
 	)
 	(pad "6" thru_hole oval
@@ -264,6 +274,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "6_6")
+		(pintype "passive+no_connect")
 		(uuid "ae8a4f8b-1afb-44de-9ed8-5f20b938dd77")
 	)
 	(pad "7" thru_hole oval
@@ -272,6 +284,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "7_7")
+		(pintype "passive+no_connect")
 		(uuid "21eca3ff-00c2-4217-9ad3-26c5c3ce55f5")
 	)
 	(pad "8" thru_hole oval
@@ -280,6 +294,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "8_8")
+		(pintype "passive")
 		(uuid "090c2218-db7f-40c7-b56b-d819210558d8")
 	)
 	(pad "9" thru_hole oval
@@ -288,6 +304,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "9_9")
+		(pintype "passive+no_connect")
 		(uuid "8d1ee4e0-5c25-44c6-9177-bdc5785f4a58")
 	)
 	(pad "10" thru_hole oval
@@ -296,6 +314,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "10_10")
+		(pintype "passive+no_connect")
 		(uuid "98fdb84b-b069-48bc-805b-6aa0418659aa")
 	)
 	(pad "11" thru_hole oval
@@ -304,6 +324,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "11_11")
+		(pintype "passive+no_connect")
 		(uuid "3b14990b-4d48-461a-b14d-d4e18e5174d7")
 	)
 	(pad "12" thru_hole oval
@@ -312,6 +334,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "12_12")
+		(pintype "passive+no_connect")
 		(uuid "c30725e3-2d8b-43f5-9115-9ecc9445c7c6")
 	)
 	(pad "13" thru_hole oval
@@ -320,6 +344,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "13_13")
+		(pintype "passive+no_connect")
 		(uuid "ccd69b6f-e12f-47a6-a8c5-748889ce33a9")
 	)
 	(pad "14" thru_hole oval
@@ -328,6 +354,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "14_14")
+		(pintype "passive+no_connect")
 		(uuid "26159551-ccce-4d46-9cde-e0e758b5d6a5")
 	)
 	(pad "15" thru_hole oval
@@ -336,6 +364,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "15_15")
+		(pintype "passive+no_connect")
 		(uuid "2c013d90-df9d-475c-b26e-c8540f048465")
 	)
 	(pad "16" thru_hole oval
@@ -344,6 +374,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "16_16")
+		(pintype "passive+no_connect")
 		(uuid "c79470d1-b215-41e4-9eb3-ce9fc878bb2c")
 	)
 	(pad "17" thru_hole oval
@@ -352,6 +384,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "17_17")
+		(pintype "passive+no_connect")
 		(uuid "7e57dd80-4894-4608-8575-42058e47e36d")
 	)
 	(pad "18" thru_hole oval
@@ -360,6 +394,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "18_18")
+		(pintype "passive+no_connect")
 		(uuid "94e30e4f-1986-4f31-9117-f3d120f3a759")
 	)
 	(pad "19" thru_hole oval
@@ -368,6 +404,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "19_19")
+		(pintype "passive")
 		(uuid "79e18e18-ca55-4c0f-8fb2-d1c6940ae01a")
 	)
 	(pad "20" thru_hole oval
@@ -376,6 +414,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "20_20")
+		(pintype "passive")
 		(uuid "227965f7-c467-4166-8dbe-a03ba3a3e833")
 	)
 	(pad "21" thru_hole oval
@@ -384,6 +424,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "21_21")
+		(pintype "passive+no_connect")
 		(uuid "57ff451f-9d00-4c54-aff3-fb65f8f9eb0d")
 	)
 	(pad "22" thru_hole oval
@@ -392,6 +434,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "22_22")
+		(pintype "passive+no_connect")
 		(uuid "4496c900-8213-459f-b7de-3c75f620df1a")
 	)
 	(pad "23" thru_hole oval
@@ -400,6 +444,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "23_23")
+		(pintype "passive+no_connect")
 		(uuid "fd7f7a63-deac-4e80-b89b-d0c2cd711811")
 	)
 	(pad "24" thru_hole oval
@@ -408,6 +454,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "24_24")
+		(pintype "passive+no_connect")
 		(uuid "7c6f5916-7dc0-4ea1-b821-2cc83289aa65")
 	)
 	(pad "25" thru_hole oval
@@ -416,6 +464,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "25_25")
+		(pintype "passive+no_connect")
 		(uuid "e56e6e40-ddc5-44ce-88c9-bb76ff93a1b1")
 	)
 	(pad "26" thru_hole oval
@@ -424,6 +474,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "26_26")
+		(pintype "passive+no_connect")
 		(uuid "46127db0-a979-495f-9a7c-35ac251877f5")
 	)
 	(pad "27" thru_hole oval
@@ -432,6 +484,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "27_27")
+		(pintype "passive")
 		(uuid "e02039ec-7897-40ff-8736-be65dc3e9ff4")
 	)
 	(pad "28" thru_hole oval
@@ -440,6 +494,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "28_28")
+		(pintype "passive")
 		(uuid "79ea2235-5918-4911-bd2e-a0c14a8cfb63")
 	)
 	(embedded_fonts no)

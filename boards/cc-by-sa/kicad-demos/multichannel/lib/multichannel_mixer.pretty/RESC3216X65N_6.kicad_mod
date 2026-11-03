@@ -1,10 +1,10 @@
 (footprint "RESC3216X65N_6"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "Chip Resistor, EIA 1206, Metric 3216, Body 3.2x1.6mm, IPC Medium Density")
 	(property "Reference" "REF**"
-		(at 3.2 -0.05 -90)
+		(at 3.2 -0.05 90)
 		(layer "F.SilkS")
 		(uuid "5a6977e7-7915-48c4-9bcf-2e2631116a1b")
 		(effects
@@ -157,12 +157,16 @@
 		(at -1.45 0)
 		(size 1.15 1.8)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "1")
+		(pintype "passive")
 		(uuid "4a3580ec-ab2a-4c14-a941-39a975f3ace9")
 	)
 	(pad "2" smd rect
 		(at 1.45 0)
 		(size 1.15 1.8)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "2")
+		(pintype "passive")
 		(uuid "2b6be751-dcd6-475a-9b8c-2af59fdb24a7")
 	)
 	(embedded_fonts no)

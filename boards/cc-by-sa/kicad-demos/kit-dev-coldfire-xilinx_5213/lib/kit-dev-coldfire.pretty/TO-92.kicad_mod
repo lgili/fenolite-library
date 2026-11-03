@@ -1,7 +1,7 @@
 (footprint "TO-92"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "TO-92 leads molded, narrow, drill 0.75mm (see NXP sot054_po.pdf)")
 	(tags "to-92 sc-43 sc-43a sot54 PA33 transistor")
 	(property "Reference" "REF**"
@@ -174,6 +174,8 @@
 		(drill 0.75)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "Rst")
+		(pintype "open_collector")
 		(uuid "ef140bb9-3e69-4f4b-b784-21c7ccce8164")
 	)
 	(pad "2" thru_hole circle
@@ -182,6 +184,8 @@
 		(drill 0.75)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "In")
+		(pintype "input")
 		(uuid "15427d99-0430-45e1-8611-76ae3289f02c")
 	)
 	(pad "3" thru_hole circle
@@ -190,6 +194,8 @@
 		(drill 0.75)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "Gbd")
+		(pintype "input")
 		(uuid "933016a5-fef8-4c9d-a300-5cdf3b913b9a")
 	)
 	(embedded_fonts no)

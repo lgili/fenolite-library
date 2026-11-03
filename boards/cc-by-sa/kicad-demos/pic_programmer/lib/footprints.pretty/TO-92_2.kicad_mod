@@ -182,6 +182,8 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.25)
+		(pinfunction "C_1")
+		(pintype "passive")
 		(uuid "1e2ebe96-68ed-40c2-96e3-9942a1f0c392")
 	)
 	(pad "2" thru_hole circle
@@ -190,6 +192,8 @@
 		(drill 0.75)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "B_2")
+		(pintype "input")
 		(uuid "8c289fa7-a8df-4bed-98cb-75a80af6fa0f")
 	)
 	(pad "3" thru_hole circle
@@ -198,6 +202,8 @@
 		(drill 0.75)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "E_3")
+		(pintype "passive")
 		(uuid "3ceb24fb-e449-4666-829e-1fe6f3c7e7cc")
 	)
 	(embedded_fonts no)

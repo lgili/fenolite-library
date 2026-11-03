@@ -1,7 +1,7 @@
 (footprint "TT_BREAKOUT_PINHEADER_PLACEHOLDER_WITHPAD"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "Placeholder for components that need BOM/POS file inclusion")
 	(property "Reference" "REF**"
 		(at -1.595 26.2 0)
@@ -112,6 +112,8 @@
 		(size 0.2 0.2)
 		(layers "F.Cu")
 		(roundrect_rratio 0.25)
+		(pinfunction "1")
+		(pintype "passive")
 		(thermal_bridge_angle 45)
 		(uuid "15f28a0d-941b-4524-b52f-68d533bc221b")
 	)

@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
 # SPDX-FileCopyrightText: NOASSERTION
-# Converted from https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/interf_u@97acc80c223d75520c03fc44cab63cd9a3202c42 by Fenolite 0.7.0.dev0 on 2026-10-31;
+# Converted from https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/interf_u@97acc80c223d75520c03fc44cab63cd9a3202c42 by Fenolite 0.7.0.dev0 on 2026-11-03;
 # modified: format conversion to the Fenolite DSL.
 
 import copper
@@ -20,6 +20,8 @@ design.board(
         (mm("-9.195"), mm("33.35")),
         (mm("-20.625"), mm("33.35")),
     ),
+    max_curve_error=mm("0.01"),
+    outline_width=mm("0.127"),
 )
 design.stackup(
     stack.silkscreen(color="White"),
@@ -144,6 +146,17 @@ net_u9_p_a3 = Net("Net-(U9-P/A3)")
 vcc = Net("VCC")
 
 design.rules.netclass(
+    "Default",
+    clearance=mm("0.254"),
+    track_width=mm("0.4"),
+    via_diameter=mm("1.4"),
+    via_drill=mm("0.6"),
+    diff_pair_width=mm("0.2"),
+    diff_pair_gap=mm("0.25"),
+    diff_pair_via_gap=mm("0.25"),
+    nets=(),
+)
+design.rules.netclass(
     "Power",
     clearance=mm("0.254"),
     track_width=mm("0.5"),
@@ -154,103 +167,111 @@ design.rules.netclass(
     diff_pair_via_gap=mm("0.25"),
     nets=(gnd, vcc),
 )
-design.rules.minimum(via_diameter=mm("0.9"), hole_size=mm("0.5"))
 
-bus1 = Part("BUS1", "interf_u:BUS_PC", footprint="interf_u:BUS_PC", value="BUSPC")
+bus1 = Part("BUS1", "interf_u:Bus_ISA_8bit", footprint="interf_u:BUS_PC", value="BUSPC")
 c1 = Part(
     "C1",
-    "interf_u:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal",
-    footprint="interf_u:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal",
+    "interf_u:CP",
+    footprint="Capacitor_THT:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal",
     value="47uF",
 )
-c2 = Part(
-    "C2",
-    "interf_u:C_Disc_D3.0mm_W2.0mm_P2.50mm",
-    footprint="interf_u:C_Disc_D3.0mm_W2.0mm_P2.50mm",
-    value="47pF",
-)
-c3 = Part(
-    "C3",
-    "interf_u:C_Disc_D3.0mm_W2.0mm_P2.50mm",
-    footprint="interf_u:C_Disc_D3.0mm_W2.0mm_P2.50mm",
-    value="47pF",
-)
+c2 = Part("C2", "interf_u:C", footprint="Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm", value="47pF")
+c3 = Part("C3", "interf_u:C", footprint="Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm", value="47pF")
 c4 = Part(
     "C4",
-    "interf_u:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal_2",
-    footprint="interf_u:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal_2",
+    "interf_u:CP",
+    footprint="Capacitor_THT:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal",
+    footprint_definition="Capacitor_THT:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal_2",
     value="47uF",
 )
 c5 = Part(
     "C5",
-    "interf_u:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal_3",
-    footprint="interf_u:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal_3",
+    "interf_u:CP",
+    footprint="Capacitor_THT:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal",
+    footprint_definition="Capacitor_THT:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal_3",
     value="47uF",
 )
 c6 = Part(
     "C6",
-    "interf_u:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal",
-    footprint="interf_u:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal",
+    "interf_u:CP",
+    footprint="Capacitor_THT:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal",
     value="47uF",
 )
-d1_2 = Part("D1", "interf_u:LED_D5.0mm", footprint="interf_u:LED_D5.0mm", value="LED")
-d2_2 = Part("D2", "interf_u:LED_D5.0mm_2", footprint="interf_u:LED_D5.0mm_2", value="LED")
+d1_2 = Part("D1", "interf_u:LED", footprint="LED_THT:LED_D5.0mm", value="LED")
+d2_2 = Part(
+    "D2",
+    "interf_u:LED",
+    footprint="LED_THT:LED_D5.0mm",
+    footprint_definition="LED_THT:LED_D5.0mm_2",
+    value="LED",
+)
 g1 = Part("G1", "interf_u:tux", footprint="interf_u:tux", value="LOGO", board_only=True)
 jp1 = Part(
     "JP1",
-    "interf_u:PinHeader_2x08_P2.54mm_Vertical",
-    footprint="interf_u:PinHeader_2x08_P2.54mm_Vertical",
+    "interf_u:Conn_02x08_Odd_Even",
+    footprint="Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical",
     value="CONN_8X2",
 )
 p1 = Part(
     "P1",
-    "interf_u:DSUB-25_Female_Horizontal_P2.77x2.84mm_EdgePinOffset9.90mm_Housed_MountingHolesOffset11.32mm",
-    footprint="interf_u:DSUB-25_Female_Horizontal_P2.77x2.84mm_EdgePinOffset9.90mm_Housed_MountingHolesOffset11.32mm",
+    "interf_u:DB25_Female",
+    footprint="Connector_Dsub:DSUB-25_Female_Horizontal_P2.77x2.84mm_EdgePinOffset9.90mm_Housed_MountingHolesOffset11.32mm",
     value="DB25FEMELLE",
 )
 r1 = Part(
     "R1",
-    "interf_u:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
-    footprint="interf_u:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    "interf_u:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
     value="100K",
 )
 r2 = Part(
     "R2",
-    "interf_u:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_2",
-    footprint="interf_u:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_2",
+    "interf_u:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_2",
     value="1K",
 )
 r3 = Part(
     "R3",
-    "interf_u:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_3",
-    footprint="interf_u:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_3",
+    "interf_u:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_3",
     value="10K",
 )
 r4 = Part(
     "R4",
-    "interf_u:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_3",
-    footprint="interf_u:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_3",
+    "interf_u:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_3",
     value="330",
 )
 r5 = Part(
     "R5",
-    "interf_u:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_4",
-    footprint="interf_u:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_4",
+    "interf_u:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_4",
     value="330",
 )
-rr1 = Part("RR1", "interf_u:R_Array_SIP10", footprint="interf_u:R_Array_SIP10", value="9x1K")
-u1 = Part("U1", "interf_u:DIP-20_W7.62mm", footprint="interf_u:DIP-20_W7.62mm", value="74LS245")
-u2 = Part("U2", "interf_u:DIP-20_W7.62mm", footprint="interf_u:DIP-20_W7.62mm", value="74LS688")
-u3 = Part("U3", "interf_u:DIP-20_W7.62mm", footprint="interf_u:DIP-20_W7.62mm", value="74LS541")
-u5 = Part("U5", "interf_u:DIP-32_W15.24mm", footprint="interf_u:DIP-32_W15.24mm", value="628128")
-u8 = Part("U8", "interf_u:DIP-24_W7.62mm", footprint="interf_u:DIP-24_W7.62mm", value="EP600")
-u9 = Part("U9", "interf_u:PGA120", footprint="interf_u:PGA120", value="4003APG120")
-x1 = Part(
-    "X1",
-    "interf_u:Crystal_HC18-U_Horizontal",
-    footprint="interf_u:Crystal_HC18-U_Horizontal",
-    value="8MHz",
+rr1 = Part("RR1", "interf_u:RR9", footprint="Resistor_THT:R_Array_SIP10", value="9x1K")
+u1 = Part("U1", "interf_u:74LS245", footprint="Package_DIP:DIP-20_W7.62mm", value="74LS245")
+u2 = Part(
+    "U2",
+    "interf_u:74LS688",
+    footprint="Package_DIP:DIP-20_W7.62mm",
+    footprint_definition="Package_DIP:DIP-20_W7.62mm_2",
+    value="74LS688",
 )
+u3 = Part(
+    "U3",
+    "interf_u:74LS541",
+    footprint="Package_DIP:DIP-20_W7.62mm",
+    footprint_definition="Package_DIP:DIP-20_W7.62mm_3",
+    value="74LS541",
+)
+u5 = Part("U5", "interf_u:628128", footprint="Package_DIP:DIP-32_W15.24mm", value="628128")
+u8 = Part("U8", "interf_u:EP600", footprint="Package_DIP:DIP-24_W7.62mm", value="EP600")
+u9 = Part("U9", "interf_u:4003APG120", footprint="interf_u:PGA120", value="4003APG120")
+x1 = Part("X1", "interf_u:Crystal", footprint="Crystal:Crystal_HC18-U_Horizontal", value="8MHz")
 
 design.add(
     bus1,
@@ -704,4 +725,12 @@ copper.apply(
         "Net-(U9-P/A3)": net_u9_p_a3,
         "VCC": vcc,
     },
+)
+
+design.load_schematic("schematic.toml")
+
+design.kicad_project(
+    "native/project.kicad_pro",
+    sha256="b9908a96e6113e6e51f488482108dc87aa5d9bcd838f9e3345c85e0db09bffa9",
+    preserve_minimums=True,
 )

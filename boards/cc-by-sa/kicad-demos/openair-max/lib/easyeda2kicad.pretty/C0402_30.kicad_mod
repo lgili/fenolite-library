@@ -1,9 +1,9 @@
 (footprint "C0402_30"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(property "Reference" "REF**"
-		(at -0.325 -1.1 -180)
+		(at -0.325 -1.1 180)
 		(layer "F.SilkS")
 		(uuid "d534472a-e916-4a32-8c16-7258534db7bd")
 		(effects
@@ -14,7 +14,7 @@
 		)
 	)
 	(property "Value" "C0402_30"
-		(at 0 4 -180)
+		(at 0 4 180)
 		(layer "F.Fab")
 		(uuid "0bbe56de-fb33-4174-813f-7f7cfa805532")
 		(effects
@@ -25,7 +25,7 @@
 		)
 	)
 	(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_100pF-101-5-50V_C106200.html"
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "3b6519b2-1c0b-4991-9a63-e2795f14e2d8")
@@ -37,7 +37,7 @@
 		)
 	)
 	(property "Description" ""
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "63fe97b7-fa1d-4c19-bcb9-71fd22e4da8d")
@@ -48,7 +48,14 @@
 			)
 		)
 	)
+	(units
+		(unit
+			(name "A")
+			(pins "1" "2")
+		)
+	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start 1.17 -0.35)
 		(end 1.17 0.35)
@@ -165,7 +172,7 @@
 		(uuid "61093c97-afe3-444e-9e1d-7908ce2aa292")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(uuid "59427564-9f5b-45cc-bcea-fe1ff6ec752f")
 		(effects
@@ -179,16 +186,20 @@
 		(at -0.55 0)
 		(size 0.79 0.54)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "1_1")
+		(pintype "input")
 		(uuid "f6178e39-dbaf-47e8-9acd-139df0abc7da")
 	)
 	(pad "2" smd rect
 		(at 0.55 0)
 		(size 0.79 0.54)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "2_2")
+		(pintype "input")
 		(uuid "9319d86b-2890-4c40-9628-60ad42a1c6dd")
 	)
 	(embedded_fonts no)
-	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/C0402_L1.0-W0.5-H0.5.wrl"
+	(model "${KIPRJMOD}/../../libraries/easyeda2kicad/easyeda2kicad.3dshapes/C0402_L1.0-W0.5-H0.5.wrl"
 		(offset
 			(xyz 0 -0 -0)
 		)

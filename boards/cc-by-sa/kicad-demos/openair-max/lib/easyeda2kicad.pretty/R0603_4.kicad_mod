@@ -1,7 +1,7 @@
 (footprint "R0603_4"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(property "Reference" "REF**"
 		(at -2.435 0.03 180)
 		(layer "F.SilkS")
@@ -48,7 +48,14 @@
 			)
 		)
 	)
+	(units
+		(unit
+			(name "A")
+			(pins "1" "2")
+		)
+	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start -1.39 -0.66)
 		(end -1.39 0.66)
@@ -132,19 +139,23 @@
 		)
 	)
 	(pad "1" smd rect
-		(at -0.75 0 360)
+		(at -0.75 0)
 		(size 0.81 0.86)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "1_1")
+		(pintype "input")
 		(uuid "54b9b8e7-b59b-4d57-be14-8522f6907cd6")
 	)
 	(pad "2" smd rect
-		(at 0.75 0 360)
+		(at 0.75 0)
 		(size 0.81 0.86)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "2_2")
+		(pintype "input")
 		(uuid "ccfa77f4-4aed-4d03-abb2-f26b954f8acc")
 	)
 	(embedded_fonts no)
-	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/R0603.wrl"
+	(model "${KIPRJMOD}/../../libraries/easyeda2kicad/easyeda2kicad.3dshapes/R0603.wrl"
 		(offset
 			(xyz 0 -0 -0)
 		)

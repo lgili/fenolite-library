@@ -1,3 +1,7 @@
+2026-11-03: external1.0.2 candidate regenerated from the unchanged pinned Tiny author CAD using core18351e40 and explicit native target10; refreshed code/native sidecars and strict source-bound proof. Historical accepted records remain archived outside the item, not silently promoted. No3D asset or official library payload is included.
+
+Original historical notice follows unchanged. It describes1.0.1 only, not current completeness/equality. Upstream licence/attribution remain intact; no endorsement.
+
 2026-11-02: recorded the normalised hash of the preserved upstream licence text after explicit CODEOWNER approval; original licence, payload and historical fidelity records unchanged.
 
 2026-11-02: canonicalised the library licence-family path and logical identity where required; original upstream paths, payloads, licence and historical fidelity records unchanged.

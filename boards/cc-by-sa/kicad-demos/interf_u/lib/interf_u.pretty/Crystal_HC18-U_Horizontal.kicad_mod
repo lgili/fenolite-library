@@ -1,7 +1,7 @@
 (footprint "Crystal_HC18-U_Horizontal"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "Crystal THT HC-18/U http://5hertz.com/pdfs/04404_D.pdf")
 	(tags "THT crystal")
 	(property "Reference" "REF**"
@@ -350,6 +350,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "1")
+		(pintype "passive")
 		(uuid "02437e65-1552-40a8-9b5b-94d2b94a03d2")
 	)
 	(pad "2" thru_hole circle
@@ -358,6 +360,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "2")
+		(pintype "passive")
 		(uuid "dfa8c347-4b8b-4535-a7e0-0676a64bd9db")
 	)
 	(embedded_fonts no)

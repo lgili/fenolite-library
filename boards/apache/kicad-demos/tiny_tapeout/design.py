@@ -1,10 +1,11 @@
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: NOASSERTION
-# Converted from https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/tiny_tapeout@97acc80c223d75520c03fc44cab63cd9a3202c42 by Fenolite 0.7.0.dev0 on 2026-10-31;
+# Converted from https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/tiny_tapeout@97acc80c223d75520c03fc44cab63cd9a3202c42 by Fenolite 0.7.0.dev0 on 2026-11-03;
 # modified: format conversion to the Fenolite DSL.
 
 import copper
-from fenolite.dsl import Design, Module, Net, Part, arc_to, connect, mm, stack
+from sheets import rp2040 as _sheet_rp2040
+from fenolite.dsl import Design, Net, Part, arc_to, connect, mm, stack
 
 design = Design("tinytapeout-demo")
 
@@ -89,13 +90,6 @@ net_3v3 = Net("+3V3")
 net_5v = Net("+5V")
 cc1 = Net("/CC1")
 cc2 = Net("/CC2")
-rp2040_dvdd = Net("/RP2040/DVDD")
-rp2040_qspi_clk = Net("/RP2040/QSPI_CLK")
-rp2040_qspi_sd0 = Net("/RP2040/QSPI_SD0")
-rp2040_qspi_sd1 = Net("/RP2040/QSPI_SD1")
-rp2040_qspi_sd2 = Net("/RP2040/QSPI_SD2")
-rp2040_qspi_sd3 = Net("/RP2040/QSPI_SD3")
-rp2040_run = Net("/RP2040/RUN")
 rp2040_swclk = Net("/RP2040/SWCLK")
 rp2040_swdio = Net("/RP2040/SWDIO")
 crvrst = Net("/~{CRVRST}")
@@ -111,7 +105,6 @@ hk_sdo = Net("HK_SDO")
 mux_sel = Net("MUX_SEL")
 net_c1_pad2 = Net("Net-(C1-Pad2)")
 net_c3_pad1 = Net("Net-(C3-Pad1)")
-net_c30_pad1 = Net("Net-(C30-Pad1)")
 net_d1_a = Net("Net-(D1-A)")
 net_d2_a = Net("Net-(D2-A)")
 net_d3_a = Net("Net-(D3-A)")
@@ -142,8 +135,6 @@ net_u1_dp = Net("Net-(U1-DP)")
 net_u1_e = Net("Net-(U1-E)")
 net_u1_f = Net("Net-(U1-F)")
 net_u1_g = Net("Net-(U1-G)")
-net_u6_xin = Net("Net-(U6-XIN)")
-net_u6_xout = Net("Net-(U6-XOUT)")
 net_u7_io2 = Net("Net-(U7-IO2)")
 net_u7_io3 = Net("Net-(U7-IO3)")
 rpio29 = Net("RPIO29")
@@ -193,101 +184,578 @@ crst_out2 = Net("~{crst}/out2")
 ctrl_sel_rst = Net("~{ctrl_sel_rst}")
 project_rst = Net("~{project_rst}")
 
-design.rules.netclass(
-    "clk",
-    clearance=mm("0.2"),
-    track_width=mm("0.245"),
-    via_diameter=mm("0.65"),
-    via_drill=mm("0.3"),
-    diff_pair_width=mm("0.2"),
-    diff_pair_gap=mm("0.25"),
-    diff_pair_via_gap=mm("0.25"),
-    nets=(rp_proj_clk, project_clk, xclk),
+c1 = Part(
+    "C1",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0603_1608Metric",
+    value="1uF",
+    properties={
+        "Characteristics": "1u 10V XR 0603",
+        "MPN": "CL10A105KA8NNNC",
+        "MPN_ALT": "C0603C105K4RAC7411",
+    },
 )
-design.rules.netclass(
-    "config",
-    clearance=mm("0.2"),
-    track_width=mm("0.2"),
-    via_diameter=mm("0.65"),
-    via_drill=mm("0.3"),
-    diff_pair_width=mm("0.2"),
-    diff_pair_gap=mm("0.25"),
-    diff_pair_via_gap=mm("0.25"),
-    nets=(hk_csb, hk_sck, hk_sdi, hk_sdo, ctrl_ena, ctrl_sel_inc, ctrl_sel_rst),
+c2 = Part(
+    "C2",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0402_1005Metric",
+    footprint_definition="Capacitor_SMD:C_0402_1005Metric_6",
+    value="100nF",
+    properties={
+        "Characteristics": "100n 10% 25V XR 0402",
+        "JLC": "",
+        "MPN": "CL05A104KA5NNNC",
+        "MPN_ALT": "GRM155R71E104KE14J",
+        "Part number": "",
+    },
 )
-design.rules.netclass(
-    "iobidir",
-    clearance=mm("0.2"),
-    track_width=mm("0.245"),
-    via_diameter=mm("0.62"),
-    via_drill=mm("0.3"),
-    diff_pair_width=mm("0.2"),
-    diff_pair_gap=mm("0.25"),
-    diff_pair_via_gap=mm("0.25"),
-    nets=(uio0, uio1, uio2, uio3, uio4, uio5, uio6, uio7),
+c3 = Part(
+    "C3",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0603_1608Metric",
+    footprint_definition="Capacitor_SMD:C_0603_1608Metric_8",
+    value="6800pF",
+    properties={"DNP": "DNP", "JLC": "", "MPN": "", "Part number": ""},
+    dnp=True,
 )
-design.rules.netclass(
-    "ioin",
-    clearance=mm("0.2"),
-    track_width=mm("0.245"),
-    via_diameter=mm("0.62"),
-    via_drill=mm("0.3"),
-    diff_pair_width=mm("0.2"),
-    diff_pair_gap=mm("0.25"),
-    diff_pair_via_gap=mm("0.25"),
-    nets=(in0, in1, in2, in3, in4, in5, in6, in7),
+c4 = Part(
+    "C4",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0402_1005Metric",
+    footprint_definition="Capacitor_SMD:C_0402_1005Metric_13",
+    value="100nF",
+    properties={
+        "Characteristics": "100n 10% 25V XR 0402",
+        "JLC": "",
+        "MPN": "CL05A104KA5NNNC",
+        "MPN_ALT": "GRM155R71E104KE14J",
+        "Part number": "",
+    },
 )
-design.rules.netclass(
-    "ioout",
-    clearance=mm("0.2"),
-    track_width=mm("0.245"),
-    via_diameter=mm("0.62"),
-    via_drill=mm("0.3"),
-    diff_pair_width=mm("0.2"),
-    diff_pair_gap=mm("0.25"),
-    diff_pair_via_gap=mm("0.25"),
-    nets=(sdi_out0, sdo_out1, cinc_out3, out0, out1, out2, out3, out4, out5, out6, out7, crst_out2),
+c5 = Part(
+    "C5",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0603_1608Metric",
+    footprint_definition="Capacitor_SMD:C_0603_1608Metric_12",
+    value="1uF",
+    properties={
+        "Characteristics": "1u 10V XR 0603",
+        "DigikeyPN": "",
+        "JLC": "",
+        "MPN": "CL10A105KA8NNNC",
+        "MPN_ALT": "C0603C105K4RAC7411",
+        "Part number": "",
+    },
 )
-design.rules.netclass(
-    "pwr",
-    clearance=mm("0.23"),
-    track_width=mm("0.25"),
-    via_diameter=mm("0.65"),
-    via_drill=mm("0.3"),
-    diff_pair_width=mm("0.2"),
-    diff_pair_gap=mm("0.25"),
-    diff_pair_via_gap=mm("0.25"),
-    nets=(net_1v8, net_3v3, gnd),
+c6 = Part(
+    "C6",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0805_2012Metric",
+    footprint_definition="Capacitor_SMD:C_0805_2012Metric_2",
+    value="10uF",
+    properties={
+        "Characteristics": "10u 10V XR 0805",
+        "JLC": "C237493",
+        "MPN": "CL21B106KOQNNNF",
+        "MPN_ALT": "LMK212AB7106MG-T",
+        "Part number": "",
+    },
 )
-design.rules.netclass(
-    "pwrhi",
-    clearance=mm("0.25"),
-    track_width=mm("0.3"),
-    via_diameter=mm("0.8"),
-    via_drill=mm("0.4"),
-    diff_pair_width=mm("0.2"),
-    diff_pair_gap=mm("0.25"),
-    diff_pair_via_gap=mm("0.25"),
-    nets=(net_5v, vbus),
+c7 = Part(
+    "C7",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0805_2012Metric",
+    footprint_definition="Capacitor_SMD:C_0805_2012Metric_3",
+    value="10uF",
+    properties={
+        "Characteristics": "10u 10V XR 0805",
+        "JLC": "C237493",
+        "MPN": "CL21B106KOQNNNF",
+        "MPN_ALT": "LMK212AB7106MG-T",
+        "Part number": "",
+    },
 )
-design.rules.netclass(
-    "usbdiff",
-    clearance=mm("0.2"),
-    track_width=mm("0.23"),
-    via_diameter=mm("0.6"),
-    via_drill=mm("0.3"),
-    diff_pair_width=mm("0.23"),
-    diff_pair_gap=mm("0.165"),
-    diff_pair_via_gap=mm("0.25"),
-    nets=(usb_d, usb_d_2),
+c8 = Part(
+    "C8",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0402_1005Metric",
+    footprint_definition="Capacitor_SMD:C_0402_1005Metric_11",
+    value="100nF",
+    properties={
+        "Characteristics": "100n 10% 25V XR 0402",
+        "JLC": "",
+        "MPN": "CL05A104KA5NNNC",
+        "MPN_ALT": "GRM155R71E104KE14J",
+        "Part number": "",
+    },
 )
-design.rules.minimum(
-    track_width=mm("0.16"),
-    via_diameter=mm("0.3"),
-    hole_size=mm("0.2"),
-    edge_clearance=mm("0.3"),
+c9 = Part(
+    "C9",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0603_1608Metric",
+    footprint_definition="Capacitor_SMD:C_0603_1608Metric_15",
+    value="1uF",
+    properties={
+        "Characteristics": "1u 10V XR 0603",
+        "DigikeyPN": "",
+        "JLC": "",
+        "MPN": "CL10A105KA8NNNC",
+        "MPN_ALT": "C0603C105K4RAC7411",
+        "Part number": "",
+    },
 )
-
+c10 = Part(
+    "C10",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0805_2012Metric",
+    value="22uF",
+    properties={
+        "Characteristics": "22u 6V XR 0805",
+        "JLC": "C86816",
+        "MPN": "CL21A226KOQNNNG",
+        "MPN_ALT": "GRM21BR61A226ME51K",
+        "Part number": "",
+    },
+)
+c11 = Part(
+    "C11",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0603_1608Metric",
+    footprint_definition="Capacitor_SMD:C_0603_1608Metric_2",
+    value="1uF",
+    properties={
+        "Characteristics": "1u 10V XR 0603",
+        "MPN": "CL10A105KA8NNNC",
+        "MPN_ALT": "C0603C105K4RAC7411",
+    },
+)
+c12 = Part(
+    "C12",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0402_1005Metric",
+    value="100nF",
+    properties={
+        "Characteristics": "100n 10% 25V XR 0402",
+        "JLC": "",
+        "MPN": "CL05A104KA5NNNC",
+        "MPN_ALT": "GRM155R71E104KE14J",
+        "Part number": "",
+    },
+)
+c13 = Part(
+    "C13",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0402_1005Metric",
+    footprint_definition="Capacitor_SMD:C_0402_1005Metric_2",
+    value="100nF",
+    properties={
+        "Characteristics": "100n 10% 25V XR 0402",
+        "JLC": "",
+        "MPN": "CL05A104KA5NNNC",
+        "MPN_ALT": "GRM155R71E104KE14J",
+        "Part number": "",
+    },
+)
+c14 = Part(
+    "C14",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0402_1005Metric",
+    footprint_definition="Capacitor_SMD:C_0402_1005Metric_3",
+    value="100nF",
+    properties={
+        "Characteristics": "100n 10% 25V XR 0402",
+        "JLC": "",
+        "MPN": "CL05A104KA5NNNC",
+        "MPN_ALT": "GRM155R71E104KE14J",
+        "Part number": "",
+    },
+)
+c15 = Part(
+    "C15",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0603_1608Metric",
+    footprint_definition="Capacitor_SMD:C_0603_1608Metric_3",
+    value="1uF",
+    properties={
+        "Characteristics": "1u 10V XR 0603",
+        "DigikeyPN": "",
+        "JLC": "",
+        "MPN": "CL10A105KA8NNNC",
+        "MPN_ALT": "C0603C105K4RAC7411",
+        "Part number": "",
+    },
+)
+c16 = Part(
+    "C16",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0603_1608Metric",
+    footprint_definition="Capacitor_SMD:C_0603_1608Metric_4",
+    value="10uF",
+    properties={
+        "Characteristics": "10u 10V XR 0603",
+        "DigikeyPN": "490-GRT188R61C106KE13JCT-ND",
+        "JLC": "",
+        "MPN": "CL10A106MP8NNNC",
+        "MPN_ALT": "GRT188R61C106KE13J ",
+        "Part number": "",
+    },
+)
+c17 = Part(
+    "C17",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0603_1608Metric",
+    footprint_definition="Capacitor_SMD:C_0603_1608Metric_5",
+    value="1uF",
+    properties={
+        "Characteristics": "1u 10V XR 0603",
+        "DigikeyPN": "",
+        "JLC": "",
+        "MPN": "CL10A105KA8NNNC",
+        "MPN_ALT": "C0603C105K4RAC7411",
+        "Part number": "",
+    },
+)
+c18 = Part(
+    "C18",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0402_1005Metric",
+    footprint_definition="Capacitor_SMD:C_0402_1005Metric_4",
+    value="100nF",
+    properties={
+        "Characteristics": "100n 10% 25V XR 0402",
+        "JLC": "",
+        "MPN": "CL05A104KA5NNNC",
+        "MPN_ALT": "GRM155R71E104KE14J",
+        "Part number": "",
+    },
+)
+c19 = Part(
+    "C19",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0402_1005Metric",
+    footprint_definition="Capacitor_SMD:C_0402_1005Metric_5",
+    value="100nF",
+    properties={
+        "Characteristics": "100n 10% 25V XR 0402",
+        "JLC": "",
+        "MPN": "CL05A104KA5NNNC",
+        "MPN_ALT": "GRM155R71E104KE14J",
+        "Part number": "",
+    },
+)
+c20 = Part(
+    "C20",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0402_1005Metric",
+    footprint_definition="Capacitor_SMD:C_0402_1005Metric_7",
+    value="100nF",
+    properties={
+        "Characteristics": "100n 10% 25V XR 0402",
+        "JLC": "",
+        "MPN": "CL05A104KA5NNNC",
+        "MPN_ALT": "GRM155R71E104KE14J",
+        "Part number": "",
+    },
+)
+c21 = Part(
+    "C21",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0603_1608Metric",
+    footprint_definition="Capacitor_SMD:C_0603_1608Metric_6",
+    value="10uF",
+    properties={
+        "Characteristics": "10u 10V XR 0603",
+        "DigikeyPN": "490-GRT188R61C106KE13JCT-ND",
+        "JLC": "",
+        "MPN": "CL10A106MP8NNNC",
+        "MPN_ALT": "GRT188R61C106KE13J ",
+        "Part number": "",
+    },
+)
+c22 = Part(
+    "C22",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0402_1005Metric",
+    footprint_definition="Capacitor_SMD:C_0402_1005Metric_8",
+    value="100nF",
+    properties={
+        "Characteristics": "100n 10% 25V XR 0402",
+        "JLC": "",
+        "MPN": "CL05A104KA5NNNC",
+        "MPN_ALT": "GRM155R71E104KE14J",
+        "Part number": "",
+    },
+)
+c23 = Part(
+    "C23",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0402_1005Metric",
+    footprint_definition="Capacitor_SMD:C_0402_1005Metric_9",
+    value="100nF",
+    properties={
+        "Characteristics": "100n 10% 25V XR 0402",
+        "JLC": "",
+        "MPN": "CL05A104KA5NNNC",
+        "MPN_ALT": "GRM155R71E104KE14J",
+        "Part number": "",
+    },
+)
+c24 = Part(
+    "C24",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0402_1005Metric",
+    footprint_definition="Capacitor_SMD:C_0402_1005Metric_8",
+    value="100nF",
+    properties={
+        "Characteristics": "100n 10% 25V XR 0402",
+        "JLC": "",
+        "MPN": "CL05A104KA5NNNC",
+        "MPN_ALT": "GRM155R71E104KE14J",
+        "Part number": "",
+    },
+)
+c25 = Part(
+    "C25",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0603_1608Metric",
+    footprint_definition="Capacitor_SMD:C_0603_1608Metric_7",
+    value="1uF",
+    properties={
+        "Characteristics": "1u 10V XR 0603",
+        "DigikeyPN": "",
+        "JLC": "",
+        "MPN": "CL10A105KA8NNNC",
+        "MPN_ALT": "C0603C105K4RAC7411",
+        "Part number": "",
+    },
+)
+c26 = Part(
+    "C26",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0402_1005Metric",
+    footprint_definition="Capacitor_SMD:C_0402_1005Metric_10",
+    value="100nF",
+    properties={
+        "Characteristics": "100n 10% 25V XR 0402",
+        "JLC": "",
+        "MPN": "CL05A104KA5NNNC",
+        "MPN_ALT": "GRM155R71E104KE14J",
+        "Part number": "",
+    },
+)
+c27 = Part(
+    "C27",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0402_1005Metric",
+    footprint_definition="Capacitor_SMD:C_0402_1005Metric_11",
+    value="100nF",
+    properties={
+        "Characteristics": "100n 10% 25V XR 0402",
+        "JLC": "",
+        "MPN": "CL05A104KA5NNNC",
+        "MPN_ALT": "GRM155R71E104KE14J",
+        "Part number": "",
+    },
+)
+c28 = Part(
+    "C28",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0402_1005Metric",
+    footprint_definition="Capacitor_SMD:C_0402_1005Metric_12",
+    value="100nF",
+    properties={
+        "Characteristics": "100n 10% 25V XR 0402",
+        "JLC": "",
+        "MPN": "CL05A104KA5NNNC",
+        "MPN_ALT": "GRM155R71E104KE14J",
+        "Part number": "",
+    },
+)
+c42 = Part(
+    "C42",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0603_1608Metric",
+    footprint_definition="Capacitor_SMD:C_0603_1608Metric_11",
+    value="1uF",
+    properties={
+        "Characteristics": "1u 10V XR 0603",
+        "DigikeyPN": "",
+        "JLC": "",
+        "MPN": "CL10A105KA8NNNC",
+        "MPN_ALT": "C0603C105K4RAC7411",
+        "Part number": "",
+    },
+)
+c43 = Part(
+    "C43",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0402_1005Metric",
+    footprint_definition="Capacitor_SMD:C_0402_1005Metric_20",
+    value="100nF",
+    properties={
+        "Characteristics": "100n 10% 25V XR 0402",
+        "MPN": "CL05A104KA5NNNC",
+        "MPN_ALT": "GRM155R71E104KE14J",
+        "Part number": "",
+    },
+)
+c56 = Part(
+    "C56",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0402_1005Metric",
+    footprint_definition="Capacitor_SMD:C_0402_1005Metric_21",
+    value="100nF",
+    properties={
+        "Characteristics": "100n 10% 25V XR 0402",
+        "JLC": "",
+        "MPN": "CL05A104KA5NNNC",
+        "MPN_ALT": "GRM155R71E104KE14J",
+        "Part number": "",
+    },
+)
+c57 = Part(
+    "C57",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0603_1608Metric",
+    footprint_definition="Capacitor_SMD:C_0603_1608Metric_13",
+    value="1uF",
+    properties={
+        "Characteristics": "1u 10V XR 0603",
+        "DigikeyPN": "",
+        "JLC": "",
+        "MPN": "CL10A105KA8NNNC",
+        "MPN_ALT": "C0603C105K4RAC7411",
+        "Part number": "",
+    },
+)
+c58 = Part(
+    "C58",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0402_1005Metric",
+    footprint_definition="Capacitor_SMD:C_0402_1005Metric_22",
+    value="100nF",
+    properties={
+        "Characteristics": "100n 10% 25V XR 0402",
+        "JLC": "",
+        "MPN": "CL05A104KA5NNNC",
+        "MPN_ALT": "GRM155R71E104KE14J",
+        "Part number": "",
+    },
+)
+c59 = Part(
+    "C59",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0603_1608Metric",
+    footprint_definition="Capacitor_SMD:C_0603_1608Metric_10",
+    value="1uF",
+    properties={
+        "Characteristics": "1u 10V XR 0603",
+        "DigikeyPN": "",
+        "JLC": "",
+        "MPN": "CL10A105KA8NNNC",
+        "MPN_ALT": "C0603C105K4RAC7411",
+        "Part number": "",
+    },
+)
+c60 = Part(
+    "C60",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0402_1005Metric",
+    footprint_definition="Capacitor_SMD:C_0402_1005Metric_23",
+    value="100nF",
+    properties={
+        "Characteristics": "100n 10% 25V XR 0402",
+        "JLC": "",
+        "MPN": "CL05A104KA5NNNC",
+        "MPN_ALT": "GRM155R71E104KE14J",
+        "Part number": "",
+    },
+)
+c61 = Part(
+    "C61",
+    "TinyTapeout:C_Small",
+    footprint="Capacitor_SMD:C_0603_1608Metric",
+    footprint_definition="Capacitor_SMD:C_0603_1608Metric_14",
+    value="1uF",
+    properties={
+        "Characteristics": "1u 10V XR 0603",
+        "DigikeyPN": "",
+        "JLC": "",
+        "MPN": "CL10A105KA8NNNC",
+        "MPN_ALT": "C0603C105K4RAC7411",
+        "Part number": "",
+    },
+)
+d1 = Part(
+    "D1",
+    "TinyTapeout:LED_Small",
+    footprint="LED_SMD:LED_0603_1608Metric",
+    value="Yellow",
+    properties={
+        "Characteristics": "Yellow LED",
+        "JLC": "C72038",
+        "MPN": "LTST-C190YKT",
+        "MPN_ALT": "TLMY1000-GS15",
+        "Part number": "",
+    },
+)
+d2 = Part(
+    "D2",
+    "TinyTapeout:LED_Small",
+    footprint="LED_SMD:LED_0603_1608Metric",
+    footprint_definition="LED_SMD:LED_0603_1608Metric_2",
+    value="Yellow",
+    properties={
+        "Characteristics": "Yellow LED",
+        "JLC": "C72038",
+        "MPN": "LTST-C190YKT",
+        "MPN_ALT": "TLMY1000-GS15",
+        "Part number": "",
+    },
+)
+d3 = Part(
+    "D3",
+    "TinyTapeout:LED_Small",
+    footprint="LED_SMD:LED_0603_1608Metric",
+    value="Yellow",
+    properties={
+        "Characteristics": "Yellow LED",
+        "JLC": "C72038",
+        "MPN": "LTST-C190YKT",
+        "MPN_ALT": "TLMY1000-GS15",
+        "Part number": "",
+    },
+)
+d4 = Part(
+    "D4",
+    "TinyTapeout:LED_Small",
+    footprint="LED_SMD:LED_0603_1608Metric",
+    footprint_definition="LED_SMD:LED_0603_1608Metric_3",
+    value="Yellow",
+    properties={
+        "Characteristics": "Yellow LED",
+        "JLC": "C72038",
+        "MPN": "LTST-C190YKT",
+        "MPN_ALT": "TLMY1000-GS15",
+        "Part number": "",
+    },
+)
+f1 = Part(
+    "F1",
+    "TinyTapeout:Polyfuse",
+    footprint="Fuse:Fuse_0805_2012Metric",
+    value="350mA",
+    properties={
+        "Characteristics": "PTC Reset Fuse, 350mA Hold, 0805",
+        "JLC": "C1884490",
+        "MPN": "0ZCK0035FF2G",
+        "MPN_ALT": "SMD0805B035TF",
+        "Part number": "",
+    },
+)
+fid1 = Part("FID1", "TinyTapeout:Fiducial", footprint="Fiducial:Fiducial_1mm_Mask2mm", value="Fiducial")
+fid2 = Part("FID2", "TinyTapeout:Fiducial", footprint="Fiducial:Fiducial_1mm_Mask2mm", value="Fiducial")
+fid3 = Part("FID3", "TinyTapeout:Fiducial", footprint="Fiducial:Fiducial_1mm_Mask2mm", value="Fiducial")
 g_1 = Part(
     "G***",
     "flyingcarsfootprints:PsychoLogo",
@@ -296,8 +764,24 @@ g_1 = Part(
     name="G_1",
     board_only=True,
 )
-g_2 = Part("G***", "Imported:LOGO", footprint="Imported:LOGO", value="LOGO", name="G_2", board_only=True)
-g_3 = Part("G***", "Imported:LOGO_2", footprint="Imported:LOGO_2", value="LOGO", name="G_3", board_only=True)
+g_2 = Part(
+    "G***",
+    "Imported:LOGO",
+    footprint="LOGO",
+    footprint_definition="Imported:LOGO",
+    value="LOGO",
+    name="G_2",
+    board_only=True,
+)
+g_3 = Part(
+    "G***",
+    "Imported:LOGO_2",
+    footprint="LOGO",
+    footprint_definition="Imported:LOGO_2",
+    value="LOGO",
+    name="G_3",
+    board_only=True,
+)
 g_4 = Part(
     "G***",
     "flyingcarsfootprints:PsychoLogoSmall",
@@ -305,6 +789,718 @@ g_4 = Part(
     value="LOGO",
     name="G_4",
     board_only=True,
+)
+j1 = Part(
+    "J1",
+    "TinyTapeout:Conn_01x06",
+    footprint="Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+    value="Conn_01x06",
+    dnp=True,
+)
+j2 = Part(
+    "J2",
+    "TinyTapeout:Conn_01x04",
+    footprint="Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+    value="Conn_01x04",
+    dnp=True,
+)
+j3 = Part(
+    "J3",
+    "TinyTapeout:PMOD_HOST_2x6",
+    footprint="TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A",
+    footprint_definition="TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A_4",
+    value="613012243121",
+    properties={"MPN": "613012243121", "MPN_ALT": "PPTC062LJBN-RC"},
+)
+j4 = Part(
+    "J4",
+    "TinyTapeout:CARAVEL_TT04_BREAKOUT_REVB",
+    footprint="TinyTapeout:TT04_BREAKOUT_SMB",
+    value="TT04_BREAKOUT_REVB",
+    properties={"Characteristics": "", "DigikeyPN": "609-3124-ND x 2", "MPN": "95157-440LF x 2"},
+)
+j5 = Part(
+    "J5",
+    "TinyTapeout:PMOD_HOST_2x6",
+    footprint="TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A",
+    footprint_definition="TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A_5",
+    value="613012243121",
+    properties={"MPN": "613012243121", "MPN_ALT": "PPTC062LJBN-RC"},
+)
+j6 = Part(
+    "J6",
+    "TinyTapeout:PMOD_HOST_2x6",
+    footprint="TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A",
+    footprint_definition="TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A_6",
+    value="613012243121",
+    properties={"MPN": "613012243121", "MPN_ALT": "PPTC062LJBN-RC"},
+)
+j7 = Part(
+    "J7",
+    "TinyTapeout:Conn_01x02",
+    footprint="Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Right",
+    value="Conn_01x02",
+    properties={"Characteristics": "", "MPN": "10129380-902001BLF", "MPN_ALT": "GEC02SABN-M30"},
+)
+j8 = Part(
+    "J8",
+    "TinyTapeout:Conn_01x03",
+    footprint="Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+    footprint_definition="Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical_2",
+    value="Conn_01x03",
+    dnp=True,
+)
+j9 = Part(
+    "J9",
+    "TinyTapeout:Conn_01x24",
+    footprint="Connector_PinHeader_2.54mm:PinHeader_1x24_P2.54mm_Vertical",
+    value="Conn_01x24",
+    properties={"MPN": "PRPC024SAAN-RC"},
+    dnp=True,
+)
+j12 = Part(
+    "J12",
+    "TinyTapeout:PMOD_HOST_2x6",
+    footprint="TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A",
+    value="613012243121",
+    properties={"MPN": "613012243121", "MPN_ALT": "PPTC062LJBN-RC"},
+)
+j13 = Part(
+    "J13",
+    "TinyTapeout:PMOD_HOST_2x6",
+    footprint="TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A",
+    footprint_definition="TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A_2",
+    value="613012243121",
+    properties={"MPN": "613012243121", "MPN_ALT": "PPTC062LJBN-RC"},
+)
+j14 = Part(
+    "J14",
+    "TinyTapeout:PMOD_HOST_2x6",
+    footprint="TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A",
+    footprint_definition="TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A_3",
+    value="613012243121",
+    properties={"MPN": "613012243121", "MPN_ALT": "PPTC062LJBN-RC"},
+)
+j15 = Part(
+    "J15",
+    "TinyTapeout:USB4500-03-0-A_REVA",
+    footprint="TinyTapeout:GCT_USB4500-03-0-A_REVA",
+    value="USB4500-03-0-A_REVA",
+    properties={"MANUFACTURER": "GCT", "MAXIMUM_PACKAGE_HEIGHT": "2.46mm", "MPN": "USB4500-03-0-A"},
+)
+j16 = Part(
+    "J16",
+    "TinyTapeout:TestPoint_Small",
+    footprint="TinyTapeout:TT_BREAKOUT_PINHEADER_PLACEHOLDER_WITHPAD",
+    value="2x20_P2.54mm_Pinheader",
+    properties={"MPN": "95157-440LF", "MPN_ALT": "M20-8762042"},
+)
+j17 = Part(
+    "J17",
+    "TinyTapeout:Conn_01x03",
+    footprint="Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+    value="Conn_01x03",
+    dnp=True,
+)
+j18 = Part(
+    "J18",
+    "TinyTapeout:TestPoint_Small",
+    footprint="TinyTapeout:TT_BREAKOUT_PINHEADER_PLACEHOLDER_WITHPAD",
+    footprint_definition="TinyTapeout:TT_BREAKOUT_PINHEADER_PLACEHOLDER_WITHPAD_2",
+    value="2x20_P2.54mm_Pinheader",
+    properties={"MPN": "95157-440LF", "MPN_ALT": "M20-8762042"},
+)
+jp1 = Part(
+    "JP1",
+    "TinyTapeout:SolderJumper_2_Bridged",
+    footprint="TinyTapeout:SolderJumper-2_Bridged_Throughole1",
+    value="SolderJumper_2_Bridged",
+)
+jp2 = Part(
+    "JP2",
+    "TinyTapeout:SolderJumper_2_Bridged",
+    footprint="TinyTapeout:SolderJumper-2_Bridged_Throughole1",
+    footprint_definition="TinyTapeout:SolderJumper-2_Bridged_Throughole1_2",
+    value="SolderJumper_2_Bridged",
+)
+jp3 = Part(
+    "JP3",
+    "TinyTapeout:SolderJumper_2_Bridged",
+    footprint="TinyTapeout:SolderJumper-2_Bridged_Throughole1",
+    footprint_definition="TinyTapeout:SolderJumper-2_Bridged_Throughole1_3",
+    value="SolderJumper_2_Bridged",
+)
+jp4 = Part(
+    "JP4",
+    "TinyTapeout:SolderJumper_2_Bridged",
+    footprint="TinyTapeout:SolderJumper-2_Bridged_Throughole1",
+    footprint_definition="TinyTapeout:SolderJumper-2_Bridged_Throughole1_4",
+    value="SolderJumper_2_Bridged",
+)
+jp5 = Part(
+    "JP5",
+    "TinyTapeout:SolderJumper_2_Bridged",
+    footprint="TinyTapeout:SolderJumper-2_Bridged_Throughole1",
+    footprint_definition="TinyTapeout:SolderJumper-2_Bridged_Throughole1_5",
+    value="SolderJumper_2_Bridged",
+)
+jp6 = Part(
+    "JP6",
+    "TinyTapeout:SolderJumper_2_Bridged",
+    footprint="TinyTapeout:SolderJumper-2_Bridged_Throughole1",
+    footprint_definition="TinyTapeout:SolderJumper-2_Bridged_Throughole1_6",
+    value="SolderJumper_2_Bridged",
+)
+jp7 = Part(
+    "JP7",
+    "TinyTapeout:SolderJumper_2_Bridged",
+    footprint="TinyTapeout:SolderJumper-2_Bridged_Throughole1",
+    footprint_definition="TinyTapeout:SolderJumper-2_Bridged_Throughole1_7",
+    value="SolderJumper_2_Bridged",
+)
+jp8 = Part(
+    "JP8",
+    "TinyTapeout:SolderJumper_2_Bridged",
+    footprint="TinyTapeout:SolderJumper-2_Bridged_Throughole1",
+    footprint_definition="TinyTapeout:SolderJumper-2_Bridged_Throughole1_8",
+    value="SolderJumper_2_Bridged",
+)
+mt1 = Part(
+    "MT1",
+    "TinyTapeout:MountingHole_Pad",
+    footprint="MountingHole:MountingHole_3.2mm_M3_Pad",
+    value="MountingHole_Pad",
+    properties={"Characteristics": "", "MPN": "DNP", "Part number": ""},
+)
+mt2 = Part(
+    "MT2",
+    "TinyTapeout:MountingHole_Pad",
+    footprint="MountingHole:MountingHole_3.2mm_M3_Pad",
+    footprint_definition="MountingHole:MountingHole_3.2mm_M3_Pad_2",
+    value="MountingHole_Pad",
+    properties={"Characteristics": "", "MPN": "DNP", "Part number": ""},
+)
+mt3 = Part(
+    "MT3",
+    "TinyTapeout:MountingHole_Pad",
+    footprint="MountingHole:MountingHole_3.2mm_M3_Pad",
+    footprint_definition="MountingHole:MountingHole_3.2mm_M3_Pad_3",
+    value="MountingHole_Pad",
+    properties={"Characteristics": "", "MPN": "DNP", "Part number": ""},
+)
+mt4 = Part(
+    "MT4",
+    "TinyTapeout:MountingHole_Pad",
+    footprint="MountingHole:MountingHole_3.2mm_M3_Pad",
+    footprint_definition="MountingHole:MountingHole_3.2mm_M3_Pad_4",
+    value="MountingHole_Pad",
+    properties={"Characteristics": "", "MPN": "DNP", "Part number": ""},
+)
+nt1 = Part("NT1", "TinyTapeout:NetTie_2", footprint="NetTie:NetTie-2_SMD_Pad0.5mm", value="NetTie_2")
+r1 = Part(
+    "R1",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    value="1k",
+    properties={
+        "Characteristics": "1k 0402",
+        "JLC": "",
+        "MPN": "CR0402-FX-1001GLF",
+        "MPN_ALT": "WR04X1001FTL",
+        "Part number": "",
+    },
+)
+r2 = Part(
+    "R2",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    value="1k",
+    properties={
+        "Characteristics": "1k 0402",
+        "JLC": "",
+        "MPN": "CR0402-FX-1001GLF",
+        "MPN_ALT": "WR04X1001FTL",
+        "Part number": "",
+    },
+)
+r3 = Part(
+    "R3",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    value="1k",
+    properties={
+        "Characteristics": "1k 0402",
+        "JLC": "",
+        "MPN": "CR0402-FX-1001GLF",
+        "MPN_ALT": "WR04X1001FTL",
+        "Part number": "",
+    },
+)
+r4 = Part(
+    "R4",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    value="1k",
+    properties={
+        "Characteristics": "1k 0402",
+        "JLC": "",
+        "MPN": "CR0402-FX-1001GLF",
+        "MPN_ALT": "WR04X1001FTL",
+        "Part number": "",
+    },
+)
+r5 = Part(
+    "R5",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    value="1k",
+    properties={
+        "Characteristics": "1k 0402",
+        "JLC": "",
+        "MPN": "CR0402-FX-1001GLF",
+        "MPN_ALT": "WR04X1001FTL",
+        "Part number": "",
+    },
+)
+r6 = Part(
+    "R6",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    value="1k",
+    properties={
+        "Characteristics": "1k 0402",
+        "JLC": "",
+        "MPN": "CR0402-FX-1001GLF",
+        "MPN_ALT": "WR04X1001FTL",
+        "Part number": "",
+    },
+)
+r7 = Part(
+    "R7",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0603_1608Metric",
+    footprint_definition="Resistor_SMD:R_0603_1608Metric_2",
+    value="47k",
+    properties={"Characteristics": "47k 0603", "MPN": "CR0603-FX-4642ELF", "MPN_ALT": "WR06X473 JTL"},
+)
+r8 = Part(
+    "R8",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_25",
+    value="10k",
+    properties={
+        "Characteristics": "10k 0402",
+        "JLC": "",
+        "MPN": "RC0402FR-0710KL",
+        "MPN_ALT": "WR04X1002FTL",
+        "Part number": "",
+    },
+)
+r9 = Part(
+    "R9",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_26",
+    value="10k",
+    properties={
+        "Characteristics": "10k 0402",
+        "JLC": "",
+        "MPN": "RC0402FR-0710KL",
+        "MPN_ALT": "WR04X1002FTL",
+        "Part number": "",
+    },
+)
+r10 = Part(
+    "R10",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    value="1k",
+    properties={
+        "Characteristics": "1k 0402",
+        "JLC": "",
+        "MPN": "CR0402-FX-1001GLF",
+        "MPN_ALT": "WR04X1001FTL",
+        "Part number": "",
+    },
+)
+r11 = Part(
+    "R11",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    value="1k",
+    properties={
+        "Characteristics": "1k 0402",
+        "JLC": "",
+        "MPN": "CR0402-FX-1001GLF",
+        "MPN_ALT": "WR04X1001FTL",
+        "Part number": "",
+    },
+)
+r12 = Part(
+    "R12",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_2",
+    value="10k",
+    properties={"Characteristics": "10k 0402", "MPN": "RC0402FR-0710KL", "MPN_ALT": "WR04X1002FTL"},
+)
+r13 = Part(
+    "R13",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_3",
+    value="1k",
+    properties={
+        "Characteristics": "1k 0402",
+        "MPN": "CR0402-FX-1001GLF",
+        "MPN_ALT": "WR04X1001FTL",
+        "Part number": "",
+    },
+)
+r14 = Part(
+    "R14",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_4",
+    value="1k",
+    properties={
+        "Characteristics": "1k 0402",
+        "MPN": "CR0402-FX-1001GLF",
+        "MPN_ALT": "WR04X1001FTL",
+        "Part number": "",
+    },
+)
+r15 = Part(
+    "R15",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_5",
+    value="1.2K",
+    properties={
+        "Characteristics": "1.2k 0402",
+        "MPN": "RC0402FR-071K2L",
+        "MPN_ALT": "CR0402-JW-122GLF",
+        "Part number": "",
+    },
+)
+r16 = Part(
+    "R16",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0603_1608Metric",
+    value="1M",
+    properties={"JLC": "", "MPN": "", "Part number": ""},
+    dnp=True,
+)
+r17 = Part(
+    "R17",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_5",
+    value="510",
+    properties={
+        "Characteristics": "510R 0402",
+        "MPN": "RC0402FR-07510RL",
+        "MPN_ALT": "CR0402-FX-5100GLF",
+        "Part number": "",
+    },
+)
+r18 = Part(
+    "R18",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_6",
+    value="0R",
+    properties={
+        "Characteristics": "0R 0402",
+        "MPN": "RC0402FR-070RL",
+        "MPN_ALT": "WR04X000 PTL",
+        "Part number": "",
+    },
+)
+r19 = Part(
+    "R19",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_7",
+    value="510",
+    properties={
+        "Characteristics": "510R 0402",
+        "MPN": "RC0402FR-07510RL",
+        "MPN_ALT": "CR0402-FX-5100GLF",
+        "Part number": "",
+    },
+)
+r20 = Part(
+    "R20",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_8",
+    value="5.1k",
+    properties={
+        "Characteristics": "5.1k 0402",
+        "JLC": "",
+        "MPN": "AC0402FR-135K1L",
+        "MPN_ALT": "CR0402-FX-5101GLF",
+        "Part number": "",
+    },
+)
+r21 = Part(
+    "R21",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_9",
+    value="5.1k",
+    properties={
+        "Characteristics": "5.1k 0402",
+        "JLC": "",
+        "MPN": "AC0402FR-135K1L",
+        "MPN_ALT": "CR0402-FX-5101GLF",
+        "Part number": "",
+    },
+)
+r22 = Part(
+    "R22",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_10",
+    value="68R",
+    properties={
+        "Characteristics": "68R 0402",
+        "MPN": "RC0402FR-0768RL",
+        "MPN_ALT": "WR04X68R0FTL",
+        "Part number": "",
+    },
+)
+r23 = Part(
+    "R23",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_10",
+    value="68R",
+    properties={
+        "Characteristics": "68R 0402",
+        "MPN": "RC0402FR-0768RL",
+        "MPN_ALT": "WR04X68R0FTL",
+        "Part number": "",
+    },
+)
+r24 = Part(
+    "R24",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_10",
+    value="68R",
+    properties={
+        "Characteristics": "68R 0402",
+        "MPN": "RC0402FR-0768RL",
+        "MPN_ALT": "WR04X68R0FTL",
+        "Part number": "",
+    },
+)
+r25 = Part(
+    "R25",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_10",
+    value="68R",
+    properties={
+        "Characteristics": "68R 0402",
+        "MPN": "RC0402FR-0768RL",
+        "MPN_ALT": "WR04X68R0FTL",
+        "Part number": "",
+    },
+)
+r26 = Part(
+    "R26",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_10",
+    value="68R",
+    properties={
+        "Characteristics": "68R 0402",
+        "MPN": "RC0402FR-0768RL",
+        "MPN_ALT": "WR04X68R0FTL",
+        "Part number": "",
+    },
+)
+r27 = Part(
+    "R27",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_10",
+    value="68R",
+    properties={
+        "Characteristics": "68R 0402",
+        "MPN": "RC0402FR-0768RL",
+        "MPN_ALT": "WR04X68R0FTL",
+        "Part number": "",
+    },
+)
+r28 = Part(
+    "R28",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_10",
+    value="68R",
+    properties={
+        "Characteristics": "68R 0402",
+        "MPN": "RC0402FR-0768RL",
+        "MPN_ALT": "WR04X68R0FTL",
+        "Part number": "",
+    },
+)
+r29 = Part(
+    "R29",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_10",
+    value="68R",
+    properties={
+        "Characteristics": "68R 0402",
+        "MPN": "RC0402FR-0768RL",
+        "MPN_ALT": "WR04X68R0FTL",
+        "Part number": "",
+    },
+)
+r30 = Part(
+    "R30",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_11",
+    value="10k",
+    properties={"Characteristics": "10k 0402", "MPN": "RC0402FR-0710KL", "MPN_ALT": "WR04X1002FTL"},
+)
+r31 = Part(
+    "R31",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_10",
+    value="10k",
+    properties={"Characteristics": "10k 0402", "MPN": "RC0402FR-0710KL", "MPN_ALT": "WR04X1002FTL"},
+)
+r32 = Part(
+    "R32",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_11",
+    value="10k",
+    properties={"Characteristics": "10k 0402", "MPN": "RC0402FR-0710KL", "MPN_ALT": "WR04X1002FTL"},
+)
+r33 = Part(
+    "R33",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_12",
+    value="10k",
+    properties={
+        "Characteristics": "10k 0402",
+        "JLC": "",
+        "MPN": "RC0402FR-0710KL",
+        "MPN_ALT": "WR04X1002FTL",
+        "Part number": "",
+    },
+)
+r41 = Part(
+    "R41",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_19",
+    value="47R",
+    properties={"Characteristics": "47 0402", "MPN": "RMCF0402JT47R0", "MPN_ALT": "WR04X470 JTL"},
+)
+r42 = Part(
+    "R42",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_20",
+    value="10k",
+    properties={
+        "Characteristics": "10k 0402",
+        "JLC": "",
+        "MPN": "RC0402FR-0710KL",
+        "MPN_ALT": "WR04X1002FTL",
+        "Part number": "",
+    },
+    dnp=True,
+)
+r43 = Part(
+    "R43",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_21",
+    value="10k",
+    properties={
+        "Characteristics": "10k 0402",
+        "MPN": "RC0402FR-0710KL",
+        "MPN_ALT": "WR04X1002FTL",
+        "Part number": "",
+    },
+)
+r44 = Part(
+    "R44",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_21",
+    value="10k",
+    properties={
+        "Characteristics": "10k 0402",
+        "MPN": "RC0402FR-0710KL",
+        "MPN_ALT": "WR04X1002FTL",
+        "Part number": "",
+    },
+)
+r45 = Part(
+    "R45",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_22",
+    value="10k",
+    properties={
+        "Characteristics": "10k 0402",
+        "MPN": "RC0402FR-0710KL",
+        "MPN_ALT": "WR04X1002FTL",
+        "Part number": "",
+    },
+)
+r46 = Part(
+    "R46",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_23",
+    value="10k",
+    properties={
+        "Characteristics": "10k 0402",
+        "MPN": "RC0402FR-0710KL",
+        "MPN_ALT": "WR04X1002FTL",
+        "Part number": "",
+    },
+)
+r47 = Part(
+    "R47",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_24",
+    value="10k",
+    properties={
+        "Characteristics": "10k 0402",
+        "MPN": "RC0402FR-0710KL",
+        "MPN_ALT": "WR04X1002FTL",
+        "Part number": "",
+    },
+)
+r48 = Part(
+    "R48",
+    "TinyTapeout:R_Small",
+    footprint="Resistor_SMD:R_0402_1005Metric",
+    footprint_definition="Resistor_SMD:R_0402_1005Metric_21",
+    value="10k",
+    properties={
+        "Characteristics": "10k 0402",
+        "MPN": "RC0402FR-0710KL",
+        "MPN_ALT": "WR04X1002FTL",
+        "Part number": "",
+    },
 )
 ref_1 = Part(
     "REF**",
@@ -1506,1235 +2702,9 @@ stitch18 = Part(
     value="StitchingVia-0.3mm",
     board_only=True,
 )
-ttlogo = Part("TTLOGO", "Logos:TT_logo_2", footprint="Logos:TT_logo_2", value="TT_logo", board_only=True)
-z2alogo = Part("Z2ALOGO", "Logos:Z2A_logo_2", footprint="Logos:Z2A_logo_2", value="Z2A_logo", board_only=True)
-kibuzzard_63fe0d11 = Part(
-    "kibuzzard-63FE0D11",
-    "Imported:kibuzzard-63FE0D11",
-    footprint="Imported:kibuzzard-63FE0D11",
-    value="G***",
-    board_only=True,
-)
-c1 = Part(
-    "C1",
-    "Capacitor_SMD:C_0603_1608Metric",
-    footprint="Capacitor_SMD:C_0603_1608Metric",
-    value="1uF",
-    properties={
-        "Characteristics": "1u 10V XR 0603",
-        "MPN": "CL10A105KA8NNNC",
-        "MPN_ALT": "C0603C105K4RAC7411",
-    },
-)
-c2 = Part(
-    "C2",
-    "Capacitor_SMD:C_0402_1005Metric_6",
-    footprint="Capacitor_SMD:C_0402_1005Metric_6",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "JLC": "",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-        "Part number": "",
-    },
-)
-c3 = Part(
-    "C3",
-    "Capacitor_SMD:C_0603_1608Metric_8",
-    footprint="Capacitor_SMD:C_0603_1608Metric_8",
-    value="6800pF",
-    properties={"DNP": "DNP", "JLC": "", "MPN": "", "Part number": ""},
-    dnp=True,
-)
-c4 = Part(
-    "C4",
-    "Capacitor_SMD:C_0402_1005Metric_13",
-    footprint="Capacitor_SMD:C_0402_1005Metric_13",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "JLC": "",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-        "Part number": "",
-    },
-)
-c5 = Part(
-    "C5",
-    "Capacitor_SMD:C_0603_1608Metric_12",
-    footprint="Capacitor_SMD:C_0603_1608Metric_12",
-    value="1uF",
-    properties={
-        "Characteristics": "1u 10V XR 0603",
-        "DigikeyPN": "",
-        "JLC": "",
-        "MPN": "CL10A105KA8NNNC",
-        "MPN_ALT": "C0603C105K4RAC7411",
-        "Part number": "",
-    },
-)
-c6 = Part(
-    "C6",
-    "Capacitor_SMD:C_0805_2012Metric_2",
-    footprint="Capacitor_SMD:C_0805_2012Metric_2",
-    value="10uF",
-    properties={
-        "Characteristics": "10u 10V XR 0805",
-        "JLC": "C237493",
-        "MPN": "CL21B106KOQNNNF",
-        "MPN_ALT": "LMK212AB7106MG-T",
-        "Part number": "",
-    },
-)
-c7 = Part(
-    "C7",
-    "Capacitor_SMD:C_0805_2012Metric_3",
-    footprint="Capacitor_SMD:C_0805_2012Metric_3",
-    value="10uF",
-    properties={
-        "Characteristics": "10u 10V XR 0805",
-        "JLC": "C237493",
-        "MPN": "CL21B106KOQNNNF",
-        "MPN_ALT": "LMK212AB7106MG-T",
-        "Part number": "",
-    },
-)
-c8 = Part(
-    "C8",
-    "Capacitor_SMD:C_0402_1005Metric_11",
-    footprint="Capacitor_SMD:C_0402_1005Metric_11",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "JLC": "",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-        "Part number": "",
-    },
-)
-c9 = Part(
-    "C9",
-    "Capacitor_SMD:C_0603_1608Metric_15",
-    footprint="Capacitor_SMD:C_0603_1608Metric_15",
-    value="1uF",
-    properties={
-        "Characteristics": "1u 10V XR 0603",
-        "DigikeyPN": "",
-        "JLC": "",
-        "MPN": "CL10A105KA8NNNC",
-        "MPN_ALT": "C0603C105K4RAC7411",
-        "Part number": "",
-    },
-)
-c10 = Part(
-    "C10",
-    "Capacitor_SMD:C_0805_2012Metric",
-    footprint="Capacitor_SMD:C_0805_2012Metric",
-    value="22uF",
-    properties={
-        "Characteristics": "22u 6V XR 0805",
-        "JLC": "C86816",
-        "MPN": "CL21A226KOQNNNG",
-        "MPN_ALT": "GRM21BR61A226ME51K",
-        "Part number": "",
-    },
-)
-c11 = Part(
-    "C11",
-    "Capacitor_SMD:C_0603_1608Metric_2",
-    footprint="Capacitor_SMD:C_0603_1608Metric_2",
-    value="1uF",
-    properties={
-        "Characteristics": "1u 10V XR 0603",
-        "MPN": "CL10A105KA8NNNC",
-        "MPN_ALT": "C0603C105K4RAC7411",
-    },
-)
-c12 = Part(
-    "C12",
-    "Capacitor_SMD:C_0402_1005Metric",
-    footprint="Capacitor_SMD:C_0402_1005Metric",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "JLC": "",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-        "Part number": "",
-    },
-)
-c13 = Part(
-    "C13",
-    "Capacitor_SMD:C_0402_1005Metric_2",
-    footprint="Capacitor_SMD:C_0402_1005Metric_2",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "JLC": "",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-        "Part number": "",
-    },
-)
-c14 = Part(
-    "C14",
-    "Capacitor_SMD:C_0402_1005Metric_3",
-    footprint="Capacitor_SMD:C_0402_1005Metric_3",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "JLC": "",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-        "Part number": "",
-    },
-)
-c15 = Part(
-    "C15",
-    "Capacitor_SMD:C_0603_1608Metric_3",
-    footprint="Capacitor_SMD:C_0603_1608Metric_3",
-    value="1uF",
-    properties={
-        "Characteristics": "1u 10V XR 0603",
-        "DigikeyPN": "",
-        "JLC": "",
-        "MPN": "CL10A105KA8NNNC",
-        "MPN_ALT": "C0603C105K4RAC7411",
-        "Part number": "",
-    },
-)
-c16 = Part(
-    "C16",
-    "Capacitor_SMD:C_0603_1608Metric_4",
-    footprint="Capacitor_SMD:C_0603_1608Metric_4",
-    value="10uF",
-    properties={
-        "Characteristics": "10u 10V XR 0603",
-        "DigikeyPN": "490-GRT188R61C106KE13JCT-ND",
-        "JLC": "",
-        "MPN": "CL10A106MP8NNNC",
-        "MPN_ALT": "GRT188R61C106KE13J ",
-        "Part number": "",
-    },
-)
-c17 = Part(
-    "C17",
-    "Capacitor_SMD:C_0603_1608Metric_5",
-    footprint="Capacitor_SMD:C_0603_1608Metric_5",
-    value="1uF",
-    properties={
-        "Characteristics": "1u 10V XR 0603",
-        "DigikeyPN": "",
-        "JLC": "",
-        "MPN": "CL10A105KA8NNNC",
-        "MPN_ALT": "C0603C105K4RAC7411",
-        "Part number": "",
-    },
-)
-c18 = Part(
-    "C18",
-    "Capacitor_SMD:C_0402_1005Metric_4",
-    footprint="Capacitor_SMD:C_0402_1005Metric_4",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "JLC": "",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-        "Part number": "",
-    },
-)
-c19 = Part(
-    "C19",
-    "Capacitor_SMD:C_0402_1005Metric_5",
-    footprint="Capacitor_SMD:C_0402_1005Metric_5",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "JLC": "",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-        "Part number": "",
-    },
-)
-c20 = Part(
-    "C20",
-    "Capacitor_SMD:C_0402_1005Metric_7",
-    footprint="Capacitor_SMD:C_0402_1005Metric_7",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "JLC": "",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-        "Part number": "",
-    },
-)
-c21 = Part(
-    "C21",
-    "Capacitor_SMD:C_0603_1608Metric_6",
-    footprint="Capacitor_SMD:C_0603_1608Metric_6",
-    value="10uF",
-    properties={
-        "Characteristics": "10u 10V XR 0603",
-        "DigikeyPN": "490-GRT188R61C106KE13JCT-ND",
-        "JLC": "",
-        "MPN": "CL10A106MP8NNNC",
-        "MPN_ALT": "GRT188R61C106KE13J ",
-        "Part number": "",
-    },
-)
-c22 = Part(
-    "C22",
-    "Capacitor_SMD:C_0402_1005Metric_8",
-    footprint="Capacitor_SMD:C_0402_1005Metric_8",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "JLC": "",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-        "Part number": "",
-    },
-)
-c23 = Part(
-    "C23",
-    "Capacitor_SMD:C_0402_1005Metric_9",
-    footprint="Capacitor_SMD:C_0402_1005Metric_9",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "JLC": "",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-        "Part number": "",
-    },
-)
-c24 = Part(
-    "C24",
-    "Capacitor_SMD:C_0402_1005Metric_8",
-    footprint="Capacitor_SMD:C_0402_1005Metric_8",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "JLC": "",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-        "Part number": "",
-    },
-)
-c25 = Part(
-    "C25",
-    "Capacitor_SMD:C_0603_1608Metric_7",
-    footprint="Capacitor_SMD:C_0603_1608Metric_7",
-    value="1uF",
-    properties={
-        "Characteristics": "1u 10V XR 0603",
-        "DigikeyPN": "",
-        "JLC": "",
-        "MPN": "CL10A105KA8NNNC",
-        "MPN_ALT": "C0603C105K4RAC7411",
-        "Part number": "",
-    },
-)
-c26 = Part(
-    "C26",
-    "Capacitor_SMD:C_0402_1005Metric_10",
-    footprint="Capacitor_SMD:C_0402_1005Metric_10",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "JLC": "",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-        "Part number": "",
-    },
-)
-c27 = Part(
-    "C27",
-    "Capacitor_SMD:C_0402_1005Metric_11",
-    footprint="Capacitor_SMD:C_0402_1005Metric_11",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "JLC": "",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-        "Part number": "",
-    },
-)
-c28 = Part(
-    "C28",
-    "Capacitor_SMD:C_0402_1005Metric_12",
-    footprint="Capacitor_SMD:C_0402_1005Metric_12",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "JLC": "",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-        "Part number": "",
-    },
-)
-c42 = Part(
-    "C42",
-    "Capacitor_SMD:C_0603_1608Metric_11",
-    footprint="Capacitor_SMD:C_0603_1608Metric_11",
-    value="1uF",
-    properties={
-        "Characteristics": "1u 10V XR 0603",
-        "DigikeyPN": "",
-        "JLC": "",
-        "MPN": "CL10A105KA8NNNC",
-        "MPN_ALT": "C0603C105K4RAC7411",
-        "Part number": "",
-    },
-)
-c43 = Part(
-    "C43",
-    "Capacitor_SMD:C_0402_1005Metric_20",
-    footprint="Capacitor_SMD:C_0402_1005Metric_20",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-        "Part number": "",
-    },
-)
-c56 = Part(
-    "C56",
-    "Capacitor_SMD:C_0402_1005Metric_21",
-    footprint="Capacitor_SMD:C_0402_1005Metric_21",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "JLC": "",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-        "Part number": "",
-    },
-)
-c57 = Part(
-    "C57",
-    "Capacitor_SMD:C_0603_1608Metric_13",
-    footprint="Capacitor_SMD:C_0603_1608Metric_13",
-    value="1uF",
-    properties={
-        "Characteristics": "1u 10V XR 0603",
-        "DigikeyPN": "",
-        "JLC": "",
-        "MPN": "CL10A105KA8NNNC",
-        "MPN_ALT": "C0603C105K4RAC7411",
-        "Part number": "",
-    },
-)
-c58 = Part(
-    "C58",
-    "Capacitor_SMD:C_0402_1005Metric_22",
-    footprint="Capacitor_SMD:C_0402_1005Metric_22",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "JLC": "",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-        "Part number": "",
-    },
-)
-c59 = Part(
-    "C59",
-    "Capacitor_SMD:C_0603_1608Metric_10",
-    footprint="Capacitor_SMD:C_0603_1608Metric_10",
-    value="1uF",
-    properties={
-        "Characteristics": "1u 10V XR 0603",
-        "DigikeyPN": "",
-        "JLC": "",
-        "MPN": "CL10A105KA8NNNC",
-        "MPN_ALT": "C0603C105K4RAC7411",
-        "Part number": "",
-    },
-)
-c60 = Part(
-    "C60",
-    "Capacitor_SMD:C_0402_1005Metric_23",
-    footprint="Capacitor_SMD:C_0402_1005Metric_23",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "JLC": "",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-        "Part number": "",
-    },
-)
-c61 = Part(
-    "C61",
-    "Capacitor_SMD:C_0603_1608Metric_14",
-    footprint="Capacitor_SMD:C_0603_1608Metric_14",
-    value="1uF",
-    properties={
-        "Characteristics": "1u 10V XR 0603",
-        "DigikeyPN": "",
-        "JLC": "",
-        "MPN": "CL10A105KA8NNNC",
-        "MPN_ALT": "C0603C105K4RAC7411",
-        "Part number": "",
-    },
-)
-d1 = Part(
-    "D1",
-    "LED_SMD:LED_0603_1608Metric",
-    footprint="LED_SMD:LED_0603_1608Metric",
-    value="Yellow",
-    properties={
-        "Characteristics": "Yellow LED",
-        "JLC": "C72038",
-        "MPN": "LTST-C190YKT",
-        "MPN_ALT": "TLMY1000-GS15",
-        "Part number": "",
-    },
-)
-d2 = Part(
-    "D2",
-    "LED_SMD:LED_0603_1608Metric_2",
-    footprint="LED_SMD:LED_0603_1608Metric_2",
-    value="Yellow",
-    properties={
-        "Characteristics": "Yellow LED",
-        "JLC": "C72038",
-        "MPN": "LTST-C190YKT",
-        "MPN_ALT": "TLMY1000-GS15",
-        "Part number": "",
-    },
-)
-d3 = Part(
-    "D3",
-    "LED_SMD:LED_0603_1608Metric",
-    footprint="LED_SMD:LED_0603_1608Metric",
-    value="Yellow",
-    properties={
-        "Characteristics": "Yellow LED",
-        "JLC": "C72038",
-        "MPN": "LTST-C190YKT",
-        "MPN_ALT": "TLMY1000-GS15",
-        "Part number": "",
-    },
-)
-d4 = Part(
-    "D4",
-    "LED_SMD:LED_0603_1608Metric_3",
-    footprint="LED_SMD:LED_0603_1608Metric_3",
-    value="Yellow",
-    properties={
-        "Characteristics": "Yellow LED",
-        "JLC": "C72038",
-        "MPN": "LTST-C190YKT",
-        "MPN_ALT": "TLMY1000-GS15",
-        "Part number": "",
-    },
-)
-f1 = Part(
-    "F1",
-    "Fuse:Fuse_0805_2012Metric",
-    footprint="Fuse:Fuse_0805_2012Metric",
-    value="350mA",
-    properties={
-        "Characteristics": "PTC Reset Fuse, 350mA Hold, 0805",
-        "JLC": "C1884490",
-        "MPN": "0ZCK0035FF2G",
-        "MPN_ALT": "SMD0805B035TF",
-        "Part number": "",
-    },
-)
-fid1 = Part(
-    "FID1",
-    "Fiducial:Fiducial_1mm_Mask2mm",
-    footprint="Fiducial:Fiducial_1mm_Mask2mm",
-    value="Fiducial",
-)
-fid2 = Part(
-    "FID2",
-    "Fiducial:Fiducial_1mm_Mask2mm",
-    footprint="Fiducial:Fiducial_1mm_Mask2mm",
-    value="Fiducial",
-)
-fid3 = Part(
-    "FID3",
-    "Fiducial:Fiducial_1mm_Mask2mm",
-    footprint="Fiducial:Fiducial_1mm_Mask2mm",
-    value="Fiducial",
-)
-j1 = Part(
-    "J1",
-    "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
-    footprint="Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
-    value="Conn_01x06",
-    dnp=True,
-)
-j2 = Part(
-    "J2",
-    "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
-    footprint="Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
-    value="Conn_01x04",
-    dnp=True,
-)
-j3 = Part(
-    "J3",
-    "TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A_4",
-    footprint="TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A_4",
-    value="613012243121",
-    properties={"MPN": "613012243121", "MPN_ALT": "PPTC062LJBN-RC"},
-)
-j4 = Part(
-    "J4",
-    "TinyTapeout:TT04_BREAKOUT_SMB",
-    footprint="TinyTapeout:TT04_BREAKOUT_SMB",
-    value="TT04_BREAKOUT_REVB",
-    properties={"Characteristics": "", "DigikeyPN": "609-3124-ND x 2", "MPN": "95157-440LF x 2"},
-)
-j5 = Part(
-    "J5",
-    "TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A_5",
-    footprint="TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A_5",
-    value="613012243121",
-    properties={"MPN": "613012243121", "MPN_ALT": "PPTC062LJBN-RC"},
-)
-j6 = Part(
-    "J6",
-    "TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A_6",
-    footprint="TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A_6",
-    value="613012243121",
-    properties={"MPN": "613012243121", "MPN_ALT": "PPTC062LJBN-RC"},
-)
-j7 = Part(
-    "J7",
-    "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Right",
-    footprint="Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Right",
-    value="Conn_01x02",
-    properties={"Characteristics": "", "MPN": "10129380-902001BLF", "MPN_ALT": "GEC02SABN-M30"},
-)
-j8 = Part(
-    "J8",
-    "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical_2",
-    footprint="Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical_2",
-    value="Conn_01x03",
-    dnp=True,
-)
-j9 = Part(
-    "J9",
-    "Connector_PinHeader_2.54mm:PinHeader_1x24_P2.54mm_Vertical",
-    footprint="Connector_PinHeader_2.54mm:PinHeader_1x24_P2.54mm_Vertical",
-    value="Conn_01x24",
-    properties={"MPN": "PRPC024SAAN-RC"},
-    dnp=True,
-)
-j12 = Part(
-    "J12",
-    "TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A",
-    footprint="TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A",
-    value="613012243121",
-    properties={"MPN": "613012243121", "MPN_ALT": "PPTC062LJBN-RC"},
-)
-j13 = Part(
-    "J13",
-    "TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A_2",
-    footprint="TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A_2",
-    value="613012243121",
-    properties={"MPN": "613012243121", "MPN_ALT": "PPTC062LJBN-RC"},
-)
-j14 = Part(
-    "J14",
-    "TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A_3",
-    footprint="TinyTapeout:PinSocket_2x06_P2.54mm_PMODHost1A_3",
-    value="613012243121",
-    properties={"MPN": "613012243121", "MPN_ALT": "PPTC062LJBN-RC"},
-)
-j15 = Part(
-    "J15",
-    "TinyTapeout:GCT_USB4500-03-0-A_REVA",
-    footprint="TinyTapeout:GCT_USB4500-03-0-A_REVA",
-    value="USB4500-03-0-A_REVA",
-    properties={"MANUFACTURER": "GCT", "MAXIMUM_PACKAGE_HEIGHT": "2.46mm", "MPN": "USB4500-03-0-A"},
-)
-j16 = Part(
-    "J16",
-    "TinyTapeout:TT_BREAKOUT_PINHEADER_PLACEHOLDER_WITHPAD",
-    footprint="TinyTapeout:TT_BREAKOUT_PINHEADER_PLACEHOLDER_WITHPAD",
-    value="2x20_P2.54mm_Pinheader",
-    properties={"MPN": "95157-440LF", "MPN_ALT": "M20-8762042"},
-    board_only=True,
-)
-j17 = Part(
-    "J17",
-    "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
-    footprint="Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
-    value="Conn_01x03",
-    dnp=True,
-)
-j18 = Part(
-    "J18",
-    "TinyTapeout:TT_BREAKOUT_PINHEADER_PLACEHOLDER_WITHPAD_2",
-    footprint="TinyTapeout:TT_BREAKOUT_PINHEADER_PLACEHOLDER_WITHPAD_2",
-    value="2x20_P2.54mm_Pinheader",
-    properties={"MPN": "95157-440LF", "MPN_ALT": "M20-8762042"},
-    board_only=True,
-)
-jp1 = Part(
-    "JP1",
-    "TinyTapeout:SolderJumper-2_Bridged_Throughole1",
-    footprint="TinyTapeout:SolderJumper-2_Bridged_Throughole1",
-    value="SolderJumper_2_Bridged",
-)
-jp2 = Part(
-    "JP2",
-    "TinyTapeout:SolderJumper-2_Bridged_Throughole1_2",
-    footprint="TinyTapeout:SolderJumper-2_Bridged_Throughole1_2",
-    value="SolderJumper_2_Bridged",
-)
-jp3 = Part(
-    "JP3",
-    "TinyTapeout:SolderJumper-2_Bridged_Throughole1_3",
-    footprint="TinyTapeout:SolderJumper-2_Bridged_Throughole1_3",
-    value="SolderJumper_2_Bridged",
-)
-jp4 = Part(
-    "JP4",
-    "TinyTapeout:SolderJumper-2_Bridged_Throughole1_4",
-    footprint="TinyTapeout:SolderJumper-2_Bridged_Throughole1_4",
-    value="SolderJumper_2_Bridged",
-)
-jp5 = Part(
-    "JP5",
-    "TinyTapeout:SolderJumper-2_Bridged_Throughole1_5",
-    footprint="TinyTapeout:SolderJumper-2_Bridged_Throughole1_5",
-    value="SolderJumper_2_Bridged",
-)
-jp6 = Part(
-    "JP6",
-    "TinyTapeout:SolderJumper-2_Bridged_Throughole1_6",
-    footprint="TinyTapeout:SolderJumper-2_Bridged_Throughole1_6",
-    value="SolderJumper_2_Bridged",
-)
-jp7 = Part(
-    "JP7",
-    "TinyTapeout:SolderJumper-2_Bridged_Throughole1_7",
-    footprint="TinyTapeout:SolderJumper-2_Bridged_Throughole1_7",
-    value="SolderJumper_2_Bridged",
-)
-jp8 = Part(
-    "JP8",
-    "TinyTapeout:SolderJumper-2_Bridged_Throughole1_8",
-    footprint="TinyTapeout:SolderJumper-2_Bridged_Throughole1_8",
-    value="SolderJumper_2_Bridged",
-)
-mt1 = Part(
-    "MT1",
-    "MountingHole:MountingHole_3.2mm_M3_Pad",
-    footprint="MountingHole:MountingHole_3.2mm_M3_Pad",
-    value="MountingHole_Pad",
-    properties={"Characteristics": "", "MPN": "DNP", "Part number": ""},
-)
-mt2 = Part(
-    "MT2",
-    "MountingHole:MountingHole_3.2mm_M3_Pad_2",
-    footprint="MountingHole:MountingHole_3.2mm_M3_Pad_2",
-    value="MountingHole_Pad",
-    properties={"Characteristics": "", "MPN": "DNP", "Part number": ""},
-)
-mt3 = Part(
-    "MT3",
-    "MountingHole:MountingHole_3.2mm_M3_Pad_3",
-    footprint="MountingHole:MountingHole_3.2mm_M3_Pad_3",
-    value="MountingHole_Pad",
-    properties={"Characteristics": "", "MPN": "DNP", "Part number": ""},
-)
-mt4 = Part(
-    "MT4",
-    "MountingHole:MountingHole_3.2mm_M3_Pad_4",
-    footprint="MountingHole:MountingHole_3.2mm_M3_Pad_4",
-    value="MountingHole_Pad",
-    properties={"Characteristics": "", "MPN": "DNP", "Part number": ""},
-)
-nt1 = Part("NT1", "NetTie:NetTie-2_SMD_Pad0.5mm", footprint="NetTie:NetTie-2_SMD_Pad0.5mm", value="NetTie_2")
-r1 = Part(
-    "R1",
-    "Resistor_SMD:R_0402_1005Metric",
-    footprint="Resistor_SMD:R_0402_1005Metric",
-    value="1k",
-    properties={
-        "Characteristics": "1k 0402",
-        "JLC": "",
-        "MPN": "CR0402-FX-1001GLF",
-        "MPN_ALT": "WR04X1001FTL",
-        "Part number": "",
-    },
-)
-r2 = Part(
-    "R2",
-    "Resistor_SMD:R_0402_1005Metric",
-    footprint="Resistor_SMD:R_0402_1005Metric",
-    value="1k",
-    properties={
-        "Characteristics": "1k 0402",
-        "JLC": "",
-        "MPN": "CR0402-FX-1001GLF",
-        "MPN_ALT": "WR04X1001FTL",
-        "Part number": "",
-    },
-)
-r3 = Part(
-    "R3",
-    "Resistor_SMD:R_0402_1005Metric",
-    footprint="Resistor_SMD:R_0402_1005Metric",
-    value="1k",
-    properties={
-        "Characteristics": "1k 0402",
-        "JLC": "",
-        "MPN": "CR0402-FX-1001GLF",
-        "MPN_ALT": "WR04X1001FTL",
-        "Part number": "",
-    },
-)
-r4 = Part(
-    "R4",
-    "Resistor_SMD:R_0402_1005Metric",
-    footprint="Resistor_SMD:R_0402_1005Metric",
-    value="1k",
-    properties={
-        "Characteristics": "1k 0402",
-        "JLC": "",
-        "MPN": "CR0402-FX-1001GLF",
-        "MPN_ALT": "WR04X1001FTL",
-        "Part number": "",
-    },
-)
-r5 = Part(
-    "R5",
-    "Resistor_SMD:R_0402_1005Metric",
-    footprint="Resistor_SMD:R_0402_1005Metric",
-    value="1k",
-    properties={
-        "Characteristics": "1k 0402",
-        "JLC": "",
-        "MPN": "CR0402-FX-1001GLF",
-        "MPN_ALT": "WR04X1001FTL",
-        "Part number": "",
-    },
-)
-r6 = Part(
-    "R6",
-    "Resistor_SMD:R_0402_1005Metric",
-    footprint="Resistor_SMD:R_0402_1005Metric",
-    value="1k",
-    properties={
-        "Characteristics": "1k 0402",
-        "JLC": "",
-        "MPN": "CR0402-FX-1001GLF",
-        "MPN_ALT": "WR04X1001FTL",
-        "Part number": "",
-    },
-)
-r7 = Part(
-    "R7",
-    "Resistor_SMD:R_0603_1608Metric_2",
-    footprint="Resistor_SMD:R_0603_1608Metric_2",
-    value="47k",
-    properties={"Characteristics": "47k 0603", "MPN": "CR0603-FX-4642ELF", "MPN_ALT": "WR06X473 JTL"},
-)
-r8 = Part(
-    "R8",
-    "Resistor_SMD:R_0402_1005Metric_25",
-    footprint="Resistor_SMD:R_0402_1005Metric_25",
-    value="10k",
-    properties={
-        "Characteristics": "10k 0402",
-        "JLC": "",
-        "MPN": "RC0402FR-0710KL",
-        "MPN_ALT": "WR04X1002FTL",
-        "Part number": "",
-    },
-)
-r9 = Part(
-    "R9",
-    "Resistor_SMD:R_0402_1005Metric_26",
-    footprint="Resistor_SMD:R_0402_1005Metric_26",
-    value="10k",
-    properties={
-        "Characteristics": "10k 0402",
-        "JLC": "",
-        "MPN": "RC0402FR-0710KL",
-        "MPN_ALT": "WR04X1002FTL",
-        "Part number": "",
-    },
-)
-r10 = Part(
-    "R10",
-    "Resistor_SMD:R_0402_1005Metric",
-    footprint="Resistor_SMD:R_0402_1005Metric",
-    value="1k",
-    properties={
-        "Characteristics": "1k 0402",
-        "JLC": "",
-        "MPN": "CR0402-FX-1001GLF",
-        "MPN_ALT": "WR04X1001FTL",
-        "Part number": "",
-    },
-)
-r11 = Part(
-    "R11",
-    "Resistor_SMD:R_0402_1005Metric",
-    footprint="Resistor_SMD:R_0402_1005Metric",
-    value="1k",
-    properties={
-        "Characteristics": "1k 0402",
-        "JLC": "",
-        "MPN": "CR0402-FX-1001GLF",
-        "MPN_ALT": "WR04X1001FTL",
-        "Part number": "",
-    },
-)
-r12 = Part(
-    "R12",
-    "Resistor_SMD:R_0402_1005Metric_2",
-    footprint="Resistor_SMD:R_0402_1005Metric_2",
-    value="10k",
-    properties={"Characteristics": "10k 0402", "MPN": "RC0402FR-0710KL", "MPN_ALT": "WR04X1002FTL"},
-)
-r13 = Part(
-    "R13",
-    "Resistor_SMD:R_0402_1005Metric_3",
-    footprint="Resistor_SMD:R_0402_1005Metric_3",
-    value="1k",
-    properties={
-        "Characteristics": "1k 0402",
-        "MPN": "CR0402-FX-1001GLF",
-        "MPN_ALT": "WR04X1001FTL",
-        "Part number": "",
-    },
-)
-r14 = Part(
-    "R14",
-    "Resistor_SMD:R_0402_1005Metric_4",
-    footprint="Resistor_SMD:R_0402_1005Metric_4",
-    value="1k",
-    properties={
-        "Characteristics": "1k 0402",
-        "MPN": "CR0402-FX-1001GLF",
-        "MPN_ALT": "WR04X1001FTL",
-        "Part number": "",
-    },
-)
-r15 = Part(
-    "R15",
-    "Resistor_SMD:R_0402_1005Metric_5",
-    footprint="Resistor_SMD:R_0402_1005Metric_5",
-    value="1.2K",
-    properties={
-        "Characteristics": "1.2k 0402",
-        "MPN": "RC0402FR-071K2L",
-        "MPN_ALT": "CR0402-JW-122GLF",
-        "Part number": "",
-    },
-)
-r16 = Part(
-    "R16",
-    "Resistor_SMD:R_0603_1608Metric",
-    footprint="Resistor_SMD:R_0603_1608Metric",
-    value="1M",
-    properties={"JLC": "", "MPN": "", "Part number": ""},
-    dnp=True,
-)
-r17 = Part(
-    "R17",
-    "Resistor_SMD:R_0402_1005Metric_5",
-    footprint="Resistor_SMD:R_0402_1005Metric_5",
-    value="510",
-    properties={
-        "Characteristics": "510R 0402",
-        "MPN": "RC0402FR-07510RL",
-        "MPN_ALT": "CR0402-FX-5100GLF",
-        "Part number": "",
-    },
-)
-r18 = Part(
-    "R18",
-    "Resistor_SMD:R_0402_1005Metric_6",
-    footprint="Resistor_SMD:R_0402_1005Metric_6",
-    value="0R",
-    properties={
-        "Characteristics": "0R 0402",
-        "MPN": "RC0402FR-070RL",
-        "MPN_ALT": "WR04X000 PTL",
-        "Part number": "",
-    },
-)
-r19 = Part(
-    "R19",
-    "Resistor_SMD:R_0402_1005Metric_7",
-    footprint="Resistor_SMD:R_0402_1005Metric_7",
-    value="510",
-    properties={
-        "Characteristics": "510R 0402",
-        "MPN": "RC0402FR-07510RL",
-        "MPN_ALT": "CR0402-FX-5100GLF",
-        "Part number": "",
-    },
-)
-r20 = Part(
-    "R20",
-    "Resistor_SMD:R_0402_1005Metric_8",
-    footprint="Resistor_SMD:R_0402_1005Metric_8",
-    value="5.1k",
-    properties={
-        "Characteristics": "5.1k 0402",
-        "JLC": "",
-        "MPN": "AC0402FR-135K1L",
-        "MPN_ALT": "CR0402-FX-5101GLF",
-        "Part number": "",
-    },
-)
-r21 = Part(
-    "R21",
-    "Resistor_SMD:R_0402_1005Metric_9",
-    footprint="Resistor_SMD:R_0402_1005Metric_9",
-    value="5.1k",
-    properties={
-        "Characteristics": "5.1k 0402",
-        "JLC": "",
-        "MPN": "AC0402FR-135K1L",
-        "MPN_ALT": "CR0402-FX-5101GLF",
-        "Part number": "",
-    },
-)
-r22 = Part(
-    "R22",
-    "Resistor_SMD:R_0402_1005Metric_10",
-    footprint="Resistor_SMD:R_0402_1005Metric_10",
-    value="68R",
-    properties={
-        "Characteristics": "68R 0402",
-        "MPN": "RC0402FR-0768RL",
-        "MPN_ALT": "WR04X68R0FTL",
-        "Part number": "",
-    },
-)
-r23 = Part(
-    "R23",
-    "Resistor_SMD:R_0402_1005Metric_10",
-    footprint="Resistor_SMD:R_0402_1005Metric_10",
-    value="68R",
-    properties={
-        "Characteristics": "68R 0402",
-        "MPN": "RC0402FR-0768RL",
-        "MPN_ALT": "WR04X68R0FTL",
-        "Part number": "",
-    },
-)
-r24 = Part(
-    "R24",
-    "Resistor_SMD:R_0402_1005Metric_10",
-    footprint="Resistor_SMD:R_0402_1005Metric_10",
-    value="68R",
-    properties={
-        "Characteristics": "68R 0402",
-        "MPN": "RC0402FR-0768RL",
-        "MPN_ALT": "WR04X68R0FTL",
-        "Part number": "",
-    },
-)
-r25 = Part(
-    "R25",
-    "Resistor_SMD:R_0402_1005Metric_10",
-    footprint="Resistor_SMD:R_0402_1005Metric_10",
-    value="68R",
-    properties={
-        "Characteristics": "68R 0402",
-        "MPN": "RC0402FR-0768RL",
-        "MPN_ALT": "WR04X68R0FTL",
-        "Part number": "",
-    },
-)
-r26 = Part(
-    "R26",
-    "Resistor_SMD:R_0402_1005Metric_10",
-    footprint="Resistor_SMD:R_0402_1005Metric_10",
-    value="68R",
-    properties={
-        "Characteristics": "68R 0402",
-        "MPN": "RC0402FR-0768RL",
-        "MPN_ALT": "WR04X68R0FTL",
-        "Part number": "",
-    },
-)
-r27 = Part(
-    "R27",
-    "Resistor_SMD:R_0402_1005Metric_10",
-    footprint="Resistor_SMD:R_0402_1005Metric_10",
-    value="68R",
-    properties={
-        "Characteristics": "68R 0402",
-        "MPN": "RC0402FR-0768RL",
-        "MPN_ALT": "WR04X68R0FTL",
-        "Part number": "",
-    },
-)
-r28 = Part(
-    "R28",
-    "Resistor_SMD:R_0402_1005Metric_10",
-    footprint="Resistor_SMD:R_0402_1005Metric_10",
-    value="68R",
-    properties={
-        "Characteristics": "68R 0402",
-        "MPN": "RC0402FR-0768RL",
-        "MPN_ALT": "WR04X68R0FTL",
-        "Part number": "",
-    },
-)
-r29 = Part(
-    "R29",
-    "Resistor_SMD:R_0402_1005Metric_10",
-    footprint="Resistor_SMD:R_0402_1005Metric_10",
-    value="68R",
-    properties={
-        "Characteristics": "68R 0402",
-        "MPN": "RC0402FR-0768RL",
-        "MPN_ALT": "WR04X68R0FTL",
-        "Part number": "",
-    },
-)
-r30 = Part(
-    "R30",
-    "Resistor_SMD:R_0402_1005Metric_11",
-    footprint="Resistor_SMD:R_0402_1005Metric_11",
-    value="10k",
-    properties={"Characteristics": "10k 0402", "MPN": "RC0402FR-0710KL", "MPN_ALT": "WR04X1002FTL"},
-)
-r31 = Part(
-    "R31",
-    "Resistor_SMD:R_0402_1005Metric_10",
-    footprint="Resistor_SMD:R_0402_1005Metric_10",
-    value="10k",
-    properties={"Characteristics": "10k 0402", "MPN": "RC0402FR-0710KL", "MPN_ALT": "WR04X1002FTL"},
-)
-r32 = Part(
-    "R32",
-    "Resistor_SMD:R_0402_1005Metric_11",
-    footprint="Resistor_SMD:R_0402_1005Metric_11",
-    value="10k",
-    properties={"Characteristics": "10k 0402", "MPN": "RC0402FR-0710KL", "MPN_ALT": "WR04X1002FTL"},
-)
-r33 = Part(
-    "R33",
-    "Resistor_SMD:R_0402_1005Metric_12",
-    footprint="Resistor_SMD:R_0402_1005Metric_12",
-    value="10k",
-    properties={
-        "Characteristics": "10k 0402",
-        "JLC": "",
-        "MPN": "RC0402FR-0710KL",
-        "MPN_ALT": "WR04X1002FTL",
-        "Part number": "",
-    },
-)
-r41 = Part(
-    "R41",
-    "Resistor_SMD:R_0402_1005Metric_19",
-    footprint="Resistor_SMD:R_0402_1005Metric_19",
-    value="47R",
-    properties={"Characteristics": "47 0402", "MPN": "RMCF0402JT47R0", "MPN_ALT": "WR04X470 JTL"},
-)
-r42 = Part(
-    "R42",
-    "Resistor_SMD:R_0402_1005Metric_20",
-    footprint="Resistor_SMD:R_0402_1005Metric_20",
-    value="10k",
-    properties={
-        "Characteristics": "10k 0402",
-        "JLC": "",
-        "MPN": "RC0402FR-0710KL",
-        "MPN_ALT": "WR04X1002FTL",
-        "Part number": "",
-    },
-    dnp=True,
-)
-r43 = Part(
-    "R43",
-    "Resistor_SMD:R_0402_1005Metric_21",
-    footprint="Resistor_SMD:R_0402_1005Metric_21",
-    value="10k",
-    properties={
-        "Characteristics": "10k 0402",
-        "MPN": "RC0402FR-0710KL",
-        "MPN_ALT": "WR04X1002FTL",
-        "Part number": "",
-    },
-)
-r44 = Part(
-    "R44",
-    "Resistor_SMD:R_0402_1005Metric_21",
-    footprint="Resistor_SMD:R_0402_1005Metric_21",
-    value="10k",
-    properties={
-        "Characteristics": "10k 0402",
-        "MPN": "RC0402FR-0710KL",
-        "MPN_ALT": "WR04X1002FTL",
-        "Part number": "",
-    },
-)
-r45 = Part(
-    "R45",
-    "Resistor_SMD:R_0402_1005Metric_22",
-    footprint="Resistor_SMD:R_0402_1005Metric_22",
-    value="10k",
-    properties={
-        "Characteristics": "10k 0402",
-        "MPN": "RC0402FR-0710KL",
-        "MPN_ALT": "WR04X1002FTL",
-        "Part number": "",
-    },
-)
-r46 = Part(
-    "R46",
-    "Resistor_SMD:R_0402_1005Metric_23",
-    footprint="Resistor_SMD:R_0402_1005Metric_23",
-    value="10k",
-    properties={
-        "Characteristics": "10k 0402",
-        "MPN": "RC0402FR-0710KL",
-        "MPN_ALT": "WR04X1002FTL",
-        "Part number": "",
-    },
-)
-r47 = Part(
-    "R47",
-    "Resistor_SMD:R_0402_1005Metric_24",
-    footprint="Resistor_SMD:R_0402_1005Metric_24",
-    value="10k",
-    properties={
-        "Characteristics": "10k 0402",
-        "MPN": "RC0402FR-0710KL",
-        "MPN_ALT": "WR04X1002FTL",
-        "Part number": "",
-    },
-)
-r48 = Part(
-    "R48",
-    "Resistor_SMD:R_0402_1005Metric_21",
-    footprint="Resistor_SMD:R_0402_1005Metric_21",
-    value="10k",
-    properties={
-        "Characteristics": "10k 0402",
-        "MPN": "RC0402FR-0710KL",
-        "MPN_ALT": "WR04X1002FTL",
-        "Part number": "",
-    },
-)
 sw1 = Part(
     "SW1",
-    "TinyTapeout:434121025816",
+    "TinyTapeout:SW_Push",
     footprint="TinyTapeout:434121025816",
     value="434121025816",
     properties={
@@ -2745,8 +2715,9 @@ sw1 = Part(
 )
 sw2 = Part(
     "SW2",
-    "TinyTapeout:434121025816_2",
-    footprint="TinyTapeout:434121025816_2",
+    "TinyTapeout:SW_Push",
+    footprint="TinyTapeout:434121025816",
+    footprint_definition="TinyTapeout:434121025816_2",
     value="434121025816",
     properties={
         "Characteristics": "MOM SPST NO",
@@ -2756,8 +2727,9 @@ sw2 = Part(
 )
 sw3 = Part(
     "SW3",
-    "TinyTapeout:434121025816_3",
-    footprint="TinyTapeout:434121025816_3",
+    "TinyTapeout:SW_Push",
+    footprint="TinyTapeout:434121025816",
+    footprint_definition="TinyTapeout:434121025816_3",
     value="434121025816",
     properties={
         "Characteristics": "MOM SPST NO",
@@ -2767,20 +2739,23 @@ sw3 = Part(
 )
 sw4 = Part(
     "SW4",
-    "TinyTapeout:418121270808",
+    "TinyTapeout:SW_DIP_x08",
     footprint="TinyTapeout:418121270808",
     value="418121270808",
     properties={"Characteristics": "8 POS SPST DIP", "MPN": "418121270808", "MPN_ALT": "219-8MST"},
 )
-tp1 = Part(
-    "TP1",
-    "TestPoint:TestPoint_Pad_D1.5mm",
-    footprint="TestPoint:TestPoint_Pad_D1.5mm",
-    value="TestPoint",
+tp1 = Part("TP1", "TinyTapeout:TestPoint", footprint="TestPoint:TestPoint_Pad_D1.5mm", value="TestPoint")
+ttlogo = Part(
+    "TTLOGO",
+    "Logos:TT_logo_2",
+    footprint="Logos:TT_logo",
+    footprint_definition="Logos:TT_logo_2",
+    value="TT_logo",
+    board_only=True,
 )
 u1 = Part(
     "U1",
-    "TinyTapeout:WL_S7DS-157112V12700",
+    "TinyTapeout:KCSC02-106",
     footprint="TinyTapeout:WL_S7DS-157112V12700",
     value="157112V12700",
     properties={
@@ -2792,7 +2767,7 @@ u1 = Part(
 )
 u2 = Part(
     "U2",
-    "Package_TO_SOT_SMD:SOT-223-3_TabPin2",
+    "TinyTapeout:AZ1117-3.3",
     footprint="Package_TO_SOT_SMD:SOT-223-3_TabPin2",
     value="TLV1117LV33",
     properties={
@@ -2804,7 +2779,7 @@ u2 = Part(
 )
 u3 = Part(
     "U3",
-    "Package_TO_SOT_SMD:SOT-23-5",
+    "TinyTapeout:AP2112K-1.8",
     footprint="Package_TO_SOT_SMD:SOT-23-5",
     value="AP2112K-1.8",
     properties={
@@ -2815,292 +2790,45 @@ u3 = Part(
 )
 u4 = Part(
     "U4",
-    "Package_SO:TSSOP-16_4.4x5mm_P0.65mm",
+    "TinyTapeout:74CBTLV3257",
     footprint="Package_SO:TSSOP-16_4.4x5mm_P0.65mm",
     value="74CBTLV3257",
     properties={"MPN": "74CBTLV3257PW,118"},
 )
 u7 = Part(
     "U7",
-    "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm_2",
-    footprint="Package_SO:SOIC-8_5.23x5.23mm_P1.27mm_2",
+    "TinyTapeout:W25Q32JVSS",
+    footprint="Package_SO:SOIC-8_5.23x5.23mm_P1.27mm",
+    footprint_definition="Package_SO:SOIC-8_5.23x5.23mm_P1.27mm_2",
     value="W25Q32JVSS",
     properties={"Characteristics": "", "DigikeyPN": "W25Q32JVSSIQ-ND", "MPN": "W25Q32JVSSIQ"},
     dnp=True,
 )
 x1 = Part(
     "X1",
-    "Oscillator:Oscillator_SMD_ECS_2520MV-xxx-xx-4Pin_2.5x2.0mm",
+    "TinyTapeout:ECS-2520MV-xxx-xx",
     footprint="Oscillator:Oscillator_SMD_ECS_2520MV-xxx-xx-4Pin_2.5x2.0mm",
     value="20MHz",
     properties={"DigikeyPN": "1923-830208220401DKR-ND", "MPN": "830208220401", "Part number": "830208220401"},
 )
-c29 = Part(
-    "C29",
-    "Capacitor_SMD:C_0402_1005Metric_13",
-    footprint="Capacitor_SMD:C_0402_1005Metric_13",
-    value="6pF",
-    properties={
-        "Characteristics": "6pF 10% 50V XR 0402",
-        "MPN": "CC0402BRNPO9BN6R0",
-        "MPN_ALT": "0402N6R0D500CT",
-    },
+z2alogo = Part(
+    "Z2ALOGO",
+    "Logos:Z2A_logo_2",
+    footprint="Logos:Z2A_logo",
+    footprint_definition="Logos:Z2A_logo_2",
+    value="Z2A_logo",
+    board_only=True,
 )
-c30 = Part(
-    "C30",
-    "Capacitor_SMD:C_0402_1005Metric_14",
-    footprint="Capacitor_SMD:C_0402_1005Metric_14",
-    value="6pF",
-    properties={"Characteristics": "6pF 10% 50V XR 0402", "MPN": "CC0402BRNPO9BN6R0"},
-)
-c31 = Part(
-    "C31",
-    "Capacitor_SMD:C_0402_1005Metric_15",
-    footprint="Capacitor_SMD:C_0402_1005Metric_15",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "JLC": "",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-        "Part number": "",
-    },
-)
-c32 = Part(
-    "C32",
-    "Capacitor_SMD:C_0603_1608Metric_9",
-    footprint="Capacitor_SMD:C_0603_1608Metric_9",
-    value="1uF",
-    properties={
-        "Characteristics": "1u 10V XR 0603",
-        "MPN": "CL10A105KA8NNNC",
-        "MPN_ALT": "C0603C105K4RAC7411",
-    },
-)
-c33 = Part(
-    "C33",
-    "Capacitor_SMD:C_0402_1005Metric_16",
-    footprint="Capacitor_SMD:C_0402_1005Metric_16",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-    },
-)
-c34 = Part(
-    "C34",
-    "Capacitor_SMD:C_0402_1005Metric_11",
-    footprint="Capacitor_SMD:C_0402_1005Metric_11",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-    },
-)
-c35 = Part(
-    "C35",
-    "Capacitor_SMD:C_0402_1005Metric_11",
-    footprint="Capacitor_SMD:C_0402_1005Metric_11",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-    },
-)
-c36 = Part(
-    "C36",
-    "Capacitor_SMD:C_0402_1005Metric_17",
-    footprint="Capacitor_SMD:C_0402_1005Metric_17",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-    },
-)
-c37 = Part(
-    "C37",
-    "Capacitor_SMD:C_0603_1608Metric_10",
-    footprint="Capacitor_SMD:C_0603_1608Metric_10",
-    value="1uF",
-    properties={
-        "Characteristics": "1u 10V XR 0603",
-        "MPN": "CL10A105KA8NNNC",
-        "MPN_ALT": "C0603C105K4RAC7411",
-    },
-)
-c38 = Part(
-    "C38",
-    "Capacitor_SMD:C_0402_1005Metric_12",
-    footprint="Capacitor_SMD:C_0402_1005Metric_12",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-    },
-)
-c39 = Part(
-    "C39",
-    "Capacitor_SMD:C_0402_1005Metric_12",
-    footprint="Capacitor_SMD:C_0402_1005Metric_12",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-    },
-)
-c40 = Part(
-    "C40",
-    "Capacitor_SMD:C_0402_1005Metric_18",
-    footprint="Capacitor_SMD:C_0402_1005Metric_18",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-    },
-)
-c41 = Part(
-    "C41",
-    "Capacitor_SMD:C_0402_1005Metric_19",
-    footprint="Capacitor_SMD:C_0402_1005Metric_19",
-    value="100nF",
-    properties={
-        "Characteristics": "100n 10% 25V XR 0402",
-        "MPN": "CL05A104KA5NNNC",
-        "MPN_ALT": "GRM155R71E104KE14J",
-    },
-)
-j10 = Part(
-    "J10",
-    "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
-    footprint="Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
-    value="Conn_01x02",
-    dnp=True,
-)
-j11 = Part(
-    "J11",
-    "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical_SMD_Pin1Right",
-    footprint="Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical_SMD_Pin1Right",
-    value="Conn_01x06",
-    properties={"MPN": "61300611121", "Part number": "", "Status": ""},
-    dnp=True,
-)
-r34 = Part(
-    "R34",
-    "Resistor_SMD:R_0402_1005Metric_13",
-    footprint="Resistor_SMD:R_0402_1005Metric_13",
-    value="10k",
-    properties={
-        "Characteristics": "10k 0402",
-        "JLC": "",
-        "MPN": "RC0402FR-0710KL",
-        "MPN_ALT": "WR04X1002FTL",
-        "Part number": "",
-    },
-)
-r35 = Part(
-    "R35",
-    "Resistor_SMD:R_0402_1005Metric_14",
-    footprint="Resistor_SMD:R_0402_1005Metric_14",
-    value="10k",
-    properties={
-        "Characteristics": "10k 0402",
-        "JLC": "",
-        "MPN": "RC0402FR-0710KL",
-        "MPN_ALT": "WR04X1002FTL",
-        "Part number": "",
-    },
-)
-r36 = Part(
-    "R36",
-    "Resistor_SMD:R_0402_1005Metric_15",
-    footprint="Resistor_SMD:R_0402_1005Metric_15",
-    value="10k",
-    properties={"Characteristics": "10k 0402", "MPN": "RC0402FR-0710KL", "MPN_ALT": "WR04X1002FTL"},
-)
-r37 = Part(
-    "R37",
-    "Resistor_SMD:R_0402_1005Metric_16",
-    footprint="Resistor_SMD:R_0402_1005Metric_16",
-    value="1k",
-    properties={
-        "Characteristics": "1k 0402",
-        "MPN": "CR0402-FX-1001GLF",
-        "MPN_ALT": "WR04X1001FTL",
-        "Part number": "",
-    },
-)
-r38 = Part(
-    "R38",
-    "Resistor_SMD:R_0402_1005Metric_17",
-    footprint="Resistor_SMD:R_0402_1005Metric_17",
-    value="10k",
-    properties={
-        "Characteristics": "10k 0402",
-        "JLC": "",
-        "MPN": "RC0402FR-0710KL",
-        "MPN_ALT": "WR04X1002FTL",
-        "Part number": "",
-    },
-)
-r39 = Part(
-    "R39",
-    "Resistor_SMD:R_0402_1005Metric_10",
-    footprint="Resistor_SMD:R_0402_1005Metric_10",
-    value="10k",
-    properties={
-        "Characteristics": "10k 0402",
-        "JLC": "",
-        "MPN": "RC0402FR-0710KL",
-        "MPN_ALT": "WR04X1002FTL",
-        "Part number": "",
-    },
-)
-r40 = Part(
-    "R40",
-    "Resistor_SMD:R_0402_1005Metric_18",
-    footprint="Resistor_SMD:R_0402_1005Metric_18",
-    value="10k",
-    properties={
-        "Characteristics": "10k 0402",
-        "JLC": "",
-        "MPN": "RC0402FR-0710KL",
-        "MPN_ALT": "WR04X1002FTL",
-        "Part number": "",
-    },
-)
-u5 = Part(
-    "U5",
-    "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm",
-    footprint="Package_SO:SOIC-8_5.23x5.23mm_P1.27mm",
-    value="W25Q32JVSS",
-    properties={"Characteristics": "", "DigikeyPN": "W25Q32JVSSIQ-ND", "MPN": "W25Q32JVSSIQ"},
-)
-u6 = Part(
-    "U6",
-    "Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm",
-    footprint="Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm",
-    value="RP2040",
-    properties={"DigikeyPN": "2648-SC0914(13)CT-ND", "MPN": "SC0914(13)"},
-)
-y1 = Part(
-    "Y1",
-    "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
-    footprint="Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
-    value="12.0MHz",
-    properties={"DigikeyPN": "1923-830108206909DKR-ND", "MPN": "830108206909"},
+kibuzzard_63fe0d11 = Part(
+    "kibuzzard-63FE0D11",
+    "Imported:kibuzzard-63FE0D11",
+    footprint="kibuzzard-63FE0D11",
+    footprint_definition="Imported:kibuzzard-63FE0D11",
+    value="G***",
+    board_only=True,
 )
 
-root = Module("root")
-rp2040 = Module("rp2040")
-
-root.add(
+design.add(
     c1,
     c2,
     c3,
@@ -3145,6 +2873,10 @@ root.add(
     fid1,
     fid2,
     fid3,
+    g_1,
+    g_2,
+    g_3,
+    g_4,
     j1,
     j2,
     j3,
@@ -3215,50 +2947,6 @@ root.add(
     r46,
     r47,
     r48,
-    sw1,
-    sw2,
-    sw3,
-    sw4,
-    tp1,
-    u1,
-    u2,
-    u3,
-    u4,
-    u7,
-    x1,
-)
-rp2040.add(
-    c29,
-    c30,
-    c31,
-    c32,
-    c33,
-    c34,
-    c35,
-    c36,
-    c37,
-    c38,
-    c39,
-    c40,
-    c41,
-    j10,
-    j11,
-    r34,
-    r35,
-    r36,
-    r37,
-    r38,
-    r39,
-    r40,
-    u5,
-    u6,
-    y1,
-)
-design.add(
-    g_1,
-    g_2,
-    g_3,
-    g_4,
     ref_1,
     ref_2,
     ref_3,
@@ -3411,11 +3099,199 @@ design.add(
     stitch16,
     stitch17,
     stitch18,
+    sw1,
+    sw2,
+    sw3,
+    sw4,
+    tp1,
     ttlogo,
+    u1,
+    u2,
+    u3,
+    u4,
+    u7,
+    x1,
     z2alogo,
     kibuzzard_63fe0d11,
-    root,
-    rp2040,
+)
+_sheet_rp2040.sheet(
+    design,
+    path="rp2040",
+    refs={
+        "C29": "C29",
+        "C30": "C30",
+        "C31": "C31",
+        "C32": "C32",
+        "C33": "C33",
+        "C34": "C34",
+        "C35": "C35",
+        "C36": "C36",
+        "C37": "C37",
+        "C38": "C38",
+        "C39": "C39",
+        "C40": "C40",
+        "C41": "C41",
+        "J10": "J10",
+        "J11": "J11",
+        "R34": "R34",
+        "R35": "R35",
+        "R36": "R36",
+        "R37": "R37",
+        "R38": "R38",
+        "R39": "R39",
+        "R40": "R40",
+        "U5": "U5",
+        "U6": "U6",
+        "Y1": "Y1",
+    },
+    net_3v3=net_3v3,
+    rp2040_swclk=rp2040_swclk,
+    rp2040_swdio=rp2040_swdio,
+    gnd=gnd,
+    hk_csb=hk_csb,
+    hk_sck=hk_sck,
+    rpio29=rpio29,
+    rp_proj_clk=rp_proj_clk,
+    sdi_out0=sdi_out0,
+    sdo_out1=sdo_out1,
+    boot_mode=boot_mode,
+    cinc_out3=cinc_out3,
+    ctrl_ena=ctrl_ena,
+    in0=in0,
+    in1=in1,
+    in2=in2,
+    in3=in3,
+    in4=in4,
+    in5=in5,
+    in6=in6,
+    in7=in7,
+    out4=out4,
+    out5=out5,
+    out6=out6,
+    out7=out7,
+    uio0=uio0,
+    uio1=uio1,
+    uio2=uio2,
+    uio3=uio3,
+    uio4=uio4,
+    uio5=uio5,
+    uio6=uio6,
+    uio7=uio7,
+    usb_d=usb_d,
+    usb_d_2=usb_d_2,
+    crst_out2=crst_out2,
+    project_rst=project_rst,
+)
+
+rp2040_dvdd = design.nets["/RP2040/DVDD"]
+rp2040_qspi_clk = design.nets["/RP2040/QSPI_CLK"]
+rp2040_qspi_sd0 = design.nets["/RP2040/QSPI_SD0"]
+rp2040_qspi_sd1 = design.nets["/RP2040/QSPI_SD1"]
+rp2040_qspi_sd2 = design.nets["/RP2040/QSPI_SD2"]
+rp2040_qspi_sd3 = design.nets["/RP2040/QSPI_SD3"]
+rp2040_run = design.nets["/RP2040/RUN"]
+net_c30_pad1 = design.nets["Net-(C30-Pad1)"]
+net_u6_xin = design.nets["Net-(U6-XIN)"]
+net_u6_xout = design.nets["Net-(U6-XOUT)"]
+
+design.rules.netclass(
+    "Default",
+    clearance=mm("0.2"),
+    track_width=mm("0.2"),
+    via_diameter=mm("0.65"),
+    via_drill=mm("0.3"),
+    diff_pair_width=mm("0.2"),
+    diff_pair_gap=mm("0.25"),
+    diff_pair_via_gap=mm("0.25"),
+    nets=(),
+)
+design.rules.netclass(
+    "clk",
+    clearance=mm("0.2"),
+    track_width=mm("0.245"),
+    via_diameter=mm("0.65"),
+    via_drill=mm("0.3"),
+    diff_pair_width=mm("0.2"),
+    diff_pair_gap=mm("0.25"),
+    diff_pair_via_gap=mm("0.25"),
+    nets=(rp_proj_clk, project_clk, xclk),
+)
+design.rules.netclass(
+    "config",
+    clearance=mm("0.2"),
+    track_width=mm("0.2"),
+    via_diameter=mm("0.65"),
+    via_drill=mm("0.3"),
+    diff_pair_width=mm("0.2"),
+    diff_pair_gap=mm("0.25"),
+    diff_pair_via_gap=mm("0.25"),
+    nets=(hk_csb, hk_sck, hk_sdi, hk_sdo, ctrl_ena, ctrl_sel_inc, ctrl_sel_rst),
+)
+design.rules.netclass(
+    "iobidir",
+    clearance=mm("0.2"),
+    track_width=mm("0.245"),
+    via_diameter=mm("0.62"),
+    via_drill=mm("0.3"),
+    diff_pair_width=mm("0.2"),
+    diff_pair_gap=mm("0.25"),
+    diff_pair_via_gap=mm("0.25"),
+    nets=(uio0, uio1, uio2, uio3, uio4, uio5, uio6, uio7),
+)
+design.rules.netclass(
+    "ioin",
+    clearance=mm("0.2"),
+    track_width=mm("0.245"),
+    via_diameter=mm("0.62"),
+    via_drill=mm("0.3"),
+    diff_pair_width=mm("0.2"),
+    diff_pair_gap=mm("0.25"),
+    diff_pair_via_gap=mm("0.25"),
+    nets=(in0, in1, in2, in3, in4, in5, in6, in7),
+)
+design.rules.netclass(
+    "ioout",
+    clearance=mm("0.2"),
+    track_width=mm("0.245"),
+    via_diameter=mm("0.62"),
+    via_drill=mm("0.3"),
+    diff_pair_width=mm("0.2"),
+    diff_pair_gap=mm("0.25"),
+    diff_pair_via_gap=mm("0.25"),
+    nets=(sdi_out0, sdo_out1, cinc_out3, out0, out1, out2, out3, out4, out5, out6, out7, crst_out2),
+)
+design.rules.netclass(
+    "pwr",
+    clearance=mm("0.23"),
+    track_width=mm("0.25"),
+    via_diameter=mm("0.65"),
+    via_drill=mm("0.3"),
+    diff_pair_width=mm("0.2"),
+    diff_pair_gap=mm("0.25"),
+    diff_pair_via_gap=mm("0.25"),
+    nets=(net_1v8, net_3v3, gnd),
+)
+design.rules.netclass(
+    "pwrhi",
+    clearance=mm("0.25"),
+    track_width=mm("0.3"),
+    via_diameter=mm("0.8"),
+    via_drill=mm("0.4"),
+    diff_pair_width=mm("0.2"),
+    diff_pair_gap=mm("0.25"),
+    diff_pair_via_gap=mm("0.25"),
+    nets=(net_5v, vbus),
+)
+design.rules.netclass(
+    "usbdiff",
+    clearance=mm("0.2"),
+    track_width=mm("0.23"),
+    via_diameter=mm("0.6"),
+    via_drill=mm("0.3"),
+    diff_pair_width=mm("0.23"),
+    diff_pair_gap=mm("0.165"),
+    diff_pair_via_gap=mm("0.25"),
+    nets=(usb_d, usb_d_2),
 )
 
 connect(
@@ -3439,11 +3315,6 @@ connect(
 connect(
     net_3v3,
     c1["1"],
-    c4["1"],
-    c5["2"],
-    c7["1"],
-    c8["1"],
-    c9["2"],
     c10["1"],
     c12["1"],
     c14["1"],
@@ -3456,63 +3327,49 @@ connect(
     c26["2"],
     c27["1"],
     c28["2"],
-    c31["2"],
-    c33["1"],
-    c34["1"],
-    c35["1"],
-    c36["1"],
-    c37["1"],
-    c38["1"],
-    c39["1"],
+    c4["1"],
     c43["2"],
+    c5["2"],
     c56["1"],
     c57["2"],
     c58["1"],
     c59["2"],
     c60["1"],
     c61["2"],
-    j3["6"],
+    c7["1"],
+    c8["1"],
+    c9["2"],
+    j12["12"],
+    j12["6"],
+    j13["12"],
+    j13["6"],
+    j14["12"],
+    j14["6"],
     j3["12"],
+    j3["6"],
     j4["A19"],
     j4["B1"],
-    j4["B3"],
     j4["B15"],
     j4["B17"],
+    j4["B3"],
     j4["B37"],
     j4["B39"],
-    j5["6"],
     j5["12"],
-    j6["6"],
+    j5["6"],
     j6["12"],
-    j9["3"],
+    j6["6"],
     j9["21"],
-    j11["1"],
-    j12["6"],
-    j12["12"],
-    j13["6"],
-    j13["12"],
-    j14["6"],
-    j14["12"],
+    j9["3"],
     r1["1"],
-    r2["1"],
-    r3["1"],
-    r4["1"],
-    r5["1"],
-    r6["1"],
-    r8["1"],
-    r9["1"],
     r10["1"],
     r11["1"],
     r17["1"],
     r19["1"],
+    r2["1"],
+    r3["1"],
     r32["1"],
     r33["1"],
-    r34["1"],
-    r35["1"],
-    r36["1"],
-    r38["1"],
-    r39["1"],
-    r40["1"],
+    r4["1"],
     r42["1"],
     r43["1"],
     r44["1"],
@@ -3520,36 +3377,23 @@ connect(
     r46["1"],
     r47["1"],
     r48["1"],
+    r5["1"],
+    r6["1"],
+    r8["1"],
+    r9["1"],
     sw1["2"],
     u2["2"],
     u3["1"],
     u3["3"],
     u4["16"],
-    u5["8"],
-    u6["1"],
-    u6["10"],
-    u6["22"],
-    u6["33"],
-    u6["42"],
-    u6["43"],
-    u6["44"],
-    u6["48"],
-    u6["49"],
     u7["8"],
     x1["4"],
 )
 connect(net_5v, c6["1"], f1["2"], j1["2"], j9["23"], r15["1"], u2["3"])
 connect(cc1, j15["A5"], r21["1"])
 connect(cc2, j15["B5"], r20["1"])
-connect(rp2040_dvdd, c32["2"], c40["1"], c41["1"], u6["23"], u6["45"], u6["50"])
-connect(rp2040_qspi_clk, j11["3"], r34["2"], u5["6"], u6["52"])
-connect(rp2040_qspi_sd0, j11["4"], r39["2"], u5["5"], u6["53"])
-connect(rp2040_qspi_sd1, j11["5"], r40["2"], u5["2"], u6["55"])
-connect(rp2040_qspi_sd2, r35["2"], u5["3"], u6["54"])
-connect(rp2040_qspi_sd3, r38["2"], u5["7"], u6["51"])
-connect(rp2040_run, j10["2"], r36["2"], u6["26"])
-connect(rp2040_swclk, j7["2"], u6["24"])
-connect(rp2040_swdio, j7["1"], u6["25"])
+connect(rp2040_swclk, j7["2"])
+connect(rp2040_swdio, j7["1"])
 connect(crvrst, c42["2"], j4["A12"], r42["2"], tp1["1"])
 connect(caravel_csb, j4["A14"], r43["2"], u7["1"])
 connect(caravel_d0, j4["A16"], r46["2"], u7["5"])
@@ -3557,14 +3401,6 @@ connect(caravel_d1, j4["A17"], r47["2"], u7["2"])
 connect(caravel_sck, j4["A13"], r48["2"], u7["6"])
 connect(
     gnd,
-    c2["2"],
-    c3["2"],
-    c4["2"],
-    c5["1"],
-    c6["2"],
-    c7["2"],
-    c8["2"],
-    c9["1"],
     c10["2"],
     c11["2"],
     c12["2"],
@@ -3575,6 +3411,7 @@ connect(
     c17["1"],
     c18["2"],
     c19["1"],
+    c2["2"],
     c20["1"],
     c21["1"],
     c22["1"],
@@ -3584,48 +3421,49 @@ connect(
     c26["1"],
     c27["2"],
     c28["1"],
-    c29["2"],
-    c30["2"],
-    c31["1"],
-    c32["1"],
-    c33["2"],
-    c34["2"],
-    c35["2"],
-    c36["2"],
-    c37["2"],
-    c38["2"],
-    c39["2"],
-    c40["2"],
-    c41["2"],
+    c3["2"],
+    c4["2"],
     c42["1"],
     c43["1"],
+    c5["1"],
     c56["2"],
     c57["1"],
     c58["2"],
     c59["1"],
+    c6["2"],
     c60["2"],
     c61["1"],
+    c7["2"],
+    c8["2"],
+    c9["1"],
     d1["1"],
     d2["1"],
     d3["1"],
     j1["1"],
-    j3["5"],
+    j12["11"],
+    j12["5"],
+    j13["11"],
+    j13["5"],
+    j14["11"],
+    j14["5"],
+    j15["A1_B12"],
+    j15["B1_A12"],
     j3["11"],
-    j4["A2"],
-    j4["A9"],
+    j3["5"],
     j4["A10"],
     j4["A15"],
+    j4["A2"],
     j4["A20"],
     j4["A25"],
     j4["A29"],
     j4["A30"],
     j4["A40"],
-    j4["B2"],
-    j4["B4"],
+    j4["A9"],
     j4["B12"],
     j4["B13"],
     j4["B18"],
     j4["B19"],
+    j4["B2"],
     j4["B20"],
     j4["B24"],
     j4["B25"],
@@ -3633,138 +3471,41 @@ connect(
     j4["B34"],
     j4["B36"],
     j4["B38"],
+    j4["B4"],
     j4["B40"],
-    j5["5"],
     j5["11"],
-    j6["5"],
+    j5["5"],
     j6["11"],
+    j6["5"],
     j9["1"],
-    j9["4"],
-    j9["8"],
     j9["15"],
     j9["19"],
     j9["22"],
     j9["24"],
-    j10["1"],
-    j11["6"],
-    j12["5"],
-    j12["11"],
-    j13["5"],
-    j13["11"],
-    j14["5"],
-    j14["11"],
-    j15["A1_B12"],
-    j15["B1_A12"],
+    j9["4"],
+    j9["8"],
     mt1["1"],
     mt2["1"],
     mt3["1"],
     mt4["1"],
-    r7["2"],
     r14["2"],
     r16["2"],
     r20["2"],
     r21["2"],
     r30["2"],
     r31["2"],
+    r7["2"],
+    stitch10["1"],
+    stitch11["1"],
+    stitch12["1"],
+    stitch13["1"],
+    stitch14["1"],
+    stitch15["1"],
+    stitch16["1"],
+    stitch17["1"],
+    stitch18["1"],
     stitch1_1["1"],
-    stitch1_2["1"],
-    stitch1_3["1"],
-    stitch1_4["1"],
-    stitch1_5["1"],
-    stitch1_6["1"],
-    stitch1_7["1"],
-    stitch1_8["1"],
-    stitch1_9["1"],
     stitch1_10["1"],
-    stitch1_11["1"],
-    stitch1_12["1"],
-    stitch1_13["1"],
-    stitch1_14["1"],
-    stitch1_15["1"],
-    stitch1_16["1"],
-    stitch1_17["1"],
-    stitch1_18["1"],
-    stitch1_19["1"],
-    stitch1_20["1"],
-    stitch1_21["1"],
-    stitch1_22["1"],
-    stitch1_23["1"],
-    stitch1_24["1"],
-    stitch1_25["1"],
-    stitch1_26["1"],
-    stitch1_27["1"],
-    stitch1_28["1"],
-    stitch1_29["1"],
-    stitch1_30["1"],
-    stitch1_31["1"],
-    stitch1_32["1"],
-    stitch1_33["1"],
-    stitch1_34["1"],
-    stitch1_35["1"],
-    stitch1_36["1"],
-    stitch1_37["1"],
-    stitch1_38["1"],
-    stitch1_39["1"],
-    stitch1_40["1"],
-    stitch1_41["1"],
-    stitch1_42["1"],
-    stitch1_43["1"],
-    stitch1_44["1"],
-    stitch1_45["1"],
-    stitch1_46["1"],
-    stitch1_47["1"],
-    stitch1_48["1"],
-    stitch1_49["1"],
-    stitch1_50["1"],
-    stitch1_51["1"],
-    stitch1_52["1"],
-    stitch1_53["1"],
-    stitch1_54["1"],
-    stitch1_55["1"],
-    stitch1_56["1"],
-    stitch1_57["1"],
-    stitch1_58["1"],
-    stitch1_59["1"],
-    stitch1_60["1"],
-    stitch1_61["1"],
-    stitch1_62["1"],
-    stitch1_63["1"],
-    stitch1_64["1"],
-    stitch1_65["1"],
-    stitch1_66["1"],
-    stitch1_67["1"],
-    stitch1_68["1"],
-    stitch1_69["1"],
-    stitch1_70["1"],
-    stitch1_71["1"],
-    stitch1_72["1"],
-    stitch1_73["1"],
-    stitch1_74["1"],
-    stitch1_75["1"],
-    stitch1_76["1"],
-    stitch1_77["1"],
-    stitch1_78["1"],
-    stitch1_79["1"],
-    stitch1_80["1"],
-    stitch1_81["1"],
-    stitch1_82["1"],
-    stitch1_83["1"],
-    stitch1_84["1"],
-    stitch1_85["1"],
-    stitch1_86["1"],
-    stitch1_87["1"],
-    stitch1_88["1"],
-    stitch1_89["1"],
-    stitch1_90["1"],
-    stitch1_91["1"],
-    stitch1_92["1"],
-    stitch1_93["1"],
-    stitch1_94["1"],
-    stitch1_95["1"],
-    stitch1_96["1"],
-    stitch1_97["1"],
-    stitch1_98["1"],
-    stitch1_99["1"],
     stitch1_100["1"],
     stitch1_101["1"],
     stitch1_102["1"],
@@ -3775,6 +3516,7 @@ connect(
     stitch1_107["1"],
     stitch1_108["1"],
     stitch1_109["1"],
+    stitch1_11["1"],
     stitch1_110["1"],
     stitch1_111["1"],
     stitch1_112["1"],
@@ -3785,6 +3527,7 @@ connect(
     stitch1_117["1"],
     stitch1_118["1"],
     stitch1_119["1"],
+    stitch1_12["1"],
     stitch1_120["1"],
     stitch1_121["1"],
     stitch1_122["1"],
@@ -3795,7 +3538,102 @@ connect(
     stitch1_127["1"],
     stitch1_128["1"],
     stitch1_129["1"],
+    stitch1_13["1"],
     stitch1_130["1"],
+    stitch1_14["1"],
+    stitch1_15["1"],
+    stitch1_16["1"],
+    stitch1_17["1"],
+    stitch1_18["1"],
+    stitch1_19["1"],
+    stitch1_2["1"],
+    stitch1_20["1"],
+    stitch1_21["1"],
+    stitch1_22["1"],
+    stitch1_23["1"],
+    stitch1_24["1"],
+    stitch1_25["1"],
+    stitch1_26["1"],
+    stitch1_27["1"],
+    stitch1_28["1"],
+    stitch1_29["1"],
+    stitch1_3["1"],
+    stitch1_30["1"],
+    stitch1_31["1"],
+    stitch1_32["1"],
+    stitch1_33["1"],
+    stitch1_34["1"],
+    stitch1_35["1"],
+    stitch1_36["1"],
+    stitch1_37["1"],
+    stitch1_38["1"],
+    stitch1_39["1"],
+    stitch1_4["1"],
+    stitch1_40["1"],
+    stitch1_41["1"],
+    stitch1_42["1"],
+    stitch1_43["1"],
+    stitch1_44["1"],
+    stitch1_45["1"],
+    stitch1_46["1"],
+    stitch1_47["1"],
+    stitch1_48["1"],
+    stitch1_49["1"],
+    stitch1_5["1"],
+    stitch1_50["1"],
+    stitch1_51["1"],
+    stitch1_52["1"],
+    stitch1_53["1"],
+    stitch1_54["1"],
+    stitch1_55["1"],
+    stitch1_56["1"],
+    stitch1_57["1"],
+    stitch1_58["1"],
+    stitch1_59["1"],
+    stitch1_6["1"],
+    stitch1_60["1"],
+    stitch1_61["1"],
+    stitch1_62["1"],
+    stitch1_63["1"],
+    stitch1_64["1"],
+    stitch1_65["1"],
+    stitch1_66["1"],
+    stitch1_67["1"],
+    stitch1_68["1"],
+    stitch1_69["1"],
+    stitch1_7["1"],
+    stitch1_70["1"],
+    stitch1_71["1"],
+    stitch1_72["1"],
+    stitch1_73["1"],
+    stitch1_74["1"],
+    stitch1_75["1"],
+    stitch1_76["1"],
+    stitch1_77["1"],
+    stitch1_78["1"],
+    stitch1_79["1"],
+    stitch1_8["1"],
+    stitch1_80["1"],
+    stitch1_81["1"],
+    stitch1_82["1"],
+    stitch1_83["1"],
+    stitch1_84["1"],
+    stitch1_85["1"],
+    stitch1_86["1"],
+    stitch1_87["1"],
+    stitch1_88["1"],
+    stitch1_89["1"],
+    stitch1_9["1"],
+    stitch1_90["1"],
+    stitch1_91["1"],
+    stitch1_92["1"],
+    stitch1_93["1"],
+    stitch1_94["1"],
+    stitch1_95["1"],
+    stitch1_96["1"],
+    stitch1_97["1"],
+    stitch1_98["1"],
+    stitch1_99["1"],
     stitch2["1"],
     stitch3["1"],
     stitch4["1"],
@@ -3806,38 +3644,23 @@ connect(
     stitch7["1"],
     stitch8["1"],
     stitch9["1"],
-    stitch10["1"],
-    stitch11["1"],
-    stitch12["1"],
-    stitch13["1"],
-    stitch14["1"],
-    stitch15["1"],
-    stitch16["1"],
-    stitch17["1"],
-    stitch18["1"],
     sw2["1"],
     u1["3"],
     u1["8"],
     u2["1"],
     u3["2"],
-    u4["8"],
     u4["15"],
-    u5["4"],
-    u6["19"],
-    u6["57"],
+    u4["8"],
     u7["4"],
     x1["2"],
-    y1["2"],
-    y1["4"],
 )
-connect(hk_csb, j4["A23"], j9["7"], nt1["1"], r33["2"], u6["3"])
-connect(hk_sck, j4["A26"], j9["6"], u6["4"])
+connect(hk_csb, j4["A23"], j9["7"], nt1["1"], r33["2"])
+connect(hk_sck, j4["A26"], j9["6"])
 connect(hk_sdi, j4["A24"], j9["9"], u4["5"])
 connect(hk_sdo, j4["A21"], j9["10"], u4["14"])
 connect(mux_sel, nt1["2"], u4["1"])
-connect(net_c1_pad2, c1["2"], r7["1"], r12["2"], sw1["1"])
+connect(net_c1_pad2, c1["2"], r12["2"], r7["1"], sw1["1"])
 connect(net_c3_pad1, c3["1"], j15["S1"], j15["S2"], j15["S3"], j15["S4"], r16["1"])
-connect(net_c30_pad1, c30["1"], r37["1"], y1["3"])
 connect(net_d1_a, d1["2"], r15["2"])
 connect(net_d2_a, d2["2"], r17["2"])
 connect(net_d3_a, d3["2"], r18["2"])
@@ -3853,7 +3676,7 @@ connect(net_jp8_b, jp8["2"], r29["1"])
 connect(net_r1_pad2, r1["2"], sw4["8"])
 connect(net_r10_pad2, r10["2"], sw4["2"])
 connect(net_r11_pad2, r11["2"], sw4["1"])
-connect(net_r13_pad1, r8["2"], r13["1"], sw2["2"])
+connect(net_r13_pad1, r13["1"], r8["2"], sw2["2"])
 connect(net_r14_pad1, r14["1"], sw3["1"])
 connect(net_r2_pad2, r2["2"], sw4["7"])
 connect(net_r3_pad2, r3["2"], sw4["6"])
@@ -3868,28 +3691,26 @@ connect(net_u1_dp, r29["2"], u1["5"])
 connect(net_u1_e, r26["2"], u1["1"])
 connect(net_u1_f, r27["2"], u1["9"])
 connect(net_u1_g, r28["2"], u1["10"])
-connect(net_u6_xin, c29["1"], u6["20"], y1["1"])
-connect(net_u6_xout, r37["2"], u6["21"])
 connect(net_u7_io2, r44["2"], u7["3"])
 connect(net_u7_io3, r45["2"], u7["7"])
-connect(rpio29, j9["20"], u6["41"])
-connect(rp_proj_clk, r41["1"], u6["2"])
-connect(sdi_out0, u4["7"], u6["5"])
-connect(sdo_out1, u4["12"], u6["6"])
+connect(rpio29, j9["20"])
+connect(rp_proj_clk, r41["1"])
+connect(sdi_out0, u4["7"])
+connect(sdo_out1, u4["12"])
 connect(vbus, f1["1"], j15["A4_B9"], j15["B4_A9"])
-connect(boot_mode, j11["2"], r9["2"], sw3["2"], u5["1"], u6["56"])
-connect(cinc_out3, u4["9"], u6["11"])
-connect(ctrl_ena, j4["A1"], j9["17"], r31["1"], u6["8"])
+connect(boot_mode, r9["2"], sw3["2"])
+connect(cinc_out3, u4["9"])
+connect(ctrl_ena, j4["A1"], j9["17"], r31["1"])
 connect(ctrl_sel_inc, j4["A3"], j9["14"], r30["1"], u4["11"])
 connect(gpio, d4["1"], j4["A18"])
-connect(in0, j2["1"], j3["1"], j4["A32"], j13["1"], sw4["16"], u6["12"])
-connect(in1, j2["2"], j3["2"], j4["A33"], j13["4"], sw4["15"], u6["13"])
-connect(in2, j2["3"], j3["3"], j4["A34"], j12["3"], j13["2"], sw4["14"], u6["14"])
-connect(in3, j2["4"], j3["4"], j4["A35"], j14["9"], sw4["13"], u6["15"])
-connect(in4, j3["7"], j4["A36"], j13["7"], sw4["12"], u6["28"])
-connect(in5, j3["8"], j4["A37"], j13["10"], j14["7"], sw4["11"], u6["29"])
-connect(in6, j3["9"], j4["A38"], j13["8"], sw4["10"], u6["30"])
-connect(in7, j3["10"], j4["A39"], sw4["9"], u6["31"])
+connect(in0, j13["1"], j2["1"], j3["1"], j4["A32"], sw4["16"])
+connect(in1, j13["4"], j2["2"], j3["2"], j4["A33"], sw4["15"])
+connect(in2, j12["3"], j13["2"], j2["3"], j3["3"], j4["A34"], sw4["14"])
+connect(in3, j14["9"], j2["4"], j3["4"], j4["A35"], sw4["13"])
+connect(in4, j13["7"], j3["7"], j4["A36"], sw4["12"])
+connect(in5, j13["10"], j14["7"], j3["8"], j4["A37"], sw4["11"])
+connect(in6, j13["8"], j3["9"], j4["A38"], sw4["10"])
+connect(in7, j3["10"], j4["A39"], sw4["9"])
 connect(mio33, j4["A4"], j9["18"])
 connect(mio35, j4["A6"], j9["16"])
 connect(mio37, j4["A5"], j9["13"])
@@ -3897,32 +3718,146 @@ connect(mprj_io0, j4["A22"], j9["11"])
 connect(out0, j1["3"], j4["B32"], j6["1"], jp1["1"], u4["6"])
 connect(out1, j1["4"], j4["B29"], j6["2"], jp2["1"], u4["13"])
 connect(out2, j1["5"], j4["B30"], j6["3"], jp3["1"], u4["3"])
-connect(out3, j1["6"], j4["B27"], j6["4"], j12["2"], j13["3"], jp4["1"], u4["10"])
-connect(out4, j4["B28"], j6["7"], j12["1"], j14["8"], jp5["1"], u6["16"])
-connect(out5, j4["B23"], j6["8"], j12["4"], jp6["1"], u6["17"])
-connect(out6, j4["B26"], j6["9"], j14["10"], jp7["1"], u6["18"])
-connect(out7, j4["B21"], j6["10"], j12["8"], j13["9"], jp8["1"], u6["27"])
-connect(project_clk, j4["A28"], j17["3"], r12["1"], r41["2"])
-connect(uio0, j4["B22"], j5["1"], j8["1"], j12["7"], u6["32"])
-connect(uio1, j4["B11"], j5["2"], j8["2"], j12["10"], u6["34"])
-connect(uio2, j4["B9"], j5["3"], j8["3"], j12["9"], u6["35"])
-connect(uio3, j4["B10"], j5["4"], j14["3"], j17["1"], u6["36"])
-connect(uio4, j4["B7"], j5["7"], j14["1"], u6["37"])
-connect(uio5, j4["B8"], j5["8"], j14["4"], u6["38"])
-connect(uio6, j4["B5"], j5["9"], j14["2"], u6["39"])
-connect(uio7, j4["B6"], j5["10"], u6["40"])
-connect(usb_d, j15["A6"], j15["B6"], u6["47"])
-connect(usb_d_2, j15["A7"], j15["B7"], u6["46"])
+connect(out3, j1["6"], j12["2"], j13["3"], j4["B27"], j6["4"], jp4["1"], u4["10"])
+connect(out4, j12["1"], j14["8"], j4["B28"], j6["7"], jp5["1"])
+connect(out5, j12["4"], j4["B23"], j6["8"], jp6["1"])
+connect(out6, j14["10"], j4["B26"], j6["9"], jp7["1"])
+connect(out7, j12["8"], j13["9"], j4["B21"], j6["10"], jp8["1"])
+connect(project_clk, j17["3"], j4["A28"], r12["1"], r41["2"])
+connect(uio0, j12["7"], j4["B22"], j5["1"], j8["1"])
+connect(uio1, j12["10"], j4["B11"], j5["2"], j8["2"])
+connect(uio2, j12["9"], j4["B9"], j5["3"], j8["3"])
+connect(uio3, j14["3"], j17["1"], j4["B10"], j5["4"])
+connect(uio4, j14["1"], j4["B7"], j5["7"])
+connect(uio5, j14["4"], j4["B8"], j5["8"])
+connect(uio6, j14["2"], j4["B5"], j5["9"])
+connect(uio7, j4["B6"], j5["10"])
+connect(usb_d, j15["A6"], j15["B6"])
+connect(usb_d_2, j15["A7"], j15["B7"])
 connect(usrclk2, j4["A27"], j9["5"])
 connect(xclk, j4["A11"], x1["3"])
-connect(crst_out2, u4["4"], u6["9"])
+connect(crst_out2, u4["4"])
 connect(ctrl_sel_rst, j4["A8"], j9["12"], r32["2"], u4["2"])
-connect(project_rst, c2["1"], j4["A31"], j17["2"], r13["2"], u6["7"])
+connect(project_rst, c2["1"], j17["2"], j4["A31"], r13["2"])
 
+c1.place(mm("0.5"), mm("20.6"), rot=90)
+c2.place(mm("20"), mm("19.6"))
+c3.place(mm("-7.8"), mm("-41.2"), rot=90)
+c4.place(mm("-26.48"), mm("27.855"), rot=90)
+c5.place(mm("-25.1"), mm("27.6"), rot=-90)
+c6.place(mm("-28.26"), mm("-32.79"), rot=180)
+c7.place(mm("-23.65"), mm("-45.2"), rot=180)
+c8.place(mm("4.575"), mm("23.4"))
+c9.place(mm("4.875"), mm("24.6"), rot=180)
+c10.place(mm("-27.55"), mm("-44.04"))
+c11.place(mm("-23.35"), mm("-39.1"), rot=180)
+c12.place(mm("-28"), mm("-45.7"))
+c13.place(mm("-22.9"), mm("-37.6"), rot=180)
+c14.place(mm("26.6"), mm("24.3"))
+c15.place(mm("26.95"), mm("25.6"), rot=180)
+c16.place(mm("22.675"), mm("21.24"))
+c17.place(mm("22.675"), mm("19.74"))
+c18.place(mm("25.175"), mm("8"), rot=180)
+c19.place(mm("25.175"), mm("-35"))
+c20.place(mm("25.175"), mm("-21"))
+c21.place(mm("50.5"), mm("-40"), rot=180)
+c22.place(mm("25.175"), mm("2.96"))
+c23.place(mm("25.175"), mm("-37.5"))
+c24.place(mm("25.175"), mm("5.5"))
+c25.place(mm("50.5"), mm("-41.54"), rot=180)
+c26.place(mm("25.175"), mm("11"))
+c27.place(mm("-31.9"), mm("9.1"))
+c28.place(mm("43.7"), mm("-31.3"), rot=180)
+c42.place(mm("43.6"), mm("-36.7"), rot=90)
+c43.place(mm("51.3"), mm("-14.3"), rot=180)
+c56.place(mm("-34.8"), mm("11.1"), rot=-90)
+c57.place(mm("-36.3"), mm("11.4"), rot=90)
+c58.place(mm("-35"), mm("-34.9"), rot=-90)
+c59.place(mm("-36.3"), mm("-34.6"), rot=90)
+c60.place(mm("-35.1"), mm("-12.05"), rot=-90)
+c61.place(mm("-36.35"), mm("-11.7"), rot=90)
+d1.place(mm("57.3"), mm("-36.5"), rot=90)
+d2.place(mm("52.3"), mm("-36.5"), rot=90)
+d3.place(mm("48.2"), mm("-36.5"), rot=90)
+d4.place(mm("49"), mm("-29"))
+f1.place(mm("-24.81"), mm("-32.8025"), rot=180)
+fid1.place(mm("-42"), mm("26"))
+fid2.place(mm("-34.8"), mm("-44"))
+fid3.place(mm("59.5"), mm("-38"))
 g_1.place(mm("6.6"), mm("-9.7"), rot=180, side="bottom")
 g_2.place(mm("37.15"), mm("-14.08"), rot=180, side="bottom")
 g_3.place(mm("37.2"), mm("-18.500375"), rot=180, side="bottom")
 g_4.place(mm("46.55"), mm("25.9"))
+j1.place(mm("51.5"), mm("31.5"), rot=-90)
+j2.place(mm("-24.69"), mm("31.5"), rot=-90)
+j3.place(mm("-22.155"), mm("28.955"), rot=90)
+j4.place(mm("18.42"), mm("-13.4"))
+j5.place(mm("0.705"), mm("28.955"), rot=90)
+j6.place(mm("23.565"), mm("28.955"), rot=90)
+j7.place(mm("18.42"), mm("11.6"), rot=-90)
+j8.place(mm("21.045"), mm("31.5"), rot=-90)
+j9.place(mm("51.5"), mm("-44.5"), rot=-90)
+j12.place(mm("-39"), mm("10.22"))
+j13.place(mm("-39"), mm("-12.64"))
+j14.place(mm("-39"), mm("-35.5"))
+j15.place(mm("-15.25"), mm("-44.5"), rot=180)
+j16.place(mm("0.42"), mm("-13.4"))
+j17.place(mm("-1.8"), mm("31.5"), rot=-90)
+j18.place(mm("36.42"), mm("-13.4"))
+jp1.place(mm("54.9"), mm("2.72"), rot=180)
+jp2.place(mm("54.9"), mm("5.22"), rot=180)
+jp3.place(mm("54.9"), mm("7.72"), rot=180)
+jp4.place(mm("54.9"), mm("10.22"), rot=180)
+jp5.place(mm("54.9"), mm("12.72"), rot=180)
+jp6.place(mm("54.9"), mm("15.22"), rot=180)
+jp7.place(mm("54.9"), mm("17.72"), rot=180)
+jp8.place(mm("54.9"), mm("20.22"), rot=180)
+mt1.place(mm("-39.75"), mm("30.75"), rot=90)
+mt2.place(mm("57.25"), mm("30.75"))
+mt3.place(mm("-39.75"), mm("-42.75"))
+mt4.place(mm("57.25"), mm("-42.75"))
+nt1.place(mm("-32.5"), mm("16.4"), rot=-90)
+r1.place(mm("-28.6"), mm("-7.6"))
+r2.place(mm("-28.6"), mm("-10.142858"))
+r3.place(mm("-28.6"), mm("-12.685715"))
+r4.place(mm("-28.6"), mm("-15.228572"))
+r5.place(mm("-28.6"), mm("-17.771429"))
+r6.place(mm("-28.6"), mm("-20.314286"))
+r7.place(mm("-2"), mm("19.75"), rot=180)
+r8.place(mm("17.6"), mm("21.1"), rot=90)
+r9.place(mm("-36"), mm("-15"))
+r10.place(mm("-28.6"), mm("-22.857143"))
+r11.place(mm("-28.6"), mm("-25.4"))
+r12.place(mm("-2"), mm("21.25"))
+r13.place(mm("18.1"), mm("19.6"))
+r14.place(mm("-41.9"), mm("-15"))
+r15.place(mm("56"), mm("-36.8"), rot=90)
+r16.place(mm("-6.3"), mm("-41.2"), rot=90)
+r17.place(mm("51.05"), mm("-36.8"), rot=90)
+r18.place(mm("46.9"), mm("-36.8"), rot=90)
+r19.place(mm("51.75"), mm("-29"), rot=-90)
+r20.place(mm("-16.6"), mm("-36.7"), rot=-90)
+r21.place(mm("-13.3"), mm("-35.9"), rot=-90)
+r22.place(mm("51.755"), mm("2.68"), rot=180)
+r23.place(mm("51.755"), mm("5.185714"), rot=180)
+r24.place(mm("51.755"), mm("7.691428"), rot=180)
+r25.place(mm("51.755"), mm("10.197142"), rot=180)
+r26.place(mm("51.755"), mm("12.702856"), rot=180)
+r27.place(mm("51.755"), mm("15.20857"), rot=180)
+r28.place(mm("51.755"), mm("17.714284"), rot=180)
+r29.place(mm("51.755"), mm("20.22"), rot=180)
+r30.place(mm("-6.5"), mm("-34.4"))
+r31.place(mm("-6.5"), mm("-30.1"), rot=180)
+r32.place(mm("-6.5"), mm("-28.8"))
+r33.place(mm("-33"), mm("11.2"), rot=-90)
+r41.place(mm("-4.25"), mm("20.4625"), rot=-90)
+r42.place(mm("43.8"), mm("-38.7"))
+r43.place(mm("49.8"), mm("-25"), rot=180)
+r44.place(mm("49.8"), mm("-26.1"), rot=180)
+r45.place(mm("49.8"), mm("-13.1"), rot=180)
+r46.place(mm("47.8"), mm("-12.1"), rot=180)
+r47.place(mm("49.8"), mm("-12.1"), rot=180)
+r48.place(mm("47.8"), mm("-13.1"), rot=180)
 ref_1.place(mm("37.0608"), mm("-3.234218"), rot=180, side="bottom")
 ref_2.place(mm("37.163648"), mm("15.008261"), rot=180, side="bottom")
 ref_3.place(mm("37.2"), mm("-33.6"), rot=180, side="bottom")
@@ -4075,159 +4010,5331 @@ stitch15.place(mm("29.88"), mm("33.7"))
 stitch16.place(mm("34.96"), mm("33.7"))
 stitch17.place(mm("40.04"), mm("33.7"))
 stitch18.place(mm("45.12"), mm("33.7"))
-ttlogo.place(mm("18.5"), mm("-28.92"))
-z2alogo.place(mm("18.5"), mm("-7.491952"))
-kibuzzard_63fe0d11.place(mm("55.5"), mm("-29"))
-c1.place(mm("0.5"), mm("20.6"), rot=90)
-c2.place(mm("20"), mm("19.6"))
-c3.place(mm("-7.8"), mm("-41.2"), rot=90)
-c4.place(mm("-26.48"), mm("27.855"), rot=90)
-c5.place(mm("-25.1"), mm("27.6"), rot=-90)
-c6.place(mm("-28.26"), mm("-32.79"), rot=180)
-c7.place(mm("-23.65"), mm("-45.2"), rot=180)
-c8.place(mm("4.575"), mm("23.4"))
-c9.place(mm("4.875"), mm("24.6"), rot=180)
-c10.place(mm("-27.55"), mm("-44.04"))
-c11.place(mm("-23.35"), mm("-39.1"), rot=180)
-c12.place(mm("-28"), mm("-45.7"))
-c13.place(mm("-22.9"), mm("-37.6"), rot=180)
-c14.place(mm("26.6"), mm("24.3"))
-c15.place(mm("26.95"), mm("25.6"), rot=180)
-c16.place(mm("22.675"), mm("21.24"))
-c17.place(mm("22.675"), mm("19.74"))
-c18.place(mm("25.175"), mm("8"), rot=180)
-c19.place(mm("25.175"), mm("-35"))
-c20.place(mm("25.175"), mm("-21"))
-c21.place(mm("50.5"), mm("-40"), rot=180)
-c22.place(mm("25.175"), mm("2.96"))
-c23.place(mm("25.175"), mm("-37.5"))
-c24.place(mm("25.175"), mm("5.5"))
-c25.place(mm("50.5"), mm("-41.54"), rot=180)
-c26.place(mm("25.175"), mm("11"))
-c27.place(mm("-31.9"), mm("9.1"))
-c28.place(mm("43.7"), mm("-31.3"), rot=180)
-c42.place(mm("43.6"), mm("-36.7"), rot=90)
-c43.place(mm("51.3"), mm("-14.3"), rot=180)
-c56.place(mm("-34.8"), mm("11.1"), rot=-90)
-c57.place(mm("-36.3"), mm("11.4"), rot=90)
-c58.place(mm("-35"), mm("-34.9"), rot=-90)
-c59.place(mm("-36.3"), mm("-34.6"), rot=90)
-c60.place(mm("-35.1"), mm("-12.05"), rot=-90)
-c61.place(mm("-36.35"), mm("-11.7"), rot=90)
-d1.place(mm("57.3"), mm("-36.5"), rot=90)
-d2.place(mm("52.3"), mm("-36.5"), rot=90)
-d3.place(mm("48.2"), mm("-36.5"), rot=90)
-d4.place(mm("49"), mm("-29"))
-f1.place(mm("-24.81"), mm("-32.8025"), rot=180)
-fid1.place(mm("-42"), mm("26"))
-fid2.place(mm("-34.8"), mm("-44"))
-fid3.place(mm("59.5"), mm("-38"))
-j1.place(mm("51.5"), mm("31.5"), rot=-90)
-j2.place(mm("-24.69"), mm("31.5"), rot=-90)
-j3.place(mm("-22.155"), mm("28.955"), rot=90)
-j4.place(mm("18.42"), mm("-13.4"))
-j5.place(mm("0.705"), mm("28.955"), rot=90)
-j6.place(mm("23.565"), mm("28.955"), rot=90)
-j7.place(mm("18.42"), mm("11.6"), rot=-90)
-j8.place(mm("21.045"), mm("31.5"), rot=-90)
-j9.place(mm("51.5"), mm("-44.5"), rot=-90)
-j12.place(mm("-39"), mm("10.22"))
-j13.place(mm("-39"), mm("-12.64"))
-j14.place(mm("-39"), mm("-35.5"))
-j15.place(mm("-15.25"), mm("-44.5"), rot=180)
-j16.place(mm("0.42"), mm("-13.4"))
-j17.place(mm("-1.8"), mm("31.5"), rot=-90)
-j18.place(mm("36.42"), mm("-13.4"))
-jp1.place(mm("54.9"), mm("2.72"), rot=180)
-jp2.place(mm("54.9"), mm("5.22"), rot=180)
-jp3.place(mm("54.9"), mm("7.72"), rot=180)
-jp4.place(mm("54.9"), mm("10.22"), rot=180)
-jp5.place(mm("54.9"), mm("12.72"), rot=180)
-jp6.place(mm("54.9"), mm("15.22"), rot=180)
-jp7.place(mm("54.9"), mm("17.72"), rot=180)
-jp8.place(mm("54.9"), mm("20.22"), rot=180)
-mt1.place(mm("-39.75"), mm("30.75"), rot=90)
-mt2.place(mm("57.25"), mm("30.75"))
-mt3.place(mm("-39.75"), mm("-42.75"))
-mt4.place(mm("57.25"), mm("-42.75"))
-nt1.place(mm("-32.5"), mm("16.4"), rot=-90)
-r1.place(mm("-28.6"), mm("-7.6"))
-r2.place(mm("-28.6"), mm("-10.142858"))
-r3.place(mm("-28.6"), mm("-12.685715"))
-r4.place(mm("-28.6"), mm("-15.228572"))
-r5.place(mm("-28.6"), mm("-17.771429"))
-r6.place(mm("-28.6"), mm("-20.314286"))
-r7.place(mm("-2"), mm("19.75"), rot=180)
-r8.place(mm("17.6"), mm("21.1"), rot=90)
-r9.place(mm("-36"), mm("-15"))
-r10.place(mm("-28.6"), mm("-22.857143"))
-r11.place(mm("-28.6"), mm("-25.4"))
-r12.place(mm("-2"), mm("21.25"))
-r13.place(mm("18.1"), mm("19.6"))
-r14.place(mm("-41.9"), mm("-15"))
-r15.place(mm("56"), mm("-36.8"), rot=90)
-r16.place(mm("-6.3"), mm("-41.2"), rot=90)
-r17.place(mm("51.05"), mm("-36.8"), rot=90)
-r18.place(mm("46.9"), mm("-36.8"), rot=90)
-r19.place(mm("51.75"), mm("-29"), rot=-90)
-r20.place(mm("-16.6"), mm("-36.7"), rot=-90)
-r21.place(mm("-13.3"), mm("-35.9"), rot=-90)
-r22.place(mm("51.755"), mm("2.68"), rot=180)
-r23.place(mm("51.755"), mm("5.185714"), rot=180)
-r24.place(mm("51.755"), mm("7.691428"), rot=180)
-r25.place(mm("51.755"), mm("10.197142"), rot=180)
-r26.place(mm("51.755"), mm("12.702856"), rot=180)
-r27.place(mm("51.755"), mm("15.20857"), rot=180)
-r28.place(mm("51.755"), mm("17.714284"), rot=180)
-r29.place(mm("51.755"), mm("20.22"), rot=180)
-r30.place(mm("-6.5"), mm("-34.4"))
-r31.place(mm("-6.5"), mm("-30.1"), rot=180)
-r32.place(mm("-6.5"), mm("-28.8"))
-r33.place(mm("-33"), mm("11.2"), rot=-90)
-r41.place(mm("-4.25"), mm("20.4625"), rot=-90)
-r42.place(mm("43.8"), mm("-38.7"))
-r43.place(mm("49.8"), mm("-25"), rot=180)
-r44.place(mm("49.8"), mm("-26.1"), rot=180)
-r45.place(mm("49.8"), mm("-13.1"), rot=180)
-r46.place(mm("47.8"), mm("-12.1"), rot=180)
-r47.place(mm("49.8"), mm("-12.1"), rot=180)
-r48.place(mm("47.8"), mm("-13.1"), rot=180)
 sw1.place(mm("-2"), mm("24.5"), rot=180)
 sw2.place(mm("20.5"), mm("24.5"), rot=180)
 sw3.place(mm("-38.6"), mm("-18.4"))
 sw4.place(mm("-21.5"), mm("-16.5"), rot=-90)
 tp1.place(mm("41.8"), mm("-36.5"))
+ttlogo.place(mm("18.5"), mm("-28.92"))
 u1.place(mm("46.55"), mm("11.5"), rot=90)
 u2.place(mm("-28.85"), mm("-38.5"), rot=90)
 u3.place(mm("-23.4"), mm("-42"), rot=-90)
 u4.place(mm("-29.5"), mm("13.5"), rot=90)
 u7.place(mm("48.5"), mm("-19.5"), rot=-90)
 x1.place(mm("43.9"), mm("-33.4"), rot=180)
-c29.place(mm("-21.1"), mm("23.15"), rot=90)
-c30.place(mm("-15.8"), mm("22.35"), rot=-90)
-c31.place(mm("-21.95"), mm("1.1"))
-c32.place(mm("-15.3"), mm("7.575"), rot=-90)
-c33.place(mm("-12.4"), mm("8.1"), rot=90)
-c34.place(mm("-11.45"), mm("10.6"))
-c35.place(mm("-10.9"), mm("15.3"))
-c36.place(mm("-16.1"), mm("20.25"))
-c37.place(mm("-13.8"), mm("7.6"), rot=90)
-c38.place(mm("-23.8"), mm("15.2"), rot=180)
-c39.place(mm("-22.7"), mm("10.4"), rot=180)
-c40.place(mm("-15.85"), mm("19.3"))
-c41.place(mm("-17.7"), mm("7.95"), rot=90)
-j10.place(mm("-41.81"), mm("5.24"), rot=90)
-j11.place(mm("-26.9"), mm("5.38"), rot=90, side="bottom")
-r34.place(mm("-19.6"), mm("5.05"), rot=180)
-r35.place(mm("-31.25"), mm("5.465"))
-r36.place(mm("-36.9"), mm("6.1"), rot=90)
-r37.place(mm("-17.6"), mm("20"), rot=90)
-r38.place(mm("-19.65"), mm("3.45"), rot=180)
-r39.place(mm("-19.6"), mm("6.8"), rot=180)
-r40.place(mm("-31.25"), mm("4.165"))
-u5.place(mm("-25.5"), mm("4.5"))
-u6.place(mm("-17.5"), mm("14"))
-y1.place(mm("-18.5"), mm("22.75"))
+z2alogo.place(mm("18.5"), mm("-7.491952"))
+kibuzzard_63fe0d11.place(mm("55.5"), mm("-29"))
+
+design.parts["C1"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C1"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C1"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C2"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C2"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C2"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C2"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C2"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C3"].field(
+    "DNP",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C3"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C3"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C3"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C4"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C4"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C4"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C4"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C4"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C5"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C5"].field(
+    "DigikeyPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C5"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C5"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C5"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C5"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C6"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C6"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C6"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C6"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C6"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C7"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C7"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C7"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C7"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C7"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C8"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C8"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C8"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C8"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C8"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C9"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C9"].field(
+    "DigikeyPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C9"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C9"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C9"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C9"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C10"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C10"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C10"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C10"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C10"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C11"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C11"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C11"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C12"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C12"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C12"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C12"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C12"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C13"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C13"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C13"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C13"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C13"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C14"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C14"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C14"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C14"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C14"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C15"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C15"].field(
+    "DigikeyPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C15"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C15"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C15"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C15"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C16"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C16"].field(
+    "DigikeyPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C16"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C16"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C16"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C16"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C17"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C17"].field(
+    "DigikeyPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C17"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C17"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C17"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C17"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C18"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C18"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C18"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C18"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C18"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C19"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C19"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C19"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C19"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C19"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C20"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C20"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C20"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C20"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C20"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C21"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C21"].field(
+    "DigikeyPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C21"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C21"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C21"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C21"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C22"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C22"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C22"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C22"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C22"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C23"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C23"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C23"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C23"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C23"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C24"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C24"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C24"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C24"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C24"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C25"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C25"].field(
+    "DigikeyPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C25"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C25"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C25"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C25"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C26"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C26"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C26"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C26"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C26"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C27"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C27"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C27"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C27"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C27"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C28"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C28"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C28"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C28"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C28"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C29"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C29"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C29"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C30"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C30"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C31"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C31"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C31"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C31"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C31"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C32"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C32"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C32"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C33"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C33"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C33"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C34"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C34"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C34"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C35"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C35"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C35"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C36"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C36"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C36"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C37"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C37"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C37"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C38"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C38"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C38"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C39"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C39"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C39"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C40"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C40"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C40"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C41"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C41"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/C41"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C42"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C42"].field(
+    "DigikeyPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C42"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C42"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C42"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C42"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C43"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C43"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C43"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C43"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C56"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C56"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C56"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C56"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C56"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C57"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C57"].field(
+    "DigikeyPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C57"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C57"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C57"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C57"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C58"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C58"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C58"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C58"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C58"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C59"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C59"].field(
+    "DigikeyPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C59"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C59"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C59"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C59"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C60"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C60"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C60"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C60"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C60"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C61"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C61"].field(
+    "DigikeyPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C61"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C61"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C61"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["C61"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["D1"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["D1"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["D1"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["D1"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["D1"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["D2"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["D2"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["D2"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["D2"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["D2"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["D3"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["D3"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["D3"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["D3"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["D3"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["D4"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["D4"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["D4"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["D4"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["D4"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["F1"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["F1"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["F1"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["F1"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["F1"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J3"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J3"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J4"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J4"].field(
+    "DigikeyPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J4"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J5"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J5"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J6"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J6"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J7"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J7"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J7"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J9"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/J11"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/J11"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/J11"].field(
+    "Status",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J12"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J12"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J13"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J13"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J14"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J14"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J15"].field(
+    "MANUFACTURER",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J15"].field(
+    "MAXIMUM_PACKAGE_HEIGHT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J15"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J16"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J16"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J18"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["J18"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["MT1"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["MT1"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["MT1"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["MT2"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["MT2"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["MT2"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["MT3"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["MT3"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["MT3"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["MT4"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["MT4"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["MT4"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R1"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R1"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R1"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R1"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R1"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R2"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R2"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R2"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R2"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R2"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R3"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R3"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R3"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R3"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R3"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R4"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R4"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R4"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R4"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R4"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R5"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R5"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R5"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R5"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R5"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R6"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R6"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R6"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R6"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R6"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R7"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R7"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R7"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R8"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R8"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R8"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R8"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R8"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R9"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R9"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R9"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R9"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R9"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R10"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R10"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R10"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R10"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R10"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R11"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R11"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R11"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R11"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R11"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R12"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R12"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R12"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R13"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R13"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R13"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R13"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R14"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R14"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R14"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R14"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R15"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R15"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R15"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R15"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R16"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R16"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R16"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R17"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R17"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R17"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R17"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R18"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R18"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R18"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R18"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R19"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R19"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R19"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R19"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R20"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R20"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R20"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R20"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R20"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R21"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R21"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R21"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R21"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R21"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R22"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R22"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R22"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R22"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R23"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R23"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R23"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R23"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R24"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R24"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R24"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R24"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R25"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R25"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R25"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R25"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R26"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R26"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R26"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R26"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R27"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R27"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R27"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R27"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R28"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R28"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R28"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R28"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R29"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R29"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R29"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R29"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R30"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R30"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R30"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R31"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R31"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R31"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R32"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R32"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R32"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R33"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R33"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R33"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R33"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R33"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R34"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R34"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R34"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R34"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R34"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R35"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R35"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R35"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R35"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R35"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R36"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R36"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R36"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R37"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R37"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R37"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R37"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R38"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R38"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R38"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R38"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R38"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R39"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R39"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R39"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R39"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R39"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R40"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R40"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R40"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R40"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/R40"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R41"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R41"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R41"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R42"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R42"].field(
+    "JLC",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R42"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R42"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R42"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R43"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R43"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R43"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R43"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R44"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R44"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R44"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R44"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R45"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R45"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R45"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R45"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R46"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R46"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R46"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R46"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R47"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R47"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R47"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R47"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R48"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R48"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R48"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["R48"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["SW1"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["SW1"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["SW1"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["SW2"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["SW2"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["SW2"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["SW3"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["SW3"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["SW3"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["SW4"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=180,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["SW4"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=180,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["SW4"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=180,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["U1"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["U1"].field(
+    "DigikeyPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["U1"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["U1"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["U2"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["U2"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["U2"].field(
+    "MPN_ALT",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["U2"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["U3"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["U3"].field(
+    "DigikeyPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["U3"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["U4"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/U5"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/U5"].field(
+    "DigikeyPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/U5"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/U6"].field(
+    "DigikeyPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/U6"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["U7"].field(
+    "Characteristics",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=180,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["U7"].field(
+    "DigikeyPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=180,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["U7"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=180,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["X1"].field(
+    "DigikeyPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["X1"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["X1"].field(
+    "Part number",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/Y1"].field(
+    "DigikeyPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
+design.parts["rp2040/Y1"].field(
+    "MPN",
+    dx=mm("0"),
+    dy=mm("0"),
+    rot=0,
+    layer="fab",
+    visible=False,
+    size=mm("1"),
+    thickness=mm("0.15"),
+)
 
 design.zone(
     gnd,
@@ -5686,6 +10793,89 @@ design.rect(
     layer="B.SilkS",
     width=mm("0.15"),
     fill=True,
+)
+design.arc(
+    "Edge.Cuts/arc/1",
+    (mm("-43.5"), mm("-43.5")),
+    (mm("-42.62132"), mm("-45.62132")),
+    (mm("-40.5"), mm("-46.5")),
+    layer="Edge.Cuts",
+    width=mm("0.1"),
+)
+design.arc(
+    "Edge.Cuts/arc/2",
+    (mm("-40.5"), mm("34.5")),
+    (mm("-42.62132"), mm("33.62132")),
+    (mm("-43.5"), mm("31.5")),
+    layer="Edge.Cuts",
+    width=mm("0.1"),
+)
+design.arc(
+    "Edge.Cuts/arc/3",
+    (mm("-20.27"), mm("-46.5")),
+    (mm("-19.987157"), mm("-46.382843")),
+    (mm("-19.87"), mm("-46.1")),
+    layer="Edge.Cuts",
+    width=mm("0.1"),
+)
+design.arc(
+    "Edge.Cuts/arc/4",
+    (mm("-10.63"), mm("-46.1")),
+    (mm("-10.512843"), mm("-46.382843")),
+    (mm("-10.23"), mm("-46.5")),
+    layer="Edge.Cuts",
+    width=mm("0.1"),
+)
+design.arc(
+    "Edge.Cuts/arc/5",
+    (mm("58"), mm("-46.5")),
+    (mm("60.12132"), mm("-45.62132")),
+    (mm("61"), mm("-43.5")),
+    layer="Edge.Cuts",
+    width=mm("0.1"),
+)
+design.arc(
+    "Edge.Cuts/arc/6",
+    (mm("61"), mm("31.5")),
+    (mm("60.12132"), mm("33.62132")),
+    (mm("58"), mm("34.5")),
+    layer="Edge.Cuts",
+    width=mm("0.1"),
+)
+design.line(
+    "Edge.Cuts/line/1",
+    (mm("-43.5"), mm("31.5")),
+    (mm("-43.5"), mm("-43.5")),
+    layer="Edge.Cuts",
+    width=mm("0.1"),
+)
+design.line(
+    "Edge.Cuts/line/2",
+    (mm("-20.27"), mm("-46.5")),
+    (mm("-40.5"), mm("-46.5")),
+    layer="Edge.Cuts",
+    width=mm("0.1"),
+)
+design.line(
+    "Edge.Cuts/line/3",
+    (mm("-10.23"), mm("-46.5")),
+    (mm("58"), mm("-46.5")),
+    layer="Edge.Cuts",
+    width=mm("0.1"),
+)
+design.line(
+    "Edge.Cuts/line/4",
+    (mm("58"), mm("34.5")),
+    (mm("-40.5"), mm("34.5")),
+    layer="Edge.Cuts",
+    width=mm("0.1"),
+)
+design.line(
+    "Edge.Cuts/line/5",
+    (mm("61"), mm("-43.5")),
+    (mm("61"), mm("31.5")),
+    layer="Edge.Cuts",
+    width=mm("0.1"),
 )
 design.arc(
     "F.SilkS/arc/1",
@@ -9209,4 +14399,12 @@ copper.apply(
         "~{ctrl_sel_rst}": ctrl_sel_rst,
         "~{project_rst}": project_rst,
     },
+)
+
+design.load_schematic("schematic.toml")
+
+design.kicad_project(
+    "native/project.kicad_pro",
+    sha256="3d479ef334a9f1b35a487e5b300a995826c7bf180ccc01380b6bb9ca88c8a7a9",
+    preserve_minimums=True,
 )

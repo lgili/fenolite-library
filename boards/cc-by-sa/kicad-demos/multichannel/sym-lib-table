@@ -1,3 +1,4 @@
 (sym_lib_table
-	(lib (name multichannel_mixer) (type KiCad) (uri ${KIPRJMOD}/lib/multichannel_mixer.kicad_sym) (options "") (descr ""))
+	(version 7)
+	(lib (name "multichannel_mixer") (type "KiCad") (uri "${KIPRJMOD}/lib/multichannel_mixer.kicad_sym") (options "") (descr ""))
 )

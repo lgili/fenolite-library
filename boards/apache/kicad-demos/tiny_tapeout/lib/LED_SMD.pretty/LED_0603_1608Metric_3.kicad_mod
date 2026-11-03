@@ -1,7 +1,7 @@
 (footprint "LED_0603_1608Metric_3"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 	(tags "LED")
 	(property "Reference" "REF**"
@@ -172,6 +172,8 @@
 		(size 0.875 0.95)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "K")
+		(pintype "passive")
 		(uuid "d1ba8f13-5a62-4ba1-8f19-e61c67ec7b36")
 	)
 	(pad "2" smd roundrect
@@ -179,6 +181,8 @@
 		(size 0.875 0.95)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "A")
+		(pintype "passive")
 		(uuid "d892d35a-3e0d-48e1-b415-ffdd8d66e91e")
 	)
 	(embedded_fonts no)

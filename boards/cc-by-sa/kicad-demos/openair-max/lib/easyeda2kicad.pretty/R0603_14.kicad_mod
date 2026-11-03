@@ -1,9 +1,9 @@
 (footprint "R0603_14"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(property "Reference" "REF**"
-		(at -0.52 -1.22 -180)
+		(at -0.52 -1.22 180)
 		(layer "F.SilkS")
 		(uuid "3b5567ae-ce6b-4f44-9442-144ebe8b9ade")
 		(effects
@@ -14,7 +14,7 @@
 		)
 	)
 	(property "Value" "R0603_14"
-		(at 0 4 -180)
+		(at 0 4 180)
 		(layer "F.Fab")
 		(uuid "1fc44d3b-c537-4833-a559-38eceafccb42")
 		(effects
@@ -25,7 +25,7 @@
 		)
 	)
 	(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_5-23KR-5231-1_C185317.html"
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "07d5bb87-d9d0-4dc0-a82f-d209e205c4ae")
@@ -37,7 +37,7 @@
 		)
 	)
 	(property "Description" ""
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "75e03c8d-aa8b-4cfe-9855-732b314ba291")
@@ -48,7 +48,14 @@
 			)
 		)
 	)
+	(units
+		(unit
+			(name "A")
+			(pins "1" "2")
+		)
+	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start 1.39 -0.66)
 		(end 0.43 -0.66)
@@ -121,7 +128,7 @@
 		(uuid "ca0785b9-25e5-48a0-82ec-39ababcb260a")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(uuid "7b5718de-d97a-41d4-b3da-195bf89e9e41")
 		(effects
@@ -135,16 +142,20 @@
 		(at -0.75 0)
 		(size 0.81 0.86)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "1_1")
+		(pintype "unspecified")
 		(uuid "120de920-d4e0-41a0-8086-9ed4f7533975")
 	)
 	(pad "2" smd rect
 		(at 0.75 0)
 		(size 0.81 0.86)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "2_2")
+		(pintype "unspecified")
 		(uuid "4e0e28d3-9445-4a24-b6ad-8f7842cde650")
 	)
 	(embedded_fonts no)
-	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/R0603.wrl"
+	(model "${KIPRJMOD}/../../libraries/easyeda2kicad/easyeda2kicad.3dshapes/R0603.wrl"
 		(offset
 			(xyz 0 -0 -0)
 		)

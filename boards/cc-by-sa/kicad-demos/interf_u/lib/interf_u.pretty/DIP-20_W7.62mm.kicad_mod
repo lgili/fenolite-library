@@ -1,7 +1,7 @@
 (footprint "DIP-20_W7.62mm"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "20-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
 	(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
 	(property "Reference" "REF**"
@@ -221,6 +221,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "A->B")
+		(pintype "input")
 		(uuid "f00951a1-19ff-4312-870e-37c2da0de59c")
 	)
 	(pad "2" thru_hole oval
@@ -229,6 +231,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "A0")
+		(pintype "tri_state")
 		(uuid "bde724b6-6b2c-4502-89cd-f6ce820ab33d")
 	)
 	(pad "3" thru_hole oval
@@ -237,6 +241,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "A1")
+		(pintype "tri_state")
 		(uuid "fa3da641-7180-45ab-ba2f-271afa83a523")
 	)
 	(pad "4" thru_hole oval
@@ -245,6 +251,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "A2")
+		(pintype "tri_state")
 		(uuid "2cb54973-53fa-4425-97eb-6eb240bb23ee")
 	)
 	(pad "5" thru_hole oval
@@ -253,6 +261,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "A3")
+		(pintype "tri_state")
 		(uuid "538cd71a-3c34-4c9e-92b8-be11bfd815ff")
 	)
 	(pad "6" thru_hole oval
@@ -261,6 +271,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "A4")
+		(pintype "tri_state")
 		(uuid "4499d987-9724-4ffe-b654-3e7ae7a711f1")
 	)
 	(pad "7" thru_hole oval
@@ -269,6 +281,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "A5")
+		(pintype "tri_state")
 		(uuid "35d199d4-e22d-43be-876e-7998d332a326")
 	)
 	(pad "8" thru_hole oval
@@ -277,6 +291,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "A6")
+		(pintype "tri_state")
 		(uuid "c363488a-8b4e-4ab9-ae61-70e653ff79eb")
 	)
 	(pad "9" thru_hole oval
@@ -285,6 +301,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "A7")
+		(pintype "tri_state")
 		(uuid "396a9614-33bd-4f65-8a6e-06ecdb917985")
 	)
 	(pad "10" thru_hole oval
@@ -293,6 +311,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "d03c7571-f3ea-4c7d-a0f5-e57d48840991")
 	)
 	(pad "11" thru_hole oval
@@ -301,6 +321,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "B7")
+		(pintype "tri_state")
 		(uuid "6c1f0c5e-0ab1-4840-9035-92ed0427477b")
 	)
 	(pad "12" thru_hole oval
@@ -309,6 +331,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "B6")
+		(pintype "tri_state")
 		(uuid "7957de81-017f-4588-81a8-078c36cbb0f0")
 	)
 	(pad "13" thru_hole oval
@@ -317,6 +341,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "B5")
+		(pintype "tri_state")
 		(uuid "8c0e705a-b069-497e-8aec-1432a8cfabc4")
 	)
 	(pad "14" thru_hole oval
@@ -325,6 +351,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "B4")
+		(pintype "tri_state")
 		(uuid "fea07f1e-e5cd-40fa-8f00-2d1daa518d99")
 	)
 	(pad "15" thru_hole oval
@@ -333,6 +361,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "B3")
+		(pintype "tri_state")
 		(uuid "e05e3f07-839f-452c-a148-f2335c5fc8de")
 	)
 	(pad "16" thru_hole oval
@@ -341,6 +371,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "B2")
+		(pintype "tri_state")
 		(uuid "26775ee7-9c7e-4b6d-a7e7-fa3da0ab0df4")
 	)
 	(pad "17" thru_hole oval
@@ -349,6 +381,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "B1")
+		(pintype "tri_state")
 		(uuid "1516b9b9-fa58-4dec-98d5-a8d510cec2e0")
 	)
 	(pad "18" thru_hole oval
@@ -357,6 +391,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "B0")
+		(pintype "tri_state")
 		(uuid "32a39974-a839-465f-92c7-f30ce66e6955")
 	)
 	(pad "19" thru_hole oval
@@ -365,6 +401,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "CE")
+		(pintype "input")
 		(uuid "7eb4feec-74b3-436e-9c2f-7356e2f0b37e")
 	)
 	(pad "20" thru_hole oval
@@ -373,6 +411,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "VCC")
+		(pintype "power_in")
 		(uuid "2bdd4d7e-4701-495d-a34d-92ecdd3f20c0")
 	)
 	(embedded_fonts no)

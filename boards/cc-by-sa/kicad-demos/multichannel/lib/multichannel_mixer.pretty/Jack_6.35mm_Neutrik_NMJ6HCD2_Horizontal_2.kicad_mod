@@ -1,7 +1,7 @@
 (footprint "Jack_6.35mm_Neutrik_NMJ6HCD2_Horizontal_2"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "M Series, 6.35mm (1/4in) stereo jack, switched, with chrome ferrule and straight PCB pins, https://www.neutrik.com/en/product/nmj6hcd2")
 	(tags "neutrik jack m")
 	(property "Reference" "REF**"
@@ -390,6 +390,7 @@
 		(drill 1.4)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pintype "passive")
 		(uuid "84c52a61-c9e3-48af-9c3f-120e5e01a4a6")
 	)
 	(pad "RN" thru_hole circle
@@ -406,6 +407,7 @@
 		(drill 1.4)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pintype "passive")
 		(uuid "a45df893-01c3-48f8-93c8-4e1c8aa6553c")
 	)
 	(pad "SN" thru_hole circle
@@ -422,6 +424,7 @@
 		(drill 1.4)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pintype "passive")
 		(uuid "0c688440-adf1-471f-a645-03c3d81b6698")
 	)
 	(pad "TN" thru_hole circle

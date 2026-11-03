@@ -1,7 +1,7 @@
 (footprint "HDR-TH_4P-P2.54-V-F_2"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(property "Reference" "REF**"
 		(at 3.86 -2.3 0)
 		(layer "F.SilkS")
@@ -48,7 +48,14 @@
 			)
 		)
 	)
+	(units
+		(unit
+			(name "A")
+			(pins "1" "2" "3" "4")
+		)
+	)
 	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start -5.29 -1.27)
 		(end -5.29 1.27)
@@ -127,6 +134,8 @@
 		(drill 1.100023)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "1_1")
+		(pintype "unspecified")
 		(uuid "d813f7dc-f622-4fc6-a3e9-f5d0ce46e78d")
 	)
 	(pad "2" thru_hole circle
@@ -135,6 +144,8 @@
 		(drill 1.100023)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "2_2")
+		(pintype "unspecified")
 		(uuid "d521b3e1-7830-4588-b9d3-e405277a4d2b")
 	)
 	(pad "3" thru_hole circle
@@ -143,6 +154,8 @@
 		(drill 1.100023)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "3_3")
+		(pintype "unspecified")
 		(uuid "ab427920-b3e7-4a32-8ba8-383c13b1bccd")
 	)
 	(pad "4" thru_hole circle
@@ -151,10 +164,12 @@
 		(drill 1.100023)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "4_4")
+		(pintype "unspecified")
 		(uuid "8b1ba4d0-865e-4628-ab23-214b8c32dc13")
 	)
 	(embedded_fonts no)
-	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/HDR-TH_4P-P2.54-V-F.wrl"
+	(model "${KIPRJMOD}/../../libraries/easyeda2kicad/easyeda2kicad.3dshapes/HDR-TH_4P-P2.54-V-F.wrl"
 		(offset
 			(xyz 0 -0 0)
 		)

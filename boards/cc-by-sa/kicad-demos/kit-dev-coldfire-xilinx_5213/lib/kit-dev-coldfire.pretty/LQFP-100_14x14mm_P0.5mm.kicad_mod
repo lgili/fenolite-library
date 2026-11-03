@@ -1,7 +1,7 @@
 (footprint "LQFP-100_14x14mm_P0.5mm"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "LQFP, 100 Pin (https://www.nxp.com/docs/en/package-information/SOT407-1.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 	(tags "LQFP QFP")
 	(property "Reference" "REF**"
@@ -451,6 +451,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "VCC")
+		(pintype "power_in")
 		(uuid "81dd8806-804a-4504-b4e4-401b67ef6a06")
 	)
 	(pad "2" smd roundrect
@@ -458,6 +460,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "VCC")
+		(pintype "power_in")
 		(uuid "8c653918-d925-485e-94bc-d6c2fce9e0f2")
 	)
 	(pad "3" smd roundrect
@@ -465,6 +469,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "2d3e6b7e-6dd9-4dc1-826f-62b2fd8ca385")
 	)
 	(pad "4" smd roundrect
@@ -472,6 +478,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "~{URTS1}/SYNCB/UTXD2/PUB2")
+		(pintype "bidirectional")
 		(uuid "6c9bfb7c-9b09-4bcb-b4c9-d35d7a1d7671")
 	)
 	(pad "5" smd roundrect
@@ -479,6 +487,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "TEST")
+		(pintype "input")
 		(uuid "2d1462cb-223c-48cd-8961-14919170b108")
 	)
 	(pad "6" smd roundrect
@@ -486,6 +496,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "~{UCTS0}/CANRX/PUA3")
+		(pintype "bidirectional")
 		(uuid "056fc41c-b2b2-4fae-a3ed-de7679074c01")
 	)
 	(pad "7" smd roundrect
@@ -493,6 +505,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "URXD0/PUA1")
+		(pintype "bidirectional")
 		(uuid "ce2d8173-be91-4e21-b85e-41088e642629")
 	)
 	(pad "8" smd roundrect
@@ -500,6 +514,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "UTXD0/PUA0")
+		(pintype "bidirectional")
 		(uuid "37c2422d-1a7a-41cd-b546-ed87128a3c2c")
 	)
 	(pad "9" smd roundrect
@@ -507,6 +523,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "~{URTS0}/CANTX/PUA2")
+		(pintype "bidirectional")
 		(uuid "33f1c5e1-95a7-4f4a-9f51-0e040e7a358c")
 	)
 	(pad "10" smd roundrect
@@ -514,6 +532,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "SCL/CANTX/PAS0/UTXD2")
+		(pintype "bidirectional")
 		(uuid "c02647c3-56ea-4fdf-b510-20384cd24d7e")
 	)
 	(pad "11" smd roundrect
@@ -521,6 +541,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "SDA/CANRX/PAS1/URXD2")
+		(pintype "bidirectional")
 		(uuid "129bec93-19c3-419f-856e-052ab7ed8e0a")
 	)
 	(pad "12" smd roundrect
@@ -528,6 +550,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "QSPI_CS3/SYNCA/SYNCB/PQS6")
+		(pintype "bidirectional")
 		(uuid "23f638ef-fc06-438d-85b7-b666aa38ebc1")
 	)
 	(pad "13" smd roundrect
@@ -535,6 +559,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "QSPI_CS2/PQS5")
+		(pintype "bidirectional")
 		(uuid "f10e07a8-91fd-4b54-8deb-9feddfdd5817")
 	)
 	(pad "14" smd roundrect
@@ -542,6 +568,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "VCC")
+		(pintype "power_in")
 		(uuid "1165d98d-723f-4a6e-b58b-7f4e373f3b74")
 	)
 	(pad "15" smd roundrect
@@ -549,6 +577,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "a0e33da0-ce45-42c4-8fe7-809b04702856")
 	)
 	(pad "16" smd roundrect
@@ -556,6 +586,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "QSPI_DIN/EZPD/CANRX/RXD1/PQS1")
+		(pintype "bidirectional")
 		(uuid "cda3b5be-2761-4853-a425-c60dbc36f4f9")
 	)
 	(pad "17" smd roundrect
@@ -563,6 +595,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "QSPI_DOUT/EZPQ/CANTX/RXD0/PQS0")
+		(pintype "bidirectional")
 		(uuid "39985c70-d24a-4559-9c0a-e75f163da7d4")
 	)
 	(pad "18" smd roundrect
@@ -570,6 +604,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "QSPI_CLK/EZPCK/SCL/RTS1/PQS2")
+		(pintype "bidirectional")
 		(uuid "d5fd33ef-b3f2-43bf-9b18-a5afc9e83fea")
 	)
 	(pad "19" smd roundrect
@@ -577,6 +613,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "QSPI_CS1/PQS4")
+		(pintype "bidirectional")
 		(uuid "b571acc9-7e56-43c9-bc69-3359e1438b48")
 	)
 	(pad "20" smd roundrect
@@ -584,6 +622,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "QSPI_CS0/SDA/CTS1/PQS3")
+		(pintype "bidirectional")
 		(uuid "fd314c66-ee5a-45c0-bcfb-6c785ea4b0c1")
 	)
 	(pad "21" smd roundrect
@@ -591,6 +631,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "RCON/EZPCS")
+		(pintype "input")
 		(uuid "7fed098f-71f6-4b21-9da2-55d122c468df")
 	)
 	(pad "22" smd roundrect
@@ -598,6 +640,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "VCC")
+		(pintype "power_in")
 		(uuid "64cc63af-0c0e-40a5-a1c7-6cc8f47c286b")
 	)
 	(pad "23" smd roundrect
@@ -605,6 +649,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "VCC")
+		(pintype "power_in")
 		(uuid "dec3ec5d-d594-4ed1-8128-7e767528f5ca")
 	)
 	(pad "24" smd roundrect
@@ -612,6 +658,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "28c7f68b-fc08-44c8-9eb1-b3db7a1dc55d")
 	)
 	(pad "25" smd roundrect
@@ -619,6 +667,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "5cefa0f7-34c8-43b1-99f8-23d8328ad306")
 	)
 	(pad "26" smd roundrect
@@ -626,6 +676,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "JTAG_EN")
+		(pintype "input")
 		(uuid "f3d6d5d2-fa77-40e1-9527-e94bfbd3a49b")
 	)
 	(pad "27" smd roundrect
@@ -633,6 +685,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "~{UCTS2}/PUC3")
+		(pintype "bidirectional")
 		(uuid "045d3b3b-f941-48f3-b46f-2bd98a2d7351")
 	)
 	(pad "28" smd roundrect
@@ -640,6 +694,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "URXD2/PUC1")
+		(pintype "bidirectional")
 		(uuid "0ce35988-784c-4a60-b8cf-dea52d674d83")
 	)
 	(pad "29" smd roundrect
@@ -647,6 +703,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "UTXD2/PUC0")
+		(pintype "bidirectional")
 		(uuid "8e778747-f43b-4c6a-99db-2096c8d79543")
 	)
 	(pad "30" smd roundrect
@@ -654,6 +712,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "~{URTS2}/PUC2")
+		(pintype "bidirectional")
 		(uuid "19cedae7-63be-4492-9beb-1530be9833b9")
 	)
 	(pad "31" smd roundrect
@@ -661,6 +721,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "DTIN2/DTOUT2/PWM4/PTC2")
+		(pintype "bidirectional")
 		(uuid "887b94c6-0311-44bb-84c2-bbe8249682ba")
 	)
 	(pad "32" smd roundrect
@@ -668,6 +730,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "DTIN3/DTOUT3/PWM6/PTC3")
+		(pintype "bidirectional")
 		(uuid "f9291073-4295-4614-9161-d707271d900c")
 	)
 	(pad "33" smd roundrect
@@ -675,6 +739,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "PWM3/PTD1")
+		(pintype "bidirectional")
 		(uuid "f7d95601-80ca-4216-b079-8a43cf6ac7cc")
 	)
 	(pad "34" smd roundrect
@@ -682,6 +748,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "VCC")
+		(pintype "power_in")
 		(uuid "0d75ccc2-a443-4015-acda-361b911cd39e")
 	)
 	(pad "35" smd roundrect
@@ -689,6 +757,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "63c05d46-b43e-42f8-b40f-838a6cb87992")
 	)
 	(pad "36" smd roundrect
@@ -696,6 +766,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "DTIN0/DTOUT0/PWM0/PTC0")
+		(pintype "bidirectional")
 		(uuid "43e5922b-d202-432b-9577-670500d72d66")
 	)
 	(pad "37" smd roundrect
@@ -703,6 +775,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "DTIN1/DTOUT1/PWM2/PTC1")
+		(pintype "bidirectional")
 		(uuid "50052f9a-41d7-47f9-a5b5-c2008ae4db61")
 	)
 	(pad "38" smd roundrect
@@ -710,6 +784,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "PWM1/PTD0")
+		(pintype "bidirectional")
 		(uuid "28e62080-0d59-4d85-8676-23cce7c02afc")
 	)
 	(pad "39" smd roundrect
@@ -717,6 +793,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "CLKMOD1")
+		(pintype "input")
 		(uuid "fc576735-7349-4dfa-9529-e25d7a86aa5b")
 	)
 	(pad "40" smd roundrect
@@ -724,6 +802,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "CLKMOD0")
+		(pintype "input")
 		(uuid "7271d350-f538-423a-b4a3-310e20f1ee41")
 	)
 	(pad "41" smd roundrect
@@ -731,6 +811,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "VCC")
+		(pintype "power_in")
 		(uuid "6e697b95-b090-4d08-aa26-89379c8f986d")
 	)
 	(pad "42" smd roundrect
@@ -738,6 +820,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "9e84e96d-30b0-4b6f-9a93-73d74cb1d93a")
 	)
 	(pad "43" smd roundrect
@@ -745,6 +829,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "AN0/PAN0")
+		(pintype "bidirectional")
 		(uuid "28b572c5-6462-446a-bf59-4a01f7c420f0")
 	)
 	(pad "44" smd roundrect
@@ -752,6 +838,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "AN1/PAN1")
+		(pintype "bidirectional")
 		(uuid "93fffd95-9d4a-4be8-88a9-8a1bbe8aa771")
 	)
 	(pad "45" smd roundrect
@@ -759,6 +847,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "AN2/PAN2")
+		(pintype "bidirectional")
 		(uuid "c61207f7-cc69-4ea0-b1ab-85d9f48f75d7")
 	)
 	(pad "46" smd roundrect
@@ -766,6 +856,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "AN3/PAN3")
+		(pintype "bidirectional")
 		(uuid "b1a73c1a-0be0-4070-86e0-870650fec963")
 	)
 	(pad "47" smd roundrect
@@ -773,6 +865,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "VSSA")
+		(pintype "input")
 		(uuid "384158ee-7beb-4710-947f-4c557c3e8973")
 	)
 	(pad "48" smd roundrect
@@ -780,6 +874,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "VRL")
+		(pintype "input")
 		(uuid "3d26fde8-3283-4461-b982-b7b4c2a96cc0")
 	)
 	(pad "49" smd roundrect
@@ -787,6 +883,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "VRH")
+		(pintype "input")
 		(uuid "a1f9d49d-9d5e-4d6e-8d47-4c0f713713bf")
 	)
 	(pad "50" smd roundrect
@@ -794,6 +892,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "VCCA")
+		(pintype "input")
 		(uuid "e7a72d4b-2ccb-42fc-b447-b1d81ca5b088")
 	)
 	(pad "51" smd roundrect
@@ -801,6 +901,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "AN7/PAN7")
+		(pintype "bidirectional")
 		(uuid "372d0ff3-a179-41e7-9bac-d2d5161bd788")
 	)
 	(pad "52" smd roundrect
@@ -808,6 +910,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "AN6/PAN6")
+		(pintype "bidirectional")
 		(uuid "b97c83b5-3bab-422c-9d0b-c3ac00c51f87")
 	)
 	(pad "53" smd roundrect
@@ -815,6 +919,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "AN5/PAN5")
+		(pintype "bidirectional")
 		(uuid "553478ee-a21a-49e7-83fa-b026f6509c8b")
 	)
 	(pad "54" smd roundrect
@@ -822,6 +928,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "AN4/PAN4")
+		(pintype "bidirectional")
 		(uuid "21db823b-ce30-4fc4-86d7-26dfe127aca9")
 	)
 	(pad "55" smd roundrect
@@ -829,6 +937,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "VSTBY")
+		(pintype "power_in")
 		(uuid "0ccbde22-189a-407d-a699-089e3d9f9ea7")
 	)
 	(pad "56" smd roundrect
@@ -836,6 +946,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "26cf043c-4902-4d63-8627-8aa7bcb3ba7a")
 	)
 	(pad "57" smd roundrect
@@ -843,6 +955,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "VCC")
+		(pintype "power_in")
 		(uuid "c01de748-c7e4-436b-b037-27ccef1faa0d")
 	)
 	(pad "58" smd roundrect
@@ -850,6 +964,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "GPT0/PWM1/PTA0")
+		(pintype "bidirectional")
 		(uuid "aa989314-d2f5-48f4-9fae-4cce34b6f75d")
 	)
 	(pad "59" smd roundrect
@@ -857,6 +973,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "GPT1/PWM3/PTA1")
+		(pintype "bidirectional")
 		(uuid "b3cbe871-021b-4998-897c-f69e894afcbb")
 	)
 	(pad "60" smd roundrect
@@ -864,6 +982,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "PWM5/PTD2")
+		(pintype "bidirectional")
 		(uuid "5ebaaf8b-1467-4019-9c49-69acb02c6ce3")
 	)
 	(pad "61" smd roundrect
@@ -871,6 +991,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "GPT2PWM5//PTA2")
+		(pintype "bidirectional")
 		(uuid "a09c3c9e-8aa0-463a-ab6c-97fcdcf9b67d")
 	)
 	(pad "62" smd roundrect
@@ -878,6 +1000,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "GPT3/PWM7/PTA3")
+		(pintype "bidirectional")
 		(uuid "7702764e-7016-41f3-a763-4ac47ede3d60")
 	)
 	(pad "63" smd roundrect
@@ -885,6 +1009,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "PWM7/PTD3")
+		(pintype "bidirectional")
 		(uuid "52f27d67-0a48-4d28-b1d5-c261cfd702c1")
 	)
 	(pad "64" smd roundrect
@@ -892,6 +1018,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "TCLK/PSTCLK/CLKOUT")
+		(pintype "input")
 		(uuid "af919e3a-a411-4cc4-9fd3-75ae552b618b")
 	)
 	(pad "65" smd roundrect
@@ -899,6 +1027,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "PST0/PDD0")
+		(pintype "bidirectional")
 		(uuid "4644bcfc-6c21-4b4a-8f68-96830484b300")
 	)
 	(pad "66" smd roundrect
@@ -906,6 +1036,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "PST1/PDD1")
+		(pintype "bidirectional")
 		(uuid "b87dc4d7-a000-4748-b76e-52118609b834")
 	)
 	(pad "67" smd roundrect
@@ -913,6 +1045,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "38d0832a-618c-47e9-8e1c-880886814cfa")
 	)
 	(pad "68" smd roundrect
@@ -920,6 +1054,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "VCC")
+		(pintype "power_in")
 		(uuid "b9e2b391-0f87-48c8-9afd-cc5aa4845ffc")
 	)
 	(pad "69" smd roundrect
@@ -927,6 +1063,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "PST2/PDD2")
+		(pintype "bidirectional")
 		(uuid "5d534554-7aad-4fd7-a303-4b896add4a7e")
 	)
 	(pad "70" smd roundrect
@@ -934,6 +1072,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "PST3/PDD3")
+		(pintype "bidirectional")
 		(uuid "03dddae7-2177-4a60-8c95-955d2d7273ca")
 	)
 	(pad "71" smd roundrect
@@ -941,6 +1081,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "GNDPLL")
+		(pintype "passive")
 		(uuid "3e0a73ec-ac01-4d6a-afb2-5afe2a201497")
 	)
 	(pad "72" smd roundrect
@@ -948,6 +1090,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "XTAL")
+		(pintype "output")
 		(uuid "1153f401-cdcd-4bde-a290-dd2aa40d8405")
 	)
 	(pad "73" smd roundrect
@@ -955,6 +1099,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "CLKIN/EXTAL")
+		(pintype "input")
 		(uuid "7efe0829-15f4-4cd3-882a-6c3f146776a9")
 	)
 	(pad "74" smd roundrect
@@ -962,6 +1108,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "VCCPLL")
+		(pintype "passive")
 		(uuid "2170d6c0-0783-494e-9272-20b9e1b945b4")
 	)
 	(pad "75" smd roundrect
@@ -969,6 +1117,8 @@
 		(size 1.6 0.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "6ad2a552-f43d-4516-8b2a-7810a9bc818d")
 	)
 	(pad "76" smd roundrect
@@ -976,6 +1126,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "~{BKPT}/TMS")
+		(pintype "input")
 		(uuid "a96e3ca1-4b92-4b14-a127-fc7ea38058dc")
 	)
 	(pad "77" smd roundrect
@@ -983,6 +1135,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "DDATA0/PDD4")
+		(pintype "bidirectional")
 		(uuid "291317bc-a343-45bf-83f4-82970bbcb66d")
 	)
 	(pad "78" smd roundrect
@@ -990,6 +1144,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "DDATA1/PDD5")
+		(pintype "bidirectional")
 		(uuid "a725c36e-ef1f-4333-af98-3afc0a1369bc")
 	)
 	(pad "79" smd roundrect
@@ -997,6 +1153,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "DSI/TDI")
+		(pintype "input")
 		(uuid "d829ee00-df0d-443f-a225-024a03448885")
 	)
 	(pad "80" smd roundrect
@@ -1004,6 +1162,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "DSO/TDO")
+		(pintype "output")
 		(uuid "13abff2d-324d-4805-96a4-251b5cedb3ec")
 	)
 	(pad "81" smd roundrect
@@ -1011,6 +1171,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "VCC")
+		(pintype "power_in")
 		(uuid "cb0ed111-b821-4201-a591-21d7e27b20c1")
 	)
 	(pad "82" smd roundrect
@@ -1018,6 +1180,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "f1426758-5333-4a69-83e4-f8f74a2334a2")
 	)
 	(pad "83" smd roundrect
@@ -1025,6 +1189,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "DDATA2/PDD6")
+		(pintype "bidirectional")
 		(uuid "c6e43c18-87a8-40b4-8646-9eced16bbc76")
 	)
 	(pad "84" smd roundrect
@@ -1032,6 +1198,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "DDATA3/PDD7")
+		(pintype "bidirectional")
 		(uuid "cbd52146-6b79-4ee0-9be2-866cc3dc5dd6")
 	)
 	(pad "85" smd roundrect
@@ -1039,6 +1207,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "DSCLK/~{TRST}")
+		(pintype "input")
 		(uuid "0f8132fc-571b-424c-9d1f-e534f82cc66c")
 	)
 	(pad "86" smd roundrect
@@ -1046,6 +1216,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "ALLPST")
+		(pintype "output")
 		(uuid "12e364f9-0d4a-433a-8aff-52b441c34858")
 	)
 	(pad "87" smd roundrect
@@ -1053,6 +1225,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "~{IRQ1}/PNQ1/SYNCA/PWM1")
+		(pintype "bidirectional")
 		(uuid "c727888c-2e94-4d86-95fe-1261659cba93")
 	)
 	(pad "88" smd roundrect
@@ -1060,6 +1234,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "~{IRQ2}/PNQ2")
+		(pintype "bidirectional")
 		(uuid "39ca071d-21dc-4c2f-8f52-e66ddac7eac5")
 	)
 	(pad "89" smd roundrect
@@ -1067,6 +1243,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "~{IRQ3}/PNQ3")
+		(pintype "bidirectional")
 		(uuid "4f11e24a-86be-4b6f-86bf-b5b1f9e50c3a")
 	)
 	(pad "90" smd roundrect
@@ -1074,6 +1252,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "~{IRQ4}/PNQ4")
+		(pintype "bidirectional")
 		(uuid "a36b6f2e-a981-4d7b-b0a2-79e4a3b3ff5b")
 	)
 	(pad "91" smd roundrect
@@ -1081,6 +1261,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "~{IRQ5}/PNQ5")
+		(pintype "bidirectional")
 		(uuid "c8118866-2ab0-4fe1-b5ec-0a95f2ac5709")
 	)
 	(pad "92" smd roundrect
@@ -1088,6 +1270,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "9b132731-26fa-4ec7-a2bf-0767823680ab")
 	)
 	(pad "93" smd roundrect
@@ -1095,6 +1279,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "VCC")
+		(pintype "power_in")
 		(uuid "b9660765-5811-4f0b-8d24-38e9c768bca5")
 	)
 	(pad "94" smd roundrect
@@ -1102,6 +1288,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "~{IRQ6}/PNQ6")
+		(pintype "bidirectional")
 		(uuid "2f98c153-9031-40fc-8e30-c65d11bccf87")
 	)
 	(pad "95" smd roundrect
@@ -1109,6 +1297,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "~{IRQ7}/PNQ7")
+		(pintype "bidirectional")
 		(uuid "2628ac93-d504-4dc0-a1c5-5303d509bc02")
 	)
 	(pad "96" smd roundrect
@@ -1116,6 +1306,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "RSTI")
+		(pintype "input")
 		(uuid "57c2fac3-8776-4af6-929b-316e5727d971")
 	)
 	(pad "97" smd roundrect
@@ -1123,6 +1315,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "RSTO")
+		(pintype "output")
 		(uuid "6fe79598-0a72-4ad2-bece-fef520210f4f")
 	)
 	(pad "98" smd roundrect
@@ -1130,6 +1324,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "~{UCTS1}/SYNCA/URXD2/PUB3")
+		(pintype "bidirectional")
 		(uuid "676b4f07-f12a-4be7-8bc1-5941671c9f6d")
 	)
 	(pad "99" smd roundrect
@@ -1137,6 +1333,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "UTXD1/PUB0")
+		(pintype "bidirectional")
 		(uuid "f1ae8d0f-1de4-4b1b-b990-c1cf0e8fb2d4")
 	)
 	(pad "100" smd roundrect
@@ -1144,6 +1342,8 @@
 		(size 0.3 1.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "URXD1/PUB1")
+		(pintype "bidirectional")
 		(uuid "f3124407-14b8-48ed-b885-968cbee00e8b")
 	)
 	(embedded_fonts no)

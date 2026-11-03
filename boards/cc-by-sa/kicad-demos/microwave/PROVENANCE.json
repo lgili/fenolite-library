@@ -3,7 +3,7 @@
     "KiCad project (no individual author is named in the demo's files)"
   ],
   "conversion": {
-    "outputs_tree": null,
+    "outputs_tree": "fenolite-tree-1:edb42ee91c5669cb480fb2a7f9dbe375e0a21627dad87a63a8b0813f222fd1ac",
     "steps": [
       {
         "argv": [
@@ -19,9 +19,12 @@
           "https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/microwave",
           "--revision",
           "97acc80c223d75520c03fc44cab63cd9a3202c42",
+          "--kicad-version",
+          "10",
           "--timestamp",
-          "2026-10-31T00:00:00Z",
-          "--confirm"
+          "2026-11-03T00:00:00Z",
+          "--confirm",
+          "--json"
         ],
         "tool": "fenolite"
       },
@@ -31,17 +34,20 @@
           "out/design.py",
           "--against",
           "upstream/demos/microwave/microwave.kicad_pro",
-          "--provenance",
-          "out/PROVENANCE.json",
-          "--record",
-          "--confirm"
+          "--levels",
+          "1,2,3,4,5,6,7,8,S",
+          "--kicad-version",
+          "10",
+          "--target",
+          "10",
+          "--json"
         ],
         "tool": "fenolite"
       }
     ],
     "tools": [
       {
-        "commit": "628954b730629bfaf6beffc7b6a31a0671150ff1",
+        "commit": "5b0853b718e54f2ce487a2545a3ed44df7bd0f9a",
         "name": "fenolite",
         "version": "0.7.0.dev0"
       }
@@ -51,136 +57,65 @@
   "evidence": "UNVERIFIED",
   "featured": null,
   "fidelity": {
-    "accepted": [
-      {
-        "attribution": "fenolite",
-        "decided": "2026-10-31",
-        "field": "lib_ref",
-        "id": "A001",
-        "kind": "footprint-name",
-        "level": 3,
-        "reason": "The import writes a footprint instance that differs from the first footprint of its name (moved fields, edited pads) as a variant footprint <name>_<n> (import.footprint-variant).",
-        "where": "*"
-      },
-      {
-        "attribution": "fenolite",
-        "decided": "2026-10-31",
-        "field": "name",
-        "id": "A002",
-        "kind": "field-pose",
-        "level": 7,
-        "reason": "The build adds the property fenolite.path (the layout lens key) to every footprint; the original has no such field. Not a difference of the design.",
-        "where": "*:fenolite.path"
-      },
-      {
-        "attribution": "fenolite",
-        "decided": "2026-10-31",
-        "field": "graphic",
-        "id": "A003",
-        "kind": "graphic-missing",
-        "level": 7,
-        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
-        "where": "board:Edge.Cuts:351790000,81280000-351790000,201930000"
-      },
-      {
-        "attribution": "fenolite",
-        "decided": "2026-10-31",
-        "field": "graphic",
-        "id": "A004",
-        "kind": "graphic-missing",
-        "level": 7,
-        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
-        "where": "board:Edge.Cuts:351790000,81280000-351790000,201930000"
-      },
-      {
-        "attribution": "fenolite",
-        "decided": "2026-10-31",
-        "field": "graphic",
-        "id": "A005",
-        "kind": "graphic-missing",
-        "level": 7,
-        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
-        "where": "board:Edge.Cuts:59690000,201930000-351790000,201930000"
-      },
-      {
-        "attribution": "fenolite",
-        "decided": "2026-10-31",
-        "field": "graphic",
-        "id": "A006",
-        "kind": "graphic-missing",
-        "level": 7,
-        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
-        "where": "board:Edge.Cuts:59690000,201930000-351790000,201930000"
-      },
-      {
-        "attribution": "fenolite",
-        "decided": "2026-10-31",
-        "field": "graphic",
-        "id": "A007",
-        "kind": "graphic-missing",
-        "level": 7,
-        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
-        "where": "board:Edge.Cuts:59690000,81280000-351790000,81280000"
-      },
-      {
-        "attribution": "fenolite",
-        "decided": "2026-10-31",
-        "field": "graphic",
-        "id": "A008",
-        "kind": "graphic-missing",
-        "level": 7,
-        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
-        "where": "board:Edge.Cuts:59690000,81280000-351790000,81280000"
-      },
-      {
-        "attribution": "fenolite",
-        "decided": "2026-10-31",
-        "field": "graphic",
-        "id": "A009",
-        "kind": "graphic-missing",
-        "level": 7,
-        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
-        "where": "board:Edge.Cuts:59690000,81280000-59690000,201930000"
-      },
-      {
-        "attribution": "fenolite",
-        "decided": "2026-10-31",
-        "field": "graphic",
-        "id": "A010",
-        "kind": "graphic-missing",
-        "level": 7,
-        "reason": "An upstream Edge.Cuts segment that the DSL board outline writes with its own stroke width; the board shape is the same.",
-        "where": "board:Edge.Cuts:59690000,81280000-59690000,201930000"
-      },
-      {
-        "attribution": "fenolite",
-        "decided": "2026-10-31",
-        "id": "A011",
-        "kind": "render-pixels",
-        "level": 8,
-        "reason": "Pixels of the upstream Edge.Cuts stroke, wider than the stroke the DSL board outline writes; the board shape is the same (see the level-7 graphic-missing entries).",
-        "where": "Edge.Cuts:59550000,81150000-351950000,202100000"
-      }
-    ],
+    "accepted": [],
     "proof": {
       "against": {
         "microwave.kicad_pcb": "7f17191488b51f8782efc0a3b9ce7b5748a4e771ff0babb34ec0369ffcf43be5",
         "microwave.kicad_pro": "ea9d9b756ae3b51d485c2dcb904f09aaee0190e4b584f038c3094536e7a9334a"
       },
-      "date": "2026-10-31T08:42:53Z",
+      "date": "2026-11-03T13:07:18Z",
       "fenolite": "0.7.0.dev0",
+      "generated_read_files": {
+        "microwave.kicad_pcb": "195eb669a84ddd480bd5dd6b75c26e54d8ce0d93b12a3ae38afa1cae2e997d6c",
+        "microwave.kicad_pro": "909365cb69afc1c82265859921f9d8cd9c46e67552aff88707b60a2e69adac1b"
+      },
       "levels": {
         "1": "equal",
         "2": "equal",
-        "3": "accepted",
+        "3": "equal",
         "4": "equal",
         "5": "skipped",
         "6": "equal",
-        "7": "accepted",
-        "8": "accepted",
+        "7": "equal",
+        "8": "equal",
         "S": "skipped"
       },
-      "script_sha256": "9253b680a203087615f3b418c1036065c42bb257125b047fb275b185eac0b9a5",
+      "native_project_rules": {
+        "a_read_files": {
+          "microwave.kicad_pcb": "7f17191488b51f8782efc0a3b9ce7b5748a4e771ff0babb34ec0369ffcf43be5",
+          "microwave.kicad_pro": "ea9d9b756ae3b51d485c2dcb904f09aaee0190e4b584f038c3094536e7a9334a"
+        },
+        "b_read_files": {
+          "microwave.kicad_pcb": "195eb669a84ddd480bd5dd6b75c26e54d8ce0d93b12a3ae38afa1cae2e997d6c",
+          "microwave.kicad_pro": "909365cb69afc1c82265859921f9d8cd9c46e67552aff88707b60a2e69adac1b"
+        },
+        "generated_major": 9,
+        "judged_count": 13,
+        "judged_keys": [
+          "min_clearance",
+          "min_copper_edge_clearance",
+          "min_through_hole_diameter",
+          "min_track_width",
+          "min_via_diameter",
+          "netclass.Default.clearance",
+          "netclass.Default.track_width",
+          "netclass.Default.via_diameter",
+          "netclass.Default.via_drill",
+          "netclass.Default.diff_pair_width",
+          "netclass.Default.diff_pair_gap",
+          "netclass.Default.diff_pair_via_gap",
+          "netclass.Default.numbered-pad-partition-membership"
+        ],
+        "scope": "five-supported-floors-and-represented-netclass-fields-and-verified-membership",
+        "source_major": 9,
+        "unjudged": "custom DRU rules and unrelated native properties",
+        "unjudged_absent_fields": []
+      },
+      "script_sha256": "4b4faa6b480a229d6a858479602be0a9d41760a358239d3293203db65fbf5516",
+      "skipped": {
+        "5": "no-copper",
+        "S": "no-schematic"
+      },
       "tolerances": {
         "angle_udeg": 0,
         "frame": "absolute",
@@ -193,8 +128,9 @@
   },
   "id": "kicad-demos/microwave",
   "import": {
+    "copy": true,
     "copyright": [],
-    "date": "2026-10-31",
+    "date": "2026-11-03",
     "design": "microwave",
     "equivalence": {
       "equivalent": true,
@@ -238,7 +174,7 @@
   },
   "kind": "board",
   "licence_text_sha256": "17a696cf6cf01b8d795151556dfd51cc121c1b678a33d509d6548658c1008391",
-  "modification_notice": "2026-11-02: corrected licence_text_sha256 to the already-approved normalised digest; conversion payload and historical fidelity records unchanged.",
+  "modification_notice": "2026-11-03: external1.0.2 microwave candidate regenerated from unchanged pinned project inputs on core5b0853b7, explicit target10; source-bound raw import and strict fidelity/replay refreshed. Native notices and unjudged scopes retained. No model asset or official library file copied; historical notices below remain unchanged.",
   "origin": "converted",
   "schema": "fenolite.provenance.v0",
   "spdx": "CC-BY-SA-4.0",
@@ -259,5 +195,5 @@
     "spdx_expression": "CC-BY-SA-4.0",
     "url": "https://gitlab.com/kicad/code/kicad"
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }

@@ -1,7 +1,7 @@
 (footprint "PinHeader_1x06_P2.54mm_Vertical"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "Through hole straight pin header, 1x06, 2.54mm pitch, single row")
 	(tags "Through hole pin header THT 1x06 2.54mm single row")
 	(property "Reference" "REF**"
@@ -221,6 +221,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "Pin_1")
+		(pintype "passive")
 		(uuid "337669bc-cea5-4fb5-b06e-0eac87c1caca")
 	)
 	(pad "2" thru_hole oval
@@ -229,6 +231,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "Pin_2")
+		(pintype "passive")
 		(uuid "2f3a9db6-e061-4847-8191-de7e2460e64c")
 	)
 	(pad "3" thru_hole oval
@@ -237,6 +241,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "Pin_3")
+		(pintype "passive")
 		(uuid "b287661e-094f-4bd5-814a-47a07a2c4582")
 	)
 	(pad "4" thru_hole oval
@@ -245,6 +251,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "Pin_4")
+		(pintype "passive")
 		(uuid "8fd60f81-b6f8-4f5e-96f8-c8d397503fd1")
 	)
 	(pad "5" thru_hole oval
@@ -253,6 +261,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "Pin_5")
+		(pintype "passive")
 		(uuid "625d9e89-d929-41d2-99e9-0aa756fcfdc8")
 	)
 	(pad "6" thru_hole oval
@@ -261,6 +271,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "Pin_6")
+		(pintype "passive")
 		(uuid "59f934c4-8815-4600-a705-3a7350e44e54")
 	)
 	(embedded_fonts no)

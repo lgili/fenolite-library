@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Integrate nine complete, previously sealed 1.0.2 board items with unchanged source terms and zero accepted differences. Nine item proof/version audits pass; the root audit changes from 21 to two unchanged Royal errors. Preserve Microwave’s measured no-copper/no-schematic scopes and all Royal L7, public-pin, CI and release gates.
+
 - Integrate the four explicitly re-approved LibrePCB resistor-subset records with corrected D-0005 source, exact contractual review receipts and deterministic native outputs. Preserve earlier approvals and all existing board audit/CI/release blockers.
 
 - Preserve exact963f9cc0 diagnostic proof/record receipts for nine passing board conversions, including Microwave’s measured no-copper/no-schematic scopes. Retain Video L6, Royal L7, root-path alias and OpenAir blockers explicitly; authoritative board data and the public tool pin remain unchanged.

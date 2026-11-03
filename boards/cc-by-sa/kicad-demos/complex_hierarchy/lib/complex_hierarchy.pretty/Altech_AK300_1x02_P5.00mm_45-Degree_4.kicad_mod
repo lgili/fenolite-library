@@ -1,7 +1,7 @@
 (footprint "Altech_AK300_1x02_P5.00mm_45-Degree_4"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "Altech AK300 serie terminal block (Script generated with StandardBox.py) (http://www.altechcorp.com/PDFS/PCBMETRC.PDF)")
 	(tags "Altech AK300 serie connector")
 	(property "Reference" "REF**"
@@ -260,6 +260,8 @@
 		(drill 1.5)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "P1")
+		(pintype "passive")
 		(teardrops
 			(best_length_ratio 0.5)
 			(max_length 1)
@@ -279,6 +281,8 @@
 		(drill 1.5)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "PM")
+		(pintype "passive")
 		(teardrops
 			(best_length_ratio 0.5)
 			(max_length 1)

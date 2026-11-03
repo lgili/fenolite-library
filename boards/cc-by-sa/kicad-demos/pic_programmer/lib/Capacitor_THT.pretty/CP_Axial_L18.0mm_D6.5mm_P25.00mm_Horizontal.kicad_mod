@@ -365,6 +365,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.104167)
+		(pintype "passive")
 		(uuid "bd4ffc38-83e7-4835-abdd-88b99ed1abd8")
 	)
 	(pad "2" thru_hole circle
@@ -373,6 +374,7 @@
 		(drill 1.2)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pintype "passive")
 		(uuid "9a28a224-d529-43c3-a5a2-2254f4c1c34e")
 	)
 	(embedded_fonts no)

@@ -1,11 +1,11 @@
 (footprint "R0402_38"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(property "Reference" "REF**"
-		(at -0.005 -1.2 0)
+		(at -1.53 0 90)
 		(layer "F.SilkS")
-		(uuid "88980e7e-3759-4e74-852d-db09a65be07b")
+		(uuid "a2a14ac5-e9f0-478c-934b-f907b52bb348")
 		(effects
 			(font
 				(size 0.6 0.6)
@@ -14,21 +14,21 @@
 		)
 	)
 	(property "Value" "R0402_38"
-		(at 0 4 0)
+		(at 0 4 180)
 		(layer "F.Fab")
-		(uuid "de05055e-1e20-437b-b358-ca1867df5476")
+		(uuid "25a94d69-951c-4f9e-8cc0-a8ba33467111")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.6 0.6)
 				(thickness 0.15)
 			)
 		)
 	)
 	(property "Datasheet" "https://lcsc.com/product-detail/Others_Huaxin-S-T-MR04X1002FTL_C327797.html"
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "714bbde5-8dfd-484f-9734-f5ad1633842f")
+		(uuid "1fad4c7a-8aba-423c-8b43-9378a4a4d602")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -37,10 +37,10 @@
 		)
 	)
 	(property "Description" ""
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "670a6773-f089-48e1-902a-2c1a2d962ec0")
+		(uuid "6d52e7fb-3559-41c9-a6a8-8c3af3fcd895")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -48,46 +48,23 @@
 			)
 		)
 	)
+	(units
+		(unit
+			(name "A")
+			(pins "1" "2")
+		)
+	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
-		(start 0.94 0.5)
-		(end 0.94 -0.5)
+		(start -0.94 -0.5)
+		(end -0.23 -0.5)
 		(stroke
 			(width 0.15)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "4d827297-bad2-4b37-b287-ff05915ee435")
-	)
-	(fp_line
-		(start 0.23 0.5)
-		(end 0.94 0.5)
-		(stroke
-			(width 0.15)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "9de6e94f-1ef4-4326-a8fa-7ac962183a5f")
-	)
-	(fp_line
-		(start -0.23 0.5)
-		(end -0.94 0.5)
-		(stroke
-			(width 0.15)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "022c0f12-abe2-4102-84ba-fbad8d3e26b1")
-	)
-	(fp_line
-		(start -0.94 0.5)
-		(end -0.94 -0.5)
-		(stroke
-			(width 0.15)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "91e93f08-f48e-4733-b7fe-c2499508ac47")
+		(uuid "d6d8ef3c-eac0-4eb2-9f24-147dff11889b")
 	)
 	(fp_line
 		(start 0.94 -0.5)
@@ -97,17 +74,47 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "f000d213-6f50-4a79-ab33-7945b34a1410")
+		(uuid "34cd0586-fa83-4867-a311-d43a59929f63")
 	)
 	(fp_line
-		(start -0.94 -0.5)
-		(end -0.23 -0.5)
+		(start -0.94 0.5)
+		(end -0.94 -0.5)
 		(stroke
 			(width 0.15)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "f72f2882-3c22-42db-b98f-e5f3cbc7575d")
+		(uuid "173aa059-c23a-440c-8925-3df21712b07d")
+	)
+	(fp_line
+		(start -0.23 0.5)
+		(end -0.94 0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b735c2f0-0dfd-4e83-950d-6d78ec36df7f")
+	)
+	(fp_line
+		(start 0.23 0.5)
+		(end 0.94 0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "77dc9972-3730-48ca-b8df-633e51203c3a")
+	)
+	(fp_line
+		(start 0.94 0.5)
+		(end 0.94 -0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7153b43c-3100-49e5-a527-ab0fdbbda2c6")
 	)
 	(fp_circle
 		(center -0.5 0.25)
@@ -118,15 +125,15 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "cc705827-6148-4015-8a65-57d91df7288e")
+		(uuid "a4a3f4bf-45b4-499f-9cb8-dd84f580c3e2")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
-		(uuid "bb78dadb-37e4-4ada-84cc-3d615ebfa677")
+		(uuid "73b683a6-baf7-443e-a18a-105d9f20982a")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.6 0.6)
 				(thickness 0.15)
 			)
 		)
@@ -135,16 +142,20 @@
 		(at -0.43 0)
 		(size 0.57 0.54)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "4abe9891-a330-45c8-b059-f8440466b7a1")
+		(pinfunction "1_1")
+		(pintype "unspecified")
+		(uuid "3829d502-592e-496c-8164-4fa018267a78")
 	)
 	(pad "2" smd rect
 		(at 0.43 0)
 		(size 0.57 0.54)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "c6263637-1647-43ad-b771-8408b6fa2872")
+		(pinfunction "2_2")
+		(pintype "unspecified")
+		(uuid "f0417875-a962-4bba-af0d-8e7b3bdaea2e")
 	)
 	(embedded_fonts no)
-	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/R0402_L1.0-W0.5-H0.4.wrl"
+	(model "${KIPRJMOD}/../../libraries/easyeda2kicad/easyeda2kicad.3dshapes/R0402_L1.0-W0.5-H0.4.wrl"
 		(offset
 			(xyz 0 -0 -0)
 		)

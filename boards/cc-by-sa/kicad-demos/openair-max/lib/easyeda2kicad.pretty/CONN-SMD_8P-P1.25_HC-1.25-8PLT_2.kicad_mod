@@ -1,11 +1,11 @@
 (footprint "CONN-SMD_8P-P1.25_HC-1.25-8PLT_2"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(property "Reference" "REF**"
-		(at -7.7 -1.7 -180)
+		(at -7.7 -1.7 180)
 		(layer "F.SilkS")
-		(uuid "80c2d746-804b-495d-b1a9-b13725ff57b6")
+		(uuid "720c0ef6-b796-4fb9-97c8-2b39ddcb26d4")
 		(effects
 			(font
 				(size 0.6 0.6)
@@ -14,9 +14,9 @@
 		)
 	)
 	(property "Value" "CONN-SMD_8P-P1.25_HC-1.25-8PLT_2"
-		(at 0 5.3 -180)
+		(at 0 5.3 180)
 		(layer "F.Fab")
-		(uuid "c1d533d0-cf38-4426-84a8-e8089243a349")
+		(uuid "59b54408-022b-4c5e-a20b-1e4ec09c82c6")
 		(effects
 			(font
 				(size 1 1)
@@ -25,10 +25,10 @@
 		)
 	)
 	(property "Datasheet" ""
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "9e634652-b743-45e5-b8a8-6104c2ab9fb3")
+		(uuid "7912cd47-0bfe-40c8-92b2-0a50373053f1")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -37,10 +37,10 @@
 		)
 	)
 	(property "Description" ""
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "ecdcb448-e661-43ae-a057-b3e638cd9f39")
+		(uuid "8b95b31e-20df-4146-89fc-37f9d5b5119a")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -48,7 +48,14 @@
 			)
 		)
 	)
+	(units
+		(unit
+			(name "A")
+			(pins "1" "2" "3" "4" "5" "6" "7" "8" "10" "9")
+		)
+	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start 7.48 -0.37)
 		(end 7.48 -1.05)
@@ -143,7 +150,7 @@
 		(uuid "544207dc-2fe4-451a-b733-bbb0904016c9")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(uuid "ab357042-669d-431f-9181-debeb6ffe18a")
 		(effects
@@ -154,67 +161,87 @@
 		)
 	)
 	(pad "1" smd rect
-		(at -4.37 -1.3 -90)
+		(at -4.37 -1.3 90)
 		(size 2.2 0.8)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "1_1")
+		(pintype "unspecified")
 		(uuid "dbba4150-9b03-44a3-82a6-2b92d41d0cf9")
 	)
 	(pad "2" smd rect
-		(at -3.12 -1.3 -90)
+		(at -3.12 -1.3 90)
 		(size 2.2 0.8)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "2_2")
+		(pintype "unspecified")
 		(uuid "9b8287ea-aa5d-480d-98ca-3e30f9c5043b")
 	)
 	(pad "3" smd rect
-		(at -1.87 -1.3 -90)
+		(at -1.87 -1.3 90)
 		(size 2.2 0.8)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "3_3")
+		(pintype "unspecified")
 		(uuid "8828a690-08ae-49a2-a3f5-02eec179c49d")
 	)
 	(pad "4" smd rect
-		(at -0.62 -1.3 -90)
+		(at -0.62 -1.3 90)
 		(size 2.2 0.8)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "4_4")
+		(pintype "unspecified")
 		(uuid "97f33271-9956-4117-b62a-e0ff1442f46e")
 	)
 	(pad "5" smd rect
-		(at 0.63 -1.3 -90)
+		(at 0.63 -1.3 90)
 		(size 2.2 0.8)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "5_5")
+		(pintype "unspecified")
 		(uuid "fd449a8b-76ec-4e32-8c23-14aed3e67a48")
 	)
 	(pad "6" smd rect
-		(at 1.88 -1.3 -90)
+		(at 1.88 -1.3 90)
 		(size 2.2 0.8)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "6_6")
+		(pintype "unspecified")
 		(uuid "8540db0d-be40-4cab-a3a2-d497c8a05d9e")
 	)
 	(pad "7" smd rect
-		(at 3.12 -1.3 -90)
+		(at 3.12 -1.3 90)
 		(size 2.2 0.8)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "7_7")
+		(pintype "unspecified")
 		(uuid "21975cd3-eae6-4f17-8a24-95f208fb4336")
 	)
 	(pad "8" smd rect
-		(at 4.37 -1.3 -90)
+		(at 4.37 -1.3 90)
 		(size 2.2 0.8)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "8_8")
+		(pintype "unspecified")
 		(uuid "ce74843b-302d-416e-a057-db7bd09cdc89")
 	)
 	(pad "9" smd rect
-		(at 6.77 1.11 -180)
+		(at 6.77 1.11 180)
 		(size 2.35 2.5)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "9_9")
+		(pintype "unspecified")
 		(uuid "c1c45d79-7450-486e-9f13-661319cf498b")
 	)
 	(pad "10" smd rect
-		(at -6.77 1.3 -180)
+		(at -6.77 1.3 180)
 		(size 2.35 2.5)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "10_10")
+		(pintype "unspecified")
 		(uuid "5208cd4f-12b2-4477-a30e-cefa2a7cd287")
 	)
 	(embedded_fonts no)
-	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/CONN-SMD_8P-P1.25_HC-1.25-8PLT.wrl"
+	(model "${KIPRJMOD}/../../libraries/easyeda2kicad/easyeda2kicad.3dshapes/CONN-SMD_8P-P1.25_HC-1.25-8PLT.wrl"
 		(offset
 			(xyz 0 -0.08 -0)
 		)

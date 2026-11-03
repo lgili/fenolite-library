@@ -1,7 +1,7 @@
 (footprint "SM1206POL_2"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(property "Reference" "REF**"
 		(at -0.241 -2.015 0)
 		(layer "F.SilkS")
@@ -186,12 +186,14 @@
 		(at -1.651 0)
 		(size 1.524 2.032)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pintype "passive")
 		(uuid "cf01f12a-5a7b-4ee1-b02f-ff7c2bc87cac")
 	)
 	(pad "2" smd rect
 		(at 1.651 0)
 		(size 1.524 2.032)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pintype "passive")
 		(uuid "45cebbee-3d3a-42b3-b42f-e3a5f4f574ff")
 	)
 	(embedded_fonts no)

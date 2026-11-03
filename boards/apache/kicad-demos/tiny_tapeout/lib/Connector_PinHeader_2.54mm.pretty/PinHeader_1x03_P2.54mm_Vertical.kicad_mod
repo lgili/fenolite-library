@@ -1,7 +1,7 @@
 (footprint "PinHeader_1x03_P2.54mm_Vertical"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 	(tags "Through hole pin header THT 1x03 2.54mm single row")
 	(property "Reference" "REF**"
@@ -201,6 +201,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "Pin_1")
+		(pintype "passive")
 		(uuid "b74db2ae-1cfd-4599-aa32-22bf0fa33f16")
 	)
 	(pad "2" thru_hole oval
@@ -209,6 +211,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "Pin_2")
+		(pintype "passive")
 		(uuid "7b3b2fe6-9430-4675-b258-0d27b2c9c039")
 	)
 	(pad "3" thru_hole oval
@@ -217,6 +221,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "Pin_3")
+		(pintype "passive")
 		(uuid "65d5d9d3-54db-49d2-bded-e06057b444c5")
 	)
 	(embedded_fonts no)

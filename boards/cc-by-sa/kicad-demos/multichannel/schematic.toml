@@ -1,0 +1,1084 @@
+# Drawn schematic of a Fenolite design (docs/drawn-schematic.md). Code owns the nets.
+schema = "fenolite.drawn-schematic.v0"
+root = "root"
+
+[[sheet]]
+key = "root"
+paper = "A4"
+
+[sheet.title_block]
+title = ""
+
+[[sheet.symbol]]
+part = "C2"
+unit = 1
+at = [143.51, 138.43]
+rotation = 270
+fields.Reference = { at = [147.32, 140.1602], rotation = 90, justify = "left" }
+fields.Value = { at = [137.287, 138.43], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [147.32, 142.7002], rotation = 90, justify = "left" }
+
+[[sheet.symbol]]
+part = "C3"
+unit = 1
+at = [144.78, 50.8]
+rotation = 0
+fields.Reference = { at = [148.59, 43.18], rotation = 0 }
+fields.Value = { at = [144.78, 57.023], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [148.59, 45.72], rotation = 0 }
+
+[[sheet.symbol]]
+part = "J5"
+unit = 1
+at = [194.31, 36.83]
+rotation = 0
+fields.Reference = { at = [205.74, 41.9099], rotation = 0, justify = "left" }
+fields.Value = { at = [194.31, 48.895], rotation = 0, justify = "left" }
+
+[[sheet.symbol]]
+part = "J6"
+unit = 1
+at = [198.12, 76.2]
+rotation = 0
+mirror = "y"
+fields.Reference = { at = [199.39, 68.58], rotation = 0 }
+fields.Value = { at = [199.39, 71.12], rotation = 0 }
+
+[[sheet.symbol]]
+part = "R1"
+unit = 1
+at = [86.36, 130.81]
+rotation = 90
+fields.Reference = { at = [88.9, 125.0949], rotation = 90, justify = "right" }
+fields.Value = { at = [91.313, 130.81], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [88.9, 127], rotation = 90, justify = "right", font = { size = [0.635, 0.635] } }
+fields.Val = { at = [88.9, 128.9049], rotation = 90, justify = "right" }
+
+[[sheet.symbol]]
+part = "IC1"
+unit = 2
+at = [110.49, 127]
+rotation = 0
+fields.Reference = { at = [124.46, 130.429], rotation = 0, hide = true }
+fields.Value = { at = [110.49, 145.923], rotation = 0, justify = "left", hide = true }
+
+[[sheet.symbol]]
+part = "R2"
+unit = 1
+at = [86.36, 143.51]
+rotation = 90
+fields.Reference = { at = [88.9, 137.7949], rotation = 90, justify = "right" }
+fields.Value = { at = [91.313, 143.51], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [88.9, 139.7], rotation = 90, justify = "right", font = { size = [0.635, 0.635] } }
+fields.Val = { at = [88.9, 141.6049], rotation = 90, justify = "right" }
+
+[[sheet.symbol]]
+part = "R3"
+unit = 1
+at = [162.56, 62.23]
+rotation = 0
+fields.Reference = { at = [166.37, 54.61], rotation = 0 }
+fields.Value = { at = [162.56, 67.183], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [166.37, 57.15], rotation = 0, font = { size = [0.635, 0.635] } }
+fields.Val = { at = [166.37, 58.42], rotation = 0 }
+
+[[sheet.symbol]]
+part = "IC1"
+unit = 1
+at = [149.86, 68.58]
+rotation = 0
+fields.Reference = { at = [163.83, 72.009], rotation = 0 }
+fields.Value = { at = [149.86, 87.503], rotation = 0, justify = "left", hide = true }
+
+[[sheet.symbol]]
+part = "C1"
+unit = 1
+at = [97.79, 138.43]
+rotation = 270
+fields.Reference = { at = [101.6, 140.1602], rotation = 90, justify = "left" }
+fields.Value = { at = [91.567, 138.43], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [101.6, 142.7002], rotation = 90, justify = "left" }
+
+[[sheet.symbol]]
+part = "C4"
+unit = 1
+at = [177.8, 73.66]
+rotation = 0
+fields.Reference = { at = [180.8003, 66.04], rotation = 0 }
+fields.Value = { at = [177.8, 79.883], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [180.8003, 68.58], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:GND"
+net = "GND"
+at = [86.36, 146.05]
+rotation = 0
+fields.Value = { at = [86.36, 151.13], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:+12V"
+net = "+12V"
+at = [86.36, 115.57]
+rotation = 0
+fields.Value = { at = [86.36, 110.49], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:GND"
+net = "GND"
+at = [97.79, 146.05]
+rotation = 0
+fields.Value = { at = [97.79, 151.13], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:GND"
+net = "GND"
+at = [203.2, 81.28]
+rotation = 0
+fields.Value = { at = [203.2, 86.36], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:GND"
+net = "GND"
+at = [143.51, 146.05]
+rotation = 0
+fields.Value = { at = [143.51, 151.13], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:GND"
+net = "GND"
+at = [115.57, 146.05]
+rotation = 0
+fields.Value = { at = [115.57, 151.13], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:+12V"
+net = "+12V"
+at = [154.94, 48.26]
+rotation = 0
+fields.Value = { at = [154.94, 43.18], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:+1V1"
+net = "vbias"
+at = [143.51, 83.82]
+rotation = 180
+fields.Value = { at = [143.51, 88.9], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:GND"
+net = "GND"
+at = [154.94, 83.82]
+rotation = 0
+fields.Value = { at = [154.94, 88.9], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:+12V"
+net = "+12V"
+at = [184.15, 33.02]
+rotation = 0
+fields.Value = { at = [184.15, 27.94], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:GND"
+net = "GND"
+at = [184.15, 49.53]
+rotation = 0
+fields.Value = { at = [184.15, 54.61], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:GND"
+net = "GND"
+at = [140.97, 52.07]
+rotation = 0
+fields.Value = { at = [140.97, 57.15], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:+1V1"
+net = "vbias"
+at = [143.51, 128.27]
+rotation = 0
+fields.Value = { at = [143.51, 123.19], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:+12V"
+net = "+12V"
+at = [115.57, 114.3]
+rotation = 0
+fields.Value = { at = [115.57, 109.22], rotation = 0 }
+
+[[sheet.wire]]
+pts = [[97.79, 134.62], [86.36, 134.62]]
+
+[[sheet.wire]]
+pts = [[189.23, 39.37], [184.15, 39.37]]
+
+[[sheet.wire]]
+pts = [[184.15, 44.45], [189.23, 44.45]]
+
+[[sheet.wire]]
+pts = [[115.57, 146.05], [115.57, 142.24]]
+
+[[sheet.wire]]
+pts = [[189.23, 41.91], [184.15, 41.91]]
+
+[[sheet.wire]]
+pts = [[140.97, 62.23], [140.97, 71.12]]
+
+[[sheet.wire]]
+pts = [[115.57, 114.3], [115.57, 121.92]]
+
+[[sheet.wire]]
+pts = [[154.94, 48.26], [154.94, 50.8]]
+
+[[sheet.wire]]
+pts = [[143.51, 76.2], [143.51, 83.82]]
+
+[[sheet.wire]]
+pts = [[140.97, 71.12], [144.78, 71.12]]
+
+[[sheet.wire]]
+pts = [[115.57, 58.42], [123.19, 58.42]]
+
+[[sheet.wire]]
+pts = [[86.36, 134.62], [86.36, 135.89]]
+
+[[sheet.wire]]
+pts = [[102.87, 129.54], [102.87, 119.38]]
+
+[[sheet.wire]]
+pts = [[173.99, 62.23], [170.18, 62.23]]
+
+[[sheet.wire]]
+pts = [[115.57, 83.82], [123.19, 83.82]]
+
+[[sheet.wire]]
+pts = [[203.2, 78.74], [203.2, 81.28]]
+
+[[sheet.wire]]
+pts = [[184.15, 41.91], [184.15, 44.45]]
+
+[[sheet.wire]]
+pts = [[143.51, 128.27], [143.51, 132.08]]
+
+[[sheet.wire]]
+pts = [[140.97, 50.8], [140.97, 52.07]]
+
+[[sheet.wire]]
+pts = [[144.78, 76.2], [143.51, 76.2]]
+
+[[sheet.wire]]
+pts = [[184.15, 33.02], [184.15, 39.37]]
+
+[[sheet.wire]]
+pts = [[123.19, 71.12], [123.19, 83.82]]
+
+[[sheet.wire]]
+pts = [[102.87, 119.38], [128.27, 119.38]]
+
+[[sheet.wire]]
+pts = [[86.36, 130.81], [86.36, 134.62]]
+
+[[sheet.wire]]
+pts = [[123.19, 71.12], [140.97, 71.12]]
+
+[[sheet.wire]]
+pts = [[162.56, 62.23], [140.97, 62.23]]
+
+[[sheet.wire]]
+pts = [[86.36, 143.51], [86.36, 146.05]]
+
+[[sheet.wire]]
+pts = [[143.51, 132.08], [143.51, 138.43]]
+
+[[sheet.wire]]
+pts = [[86.36, 115.57], [86.36, 123.19]]
+
+[[sheet.wire]]
+pts = [[115.57, 71.12], [123.19, 71.12]]
+
+[[sheet.wire]]
+pts = [[173.99, 73.66], [173.99, 62.23]]
+
+[[sheet.wire]]
+pts = [[184.15, 44.45], [184.15, 49.53]]
+
+[[sheet.wire]]
+pts = [[123.19, 83.82], [123.19, 96.52]]
+
+[[sheet.wire]]
+pts = [[173.99, 73.66], [177.8, 73.66]]
+
+[[sheet.wire]]
+pts = [[97.79, 134.62], [97.79, 138.43]]
+
+[[sheet.wire]]
+pts = [[165.1, 73.66], [173.99, 73.66]]
+
+[[sheet.wire]]
+pts = [[128.27, 119.38], [128.27, 132.08]]
+
+[[sheet.wire]]
+pts = [[105.41, 134.62], [97.79, 134.62]]
+
+[[sheet.wire]]
+pts = [[128.27, 132.08], [125.73, 132.08]]
+
+[[sheet.wire]]
+pts = [[105.41, 129.54], [102.87, 129.54]]
+
+[[sheet.wire]]
+pts = [[123.19, 96.52], [115.57, 96.52]]
+
+[[sheet.wire]]
+pts = [[154.94, 50.8], [154.94, 63.5]]
+
+[[sheet.wire]]
+pts = [[152.4, 50.8], [154.94, 50.8]]
+
+[[sheet.wire]]
+pts = [[185.42, 73.66], [193.04, 73.66]]
+
+[[sheet.wire]]
+pts = [[123.19, 58.42], [123.19, 71.12]]
+
+[[sheet.wire]]
+pts = [[128.27, 132.08], [143.51, 132.08]]
+
+[[sheet.wire]]
+pts = [[140.97, 50.8], [144.78, 50.8]]
+
+[[sheet.junction]]
+at = [184.15, 44.45]
+
+[[sheet.junction]]
+at = [97.79, 134.62]
+
+[[sheet.junction]]
+at = [123.19, 71.12]
+
+[[sheet.junction]]
+at = [128.27, 132.08]
+
+[[sheet.junction]]
+at = [143.51, 132.08]
+
+[[sheet.junction]]
+at = [154.94, 50.8]
+
+[[sheet.junction]]
+at = [123.19, 83.82]
+
+[[sheet.junction]]
+at = [173.99, 73.66]
+
+[[sheet.junction]]
+at = [86.36, 134.62]
+
+[[sheet.junction]]
+at = [140.97, 71.12]
+
+[[sheet.sheet_ref]]
+key = "CH2"
+sheet = "channel_strip"
+module = "ch2"
+name = "CH2"
+file = "channel_strip.kicad_sch"
+at = [74.93, 68.58]
+size = [40.64, 5.08]
+page = "3"
+fields.Sheetname = { at = [74.93, 67.8684], rotation = 0, justify = "left bottom" }
+fields.Sheetfile = { at = [74.93, 74.2446], rotation = 0, justify = "left top" }
+properties.Field2 = { text = "", at = [74.93, 68.58], rotation = 0, hide = true }
+
+[[sheet.sheet_ref.pin]]
+name = "OUT"
+shape = "output"
+at = [115.57, 71.12]
+rotation = 0
+
+[[sheet.sheet_ref]]
+key = "CH1"
+sheet = "channel_strip"
+module = "ch1"
+name = "CH1"
+file = "channel_strip.kicad_sch"
+at = [74.93, 55.88]
+size = [40.64, 5.08]
+page = "2"
+fields.Sheetname = { at = [74.93, 55.1684], rotation = 0, justify = "left bottom" }
+fields.Sheetfile = { at = [74.93, 61.5446], rotation = 0, justify = "left top" }
+properties.Field2 = { text = "", at = [74.93, 55.88], rotation = 0, hide = true }
+
+[[sheet.sheet_ref.pin]]
+name = "OUT"
+shape = "output"
+at = [115.57, 58.42]
+rotation = 0
+
+[[sheet.sheet_ref]]
+key = "CH3"
+sheet = "channel_strip"
+module = "ch3"
+name = "CH3"
+file = "channel_strip.kicad_sch"
+at = [74.93, 81.28]
+size = [40.64, 5.08]
+page = "4"
+fields.Sheetname = { at = [74.93, 80.5684], rotation = 0, justify = "left bottom" }
+fields.Sheetfile = { at = [74.93, 86.9446], rotation = 0, justify = "left top" }
+properties.Field2 = { text = "", at = [74.93, 81.28], rotation = 0, hide = true }
+
+[[sheet.sheet_ref.pin]]
+name = "OUT"
+shape = "output"
+at = [115.57, 83.82]
+rotation = 0
+
+[[sheet.sheet_ref]]
+key = "CH4"
+sheet = "channel_strip"
+module = "ch4"
+name = "CH4"
+file = "channel_strip.kicad_sch"
+at = [74.93, 93.98]
+size = [40.64, 5.08]
+page = "5"
+fields.Sheetname = { at = [74.93, 93.2684], rotation = 0, justify = "left bottom" }
+fields.Sheetfile = { at = [74.93, 99.6446], rotation = 0, justify = "left top" }
+properties.Field2 = { text = "", at = [74.93, 93.98], rotation = 0, hide = true }
+
+[[sheet.sheet_ref.pin]]
+name = "OUT"
+shape = "output"
+at = [115.57, 96.52]
+rotation = 0
+
+[[sheet.opaque]]
+kicad = "(text \"WARNING, this is just a demo board, not a working audio mixer. If you'll make one, it won't work :-)\" (exclude_from_sim no) (at 127.508 19.812 0) (effects (font (size 2 2) (color 194 0 0 1))) (uuid \"7a1204f2-6377-4d90-b301-42e19a80a973\"))"
+
+[[sheet.opaque]]
+kicad = "(text \"KiCad V9 Multichannel Tool demo design\" (exclude_from_sim no) (at 231.14 173.99 0) (effects (font (size 2 2))) (uuid \"fdd0a080-44f5-467e-8b25-1ae4c1590a2a\"))"
+
+[[sheet]]
+key = "channel_strip"
+paper = "A4"
+
+[sheet.title_block]
+title = ""
+
+[[sheet.symbol]]
+part = "R19"
+unit = 1
+at = [161.29, 105.41]
+rotation = 180
+fields.Reference = { at = [157.48, 97.79], rotation = 0 }
+fields.Value = { at = [161.29, 100.457], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [157.48, 100.33], rotation = 0, font = { size = [0.635, 0.635] } }
+fields.Val = { at = [157.48, 101.6], rotation = 0 }
+
+[[sheet.symbol]]
+part = "RV6"
+unit = 1
+at = [167.64, 52.07]
+rotation = 270
+fields.Reference = { at = [167.64, 45.72], rotation = 90 }
+fields.Value = { at = [167.64, 48.26], rotation = 90 }
+
+[[sheet.symbol]]
+part = "R25"
+unit = 1
+at = [254, 78.74]
+rotation = 0
+fields.Reference = { at = [257.81, 71.12], rotation = 0 }
+fields.Value = { at = [254, 83.693], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [257.81, 73.66], rotation = 0, font = { size = [0.635, 0.635] } }
+fields.Val = { at = [257.81, 74.93], rotation = 0 }
+
+[[sheet.symbol]]
+part = "C22"
+unit = 1
+at = [262.89, 78.74]
+rotation = 0
+fields.Reference = { at = [265.8903, 71.12], rotation = 0 }
+fields.Value = { at = [262.89, 84.963], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [265.8903, 73.66], rotation = 0 }
+
+[[sheet.symbol]]
+part = "R17"
+unit = 1
+at = [151.13, 81.28]
+rotation = 0
+fields.Reference = { at = [154.94, 73.66], rotation = 0 }
+fields.Value = { at = [151.13, 86.233], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [154.94, 76.2], rotation = 0, font = { size = [0.635, 0.635] } }
+fields.Val = { at = [154.94, 77.47], rotation = 0 }
+
+[[sheet.symbol]]
+part = "R23"
+unit = 1
+at = [185.42, 105.41]
+rotation = 180
+fields.Reference = { at = [181.61, 107.95], rotation = 0 }
+fields.Value = { at = [185.42, 100.457], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [181.61, 110.49], rotation = 0, font = { size = [0.635, 0.635] } }
+fields.Val = { at = [181.61, 111.76], rotation = 0 }
+
+[[sheet.symbol]]
+part = "C21"
+unit = 1
+at = [208.28, 67.31]
+rotation = 0
+fields.Reference = { at = [212.09, 59.69], rotation = 0 }
+fields.Value = { at = [208.28, 73.533], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [212.09, 62.23], rotation = 0 }
+
+[[sheet.symbol]]
+part = "RV7"
+unit = 1
+at = [170.18, 105.41]
+rotation = 90
+fields.Reference = { at = [170.18, 109.22], rotation = 90 }
+fields.Value = { at = [170.18, 111.76], rotation = 90 }
+
+[[sheet.symbol]]
+part = "R24"
+unit = 1
+at = [193.04, 106.68]
+rotation = 90
+fields.Reference = { at = [195.58, 100.9649], rotation = 90, justify = "right" }
+fields.Value = { at = [197.993, 106.68], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [195.58, 102.87], rotation = 90, justify = "right", font = { size = [0.635, 0.635] } }
+fields.Val = { at = [195.58, 104.7749], rotation = 90, justify = "right" }
+
+[[sheet.symbol]]
+part = "R22"
+unit = 1
+at = [176.53, 60.96]
+rotation = 0
+fields.Reference = { at = [180.34, 53.34], rotation = 0 }
+fields.Value = { at = [176.53, 65.913], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [180.34, 55.88], rotation = 0, font = { size = [0.635, 0.635] } }
+fields.Val = { at = [180.34, 57.15], rotation = 0 }
+
+[[sheet.symbol]]
+part = "R16"
+unit = 1
+at = [121.92, 81.28]
+rotation = 0
+fields.Reference = { at = [125.73, 73.66], rotation = 0 }
+fields.Value = { at = [121.92, 86.233], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [125.73, 76.2], rotation = 0, font = { size = [0.635, 0.635] } }
+fields.Val = { at = [125.73, 77.47], rotation = 0 }
+
+[[sheet.symbol]]
+part = "C20"
+unit = 1
+at = [193.04, 118.11]
+rotation = 90
+fields.Reference = { at = [196.85, 113.0299], rotation = 90, justify = "right" }
+fields.Value = { at = [199.263, 118.11], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [196.85, 115.5699], rotation = 90, justify = "right" }
+
+[[sheet.symbol]]
+part = "IC3"
+unit = 2
+at = [213.36, 73.66]
+rotation = 0
+fields.Reference = { at = [227.33, 77.089], rotation = 0, hide = true }
+fields.Value = { at = [213.36, 92.583], rotation = 0, justify = "left", hide = true }
+
+[[sheet.symbol]]
+part = "C15"
+unit = 1
+at = [125.73, 68.58]
+rotation = 0
+fields.Reference = { at = [129.54, 60.96], rotation = 0 }
+fields.Value = { at = [125.73, 74.803], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [129.54, 63.5], rotation = 0 }
+
+[[sheet.symbol]]
+part = "C16"
+unit = 1
+at = [162.56, 69.85]
+rotation = 0
+fields.Reference = { at = [166.37, 62.23], rotation = 0 }
+fields.Value = { at = [162.56, 76.073], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [166.37, 64.77], rotation = 0 }
+
+[[sheet.symbol]]
+part = "C18"
+unit = 1
+at = [175.26, 90.17]
+rotation = 0
+fields.Reference = { at = [179.07, 82.55], rotation = 0 }
+fields.Value = { at = [175.26, 96.393], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [179.07, 85.09], rotation = 0 }
+
+[[sheet.symbol]]
+part = "J7"
+unit = 1
+at = [83.82, 83.82]
+rotation = 0
+fields.Reference = { at = [82.55, 76.2], rotation = 0 }
+fields.Value = { at = [82.55, 78.74], rotation = 0 }
+
+[[sheet.symbol]]
+part = "RV8"
+unit = 1
+at = [243.84, 78.74]
+rotation = 270
+fields.Reference = { at = [243.84, 72.39], rotation = 90 }
+fields.Value = { at = [243.84, 74.93], rotation = 90 }
+
+[[sheet.symbol]]
+part = "C17"
+unit = 1
+at = [163.83, 40.64]
+rotation = 0
+fields.Reference = { at = [167.64, 33.02], rotation = 0 }
+fields.Value = { at = [163.83, 46.863], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [167.64, 35.56], rotation = 0 }
+
+[[sheet.symbol]]
+part = "C14"
+unit = 1
+at = [102.87, 81.28]
+rotation = 180
+fields.Reference = { at = [99.8697, 73.66], rotation = 0 }
+fields.Value = { at = [102.87, 75.057], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [99.8697, 76.2], rotation = 0 }
+
+[[sheet.symbol]]
+part = "C19"
+unit = 1
+at = [175.26, 96.52]
+rotation = 0
+fields.Reference = { at = [179.07, 100.33], rotation = 0 }
+fields.Value = { at = [175.26, 102.743], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [179.07, 102.87], rotation = 0 }
+
+[[sheet.symbol]]
+part = "IC3"
+unit = 1
+at = [127, 87.63]
+rotation = 0
+fields.Reference = { at = [140.97, 91.059], rotation = 0 }
+fields.Value = { at = [127, 106.553], rotation = 0, justify = "left", hide = true }
+
+[[sheet.symbol]]
+part = "R18"
+unit = 1
+at = [152.4, 52.07]
+rotation = 0
+fields.Reference = { at = [156.21, 44.45], rotation = 0 }
+fields.Value = { at = [152.4, 57.023], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [156.21, 46.99], rotation = 0, font = { size = [0.635, 0.635] } }
+fields.Val = { at = [156.21, 48.26], rotation = 0 }
+
+[[sheet.symbol]]
+part = "RV5"
+unit = 1
+at = [166.37, 81.28]
+rotation = 270
+fields.Reference = { at = [166.37, 74.93], rotation = 90 }
+fields.Value = { at = [166.37, 77.47], rotation = 90 }
+
+[[sheet.symbol]]
+part = "R15"
+unit = 1
+at = [110.49, 81.28]
+rotation = 0
+fields.Reference = { at = [114.3, 73.66], rotation = 0 }
+fields.Value = { at = [110.49, 86.233], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [114.3, 76.2], rotation = 0, font = { size = [0.635, 0.635] } }
+fields.Val = { at = [114.3, 77.47], rotation = 0 }
+
+[[sheet.symbol]]
+part = "R21"
+unit = 1
+at = [176.53, 52.07]
+rotation = 0
+fields.Reference = { at = [180.34, 44.45], rotation = 0 }
+fields.Value = { at = [176.53, 57.023], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [180.34, 46.99], rotation = 0, font = { size = [0.635, 0.635] } }
+fields.Val = { at = [180.34, 48.26], rotation = 0 }
+
+[[sheet.symbol]]
+part = "R20"
+unit = 1
+at = [175.26, 81.28]
+rotation = 0
+fields.Reference = { at = [179.07, 73.66], rotation = 0 }
+fields.Value = { at = [175.26, 86.233], rotation = 0, justify = "left", hide = true }
+fields.Description = { at = [179.07, 76.2], rotation = 0, font = { size = [0.635, 0.635] } }
+fields.Val = { at = [179.07, 77.47], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:GND"
+net = "GND"
+at = [132.08, 102.87]
+rotation = 0
+fields.Value = { at = [132.08, 107.95], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:+12V"
+net = "+12V"
+at = [132.08, 80.01]
+rotation = 0
+fields.Value = { at = [132.08, 74.93], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:+1V1"
+net = "vbias"
+at = [120.65, 102.87]
+rotation = 180
+fields.Value = { at = [120.65, 107.95], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:GND"
+net = "GND"
+at = [218.44, 88.9]
+rotation = 0
+fields.Value = { at = [218.44, 93.98], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:GND"
+net = "GND"
+at = [193.04, 118.11]
+rotation = 0
+fields.Value = { at = [193.04, 123.19], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:GND"
+net = "GND"
+at = [204.47, 68.58]
+rotation = 0
+fields.Value = { at = [204.47, 73.66], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:+1V1"
+net = "vbias"
+at = [205.74, 88.9]
+rotation = 180
+fields.Value = { at = [205.74, 93.98], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:+12V"
+net = "+12V"
+at = [218.44, 64.77]
+rotation = 0
+fields.Value = { at = [218.44, 59.69], rotation = 0 }
+
+[[sheet.power]]
+symbol = "multichannel_mixer:GND"
+net = "GND"
+at = [78.74, 93.98]
+rotation = 0
+fields.Value = { at = [78.74, 99.06], rotation = 0 }
+
+[[sheet.wire]]
+pts = [[120.65, 68.58], [120.65, 81.28]]
+
+[[sheet.wire]]
+pts = [[231.14, 78.74], [240.03, 78.74]]
+
+[[sheet.wire]]
+pts = [[231.14, 52.07], [231.14, 78.74]]
+
+[[sheet.wire]]
+pts = [[120.65, 95.25], [120.65, 102.87]]
+
+[[sheet.wire]]
+pts = [[185.42, 105.41], [187.96, 105.41]]
+
+[[sheet.wire]]
+pts = [[173.99, 52.07], [176.53, 52.07]]
+
+[[sheet.wire]]
+pts = [[167.64, 60.96], [167.64, 55.88]]
+
+[[sheet.wire]]
+pts = [[193.04, 106.68], [193.04, 110.49]]
+
+[[sheet.wire]]
+pts = [[218.44, 64.77], [218.44, 67.31]]
+
+[[sheet.wire]]
+pts = [[193.04, 90.17], [193.04, 76.2]]
+
+[[sheet.wire]]
+pts = [[120.65, 90.17], [120.65, 81.28]]
+
+[[sheet.wire]]
+pts = [[182.88, 96.52], [193.04, 96.52]]
+
+[[sheet.wire]]
+pts = [[102.87, 81.28], [110.49, 81.28]]
+
+[[sheet.wire]]
+pts = [[140.97, 81.28], [140.97, 85.09]]
+
+[[sheet.wire]]
+pts = [[243.84, 82.55], [243.84, 85.09]]
+
+[[sheet.wire]]
+pts = [[193.04, 60.96], [184.15, 60.96]]
+
+[[sheet.wire]]
+pts = [[261.62, 78.74], [262.89, 78.74]]
+
+[[sheet.wire]]
+pts = [[170.18, 96.52], [170.18, 101.6]]
+
+[[sheet.wire]]
+pts = [[187.96, 52.07], [187.96, 81.28]]
+
+[[sheet.wire]]
+pts = [[251.46, 85.09], [251.46, 78.74]]
+
+[[sheet.wire]]
+pts = [[153.67, 105.41], [148.59, 105.41]]
+
+[[sheet.wire]]
+pts = [[140.97, 68.58], [140.97, 81.28]]
+
+[[sheet.wire]]
+pts = [[182.88, 81.28], [187.96, 81.28]]
+
+[[sheet.wire]]
+pts = [[161.29, 81.28], [162.56, 81.28]]
+
+[[sheet.wire]]
+pts = [[121.92, 90.17], [120.65, 90.17]]
+
+[[sheet.wire]]
+pts = [[170.18, 81.28], [172.72, 81.28]]
+
+[[sheet.wire]]
+pts = [[146.05, 92.71], [142.24, 92.71]]
+
+[[sheet.wire]]
+pts = [[78.74, 90.17], [90.17, 90.17]]
+
+[[sheet.wire]]
+pts = [[118.11, 81.28], [120.65, 81.28]]
+
+[[sheet.wire]]
+pts = [[78.74, 86.36], [78.74, 90.17]]
+
+[[sheet.wire]]
+pts = [[218.44, 67.31], [218.44, 68.58]]
+
+[[sheet.wire]]
+pts = [[90.17, 90.17], [90.17, 83.82]]
+
+[[sheet.wire]]
+pts = [[161.29, 69.85], [161.29, 81.28]]
+
+[[sheet.wire]]
+pts = [[148.59, 105.41], [148.59, 81.28]]
+
+[[sheet.wire]]
+pts = [[162.56, 69.85], [161.29, 69.85]]
+
+[[sheet.wire]]
+pts = [[182.88, 90.17], [193.04, 90.17]]
+
+[[sheet.wire]]
+pts = [[129.54, 81.28], [140.97, 81.28]]
+
+[[sheet.wire]]
+pts = [[173.99, 40.64], [173.99, 52.07]]
+
+[[sheet.wire]]
+pts = [[205.74, 81.28], [208.28, 81.28]]
+
+[[sheet.wire]]
+pts = [[176.53, 60.96], [167.64, 60.96]]
+
+[[sheet.wire]]
+pts = [[125.73, 68.58], [120.65, 68.58]]
+
+[[sheet.wire]]
+pts = [[171.45, 40.64], [173.99, 40.64]]
+
+[[sheet.wire]]
+pts = [[193.04, 96.52], [193.04, 90.17]]
+
+[[sheet.wire]]
+pts = [[231.14, 78.74], [228.6, 78.74]]
+
+[[sheet.wire]]
+pts = [[161.29, 105.41], [166.37, 105.41]]
+
+[[sheet.wire]]
+pts = [[175.26, 96.52], [170.18, 96.52]]
+
+[[sheet.wire]]
+pts = [[204.47, 67.31], [208.28, 67.31]]
+
+[[sheet.wire]]
+pts = [[243.84, 85.09], [251.46, 85.09]]
+
+[[sheet.wire]]
+pts = [[175.26, 90.17], [166.37, 90.17]]
+
+[[sheet.wire]]
+pts = [[171.45, 52.07], [173.99, 52.07]]
+
+[[sheet.wire]]
+pts = [[148.59, 81.28], [148.59, 52.07]]
+
+[[sheet.wire]]
+pts = [[78.74, 90.17], [78.74, 93.98]]
+
+[[sheet.wire]]
+pts = [[166.37, 90.17], [166.37, 85.09]]
+
+[[sheet.wire]]
+pts = [[162.56, 40.64], [162.56, 52.07]]
+
+[[sheet.wire]]
+pts = [[132.08, 80.01], [132.08, 82.55]]
+
+[[sheet.wire]]
+pts = [[215.9, 67.31], [218.44, 67.31]]
+
+[[sheet.wire]]
+pts = [[251.46, 78.74], [254, 78.74]]
+
+[[sheet.wire]]
+pts = [[148.59, 81.28], [151.13, 81.28]]
+
+[[sheet.wire]]
+pts = [[187.96, 52.07], [231.14, 52.07]]
+
+[[sheet.wire]]
+pts = [[251.46, 78.74], [247.65, 78.74]]
+
+[[sheet.wire]]
+pts = [[146.05, 85.09], [146.05, 92.71]]
+
+[[sheet.wire]]
+pts = [[204.47, 67.31], [204.47, 68.58]]
+
+[[sheet.wire]]
+pts = [[148.59, 52.07], [152.4, 52.07]]
+
+[[sheet.wire]]
+pts = [[172.72, 69.85], [172.72, 81.28]]
+
+[[sheet.wire]]
+pts = [[193.04, 76.2], [208.28, 76.2]]
+
+[[sheet.wire]]
+pts = [[193.04, 76.2], [193.04, 60.96]]
+
+[[sheet.wire]]
+pts = [[160.02, 52.07], [162.56, 52.07]]
+
+[[sheet.wire]]
+pts = [[133.35, 68.58], [140.97, 68.58]]
+
+[[sheet.wire]]
+pts = [[121.92, 95.25], [120.65, 95.25]]
+
+[[sheet.wire]]
+pts = [[88.9, 81.28], [95.25, 81.28]]
+
+[[sheet.wire]]
+pts = [[187.96, 52.07], [184.15, 52.07]]
+
+[[sheet.wire]]
+pts = [[90.17, 83.82], [88.9, 83.82]]
+
+[[sheet.wire]]
+pts = [[193.04, 96.52], [193.04, 99.06]]
+
+[[sheet.wire]]
+pts = [[162.56, 52.07], [163.83, 52.07]]
+
+[[sheet.wire]]
+pts = [[140.97, 81.28], [148.59, 81.28]]
+
+[[sheet.wire]]
+pts = [[173.99, 105.41], [177.8, 105.41]]
+
+[[sheet.wire]]
+pts = [[140.97, 85.09], [146.05, 85.09]]
+
+[[sheet.wire]]
+pts = [[163.83, 40.64], [162.56, 40.64]]
+
+[[sheet.wire]]
+pts = [[158.75, 81.28], [161.29, 81.28]]
+
+[[sheet.wire]]
+pts = [[172.72, 81.28], [175.26, 81.28]]
+
+[[sheet.wire]]
+pts = [[121.92, 81.28], [120.65, 81.28]]
+
+[[sheet.wire]]
+pts = [[187.96, 81.28], [187.96, 105.41]]
+
+[[sheet.wire]]
+pts = [[170.18, 69.85], [172.72, 69.85]]
+
+[[sheet.wire]]
+pts = [[205.74, 81.28], [205.74, 88.9]]
+
+[[sheet.junction]]
+at = [140.97, 81.28]
+
+[[sheet.junction]]
+at = [193.04, 96.52]
+
+[[sheet.junction]]
+at = [187.96, 81.28]
+
+[[sheet.junction]]
+at = [148.59, 81.28]
+
+[[sheet.junction]]
+at = [187.96, 52.07]
+
+[[sheet.junction]]
+at = [251.46, 78.74]
+
+[[sheet.junction]]
+at = [120.65, 81.28]
+
+[[sheet.junction]]
+at = [78.74, 90.17]
+
+[[sheet.junction]]
+at = [162.56, 52.07]
+
+[[sheet.junction]]
+at = [173.99, 52.07]
+
+[[sheet.junction]]
+at = [231.14, 78.74]
+
+[[sheet.junction]]
+at = [218.44, 67.31]
+
+[[sheet.junction]]
+at = [193.04, 90.17]
+
+[[sheet.junction]]
+at = [172.72, 81.28]
+
+[[sheet.junction]]
+at = [193.04, 76.2]
+
+[[sheet.junction]]
+at = [161.29, 81.28]
+
+[[sheet.label]]
+kind = "hierarchical"
+text = "OUT"
+at = [270.51, 78.74]
+rotation = 0
+shape = "output"

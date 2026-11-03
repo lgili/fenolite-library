@@ -1,7 +1,7 @@
 (footprint "SW_PUSH_SMALL_4"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(property "Reference" "REF**"
 		(at 6.858 0.127 0)
 		(layer "F.SilkS")
@@ -148,6 +148,8 @@
 		(drill 0.8128)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "1")
+		(pintype "passive")
 		(uuid "7ba3bcf4-d218-425c-96c0-3c2aa094666e")
 	)
 	(pad "1" thru_hole circle
@@ -156,6 +158,8 @@
 		(drill 0.8128)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "1")
+		(pintype "passive")
 		(uuid "92d306f0-a6fa-487b-b238-850571968606")
 	)
 	(pad "2" thru_hole circle
@@ -164,6 +168,8 @@
 		(drill 0.8128)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "2")
+		(pintype "passive")
 		(uuid "04f3cecd-5a78-4093-b87f-df566d1a553c")
 	)
 	(pad "2" thru_hole circle
@@ -172,6 +178,8 @@
 		(drill 0.8128)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "2")
+		(pintype "passive")
 		(uuid "924cd2c0-1268-4921-b84e-dd7ed0605d52")
 	)
 	(embedded_fonts no)

@@ -1,0 +1,1251 @@
+# Drawn schematic of a Fenolite design (docs/drawn-schematic.md). Code owns the nets.
+schema = "fenolite.drawn-schematic.v0"
+root = "root"
+
+[[sheet]]
+key = "root"
+paper = "A4"
+
+[sheet.title_block]
+title = "Complex hierarchy: demo"
+date = "2017-01-15"
+
+[[sheet.symbol]]
+part = "P102"
+unit = 1
+at = [41.91, 66.04]
+rotation = 0
+mirror = "y"
+fields.Reference = { at = [43.18, 66.04], rotation = 90, font = { size = [1.016, 1.016] } }
+fields.Value = { at = [40.64, 66.04], rotation = 90, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [41.91, 71.12], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [41.91, 66.04], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "D101"
+unit = 1
+at = [68.58, 63.5]
+rotation = 0
+mirror = "y"
+fields.Reference = { at = [68.58, 66.04], rotation = 0, font = { size = [1.016, 1.016] } }
+fields.Value = { at = [68.58, 60.96], rotation = 0, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [68.58, 67.31], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [68.58, 63.5], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "C104"
+unit = 1
+at = [81.28, 69.85]
+rotation = 0
+fields.Reference = { at = [85.09, 68.58], rotation = 0, justify = "left" }
+fields.Value = { at = [85.09, 71.12], rotation = 0, justify = "left top" }
+fields.Footprint = { at = [90.17, 73.66], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [81.28, 69.85], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "C102"
+unit = 1
+at = [233.68, 40.64]
+rotation = 0
+fields.Reference = { at = [237.49, 39.37], rotation = 0, justify = "left" }
+fields.Value = { at = [237.49, 40.64], rotation = 0, justify = "left top" }
+fields.Footprint = { at = [241.3, 43.18], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [233.68, 40.64], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "P101"
+unit = 1
+at = [41.91, 35.56]
+rotation = 0
+mirror = "y"
+fields.Reference = { at = [43.18, 35.56], rotation = 90, font = { size = [1.016, 1.016] } }
+fields.Value = { at = [40.64, 35.56], rotation = 90, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [41.91, 40.64], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [41.91, 35.56], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "C101"
+unit = 1
+at = [63.5, 38.1]
+rotation = 0
+fields.Reference = { at = [67.31, 36.83], rotation = 0, justify = "left" }
+fields.Value = { at = [67.31, 38.1], rotation = 0, justify = "left top" }
+fields.Footprint = { at = [71.12, 40.64], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [63.5, 38.1], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "U102"
+unit = 1
+at = [201.93, 73.66]
+rotation = 0
+fields.Reference = { at = [187.96, 63.5], rotation = 0, justify = "left", font = { size = [1.778, 1.778] } }
+fields.Value = { at = [215.9, 85.09], rotation = 0, justify = "right", font = { size = [1.778, 1.778] } }
+fields.Footprint = { at = [209.55, 87.63], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [201.93, 73.66], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "U101"
+unit = 1
+at = [200.66, 34.29]
+rotation = 0
+fields.Reference = { at = [200.66, 26.67], rotation = 0, font = { size = [1.524, 1.524] } }
+fields.Value = { at = [200.66, 29.21], rotation = 0, font = { size = [1.524, 1.524] } }
+fields.Footprint = { at = [207.01, 39.37], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [200.66, 34.29], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "C103"
+unit = 1
+at = [233.68, 63.5]
+rotation = 0
+fields.Reference = { at = [237.49, 62.23], rotation = 0, justify = "left" }
+fields.Value = { at = [237.49, 63.5], rotation = 0, justify = "left top" }
+fields.Footprint = { at = [242.57, 66.04], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [233.68, 63.5], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "C105"
+unit = 1
+at = [168.91, 69.85]
+rotation = 0
+fields.Reference = { at = [172.72, 68.58], rotation = 0, justify = "left" }
+fields.Value = { at = [172.72, 69.85], rotation = 0, justify = "left top" }
+fields.Footprint = { at = [172.72, 72.39], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [168.91, 69.85], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:GND"
+net = "GND"
+at = [53.34, 71.12]
+rotation = 0
+fields.Value = { at = [53.34, 72.898], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [53.34, 71.12], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [53.34, 71.12], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:GND"
+net = "GND"
+at = [81.28, 76.2]
+rotation = 0
+fields.Value = { at = [81.28, 77.978], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [81.28, 76.2], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [81.28, 76.2], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:+12V"
+net = "+12V"
+at = [90.17, 62.23]
+rotation = 0
+fields.Value = { at = [90.17, 59.69], rotation = 0, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [90.17, 62.23], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [90.17, 62.23], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:PWR_FLAG"
+net = "PWR_FLAG"
+at = [55.88, 41.91]
+rotation = 0
+fields.Value = { at = [55.88, 36.068], rotation = 0, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [55.88, 41.91], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [55.88, 41.91], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:PWR_FLAG"
+net = "PWR_FLAG"
+at = [76.2, 62.23]
+rotation = 0
+fields.Value = { at = [76.2, 56.388], rotation = 0, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [76.2, 62.23], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [76.2, 62.23], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:PWR_FLAG"
+net = "PWR_FLAG"
+at = [55.88, 31.75]
+rotation = 0
+fields.Value = { at = [55.88, 25.908], rotation = 0, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [55.88, 31.75], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [55.88, 31.75], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:GND"
+net = "GND"
+at = [200.66, 41.91]
+rotation = 0
+fields.Value = { at = [200.66, 43.688], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [200.66, 41.91], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [200.66, 41.91], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:GND"
+net = "GND"
+at = [233.68, 45.72]
+rotation = 0
+fields.Value = { at = [233.68, 47.498], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [233.68, 45.72], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [233.68, 45.72], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:HT"
+net = "HT"
+at = [63.5, 31.75]
+rotation = 0
+fields.Value = { at = [63.5, 29.464], rotation = 0, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [63.5, 31.75], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [63.5, 31.75], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:GND"
+net = "GND"
+at = [55.88, 44.45]
+rotation = 0
+fields.Value = { at = [55.88, 46.228], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [55.88, 44.45], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [55.88, 44.45], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:GND"
+net = "GND"
+at = [63.5, 43.18]
+rotation = 0
+fields.Value = { at = [63.5, 44.958], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [63.5, 43.18], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [63.5, 43.18], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:GND"
+net = "GND"
+at = [200.66, 91.44]
+rotation = 0
+fields.Value = { at = [200.66, 93.218], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [200.66, 91.44], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [200.66, 91.44], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:VCC"
+net = "VCC"
+at = [233.68, 31.75]
+rotation = 0
+fields.Value = { at = [233.68, 29.21], rotation = 0, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [233.68, 31.75], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [233.68, 31.75], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:VCC"
+net = "VCC"
+at = [200.66, 55.88]
+rotation = 0
+fields.Value = { at = [200.66, 53.34], rotation = 0, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [200.66, 55.88], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [200.66, 55.88], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:-VAA"
+net = "-VAA"
+at = [237.49, 69.85]
+rotation = 270
+fields.Value = { at = [242.57, 69.85], rotation = 90, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [237.49, 69.85], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [237.49, 69.85], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:GND"
+net = "GND"
+at = [229.87, 58.42]
+rotation = 0
+fields.Value = { at = [229.87, 60.198], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [229.87, 58.42], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [229.87, 58.42], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:+12V"
+net = "+12V"
+at = [187.96, 31.75]
+rotation = 0
+fields.Value = { at = [187.96, 29.21], rotation = 0, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [187.96, 31.75], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [187.96, 31.75], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.wire]]
+pts = [[229.87, 58.42], [229.87, 57.15]]
+
+[[sheet.wire]]
+pts = [[223.52, 69.85], [233.68, 69.85]]
+
+[[sheet.wire]]
+pts = [[233.68, 59.69], [233.68, 57.15]]
+
+[[sheet.wire]]
+pts = [[168.91, 66.04], [168.91, 63.5]]
+
+[[sheet.wire]]
+pts = [[233.68, 67.31], [233.68, 69.85]]
+
+[[sheet.wire]]
+pts = [[76.2, 63.5], [76.2, 62.23]]
+
+[[sheet.wire]]
+pts = [[53.34, 68.58], [50.8, 68.58]]
+
+[[sheet.wire]]
+pts = [[179.07, 72.39], [180.34, 72.39]]
+
+[[sheet.wire]]
+pts = [[53.34, 38.1], [53.34, 43.18]]
+
+[[sheet.wire]]
+pts = [[168.91, 63.5], [179.07, 63.5]]
+
+[[sheet.wire]]
+pts = [[90.17, 62.23], [90.17, 63.5]]
+
+[[sheet.wire]]
+pts = [[81.28, 73.66], [81.28, 76.2]]
+
+[[sheet.wire]]
+pts = [[71.12, 63.5], [76.2, 63.5]]
+
+[[sheet.wire]]
+pts = [[187.96, 33.02], [190.5, 33.02]]
+
+[[sheet.wire]]
+pts = [[63.5, 33.02], [63.5, 34.29]]
+
+[[sheet.wire]]
+pts = [[179.07, 67.31], [180.34, 67.31]]
+
+[[sheet.wire]]
+pts = [[168.91, 73.66], [168.91, 76.2]]
+
+[[sheet.wire]]
+pts = [[50.8, 38.1], [53.34, 38.1]]
+
+[[sheet.wire]]
+pts = [[179.07, 76.2], [179.07, 72.39]]
+
+[[sheet.wire]]
+pts = [[53.34, 43.18], [55.88, 43.18]]
+
+[[sheet.wire]]
+pts = [[179.07, 63.5], [179.07, 67.31]]
+
+[[sheet.wire]]
+pts = [[233.68, 44.45], [233.68, 45.72]]
+
+[[sheet.wire]]
+pts = [[55.88, 41.91], [55.88, 43.18]]
+
+[[sheet.wire]]
+pts = [[200.66, 55.88], [200.66, 57.15]]
+
+[[sheet.wire]]
+pts = [[50.8, 63.5], [66.04, 63.5]]
+
+[[sheet.wire]]
+pts = [[55.88, 31.75], [55.88, 33.02]]
+
+[[sheet.wire]]
+pts = [[233.68, 69.85], [237.49, 69.85]]
+
+[[sheet.wire]]
+pts = [[76.2, 63.5], [81.28, 63.5]]
+
+[[sheet.wire]]
+pts = [[81.28, 63.5], [81.28, 66.04]]
+
+[[sheet.wire]]
+pts = [[81.28, 63.5], [90.17, 63.5]]
+
+[[sheet.wire]]
+pts = [[229.87, 57.15], [233.68, 57.15]]
+
+[[sheet.wire]]
+pts = [[63.5, 41.91], [63.5, 43.18]]
+
+[[sheet.wire]]
+pts = [[55.88, 43.18], [55.88, 44.45]]
+
+[[sheet.wire]]
+pts = [[55.88, 33.02], [63.5, 33.02]]
+
+[[sheet.wire]]
+pts = [[168.91, 76.2], [179.07, 76.2]]
+
+[[sheet.wire]]
+pts = [[200.66, 91.44], [200.66, 90.17]]
+
+[[sheet.wire]]
+pts = [[200.66, 41.91], [200.66, 40.64]]
+
+[[sheet.wire]]
+pts = [[210.82, 33.02], [233.68, 33.02]]
+
+[[sheet.wire]]
+pts = [[50.8, 33.02], [55.88, 33.02]]
+
+[[sheet.wire]]
+pts = [[187.96, 31.75], [187.96, 33.02]]
+
+[[sheet.wire]]
+pts = [[63.5, 31.75], [63.5, 33.02]]
+
+[[sheet.wire]]
+pts = [[233.68, 33.02], [233.68, 36.83]]
+
+[[sheet.wire]]
+pts = [[53.34, 71.12], [53.34, 68.58]]
+
+[[sheet.wire]]
+pts = [[233.68, 31.75], [233.68, 33.02]]
+
+[[sheet.junction]]
+at = [55.88, 33.02]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [81.28, 63.5]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [233.68, 33.02]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [233.68, 69.85]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [55.88, 43.18]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [63.5, 33.02]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [76.2, 63.5]
+diameter = 1.016
+
+[[sheet.no_connect]]
+at = [223.52, 77.47]
+
+[[sheet.no_connect]]
+at = [180.34, 77.47]
+
+[[sheet.label]]
+kind = "local"
+text = "12Vext"
+at = [54.61, 63.5]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.sheet_ref]]
+key = "ampli_ht_vertical"
+sheet = "ampli_ht"
+module = "ampli_ht_vertical"
+name = "ampli_ht_vertical"
+file = "ampli_ht.kicad_sch"
+at = [71.12, 111.76]
+size = [50.8, 36.83]
+page = "2"
+fields.Sheetname = { at = [71.12, 110.9975], rotation = 0, justify = "left bottom", font = { size = [1.524, 1.524] } }
+fields.Sheetfile = { at = [71.12, 149.2001], rotation = 0, justify = "left top", font = { size = [1.524, 1.524] } }
+
+[[sheet.sheet_ref]]
+key = "ampli_ht_horizontal"
+sheet = "ampli_ht"
+module = "ampli_ht_horizontal"
+name = "ampli_ht_horizontal"
+file = "ampli_ht.kicad_sch"
+at = [154.94, 111.76]
+size = [50.8, 36.83]
+page = "3"
+fields.Sheetname = { at = [154.94, 110.9975], rotation = 0, justify = "left bottom", font = { size = [1.524, 1.524] } }
+fields.Sheetfile = { at = [154.94, 149.2001], rotation = 0, justify = "left top", font = { size = [1.524, 1.524] } }
+
+[[sheet]]
+key = "ampli_ht"
+paper = "A4"
+
+[sheet.title_block]
+title = "Complex hierarchy: demo"
+date = "2017-01-15"
+revision = "1"
+
+[[sheet.symbol]]
+part = "RV201"
+unit = 1
+at = [148.59, 162.56]
+rotation = 0
+fields.Reference = { at = [148.59, 165.1], rotation = 0 }
+fields.Value = { at = [148.59, 162.56], rotation = 0 }
+fields.Footprint = { at = [148.59, 166.37], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [148.59, 162.56], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "C201"
+unit = 1
+at = [110.49, 40.64]
+rotation = 270
+fields.Reference = { at = [110.49, 36.83], rotation = 90 }
+fields.Value = { at = [110.49, 44.45], rotation = 90 }
+fields.Footprint = { at = [110.49, 35.56], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [110.49, 40.64], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "R203"
+unit = 1
+at = [100.33, 50.8]
+rotation = 270
+fields.Reference = { at = [100.33, 48.26], rotation = 90 }
+fields.Value = { at = [100.33, 50.8], rotation = 90 }
+fields.Footprint = { at = [100.33, 46.99], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [100.33, 50.8], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "U201"
+unit = 2
+at = [123.19, 60.96]
+rotation = 0
+fields.Reference = { at = [124.46, 55.88], rotation = 0, font = { size = [1.524, 1.524] } }
+fields.Value = { at = [127, 66.04], rotation = 0 }
+fields.Footprint = { at = [129.54, 67.31], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [123.19, 60.96], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "Q201"
+unit = 1
+at = [198.12, 83.82]
+rotation = 0
+mirror = "x"
+fields.Reference = { at = [198.12, 80.01], rotation = 0, justify = "right", font = { size = [1.524, 1.524] } }
+fields.Value = { at = [198.12, 87.63], rotation = 0, justify = "right", font = { size = [1.524, 1.524] } }
+fields.Footprint = { at = [196.85, 78.74], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [198.12, 83.82], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "R213"
+unit = 1
+at = [133.35, 162.56]
+rotation = 270
+fields.Reference = { at = [133.35, 160.02], rotation = 90 }
+fields.Value = { at = [133.35, 162.56], rotation = 90 }
+fields.Footprint = { at = [133.35, 158.75], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [133.35, 162.56], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "R206"
+unit = 1
+at = [240.03, 105.41]
+rotation = 270
+fields.Reference = { at = [240.03, 107.442], rotation = 90 }
+fields.Value = { at = [240.03, 105.41], rotation = 90 }
+fields.Footprint = { at = [240.03, 104.14], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [240.03, 105.41], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "C204"
+unit = 1
+at = [205.74, 146.05]
+rotation = 0
+fields.Reference = { at = [207.01, 143.51], rotation = 0, justify = "left" }
+fields.Value = { at = [207.01, 148.59], rotation = 0, justify = "left" }
+fields.Footprint = { at = [210.82, 149.86], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [205.74, 146.05], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "C203"
+unit = 1
+at = [101.6, 64.77]
+rotation = 0
+fields.Reference = { at = [104.14, 62.23], rotation = 0, justify = "left" }
+fields.Value = { at = [104.14, 67.31], rotation = 0, justify = "left" }
+fields.Footprint = { at = [105.41, 68.58], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [101.6, 64.77], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "P201"
+unit = 1
+at = [34.29, 53.34]
+rotation = 0
+mirror = "y"
+fields.Reference = { at = [35.56, 53.34], rotation = 90, font = { size = [1.016, 1.016] } }
+fields.Value = { at = [33.02, 53.34], rotation = 90, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [35.56, 58.42], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [34.29, 53.34], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "U201"
+unit = 1
+at = [162.56, 137.16]
+rotation = 0
+fields.Reference = { at = [163.83, 132.08], rotation = 0, font = { size = [1.524, 1.524] } }
+fields.Value = { at = [166.37, 142.24], rotation = 0 }
+fields.Footprint = { at = [168.91, 143.51], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [162.56, 137.16], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "R202"
+unit = 1
+at = [82.55, 50.8]
+rotation = 270
+fields.Reference = { at = [82.55, 48.26], rotation = 90 }
+fields.Value = { at = [82.55, 50.8], rotation = 90 }
+fields.Footprint = { at = [83.82, 53.34], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [82.55, 50.8], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "P202"
+unit = 1
+at = [273.05, 111.76]
+rotation = 0
+fields.Reference = { at = [271.78, 111.76], rotation = 90, font = { size = [1.016, 1.016] } }
+fields.Value = { at = [274.32, 111.76], rotation = 90, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [273.05, 116.84], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [273.05, 111.76], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "R212"
+unit = 1
+at = [187.96, 137.16]
+rotation = 270
+fields.Reference = { at = [187.96, 134.62], rotation = 90 }
+fields.Value = { at = [187.96, 137.16], rotation = 90 }
+fields.Footprint = { at = [188.5188, 139.065], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [187.96, 137.16], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "R209"
+unit = 1
+at = [226.06, 129.54]
+rotation = 180
+fields.Reference = { at = [223.52, 129.54], rotation = 90 }
+fields.Value = { at = [226.06, 129.54], rotation = 90 }
+fields.Footprint = { at = [223.52, 129.54], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [226.06, 129.54], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "R208"
+unit = 1
+at = [184.15, 129.54]
+rotation = 270
+fields.Reference = { at = [184.15, 127], rotation = 90 }
+fields.Value = { at = [184.15, 129.54], rotation = 90 }
+fields.Footprint = { at = [184.15, 125.73], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [184.15, 129.54], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "R205"
+unit = 1
+at = [185.42, 91.44]
+rotation = 0
+fields.Reference = { at = [187.452, 91.44], rotation = 90 }
+fields.Value = { at = [185.42, 91.44], rotation = 90 }
+fields.Footprint = { at = [182.88, 91.44], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [185.42, 91.44], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "D201"
+unit = 1
+at = [185.42, 71.12]
+rotation = 90
+fields.Reference = { at = [180.34, 72.39], rotation = 90 }
+fields.Value = { at = [180.34, 69.85], rotation = 90 }
+fields.Footprint = { at = [180.34, 67.31], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [185.42, 71.12], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "R204"
+unit = 1
+at = [200.66, 69.85]
+rotation = 0
+fields.Reference = { at = [202.692, 69.85], rotation = 90 }
+fields.Value = { at = [200.66, 69.85], rotation = 90 }
+fields.Footprint = { at = [203.9874, 69.6468], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [200.66, 69.85], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "D202"
+unit = 1
+at = [185.42, 78.74]
+rotation = 90
+fields.Reference = { at = [180.34, 80.01], rotation = 90 }
+fields.Value = { at = [180.34, 77.47], rotation = 90 }
+fields.Footprint = { at = [180.34, 81.28], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [185.42, 78.74], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "Q204"
+unit = 1
+at = [198.12, 129.54]
+rotation = 0
+fields.Reference = { at = [198.12, 133.35], rotation = 0, justify = "right" }
+fields.Value = { at = [198.12, 125.73], rotation = 0, justify = "right" }
+fields.Footprint = { at = [196.85, 134.62], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [198.12, 129.54], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "D204"
+unit = 1
+at = [200.66, 114.3]
+rotation = 90
+fields.Reference = { at = [195.58, 115.57], rotation = 90 }
+fields.Value = { at = [195.58, 113.03], rotation = 90 }
+fields.Footprint = { at = [202.3872, 114.1476], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [200.66, 114.3], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "Q203"
+unit = 1
+at = [215.9, 121.92]
+rotation = 0
+mirror = "x"
+fields.Reference = { at = [215.9, 118.11], rotation = 0, justify = "right", font = { size = [1.524, 1.524] } }
+fields.Value = { at = [215.9, 125.73], rotation = 0, justify = "right", font = { size = [1.524, 1.524] } }
+fields.Footprint = { at = [214.63, 127], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [215.9, 121.92], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "Q202"
+unit = 1
+at = [215.9, 93.98]
+rotation = 0
+fields.Reference = { at = [215.9, 87.63], rotation = 0, justify = "right" }
+fields.Value = { at = [215.9, 90.17], rotation = 0, justify = "right" }
+fields.Footprint = { at = [210.82, 91.44], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [215.9, 93.98], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "R201"
+unit = 1
+at = [62.23, 50.8]
+rotation = 270
+fields.Reference = { at = [62.23, 48.26], rotation = 90 }
+fields.Value = { at = [62.23, 50.8], rotation = 90 }
+fields.Footprint = { at = [62.23, 46.99], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [62.23, 50.8], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "C202"
+unit = 1
+at = [72.39, 57.15]
+rotation = 0
+fields.Reference = { at = [76.2, 55.88], rotation = 0, justify = "left" }
+fields.Value = { at = [76.2, 58.42], rotation = 0, justify = "left" }
+fields.Footprint = { at = [80.01, 59.69], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [72.39, 57.15], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "R211"
+unit = 1
+at = [205.74, 133.35]
+rotation = 0
+fields.Reference = { at = [207.772, 133.35], rotation = 90 }
+fields.Value = { at = [205.74, 133.35], rotation = 90 }
+fields.Footprint = { at = [208.9404, 133.1214], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [205.74, 133.35], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "D203"
+unit = 1
+at = [200.66, 101.6]
+rotation = 90
+fields.Reference = { at = [195.58, 102.87], rotation = 90 }
+fields.Value = { at = [195.58, 100.33], rotation = 90 }
+fields.Footprint = { at = [202.4634, 101.5746], rotation = 0, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [200.66, 101.6], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "R207"
+unit = 1
+at = [240.03, 113.03]
+rotation = 270
+fields.Reference = { at = [240.03, 115.062], rotation = 90 }
+fields.Value = { at = [240.03, 113.03], rotation = 90 }
+fields.Footprint = { at = [240.03, 116.84], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [240.03, 113.03], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.symbol]]
+part = "R210"
+unit = 1
+at = [231.14, 129.54]
+rotation = 180
+fields.Reference = { at = [233.68, 129.54], rotation = 90 }
+fields.Value = { at = [231.14, 129.54], rotation = 90 }
+fields.Footprint = { at = [234.95, 129.54], rotation = 90, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [231.14, 129.54], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:+12V"
+net = "+12V"
+at = [120.65, 49.53]
+rotation = 0
+fields.Value = { at = [120.65, 46.99], rotation = 0, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [120.65, 49.53], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [120.65, 49.53], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:HT"
+net = "HT"
+at = [218.44, 83.82]
+rotation = 0
+fields.Value = { at = [218.44, 81.534], rotation = 0, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [218.44, 83.82], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [218.44, 83.82], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:HT"
+net = "HT"
+at = [200.66, 64.77]
+rotation = 0
+fields.Value = { at = [200.66, 62.484], rotation = 0, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [200.66, 64.77], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [200.66, 64.77], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:HT"
+net = "HT"
+at = [185.42, 67.31]
+rotation = 0
+fields.Value = { at = [185.42, 65.024], rotation = 0, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [185.42, 67.31], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [185.42, 67.31], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:GND"
+net = "GND"
+at = [128.27, 162.56]
+rotation = 270
+fields.Value = { at = [126.492, 162.56], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [128.27, 162.56], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [128.27, 162.56], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:GND"
+net = "GND"
+at = [260.35, 115.57]
+rotation = 0
+fields.Value = { at = [260.35, 117.348], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [260.35, 115.57], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [260.35, 115.57], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:GND"
+net = "GND"
+at = [101.6, 69.85]
+rotation = 0
+fields.Value = { at = [101.6, 71.628], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [101.6, 69.85], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [101.6, 69.85], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:GND"
+net = "GND"
+at = [45.72, 57.15]
+rotation = 0
+fields.Value = { at = [45.72, 58.928], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [45.72, 57.15], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [45.72, 57.15], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:+12V"
+net = "+12V"
+at = [160.02, 125.73]
+rotation = 0
+fields.Value = { at = [160.02, 123.19], rotation = 0, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [160.02, 125.73], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [160.02, 125.73], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:GND"
+net = "GND"
+at = [185.42, 97.79]
+rotation = 0
+fields.Value = { at = [185.42, 99.568], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [185.42, 97.79], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [185.42, 97.79], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:GND"
+net = "GND"
+at = [177.8, 132.08]
+rotation = 0
+fields.Value = { at = [177.8, 133.858], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [177.8, 132.08], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [177.8, 132.08], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:GND"
+net = "GND"
+at = [218.44, 134.62]
+rotation = 0
+fields.Value = { at = [218.44, 136.398], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [218.44, 134.62], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [218.44, 134.62], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:-VAA"
+net = "-VAA"
+at = [120.65, 72.39]
+rotation = 180
+fields.Value = { at = [120.65, 74.93], rotation = 0, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [120.65, 72.39], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [120.65, 72.39], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:-VAA"
+net = "-VAA"
+at = [160.02, 148.59]
+rotation = 180
+fields.Value = { at = [160.02, 151.13], rotation = 0, font = { size = [1.016, 1.016] } }
+fields.Footprint = { at = [160.02, 148.59], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [160.02, 148.59], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:GND"
+net = "GND"
+at = [72.39, 62.23]
+rotation = 0
+fields.Value = { at = [72.39, 64.008], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [72.39, 62.23], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [72.39, 62.23], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.power]]
+symbol = "complex_hierarchy:GND"
+net = "GND"
+at = [205.74, 151.13]
+rotation = 0
+fields.Value = { at = [205.74, 152.908], rotation = 0, hide = true, font = { size = [0.762, 0.762] } }
+fields.Footprint = { at = [205.74, 151.13], rotation = 0, hide = true, font = { size = [0.254, 0.254] } }
+fields.Datasheet = { at = [205.74, 151.13], rotation = 0, hide = true, font = { size = [1.524, 1.524] } }
+
+[[sheet.wire]]
+pts = [[86.36, 50.8], [91.44, 50.8]]
+
+[[sheet.wire]]
+pts = [[231.14, 137.16], [231.14, 133.35]]
+
+[[sheet.wire]]
+pts = [[175.26, 137.16], [184.15, 137.16]]
+
+[[sheet.wire]]
+pts = [[218.44, 127], [218.44, 134.62]]
+
+[[sheet.wire]]
+pts = [[72.39, 50.8], [78.74, 50.8]]
+
+[[sheet.wire]]
+pts = [[110.49, 55.88], [110.49, 58.42]]
+
+[[sheet.wire]]
+pts = [[205.74, 149.86], [205.74, 151.13]]
+
+[[sheet.wire]]
+pts = [[218.44, 105.41], [218.44, 99.06]]
+
+[[sheet.wire]]
+pts = [[218.44, 105.41], [231.14, 105.41]]
+
+[[sheet.wire]]
+pts = [[180.34, 129.54], [177.8, 129.54]]
+
+[[sheet.wire]]
+pts = [[106.68, 40.64], [91.44, 40.64]]
+
+[[sheet.wire]]
+pts = [[185.42, 83.82], [185.42, 87.63]]
+
+[[sheet.wire]]
+pts = [[231.14, 105.41], [236.22, 105.41]]
+
+[[sheet.wire]]
+pts = [[226.06, 113.03], [236.22, 113.03]]
+
+[[sheet.wire]]
+pts = [[226.06, 137.16], [231.14, 137.16]]
+
+[[sheet.wire]]
+pts = [[72.39, 53.34], [72.39, 50.8]]
+
+[[sheet.wire]]
+pts = [[110.49, 55.88], [101.6, 55.88]]
+
+[[sheet.wire]]
+pts = [[185.42, 81.28], [185.42, 83.82]]
+
+[[sheet.wire]]
+pts = [[210.82, 93.98], [200.66, 93.98]]
+
+[[sheet.wire]]
+pts = [[148.59, 158.75], [148.59, 139.7]]
+
+[[sheet.wire]]
+pts = [[138.43, 60.96], [138.43, 40.64]]
+
+[[sheet.wire]]
+pts = [[130.81, 76.2], [138.43, 76.2]]
+
+[[sheet.wire]]
+pts = [[130.81, 134.62], [130.81, 76.2]]
+
+[[sheet.wire]]
+pts = [[160.02, 148.59], [160.02, 147.32]]
+
+[[sheet.wire]]
+pts = [[45.72, 55.88], [45.72, 57.15]]
+
+[[sheet.wire]]
+pts = [[91.44, 50.8], [96.52, 50.8]]
+
+[[sheet.wire]]
+pts = [[200.66, 93.98], [200.66, 99.06]]
+
+[[sheet.wire]]
+pts = [[101.6, 69.85], [101.6, 68.58]]
+
+[[sheet.wire]]
+pts = [[160.02, 125.73], [160.02, 127]]
+
+[[sheet.wire]]
+pts = [[200.66, 116.84], [200.66, 121.92]]
+
+[[sheet.wire]]
+pts = [[58.42, 50.8], [43.18, 50.8]]
+
+[[sheet.wire]]
+pts = [[200.66, 64.77], [200.66, 66.04]]
+
+[[sheet.wire]]
+pts = [[226.06, 162.56], [154.94, 162.56]]
+
+[[sheet.wire]]
+pts = [[248.92, 105.41], [243.84, 105.41]]
+
+[[sheet.wire]]
+pts = [[205.74, 121.92], [205.74, 129.54]]
+
+[[sheet.wire]]
+pts = [[200.66, 121.92], [205.74, 121.92]]
+
+[[sheet.wire]]
+pts = [[248.92, 109.22], [264.16, 109.22]]
+
+[[sheet.wire]]
+pts = [[128.27, 162.56], [129.54, 162.56]]
+
+[[sheet.wire]]
+pts = [[264.16, 114.3], [260.35, 114.3]]
+
+[[sheet.wire]]
+pts = [[138.43, 40.64], [114.3, 40.64]]
+
+[[sheet.wire]]
+pts = [[200.66, 88.9], [200.66, 93.98]]
+
+[[sheet.wire]]
+pts = [[226.06, 137.16], [226.06, 162.56]]
+
+[[sheet.wire]]
+pts = [[177.8, 129.54], [177.8, 132.08]]
+
+[[sheet.wire]]
+pts = [[149.86, 134.62], [130.81, 134.62]]
+
+[[sheet.wire]]
+pts = [[248.92, 105.41], [248.92, 109.22]]
+
+[[sheet.wire]]
+pts = [[200.66, 134.62], [200.66, 137.16]]
+
+[[sheet.wire]]
+pts = [[200.66, 137.16], [191.77, 137.16]]
+
+[[sheet.wire]]
+pts = [[43.18, 55.88], [45.72, 55.88]]
+
+[[sheet.wire]]
+pts = [[110.49, 50.8], [110.49, 55.88]]
+
+[[sheet.wire]]
+pts = [[91.44, 40.64], [91.44, 50.8]]
+
+[[sheet.wire]]
+pts = [[200.66, 121.92], [200.66, 124.46]]
+
+[[sheet.wire]]
+pts = [[110.49, 50.8], [104.14, 50.8]]
+
+[[sheet.wire]]
+pts = [[185.42, 95.25], [185.42, 97.79]]
+
+[[sheet.wire]]
+pts = [[226.06, 113.03], [226.06, 125.73]]
+
+[[sheet.wire]]
+pts = [[260.35, 114.3], [260.35, 115.57]]
+
+[[sheet.wire]]
+pts = [[120.65, 49.53], [120.65, 50.8]]
+
+[[sheet.wire]]
+pts = [[148.59, 139.7], [149.86, 139.7]]
+
+[[sheet.wire]]
+pts = [[110.49, 63.5], [110.49, 76.2]]
+
+[[sheet.wire]]
+pts = [[135.89, 60.96], [138.43, 60.96]]
+
+[[sheet.wire]]
+pts = [[137.16, 162.56], [142.24, 162.56]]
+
+[[sheet.wire]]
+pts = [[185.42, 76.2], [185.42, 73.66]]
+
+[[sheet.wire]]
+pts = [[193.04, 83.82], [185.42, 83.82]]
+
+[[sheet.wire]]
+pts = [[120.65, 72.39], [120.65, 71.12]]
+
+[[sheet.wire]]
+pts = [[218.44, 113.03], [226.06, 113.03]]
+
+[[sheet.wire]]
+pts = [[248.92, 113.03], [243.84, 113.03]]
+
+[[sheet.wire]]
+pts = [[218.44, 83.82], [218.44, 88.9]]
+
+[[sheet.wire]]
+pts = [[200.66, 104.14], [200.66, 111.76]]
+
+[[sheet.wire]]
+pts = [[218.44, 113.03], [218.44, 116.84]]
+
+[[sheet.wire]]
+pts = [[226.06, 133.35], [226.06, 137.16]]
+
+[[sheet.wire]]
+pts = [[187.96, 129.54], [193.04, 129.54]]
+
+[[sheet.wire]]
+pts = [[138.43, 76.2], [138.43, 60.96]]
+
+[[sheet.wire]]
+pts = [[66.04, 50.8], [72.39, 50.8]]
+
+[[sheet.wire]]
+pts = [[110.49, 76.2], [130.81, 76.2]]
+
+[[sheet.wire]]
+pts = [[200.66, 73.66], [200.66, 78.74]]
+
+[[sheet.wire]]
+pts = [[231.14, 125.73], [231.14, 105.41]]
+
+[[sheet.wire]]
+pts = [[205.74, 121.92], [210.82, 121.92]]
+
+[[sheet.wire]]
+pts = [[248.92, 109.22], [248.92, 113.03]]
+
+[[sheet.wire]]
+pts = [[185.42, 68.58], [185.42, 67.31]]
+
+[[sheet.wire]]
+pts = [[101.6, 55.88], [101.6, 60.96]]
+
+[[sheet.wire]]
+pts = [[72.39, 62.23], [72.39, 60.96]]
+
+[[sheet.wire]]
+pts = [[205.74, 137.16], [205.74, 142.24]]
+
+[[sheet.junction]]
+at = [138.43, 60.96]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [248.92, 109.22]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [226.06, 113.03]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [130.81, 76.2]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [205.74, 121.92]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [226.06, 137.16]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [200.66, 93.98]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [231.14, 105.41]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [91.44, 50.8]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [110.49, 55.88]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [72.39, 50.8]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [185.42, 83.82]
+diameter = 1.016
+
+[[sheet.junction]]
+at = [200.66, 121.92]
+diameter = 1.016
+
+[[sheet.label]]
+kind = "local"
+text = "Vpil_0_3,3V"
+at = [132.08, 134.62]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "S_OUT+"
+at = [180.34, 162.56]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PIEZO_OUT"
+at = [254, 109.22]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.label]]
+kind = "local"
+text = "PIEZO_IN"
+at = [44.45, 50.8]
+rotation = 0
+font = { size = [1.524, 1.524] }
+justify = "left bottom"
+
+[[sheet.opaque]]
+kicad = "(text \"Filter:\\nFc =1000Hz\" (exclude_from_sim no) (at 66.04 74.93 0) (effects (font (size 2.032 2.032) (thickness 0.4064) (bold yes) (italic yes)) (justify left bottom)) (uuid \"4fee597b-5b3d-4d5f-9246-cb5aaa802827\"))"

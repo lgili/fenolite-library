@@ -267,6 +267,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "1_1")
+		(pintype "passive+no_connect")
 		(uuid "6cee30fb-d885-4964-9f37-06dd90b34dc5")
 	)
 	(pad "2" thru_hole circle
@@ -275,6 +277,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "2_2")
+		(pintype "passive+no_connect")
 		(uuid "72576758-556d-4735-bccf-7598eb2f5e71")
 	)
 	(pad "3" thru_hole circle
@@ -283,6 +287,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "3_3")
+		(pintype "passive")
 		(uuid "3293adba-2f29-4fc6-b933-d8d179591629")
 	)
 	(pad "4" thru_hole circle
@@ -291,6 +297,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "4_4")
+		(pintype "passive")
 		(uuid "3316b391-66be-497c-8f2e-681907c19d99")
 	)
 	(pad "5" thru_hole circle
@@ -299,6 +307,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "5_5")
+		(pintype "passive")
 		(uuid "7fdfccdb-09bb-4994-98b8-9417776e4444")
 	)
 	(pad "6" thru_hole circle
@@ -307,6 +317,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "P6_6")
+		(pintype "passive+no_connect")
 		(uuid "0147caff-b974-40b0-aa15-80250bcc4aec")
 	)
 	(pad "7" thru_hole circle
@@ -315,6 +327,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "P7_7")
+		(pintype "passive")
 		(uuid "a838aafa-cdae-4835-8c0f-8ee319df5d45")
 	)
 	(pad "8" thru_hole circle
@@ -323,6 +337,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "P8_8")
+		(pintype "passive")
 		(uuid "93547e8f-d77b-4d97-9048-37f696ed9e44")
 	)
 	(pad "9" thru_hole circle
@@ -331,6 +347,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "P9_9")
+		(pintype "passive+no_connect")
 		(uuid "a95c7a35-a094-4374-8d7e-fd09222f2f97")
 	)
 	(pad "SH" thru_hole circle

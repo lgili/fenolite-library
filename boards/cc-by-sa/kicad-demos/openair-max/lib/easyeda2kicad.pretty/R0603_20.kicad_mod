@@ -1,11 +1,11 @@
 (footprint "R0603_20"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(property "Reference" "REF**"
-		(at 0 1.4 -180)
+		(at -2.55 0.1 180)
 		(layer "F.SilkS")
-		(uuid "c3991470-3117-4708-baf8-0e7fd0cb9e74")
+		(uuid "ceeee1b5-ddf8-4417-af1e-56bc2b9a88b5")
 		(effects
 			(font
 				(size 0.6 0.6)
@@ -14,9 +14,9 @@
 		)
 	)
 	(property "Value" "R0603_20"
-		(at 0 4 -180)
+		(at 0 4 180)
 		(layer "F.Fab")
-		(uuid "31726317-abe0-4686-9611-6496c811325a")
+		(uuid "e415c271-4619-41a0-8255-223353062906")
 		(effects
 			(font
 				(size 1 1)
@@ -25,10 +25,10 @@
 		)
 	)
 	(property "Datasheet" ""
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "e5191c96-9d3d-4a0e-a837-9505d6722cdc")
+		(uuid "ea3680d7-071f-432e-9585-5dd2fd1e699b")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -37,10 +37,10 @@
 		)
 	)
 	(property "Description" ""
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "652d07f4-c8b4-4cd5-befb-cd56fe93c958")
+		(uuid "87f71702-bc9e-4dbf-9281-a4ec19543d89")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -48,7 +48,14 @@
 			)
 		)
 	)
+	(units
+		(unit
+			(name "A")
+			(pins "1" "2")
+		)
+	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start 1.39 -0.66)
 		(end 1.39 0.66)
@@ -121,7 +128,7 @@
 		(uuid "6e7248cb-5edb-4b71-8e71-8b3359d9fd58")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(uuid "3550eefb-dc0e-42ef-97e5-fa37ae60616b")
 		(effects
@@ -135,16 +142,20 @@
 		(at -0.75 0)
 		(size 0.81 0.86)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "1_1")
+		(pintype "unspecified")
 		(uuid "af4f5aad-ff19-4c01-b03e-05cf4a741b15")
 	)
 	(pad "2" smd rect
 		(at 0.75 0)
 		(size 0.81 0.86)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "2_2")
+		(pintype "unspecified")
 		(uuid "aba99fc4-c609-4e8b-881d-0096be4ae639")
 	)
 	(embedded_fonts no)
-	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/R0603.wrl"
+	(model "${KIPRJMOD}/../../libraries/easyeda2kicad/easyeda2kicad.3dshapes/R0603.wrl"
 		(offset
 			(xyz 0 -0 -0)
 		)

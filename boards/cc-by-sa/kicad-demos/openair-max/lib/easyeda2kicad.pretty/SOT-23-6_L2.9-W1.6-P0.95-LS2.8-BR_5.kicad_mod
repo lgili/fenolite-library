@@ -1,11 +1,11 @@
 (footprint "SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR_5"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(property "Reference" "REF**"
-		(at 0 2.275 0)
+		(at 0.3 -2.5 0)
 		(layer "F.SilkS")
-		(uuid "b8eff051-23c1-4961-bffe-676dfabe5d87")
+		(uuid "b1d5d77b-f944-4f0c-9a00-62ce818eec18")
 		(effects
 			(font
 				(size 0.6 0.6)
@@ -16,7 +16,7 @@
 	(property "Value" "SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR_5"
 		(at 0 4.95 0)
 		(layer "F.Fab")
-		(uuid "dcbec553-7532-45de-87ef-06fdcf7a792c")
+		(uuid "a0227300-72ee-4ca0-b1b7-640799765208")
 		(effects
 			(font
 				(size 1 1)
@@ -28,7 +28,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "786341fe-2db4-4636-aa0e-5f06a6358e19")
+		(uuid "9f191b70-e6f0-40f7-ba64-2ae836cda37e")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40,7 +40,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "c18d1c9d-8347-4ce0-8e21-ca441bf80934")
+		(uuid "c046ad89-dad1-48fb-bce3-953d9f8d9afe")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -48,7 +48,14 @@
 			)
 		)
 	)
+	(units
+		(unit
+			(name "A")
+			(pins "1" "2" "3" "6" "5" "4")
+		)
+	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start -0.9 1.55)
 		(end 0.9 1.55)
@@ -117,40 +124,52 @@
 		(at 1.35 0.95)
 		(size 1.1 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "R2_1")
+		(pintype "unspecified")
 		(uuid "8aa0c924-fee0-48be-8312-951cde1ba391")
 	)
 	(pad "2" smd rect
 		(at 1.35 0)
 		(size 1.1 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "VOUT_2")
+		(pintype "unspecified")
 		(uuid "127add10-f86a-46ca-a419-a4f2d54a45b3")
 	)
 	(pad "3" smd rect
 		(at 1.35 -0.95)
 		(size 1.1 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "VOUT_3")
+		(pintype "unspecified")
 		(uuid "1f146741-d211-42b0-8abf-e8da9135c5d9")
 	)
 	(pad "4" smd rect
 		(at -1.35 -0.95)
 		(size 1.1 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "VIN_4")
+		(pintype "unspecified")
 		(uuid "d0ee174b-078b-4576-ab29-e478458176dc")
 	)
 	(pad "5" smd rect
 		(at -1.35 0)
 		(size 1.1 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "ON/OFF_5")
+		(pintype "unspecified")
 		(uuid "9a6a8c3a-6157-4b8c-840a-b7716e364bea")
 	)
 	(pad "6" smd rect
 		(at -1.35 0.95)
 		(size 1.1 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "R1/C1_6")
+		(pintype "unspecified")
 		(uuid "e0af0e8b-24f3-4357-b08c-1f8075aae4bc")
 	)
 	(embedded_fonts no)
-	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/SOT-23-6_L2.9-W1.6-H1.5-LS2.8-P0.95.wrl"
+	(model "${KIPRJMOD}/../../libraries/easyeda2kicad/easyeda2kicad.3dshapes/SOT-23-6_L2.9-W1.6-H1.5-LS2.8-P0.95.wrl"
 		(offset
 			(xyz 0 -0 -0)
 		)

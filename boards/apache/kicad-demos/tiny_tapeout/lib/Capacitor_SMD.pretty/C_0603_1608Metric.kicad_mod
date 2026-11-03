@@ -1,7 +1,7 @@
 (footprint "C_0603_1608Metric"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 	(tags "capacitor")
 	(property "Reference" "REF**"
@@ -170,6 +170,7 @@
 		(size 0.9 0.95)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pintype "passive")
 		(uuid "2ad29892-3d18-43ca-8c71-534a53b4bc92")
 	)
 	(pad "2" smd roundrect
@@ -177,6 +178,7 @@
 		(size 0.9 0.95)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pintype "passive")
 		(uuid "98dfe277-7b0c-44b9-83fd-d896ba67e108")
 	)
 	(embedded_fonts no)

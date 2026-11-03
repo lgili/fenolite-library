@@ -1,3 +1,10 @@
 (fp_lib_table
-	(lib (name multichannel_mixer) (type KiCad) (uri ${KIPRJMOD}/lib/multichannel_mixer.pretty) (options "") (descr ""))
+	(version 7)
+	(lib (name "Capacitors SMD") (type "KiCad") (uri "${KIPRJMOD}/lib/Capacitors SMD.pretty") (options "") (descr ""))
+	(lib (name "Capacitors THD") (type "KiCad") (uri "${KIPRJMOD}/lib/Capacitors THD.pretty") (options "") (descr ""))
+	(lib (name "Connector_Audio") (type "KiCad") (uri "${KIPRJMOD}/lib/Connector_Audio.pretty") (options "") (descr ""))
+	(lib (name "ICs And Semiconductors SMD") (type "KiCad") (uri "${KIPRJMOD}/lib/ICs And Semiconductors SMD.pretty") (options "") (descr ""))
+	(lib (name "Miscellaneous THD") (type "KiCad") (uri "${KIPRJMOD}/lib/Miscellaneous THD.pretty") (options "") (descr ""))
+	(lib (name "Potentiometer_THT") (type "KiCad") (uri "${KIPRJMOD}/lib/Potentiometer_THT.pretty") (options "") (descr ""))
+	(lib (name "Resistors SMD") (type "KiCad") (uri "${KIPRJMOD}/lib/Resistors SMD.pretty") (options "") (descr ""))
 )

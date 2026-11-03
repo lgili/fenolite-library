@@ -1,10 +1,11 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
 # SPDX-FileCopyrightText: NOASSERTION
-# Converted from https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/pic_programmer@97acc80c223d75520c03fc44cab63cd9a3202c42 by Fenolite 0.7.0.dev0 on 2026-10-31;
+# Converted from https://gitlab.com/kicad/code/kicad/-/tree/97acc80c223d75520c03fc44cab63cd9a3202c42/demos/pic_programmer@97acc80c223d75520c03fc44cab63cd9a3202c42 by Fenolite 0.7.0.dev0 on 2026-11-03;
 # modified: format conversion to the Fenolite DSL.
 
 import copper
-from fenolite.dsl import Design, Module, Net, Part, connect, mm, stack
+from sheets import pic_sockets as _sheet_pic_sockets
+from fenolite.dsl import Design, Net, Part, connect, mm, stack
 
 design = Design("pic_programmer")
 
@@ -16,6 +17,7 @@ design.board(
         (mm("133.68"), mm("39.7")),
         (mm("-26.34"), mm("39.7")),
     ),
+    max_curve_error=mm("0.01"),
 )
 design.stackup(
     stack.silkscreen(color="White"),
@@ -63,366 +65,341 @@ net_u4_vc = Net("Net-(U4-Vc)")
 vcc = Net("VCC")
 vpp = Net("VPP")
 
-design.rules.netclass(
-    "POWER",
-    clearance=mm("0.28"),
-    track_width=mm("0.8"),
-    via_diameter=mm("1.6"),
-    via_drill=mm("0.6"),
-    diff_pair_width=mm("0.28"),
-    diff_pair_gap=mm("0.28"),
-    diff_pair_via_gap=mm("0.25"),
-    nets=(gnd, vcc),
-)
-design.rules.minimum(
-    track_width=mm("0.25"),
-    via_diameter=mm("0.9"),
-    hole_size=mm("0.5"),
-    edge_clearance=mm("0.01"),
-)
-
 c1 = Part(
     "C1",
-    "Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal",
+    "pic_programmer:CP",
     footprint="Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal",
     value="100µF",
 )
 c2 = Part(
     "C2",
-    "Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal_2",
-    footprint="Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal_2",
+    "pic_programmer:CP",
+    footprint="Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal",
+    footprint_definition="Capacitor_THT:CP_Axial_L18.0mm_D6.5mm_P25.00mm_Horizontal_2",
     value="220uF",
 )
 c3 = Part(
     "C3",
-    "Capacitor_THT:C_Axial_L12.0mm_D6.5mm_P20.00mm_Horizontal",
+    "pic_programmer:CP",
     footprint="Capacitor_THT:C_Axial_L12.0mm_D6.5mm_P20.00mm_Horizontal",
     value="22uF/25V",
 )
-c4 = Part(
-    "C4",
-    "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm",
-    footprint="Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm",
-    value="0",
-)
+c4 = Part("C4", "pic_programmer:C", footprint="Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm", value="0")
 c5 = Part(
     "C5",
-    "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm_2",
-    footprint="Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm_2",
+    "pic_programmer:C",
+    footprint="Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm",
+    footprint_definition="Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm_2",
     value="10nF",
 )
 c9 = Part(
     "C9",
-    "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm_2",
-    footprint="Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm_2",
+    "pic_programmer:C",
+    footprint="Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm",
+    footprint_definition="Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm_2",
     value="220nF",
 )
-d1 = Part(
-    "D1",
-    "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal",
-    footprint="Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal",
-    value="1N4004",
-)
+d1 = Part("D1", "pic_programmer:D", footprint="Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal", value="1N4004")
 d2 = Part(
     "D2",
-    "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal_2",
-    footprint="Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal_2",
+    "pic_programmer:D_Schottky",
+    footprint="Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    footprint_definition="Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal_2",
     value="BAT43",
 )
 d3 = Part(
     "D3",
-    "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal_3",
-    footprint="Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal_3",
+    "pic_programmer:D_Schottky",
+    footprint="Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    footprint_definition="Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal_3",
     value="BAT43",
 )
 d4 = Part(
     "D4",
-    "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal_4",
-    footprint="Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal_4",
+    "pic_programmer:D_Schottky",
+    footprint="Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    footprint_definition="Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal_4",
     value="BAT43",
 )
 d5 = Part(
     "D5",
-    "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal_5",
-    footprint="Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal_5",
+    "pic_programmer:D_Schottky",
+    footprint="Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    footprint_definition="Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal_5",
     value="BAT43",
 )
 d6 = Part(
     "D6",
-    "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal_4",
-    footprint="Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal_4",
+    "pic_programmer:D_Schottky",
+    footprint="Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    footprint_definition="Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal_4",
     value="BAT43",
 )
 d7 = Part(
     "D7",
-    "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal_6",
-    footprint="Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal_6",
+    "pic_programmer:D_Schottky",
+    footprint="Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    footprint_definition="Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal_6",
     value="BAT43",
 )
-d8 = Part("D8", "LED_THT:LED_D5.0mm_2", footprint="LED_THT:LED_D5.0mm_2", value="RED-LED")
-d9 = Part("D9", "LED_THT:LED_D5.0mm_2", footprint="LED_THT:LED_D5.0mm_2", value="GREEN-LED")
+d8 = Part(
+    "D8",
+    "pic_programmer:LED",
+    footprint="LED_THT:LED_D5.0mm",
+    footprint_definition="LED_THT:LED_D5.0mm_2",
+    value="RED-LED",
+)
+d9 = Part(
+    "D9",
+    "pic_programmer:LED",
+    footprint="LED_THT:LED_D5.0mm",
+    footprint_definition="LED_THT:LED_D5.0mm_2",
+    value="GREEN-LED",
+)
 d10 = Part(
     "D10",
-    "Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal_2",
-    footprint="Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal_2",
+    "pic_programmer:D_Schottky",
+    footprint="Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal",
+    footprint_definition="Diode_THT:D_DO-35_SOD27_P12.70mm_Horizontal_2",
     value="SCHOTTKY",
 )
 d11 = Part(
     "D11",
-    "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "pic_programmer:D_Schottky",
     footprint="Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
     value="BAT43",
 )
-d12 = Part("D12", "LED_THT:LED_D5.0mm", footprint="LED_THT:LED_D5.0mm", value="YELLOW-LED")
+d12 = Part("D12", "pic_programmer:LED", footprint="LED_THT:LED_D5.0mm", value="YELLOW-LED")
 j1 = Part(
     "J1",
-    "Connector_Dsub:DSUB-9_Socket_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm",
+    "pic_programmer:DB9",
     footprint="Connector_Dsub:DSUB-9_Socket_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm",
     value="DB9-FEMAL",
 )
 jp1 = Part(
     "JP1",
-    "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm",
+    "pic_programmer:JUMPER",
     footprint="Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm",
     value="JUMPER",
 )
 l1 = Part(
     "L1",
-    "Inductor_THT:L_Radial_D7.8mm_P5.00mm_Fastron_07HCP",
+    "pic_programmer:INDUCTOR",
     footprint="Inductor_THT:L_Radial_D7.8mm_P5.00mm_Fastron_07HCP",
     value="22uH",
 )
 p1 = Part(
     "P1",
-    "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree",
+    "pic_programmer:CONN_2",
     footprint="TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree",
     value="CONN_2",
 )
 p101 = Part(
     "P101",
-    "MountingHole:MountingHole_4.3mm_M4",
+    "pic_programmer:MOUNTING_HOLE",
     footprint="MountingHole:MountingHole_4.3mm_M4",
     value="CONN_1",
 )
 p102 = Part(
     "P102",
-    "MountingHole:MountingHole_4.3mm_M4_2",
-    footprint="MountingHole:MountingHole_4.3mm_M4_2",
+    "pic_programmer:MOUNTING_HOLE",
+    footprint="MountingHole:MountingHole_4.3mm_M4",
+    footprint_definition="MountingHole:MountingHole_4.3mm_M4_2",
     value="CONN_1",
 )
 p103 = Part(
     "P103",
-    "MountingHole:MountingHole_4.3mm_M4_2",
-    footprint="MountingHole:MountingHole_4.3mm_M4_2",
+    "pic_programmer:MOUNTING_HOLE",
+    footprint="MountingHole:MountingHole_4.3mm_M4",
+    footprint_definition="MountingHole:MountingHole_4.3mm_M4_2",
     value="CONN_1",
 )
 p104 = Part(
     "P104",
-    "MountingHole:MountingHole_4.3mm_M4_2",
-    footprint="MountingHole:MountingHole_4.3mm_M4_2",
+    "pic_programmer:MOUNTING_HOLE",
+    footprint="MountingHole:MountingHole_4.3mm_M4",
+    footprint_definition="MountingHole:MountingHole_4.3mm_M4_2",
     value="CONN_1",
 )
 p105 = Part(
     "P105",
-    "MountingHole:MountingHole_4.3mm_M4_2",
-    footprint="MountingHole:MountingHole_4.3mm_M4_2",
+    "pic_programmer:MOUNTING_HOLE",
+    footprint="MountingHole:MountingHole_4.3mm_M4",
+    footprint_definition="MountingHole:MountingHole_4.3mm_M4_2",
     value="CONN_1",
 )
 p106 = Part(
     "P106",
-    "MountingHole:MountingHole_4.3mm_M4_2",
-    footprint="MountingHole:MountingHole_4.3mm_M4_2",
+    "pic_programmer:MOUNTING_HOLE",
+    footprint="MountingHole:MountingHole_4.3mm_M4",
+    footprint_definition="MountingHole:MountingHole_4.3mm_M4_2",
     value="CONN_1",
 )
-q1 = Part("Q1", "footprints:TO-92", footprint="footprints:TO-92", value="BC237")
-q2 = Part("Q2", "footprints:TO-92_2", footprint="footprints:TO-92_2", value="BC307")
-q3 = Part("Q3", "footprints:TO-92", footprint="footprints:TO-92", value="BC307")
+q1 = Part("Q1", "pic_programmer:BC237", footprint="footprints:TO-92", value="BC237")
+q2 = Part(
+    "Q2",
+    "pic_programmer:BC307",
+    footprint="footprints:TO-92",
+    footprint_definition="footprints:TO-92_2",
+    value="BC307",
+)
+q3 = Part("Q3", "pic_programmer:BC307", footprint="footprints:TO-92", value="BC307")
 r1 = Part(
     "R1",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pic_programmer:R",
     footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
     value="10K",
 )
 r2 = Part(
     "R2",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_11",
-    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_11",
+    "pic_programmer:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_11",
     value="10K",
 )
 r3 = Part(
     "R3",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_12",
-    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_12",
+    "pic_programmer:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_12",
     value="10K",
 )
 r4 = Part(
     "R4",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_2",
-    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_2",
+    "pic_programmer:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_2",
     value="10K",
 )
 r5 = Part(
     "R5",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_13",
-    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_13",
+    "pic_programmer:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_13",
     value="10K",
 )
 r6 = Part(
     "R6",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_12",
-    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_12",
+    "pic_programmer:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_12",
     value="10K",
 )
 r7 = Part(
     "R7",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_14",
-    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_14",
+    "pic_programmer:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_14",
     value="10K",
 )
 r8 = Part(
     "R8",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_15",
-    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_15",
+    "pic_programmer:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_15",
     value="1K",
 )
 r9 = Part(
     "R9",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_2",
-    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_2",
+    "pic_programmer:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_2",
     value="2.2K",
 )
 r10 = Part(
     "R10",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_2",
-    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_2",
+    "pic_programmer:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_2",
     value="5,1K",
 )
 r11 = Part(
     "R11",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_3",
-    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_3",
+    "pic_programmer:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_3",
     value="22K",
 )
 r12 = Part(
     "R12",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_4",
-    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_4",
+    "pic_programmer:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_4",
     value="470",
 )
 r13 = Part(
     "R13",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_5",
-    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_5",
+    "pic_programmer:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_5",
     value="470",
 )
 r14 = Part(
     "R14",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_6",
-    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_6",
+    "pic_programmer:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_6",
     value="470",
 )
 r15 = Part(
     "R15",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_7",
-    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_7",
+    "pic_programmer:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_7",
     value="6.2K",
 )
 r16 = Part(
     "R16",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_2",
-    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_2",
+    "pic_programmer:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_2",
     value="62K",
 )
 r17 = Part(
     "R17",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_8",
-    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_8",
+    "pic_programmer:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_8",
     value="22K",
 )
 r18 = Part(
     "R18",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_9",
-    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_9",
+    "pic_programmer:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_9",
     value="220",
 )
 r19 = Part(
     "R19",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_10",
-    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_10",
+    "pic_programmer:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_10",
     value="2.2K",
 )
 r20 = Part(
     "R20",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_4",
-    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_4",
+    "pic_programmer:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_4",
     value="2.2K",
 )
 r21 = Part(
     "R21",
-    "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_4",
-    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_4",
+    "pic_programmer:R",
+    footprint="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    footprint_definition="Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_4",
     value="470",
 )
-rv1 = Part("RV1", "footprints:RV2X4", footprint="footprints:RV2X4", value="1K")
-u2 = Part(
-    "U2",
-    "Package_DIP:DIP-14_W7.62mm_LongPads",
-    footprint="Package_DIP:DIP-14_W7.62mm_LongPads",
-    value="74HC125",
-)
+rv1 = Part("RV1", "pic_programmer:POT", footprint="footprints:RV2X4", value="1K")
+u2 = Part("U2", "pic_programmer:74LS125", footprint="Package_DIP:DIP-14_W7.62mm_LongPads", value="74HC125")
 u3 = Part(
     "U3",
-    "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown",
+    "pic_programmer:7805",
     footprint="Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown",
     value="7805",
 )
-u4 = Part(
-    "U4",
-    "Package_DIP:DIP-8_W7.62mm_LongPads",
-    footprint="Package_DIP:DIP-8_W7.62mm_LongPads",
-    value="LT1373",
-)
-c6 = Part(
-    "C6",
-    "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm_3",
-    footprint="Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm_3",
-    value="100nF",
-)
-c7 = Part(
-    "C7",
-    "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm_3",
-    footprint="Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm_3",
-    value="100nF",
-)
-p2 = Part(
-    "P2",
-    "Package_DIP:DIP-28_W7.62mm_Socket_LongPads",
-    footprint="Package_DIP:DIP-28_W7.62mm_Socket_LongPads",
-    value="SUPP28",
-)
-p3 = Part("P3", "footprints:40tex-Ell600", footprint="footprints:40tex-Ell600", value="SUPP40")
-u1 = Part(
-    "U1",
-    "Package_DIP:DIP-8_W7.62mm_Socket_LongPads",
-    footprint="Package_DIP:DIP-8_W7.62mm_Socket_LongPads",
-    value="24Cxx",
-)
-u5 = Part(
-    "U5",
-    "Package_DIP:DIP-18_W7.62mm_Socket_LongPads",
-    footprint="Package_DIP:DIP-18_W7.62mm_Socket_LongPads",
-    value="PIC_18_PINS",
-)
-u6 = Part(
-    "U6",
-    "Package_DIP:DIP-8_W7.62mm_Socket_LongPads_2",
-    footprint="Package_DIP:DIP-8_W7.62mm_Socket_LongPads_2",
-    value="PIC_8_PINS",
-)
+u4 = Part("U4", "pic_programmer:LT1373", footprint="Package_DIP:DIP-8_W7.62mm_LongPads", value="LT1373")
 
-pic_sockets = Module("pic_sockets")
-
-pic_sockets.add(c6, c7, p2, p3, u1, u5, u6)
 design.add(
     c1,
     c2,
@@ -480,30 +457,49 @@ design.add(
     u2,
     u3,
     u4,
-    pic_sockets,
+)
+_sheet_pic_sockets.sheet(
+    design,
+    path="pic_sockets",
+    refs={"C6": "C6", "C7": "C7", "P2": "P2", "P3": "P3", "U1": "U1", "U5": "U5", "U6": "U6"},
+    clock_rb6=clock_rb6,
+    data_rb7=data_rb7,
+    vpp_mclr=vpp_mclr,
+    pic_sockets_vcc_pic=pic_sockets_vcc_pic,
+    gnd=gnd,
 )
 
-connect(clock_rb6, p2["27"], p3["39"], r13["2"], u1["6"], u5["12"], u6["6"])
-connect(data_rb7, p2["28"], p3["40"], r12["2"], u1["5"], u2["12"], u5["13"], u6["7"])
+design.rules.netclass(
+    "Default",
+    clearance=mm("0.25"),
+    track_width=mm("0.5"),
+    via_diameter=mm("1.6"),
+    via_drill=mm("0.6"),
+    diff_pair_width=mm("0.25"),
+    diff_pair_gap=mm("0.25"),
+    diff_pair_via_gap=mm("0.25"),
+    nets=(),
+)
+design.rules.netclass(
+    "POWER",
+    clearance=mm("0.28"),
+    track_width=mm("0.8"),
+    via_diameter=mm("1.6"),
+    via_drill=mm("0.6"),
+    diff_pair_width=mm("0.28"),
+    diff_pair_gap=mm("0.28"),
+    diff_pair_via_gap=mm("0.25"),
+    nets=(gnd, vcc),
+)
+
+connect(clock_rb6, r13["2"])
+connect(data_rb7, r12["2"], u2["12"])
 connect(pc_clock_out, j1["7"], r5["1"], r6["1"])
 connect(pc_data_in, j1["8"], u2["11"])
 connect(pc_data_out, j1["4"], r3["1"], r4["1"])
-connect(vpp_mclr, p2["1"], p3["1"], r18["2"], u5["4"], u6["4"])
+connect(vpp_mclr, r18["2"])
 connect(vpp_on, j1["3"], r1["1"], r2["1"])
-connect(
-    pic_sockets_vcc_pic,
-    c6["1"],
-    c7["1"],
-    jp1["2"],
-    p2["20"],
-    p3["11"],
-    p3["32"],
-    q3["1"],
-    r21["2"],
-    u1["8"],
-    u5["14"],
-    u6["1"],
-)
+connect(pic_sockets_vcc_pic, jp1["2"], q3["1"], r21["2"])
 connect(
     gnd,
     c1["2"],
@@ -511,41 +507,28 @@ connect(
     c3["2"],
     c4["2"],
     c5["2"],
-    c6["2"],
-    c7["2"],
+    d12["1"],
     d3["2"],
     d5["2"],
     d7["2"],
     d8["1"],
     d9["1"],
-    d12["1"],
     j1["5"],
     p1["1"],
-    p2["8"],
-    p2["19"],
-    p3["8"],
-    p3["12"],
-    p3["31"],
     q1["3"],
+    r15["2"],
+    r17["2"],
     r2["2"],
     r4["2"],
     r6["2"],
-    r15["2"],
-    r17["2"],
-    u1["1"],
-    u1["2"],
-    u1["3"],
-    u1["4"],
     u2["1"],
-    u2["4"],
-    u2["7"],
     u2["10"],
     u2["13"],
+    u2["4"],
+    u2["7"],
     u3["2"],
     u4["6"],
     u4["7"],
-    u5["5"],
-    u6["8"],
 )
 connect(net_c5_pad1, c5["1"], r10["2"])
 connect(net_d1_a, d1["2"], p1["2"])
@@ -560,8 +543,8 @@ connect(net_d6_a, d6["2"], d7["1"], r5["2"], u2["9"])
 connect(net_d8_a, d8["2"], r9["2"])
 connect(net_d9_a, d9["2"], r14["2"])
 connect(net_q1_b, q1["2"], r8["2"])
-connect(net_q2_b, c9["2"], q2["2"], r7["2"], r11["2"])
-connect(net_q2_c, q2["1"], r9["1"], r17["1"], r18["1"])
+connect(net_q2_b, c9["2"], q2["2"], r11["2"], r7["2"])
+connect(net_q2_c, q2["1"], r17["1"], r18["1"], r9["1"])
 connect(net_q3_b, q3["2"], r19["2"], r20["2"])
 connect(net_r12_pad1, r12["1"], u2["6"])
 connect(net_r13_pad1, r13["1"], u2["8"])
@@ -585,7 +568,7 @@ connect(
     u3["3"],
     u4["5"],
 )
-connect(vpp, c3["1"], c9["1"], d10["1"], q2["3"], r7["1"], r16["2"])
+connect(vpp, c3["1"], c9["1"], d10["1"], q2["3"], r16["2"], r7["1"])
 
 c1.place(mm("10.49"), mm("-21.133"), rot=180)
 c2.place(mm("-15.418"), mm("-9.83"))
@@ -643,13 +626,6 @@ rv1.place(mm("27.635"), mm("-9.195"), rot=180)
 u2.place(mm("15.57"), mm("19.38"), rot=90)
 u3.place(mm("-3.48"), mm("-28.88"))
 u4.place(mm("10.49"), mm("-42.85"))
-c6.place(mm("96.85"), mm("12.395"), rot=-90)
-c7.place(mm("98.755"), mm("-28.88"), rot=-90)
-p2.place(mm("107.645"), mm("-49.2"))
-p3.place(mm("75.26"), mm("-49.2"))
-u1.place(mm("79.07"), mm("9.22"))
-u5.place(mm("107.899"), mm("7.95"))
-u6.place(mm("79.07"), mm("20.65"))
 
 design.zone(
     gnd,
@@ -862,4 +838,12 @@ copper.apply(
         "VCC": vcc,
         "VPP": vpp,
     },
+)
+
+design.load_schematic("schematic.toml")
+
+design.kicad_project(
+    "native/project.kicad_pro",
+    sha256="9233d7a30fcb4cccd1f0261f9709d13fd8043cc66cc24bb73ee20c23429d62d7",
+    preserve_minimums=True,
 )

@@ -1,9 +1,9 @@
 (footprint "R0603_15"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(property "Reference" "REF**"
-		(at -2.14 -0.08 -90)
+		(at -2.14 -0.08 90)
 		(layer "F.SilkS")
 		(uuid "7ef77dc2-64a6-4bc6-93d4-ca045cc16b71")
 		(effects
@@ -14,7 +14,7 @@
 		)
 	)
 	(property "Value" "R0603_15"
-		(at 0 4 -180)
+		(at 0 4 180)
 		(layer "F.Fab")
 		(uuid "a6379e11-3338-4f9e-9e47-2ec28173e5be")
 		(effects
@@ -25,7 +25,7 @@
 		)
 	)
 	(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0603FR-07255KL_C295887.html"
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "257f24d3-0658-4d04-a1f6-2bb2f35bb338")
@@ -37,7 +37,7 @@
 		)
 	)
 	(property "Description" ""
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "04b340a8-0625-4586-b536-05f41471074a")
@@ -48,7 +48,14 @@
 			)
 		)
 	)
+	(units
+		(unit
+			(name "A")
+			(pins "1" "2")
+		)
+	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start 1.39 -0.66)
 		(end 0.43 -0.66)
@@ -121,7 +128,7 @@
 		(uuid "95107555-1e15-43b0-b8d8-55a8a3d0b037")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(uuid "492eeab8-8335-4270-8dda-c32c46340e55")
 		(effects
@@ -135,16 +142,20 @@
 		(at -0.75 0)
 		(size 0.81 0.86)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "1_1")
+		(pintype "unspecified")
 		(uuid "22200551-db90-42db-8523-983409f9ba8d")
 	)
 	(pad "2" smd rect
 		(at 0.75 0)
 		(size 0.81 0.86)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "2_2")
+		(pintype "unspecified")
 		(uuid "fb77c50d-d104-4a74-b7e4-7d251a12d71b")
 	)
 	(embedded_fonts no)
-	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/R0603.wrl"
+	(model "${KIPRJMOD}/../../libraries/easyeda2kicad/easyeda2kicad.3dshapes/R0603.wrl"
 		(offset
 			(xyz 0 -0 -0)
 		)

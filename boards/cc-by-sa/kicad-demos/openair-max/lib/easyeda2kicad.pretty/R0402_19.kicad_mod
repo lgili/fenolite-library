@@ -1,9 +1,9 @@
 (footprint "R0402_19"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(property "Reference" "REF**"
-		(at -0.03 -1.1 0)
+		(at -0.03 -1.1 180)
 		(layer "F.SilkS")
 		(uuid "cbcc3ae4-bace-461c-a518-23612bff9824")
 		(effects
@@ -14,7 +14,7 @@
 		)
 	)
 	(property "Value" "R0402_19"
-		(at 0 4 0)
+		(at 0 4 180)
 		(layer "F.Fab")
 		(uuid "01dbf8dc-80eb-4644-af86-ab6d87f01ae1")
 		(effects
@@ -25,7 +25,7 @@
 		)
 	)
 	(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_10KR-1002-1_C60490.html"
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "a7217cba-de68-457a-95bf-5658c5748ffc")
@@ -37,7 +37,7 @@
 		)
 	)
 	(property "Description" ""
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "d6d28c8d-3218-4ec7-9627-bcb0c4659582")
@@ -48,27 +48,14 @@
 			)
 		)
 	)
+	(units
+		(unit
+			(name "A")
+			(pins "1" "2")
+		)
+	)
 	(attr smd)
-	(fp_line
-		(start 0.94 0.5)
-		(end 0.23 0.5)
-		(stroke
-			(width 0.15)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "c820a3a0-3d53-4dd9-937b-b38f79a47d02")
-	)
-	(fp_line
-		(start -0.94 0.5)
-		(end -0.23 0.5)
-		(stroke
-			(width 0.15)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "3da6f766-102b-4bf1-935c-2a400dc8d536")
-	)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start 0.94 -0.5)
 		(end 0.94 0.5)
@@ -78,6 +65,16 @@
 		)
 		(layer "F.SilkS")
 		(uuid "76fb125c-d40d-4a09-ab81-69a4e8a1a2fc")
+	)
+	(fp_line
+		(start 0.94 0.5)
+		(end 0.23 0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c820a3a0-3d53-4dd9-937b-b38f79a47d02")
 	)
 	(fp_line
 		(start 0.23 -0.5)
@@ -109,6 +106,16 @@
 		(layer "F.SilkS")
 		(uuid "a9d832e1-7b7b-418c-8f6a-43a1e12f0a87")
 	)
+	(fp_line
+		(start -0.94 0.5)
+		(end -0.23 0.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3da6f766-102b-4bf1-935c-2a400dc8d536")
+	)
 	(fp_circle
 		(center -0.5 0.25)
 		(end -0.47 0.25)
@@ -121,7 +128,7 @@
 		(uuid "702e9ee4-fadd-4678-b403-0f97371b5205")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(uuid "f74382b5-d208-41f8-876a-d334da06884b")
 		(effects
@@ -135,16 +142,20 @@
 		(at -0.43 0)
 		(size 0.57 0.54)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "1_1")
+		(pintype "input")
 		(uuid "f6576581-c87c-4411-b9e8-709ad6f9defc")
 	)
 	(pad "2" smd rect
 		(at 0.43 0)
 		(size 0.57 0.54)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "2_2")
+		(pintype "input")
 		(uuid "e5cde7cd-f434-4031-b15e-eb2b9a0d6425")
 	)
 	(embedded_fonts no)
-	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/R0402_L1.0-W0.5-H0.4.wrl"
+	(model "${KIPRJMOD}/../../libraries/easyeda2kicad/easyeda2kicad.3dshapes/R0402_L1.0-W0.5-H0.4.wrl"
 		(offset
 			(xyz 0 -0 -0)
 		)

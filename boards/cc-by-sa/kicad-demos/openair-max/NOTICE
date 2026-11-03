@@ -1,3 +1,9 @@
+2026-11-03: refreshed external candidate1.0.2 from the coherent author project89aacf5013fc0ffe4b988a2e3c5a227bce3c4983 (five CAD documents and active author DRU), using Fenolite c0358/c0359; retained the raw custom-rule program and bounded immutable native context. No vendor3D model or official library payload is included. Historical source/proof below is retained as history, not a current completeness claim.
+
+Upstream attribution: AirGradient hardware team; CC-BY-SA-4.0, unchanged LICENSE. No endorsement.
+
+Historical1.0.1 notice follows unchanged; its source and completeness statements describe that old conversion only and are not current proof. The incoherent KiCad-demo647pin/155group source failed its measured proof.
+
 2026-11-02: recorded the normalised hash of the preserved upstream licence text after explicit CODEOWNER approval; original licence, payload and historical fidelity records unchanged.
 
 2026-10-31: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; every item of the board is expressed (no content was left out)

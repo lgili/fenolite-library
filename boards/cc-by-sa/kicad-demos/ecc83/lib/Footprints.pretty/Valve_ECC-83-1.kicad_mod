@@ -1,7 +1,7 @@
 (footprint "Valve_ECC-83-1"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "Valve ECC-83-1 round pins")
 	(tags "Valve ECC-83-1 round pins")
 	(property "Reference" "REF**"
@@ -103,6 +103,8 @@
 		(drill 1.02)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "A")
+		(pintype "passive")
 		(uuid "beb4c69f-bce5-4736-bb41-d9523aa79796")
 	)
 	(pad "2" thru_hole circle
@@ -111,6 +113,8 @@
 		(drill 1.02)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "G")
+		(pintype "input")
 		(uuid "7b5a3ca9-d484-4629-8665-1188b5e86489")
 	)
 	(pad "3" thru_hole circle
@@ -119,6 +123,8 @@
 		(drill 1.02)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "K")
+		(pintype "passive")
 		(uuid "81d31795-db6a-4081-9936-04fde2386907")
 	)
 	(pad "4" thru_hole circle
@@ -127,6 +133,8 @@
 		(drill 1.02)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "F1")
+		(pintype "input")
 		(uuid "136be1b9-9ca0-4c4a-839d-a587728a5bc9")
 	)
 	(pad "5" thru_hole circle
@@ -135,6 +143,8 @@
 		(drill 1.02)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "F1")
+		(pintype "input")
 		(uuid "61e9c53c-6235-4dad-a1fc-75828cb63335")
 	)
 	(pad "6" thru_hole circle
@@ -143,6 +153,8 @@
 		(drill 1.02)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "A")
+		(pintype "passive")
 		(uuid "e8fa3875-2076-4de2-b1d6-9c3fb76b7ace")
 	)
 	(pad "7" thru_hole circle
@@ -151,6 +163,8 @@
 		(drill 1.02)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "G")
+		(pintype "input")
 		(uuid "ec6f9db9-8766-4ee9-b242-67cc63ed2949")
 	)
 	(pad "8" thru_hole circle
@@ -159,6 +173,8 @@
 		(drill 1.02)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "K")
+		(pintype "passive")
 		(uuid "93d4f75f-1985-434b-9e98-bd382358b589")
 	)
 	(pad "9" thru_hole circle
@@ -167,6 +183,8 @@
 		(drill 1.02)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "F2")
+		(pintype "input")
 		(uuid "16b5f9b7-8f48-404c-82f4-861d94de7c41")
 	)
 	(embedded_fonts no)

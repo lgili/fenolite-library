@@ -1,7 +1,7 @@
 (footprint "R_0402_1005Metric_3"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 	(tags "resistor")
 	(property "Reference" "REF**"
@@ -170,6 +170,7 @@
 		(size 0.54 0.64)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pintype "passive")
 		(uuid "ac8ea673-8217-40db-9288-041a784717b6")
 	)
 	(pad "2" smd roundrect
@@ -177,6 +178,7 @@
 		(size 0.54 0.64)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pintype "passive")
 		(uuid "eff03164-b219-4534-a6fc-afd7f588d758")
 	)
 	(embedded_fonts no)

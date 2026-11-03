@@ -1,3 +1,7 @@
+2026-11-03: external1.0.2 complex_hierarchy candidate regenerated from unchanged pinned project inputs on core5b0853b7, explicit target10; source-bound raw import and strict fidelity/replay refreshed. Native notices and unjudged scopes retained. No model asset or official library file copied; historical notices below remain unchanged.
+
+Historical1.0.1 notice follows unchanged; its completeness/acceptance statements are historical only, not new proof. No endorsement.
+
 2026-11-02: corrected licence_text_sha256 to the already-approved normalised digest; conversion payload and historical fidelity records unchanged.
 
 2026-10-31: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; every item of the board is expressed (no content was left out)

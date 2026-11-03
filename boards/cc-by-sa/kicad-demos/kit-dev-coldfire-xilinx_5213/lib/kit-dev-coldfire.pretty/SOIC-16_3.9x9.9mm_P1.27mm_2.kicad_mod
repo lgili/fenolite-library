@@ -1,7 +1,7 @@
 (footprint "SOIC-16_3.9x9.9mm_P1.27mm_2"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "SOIC, 16 Pin (JEDEC MS-012AC, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 	(tags "SOIC SO")
 	(property "Reference" "REF**"
@@ -211,6 +211,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "C1+")
+		(pintype "input")
 		(uuid "82c2203f-70cd-401a-94af-a7f195d5ed0f")
 	)
 	(pad "2" smd roundrect
@@ -218,6 +220,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "V+")
+		(pintype "power_out")
 		(uuid "a7c96663-de1f-401d-9a82-35707e354a18")
 	)
 	(pad "3" smd roundrect
@@ -225,6 +229,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "C1-")
+		(pintype "input")
 		(uuid "e25b3ba6-3e3a-4339-98cd-a4abd0c8d64f")
 	)
 	(pad "4" smd roundrect
@@ -232,6 +238,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "C2+")
+		(pintype "input")
 		(uuid "df71093b-4408-4517-ae81-b8268dec85cb")
 	)
 	(pad "5" smd roundrect
@@ -239,6 +247,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "C2-")
+		(pintype "input")
 		(uuid "b0676532-f5f6-427a-81f3-0bded400cb91")
 	)
 	(pad "6" smd roundrect
@@ -246,6 +256,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "V-")
+		(pintype "power_out")
 		(uuid "6fd998f0-ade0-416f-ba70-ee830f0b6fe4")
 	)
 	(pad "7" smd roundrect
@@ -253,6 +265,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "T2OUT")
+		(pintype "output")
 		(uuid "6e55dc5e-d822-49f8-93aa-12a2ff3b43d9")
 	)
 	(pad "8" smd roundrect
@@ -260,6 +274,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "R2IN")
+		(pintype "input")
 		(uuid "eafa1e00-ea8b-4ad1-8d97-c90991beed86")
 	)
 	(pad "9" smd roundrect
@@ -267,6 +283,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "R2OUT")
+		(pintype "output")
 		(uuid "bd323711-026a-4004-8d21-0ae636657626")
 	)
 	(pad "10" smd roundrect
@@ -274,6 +292,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "T2IN")
+		(pintype "input")
 		(uuid "81810ff5-fedf-40c2-b275-83f9a8f78fde")
 	)
 	(pad "11" smd roundrect
@@ -281,6 +301,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "T1IN")
+		(pintype "input")
 		(uuid "5ab19c10-b4b0-48db-a020-dba0280ef4e9")
 	)
 	(pad "12" smd roundrect
@@ -288,6 +310,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "R1OUT")
+		(pintype "output")
 		(uuid "0f7be377-dc54-4634-bae1-f997be0c743b")
 	)
 	(pad "13" smd roundrect
@@ -295,6 +319,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "R1IN")
+		(pintype "input")
 		(uuid "9b70c3a5-9969-4ba3-8439-1b83d8de9ef7")
 	)
 	(pad "14" smd roundrect
@@ -302,6 +328,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "T1OUT")
+		(pintype "output")
 		(uuid "513ec8b0-f8cb-4342-a9ed-fdfb0202700b")
 	)
 	(pad "15" smd roundrect
@@ -309,6 +337,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "3386cb89-5bfc-4048-a207-92fa03efe2c4")
 	)
 	(pad "16" smd roundrect
@@ -316,6 +346,8 @@
 		(size 1.95 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(pinfunction "VCC")
+		(pintype "power_in")
 		(uuid "e908c3c9-8848-4f58-9c3b-5b2648b6246a")
 	)
 	(embedded_fonts no)

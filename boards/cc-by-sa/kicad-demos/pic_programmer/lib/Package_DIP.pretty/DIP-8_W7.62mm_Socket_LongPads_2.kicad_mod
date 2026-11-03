@@ -224,6 +224,8 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.15625)
+		(pinfunction "VDD_1")
+		(pintype "power_in")
 		(uuid "04e5217d-a40a-4f71-81e2-838f8805992f")
 	)
 	(pad "2" thru_hole oval
@@ -232,6 +234,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "GP5/OSC1_2")
+		(pintype "input+no_connect")
 		(uuid "37ea7c12-c15d-41d2-8efa-2eabf094090e")
 	)
 	(pad "3" thru_hole oval
@@ -240,6 +244,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "GP4/OSC2_3")
+		(pintype "input+no_connect")
 		(uuid "5f2bd59a-08ca-4c32-82a9-d2e197fe26d8")
 	)
 	(pad "4" thru_hole oval
@@ -248,6 +254,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "GP3/MCLR_4")
+		(pintype "input")
 		(uuid "bacdb158-b246-4842-8bdb-23affb5159c7")
 	)
 	(pad "5" thru_hole oval
@@ -256,6 +264,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "GP2_5")
+		(pintype "input+no_connect")
 		(uuid "8d491a58-197b-404e-9573-88f58d41ba02")
 	)
 	(pad "6" thru_hole oval
@@ -264,6 +274,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "GP1_6")
+		(pintype "input")
 		(uuid "04770422-331a-44ba-8f59-3afdd65e94d9")
 	)
 	(pad "7" thru_hole oval
@@ -272,6 +284,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "GP0_7")
+		(pintype "input")
 		(uuid "22c650cd-7e77-4335-88b1-4135949c267e")
 	)
 	(pad "8" thru_hole oval
@@ -280,6 +294,8 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "VSS_8")
+		(pintype "power_in")
 		(uuid "e21f2df1-6823-457b-ba74-aca8b268c30a")
 	)
 	(embedded_fonts no)

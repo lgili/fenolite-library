@@ -1,9 +1,9 @@
 (footprint "LOGO"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(property "Reference" "REF**"
-		(at 0 0 -180)
+		(at 0 0 180)
 		(layer "F.SilkS")
 		(hide yes)
 		(uuid "95058c02-671e-4f67-bdab-b7aebd5375c0")
@@ -15,7 +15,7 @@
 		)
 	)
 	(property "Value" "LOGO"
-		(at 0.75 0 -180)
+		(at 0.75 0 180)
 		(layer "F.SilkS")
 		(hide yes)
 		(uuid "a046b11b-a2dd-4df1-9c76-38c9a1d79c66")

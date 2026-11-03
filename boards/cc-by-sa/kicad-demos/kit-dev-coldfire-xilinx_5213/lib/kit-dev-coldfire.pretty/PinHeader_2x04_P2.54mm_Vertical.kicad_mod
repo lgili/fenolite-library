@@ -1,7 +1,7 @@
 (footprint "PinHeader_2x04_P2.54mm_Vertical"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "Through hole straight pin header, 2x04, 2.54mm pitch, double rows")
 	(tags "Through hole pin header THT 2x04 2.54mm double row")
 	(property "Reference" "REF**"
@@ -240,6 +240,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "1")
+		(pintype "passive")
 		(uuid "a162523d-4312-4852-8a32-32f7bc622209")
 	)
 	(pad "2" thru_hole oval
@@ -248,6 +250,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "2")
+		(pintype "passive")
 		(uuid "a74fc45a-88b3-4d42-8db4-f37882b900cc")
 	)
 	(pad "3" thru_hole oval
@@ -256,6 +260,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "3")
+		(pintype "passive")
 		(uuid "285757ce-ba7b-47a9-9aaa-c80b89c78a56")
 	)
 	(pad "4" thru_hole oval
@@ -264,6 +270,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "4")
+		(pintype "passive")
 		(uuid "3ba65894-954d-4457-b421-4ae53b497665")
 	)
 	(pad "5" thru_hole oval
@@ -272,6 +280,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "5")
+		(pintype "passive")
 		(uuid "fbb839dd-ba69-4c75-a470-09a2de751904")
 	)
 	(pad "6" thru_hole oval
@@ -280,6 +290,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "6")
+		(pintype "passive")
 		(uuid "febdec3d-19ad-4104-8e6c-48274d5edf91")
 	)
 	(pad "7" thru_hole oval
@@ -288,6 +300,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "7")
+		(pintype "passive")
 		(uuid "5887756b-baf5-4f37-a8cd-6ea90f0fbb20")
 	)
 	(pad "8" thru_hole oval
@@ -296,6 +310,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "8")
+		(pintype "passive")
 		(uuid "1cb96a8c-d90c-422e-9baf-df1f2df4435a")
 	)
 	(embedded_fonts no)

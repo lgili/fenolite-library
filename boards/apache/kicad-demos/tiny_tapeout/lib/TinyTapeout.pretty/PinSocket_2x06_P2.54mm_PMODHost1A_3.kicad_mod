@@ -1,7 +1,7 @@
 (footprint "PinSocket_2x06_P2.54mm_PMODHost1A_3"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "Through hole angled socket strip, 2x06, 2.54mm pitch, 8.51mm socket length, double cols (from Kicad 4.0.7), script generated")
 	(tags "PMOD host expanded GPIO hole angled socket strip THT 2x06 2.54mm double row")
 	(property "Reference" "REF**"
@@ -913,6 +913,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "IO1")
+		(pintype "bidirectional")
 		(uuid "e7bae1b2-aa09-454c-ab8d-7d37c1260d0c")
 	)
 	(pad "2" thru_hole oval
@@ -921,6 +923,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "IO2")
+		(pintype "bidirectional")
 		(uuid "49f631c0-7b60-41f7-9c12-30205be0ded0")
 	)
 	(pad "3" thru_hole oval
@@ -929,6 +933,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "IO3")
+		(pintype "bidirectional")
 		(uuid "1d33d0d6-7aae-4d4c-909c-b61379a0a569")
 	)
 	(pad "4" thru_hole oval
@@ -937,6 +943,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "IO4")
+		(pintype "bidirectional")
 		(uuid "b6dc2aba-3e13-4a42-a2f6-ad3c6d72bff7")
 	)
 	(pad "5" thru_hole oval
@@ -945,6 +953,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "c6c8a95b-fef1-4559-8af8-a4313da514b9")
 	)
 	(pad "6" thru_hole circle
@@ -953,6 +963,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "VCC")
+		(pintype "power_in")
 		(uuid "4a386a68-5726-4757-9610-d1d65085f83d")
 	)
 	(pad "7" thru_hole oval
@@ -961,6 +973,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "IO5")
+		(pintype "bidirectional")
 		(uuid "b55d9b92-598b-48ea-82cc-ac2dbc800400")
 	)
 	(pad "8" thru_hole oval
@@ -969,6 +983,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "IO6")
+		(pintype "bidirectional")
 		(uuid "d03778dd-24a4-4abc-be25-a5e4d49c2f43")
 	)
 	(pad "9" thru_hole oval
@@ -977,6 +993,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "IO7")
+		(pintype "bidirectional")
 		(uuid "9e335293-5854-4df4-8798-466737695deb")
 	)
 	(pad "10" thru_hole oval
@@ -985,6 +1003,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "IO8")
+		(pintype "bidirectional")
 		(uuid "3761ac7b-4499-4219-86e7-94e195f9754d")
 	)
 	(pad "11" thru_hole oval
@@ -993,6 +1013,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "GND")
+		(pintype "power_in")
 		(uuid "cc5171f9-3e65-4f67-bd78-98f1bbec0353")
 	)
 	(pad "12" thru_hole oval
@@ -1001,6 +1023,8 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(pinfunction "VCC")
+		(pintype "power_in")
 		(uuid "1e7f1001-cf72-40b5-957a-563d39421a8f")
 	)
 	(embedded_fonts no)

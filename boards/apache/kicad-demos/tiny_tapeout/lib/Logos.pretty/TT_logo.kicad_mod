@@ -1,10 +1,10 @@
 (footprint "TT_logo"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "TinyTapeout Logo")
 	(property "Reference" "REF**"
-		(at 0.4 4.5 -180)
+		(at 0.4 4.5 180)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(hide yes)
@@ -17,7 +17,7 @@
 		)
 	)
 	(property "Value" "TT_logo"
-		(at 0.3 -0.2 -180)
+		(at 0.3 -0.2 180)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "51c767b4-2baf-4a45-881e-06c55abb648a")

@@ -1,13 +1,13 @@
 (footprint "TestPoint_Pad_D1.5mm_3"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "SMD pad as test Point, diameter 1.5mm")
 	(tags "test point SMD pad")
 	(property "Reference" "REF**"
-		(at 2.4 0.6 -180)
+		(at 1.8 -0.9 180)
 		(layer "F.SilkS")
-		(uuid "2d2b49f6-2d38-473d-844f-1d231fc7b3f3")
+		(uuid "2f086933-7083-45d5-bcfc-0e102f8a7f83")
 		(effects
 			(font
 				(size 0.6 0.6)
@@ -16,9 +16,9 @@
 		)
 	)
 	(property "Value" "TestPoint_Pad_D1.5mm_3"
-		(at 0 1.75 -180)
+		(at 0 1.75 180)
 		(layer "F.Fab")
-		(uuid "289407af-befa-422f-bd29-52948d5280d4")
+		(uuid "ee73b034-2ff0-4209-9476-8e119beaa494")
 		(effects
 			(font
 				(size 1 1)
@@ -27,11 +27,11 @@
 		)
 	)
 	(property "Datasheet" ""
-		(at 0 0 -180)
+		(at 0 0 180)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "db2cccd1-b341-4259-8d09-44e1a2f9d19a")
+		(uuid "42694031-708a-4d8b-b1ed-7ffaeb6565cb")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40,11 +40,11 @@
 		)
 	)
 	(property "Description" "test point"
-		(at 0 0 -180)
+		(at 0 0 180)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "3a0584c1-1726-45c0-a4a7-0bb803dd6e85")
+		(uuid "32b57011-0db5-4cbd-836d-984ffb0aab39")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -52,7 +52,14 @@
 			)
 		)
 	)
-	(attr exclude_from_pos_files)
+	(units
+		(unit
+			(name "A")
+			(pins "1")
+		)
+	)
+	(attr dnp)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_circle
 		(center 0 0)
 		(end 0 0.95)
@@ -76,7 +83,7 @@
 		(uuid "708831a8-b091-41eb-a89f-dd01017251d5")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 -1.65 -180)
+		(at 0 -1.65 180)
 		(layer "F.Fab")
 		(uuid "799f9368-ab7c-4fdc-b5c6-86dbec82c781")
 		(effects
@@ -90,6 +97,8 @@
 		(at 0 0)
 		(size 1.5 1.5)
 		(layers "F.Cu" "F.Mask")
+		(pinfunction "1_1")
+		(pintype "passive")
 		(uuid "870cf205-8c83-4fe9-837c-919e9d6d2371")
 	)
 	(embedded_fonts no)

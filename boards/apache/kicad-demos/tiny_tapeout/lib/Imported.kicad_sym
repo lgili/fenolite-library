@@ -1,33 +1,68 @@
 (kicad_symbol_lib
-	(version 20241209)
+	(version 20251024)
 	(generator "fenolite")
+	(generator_version "10.0")
 	(symbol "LOGO"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "G_"
 			(at 0 2.54 0)
-			(effects (font (size 1.27 1.27)) (justify left))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
 		(property "Value" "LOGO"
 			(at 0 0 0)
-			(effects (font (size 1.27 1.27)) (justify left))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
 		(property "Footprint" ""
 			(at 0 -2.54 0)
-			(effects (font (size 1.27 1.27)) (justify left))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
 		(property "Datasheet" ""
 			(at 0 -5.08 0)
-			(effects (font (size 1.27 1.27)) (justify left))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
-		(pin_names (offset 0.508) (hide yes))
-		(pin_numbers (hide no))
+		(pin_names
+			(offset 0.508)
+			(hide yes)
+		)
+		(pin_numbers
+			(hide no)
+		)
 		(symbol "LOGO_0_1"
-			(rectangle (start -5.08 2.54) (end 5.08 0) (stroke (width 0.254) (type default)) (fill (type none)))
+			(rectangle
+				(start -5.08 2.54)
+				(end 5.08 0)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 		)
-		(symbol "LOGO_1_1"
-		)
+		(symbol "LOGO_1_1")
 	)
 	(symbol "LOGO_2"
 		(exclude_from_sim no)
@@ -35,27 +70,61 @@
 		(on_board yes)
 		(property "Reference" "G_"
 			(at 0 2.54 0)
-			(effects (font (size 1.27 1.27)) (justify left))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
 		(property "Value" "LOGO_2"
 			(at 0 0 0)
-			(effects (font (size 1.27 1.27)) (justify left))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
 		(property "Footprint" ""
 			(at 0 -2.54 0)
-			(effects (font (size 1.27 1.27)) (justify left))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
 		(property "Datasheet" ""
 			(at 0 -5.08 0)
-			(effects (font (size 1.27 1.27)) (justify left))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
-		(pin_names (offset 0.508) (hide yes))
-		(pin_numbers (hide no))
+		(pin_names
+			(offset 0.508)
+			(hide yes)
+		)
+		(pin_numbers
+			(hide no)
+		)
 		(symbol "LOGO_2_0_1"
-			(rectangle (start -5.08 2.54) (end 5.08 0) (stroke (width 0.254) (type default)) (fill (type none)))
+			(rectangle
+				(start -5.08 2.54)
+				(end 5.08 0)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 		)
-		(symbol "LOGO_2_1_1"
-		)
+		(symbol "LOGO_2_1_1")
 	)
 	(symbol "kibuzzard-63FE0D11"
 		(exclude_from_sim no)
@@ -63,26 +132,60 @@
 		(on_board yes)
 		(property "Reference" "kibuzzard"
 			(at 0 2.54 0)
-			(effects (font (size 1.27 1.27)) (justify left))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
 		(property "Value" "kibuzzard-63FE0D11"
 			(at 0 0 0)
-			(effects (font (size 1.27 1.27)) (justify left))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
 		(property "Footprint" ""
 			(at 0 -2.54 0)
-			(effects (font (size 1.27 1.27)) (justify left))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
 		(property "Datasheet" ""
 			(at 0 -5.08 0)
-			(effects (font (size 1.27 1.27)) (justify left))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
-		(pin_names (offset 0.508) (hide yes))
-		(pin_numbers (hide no))
+		(pin_names
+			(offset 0.508)
+			(hide yes)
+		)
+		(pin_numbers
+			(hide no)
+		)
 		(symbol "kibuzzard-63FE0D11_0_1"
-			(rectangle (start -5.08 2.54) (end 5.08 0) (stroke (width 0.254) (type default)) (fill (type none)))
+			(rectangle
+				(start -5.08 2.54)
+				(end 5.08 0)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 		)
-		(symbol "kibuzzard-63FE0D11_1_1"
-		)
+		(symbol "kibuzzard-63FE0D11_1_1")
 	)
 )

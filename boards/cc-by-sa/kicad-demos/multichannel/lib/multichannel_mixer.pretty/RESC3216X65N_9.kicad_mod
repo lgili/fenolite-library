@@ -1,7 +1,7 @@
 (footprint "RESC3216X65N_9"
-	(version 20241229)
+	(version 20260206)
 	(generator "fenolite")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(descr "Chip Resistor, EIA 1206, Metric 3216, Body 3.2x1.6mm, IPC Medium Density")
 	(property "Reference" "REF**"
 		(at -3.8 0.2 0)
@@ -27,7 +27,7 @@
 		)
 	)
 	(property "Datasheet" "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R1206_NIC_NRC.pdf"
-		(at 0 0 -180)
+		(at 0 0 180)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -40,7 +40,7 @@
 		)
 	)
 	(property "Description" "±1%"
-		(at 0 0 -180)
+		(at 0 0 180)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -157,12 +157,16 @@
 		(at -1.45 0)
 		(size 1.15 1.8)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "1")
+		(pintype "passive")
 		(uuid "6724cc53-30bb-452f-b9ce-0e08700da198")
 	)
 	(pad "2" smd rect
 		(at 1.45 0)
 		(size 1.15 1.8)
 		(layers "F.Cu" "F.Mask" "F.Paste")
+		(pinfunction "2")
+		(pintype "passive")
 		(uuid "6fecad9f-c77a-44b1-b4e3-f8d6dd598780")
 	)
 	(embedded_fonts no)
