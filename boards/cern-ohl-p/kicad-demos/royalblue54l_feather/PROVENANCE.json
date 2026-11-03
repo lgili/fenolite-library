@@ -128,7 +128,7 @@
       }
     }
   },
-  "id": "kicad-demos/royalblue54L_feather",
+  "id": "kicad-demos/royalblue54l_feather",
   "import": {
     "copyright": [],
     "date": "2026-10-31",
@@ -208,7 +208,7 @@
   },
   "kind": "board",
   "licence_text_sha256": "6e471d647db50527d0c75ee5f1a55a74012ab177c73282bef0bdc7f6562b7ded",
-  "modification_notice": "2026-10-31: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; every item of the board is expressed (no content was left out)",
+  "modification_notice": "2026-11-02: canonicalised the library licence-family path and logical identity where required; original upstream paths, payloads, licence and historical fidelity records unchanged.",
   "origin": "converted",
   "schema": "fenolite.provenance.v0",
   "spdx": "CERN-OHL-P-2.0",
@@ -229,5 +229,5 @@
     "spdx_expression": "CERN-OHL-P-2.0",
     "url": "https://gitlab.com/kicad/code/kicad"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }

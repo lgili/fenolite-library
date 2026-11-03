@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+- Canonicalise Tiny Tapeout's Apache family path and RoyalBlue's lowercase
+  library identity (c0333), preserving payloads and original upstream names.
+  The now-readable RoyalBlue record exposes previously masked proof and
+  provenance findings; all remaining findings stay visible.
+
 - Correct seven raw-versus-normalised licence-digest records using an already
   approved text (c0333); retain every payload, licence, original notice and
   historical fidelity result. Metadata versions become 1.0.1. The diagnostic

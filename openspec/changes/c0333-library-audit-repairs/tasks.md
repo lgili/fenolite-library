@@ -5,7 +5,7 @@
 ## 1. Factual metadata
 
 - [x] 1.1 Correct the seven already-approved normalised licence digests without changing payload/licence/fidelity bytes. Record consistent metadata versions and preserve notices. Proof: source-bound audit changes exactly seven findings; byte invariants; JSON validation.
-- [ ] 1.2 Correct canonical library family/path and lowercase logical identity without rewriting upstream paths or payloads. Proof: focused item/root audits and byte invariants.
+- [x] 1.2 Correct canonical library family/path and lowercase logical identity without rewriting upstream paths or payloads. Proof: focused item/root audits and byte invariants.
 - [ ] 1.3 Only after a real CODEOWNER decision, register the two preserved upstream text digests and factual provenance hashes. Proof: actual decision record, upstream byte comparison, registry equality and focused audit.
 
 ## 2. Actual conversions
@@ -26,3 +26,11 @@ versions agree at 1.0.1. Every payload/LICENSE/fidelity byte is unchanged and
 the original NOTICE bytes are preserved. Root audit changes exactly 32→25,
 removing only those seven provenance findings. This is a partial audit proof,
 not overall item fidelity, final-source CI or publication.
+
+Canonical-identity proof: tiny_tapeout moves from apache-2.0 to its declared
+apache family; RoyalBlue gets a lowercase library id/path, with original
+upstream path case intact. Every payload/licence/fidelity byte and original
+notice is preserved. Both identity errors disappear. Audit now reports 27
+findings: fixing the unreadable RoyalBlue id exposes four existing inner
+findings; it does not create or waive them. Other findings are exactly
+unchanged after path mapping.

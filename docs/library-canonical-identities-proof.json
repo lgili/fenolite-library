@@ -1,0 +1,49 @@
+{
+  "after_findings": 27,
+  "artifacts_sha256": {
+    "audit-after-identities.json": "34474903c88d2dbd270ba3d779730ab429ba5a72c4c39532ab6c046690951534",
+    "audit-after-metadata.json": "bdaaab14e2599c79b8641d3f7fe3ea9cac60095dd578ed8d5aebbc2ec0e3e955",
+    "canonical-item-identities.json": "cd9b5a74aa6af9df4c5db47a49063f7fd5836c09578786e8b87db241bd574a86"
+  },
+  "before_findings": 25,
+  "core_source_commit": "8aea3ace7aa29759cd6069aadffebfb7cdc99e40",
+  "explanation": "The malformed uppercase id previously stopped item inspection. Canonical identity exposes four pre-existing metadata/proof findings instead of hiding them.",
+  "family_and_id_errors_removed": true,
+  "library_base_commit": "ac390b039260158bad9a9912cea6812e3615f8fe",
+  "newly_visible_royalblue_findings": [
+    {
+      "code": "library.provenance-invalid",
+      "hint": "",
+      "message": "boards/cern-ohl-p/kicad-demos/royalblue54l_feather: conversion.outputs_tree: fenolite-tree-1:<64 hex>, not None",
+      "retryable": false,
+      "severity": "error",
+      "where": "boards/cern-ohl-p/kicad-demos/royalblue54l_feather"
+    },
+    {
+      "code": "library.licence-text",
+      "hint": "use the listed text, or record licence_review approved by a CODEOWNER",
+      "message": "boards/cern-ohl-p/kicad-demos/royalblue54l_feather: LICENSE (normalised SHA-256 63f8502ea2967423467f3762efffaaba56c81997f3fe9696e17cc4e5fb3fa31e) is no text listed for CERN-OHL-P-2.0",
+      "retryable": false,
+      "severity": "error",
+      "where": "boards/cern-ohl-p/kicad-demos/royalblue54l_feather"
+    },
+    {
+      "code": "library.provenance-invalid",
+      "hint": "",
+      "message": "boards/cern-ohl-p/kicad-demos/royalblue54l_feather: licence_text_sha256 says 6e471d647db50527d0c75ee5f1a55a74012ab177c73282bef0bdc7f6562b7ded and LICENSE gives 63f8502ea2967423467f3762efffaaba56c81997f3fe9696e17cc4e5fb3fa31e",
+      "retryable": false,
+      "severity": "error",
+      "where": "boards/cern-ohl-p/kicad-demos/royalblue54l_feather"
+    },
+    {
+      "code": "library.proof-failed",
+      "hint": "record fidelity.proof.skipped with the reason, or make the level run",
+      "message": "boards/cern-ohl-p/kicad-demos/royalblue54l_feather: level S was skipped without a recorded reason",
+      "retryable": false,
+      "severity": "error",
+      "where": "boards/cern-ohl-p/kicad-demos/royalblue54l_feather"
+    }
+  ],
+  "schema": "fenolite.library-canonical-identities-proof.v0",
+  "unrelated_findings_unchanged_after_path_mapping": true
+}
