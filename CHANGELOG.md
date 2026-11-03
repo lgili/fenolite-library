@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+- Restore the already-approved authored CC0 licence text from the clean core
+  registry (c0333/S-1097). Prove every pre-existing core and library text digest
+  remains accepted; retain all board payload bytes and other policy settings.
+
 - Measure all ten remaining converted boards on immutable diagnostic core d348705f
   (c0333): Microwave passes without acceptance; nine retain explicit blockers.
   Preserve all 969 authoritative files and the public tool pin pending final CI.

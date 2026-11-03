@@ -49,3 +49,10 @@ source hashes and reviewed write plans in external artifacts. Microwave passes
 without acceptance; six boards refuse styles, Multichannel refuses font colour,
 ECC83 reports a presentation finding, OpenAir import reports a finding. All 969
 authoritative files are unchanged. This does not tick final-source task 2.1.
+
+Registry union repair: the library entry base08b lacked the existing core CC0
+text (S-1097). Restore that approved digest from clean public coree265 without
+new approval or any licence text change. All accepted text sets from oldcore,
+oldlibrary and entrybase are subsets of the resulting registry. Other policy
+keys and all969board files are unchanged; proof in
+docs/licence-registry-union-proof.json. This is metadata compatibility only.
