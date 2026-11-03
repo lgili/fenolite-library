@@ -56,3 +56,13 @@ new approval or any licence text change. All accepted text sets from oldcore,
 oldlibrary and entrybase are subsets of the resulting registry. Other policy
 keys and all969board files are unchanged; proof in
 docs/licence-registry-union-proof.json. This is metadata compatibility only.
+
+Combined clean0366024d diagnostic: actualfreshreviewed imports produce
+Tiny144files, Multichannel90, Interf45 and ECC8327; allfour full1–8/S
+proofs exit0 with every level equal, differences[] and accepted[]. Complex106
+files/full5 has onlyopaque165/0; renderalias fixed. Every969authoritative
+board file remains unchanged. The Complexqualification regression was then
+measured in core455 drill-offset refusal and corrected/proved by signedcore
+3a54137a. Compact raw-reply hashes and statuses are recorded in
+docs/cac-library-combined-0366024d.json. These remain localdiagnostics, not
+finalpublicpin/CI/payload completion; tasks2.x/3.x remain open.

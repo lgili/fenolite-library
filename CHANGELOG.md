@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+- Record actual local combined-source full proof equality for Tiny Tapeout,
+  Multichannel, Interf and ECC83 with zero accepted differences; retain the
+  measured Complex cache blocker and immutable payload/source terms. Public
+  tool pin, final CI and payload replacement remain pending (c0333).
+
 - Restore the already-approved authored CC0 licence text from the clean core
   registry (c0333/S-1097). Prove every pre-existing core and library text digest
   remains accepted; retain all board payload bytes and other policy settings.

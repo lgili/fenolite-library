@@ -1,0 +1,390 @@
+{
+  "authoritative_board_files_unchanged": 969,
+  "boards": {
+    "complex_hierarchy": {
+      "accepted": [],
+      "confirmed_files": 106,
+      "differences": [
+        {
+          "a": "165",
+          "b": "0",
+          "field": "teardrop",
+          "kind": "opaque-count",
+          "level": 7,
+          "where": "board:opaque:teardrop"
+        }
+      ],
+      "full_proof_exit": 5,
+      "input_receipt_sha256": "250f3cb00cd241c7161979e5f917f38a067979935e9e641a8e35587934fb688c",
+      "levels": [
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 1,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 2,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 3,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 4,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 5,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 6,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 1,
+          "excluded": 0,
+          "level": 7,
+          "reason": "",
+          "status": "differs"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": "S",
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 8,
+          "reason": "",
+          "status": "equal"
+        }
+      ],
+      "proof_receipt_sha256": "7acb75beee48cff1554c40ce9006be4815c79bcd2549c122b8e28ce169947f77"
+    },
+    "ecc83": {
+      "accepted": [],
+      "confirmed_files": 27,
+      "differences": [],
+      "full_proof_exit": 0,
+      "input_receipt_sha256": "51959926a0124d2d005be3378a7479a170aa2054a2685f56be2a9aa725c80e6c",
+      "levels": [
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 1,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 2,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 3,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 4,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 5,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 6,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 7,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": "S",
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 8,
+          "reason": "",
+          "status": "equal"
+        }
+      ],
+      "proof_receipt_sha256": "fd1e0826a09333e775259aff5626aa24f88d6ac637fa003c92ecf270ef475890"
+    },
+    "interf_u": {
+      "accepted": [],
+      "confirmed_files": 45,
+      "differences": [],
+      "full_proof_exit": 0,
+      "input_receipt_sha256": "b383c6bd428b2b5d32d7c492e21f5f2d839b9a19918d0c7355267b9543131a86",
+      "levels": [
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 1,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 2,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 3,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 4,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 5,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 6,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 7,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": "S",
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 8,
+          "reason": "",
+          "status": "equal"
+        }
+      ],
+      "proof_receipt_sha256": "b8da78435cf84e305d5a5d08a68a0cd8b95eb300349200b78ee189834e23ab52"
+    },
+    "multichannel": {
+      "accepted": [],
+      "confirmed_files": 90,
+      "differences": [],
+      "full_proof_exit": 0,
+      "input_receipt_sha256": "afe826b68c82936881395578d149c6c96a533f1a26f299511a0773de88136ba2",
+      "levels": [
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 1,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 2,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 3,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 4,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 5,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 6,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 7,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": "S",
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 8,
+          "reason": "",
+          "status": "equal"
+        }
+      ],
+      "proof_receipt_sha256": "1c5d511302075d6d6bae0c367422a0a8c95eabf4fd0b624cf9001489bc17a5f9"
+    },
+    "tiny_tapeout": {
+      "accepted": [],
+      "confirmed_files": 144,
+      "differences": [],
+      "full_proof_exit": 0,
+      "input_receipt_sha256": "21a808a3f1bf9d44397f77d0e9e5a2123d53b0a22fbf2ae2316baca3d0a59079",
+      "levels": [
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 1,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 2,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 3,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 4,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 5,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 6,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 7,
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": "S",
+          "reason": "",
+          "status": "equal"
+        },
+        {
+          "differences": 0,
+          "excluded": 0,
+          "level": 8,
+          "reason": "",
+          "status": "equal"
+        }
+      ],
+      "proof_receipt_sha256": "f2b619bebbf73704f162232791db56fbdb957a3a170c12bd59d3b9b3522fd7b1"
+    }
+  },
+  "core_commit": "0366024d",
+  "final_ci_claimed": false,
+  "limits": [
+    "Local immutable core diagnostic cut, not a public pin or required CI claim.",
+    "No authoritative board payload, upstream terms or licence text changed.",
+    "Complex opaque165/0 regression subsequently isolated to refused shifted pads; core3a54137a restores measured exact16b geometry in its separately recorded diagnostic."
+  ],
+  "public_tool_pin_changed": false,
+  "schema": "fenolite.library-combined-diagnostic.v0",
+  "source_receipt_sha256": "cf5ebdbbae95d67799dc564be74b08ca81efd52b95a2ec1c1160b05d5a111757",
+  "summary_receipt_sha256": "713c9139254b663783d6002e7d445b26713887310aa3c8687af3c489f6bc22df"
+}
