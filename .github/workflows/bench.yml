@@ -70,7 +70,7 @@ jobs:
                       subprocess.run(['git', '-C', str(source), 'fetch', '-q', '--depth', '1', upstream['url'], upstream['commit']], check=True)
                       subprocess.run(['git', '-C', str(source), 'checkout', '-q', 'FETCH_HEAD'], check=True)
                       with (reports / f'{index}-replay.json').open('w') as out:
-                          replay = subprocess.run(['fenolite', 'library', 'replay', str(root), '--upstream', str(source), '--with-current', '--json'], stdout=out)
+                          replay = subprocess.run(['fenolite', 'library', 'replay', str(root), '--with-current', '--json'], stdout=out)
                       row['replay_exit'] = replay.returncode
                       with (reports / f'{index}-verify.json').open('w') as out:
                           proof = subprocess.run(['fenolite', 'verify-source', str(root / 'design.py'), '--against', str(source / upstream['path']), '--provenance', str(root / 'PROVENANCE.json'), '--json'], stdout=out)

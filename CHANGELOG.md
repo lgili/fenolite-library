@@ -2,10 +2,25 @@
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-11-05
+
+First release (Fenolite changes c0266, c0273, c0279): the authored `FenoliteDevices` device, symbol and
+footprint items, the reviewed seeded `LibrePCBBaseReview` resistor set, the authored `FenoliteBlocks`
+`resistor_link` block and six converted KiCad demo boards with a usable licence (CC-BY-SA-4.0; never the
+non-commercial demo licence): ecc83, interf_u, kit-dev-coldfire-xilinx_5213, microwave, multichannel and
+pic_programmer. `release.yml` attaches the assets to the published GitHub Release after `check.yml` passes on
+the tag; it never creates the tag or the release.
+
 - Pin Fenolite `e7673c81`: the public head `468d8a61` of `cac/dev-rewrite`, which has every command the jobs
   require, plus c0266 tasks 6.1 (review sheets independent of the Python version) and 6.2 (a device review
   stores the digest of the record as written). `licences.toml` equals its shipped copy. `e7673c81` must be
   published unchanged before the jobs can install it.
+- Move out tiny_tapeout, complex_hierarchy, video, openair-max, sonde_xilinx and royalblue54l_feather: converted
+  with cores before c0355, their replay or proof fails on the pin (decided 2026-11-05 by the coordinator). They
+  stay in git history; their refresh after a core fix is the v1.1 item.
+- The `proof` job runs the recorded `verify-source` step read-only (its project file, levels, KiCad version and
+  target) instead of the upstream folder with default options; ecc83, with two project files, ended in FEN-2001.
+- `bench.yml` lets `fenolite library replay` fetch the pinned upstream itself instead of passing `--upstream`.
 - Renew the sheet hashes of the four reviewed LibrePCB items under Luiz Carlos Gili's approval of 2026-11-04:
   record digests, geometry, dependencies and the four pin-grid warnings are unchanged; the sheets differ only in
   the viewer code and the gzip header byte (`docs/librepcb-sheet-renewal-20261104.json`).
