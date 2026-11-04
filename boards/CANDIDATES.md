@@ -99,7 +99,7 @@ Notes:
 Converted with no item left out and a passing fidelity proof (`verify-source`, accepted differences listed with
 their reasons in each `PROVENANCE.json`): `ecc83`, `sonde_xilinx`, `video`, `interf_u`, `pic_programmer`,
 `complex_hierarchy`, `multichannel`, `microwave`, `openair-max` (`cc-by-sa/kicad-demos/`), `tiny_tapeout`
-(`apache-2.0/kicad-demos/`) and `royalblue54L_feather` (`cern-ohl-p/kicad-demos/`). This supersedes the status
+(`apache/kicad-demos/`) and `royalblue54l_feather` (`cern-ohl-p/kicad-demos/`). This supersedes the status
 column of the table above for those rows.
 
 `kit-dev-coldfire-xilinx_5213` was converted again too (issue 13 was a fault of the proof's layer comparison,

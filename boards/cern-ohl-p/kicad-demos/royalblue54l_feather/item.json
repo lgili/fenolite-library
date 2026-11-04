@@ -70,7 +70,7 @@
     "lib/nordic-lib-kicad-nrf54-modules.pretty/BM15x-LGA-45_15.8x10mm.kicad_mod",
     "sym-lib-table"
   ],
-  "id": "kicad-demos/royalblue54L_feather",
+  "id": "kicad-demos/royalblue54l_feather",
   "kind": "board",
   "schema": "fenolite.library-item.v0",
   "spdx": "CERN-OHL-P-2.0",

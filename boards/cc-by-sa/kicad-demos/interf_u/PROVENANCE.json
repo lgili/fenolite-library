@@ -3,7 +3,7 @@
     "KiCad project (no individual author is named in the demo's files)"
   ],
   "conversion": {
-    "outputs_tree": null,
+    "outputs_tree": "fenolite-tree-1:5d3b351d49673d43ef2f3f8e6ef84401c88c365b7131b1ddeaa5725021c5c7c9",
     "steps": [
       {
         "argv": [
@@ -282,6 +282,9 @@
         "S": "skipped"
       },
       "script_sha256": "5358bd11b4d39f7ac2b757f8bfa0a1481acd833d9be06339d79c3a1272499d7b",
+      "skipped": {
+        "S": "drawn-unavailable"
+      },
       "tolerances": {
         "angle_udeg": 0,
         "frame": "absolute",
@@ -345,7 +348,7 @@
     "upgrade": []
   },
   "kind": "board",
-  "licence_text_sha256": "00ba11b9a22d453aed299954eaca389d8efef441a4673d84e2dc4ae10ebc7ca5",
+  "licence_text_sha256": "17a696cf6cf01b8d795151556dfd51cc121c1b678a33d509d6548658c1008391",
   "modification_notice": "2026-10-31: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; every item of the board is expressed (no content was left out)",
   "origin": "converted",
   "schema": "fenolite.provenance.v0",

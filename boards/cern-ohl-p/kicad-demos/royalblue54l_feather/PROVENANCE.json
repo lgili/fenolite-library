@@ -3,7 +3,7 @@
     "Lord's Boards"
   ],
   "conversion": {
-    "outputs_tree": null,
+    "outputs_tree": "fenolite-tree-1:36398699ce9d3d37002024633c731798842759e46e43023a8f1d4af24b1b4198",
     "steps": [
       {
         "argv": [
@@ -118,6 +118,9 @@
         "S": "skipped"
       },
       "script_sha256": "153ec1abe90bbb53bed734a9505220d9bc6f5bbe4a28d8fafb670428799ccb2a",
+      "skipped": {
+        "S": "drawn-unavailable"
+      },
       "tolerances": {
         "angle_udeg": 0,
         "frame": "absolute",
@@ -128,7 +131,7 @@
       }
     }
   },
-  "id": "kicad-demos/royalblue54L_feather",
+  "id": "kicad-demos/royalblue54l_feather",
   "import": {
     "copyright": [],
     "date": "2026-10-31",
@@ -207,7 +210,7 @@
     "upgrade": []
   },
   "kind": "board",
-  "licence_text_sha256": "6e471d647db50527d0c75ee5f1a55a74012ab177c73282bef0bdc7f6562b7ded",
+  "licence_text_sha256": "63f8502ea2967423467f3762efffaaba56c81997f3fe9696e17cc4e5fb3fa31e",
   "modification_notice": "2026-10-31: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; every item of the board is expressed (no content was left out)",
   "origin": "converted",
   "schema": "fenolite.provenance.v0",

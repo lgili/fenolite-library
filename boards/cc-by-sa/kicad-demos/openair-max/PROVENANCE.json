@@ -3,7 +3,7 @@
     "AirGradient"
   ],
   "conversion": {
-    "outputs_tree": null,
+    "outputs_tree": "fenolite-tree-1:1f7b452bd236cc573716819ff2c383d307c4b1c24455b177ba3ac835e06a89b9",
     "steps": [
       {
         "argv": [
@@ -2663,6 +2663,9 @@
         "S": "skipped"
       },
       "script_sha256": "54a0cdeada53b75191042318d4318282553641cdfd77706848d39de3dcc1f748",
+      "skipped": {
+        "S": "drawn-unavailable"
+      },
       "tolerances": {
         "angle_udeg": 0,
         "frame": "absolute",
@@ -2740,7 +2743,7 @@
     "upgrade": []
   },
   "kind": "board",
-  "licence_text_sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
+  "licence_text_sha256": "ccdefbf85316f7d282d272f7be48c2624f6892f46fce7c8b5287fc9256861f7d",
   "modification_notice": "2026-10-31: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; every item of the board is expressed (no content was left out)",
   "origin": "converted",
   "schema": "fenolite.provenance.v0",

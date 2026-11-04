@@ -3,7 +3,7 @@
     "Pat Deegan"
   ],
   "conversion": {
-    "outputs_tree": null,
+    "outputs_tree": "fenolite-tree-1:5581feafe445f2a564f1eecd487fcb9ca0e9d878a9d0b033c2ee675163d582fd",
     "steps": [
       {
         "argv": [
@@ -3751,6 +3751,9 @@
         "S": "skipped"
       },
       "script_sha256": "720663790fd7e67d327933a0a87def6c6f98121fbbf5733fa1c940c47cc2e5ab",
+      "skipped": {
+        "S": "drawn-unavailable"
+      },
       "tolerances": {
         "angle_udeg": 0,
         "frame": "absolute",
@@ -3822,7 +3825,7 @@
     "upgrade": []
   },
   "kind": "board",
-  "licence_text_sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+  "licence_text_sha256": "95cef6332b35354c12f9d666ab9ff47002e6f7ef937924896882b2e0cdb7a0d6",
   "modification_notice": "2026-10-31: converted to the Fenolite format by Fenolite 0.7.0.dev0 (fenolite import --to python); the board is rewritten as Python code (design.py, copper.py) with its footprints vendored in lib/; every item of the board is expressed (no content was left out)",
   "origin": "converted",
   "schema": "fenolite.provenance.v0",
