@@ -8,7 +8,7 @@ fenolite = ">=0.7.0.dev0"
 [tools]
 # Public immutable baseline. Update only after the feature integration is public and validated.
 # This baseline lacks c0262/c0270/c0273/c0266 commands; their CI guards deliberately fail.
-fenolite = "b8b24842c1b792a0fcb37a6a7e5ca0270b90efd6"
+fenolite = "723183a11ebffe4bcdf5d6d0795420db57e2847e"
 uv = "0.12.23"
 kicad_cli = "9.0.2"
 # Official 9.0.2 linux/amd64 manifest: registry body hash/header verified 2026-11-01.
