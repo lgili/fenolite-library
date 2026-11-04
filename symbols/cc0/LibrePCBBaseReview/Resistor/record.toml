@@ -3,7 +3,7 @@ id = "LibrePCBBaseReview:Resistor"
 version = "1.0.0"
 summary = "Seeded from LibrePCB Base: Resistor"
 licence = "CC0-1.0"
-evidence = "CORPUS-VERIFIED (review 2026-11-03)"
+evidence = "CORPUS-VERIFIED (review 2026-11-04)"
 sources = ["D-0005"]
 origin = { library = "LibrePCB Base", version = "662a148d46ac785a84fd68b98e311322771a0bc2", element = "ef80cd5e-2689-47ee-8888-31d04fc99174", licence = "CC0-1.0" }
 
@@ -34,12 +34,12 @@ body_style = 1
 
 [[reviewed_by]]
 who = "Luiz Carlos Gili"
-date = "2026-11-03"
+date = "2026-11-04"
 version = "1.0.0"
 digest = "ec564da8f0087e3bda5711c7931fe193c954818abd785a28b1e98881316562fd"
 evidence = "CORPUS-VERIFIED"
-sheet_sha256 = "819badf53f69895b5dfa5566d93daffc6d99243004ba81565a9dd55331cff584"
+sheet_sha256 = "c075e8baf3fc5006db55eb458aee40ded6def40e99256fa3d40881fe0a7fd136"
 previous_evidence = "UNVERIFIED"
 fenolite_version = "0.7.0.dev0"
-record_sha256 = "3b92c415cfa180193bb4cab0d30ea35805e54f976359ffa2befc0143a55ea514"
+record_sha256 = "7d4e1d4c545b7bac92be0aa1dd2820a877047ffb2538c523a008ede3391573ed"
 accepted_codes = ["library.pin-grid"]

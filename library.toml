@@ -6,9 +6,12 @@ version = "0.1.0"
 fenolite = ">=0.7.0.dev0"
 
 [tools]
-# Public immutable baseline. Update only after the feature integration is public and validated.
-# This baseline lacks c0262/c0270/c0273/c0266 commands; their CI guards deliberately fail.
-fenolite = "b8b24842c1b792a0fcb37a6a7e5ca0270b90efd6"
+# Core commit e7673c81 on top of the public head 468d8a61 of lgili/Fenolite `cac/dev-rewrite`, which carries
+# the c0262/c0266/c0270/c0273/c0279 commands the jobs require, plus c0266 tasks 6.1 (review sheets independent
+# of the Python version, fef4ea08) and 6.2 (device review digest). It must be pushed unchanged (or this pin
+# renewed) and its CI be green before this library's pull request merges; `licences.toml` equals its
+# `cli/data/library-licences.toml` byte for byte.
+fenolite = "e7673c811d5ca25d269c2d9c0f30e686f5148844"
 uv = "0.12.23"
 kicad_cli = "10.0.6"
 # Official immutable 10.0.6 index + linux/amd64 manifest/config verified against registry bytes.

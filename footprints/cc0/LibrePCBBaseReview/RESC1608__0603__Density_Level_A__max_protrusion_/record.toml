@@ -3,7 +3,7 @@ id = "LibrePCBBaseReview:RESC1608__0603__Density_Level_A__max_protrusion_"
 version = "1.0.0"
 summary = "Seeded from LibrePCB Base: RESC1608 (0603)_Density Level A (max protrusion)"
 licence = "CC0-1.0"
-evidence = "CORPUS-VERIFIED (review 2026-11-03)"
+evidence = "CORPUS-VERIFIED (review 2026-11-04)"
 sources = ["D-0005"]
 origin = { library = "LibrePCB Base", version = "662a148d46ac785a84fd68b98e311322771a0bc2", element = "4fceac63-0f89-46c4-8e93-d6ee67d33e69", licence = "CC0-1.0" }
 generator = "explicit"
@@ -76,11 +76,11 @@ width = "0.1mm"
 
 [[reviewed_by]]
 who = "Luiz Carlos Gili"
-date = "2026-11-03"
+date = "2026-11-04"
 version = "1.0.0"
 digest = "7f196b611fd593d17b50845d9cac2c48ab9279b68dd63dbf411ba6e4c84f3439"
 evidence = "CORPUS-VERIFIED"
-sheet_sha256 = "729ac30f7a47edd31b078610db89ddbaa797b1867b69c3e9aa4720c27fb439c1"
+sheet_sha256 = "9194f24455d27b4304668efd6f4e2125268d33095c0eaf0f820c7b7977d87e69"
 previous_evidence = "UNVERIFIED"
 fenolite_version = "0.7.0.dev0"
-record_sha256 = "8d4d3a8cf663c20f1e7beedad87ede2cdb424d57f31cdf971437dfb79b8bebe9"
+record_sha256 = "46bbd70ef006a17e7351dcebc4da794a94f2e00d027536020c79ce57a9c7ef83"

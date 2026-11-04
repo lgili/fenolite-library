@@ -1,0 +1,130 @@
+{
+ "schema": "fenolite-library.review-renewal.v0",
+ "date": "2026-11-04",
+ "items": [
+  {
+   "id": "LibrePCBBaseReview:Resistor",
+   "record": "symbols/cc0/LibrePCBBaseReview/Resistor/record.toml",
+   "record_digest": "ec564da8f0087e3bda5711c7931fe193c954818abd785a28b1e98881316562fd",
+   "previous_sheet_sha256": "819badf53f69895b5dfa5566d93daffc6d99243004ba81565a9dd55331cff584",
+   "renewed_sheet_sha256": "c075e8baf3fc5006db55eb458aee40ded6def40e99256fa3d40881fe0a7fd136",
+   "plan_id": "01e4e88f464b3889",
+   "check_exit_before": 5,
+   "check_exit_after": 0,
+   "review_state_after": "accepted",
+   "record_sha256_after": "e09bb6531f2ac77c25c10487f3286fe9c7b334d4ac73cf9920c15a7a8323987d"
+  },
+  {
+   "id": "LibrePCBBaseReview:RESC1608__0603_",
+   "record": "footprints/cc0/LibrePCBBaseReview/RESC1608__0603_/record.toml",
+   "record_digest": "af92ab847efdbd4307a1db62ef1aa279a6167f1465df8087f45ae1ef598c408b",
+   "previous_sheet_sha256": "f6c1ca207c154b2d3b15adc2e59d1ddcd95140366ca95c6e441433016668853b",
+   "renewed_sheet_sha256": "f3c42914f77b11e3747fbff845d19eac09476f16b4247cc6282ddcf24f8c2c27",
+   "plan_id": "0d61c198367248d9",
+   "check_exit_before": 5,
+   "check_exit_after": 0,
+   "review_state_after": "accepted",
+   "record_sha256_after": "17fb41a4bc7ff1de9d6e0d2d93fd40a851299cfaf3cbf21d3e04038ad2f4be18"
+  },
+  {
+   "id": "LibrePCBBaseReview:RESC1608__0603__Density_Level_A__max_protrusion_",
+   "record": "footprints/cc0/LibrePCBBaseReview/RESC1608__0603__Density_Level_A__max_protrusion_/record.toml",
+   "record_digest": "7f196b611fd593d17b50845d9cac2c48ab9279b68dd63dbf411ba6e4c84f3439",
+   "previous_sheet_sha256": "729ac30f7a47edd31b078610db89ddbaa797b1867b69c3e9aa4720c27fb439c1",
+   "renewed_sheet_sha256": "9194f24455d27b4304668efd6f4e2125268d33095c0eaf0f820c7b7977d87e69",
+   "plan_id": "15c03f523c147aad",
+   "check_exit_before": 5,
+   "check_exit_after": 0,
+   "review_state_after": "accepted",
+   "record_sha256_after": "c28cee6f9ff6060b43b8cc1d5515a7cbfb8e7a60f356cee72a80cf629ad0dac5"
+  },
+  {
+   "id": "LibrePCBBaseReview:Resistor_1608__0603_",
+   "record": "devices/cc0/LibrePCBBaseReview/Resistor_1608__0603_/record.toml",
+   "record_digest": "5cff60a035db825b5d5cd2ecfd2057d48c5567ad6fa0fabf7ac10373a43657f7",
+   "previous_sheet_sha256": "d4951aaf8288f564c3754876a983bb9d6c2e688d97659e78a5b1b2ad8259b084",
+   "renewed_sheet_sha256": "d4951aaf8288f564c3754876a983bb9d6c2e688d97659e78a5b1b2ad8259b084",
+   "plan_id": "35b4a92a48339e20",
+   "check_exit_before": 0,
+   "check_exit_after": 0,
+   "review_state_after": "accepted",
+   "record_sha256_after": "2ca94ef14d61066c937573f57294b1f90acbb3994c8a9f46c8b587d8f6fd2619"
+  }
+ ],
+ "decision": {
+  "who": "Luiz Carlos Gili",
+  "date": "2026-11-04",
+  "scope": "renew the sheet hashes of the four reviewed LibrePCBBaseReview items; record digests, geometry, dependencies and the four visible library.pin-grid warnings unchanged",
+  "relayed_by": "the coordinating Fenolite session (Master), answering this session's question of 2026-11-04",
+  "earlier_approvals": [
+   "docs/current-renderer-human-approval-20261103.json",
+   "docs/librepcb-source-integration-approval-20261103.json"
+  ]
+ },
+ "why_stale": [
+  "Review sheets embed gzip-packed scenes whose header byte 9 (operating system) was 3 on Python 3.11/3.12 and 255 on 3.13: the approvals were made on 3.13, the library CI runs 3.12. Fenolite fef4ea08 (c0266 task 6.1) fixes the header to 255 on every interpreter.",
+  "The viewer embedded in each sheet gained the presentation-only layer-order dialog (CSS and JavaScript) between core 99a972bb (approval) and 468d8a61."
+ ],
+ "method": {
+  "core": "fef4ea0892e36e6128f6288d479d40da01d69f7f (Python 3.12) for the symbol and the two footprints; e7673c811d5ca25d269c2d9c0f30e686f5148844 for the device, re-accepted after c0266 task 6.2 so that its record_sha256 is the digest of the record as written (the first renewal stored a digest the library audit refused as library.provenance-invalid). Sheet bytes are equal under both cores.",
+  "commands": "per item: fenolite library check ITEM --json (sheet sha256), then fenolite library review RECORD --accept --reviewer 'Luiz Carlos Gili' --sheet SHA --dry-run, then --confirm --plan PLAN_ID; then library check again (exit 0, state accepted)",
+  "approval_core_reproduction": "core 99a972bb on Python 3.13 writes sheets whose hashes equal the four approved sheet_sha256 exactly (819badf5, f6c1ca20, 729ac30f, d70d4693)"
+ },
+ "sheet_comparison": {
+  "old": "core 99a972bb, Python 3.13, records as committed before this renewal",
+  "new": "core fef4ea08, Python 3.12, the same records",
+  "rows": [
+   {
+    "sheet": "0/pins/LibrePCBBaseReview_Resistor-492330d96e17.html",
+    "old_sha256": "819badf53f69895b5dfa5566d93daffc6d99243004ba81565a9dd55331cff584",
+    "new_sha256": "c075e8baf3fc5006db55eb458aee40ded6def40e99256fa3d40881fe0a7fd136",
+    "embedded_data_equal": true,
+    "markup_equal_except_layer_order_dialog": true
+   },
+   {
+    "sheet": "0/symbol/record_Resistor-499a2e3ef4b3.html",
+    "old_sha256": "35d6266fed89772fefde357a6baa03ebe20f5e08a67340502d405c29662572d9",
+    "new_sha256": "058d647e8adee6db8d7d4f1a84c777c836274cbf718b8cf800954e41844e50f1",
+    "embedded_data_equal": true,
+    "markup_equal_except_layer_order_dialog": true
+   },
+   {
+    "sheet": "1/footprint/LibrePCBBaseReview_RESC1608__0603_-4716708ec293.html",
+    "old_sha256": "49f6f594589a4bec9b8e7934a6f3acd46d1b707ef28c32685e06d7606e2ef0a0",
+    "new_sha256": "238a5853536c6a577853f38af7097c0ce463630c3a674c373be92b805afba824",
+    "embedded_data_equal": true,
+    "markup_equal_except_layer_order_dialog": true
+   },
+   {
+    "sheet": "1/package/LibrePCBBaseReview_RESC1608__0603_-4716708ec293.html",
+    "old_sha256": "f6c1ca207c154b2d3b15adc2e59d1ddcd95140366ca95c6e441433016668853b",
+    "new_sha256": "f3c42914f77b11e3747fbff845d19eac09476f16b4247cc6282ddcf24f8c2c27",
+    "embedded_data_equal": true,
+    "markup_equal_except_layer_order_dialog": true
+   },
+   {
+    "sheet": "2/footprint/LibrePCBBaseReview_RESC1608__0603__Density_Level_A__max_protrusion_-22ae978260ad.html",
+    "old_sha256": "fe8af54a532b393a07767cf9fd6dee6d217337da8cf4166ae45b088d0782ec66",
+    "new_sha256": "5ec8fba2aa9519120c18bfaa020eb72a4b87781d3c5fe8e23489867e1f0c560b",
+    "embedded_data_equal": true,
+    "markup_equal_except_layer_order_dialog": true
+   },
+   {
+    "sheet": "2/package/LibrePCBBaseReview_RESC1608__0603__Density_Level_A__max_protrusion_-22ae978260ad.html",
+    "old_sha256": "729ac30f7a47edd31b078610db89ddbaa797b1867b69c3e9aa4720c27fb439c1",
+    "new_sha256": "9194f24455d27b4304668efd6f4e2125268d33095c0eaf0f820c7b7977d87e69",
+    "embedded_data_equal": true,
+    "markup_equal_except_layer_order_dialog": true
+   },
+   {
+    "sheet": "3/device/LibrePCBBaseReview_Resistor_1608__0603_-4852e41cdceb.html",
+    "old_sha256": "d70d469378d613482f3e272bf4ad933479ffc4ebfa9d2820d9d993836ddbcdb3",
+    "new_sha256": "d4951aaf8288f564c3754876a983bb9d6c2e688d97659e78a5b1b2ad8259b084",
+    "embedded_data_equal": true,
+    "markup_equal_except_layer_order_dialog": true
+   }
+  ],
+  "result": "every sheet: the decoded embedded data (gz scenes decompressed) are equal, and the markup outside <style>/<script> is equal except for the added layer-order dialog; only viewer CSS/JavaScript and the gzip header byte differ"
+ },
+ "not_claimed": "no new geometry or evidence review; no CI run, release or publication"
+}

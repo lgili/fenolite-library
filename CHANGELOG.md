@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+- Pin Fenolite `e7673c81`: the public head `468d8a61` of `cac/dev-rewrite`, which has every command the jobs
+  require, plus c0266 tasks 6.1 (review sheets independent of the Python version) and 6.2 (a device review
+  stores the digest of the record as written). `licences.toml` equals its shipped copy. `e7673c81` must be
+  published unchanged before the jobs can install it.
+- Renew the sheet hashes of the four reviewed LibrePCB items under Luiz Carlos Gili's approval of 2026-11-04:
+  record digests, geometry, dependencies and the four pin-grid warnings are unchanged; the sheets differ only in
+  the viewer code and the gzip header byte (`docs/librepcb-sheet-renewal-20261104.json`).
+
 - Integrate nine complete, previously sealed 1.0.2 board items with unchanged source terms and zero accepted differences. Nine item proof/version audits pass; the root audit changes from 21 to two unchanged Royal errors. Preserve Microwave’s measured no-copper/no-schematic scopes and all Royal L7, public-pin, CI and release gates.
 
 - Integrate the four explicitly re-approved LibrePCB resistor-subset records with corrected D-0005 source, exact contractual review receipts and deterministic native outputs. Preserve earlier approvals and all existing board audit/CI/release blockers.
