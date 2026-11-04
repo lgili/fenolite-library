@@ -326,8 +326,23 @@ jobs:
               subprocess.run(['git', 'init', '-q', str(source)], check=True)
               subprocess.run(['git', '-C', str(source), 'fetch', '-q', '--depth', '1', upstream['url'], upstream['commit']], check=True)
               subprocess.run(['git', '-C', str(source), 'checkout', '-q', 'FETCH_HEAD'], check=True)
+              # Rebuild the recorded verify-source step (project file, levels, KiCad version, target) as a
+              # read-only proof: out/ is the item, upstream/ the fetched commit; write options are dropped and
+              # accepted differences come from the item's PROVENANCE.json.
+              steps = [s['argv'] for s in provenance.get('conversion', {}).get('steps', []) if s['argv'][:1] == ['verify-source']]
+              recorded = steps[-1][2:] if steps else ['--against', 'upstream/' + upstream['path']]
+              flags, valued = {'--record', '--confirm', '--no-backup', '--json'}, {'--provenance', '--timestamp', '--plan', '--accept', '--reason'}
+              def local(arg):
+                  for prefix, root in (('out/', item), ('upstream/', source)):
+                      if arg.startswith(prefix): return str(root / arg[len(prefix):])
+                  return arg
+              argv, skip = [], False
+              for arg in recorded:
+                  if skip: skip = False
+                  elif arg in valued: skip = True
+                  elif arg not in flags: argv.append(local(arg))
               with (reports / 'verify.json').open('w') as out:
-                  verified = subprocess.run(['fenolite', 'verify-source', str(item / 'design.py'), '--against', str(source / upstream['path']), '--provenance', str(item / 'PROVENANCE.json'), '--json'], stdout=out)
+                  verified = subprocess.run(['fenolite', 'verify-source', str(item / 'design.py'), *argv, '--provenance', str(item / 'PROVENANCE.json'), '--json'], stdout=out)
               with (reports / 'proof-gate.json').open('w') as out:
                   gate = subprocess.run(['fenolite', 'library', 'audit', '.', '--item', str(item), '--proof', str(reports / 'verify.json'), '--json'], stdout=out)
               if verified.returncode or gate.returncode: raise SystemExit('Current fidelity proof or recorded-status gate failed')
