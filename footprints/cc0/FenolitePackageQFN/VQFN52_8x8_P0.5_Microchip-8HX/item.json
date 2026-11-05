@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/VQFN52_8x8_P0.5_Microchip-8HX.step",
+    "generated/FenolitePackageQFN.pretty/VQFN52_8x8_P0.5_Microchip-8HX.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:VQFN52_8x8_P0.5_Microchip-8HX",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VQFN-52, 0.5 mm pitch, 8 x 8 mm body, 6.7 x 6.7 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "vqfn",
+    "vqfn-52"
+  ],
+  "title": "VQFN-52 8 x 8 mm, 0.5 mm pitch (Microchip 8HX)",
+  "version": "1.0.0"
+}

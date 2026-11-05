@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/VQFN28_5x5_P0.5_Microchip-PV.step",
+    "generated/FenolitePackageQFN.pretty/VQFN28_5x5_P0.5_Microchip-PV.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:VQFN28_5x5_P0.5_Microchip-PV",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VQFN-28, 0.5 mm pitch, 5 x 5 mm body, 2.7 x 3 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "vqfn",
+    "vqfn-28"
+  ],
+  "title": "VQFN-28 5 x 5 mm, 0.5 mm pitch (Microchip PV)",
+  "version": "1.0.0"
+}

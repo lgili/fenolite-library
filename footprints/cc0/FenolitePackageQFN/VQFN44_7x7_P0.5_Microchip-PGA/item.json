@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/VQFN44_7x7_P0.5_Microchip-PGA.step",
+    "generated/FenolitePackageQFN.pretty/VQFN44_7x7_P0.5_Microchip-PGA.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:VQFN44_7x7_P0.5_Microchip-PGA",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VQFN-44, 0.5 mm pitch, 7 x 7 mm body, 5.15 x 5.15 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "vqfn",
+    "vqfn-44"
+  ],
+  "title": "VQFN-44 7 x 7 mm, 0.5 mm pitch (Microchip PGA)",
+  "version": "1.0.0"
+}

@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/VQFN48_7x7_P0.5_Microchip-UY.step",
+    "generated/FenolitePackageQFN.pretty/VQFN48_7x7_P0.5_Microchip-UY.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:VQFN48_7x7_P0.5_Microchip-UY",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VQFN-48, 0.5 mm pitch, 7 x 7 mm body, 5.15 x 5.15 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "vqfn",
+    "vqfn-48"
+  ],
+  "title": "VQFN-48 7 x 7 mm, 0.5 mm pitch (Microchip UY/VT)",
+  "version": "1.0.0"
+}

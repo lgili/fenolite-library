@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/VQFN76_9x9_P0.4_Microchip-QBA.step",
+    "generated/FenolitePackageQFN.pretty/VQFN76_9x9_P0.4_Microchip-QBA.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:VQFN76_9x9_P0.4_Microchip-QBA",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VQFN-76, 0.4 mm pitch, 9 x 9 mm body, 5.1 x 5.1 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "vqfn",
+    "vqfn-76"
+  ],
+  "title": "VQFN-76 9 x 9 mm, 0.4 mm pitch (Microchip QBA)",
+  "version": "1.0.0"
+}

@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/VQFN40_6x6_P0.5_Microchip-VM.step",
+    "generated/FenolitePackageQFN.pretty/VQFN40_6x6_P0.5_Microchip-VM.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:VQFN40_6x6_P0.5_Microchip-VM",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VQFN-40, 0.5 mm pitch, 6 x 6 mm body, 4.7 x 4.7 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "vqfn",
+    "vqfn-40"
+  ],
+  "title": "VQFN-40 6 x 6 mm, 0.5 mm pitch (Microchip VM)",
+  "version": "1.0.0"
+}

@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/UQFN12_2x2_P0.4_Microchip-QM.step",
+    "generated/FenolitePackageQFN.pretty/UQFN12_2x2_P0.4_Microchip-QM.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:UQFN12_2x2_P0.4_Microchip-QM",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "UQFN-12, 0.4 mm pitch, 2 x 2 mm body, 1 x 1 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "uqfn",
+    "uqfn-12"
+  ],
+  "title": "UQFN-12 2 x 2 mm, 0.4 mm pitch (Microchip QM)",
+  "version": "1.0.0"
+}

@@ -1,0 +1,241 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0423 Microchip Packaging Specification, DS00000049CH (CH). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.package.v0"
+id = "FenolitePackageQFN:VQFN20_3x3_P0.5_Microchip-LXX"
+version = "1.0.0"
+summary = "VQFN-20, 0.5 mm pitch, 3 x 3 mm body, Microchip recommended land"
+category = "Quad flat no-lead package"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0423"]
+generator = "explicit"
+kind = "smd"
+family = "nolead"
+pins = 20
+pitch = "0.5mm"
+body = { height = "0.8mm..0.9mm", length = "3mm", standoff = "0mm..0.05mm", width = "3mm" }
+
+[[pad]]
+number = "1"
+shape = "roundrect"
+size = ["0.42mm", "0.27mm"]
+at = ["-1.4mm", "-1mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "2"
+shape = "roundrect"
+size = ["0.42mm", "0.27mm"]
+at = ["-1.4mm", "-0.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "3"
+shape = "roundrect"
+size = ["0.42mm", "0.27mm"]
+at = ["-1.4mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "4"
+shape = "roundrect"
+size = ["0.42mm", "0.27mm"]
+at = ["-1.4mm", "0.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "5"
+shape = "roundrect"
+size = ["0.42mm", "0.27mm"]
+at = ["-1.4mm", "1mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "6"
+shape = "roundrect"
+size = ["0.27mm", "0.42mm"]
+at = ["-1mm", "1.4mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "7"
+shape = "roundrect"
+size = ["0.27mm", "0.42mm"]
+at = ["-0.5mm", "1.4mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "8"
+shape = "roundrect"
+size = ["0.27mm", "0.42mm"]
+at = ["0mm", "1.4mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "9"
+shape = "roundrect"
+size = ["0.27mm", "0.42mm"]
+at = ["0.5mm", "1.4mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "10"
+shape = "roundrect"
+size = ["0.27mm", "0.42mm"]
+at = ["1mm", "1.4mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "11"
+shape = "roundrect"
+size = ["0.42mm", "0.27mm"]
+at = ["1.4mm", "1mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "12"
+shape = "roundrect"
+size = ["0.42mm", "0.27mm"]
+at = ["1.4mm", "0.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "13"
+shape = "roundrect"
+size = ["0.42mm", "0.27mm"]
+at = ["1.4mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "14"
+shape = "roundrect"
+size = ["0.42mm", "0.27mm"]
+at = ["1.4mm", "-0.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "15"
+shape = "roundrect"
+size = ["0.42mm", "0.27mm"]
+at = ["1.4mm", "-1mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "16"
+shape = "roundrect"
+size = ["0.27mm", "0.42mm"]
+at = ["1mm", "-1.4mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "17"
+shape = "roundrect"
+size = ["0.27mm", "0.42mm"]
+at = ["0.5mm", "-1.4mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "18"
+shape = "roundrect"
+size = ["0.27mm", "0.42mm"]
+at = ["0mm", "-1.4mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "19"
+shape = "roundrect"
+size = ["0.27mm", "0.42mm"]
+at = ["-0.5mm", "-1.4mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "20"
+shape = "roundrect"
+size = ["0.27mm", "0.42mm"]
+at = ["-1mm", "-1.4mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[graphic]]
+key = "F.Fab:0"
+kind = "line"
+layer = "F.Fab"
+points = [["-0.75mm", "-1.5mm"], ["1.5mm", "-1.5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:1"
+kind = "line"
+layer = "F.Fab"
+points = [["1.5mm", "-1.5mm"], ["1.5mm", "1.5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:2"
+kind = "line"
+layer = "F.Fab"
+points = [["1.5mm", "1.5mm"], ["-1.5mm", "1.5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:3"
+kind = "line"
+layer = "F.Fab"
+points = [["-1.5mm", "1.5mm"], ["-1.5mm", "-0.75mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:4"
+kind = "line"
+layer = "F.Fab"
+points = [["-1.5mm", "-0.75mm"], ["-0.75mm", "-1.5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.SilkS:5"
+kind = "line"
+layer = "F.SilkS"
+points = [["-1.7375mm", "-1.7375mm"], ["-1.3725mm", "-1.7375mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:6"
+kind = "line"
+layer = "F.SilkS"
+points = [["-1.7375mm", "-1.7375mm"], ["-1.7375mm", "-1.3725mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.CrtYd:7"
+kind = "rect"
+layer = "F.CrtYd"
+points = [["-2.11mm", "-2.11mm"], ["2.11mm", "2.11mm"]]
+width = "0.05mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.9mm"
+outline = [["-1.5mm", "-1.5mm"], ["1.5mm", "-1.5mm"], ["1.5mm", "1.5mm"], ["-1.5mm", "1.5mm"]]
+name = "body"
+z_min = "0mm"
+z_max = "0.9mm"

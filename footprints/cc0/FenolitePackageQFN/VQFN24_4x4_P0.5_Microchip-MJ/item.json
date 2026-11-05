@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/VQFN24_4x4_P0.5_Microchip-MJ.step",
+    "generated/FenolitePackageQFN.pretty/VQFN24_4x4_P0.5_Microchip-MJ.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:VQFN24_4x4_P0.5_Microchip-MJ",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VQFN-24, 0.5 mm pitch, 4 x 4 mm body, 2.6 x 2.6 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "vqfn",
+    "vqfn-24"
+  ],
+  "title": "VQFN-24 4 x 4 mm, 0.5 mm pitch (Microchip MJ)",
+  "version": "1.0.0"
+}

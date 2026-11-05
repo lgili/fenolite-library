@@ -1,0 +1,992 @@
+# SPDX-License-Identifier: CC0-1.0
+# Quad no-lead packages (QFN), batch 6 of change c0390. Outline dimensions and recommended land patterns:
+# Microchip Packaging Specification DS00000049CH (D-0423), one drawing per item (page and drawing number in
+# `used`). Land: the recommended land pattern as read ([land]). Drawings with non-rectangular or split pads,
+# unequal sides, without a land table, or whose land does not match the outline are left out (c0390 design.md).
+schema = "fenolite.c0390-family.v0"
+kind = "footprint"
+namespace = "FenolitePackageQFN"
+category = "Quad flat no-lead package"
+date = "2026-11-05"
+tags = ["no-lead", "qfn", "quad", "smd"]
+
+[record]
+family = "nolead"
+
+[record.generate]
+lands = 1
+drawing = 1
+
+[[row]]
+name = "QFN16_4x4_P0.65_Microchip-8E"
+title = "QFN-16 4 x 4 mm, 0.65 mm pitch (Microchip 8E)"
+summary = "QFN-16, 0.65 mm pitch, 4 x 4 mm body, 2.15 x 2.15 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 396, drawing C04-259B: N 16, e 0.65 BSC, A 0.80/0.87/0.95, A1 0.00/0.02/0.05, D 4.00 BSC, E 4.00 BSC, D2 1.95/2.05/2.15, E2 1.95/2.05/2.15, b 0.25/0.30/0.35, L 0.45/0.55/0.65; land C04-2259A: E 0.65 BSC, X2 2.15, Y2 2.15, C1 3.625, C2 3.625, X1 0.30, Y1 0.725, G1 0.20"
+tags = ["exposed-pad", "qfn", "qfn-16"]
+record.pins = 16
+record.pitch = "0.65mm"
+record.arrangement = "quad"
+record.body = { length = "4mm", width = "4mm", height = { min = "0.8mm", nom = "0.87mm", max = "0.95mm" }, standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.45mm..0.65mm", width = "0.25mm..0.35mm" }
+record.ep = { length = "1.95mm..2.15mm", width = "1.95mm..2.15mm" }
+record.land = { source = "D-0423 drawing C04-2259A", pad = { length = "0.725mm", width = "0.3mm" }, row_spacing_x = "3.625mm", row_spacing_y = "3.625mm", ep = { length = "2.15mm", width = "2.15mm" } }
+
+[[row]]
+name = "QFN16_4x4_P0.65_Microchip-FX"
+title = "QFN-16 4 x 4 mm, 0.65 mm pitch (Microchip FX)"
+summary = "QFN-16, 0.65 mm pitch, 4 x 4 mm body, 2.15 x 2.15 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 399, drawing C04-262A: N 16, e 0.65 BSC, A 0.85/0.90/1.00, A1 0.00/0.02/0.05, D 4.00 BSC, E 4.00 BSC, D2 1.95/2.05/2.15, E2 1.95/2.05/2.15, b 0.25/0.30/0.35, L 0.45/0.55/0.65; land C04-2262A: E 0.65 BSC, X2 2.15, Y2 2.15, C1 3.625, C2 3.625, X1 0.30, Y1 0.725, G1 0.20"
+tags = ["exposed-pad", "qfn", "qfn-16"]
+record.pins = 16
+record.pitch = "0.65mm"
+record.arrangement = "quad"
+record.body = { length = "4mm", width = "4mm", height = { min = "0.85mm", nom = "0.9mm", max = "1mm" }, standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.45mm..0.65mm", width = "0.25mm..0.35mm" }
+record.ep = { length = "1.95mm..2.15mm", width = "1.95mm..2.15mm" }
+record.land = { source = "D-0423 drawing C04-2262A", pad = { length = "0.725mm", width = "0.3mm" }, row_spacing_x = "3.625mm", row_spacing_y = "3.625mm", ep = { length = "2.15mm", width = "2.15mm" } }
+
+[[row]]
+name = "QFN24_4x4_P0.5_Microchip-RU"
+title = "QFN-24 4 x 4 mm, 0.5 mm pitch (Microchip RU)"
+summary = "QFN-24, 0.5 mm pitch, 4 x 4 mm body, 2.6 x 2.6 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 406, drawing C04-225A: N 24, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.01/0.05, D 4.00 BSC, E 4.00 BSC, D2 2.40/2.50/2.60, E2 2.40/2.50/2.60, b 0.18/0.23/0.30, L 0.30/0.40/0.50; land C04-2225A: E 0.50 BSC, X2 2.60, Y2 2.60, C1 3.90, C2 3.90, X1 0.30, Y1 0.85, G1 0.20, V 0.30, EV 1.00"
+tags = ["exposed-pad", "qfn", "qfn-24"]
+record.pins = 24
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "4mm", width = "4mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.01mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = { min = "0.18mm", nom = "0.23mm", max = "0.3mm" } }
+record.ep = { length = "2.4mm..2.6mm", width = "2.4mm..2.6mm" }
+record.land = { source = "D-0423 drawing C04-2225A", pad = { length = "0.85mm", width = "0.3mm" }, row_spacing_x = "3.9mm", row_spacing_y = "3.9mm", ep = { length = "2.6mm", width = "2.6mm" } }
+
+[[row]]
+name = "QFN24_5x5_P0.65_Microchip-LY"
+title = "QFN-24 5 x 5 mm, 0.65 mm pitch (Microchip LY)"
+summary = "QFN-24, 0.65 mm pitch, 5 x 5 mm body, 3.3 x 3.3 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 409, drawing C04-364A: N 24, e 0.65 BSC, A 0.80/0.90/1.00, A1 0.00/0.02/0.05, D 5.00 BSC, E 5.00 BSC, D2 3.20/3.25/3.30, E2 3.20/3.25/3.30, b 0.25/0.30/0.35, L 0.35/0.40/0.45; land C04-2364A: E 0.65 BSC, X2 3.30, Y2 3.30, C1 4.90, C2 4.90, X1 0.35, Y1 0.80, G1 0.20, V 0.30, EV 1.00"
+tags = ["exposed-pad", "qfn", "qfn-24"]
+record.pins = 24
+record.pitch = "0.65mm"
+record.arrangement = "quad"
+record.body = { length = "5mm", width = "5mm", height = "0.8mm..1mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = "0.25mm..0.35mm" }
+record.ep = { length = "3.2mm..3.3mm", width = "3.2mm..3.3mm" }
+record.land = { source = "D-0423 drawing C04-2364A", pad = { length = "0.8mm", width = "0.35mm" }, row_spacing_x = "4.9mm", row_spacing_y = "4.9mm", ep = { length = "3.3mm", width = "3.3mm" } }
+
+[[row]]
+name = "QFN28_5x5_P0.5_Microchip-MQY"
+title = "QFN-28 5 x 5 mm, 0.5 mm pitch (Microchip MQY/MQ)"
+summary = "QFN-28, 0.5 mm pitch, 5 x 5 mm body, 3.35 x 3.35 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 417, drawing C04-140C: N 28, e 0.50 BSC, A 0.80/0.90/1.00, A1 0.00/0.02/0.05, D 5.00 BSC, E 5.00 BSC, D2 3.15/3.25/3.35, E2 3.15/3.25/3.35, b 0.18/0.25/0.30, L 0.35/0.40/0.45; land C04-2140A: E 0.50 BSC, C1 4.90, C2 4.90, X1 0.30, Y1 0.85, G1 0.35, X2 3.35, Y2 3.35; the same outline and land are listed for package codes MQ"
+tags = ["exposed-pad", "qfn", "qfn-28"]
+record.pins = 28
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "5mm", width = "5mm", height = "0.8mm..1mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = { min = "0.18mm", nom = "0.25mm", max = "0.3mm" } }
+record.ep = { length = "3.15mm..3.35mm", width = "3.15mm..3.35mm" }
+record.land = { source = "D-0423 drawing C04-2140A", pad = { length = "0.85mm", width = "0.3mm" }, row_spacing_x = "4.9mm", row_spacing_y = "4.9mm", ep = { length = "3.35mm", width = "3.35mm" } }
+
+[[row]]
+name = "QFN36_6x6_P0.5_Microchip-4E"
+title = "QFN-36 6 x 6 mm, 0.5 mm pitch (Microchip 4E)"
+summary = "QFN-36, 0.5 mm pitch, 6 x 6 mm body, 3.8 x 3.8 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 426, drawing C04-241A: N 36, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.01/0.05, D 6.00 BSC, E 6.00 BSC, D2 3.60/3.70/3.80, E2 3.60/3.70/3.80, b 0.20/0.25/0.30, L 0.30/0.40/0.50; land C04-2241A: E 0.50 BSC, X2 3.80, Y2 3.80, C1 5.90, C2 5.90, X1 0.30, Y1 0.85, G1 0.20, V 0.30, EV 1.00"
+tags = ["exposed-pad", "qfn", "qfn-36"]
+record.pins = 36
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "6mm", width = "6mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.01mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = "0.2mm..0.3mm" }
+record.ep = { length = "3.6mm..3.8mm", width = "3.6mm..3.8mm" }
+record.land = { source = "D-0423 drawing C04-2241A", pad = { length = "0.85mm", width = "0.3mm" }, row_spacing_x = "5.9mm", row_spacing_y = "5.9mm", ep = { length = "3.8mm", width = "3.8mm" } }
+
+[[row]]
+name = "QFN40_6x6_P0.5_Microchip-RR"
+title = "QFN-40 6 x 6 mm, 0.5 mm pitch (Microchip RR)"
+summary = "QFN-40, 0.5 mm pitch, 6 x 6 mm body, 4.2 x 4.2 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 429, drawing C04-229A: N 40, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.01/0.05, D 6.00 BSC, E 6.00 BSC, D2 4.00/4.10/4.20, E2 4.00/4.10/4.20, b 0.18/0.23/0.30, L 0.30/0.40/0.50; land C04-2229B: E 0.50 BSC, X2 4.20, Y2 4.20, C1 5.90, C2 5.90, X1 0.30, Y1 0.85, G1 0.20, V 0.30, EV 1.00"
+tags = ["exposed-pad", "qfn", "qfn-40"]
+record.pins = 40
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "6mm", width = "6mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.01mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = { min = "0.18mm", nom = "0.23mm", max = "0.3mm" } }
+record.ep = { length = "4mm..4.2mm", width = "4mm..4.2mm" }
+record.land = { source = "D-0423 drawing C04-2229B", pad = { length = "0.85mm", width = "0.3mm" }, row_spacing_x = "5.9mm", row_spacing_y = "5.9mm", ep = { length = "4.2mm", width = "4.2mm" } }
+
+[[row]]
+name = "QFN40_5x5_P0.4_Microchip-MP_EP3.5x3.5"
+title = "QFN-40 5 x 5 mm, 0.4 mm pitch (Microchip MP)"
+summary = "QFN-40, 0.4 mm pitch, 5 x 5 mm body, 3.6 x 3.6 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 435, drawing C04-047-001A: N 40, e 0.40 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 5.00 BSC, E 5.00 BSC, D2 3.50 BSC, E2 3.50 BSC, b 0.17/0.20/0.25, L 0.30/0.40/0.50; land C04-2047-001A: E 0.40 BSC, X2 3.60, Y2 3.60, C1 4.90, C2 4.90, X1 0.20, Y1 0.85"
+tags = ["exposed-pad", "qfn", "qfn-40"]
+record.pins = 40
+record.pitch = "0.4mm"
+record.arrangement = "quad"
+record.body = { length = "5mm", width = "5mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = { min = "0.17mm", nom = "0.2mm", max = "0.25mm" } }
+record.ep = { length = "3.5mm", width = "3.5mm" }
+record.land = { source = "D-0423 drawing C04-2047-001A", pad = { length = "0.85mm", width = "0.2mm" }, row_spacing_x = "4.9mm", row_spacing_y = "4.9mm", ep = { length = "3.6mm", width = "3.6mm" } }
+
+[[row]]
+name = "QFN40_5x5_P0.4_Microchip-MP_EP3.7x3.7"
+title = "QFN-40 5 x 5 mm, 0.4 mm pitch (Microchip MP)"
+summary = "QFN-40, 0.4 mm pitch, 5 x 5 mm body, 3.8 x 3.8 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 438, drawing C04-047-002A: N 40, e 0.40 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 5.00 BSC, E 5.00 BSC, D2 3.70 BSC, E2 3.70 BSC, b 0.15/0.20/0.25, L 0.30/0.40/0.50; land C04-2047-002A: E 0.40 BSC, X2 3.80, Y2 3.80, C1 5.00, C2 5.00, X1 0.20, Y1 0.80"
+tags = ["exposed-pad", "qfn", "qfn-40"]
+record.pins = 40
+record.pitch = "0.4mm"
+record.arrangement = "quad"
+record.body = { length = "5mm", width = "5mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = "0.15mm..0.25mm" }
+record.ep = { length = "3.7mm", width = "3.7mm" }
+record.land = { source = "D-0423 drawing C04-2047-002A", pad = { length = "0.8mm", width = "0.2mm" }, row_spacing_x = "5mm", row_spacing_y = "5mm", ep = { length = "3.8mm", width = "3.8mm" } }
+
+[[row]]
+name = "QFN44_8x8_P0.65_Microchip-ML"
+title = "QFN-44 8 x 8 mm, 0.65 mm pitch (Microchip ML)"
+summary = "QFN-44, 0.65 mm pitch, 8 x 8 mm body, 6.6 x 6.6 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 441, drawing C04-103D: N 44, e 0.65 BSC, A 0.80/0.90/1.00, A1 0.00/0.02/0.05, D 8.00 BSC, E 8.00 BSC, D2 6.25/6.45/6.60, E2 6.25/6.45/6.60, b 0.20/0.30/0.35, L 0.30/0.40/0.50; land C04-2103C: E 0.65 BSC, X2 6.60, Y2 6.60, C1 8.00, C2 8.00, X1 0.35, Y1 0.85, G1 0.30, G2 0.28, V 0.33, EV 1.20"
+tags = ["exposed-pad", "qfn", "qfn-44"]
+record.pins = 44
+record.pitch = "0.65mm"
+record.arrangement = "quad"
+record.body = { length = "8mm", width = "8mm", height = "0.8mm..1mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = { min = "0.2mm", nom = "0.3mm", max = "0.35mm" } }
+record.ep = { length = { min = "6.25mm", nom = "6.45mm", max = "6.6mm" }, width = { min = "6.25mm", nom = "6.45mm", max = "6.6mm" } }
+record.land = { source = "D-0423 drawing C04-2103C", pad = { length = "0.85mm", width = "0.35mm" }, row_spacing_x = "8mm", row_spacing_y = "8mm", ep = { length = "6.6mm", width = "6.6mm" } }
+
+[[row]]
+name = "QFN48_7x7_P0.5_Microchip-5E"
+title = "QFN-48 7 x 7 mm, 0.5 mm pitch (Microchip 5E)"
+summary = "QFN-48, 0.5 mm pitch, 7 x 7 mm body, 5.2 x 5.2 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 444, drawing C04-363A: N 48, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.01/0.05, D 7.00 BSC, E 7.00 BSC, D2 5.00/5.10/5.20, E2 5.00/5.10/5.20, b 0.20/0.25/0.30, L 0.30/0.40/0.50; land C04-2363A: E 0.50 BSC, X2 5.20, Y2 5.20, C1 6.90, C2 6.90, X1 0.30, Y1 0.85, G1 0.20, V 0.33, EV 1.20"
+tags = ["exposed-pad", "qfn", "qfn-48"]
+record.pins = 48
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "7mm", width = "7mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.01mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = "0.2mm..0.3mm" }
+record.ep = { length = "5mm..5.2mm", width = "5mm..5.2mm" }
+record.land = { source = "D-0423 drawing C04-2363A", pad = { length = "0.85mm", width = "0.3mm" }, row_spacing_x = "6.9mm", row_spacing_y = "6.9mm", ep = { length = "5.2mm", width = "5.2mm" } }
+
+[[row]]
+name = "VQFN64_9x9_P0.5_Microchip-MR"
+title = "VQFN-64 9 x 9 mm, 0.5 mm pitch (Microchip MR/R4X)"
+summary = "VQFN-64, 0.5 mm pitch, 9 x 9 mm body, 7.25 x 7.25 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 447, drawing C04-149D: N 64, e 0.50 BSC, A 0.80/0.90/1.00, A1 0.00/0.02/0.05, D 9.00 BSC, E 9.00 BSC, D2 7.05/7.15/7.25, E2 7.05/7.15/7.25, b 0.18/0.25/0.30, L 0.30/0.40/0.50; land C04-2149C: E 0.50 BSC, X2 7.25, Y2 7.25, C1 9.00, C2 9.00, X1 0.30, Y1 0.95, G1 0.40, G2 0.20, V 0.33, EV 1.20; the same outline and land are listed for package codes R4X"
+tags = ["exposed-pad", "vqfn", "vqfn-64"]
+record.pins = 64
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "9mm", width = "9mm", height = "0.8mm..1mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = { min = "0.18mm", nom = "0.25mm", max = "0.3mm" } }
+record.ep = { length = "7.05mm..7.25mm", width = "7.05mm..7.25mm" }
+record.land = { source = "D-0423 drawing C04-2149C", pad = { length = "0.95mm", width = "0.3mm" }, row_spacing_x = "9mm", row_spacing_y = "9mm", ep = { length = "7.25mm", width = "7.25mm" } }
+
+[[row]]
+name = "QFN64_9x9_P0.5_Microchip-MR"
+title = "QFN-64 9 x 9 mm, 0.5 mm pitch (Microchip MR)"
+summary = "QFN-64, 0.5 mm pitch, 9 x 9 mm body, 7.5 x 7.5 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 456, drawing C04-213B: N 64, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 9.00 BSC, E 9.00 BSC, D2 7.60/7.70/7.80, E2 7.60/7.70/7.80, b 0.20/0.25/0.30, L 0.30/0.40/0.50; land C04-2213B: E 0.50 BSC, C1 8.90, C2 8.90, X1 0.30, Y1 0.90, G 0.20, V 0.30, EV 1.00, X2 7.50, Y2 7.50"
+tags = ["exposed-pad", "qfn", "qfn-64"]
+record.pins = 64
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "9mm", width = "9mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = "0.2mm..0.3mm" }
+record.ep = { length = "7.6mm..7.8mm", width = "7.6mm..7.8mm" }
+record.land = { source = "D-0423 drawing C04-2213B", pad = { length = "0.9mm", width = "0.3mm" }, row_spacing_x = "8.9mm", row_spacing_y = "8.9mm", ep = { length = "7.5mm", width = "7.5mm" } }
+
+[[row]]
+name = "QFN64_9x9_P0.5_Microchip-RG"
+title = "QFN-64 9 x 9 mm, 0.5 mm pitch (Microchip RG)"
+summary = "QFN-64, 0.5 mm pitch, 9 x 9 mm body, 4.8 x 4.8 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 459, drawing C04-260A: N 64, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 9.00 BSC, E 9.00 BSC, D2 4.60/4.70/4.80, E2 4.60/4.70/4.80, b 0.15/0.20/0.25, L 0.30/0.40/0.50; land C04-2260A: E 0.50 BSC, X2 4.80, Y2 4.80, C1 8.90, C2 8.90, X1 0.25, Y1 0.85, G1 1.625 REF"
+tags = ["exposed-pad", "qfn", "qfn-64"]
+record.pins = 64
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "9mm", width = "9mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = "0.15mm..0.25mm" }
+record.ep = { length = "4.6mm..4.8mm", width = "4.6mm..4.8mm" }
+record.land = { source = "D-0423 drawing C04-2260A", pad = { length = "0.85mm", width = "0.25mm" }, row_spacing_x = "8.9mm", row_spacing_y = "8.9mm", ep = { length = "4.8mm", width = "4.8mm" } }
+
+[[row]]
+name = "VQFN72_10x10_P0.5_Microchip-6E"
+title = "VQFN-72 10 x 10 mm, 0.5 mm pitch (Microchip 6E)"
+summary = "VQFN-72, 0.5 mm pitch, 10 x 10 mm body, 6.1 x 6.1 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 462, drawing C04-243B: N 72, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.01/0.05, D 10.00 BSC, E 10.00 BSC, D2 5.90/6.00/6.10, E2 5.90/6.00/6.10, b 0.18/0.23/0.30, L 0.30/0.40/0.50; land C04-2243B: E 0.50 BSC, X2 6.10, Y2 6.10, C1 9.90, C2 9.90, X1 0.30, Y1 0.85, G1 0.20, V 0.30, EV 1.00"
+tags = ["exposed-pad", "vqfn", "vqfn-72"]
+record.pins = 72
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "10mm", width = "10mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.01mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = { min = "0.18mm", nom = "0.23mm", max = "0.3mm" } }
+record.ep = { length = "5.9mm..6.1mm", width = "5.9mm..6.1mm" }
+record.land = { source = "D-0423 drawing C04-2243B", pad = { length = "0.85mm", width = "0.3mm" }, row_spacing_x = "9.9mm", row_spacing_y = "9.9mm", ep = { length = "6.1mm", width = "6.1mm" } }
+
+[[row]]
+name = "VQFN80_11x11_P0.5_Microchip-6FX"
+title = "VQFN-80 11 x 11 mm, 0.5 mm pitch (Microchip 6FX/8FX)"
+summary = "VQFN-80, 0.5 mm pitch, 11 x 11 mm body, 9.7 x 9.7 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 465, drawing C04-301A-6FX: N 80, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/-/0.05, D 11.00 BSC, E 11.00 BSC, D2 9.50/9.60/9.70, E2 9.50/9.60/9.70, b 0.18/0.25/0.30, L 0.30/0.40/0.50; land C04-2301A-8FX: E 0.50 BSC, X2 9.70, Y2 9.70, C1 11.00, C2 11.00, X1 0.30, Y1 0.80, G1 0.20, G2 0.20, V 0.33, EV 1.200; the same outline and land are listed for package codes 8FX"
+tags = ["exposed-pad", "vqfn", "vqfn-80"]
+record.pins = 80
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "11mm", width = "11mm", height = "0.8mm..0.9mm", standoff = "0mm..0.05mm" }
+record.terminal = { length = "0.3mm..0.5mm", width = { min = "0.18mm", nom = "0.25mm", max = "0.3mm" } }
+record.ep = { length = "9.5mm..9.7mm", width = "9.5mm..9.7mm" }
+record.land = { source = "D-0423 drawing C04-2301A-8FX", pad = { length = "0.8mm", width = "0.3mm" }, row_spacing_x = "11mm", row_spacing_y = "11mm", ep = { length = "9.7mm", width = "9.7mm" } }
+
+[[row]]
+name = "QFN20_5x5_P0.65_Microchip-NU"
+title = "QFN-20 5 x 5 mm, 0.65 mm pitch (Microchip NU)"
+summary = "QFN-20, 0.65 mm pitch, 5 x 5 mm body, 3.35 x 3.35 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 477, drawing C04-186A: N 20, e 0.65 BSC, A 0.90/0.95/1.00, A1 0.00/0.02/0.05, D 5.00 BSC, E 5.00 BSC, D2 3.15/3.25/3.35, E2 3.15/3.25/3.35, b 0.25/0.30/0.35, L 0.35/0.40/0.45; land C04-286B: E 0.65 BSC, C1 4.50, C2 4.50, X1 0.40, Y1 0.55, G 0.20, V 0.30, EV 1.00, X2 3.35, Y2 3.35"
+tags = ["exposed-pad", "qfn", "qfn-20"]
+record.pins = 20
+record.pitch = "0.65mm"
+record.arrangement = "quad"
+record.body = { length = "5mm", width = "5mm", height = "0.9mm..1mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = "0.25mm..0.35mm" }
+record.ep = { length = "3.15mm..3.35mm", width = "3.15mm..3.35mm" }
+record.land = { source = "D-0423 drawing C04-286B", pad = { length = "0.55mm", width = "0.4mm" }, row_spacing_x = "4.5mm", row_spacing_y = "4.5mm", ep = { length = "3.35mm", width = "3.35mm" } }
+
+[[row]]
+name = "UQFN12_2x2_P0.4_Microchip-QM"
+title = "UQFN-12 2 x 2 mm, 0.4 mm pitch (Microchip QM)"
+summary = "UQFN-12, 0.4 mm pitch, 2 x 2 mm body, 1 x 1 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 490, drawing C04-247A: N 12, e 0.40 BSC, A 0.50/0.55/0.60, A1 0.00/0.02/0.05, D 2.00 BSC, E 2.00 BSC, D2 0.82/0.92/1.02, E2 0.82/0.92/1.02, b 0.15/0.20/0.25, L 0.165/0.215/0.265; land C04-2247A: E 0.40 BSC, X2 1.00, Y2 1.00, C1 1.70, C2 1.70, X1 0.20, Y1 0.30, G1 0.20, V 0.33"
+tags = ["exposed-pad", "uqfn", "uqfn-12"]
+record.pins = 12
+record.pitch = "0.4mm"
+record.arrangement = "quad"
+record.body = { length = "2mm", width = "2mm", height = "0.5mm..0.6mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.165mm..0.265mm", width = "0.15mm..0.25mm" }
+record.ep = { length = "0.82mm..1.02mm", width = "0.82mm..1.02mm" }
+record.land = { source = "D-0423 drawing C04-2247A", pad = { length = "0.3mm", width = "0.2mm" }, row_spacing_x = "1.7mm", row_spacing_y = "1.7mm", ep = { length = "1mm", width = "1mm" } }
+
+[[row]]
+name = "UQFN16_3x3_P0.5_Microchip-MV"
+title = "UQFN-16 3 x 3 mm, 0.5 mm pitch (Microchip MV)"
+summary = "UQFN-16, 0.5 mm pitch, 3 x 3 mm body, 1.7 x 1.7 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 495, drawing C04-211A: N 16, e 0.50 BSC, A 0.45/0.50/0.55, A1 0.00/0.02/0.05, D 3.00 BSC, E 3.00 BSC, D2 1.50/1.60/1.70, E2 1.50/1.60/1.70, b 0.20/0.25/0.30, L 0.25/0.35/0.45; land C04-2211A: E 0.50 BSC, X2 1.70, Y2 1.70, C1 2.90, C2 2.90, X1 0.30, Y1 0.80"
+tags = ["exposed-pad", "uqfn", "uqfn-16"]
+record.pins = 16
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "3mm", width = "3mm", height = "0.45mm..0.55mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.25mm..0.45mm", width = "0.2mm..0.3mm" }
+record.ep = { length = "1.5mm..1.7mm", width = "1.5mm..1.7mm" }
+record.land = { source = "D-0423 drawing C04-2211A", pad = { length = "0.8mm", width = "0.3mm" }, row_spacing_x = "2.9mm", row_spacing_y = "2.9mm", ep = { length = "1.7mm", width = "1.7mm" } }
+
+[[row]]
+name = "UQFN16_3x3_P0.5_Microchip-UC"
+title = "UQFN-16 3 x 3 mm, 0.5 mm pitch (Microchip UC)"
+summary = "UQFN-16, 0.5 mm pitch, 3 x 3 mm body, 1.75 x 1.75 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 498, drawing C04-253A: N 16, e 0.50 BSC, A 0.50/0.55/0.60, A1 0.00/0.02/0.05, D 3.00 BSC, E 3.00 BSC, D2 1.65/1.70/1.75, E2 1.65/1.70/1.75, b 0.20/0.25/0.30, L 0.35/0.40/0.45; land C04-2253A: E 0.50 BSC, X2 1.75, Y2 1.75, C1 3.00, C2 3.00, X1 0.30, Y1 0.80, G1 0.20"
+tags = ["exposed-pad", "uqfn", "uqfn-16"]
+record.pins = 16
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "3mm", width = "3mm", height = "0.5mm..0.6mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = "0.2mm..0.3mm" }
+record.ep = { length = "1.65mm..1.75mm", width = "1.65mm..1.75mm" }
+record.land = { source = "D-0423 drawing C04-2253A", pad = { length = "0.8mm", width = "0.3mm" }, row_spacing_x = "3mm", row_spacing_y = "3mm", ep = { length = "1.75mm", width = "1.75mm" } }
+
+[[row]]
+name = "UQFN16_3x3_P0.5_Microchip-UD"
+title = "UQFN-16 3 x 3 mm, 0.5 mm pitch (Microchip UD)"
+summary = "UQFN-16, 0.5 mm pitch, 3 x 3 mm body, 1.75 x 1.75 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 501, drawing C04-217A: N 16, e 0.50 BSC, A 0.50/0.55/0.60, A1 0.00/0.02/0.05, D 3.00 BSC, E 3.00 BSC, D2 1.65/1.70/1.75, E2 1.65/1.70/1.75, b 0.20/0.25/0.30, L 0.30/0.35/0.40; land C04-2217A: E 0.50 BSC, X2 1.75, Y2 1.75, C1 3.00, C2 3.00, X1 0.30, Y1 0.80, G1 0.20"
+tags = ["exposed-pad", "uqfn", "uqfn-16"]
+record.pins = 16
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "3mm", width = "3mm", height = "0.5mm..0.6mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.4mm", width = "0.2mm..0.3mm" }
+record.ep = { length = "1.65mm..1.75mm", width = "1.65mm..1.75mm" }
+record.land = { source = "D-0423 drawing C04-2217A", pad = { length = "0.8mm", width = "0.3mm" }, row_spacing_x = "3mm", row_spacing_y = "3mm", ep = { length = "1.75mm", width = "1.75mm" } }
+
+[[row]]
+name = "UQFN16_4x4_P0.65_Microchip-JQ"
+title = "UQFN-16 4 x 4 mm, 0.65 mm pitch (Microchip JQ)"
+summary = "UQFN-16, 0.65 mm pitch, 4 x 4 mm body, 2.7 x 2.7 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 504, drawing C04-257A: N 16, e 0.65 BSC, A 0.45/0.50/0.55, A1 0.00/0.02/0.05, D 4.00 BSC, E 4.00 BSC, D2 2.50/2.60/2.70, E2 2.50/2.60/2.70, b 0.25/0.30/0.35, L 0.30/0.40/0.50; land C04-2257A: E 0.65 BSC, X2 2.70, Y2 2.70, C1 4.00, C2 4.00, X1 0.35, Y1 0.80"
+tags = ["exposed-pad", "uqfn", "uqfn-16"]
+record.pins = 16
+record.pitch = "0.65mm"
+record.arrangement = "quad"
+record.body = { length = "4mm", width = "4mm", height = "0.45mm..0.55mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = "0.25mm..0.35mm" }
+record.ep = { length = "2.5mm..2.7mm", width = "2.5mm..2.7mm" }
+record.land = { source = "D-0423 drawing C04-2257A", pad = { length = "0.8mm", width = "0.35mm" }, row_spacing_x = "4mm", row_spacing_y = "4mm", ep = { length = "2.7mm", width = "2.7mm" } }
+
+[[row]]
+name = "UQFN20_3x3_P0.4_Microchip-JP"
+title = "UQFN-20 3 x 3 mm, 0.4 mm pitch (Microchip JP)"
+summary = "UQFN-20, 0.4 mm pitch, 3 x 3 mm body, 1.85 x 1.85 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 510, drawing C04-256A: N 20, e 0.40, A 0.45/0.50/0.55, A1 0.00/0.02/0.05, D 3.00 BSC, E 3.00 BSC, D2 1.65/1.75/1.85, E2 1.65/1.75/1.85, b 0.15/0.20/0.25, L 0.30/0.40/0.50; land C04-2256A: E 0.40 BSC, X2 1.85, Y2 1.85, C1 3.00, C2 3.00, X1 0.20, Y1 0.75, G1 0.20"
+tags = ["exposed-pad", "uqfn", "uqfn-20"]
+record.pins = 20
+record.pitch = "0.4mm"
+record.arrangement = "quad"
+record.body = { length = "3mm", width = "3mm", height = "0.45mm..0.55mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = "0.15mm..0.25mm" }
+record.ep = { length = "1.65mm..1.85mm", width = "1.65mm..1.85mm" }
+record.land = { source = "D-0423 drawing C04-2256A", pad = { length = "0.75mm", width = "0.2mm" }, row_spacing_x = "3mm", row_spacing_y = "3mm", ep = { length = "1.85mm", width = "1.85mm" } }
+
+[[row]]
+name = "UQFN20_4x4_P0.5_Microchip-GZ"
+title = "UQFN-20 4 x 4 mm, 0.5 mm pitch (Microchip GZ)"
+summary = "UQFN-20, 0.5 mm pitch, 4 x 4 mm body, 2.8 x 2.8 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 513, drawing C04-255A: N 20, e 0.50 BSC, A 0.45/0.50/0.55, A1 0.00/0.02/0.05, D 4.00 BSC, E 4.00 BSC, D2 2.60/2.70/2.80, E2 2.60/2.70/2.80, b 0.20/0.25/0.30, L 0.30/0.40/0.50; land C04-2255A: E 0.50 BSC, X2 2.80, Y2 2.80, C1 4.00, C2 4.00, X1 0.30, Y1 0.80, G1 0.20"
+tags = ["exposed-pad", "uqfn", "uqfn-20"]
+record.pins = 20
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "4mm", width = "4mm", height = "0.45mm..0.55mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = "0.2mm..0.3mm" }
+record.ep = { length = "2.6mm..2.8mm", width = "2.6mm..2.8mm" }
+record.land = { source = "D-0423 drawing C04-2255A", pad = { length = "0.8mm", width = "0.3mm" }, row_spacing_x = "4mm", row_spacing_y = "4mm", ep = { length = "2.8mm", width = "2.8mm" } }
+
+[[row]]
+name = "VQFN12_4x4_P0.8_Microchip-UL"
+title = "VQFN-12 4 x 4 mm, 0.8 mm pitch (Microchip UL)"
+summary = "VQFN-12, 0.8 mm pitch, 4 x 4 mm body, 2.2 x 2.2 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 556, drawing C04-308A: N 12, e 0.80 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 4.00 BSC, E 4.00 BSC, D2 2.00/2.10/2.20, E2 2.00/2.10/2.20, b 0.25/0.30/0.35, L 0.40/0.50/0.60; land C04-2308A: E 0.80 BSC, X2 2.20, Y2 2.20, C1 4.00, C2 4.00, X1 0.37, Y1 0.95, G1 0.45, V 0.30, EV 1.00"
+tags = ["exposed-pad", "vqfn", "vqfn-12"]
+record.pins = 12
+record.pitch = "0.8mm"
+record.arrangement = "quad"
+record.body = { length = "4mm", width = "4mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.4mm..0.6mm", width = "0.25mm..0.35mm" }
+record.ep = { length = "2mm..2.2mm", width = "2mm..2.2mm" }
+record.land = { source = "D-0423 drawing C04-2308A", pad = { length = "0.95mm", width = "0.37mm" }, row_spacing_x = "4mm", row_spacing_y = "4mm", ep = { length = "2.2mm", width = "2.2mm" } }
+
+[[row]]
+name = "VQFN16_3x3_P0.5_Microchip-8N"
+title = "VQFN-16 3 x 3 mm, 0.5 mm pitch (Microchip 8N)"
+summary = "VQFN-16, 0.5 mm pitch, 3 x 3 mm body, 1.2 x 1.2 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 559, drawing C04-404C: N 16, e 0.50 BSC, A 0.80/0.90/1.00, A1 0.00/0.02/0.05, D 3.00 BSC, E 3.00 BSC, D2 1.00/1.10/1.20, E2 1.00/1.10/1.20, b 0.20/0.25/0.30, L 0.25/0.35/0.45; land C04-2404B: E 0.50 BSC, X2 1.20, Y2 1.20, C1 2.90, C2 2.90, X1 0.30, Y1 0.80, G1 0.30, G2 0.20, V 0.33"
+tags = ["exposed-pad", "vqfn", "vqfn-16"]
+record.pins = 16
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "3mm", width = "3mm", height = "0.8mm..1mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.25mm..0.45mm", width = "0.2mm..0.3mm" }
+record.ep = { length = "1mm..1.2mm", width = "1mm..1.2mm" }
+record.land = { source = "D-0423 drawing C04-2404B", pad = { length = "0.8mm", width = "0.3mm" }, row_spacing_x = "2.9mm", row_spacing_y = "2.9mm", ep = { length = "1.2mm", width = "1.2mm" } }
+
+[[row]]
+name = "VQFN16_3x3_P0.5_Microchip-MG"
+title = "VQFN-16 3 x 3 mm, 0.5 mm pitch (Microchip MG)"
+summary = "VQFN-16, 0.5 mm pitch, 3 x 3 mm body, 1.8 x 1.8 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 564, drawing C04-196A: N 16, e 0.50 BSC, A 0.80/0.90/1.00, A1 0.00/0.02/0.05, D 3.00 BSC, E 3.00 BSC, D2 1.50/1.65/1.80, E2 1.50/1.65/1.80, b 0.18/0.25/0.30, L 0.20/0.30/0.45; land C04-2196A: E 0.50 BSC, X2 1.80, Y2 1.80, C1 3.00, C2 3.00, X1 0.30, Y1 0.80, G1 0.20, V 0.30, EV 1.00"
+tags = ["exposed-pad", "vqfn", "vqfn-16"]
+record.pins = 16
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "3mm", width = "3mm", height = "0.8mm..1mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = { min = "0.2mm", nom = "0.3mm", max = "0.45mm" }, width = { min = "0.18mm", nom = "0.25mm", max = "0.3mm" } }
+record.ep = { length = "1.5mm..1.8mm", width = "1.5mm..1.8mm" }
+record.land = { source = "D-0423 drawing C04-2196A", pad = { length = "0.8mm", width = "0.3mm" }, row_spacing_x = "3mm", row_spacing_y = "3mm", ep = { length = "1.8mm", width = "1.8mm" } }
+
+[[row]]
+name = "VQFN16_4x4_P0.65_Microchip-7N"
+title = "VQFN-16 4 x 4 mm, 0.65 mm pitch (Microchip 7N)"
+summary = "VQFN-16, 0.65 mm pitch, 4 x 4 mm body, 2.7 x 2.7 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 570, drawing C04-403C: N 16, e 0.65 BSC, A 0.80/0.90/1.00, A1 0.00/0.02/0.05, D 4.00 BSC, E 4.00 BSC, D2 2.50/2.60/2.70, E2 2.50/2.60/2.70, b 0.25/0.30/0.35, L 0.30/0.40/0.50; land C04-2403B: E 0.65 BSC, X2 2.70, Y2 2.70, C1 4.00, C2 4.00, X1 0.30, Y1 0.80, G1 0.20, G2 0.35, V 0.30, EV 1.00"
+tags = ["exposed-pad", "vqfn", "vqfn-16"]
+record.pins = 16
+record.pitch = "0.65mm"
+record.arrangement = "quad"
+record.body = { length = "4mm", width = "4mm", height = "0.8mm..1mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = "0.25mm..0.35mm" }
+record.ep = { length = "2.5mm..2.7mm", width = "2.5mm..2.7mm" }
+record.land = { source = "D-0423 drawing C04-2403B", pad = { length = "0.8mm", width = "0.3mm" }, row_spacing_x = "4mm", row_spacing_y = "4mm", ep = { length = "2.7mm", width = "2.7mm" } }
+
+[[row]]
+name = "VQFN16_4x4_P0.65_Microchip-7E"
+title = "VQFN-16 4 x 4 mm, 0.65 mm pitch (Microchip 7E)"
+summary = "VQFN-16, 0.65 mm pitch, 4 x 4 mm body, 2.2 x 2.2 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 573, drawing C04-362B: N 16, e 0.65 BSC, A 0.80/0.85/0.90, A1 0.00/0.01/0.05, D 4.00 BSC, E 4.00 BSC, D2 2.00/2.10/2.20, E2 2.00/2.10/2.20, b 0.25/0.30/0.35, L 0.50/0.60/0.75; land C04-2362A: E 0.65 BSC, X2 2.20, Y2 2.20, C1 3.70, C2 3.70, X1 0.35, Y1 1.05, G1 0.20, V 0.33, EV 1.20"
+tags = ["exposed-pad", "vqfn", "vqfn-16"]
+record.pins = 16
+record.pitch = "0.65mm"
+record.arrangement = "quad"
+record.body = { length = "4mm", width = "4mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.01mm", max = "0.05mm" } }
+record.terminal = { length = { min = "0.5mm", nom = "0.6mm", max = "0.75mm" }, width = "0.25mm..0.35mm" }
+record.ep = { length = "2mm..2.2mm", width = "2mm..2.2mm" }
+record.land = { source = "D-0423 drawing C04-2362A", pad = { length = "1.05mm", width = "0.35mm" }, row_spacing_x = "3.7mm", row_spacing_y = "3.7mm", ep = { length = "2.2mm", width = "2.2mm" } }
+
+[[row]]
+name = "VQFN20_3x3_P0.5_Microchip-LXX"
+title = "VQFN-20 3 x 3 mm, 0.5 mm pitch (Microchip LXX)"
+summary = "VQFN-20, 0.5 mm pitch, 3 x 3 mm body, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 582, drawing C04-421A: N 20, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 3.00 BSC, E 3.00 BSC, b 0.20/0.25/0.30, L 0.25/0.30/0.35; land C04-2421A: E 0.50 BSC, C1 2.80, C2 2.80, X1 0.27, Y1 0.42"
+tags = ["vqfn", "vqfn-20"]
+record.pins = 20
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "3mm", width = "3mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.25mm..0.35mm", width = "0.2mm..0.3mm" }
+record.land = { source = "D-0423 drawing C04-2421A", pad = { length = "0.42mm", width = "0.27mm" }, row_spacing_x = "2.8mm", row_spacing_y = "2.8mm" }
+
+[[row]]
+name = "VQFN20_4x4_P0.5_Microchip-6N"
+title = "VQFN-20 4 x 4 mm, 0.5 mm pitch (Microchip 6N)"
+summary = "VQFN-20, 0.5 mm pitch, 4 x 4 mm body, 2.8 x 2.8 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 585, drawing C04-402C: N 20, e 0.50 BSC, A 0.80/0.90/1.00, A1 0.00/0.02/0.05, D 4.00 BSC, E 4.00 BSC, D2 2.60/2.70/2.80, E2 2.60/2.70/2.80, b 0.20/0.25/0.30, L 0.30/0.40/0.50; land C04-2402B: E 0.50 BSC, X2 2.80, Y2 2.80, C1 4.00, C2 4.00, X1 0.30, Y1 0.80, G1 0.25, G2 0.20, V 0.30, EV 1.00"
+tags = ["exposed-pad", "vqfn", "vqfn-20"]
+record.pins = 20
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "4mm", width = "4mm", height = "0.8mm..1mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = "0.2mm..0.3mm" }
+record.ep = { length = "2.6mm..2.8mm", width = "2.6mm..2.8mm" }
+record.land = { source = "D-0423 drawing C04-2402B", pad = { length = "0.8mm", width = "0.3mm" }, row_spacing_x = "4mm", row_spacing_y = "4mm", ep = { length = "2.8mm", width = "2.8mm" } }
+
+[[row]]
+name = "VQFN20_5x5_P0.65_Microchip-ML"
+title = "VQFN-20 5 x 5 mm, 0.65 mm pitch (Microchip ML/MQ)"
+summary = "VQFN-20, 0.65 mm pitch, 5 x 5 mm body, 3.35 x 3.35 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 588, drawing C04-139C: N 20, e 0.65 BSC, A 0.80/0.90/1.00, A1 0.00/0.02/0.05, D 5.00 BSC, E 5.00 BSC, D2 3.15/3.25/3.35, E2 3.15/3.25/3.35, b 0.25/0.30/0.35, L 0.35/0.40/0.45; land C04-2139B: E 0.65 BSC, C1 4.50, C2 4.50, X1 0.40, Y1 0.55, G 0.20, V 0.30, EV 1.00, X2 3.35, Y2 3.35; the same outline and land are listed for package codes MQ"
+tags = ["exposed-pad", "vqfn", "vqfn-20"]
+record.pins = 20
+record.pitch = "0.65mm"
+record.arrangement = "quad"
+record.body = { length = "5mm", width = "5mm", height = "0.8mm..1mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = "0.25mm..0.35mm" }
+record.ep = { length = "3.15mm..3.35mm", width = "3.15mm..3.35mm" }
+record.land = { source = "D-0423 drawing C04-2139B", pad = { length = "0.55mm", width = "0.4mm" }, row_spacing_x = "4.5mm", row_spacing_y = "4.5mm", ep = { length = "3.35mm", width = "3.35mm" } }
+
+[[row]]
+name = "VQFN24_4x4_P0.5_Microchip-MJ"
+title = "VQFN-24 4 x 4 mm, 0.5 mm pitch (Microchip MJ)"
+summary = "VQFN-24, 0.5 mm pitch, 4 x 4 mm body, 2.6 x 2.6 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 597, drawing C04-143B: N 24, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 4.00 BSC, E 4.00 BSC, D2 2.40/2.50/2.60, E2 2.40/2.50/2.60, b 0.20/0.25/0.30, L 0.30/0.40/0.50; land C04-2143A: E 0.50 BSC, X2 2.60, Y2 2.60, C1 3.90, C2 3.90, X1 0.30, Y1 0.85, G1 0.23, G2 0.20, V 0.30, EV 1.00"
+tags = ["exposed-pad", "vqfn", "vqfn-24"]
+record.pins = 24
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "4mm", width = "4mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = "0.2mm..0.3mm" }
+record.ep = { length = "2.4mm..2.6mm", width = "2.4mm..2.6mm" }
+record.land = { source = "D-0423 drawing C04-2143A", pad = { length = "0.85mm", width = "0.3mm" }, row_spacing_x = "3.9mm", row_spacing_y = "3.9mm", ep = { length = "2.6mm", width = "2.6mm" } }
+
+[[row]]
+name = "VQFN28_5x5_P0.5_Microchip-PV"
+title = "VQFN-28 5 x 5 mm, 0.5 mm pitch (Microchip PV)"
+summary = "VQFN-28, 0.5 mm pitch, 5 x 5 mm body, 2.7 x 3 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 606, drawing C04-334A: N 28, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.01/0.05, D 5.00 BSC, E 5.00 BSC, D2 2.50/2.60/2.70, E2 2.80/2.90/3.00, b 0.18/0.23/0.30, L 0.50/0.60/0.70; land C04-2334A: E 0.50 BSC, X2 2.70, Y2 3.00, C1 4.70, C2 4.70, X1 0.30, Y1 1.05, V 0.30, EV 1.00"
+tags = ["exposed-pad", "vqfn", "vqfn-28"]
+record.pins = 28
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "5mm", width = "5mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.01mm", max = "0.05mm" } }
+record.terminal = { length = "0.5mm..0.7mm", width = { min = "0.18mm", nom = "0.23mm", max = "0.3mm" } }
+record.ep = { length = "2.8mm..3mm", width = "2.5mm..2.7mm" }
+record.land = { source = "D-0423 drawing C04-2334A", pad = { length = "1.05mm", width = "0.3mm" }, row_spacing_x = "4.7mm", row_spacing_y = "4.7mm", ep = { length = "3mm", width = "2.7mm" } }
+
+[[row]]
+name = "VQFN28_6x6_P0.65_Microchip-5N"
+title = "VQFN-28 6 x 6 mm, 0.65 mm pitch (Microchip 5N)"
+summary = "VQFN-28, 0.65 mm pitch, 6 x 6 mm body, 3.8 x 3.8 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 615, drawing C04-401C: N 28, e 0.65 BSC, A 0.80/0.90/1.00, A1 0.00/0.02/0.05, D 6.00 BSC, E 6.00 BSC, D2 4.00/4.10/4.20, E2 4.00/4.10/4.20, b 0.25/0.30/0.35, L 0.50/0.60/0.70; land C04-2401B: E 0.65 BSC, X2 3.80, Y2 3.80, C1 5.90, C2 5.90, X1 0.35, Y1 0.85, G1 0.20, V 0.30, EV 1.00"
+tags = ["exposed-pad", "vqfn", "vqfn-28"]
+record.pins = 28
+record.pitch = "0.65mm"
+record.arrangement = "quad"
+record.body = { length = "6mm", width = "6mm", height = "0.8mm..1mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.5mm..0.7mm", width = "0.25mm..0.35mm" }
+record.ep = { length = "4mm..4.2mm", width = "4mm..4.2mm" }
+record.land = { source = "D-0423 drawing C04-2401B", pad = { length = "0.85mm", width = "0.35mm" }, row_spacing_x = "5.9mm", row_spacing_y = "5.9mm", ep = { length = "3.8mm", width = "3.8mm" } }
+
+[[row]]
+name = "VQFN28_6x6_P0.65_Microchip-4N"
+title = "VQFN-28 6 x 6 mm, 0.65 mm pitch (Microchip 4N)"
+summary = "VQFN-28, 0.65 mm pitch, 6 x 6 mm body, 3.8 x 3.8 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 618, drawing C04-400C: N 28, e 0.65 BSC, A 0.80/0.90/1.00, A1 0.00/0.02/0.05, D 6.00 BSC, E 6.00 BSC, D2 3.60/3.70/3.80, E2 3.60/3.70/3.80, b 0.23/0.30/0.35, L 0.30/0.40/0.50; land C04-2400B: E 0.65 BSC, X2 3.80, Y2 3.80, C1 5.90, C2 5.90, X1 0.35, Y1 0.85, G1 0.20, V 0.30, EV 1.00"
+tags = ["exposed-pad", "vqfn", "vqfn-28"]
+record.pins = 28
+record.pitch = "0.65mm"
+record.arrangement = "quad"
+record.body = { length = "6mm", width = "6mm", height = "0.8mm..1mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = { min = "0.23mm", nom = "0.3mm", max = "0.35mm" } }
+record.ep = { length = "3.6mm..3.8mm", width = "3.6mm..3.8mm" }
+record.land = { source = "D-0423 drawing C04-2400B", pad = { length = "0.85mm", width = "0.35mm" }, row_spacing_x = "5.9mm", row_spacing_y = "5.9mm", ep = { length = "3.8mm", width = "3.8mm" } }
+
+[[row]]
+name = "VQFN32_5x5_P0.5_Microchip-RN"
+title = "VQFN-32 5 x 5 mm, 0.5 mm pitch (Microchip RN)"
+summary = "VQFN-32, 0.5 mm pitch, 5 x 5 mm body, 3.4 x 3.4 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 624, drawing C04-232A: N 32, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 5.00 BSC, E 5.00 BSC, D2 3.20/3.30/3.40, E2 3.20/3.30/3.40, b 0.18/0.23/0.30, L 0.30/0.40/0.50; land C04-2232A: E 0.50 BSC, X2 3.40, Y2 3.40, C1 4.90, C2 4.90, X1 0.30, Y1 0.85, G1 0.20, V 0.33, EV 1.20"
+tags = ["exposed-pad", "vqfn", "vqfn-32"]
+record.pins = 32
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "5mm", width = "5mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = { min = "0.18mm", nom = "0.23mm", max = "0.3mm" } }
+record.ep = { length = "3.2mm..3.4mm", width = "3.2mm..3.4mm" }
+record.land = { source = "D-0423 drawing C04-2232A", pad = { length = "0.85mm", width = "0.3mm" }, row_spacing_x = "4.9mm", row_spacing_y = "4.9mm", ep = { length = "3.4mm", width = "3.4mm" } }
+
+[[row]]
+name = "VQFN32_5x5_P0.5_Microchip-MQ"
+title = "VQFN-32 5 x 5 mm, 0.5 mm pitch (Microchip MQ)"
+summary = "VQFN-32, 0.5 mm pitch, 5 x 5 mm body, 3.4 x 3.4 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 627, drawing C04-160B: N 32, e 0.50 BSC, A 0.80/0.90/1.00, A1 0.00/0.02/0.05, D 5.00 BSC, E 5.00 BSC, D2 3.20/3.30/3.40, E2 3.20/3.30/3.40, b 0.18/0.25/0.30, L 0.35/0.40/0.45; land C04-2160C: E 0.50 BSC, X2 3.40, Y2 3.40, C1 4.90, C2 4.90, X1 0.30, Y1 0.85, G1 0.33, V 0.33, EV 1.20"
+tags = ["exposed-pad", "vqfn", "vqfn-32"]
+record.pins = 32
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "5mm", width = "5mm", height = "0.8mm..1mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = { min = "0.18mm", nom = "0.25mm", max = "0.3mm" } }
+record.ep = { length = "3.2mm..3.4mm", width = "3.2mm..3.4mm" }
+record.land = { source = "D-0423 drawing C04-2160C", pad = { length = "0.85mm", width = "0.3mm" }, row_spacing_x = "4.9mm", row_spacing_y = "4.9mm", ep = { length = "3.4mm", width = "3.4mm" } }
+
+[[row]]
+name = "VQFN32_5x5_P0.5_Microchip-S8"
+title = "VQFN-32 5 x 5 mm, 0.5 mm pitch (Microchip S8)"
+summary = "VQFN-32, 0.5 mm pitch, 5 x 5 mm body, 3.7 x 3.7 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 630, drawing C04-160B: N 32, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 5.00 BSC, E 5.00 BSC, D2 3.60/3.70/3.80, E2 3.60/3.70/3.80, b 0.18/0.25/0.30, L 0.30/0.40/0.50; land C04-2160C-S8: E 0.50 BSC, X2 3.70, Y2 3.70, C1 4.98, C2 4.98, X1 0.30, Y1 0.78, G1 0.25, V 0.33, EV 1.20"
+tags = ["exposed-pad", "vqfn", "vqfn-32"]
+record.pins = 32
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "5mm", width = "5mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = { min = "0.18mm", nom = "0.25mm", max = "0.3mm" } }
+record.ep = { length = "3.6mm..3.8mm", width = "3.6mm..3.8mm" }
+record.land = { source = "D-0423 drawing C04-2160C-S8", pad = { length = "0.78mm", width = "0.3mm" }, row_spacing_x = "4.98mm", row_spacing_y = "4.98mm", ep = { length = "3.7mm", width = "3.7mm" } }
+
+[[row]]
+name = "VQFN32_5x5_P0.5_Microchip-P5A"
+title = "VQFN-32 5 x 5 mm, 0.5 mm pitch (Microchip P5A)"
+summary = "VQFN-32, 0.5 mm pitch, 5 x 5 mm body, 3.7 x 3.7 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 633, drawing C04-1205A: N 32, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 5.00 BSC, E 5.00 BSC, D2 3.40/3.50/3.60, E2 3.40/3.50/3.60, b 0.18/0.25/0.30, L 0.35/0.40/0.45; land C04-3205: E 0.50 BSC, X2 3.70, Y2 3.70, C1 5.00, C2 5.00, X1 0.30, Y1 0.80, G1 0.25, V 0.30, EV 1.00"
+tags = ["exposed-pad", "vqfn", "vqfn-32"]
+record.pins = 32
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "5mm", width = "5mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = { min = "0.18mm", nom = "0.25mm", max = "0.3mm" } }
+record.ep = { length = "3.4mm..3.6mm", width = "3.4mm..3.6mm" }
+record.land = { source = "D-0423 drawing C04-3205", pad = { length = "0.8mm", width = "0.3mm" }, row_spacing_x = "5mm", row_spacing_y = "5mm", ep = { length = "3.7mm", width = "3.7mm" } }
+
+[[row]]
+name = "VQFN36_6x6_P0.5_Microchip-M2"
+title = "VQFN-36 6 x 6 mm, 0.5 mm pitch (Microchip M2/AEN)"
+summary = "VQFN-36, 0.5 mm pitch, 6 x 6 mm body, 3.8 x 3.8 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 639, drawing C04-272B-M2: N 36, e 0.50 BSC, A 0.80/0.90/1.00, A1 0.00/0.02/0.05, D 6.00 BSC, E 6.00 BSC, D2 3.60/3.70/3.80, E2 3.60/3.70/3.80, b 0.18/0.25/0.30, L 0.50/0.60/0.75; land C04-2272B-M2: E 0.50 BSC, X2 3.80, Y2 3.80, C1 5.60, C2 5.60, X1 0.30, Y1 1.10, G1 0.35, G2 0.20, V 0.30, EV 1.00; the same outline and land are listed for package codes AEN"
+tags = ["exposed-pad", "vqfn", "vqfn-36"]
+record.pins = 36
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "6mm", width = "6mm", height = "0.8mm..1mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = { min = "0.5mm", nom = "0.6mm", max = "0.75mm" }, width = { min = "0.18mm", nom = "0.25mm", max = "0.3mm" } }
+record.ep = { length = "3.6mm..3.8mm", width = "3.6mm..3.8mm" }
+record.land = { source = "D-0423 drawing C04-2272B-M2", pad = { length = "1.1mm", width = "0.3mm" }, row_spacing_x = "5.6mm", row_spacing_y = "5.6mm", ep = { length = "3.8mm", width = "3.8mm" } }
+
+[[row]]
+name = "VQFN40_5x5_P0.4_Microchip-NHX"
+title = "VQFN-40 5 x 5 mm, 0.4 mm pitch (Microchip NHX)"
+summary = "VQFN-40, 0.4 mm pitch, 5 x 5 mm body, 3.8 x 3.8 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 648, drawing C04-425A: N 40, e 0.40 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 5.00 BSC, E 5.00 BSC, D2 3.60/3.70/3.80, E2 3.60/3.70/3.80, b 0.15/0.20/0.25, L 0.30/0.40/0.50; land C04-2425A: E 0.40 BSC, X2 3.80, Y2 3.80, CH 0.38, C1 5.00, C2 5.00, X1 0.20, Y1 0.80, G1 0.20, G2 0.20, V 0.30, EV 1.00; the exposed-pad corner chamfer CH is not drawn"
+tags = ["exposed-pad", "vqfn", "vqfn-40"]
+record.pins = 40
+record.pitch = "0.4mm"
+record.arrangement = "quad"
+record.body = { length = "5mm", width = "5mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = "0.15mm..0.25mm" }
+record.ep = { length = "3.6mm..3.8mm", width = "3.6mm..3.8mm" }
+record.land = { source = "D-0423 drawing C04-2425A", pad = { length = "0.8mm", width = "0.2mm" }, row_spacing_x = "5mm", row_spacing_y = "5mm", ep = { length = "3.8mm", width = "3.8mm" } }
+
+[[row]]
+name = "VQFN40_6x6_P0.5_Microchip-UW"
+title = "VQFN-40 6 x 6 mm, 0.5 mm pitch (Microchip UW)"
+summary = "VQFN-40, 0.5 mm pitch, 6 x 6 mm body, 4.25 x 4.25 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 651, drawing C04-339A: N 40, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 6.00 BSC, E 6.00 BSC, D2 3.95/4.10/4.25, E2 3.95/4.10/4.25, b 0.18/0.24/0.30, L 0.30/0.40/0.50; land C04-2339A: E 0.50 BSC, X2 4.25, Y2 4.25, C1 5.90, C2 5.90, X1 0.30, Y1 0.85, G1 0.20, V 0.33, EV 1.20"
+tags = ["exposed-pad", "vqfn", "vqfn-40"]
+record.pins = 40
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "6mm", width = "6mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = "0.18mm..0.3mm" }
+record.ep = { length = "3.95mm..4.25mm", width = "3.95mm..4.25mm" }
+record.land = { source = "D-0423 drawing C04-2339A", pad = { length = "0.85mm", width = "0.3mm" }, row_spacing_x = "5.9mm", row_spacing_y = "5.9mm", ep = { length = "4.25mm", width = "4.25mm" } }
+
+[[row]]
+name = "VQFN40_6x6_P0.5_Microchip-VM"
+title = "VQFN-40 6 x 6 mm, 0.5 mm pitch (Microchip VM)"
+summary = "VQFN-40, 0.5 mm pitch, 6 x 6 mm body, 4.7 x 4.7 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 654, drawing C04-344A: N 40, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 6.00 BSC, E 6.00 BSC, D2 4.52/4.62/4.72, E2 4.52/4.62/4.72, b 0.20/0.25/0.30, L 0.35/0.40/0.45; land C04-2344A: E 0.50 BSC, X2 4.70, Y2 4.70, C1 6.00, C2 6.00, X1 0.30, Y1 0.80, G1 0.20, V 0.33, EV 1.20"
+tags = ["exposed-pad", "vqfn", "vqfn-40"]
+record.pins = 40
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "6mm", width = "6mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = "0.2mm..0.3mm" }
+record.ep = { length = "4.52mm..4.72mm", width = "4.52mm..4.72mm" }
+record.land = { source = "D-0423 drawing C04-2344A", pad = { length = "0.8mm", width = "0.3mm" }, row_spacing_x = "6mm", row_spacing_y = "6mm", ep = { length = "4.7mm", width = "4.7mm" } }
+
+[[row]]
+name = "VQFN40_6x6_P0.5_Microchip-PQA"
+title = "VQFN-40 6 x 6 mm, 0.5 mm pitch (Microchip PQA)"
+summary = "VQFN-40, 0.5 mm pitch, 6 x 6 mm body, 4.1 x 4.1 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 657, drawing C04-1109A: N 40, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 6.00 BSC, E 6.00 BSC, D2 4.05/4.10/4.15, E2 4.05/4.10/4.15, b 0.18/0.23/0.28, L 0.35/0.40/0.45; land C04-3109A: E 0.50 BSC, X2 4.10, Y2 4.10, C1 5.80, C2 5.80, X1 0.23, Y1 0.60, G1 0.20, V 0.30, EV 1.00"
+tags = ["exposed-pad", "vqfn", "vqfn-40"]
+record.pins = 40
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "6mm", width = "6mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = "0.18mm..0.28mm" }
+record.ep = { length = "4.05mm..4.15mm", width = "4.05mm..4.15mm" }
+record.land = { source = "D-0423 drawing C04-3109A", pad = { length = "0.6mm", width = "0.23mm" }, row_spacing_x = "5.8mm", row_spacing_y = "5.8mm", ep = { length = "4.1mm", width = "4.1mm" } }
+
+[[row]]
+name = "VQFN44_7x7_P0.5_Microchip-PGA"
+title = "VQFN-44 7 x 7 mm, 0.5 mm pitch (Microchip PGA)"
+summary = "VQFN-44, 0.5 mm pitch, 7 x 7 mm body, 5.15 x 5.15 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 660, drawing C04-1213A: N 44, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 7.00 BSC, E 7.00 BSC, D2 5.05/5.10/5.15, E2 5.05/5.10/5.15, b 0.20/0.25/0.30, L 0.50/0.55/0.60; land C04-3213A: E 0.50 BSC, X2 5.15, Y2 5.15, C1 6.70, C2 6.70, X1 0.30, Y1 1.05, G1 0.20, G2 0.25, V 0.33, EV 1.20"
+tags = ["exposed-pad", "vqfn", "vqfn-44"]
+record.pins = 44
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "7mm", width = "7mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.5mm..0.6mm", width = "0.2mm..0.3mm" }
+record.ep = { length = "5.05mm..5.15mm", width = "5.05mm..5.15mm" }
+record.land = { source = "D-0423 drawing C04-3213A", pad = { length = "1.05mm", width = "0.3mm" }, row_spacing_x = "6.7mm", row_spacing_y = "6.7mm", ep = { length = "5.15mm", width = "5.15mm" } }
+
+[[row]]
+name = "VQFN44_8x8_P0.65_Microchip-3N"
+title = "VQFN-44 8 x 8 mm, 0.65 mm pitch (Microchip 3N)"
+summary = "VQFN-44, 0.65 mm pitch, 8 x 8 mm body, 6.6 x 6.6 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 663, drawing C04-399B: N 44, e 0.65 BSC, A 0.80/0.90/1.00, A1 0.00/0.02/0.05, D 8.00 BSC, E 8.00 BSC, D2 6.25/6.45/6.60, E2 6.25/6.45/6.60, b 0.20/0.30/0.35, L 0.30/0.40/0.50; land C04-2399A: E 0.65 BSC, X2 6.60, Y2 6.60, C1 7.90, C2 7.90, X1 0.35, Y1 0.90, G1 0.30, G2 0.20, V 0.33, EV 1.20"
+tags = ["exposed-pad", "vqfn", "vqfn-44"]
+record.pins = 44
+record.pitch = "0.65mm"
+record.arrangement = "quad"
+record.body = { length = "8mm", width = "8mm", height = "0.8mm..1mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = { min = "0.2mm", nom = "0.3mm", max = "0.35mm" } }
+record.ep = { length = { min = "6.25mm", nom = "6.45mm", max = "6.6mm" }, width = { min = "6.25mm", nom = "6.45mm", max = "6.6mm" } }
+record.land = { source = "D-0423 drawing C04-2399A", pad = { length = "0.9mm", width = "0.35mm" }, row_spacing_x = "7.9mm", row_spacing_y = "7.9mm", ep = { length = "6.6mm", width = "6.6mm" } }
+
+[[row]]
+name = "VQFN48_6x6_P0.4_Microchip-VN"
+title = "VQFN-48 6 x 6 mm, 0.4 mm pitch (Microchip VN)"
+summary = "VQFN-48, 0.4 mm pitch, 6 x 6 mm body, 4.3 x 4.3 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 672, drawing C04-345A: N 48, e 0.40 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 6.00 BSC, E 6.00 BSC, D2 4.10/4.20/4.30, E2 4.10/4.20/4.30, b 0.15/0.20/0.25, L 0.35/0.40/0.45; land C04-2345A: E 0.40 BSC, X2 4.30, Y2 4.30, C1 5.90, C2 5.90, X1 0.20, Y1 0.85, G1 0.20, V 0.33, EV 1.20"
+tags = ["exposed-pad", "vqfn", "vqfn-48"]
+record.pins = 48
+record.pitch = "0.4mm"
+record.arrangement = "quad"
+record.body = { length = "6mm", width = "6mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = "0.15mm..0.25mm" }
+record.ep = { length = "4.1mm..4.3mm", width = "4.1mm..4.3mm" }
+record.land = { source = "D-0423 drawing C04-2345A", pad = { length = "0.85mm", width = "0.2mm" }, row_spacing_x = "5.9mm", row_spacing_y = "5.9mm", ep = { length = "4.3mm", width = "4.3mm" } }
+
+[[row]]
+name = "VQFN48_7x7_P0.5_Microchip-UY"
+title = "VQFN-48 7 x 7 mm, 0.5 mm pitch (Microchip UY/VT)"
+summary = "VQFN-48, 0.5 mm pitch, 7 x 7 mm body, 5.15 x 5.15 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 678, drawing C04-341A: N 48, e 0.50 BSC, A 0.8/0.85/0.90, A1 0.00/0.02/0.05, D 7.00 BSC, E 7.00 BSC, D2 4.95/5.05/5.15, E2 4.95/5.05/5.15, b 0.20/0.25/0.30, L 0.35/0.40/0.45; land C04-2341A: E 0.50 BSC, X2 5.15, Y2 5.15, C1 7.00, C2 7.00, X1 0.30, Y1 0.80, G1 0.20, V 0.33, EV 1.20; the same outline and land are listed for package codes VT"
+tags = ["exposed-pad", "vqfn", "vqfn-48"]
+record.pins = 48
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "7mm", width = "7mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = "0.2mm..0.3mm" }
+record.ep = { length = "4.95mm..5.15mm", width = "4.95mm..5.15mm" }
+record.land = { source = "D-0423 drawing C04-2341A", pad = { length = "0.8mm", width = "0.3mm" }, row_spacing_x = "7mm", row_spacing_y = "7mm", ep = { length = "5.15mm", width = "5.15mm" } }
+
+[[row]]
+name = "VQFN48_7x7_P0.5_Microchip-ML_EP4.1x4.1"
+title = "VQFN-48 7 x 7 mm, 0.5 mm pitch (Microchip ML/Y3X)"
+summary = "VQFN-48, 0.5 mm pitch, 7 x 7 mm body, 4.2 x 4.2 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 684, drawing C04-182B: N 48, e 0.50 BSC, A 0.80/0.90/1.00, A1 0.00/0.02/0.05, D 7.00 BSC, E 7.00 BSC, D2 4.00/4.10/4.20, E2 4.00/4.10/4.20, b 0.18/0.25/0.30, L 0.30/0.40/0.50; land C04-2182C: E 0.50 BSC, X2 4.20, Y2 4.20, C1 7.00, C2 7.00, X1 0.30, Y1 0.80, G1 0.20, G2 1.00, V 0.30, EV 1.00; the same outline and land are listed for package codes Y3X"
+tags = ["exposed-pad", "vqfn", "vqfn-48"]
+record.pins = 48
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "7mm", width = "7mm", height = "0.8mm..1mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = { min = "0.18mm", nom = "0.25mm", max = "0.3mm" } }
+record.ep = { length = "4mm..4.2mm", width = "4mm..4.2mm" }
+record.land = { source = "D-0423 drawing C04-2182C", pad = { length = "0.8mm", width = "0.3mm" }, row_spacing_x = "7mm", row_spacing_y = "7mm", ep = { length = "4.2mm", width = "4.2mm" } }
+
+[[row]]
+name = "VQFN48_7x7_P0.5_Microchip-ML_EP5.3x5.3"
+title = "VQFN-48 7 x 7 mm, 0.5 mm pitch (Microchip ML)"
+summary = "VQFN-48, 0.5 mm pitch, 7 x 7 mm body, 5.4 x 5.4 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 690, drawing C04-431B: N 48, e 0.50 BSC, A 0.80/0.90/1.00, A1 0.00/0.02/0.05, D 7.00 BSC, E 7.00 BSC, D2 5.20/5.30/5.40, E2 5.20/5.30/5.40, b 0.18/0.25/0.30, L 0.30/0.40/0.50; land C04-2431A: E 0.50 BSC, X2 5.40, Y2 5.40, C1 7.00, C2 7.00, X1 0.30, Y1 0.80, G1 0.20, G2 0.40, V 0.33, EV 1.20"
+tags = ["exposed-pad", "vqfn", "vqfn-48"]
+record.pins = 48
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "7mm", width = "7mm", height = "0.8mm..1mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = { min = "0.18mm", nom = "0.25mm", max = "0.3mm" } }
+record.ep = { length = "5.2mm..5.4mm", width = "5.2mm..5.4mm" }
+record.land = { source = "D-0423 drawing C04-2431A", pad = { length = "0.8mm", width = "0.3mm" }, row_spacing_x = "7mm", row_spacing_y = "7mm", ep = { length = "5.4mm", width = "5.4mm" } }
+
+[[row]]
+name = "VQFN48_7x7_P0.5_Microchip-VQ"
+title = "VQFN-48 7 x 7 mm, 0.5 mm pitch (Microchip VQ)"
+summary = "VQFN-48, 0.5 mm pitch, 7 x 7 mm body, 5.4 x 5.4 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 699, drawing C04-347A: N 48, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 7.00 BSC, E 7.00 BSC, D2 5.20/5.30/5.40, E2 5.20/5.30/5.40, b 0.18/0.23/0.30, L 0.30/0.40/0.50; land C04-2347A: E 0.50 BSC, X2 5.40, Y2 5.40, C1 6.90, C2 6.90, X1 0.30, Y1 0.85, G1 0.20, G2 0.20, V 0.33, EV 1.20"
+tags = ["exposed-pad", "vqfn", "vqfn-48"]
+record.pins = 48
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "7mm", width = "7mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = { min = "0.18mm", nom = "0.23mm", max = "0.3mm" } }
+record.ep = { length = "5.2mm..5.4mm", width = "5.2mm..5.4mm" }
+record.land = { source = "D-0423 drawing C04-2347A", pad = { length = "0.85mm", width = "0.3mm" }, row_spacing_x = "6.9mm", row_spacing_y = "6.9mm", ep = { length = "5.4mm", width = "5.4mm" } }
+
+[[row]]
+name = "VQFN52_8x8_P0.5_Microchip-8HX"
+title = "VQFN-52 8 x 8 mm, 0.5 mm pitch (Microchip 8HX)"
+summary = "VQFN-52, 0.5 mm pitch, 8 x 8 mm body, 6.7 x 6.7 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 702, drawing C04-430A: N 52, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 8.00 BSC, E 8.00 BSC, D2 6.50/6.60/6.70, E2 6.50/6.60/6.70, b 0.18/0.25/0.30, L 0.35/0.40/0.45; land C04-2430A: E 0.50 BSC, X2 6.70, Y2 6.70, C1 8.00, C2 8.00, X1 0.30, Y1 0.80, G1 0.30, G2 0.25, V 0.33, EV 1.20"
+tags = ["exposed-pad", "vqfn", "vqfn-52"]
+record.pins = 52
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "8mm", width = "8mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = { min = "0.18mm", nom = "0.25mm", max = "0.3mm" } }
+record.ep = { length = "6.5mm..6.7mm", width = "6.5mm..6.7mm" }
+record.land = { source = "D-0423 drawing C04-2430A", pad = { length = "0.8mm", width = "0.3mm" }, row_spacing_x = "8mm", row_spacing_y = "8mm", ep = { length = "6.7mm", width = "6.7mm" } }
+
+[[row]]
+name = "VQFN56_7x7_P0.4_Microchip-VU"
+title = "VQFN-56 7 x 7 mm, 0.4 mm pitch (Microchip VU/UZ)"
+summary = "VQFN-56, 0.4 mm pitch, 7 x 7 mm body, 4.7 x 4.7 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 705, drawing C04-350A: N 56, e 0.40 BSC, A 0.8/0.85/0.90, A1 0.00/0.02/0.05, D 7.00 BSC, E 7.00 BSC, D2 4.50/4.60/4.70, E2 4.50/4.60/4.70, b 0.15/0.20/0.25, L 0.35/0.40/0.45; land C04-2350A: E 0.40 BSC, X2 4.70, Y2 4.70, C1 6.90, C2 6.90, X1 0.20, Y1 0.85, G1 0.20, V 0.33, EV 1.20; the same outline and land are listed for package codes UZ"
+tags = ["exposed-pad", "vqfn", "vqfn-56"]
+record.pins = 56
+record.pitch = "0.4mm"
+record.arrangement = "quad"
+record.body = { length = "7mm", width = "7mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = "0.15mm..0.25mm" }
+record.ep = { length = "4.5mm..4.7mm", width = "4.5mm..4.7mm" }
+record.land = { source = "D-0423 drawing C04-2350A", pad = { length = "0.85mm", width = "0.2mm" }, row_spacing_x = "6.9mm", row_spacing_y = "6.9mm", ep = { length = "4.7mm", width = "4.7mm" } }
+
+[[row]]
+name = "VQFN56_7x7_P0.4_Microchip-2G"
+title = "VQFN-56 7 x 7 mm, 0.4 mm pitch (Microchip 2G)"
+summary = "VQFN-56, 0.4 mm pitch, 7 x 7 mm body, 4.7 x 4.7 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 708, drawing C04-234A: N 56, e 0.40 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 7.00 BSC, E 7.00 BSC, D2 4.50/4.60/4.70, E2 4.50/4.60/4.70, b 0.15/0.20/0.30, L 0.35/0.40/0.45; land C04-2234A: E 0.40 BSC, X2 4.70, Y2 4.70, C1 6.90, C2 6.90, X1 0.20, Y1 0.85, G1 0.20, V 0.33, EV 1.20"
+tags = ["exposed-pad", "vqfn", "vqfn-56"]
+record.pins = 56
+record.pitch = "0.4mm"
+record.arrangement = "quad"
+record.body = { length = "7mm", width = "7mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = { min = "0.15mm", nom = "0.2mm", max = "0.3mm" } }
+record.ep = { length = "4.5mm..4.7mm", width = "4.5mm..4.7mm" }
+record.land = { source = "D-0423 drawing C04-2234A", pad = { length = "0.85mm", width = "0.2mm" }, row_spacing_x = "6.9mm", row_spacing_y = "6.9mm", ep = { length = "4.7mm", width = "4.7mm" } }
+
+[[row]]
+name = "VQFN56_8x8_P0.5_Microchip-VW"
+title = "VQFN-56 8 x 8 mm, 0.5 mm pitch (Microchip VW)"
+summary = "VQFN-56, 0.5 mm pitch, 8 x 8 mm body, 4.45 x 4.45 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 714, drawing C04-352A: N 56, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 8.00 BSC, E 8.00 BSC, D2 4.27/4.37/4.47, E2 4.27/4.37/4.47, b 0.20/0.25/0.30, L 0.35/0.40/0.45; land C04-2352A: E 0.50 BSC, X2 4.45, Y2 4.45, C1 7.90, C2 7.90, X1 0.30, Y1 0.85, G1 0.20, V 0.33, EV 1.20"
+tags = ["exposed-pad", "vqfn", "vqfn-56"]
+record.pins = 56
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "8mm", width = "8mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = "0.2mm..0.3mm" }
+record.ep = { length = "4.27mm..4.47mm", width = "4.27mm..4.47mm" }
+record.land = { source = "D-0423 drawing C04-2352A", pad = { length = "0.85mm", width = "0.3mm" }, row_spacing_x = "7.9mm", row_spacing_y = "7.9mm", ep = { length = "4.45mm", width = "4.45mm" } }
+
+[[row]]
+name = "VQFN64_9x9_P0.5_Microchip-3S"
+title = "VQFN-64 9 x 9 mm, 0.5 mm pitch (Microchip 3S)"
+summary = "VQFN-64, 0.5 mm pitch, 9 x 9 mm body, 7.8 x 7.8 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 723, drawing C04-394A: N 64, e 0.50 BSC, A 0.80/0.87/0.95, A1 0.00/0.02/0.05, D 9.00 BSC, E 9.00 BSC, D2 7.60/7.70/7.80, E2 7.60/7.70/7.80, b 0.20/0.25/0.30, L 0.30/0.40/0.50; land C04-2394A: E 0.50 BSC, X2 7.80, Y2 7.80, C1 9.00, C2 9.00, X1 0.30, Y1 0.80, G1 0.20, V 0.33, EV 1.20"
+tags = ["exposed-pad", "vqfn", "vqfn-64"]
+record.pins = 64
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "9mm", width = "9mm", height = { min = "0.8mm", nom = "0.87mm", max = "0.95mm" }, standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = "0.2mm..0.3mm" }
+record.ep = { length = "7.6mm..7.8mm", width = "7.6mm..7.8mm" }
+record.land = { source = "D-0423 drawing C04-2394A", pad = { length = "0.8mm", width = "0.3mm" }, row_spacing_x = "9mm", row_spacing_y = "9mm", ep = { length = "7.8mm", width = "7.8mm" } }
+
+[[row]]
+name = "VQFN64_9x9_P0.5_Microchip-9JX"
+title = "VQFN-64 9 x 9 mm, 0.5 mm pitch (Microchip 9JX)"
+summary = "VQFN-64, 0.5 mm pitch, 9 x 9 mm body, 6.1 x 6.1 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 726, drawing C04-434A: N 64, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 9.00 BSC, E 9.00 BSC, D2 5.90/6.00/6.10, E2 5.90/6.00/6.10, b 0.18/0.25/0.30, L 0.35/0.40/0.45; land C04-2434A: E 0.50 BSC, X2 6.10, Y2 6.10, C1 8.90, C2 8.90, X1 0.30, Y1 0.85, G1 0.20, G2 0.20, V 0.33, EV 1.20"
+tags = ["exposed-pad", "vqfn", "vqfn-64"]
+record.pins = 64
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "9mm", width = "9mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = { min = "0.18mm", nom = "0.25mm", max = "0.3mm" } }
+record.ep = { length = "5.9mm..6.1mm", width = "5.9mm..6.1mm" }
+record.land = { source = "D-0423 drawing C04-2434A", pad = { length = "0.85mm", width = "0.3mm" }, row_spacing_x = "8.9mm", row_spacing_y = "8.9mm", ep = { length = "6.1mm", width = "6.1mm" } }
+
+[[row]]
+name = "VQFN68_8x8_P0.4_Microchip-VY"
+title = "VQFN-68 8 x 8 mm, 0.4 mm pitch (Microchip VY)"
+summary = "VQFN-68, 0.4 mm pitch, 8 x 8 mm body, 6.3 x 6.3 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 739, drawing C04-354A: N 68, e 0.40 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 8.00 BSC, E 8.00 BSC, D2 6.10/6.20/6.30, E2 6.10/6.20/6.30, b 0.15/0.20/0.25, L 0.35/0.40/0.45; land C04-2354A: E 0.40 BSC, X2 6.30, Y2 6.30, C1 7.90, C2 7.90, X1 0.20, Y1 0.85, G1 0.20, V 0.30, EV 1.00"
+tags = ["exposed-pad", "vqfn", "vqfn-68"]
+record.pins = 68
+record.pitch = "0.4mm"
+record.arrangement = "quad"
+record.body = { length = "8mm", width = "8mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = "0.15mm..0.25mm" }
+record.ep = { length = "6.1mm..6.3mm", width = "6.1mm..6.3mm" }
+record.land = { source = "D-0423 drawing C04-2354A", pad = { length = "0.85mm", width = "0.2mm" }, row_spacing_x = "7.9mm", row_spacing_y = "7.9mm", ep = { length = "6.3mm", width = "6.3mm" } }
+
+[[row]]
+name = "VQFN72_10x10_P0.5_Microchip-NQ"
+title = "VQFN-72 10 x 10 mm, 0.5 mm pitch (Microchip NQ)"
+summary = "VQFN-72, 0.5 mm pitch, 10 x 10 mm body, 6.1 x 6.1 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 742, drawing C04-202A: N 72, e 0.50 BSC, A 0.80/0.90/1.00, A1 0.00/0.02/0.05, D 10.00 BSC, E 10.00 BSC, D2 5.90/6.00/6.10, E2 5.90/6.00/6.10, b 0.18/0.25/0.30, L 0.30/0.40/0.50; land C04-2202A: E 0.50 BSC, X2 6.10, Y2 6.10, C1 9.90, C2 9.90, X1 0.30, Y1 0.90, G1 0.20, V 0.33, EV 1.20"
+tags = ["exposed-pad", "vqfn", "vqfn-72"]
+record.pins = 72
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "10mm", width = "10mm", height = "0.8mm..1mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = { min = "0.18mm", nom = "0.25mm", max = "0.3mm" } }
+record.ep = { length = "5.9mm..6.1mm", width = "5.9mm..6.1mm" }
+record.land = { source = "D-0423 drawing C04-2202A", pad = { length = "0.9mm", width = "0.3mm" }, row_spacing_x = "9.9mm", row_spacing_y = "9.9mm", ep = { length = "6.1mm", width = "6.1mm" } }
+
+[[row]]
+name = "VQFN76_9x9_P0.4_Microchip-QBA"
+title = "VQFN-76 9 x 9 mm, 0.4 mm pitch (Microchip QBA)"
+summary = "VQFN-76, 0.4 mm pitch, 9 x 9 mm body, 5.1 x 5.1 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 748, drawing C04-1195A: N 76, e 0.40 BSC, A 0.80/0.85/0.9, A1 0.00/0.02/0.05, D 9.00 BSC, E 9.00 BSC, D2 4.90/5.00/5.10, E2 4.90/5.00/5.10, b 0.13/0.18/0.23, L 0.35/0.40/0.45; land C04-3195A: E 0.40 BSC, X2 5.10, Y2 5.10, C1 8.90, C2 8.90, X1 0.20, Y1 0.85, G 0.20, V 0.33, EV 1.20"
+tags = ["exposed-pad", "vqfn", "vqfn-76"]
+record.pins = 76
+record.pitch = "0.4mm"
+record.arrangement = "quad"
+record.body = { length = "9mm", width = "9mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = "0.13mm..0.23mm" }
+record.ep = { length = "4.9mm..5.1mm", width = "4.9mm..5.1mm" }
+record.land = { source = "D-0423 drawing C04-3195A", pad = { length = "0.85mm", width = "0.2mm" }, row_spacing_x = "8.9mm", row_spacing_y = "8.9mm", ep = { length = "5.1mm", width = "5.1mm" } }
+
+[[row]]
+name = "VQFN88_12x12_P0.5_Microchip-PJ"
+title = "VQFN-88 12 x 12 mm, 0.5 mm pitch (Microchip PJ)"
+summary = "VQFN-88, 0.5 mm pitch, 12 x 12 mm body, 6.1 x 6.1 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 751, drawing C04-274A: N 88, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 12.00 BSC, E 12.00 BSC, D2 5.90/6.00/6.10, E2 5.90/6.00/6.10, b 0.18/0.25/0.30, L 0.30/0.40/0.50; land C04-2274A: E 0.50 BSC, X2 6.10, Y2 6.10, C1 11.90, C2 11.90, X1 0.30, Y1 0.85, G1 0.20, V 0.30, EV 1.00"
+tags = ["exposed-pad", "vqfn", "vqfn-88"]
+record.pins = 88
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "12mm", width = "12mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = { min = "0.18mm", nom = "0.25mm", max = "0.3mm" } }
+record.ep = { length = "5.9mm..6.1mm", width = "5.9mm..6.1mm" }
+record.land = { source = "D-0423 drawing C04-2274A", pad = { length = "0.85mm", width = "0.3mm" }, row_spacing_x = "11.9mm", row_spacing_y = "11.9mm", ep = { length = "6.1mm", width = "6.1mm" } }
+
+[[row]]
+name = "VQFN100_12x12_P0.4_Microchip-KD"
+title = "VQFN-100 12 x 12 mm, 0.4 mm pitch (Microchip KD)"
+summary = "VQFN-100, 0.4 mm pitch, 12 x 12 mm body, 8.1 x 8.1 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 757, drawing C04-407A: N 100, e 0.40 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 12.00 BSC, E 12.00 BSC, D2 7.90/8.00/8.10, E2 7.90/8.00/8.10, b 0.15/0.20/0.25, L 0.50/0.60/0.70; land C04-2407A: E 0.40 BSC, X2 8.10, Y2 8.10, C1 11.70, C2 11.70, X1 0.20, Y1 1.05, G1 0.20, V 0.33, EV 1.20"
+tags = ["exposed-pad", "vqfn", "vqfn-100"]
+record.pins = 100
+record.pitch = "0.4mm"
+record.arrangement = "quad"
+record.body = { length = "12mm", width = "12mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.5mm..0.7mm", width = "0.15mm..0.25mm" }
+record.ep = { length = "7.9mm..8.1mm", width = "7.9mm..8.1mm" }
+record.land = { source = "D-0423 drawing C04-2407A", pad = { length = "1.05mm", width = "0.2mm" }, row_spacing_x = "11.7mm", row_spacing_y = "11.7mm", ep = { length = "8.1mm", width = "8.1mm" } }
+
+[[row]]
+name = "QFN16_3x3_P0.5_Microchip-NGA"
+title = "QFN-16 3 x 3 mm, 0.5 mm pitch (Microchip NGA)"
+summary = "QFN-16, 0.5 mm pitch, 3 x 3 mm body, 1.6 x 1.6 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 765, drawing C04-440A: N 16, e 0.50 BSC, A 0.70/0.75/0.80, A1 0.00/0.02/0.05, D 3.00 BSC, E 3.00 BSC, D2 1.40/1.50/1.60, E2 1.40/1.50/1.60, b 0.18/0.23/0.30, L 0.30/0.40/0.50; land C04-2440A: E 0.50 BSC, X2 1.60, Y2 1.60, CH 0.20, C1 2.90, C2 2.90, X1 0.30, Y1 0.85, G1 0.23, G2 0.20, V 0.30, EV 1.00; the exposed-pad corner chamfer CH is not drawn"
+tags = ["exposed-pad", "qfn", "qfn-16"]
+record.pins = 16
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "3mm", width = "3mm", height = "0.7mm..0.8mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.3mm..0.5mm", width = { min = "0.18mm", nom = "0.23mm", max = "0.3mm" } }
+record.ep = { length = "1.4mm..1.6mm", width = "1.4mm..1.6mm" }
+record.land = { source = "D-0423 drawing C04-2440A", pad = { length = "0.85mm", width = "0.3mm" }, row_spacing_x = "2.9mm", row_spacing_y = "2.9mm", ep = { length = "1.6mm", width = "1.6mm" } }
+
+[[row]]
+name = "QFN16_2.5x2.5_P0.5_Microchip-NT"
+title = "QFN-16 2.5 x 2.5 mm, 0.5 mm pitch (Microchip NT)"
+summary = "QFN-16, 0.5 mm pitch, 2.5 x 2.5 mm body, 1.35 x 1.35 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 776, drawing C04-204A: N 16, e 0.50 BSC, A 0.34/0.37/0.40, A1 0.00/0.02/0.05, D 2.50 BSC, E 2.50 BSC, D2 1.25/1.35/1.45, E2 1.25/1.35/1.45, b 0.15/0.20/0.25, L 0.175/0.225/0.275; land C04-2204A: E 0.50 BSC, X2 1.35, Y2 1.35, C1 2.60, C2 2.60, X1 0.25, Y1 0.65, G1 0.20, V 0.33"
+tags = ["exposed-pad", "qfn", "qfn-16"]
+record.pins = 16
+record.pitch = "0.5mm"
+record.arrangement = "quad"
+record.body = { length = "2.5mm", width = "2.5mm", height = "0.34mm..0.4mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.175mm..0.275mm", width = "0.15mm..0.25mm" }
+record.ep = { length = "1.25mm..1.45mm", width = "1.25mm..1.45mm" }
+record.land = { source = "D-0423 drawing C04-2204A", pad = { length = "0.65mm", width = "0.25mm" }, row_spacing_x = "2.6mm", row_spacing_y = "2.6mm", ep = { length = "1.35mm", width = "1.35mm" } }

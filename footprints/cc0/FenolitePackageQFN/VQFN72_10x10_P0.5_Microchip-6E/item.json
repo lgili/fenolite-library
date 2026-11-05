@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/VQFN72_10x10_P0.5_Microchip-6E.step",
+    "generated/FenolitePackageQFN.pretty/VQFN72_10x10_P0.5_Microchip-6E.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:VQFN72_10x10_P0.5_Microchip-6E",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VQFN-72, 0.5 mm pitch, 10 x 10 mm body, 6.1 x 6.1 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "vqfn",
+    "vqfn-72"
+  ],
+  "title": "VQFN-72 10 x 10 mm, 0.5 mm pitch (Microchip 6E)",
+  "version": "1.0.0"
+}

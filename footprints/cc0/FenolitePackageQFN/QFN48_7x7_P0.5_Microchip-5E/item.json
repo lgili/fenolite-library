@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/QFN48_7x7_P0.5_Microchip-5E.step",
+    "generated/FenolitePackageQFN.pretty/QFN48_7x7_P0.5_Microchip-5E.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:QFN48_7x7_P0.5_Microchip-5E",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "QFN-48, 0.5 mm pitch, 7 x 7 mm body, 5.2 x 5.2 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "qfn-48",
+    "quad",
+    "smd"
+  ],
+  "title": "QFN-48 7 x 7 mm, 0.5 mm pitch (Microchip 5E)",
+  "version": "1.0.0"
+}

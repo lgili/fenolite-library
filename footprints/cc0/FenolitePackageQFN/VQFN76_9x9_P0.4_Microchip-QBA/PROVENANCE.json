@@ -1,0 +1,96 @@
+{
+  "authors": [
+    "Fenolite contributors"
+  ],
+  "copyright": [
+    "Copyright (c) 2026 Fenolite contributors"
+  ],
+  "datasheets": [
+    {
+      "date": "2017-02-03",
+      "id": "D-0423",
+      "revision": "CH",
+      "title": "Microchip Packaging Specification, DS00000049CH",
+      "url": "https://ww1.microchip.com/downloads/en/PackagingSpec/00000049CH.pdf",
+      "used": "Microchip packaging specification DS00000049CH, PDF page 748, drawing C04-1195A: N 76, e 0.40 BSC, A 0.80/0.85/0.9, A1 0.00/0.02/0.05, D 9.00 BSC, E 9.00 BSC, D2 4.90/5.00/5.10, E2 4.90/5.00/5.10, b 0.13/0.18/0.23, L 0.35/0.40/0.45; land C04-3195A: E 0.40 BSC, X2 5.10, Y2 5.10, C1 8.90, C2 8.90, X1 0.20, Y1 0.85, G 0.20, V 0.33, EV 1.20"
+    }
+  ],
+  "evidence": "INFERRED",
+  "featured": null,
+  "generation": {
+    "change": "c0390",
+    "explicit_record": "the generator's pads, graphics and bodies written as a generator='explicit' record (the record kind the library audit reads); outputs regenerate from package.toml",
+    "family_record": {
+      "arrangement": "quad",
+      "body": {
+        "height": "0.8mm..0.9mm",
+        "length": "9mm",
+        "standoff": {
+          "max": "0.05mm",
+          "min": "0mm",
+          "nom": "0.02mm"
+        },
+        "width": "9mm"
+      },
+      "ep": {
+        "length": "4.9mm..5.1mm",
+        "width": "4.9mm..5.1mm"
+      },
+      "evidence": "INFERRED",
+      "family": "nolead",
+      "generate": {
+        "drawing": 1,
+        "lands": 1
+      },
+      "id": "FenolitePackageQFN:VQFN76_9x9_P0.4_Microchip-QBA",
+      "land": {
+        "ep": {
+          "length": "5.1mm",
+          "width": "5.1mm"
+        },
+        "pad": {
+          "length": "0.85mm",
+          "width": "0.2mm"
+        },
+        "row_spacing_x": "8.9mm",
+        "row_spacing_y": "8.9mm",
+        "source": "D-0423 drawing C04-3195A"
+      },
+      "pins": 76,
+      "pitch": "0.4mm",
+      "schema": "fenolite.package.v0",
+      "sources": [
+        "D-0423"
+      ],
+      "summary": "VQFN-76, 0.4 mm pitch, 9 x 9 mm body, 5.1 x 5.1 mm exposed-pad land, Microchip recommended land",
+      "terminal": {
+        "length": "0.35mm..0.45mm",
+        "width": "0.13mm..0.23mm"
+      }
+    },
+    "fenolite": "e7673c811d5ca25d269c2d9c0f30e686f5148844",
+    "findings": [
+      "info package.land-override"
+    ],
+    "generator": "nolead/1 manufacturer drawing/1; land: manufacturer D-0423 drawing C04-3195A",
+    "table": "openspec/changes/c0390-library-growth/families/nolead-qfn.toml",
+    "tool": "fenolite"
+  },
+  "id": "FenolitePackageQFN:VQFN76_9x9_P0.4_Microchip-QBA",
+  "kind": "footprint",
+  "licence_text_sha256": "0dd25be0803b1e2764b0323560013cdd5ad9ca92ba4780bd7db0cbe6ce821dd8",
+  "modification_notice": "2026-11-05: original item authored for fenolite-library (change c0390) with Fenolite's c0260 package generator from public package dimensions; no upstream design material.",
+  "origin": "authored",
+  "schema": "fenolite.provenance.v0",
+  "sources": [
+    "D-0423"
+  ],
+  "spdx": "CC0-1.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": null,
+  "version": "1.0.0"
+}

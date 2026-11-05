@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/VQFN12_4x4_P0.8_Microchip-UL.step",
+    "generated/FenolitePackageQFN.pretty/VQFN12_4x4_P0.8_Microchip-UL.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:VQFN12_4x4_P0.8_Microchip-UL",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VQFN-12, 0.8 mm pitch, 4 x 4 mm body, 2.2 x 2.2 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "vqfn",
+    "vqfn-12"
+  ],
+  "title": "VQFN-12 4 x 4 mm, 0.8 mm pitch (Microchip UL)",
+  "version": "1.0.0"
+}

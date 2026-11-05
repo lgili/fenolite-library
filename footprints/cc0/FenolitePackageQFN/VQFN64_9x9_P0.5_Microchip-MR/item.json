@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/VQFN64_9x9_P0.5_Microchip-MR.step",
+    "generated/FenolitePackageQFN.pretty/VQFN64_9x9_P0.5_Microchip-MR.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:VQFN64_9x9_P0.5_Microchip-MR",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VQFN-64, 0.5 mm pitch, 9 x 9 mm body, 7.25 x 7.25 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "vqfn",
+    "vqfn-64"
+  ],
+  "title": "VQFN-64 9 x 9 mm, 0.5 mm pitch (Microchip MR/R4X)",
+  "version": "1.0.0"
+}
