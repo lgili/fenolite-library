@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenoliteConnectorHeader.3dshapes/HDR2x6_P1.27_Samtec-FTSH.step",
+    "generated/FenoliteConnectorHeader.pretty/HDR2x6_P1.27_Samtec-FTSH.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenoliteConnectorHeader:HDR2x6_P1.27_Samtec-FTSH",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "2 x 6 pin header, 1.27 mm pitch, vertical, through-hole",
+  "tags": [
+    "2x6",
+    "connector",
+    "dual-row",
+    "ftsh",
+    "header",
+    "pin-header",
+    "tht"
+  ],
+  "title": "Pin header 2 x 6, 1.27 mm pitch, vertical (Samtec FTSH)",
+  "version": "1.0.0"
+}

@@ -1,0 +1,603 @@
+# SPDX-License-Identifier: CC0-1.0
+# Through-hole micro pin headers, 1.27 mm pitch, two rows, 2 to 40 pins per row, vertical; batch 9 of change
+# c0390. Samtec FTSH catalogue page (D-0425): 0.40 mm (.016") square post, lead style -01 (post 3.05 mm above),
+# insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm. The page gives no hole size, so drill and pad are the
+# c0260 land table's, calculated from the post (no [land]).
+schema = "fenolite.c0390-family.v0"
+kind = "footprint"
+namespace = "FenoliteConnectorHeader"
+category = "Pin header"
+date = "2026-11-05"
+tags = ["connector", "header", "pin-header", "tht"]
+
+[record]
+family = "header"
+
+[record.generate]
+lands = 1
+drawing = 1
+
+[[row]]
+name = "HDR2x2_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 2, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 2 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-102-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x2", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 2
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x3_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 3, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 3 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-103-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x3", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 3
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x4_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 4, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 4 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-104-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x4", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 4
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x5_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 5, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 5 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-105-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x5", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 5
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x6_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 6, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 6 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-106-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x6", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 6
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x7_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 7, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 7 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-107-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x7", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 7
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x8_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 8, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 8 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-108-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x8", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 8
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x9_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 9, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 9 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-109-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x9", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 9
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x10_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 10, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 10 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-110-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x10", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 10
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x11_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 11, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 11 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-111-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x11", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 11
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x12_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 12, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 12 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-112-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x12", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 12
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x13_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 13, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 13 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-113-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x13", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 13
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x14_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 14, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 14 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-114-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x14", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 14
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x15_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 15, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 15 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-115-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x15", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 15
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x16_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 16, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 16 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-116-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x16", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 16
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x17_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 17, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 17 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-117-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x17", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 17
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x18_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 18, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 18 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-118-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x18", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 18
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x19_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 19, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 19 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-119-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x19", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 19
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x20_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 20, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 20 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-120-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x20", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 20
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x21_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 21, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 21 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-121-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x21", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 21
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x22_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 22, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 22 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-122-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x22", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 22
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x23_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 23, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 23 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-123-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x23", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 23
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x24_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 24, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 24 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-124-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x24", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 24
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x25_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 25, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 25 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-125-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x25", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 25
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x26_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 26, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 26 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-126-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x26", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 26
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x27_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 27, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 27 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-127-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x27", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 27
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x28_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 28, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 28 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-128-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x28", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 28
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x29_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 29, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 29 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-129-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x29", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 29
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x30_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 30, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 30 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-130-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x30", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 30
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x31_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 31, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 31 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-131-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x31", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 31
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x32_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 32, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 32 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-132-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x32", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 32
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x33_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 33, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 33 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-133-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x33", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 33
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x34_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 34, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 34 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-134-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x34", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 34
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x35_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 35, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 35 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-135-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x35", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 35
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x36_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 36, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 36 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-136-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x36", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 36
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x37_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 37, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 37 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-137-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x37", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 37
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x38_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 38, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 38 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-138-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x38", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 38
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x39_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 39, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 39 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-139-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x39", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 39
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }
+
+[[row]]
+name = "HDR2x40_P1.27_Samtec-FTSH"
+title = "Pin header 2 x 40, 1.27 mm pitch, vertical (Samtec FTSH)"
+summary = "2 x 40 pin header, 1.27 mm pitch, vertical, through-hole"
+sources = ["D-0425"]
+used = "Samtec FTSH catalogue page: FTSH-140-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+tags = ["2x40", "dual-row", "ftsh"]
+record.rows = 2
+record.columns = 40
+record.pitch = "1.27mm"
+record.mount = "tht"
+record.orientation = "vertical"
+record.pin = { width = "0.4mm", length_above = "3.05mm", length_below = "2.29mm" }
+record.body = { height = "2.51mm", width = "3.43mm" }

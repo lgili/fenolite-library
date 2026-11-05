@@ -1,0 +1,76 @@
+{
+  "authors": [
+    "Fenolite contributors"
+  ],
+  "copyright": [
+    "Copyright (c) 2026 Fenolite contributors"
+  ],
+  "datasheets": [
+    {
+      "date": "2025-10-20",
+      "id": "D-0425",
+      "revision": "F-226",
+      "title": "Samtec FTSH series, through-hole micro header, 1.27 mm pitch, catalogue page F-226",
+      "url": "https://suddendocs.samtec.com/catalog_english/ftsh_th.pdf",
+      "used": "Samtec FTSH catalogue page: FTSH-131-01-x-D; .016\" (0.40 mm) square post, pitch .050\" (1.27 mm), lead style -01 A 3.05 mm, insulator 2.51 mm high and 3.43 mm wide, tail 2.29 mm"
+    }
+  ],
+  "evidence": "INFERRED",
+  "featured": null,
+  "generation": {
+    "change": "c0390",
+    "explicit_record": "the generator's pads, graphics and bodies written as a generator='explicit' record (the record kind the library audit reads); outputs regenerate from package.toml",
+    "family_record": {
+      "body": {
+        "height": "2.51mm",
+        "width": "3.43mm"
+      },
+      "columns": 31,
+      "evidence": "INFERRED",
+      "family": "header",
+      "generate": {
+        "drawing": 1,
+        "lands": 1
+      },
+      "id": "FenoliteConnectorHeader:HDR2x31_P1.27_Samtec-FTSH",
+      "mount": "tht",
+      "orientation": "vertical",
+      "pin": {
+        "length_above": "3.05mm",
+        "length_below": "2.29mm",
+        "width": "0.4mm"
+      },
+      "pitch": "1.27mm",
+      "rows": 2,
+      "schema": "fenolite.package.v0",
+      "sources": [
+        "D-0425"
+      ],
+      "summary": "2 x 31 pin header, 1.27 mm pitch, vertical, through-hole"
+    },
+    "fenolite": "e7673c811d5ca25d269c2d9c0f30e686f5148844",
+    "findings": [
+      "warning package.pads-clipped"
+    ],
+    "generator": "header/1 lands/1 drawing/1 nominal; land: calculated lands/1 nominal (INFERRED)",
+    "table": "openspec/changes/c0390-library-growth/families/header-1.27.toml",
+    "tool": "fenolite"
+  },
+  "id": "FenoliteConnectorHeader:HDR2x31_P1.27_Samtec-FTSH",
+  "kind": "footprint",
+  "licence_text_sha256": "0dd25be0803b1e2764b0323560013cdd5ad9ca92ba4780bd7db0cbe6ce821dd8",
+  "modification_notice": "2026-11-05: original item authored for fenolite-library (change c0390) with Fenolite's c0260 package generator from public package dimensions; no upstream design material.",
+  "origin": "authored",
+  "schema": "fenolite.provenance.v0",
+  "sources": [
+    "D-0425"
+  ],
+  "spdx": "CC0-1.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": null,
+  "version": "1.0.0"
+}
