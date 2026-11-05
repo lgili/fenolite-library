@@ -247,3 +247,27 @@ url = "https://github.com/lgili/fenolite-library/tree/main/openspec/changes/c039
 licence = "CC0-1.0"
 retrieved = "2026-11-04"
 used = "c0390 authored symbols: All symbol coordinates, pin placements and graphics authored here (symbols_table.py); no third-party symbol file read."
+
+[sources.D-0423]
+id = "D-0423"
+title = "Microchip Packaging Specification, DS00000049CH (2017-02-03)"
+url = "https://ww1.microchip.com/downloads/en/PackagingSpec/00000049CH.pdf"
+licence = "Microchip Technology copyright; read for numerical facts only, nothing copied"
+retrieved = "2026-11-05"
+used = "c0390 authored footprints: Package outline dimension tables and recommended land pattern tables of the QFN, DFN and SON packages (page and drawing number per item)."
+
+[sources.D-0424]
+id = "D-0424"
+title = "Samtec TSW/HTSW series, through-hole .025\" square post header, 2.54 mm pitch, catalogue page F-226 (2025-11-07)"
+url = "https://suddendocs.samtec.com/catalog_english/tsw_th.pdf"
+licence = "Samtec copyright; read for numerical facts only, nothing copied"
+retrieved = "2026-11-05"
+used = "c0390 authored footprints: Post size, pin centers, lead style -07 lengths, insulator widths and the recommended hole size of the TSW header."
+
+[sources.D-0425]
+id = "D-0425"
+title = "Samtec FTSH series, through-hole micro header, 1.27 mm pitch, catalogue page F-226 (2025-10-20)"
+url = "https://suddendocs.samtec.com/catalog_english/ftsh_th.pdf"
+licence = "Samtec copyright; read for numerical facts only, nothing copied"
+retrieved = "2026-11-05"
+used = "c0390 authored footprints: Post size, pitch, lead style -01 length, insulator height and width and the tail length of the FTSH header."
