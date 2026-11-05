@@ -9,8 +9,8 @@
 build/c0390-sheets.
 
 Per item: `library check` (read back, rules, no error finding), `library audit --item` (licence, provenance,
-sources, notice), the CI `regenerate` comparison (explicit record -> KiCad bytes) plus the STEP body, and the
-review sheets `library check --sheets` renders (each must be a non-empty HTML file holding an SVG drawing).
+sources, notice), the CI `regenerate` comparison (explicit record -> KiCad bytes) plus the STEP body, the
+counter-clockwise pin order of perimeter-numbered packages, and the review sheets `library check --sheets` renders (each must be a non-empty HTML file holding an SVG drawing).
 """
 
 from __future__ import annotations
@@ -37,6 +37,37 @@ def cli(argv: list[str]) -> tuple[int, dict[str, object]]:
         return code, json.loads(text.splitlines()[-1] if text and not text.startswith("{") else text or "{}")
     except json.JSONDecodeError:
         return code, {"raw": text[:400]}
+
+
+PERIMETER_FAMILIES = {"gullwing", "gullwing-fine", "nolead", "dip", "crystal"}
+
+
+def pin_order(folder: Path) -> list[str]:
+    """Perimeter-numbered packages number counter-clockwise from pad 1 in top view (JEDEC/IPC).
+
+    In Fenolite's frame (X right, Y down) the shoelace area of the numbered pads, in numeric order, is then
+    negative. Two-pad and grid or header packages are outside the rule.
+    """
+    problems = []
+    for record in sorted(folder.glob("*.toml")):
+        data = tomllib.loads(record.read_text(encoding="utf-8"))
+        if data.get("schema") != "fenolite.package.v0" or data.get("family") not in PERIMETER_FAMILIES:
+            continue
+        pads: dict[int, tuple[float, float]] = {}
+        for pad in data.get("pad", []):
+            if str(pad["number"]).isdigit():
+                x, y = (float(v.removesuffix("mm")) for v in pad["at"])
+                pads.setdefault(int(pad["number"]), (x, y))
+        points = [pads[k] for k in sorted(pads)]
+        if len(points) < 3:
+            continue
+        area = sum(
+            points[i][0] * points[(i + 1) % len(points)][1] - points[(i + 1) % len(points)][0] * points[i][1]
+            for i in range(len(points))
+        ) / 2
+        if area >= 0:
+            problems.append(f"{record}: pads number clockwise (shoelace area {area:+.3f} in the Y-down frame)")
+    return problems
 
 
 def regenerate(folder: Path) -> list[str]:
@@ -107,7 +138,8 @@ def main() -> None:
             "issues": [f"{i['severity']} {i['code']}: {i['message'][:200]}" for i in reply_a.get("issues", [])],  # type: ignore[union-attr]
         }
         row["regenerate"] = regenerate(root / rel)
-        ok = code == 0 and code_a == 0 and not row["regenerate"] and rendered and all(rendered)
+        row["pin_order"] = pin_order(root / rel)
+        ok = code == 0 and code_a == 0 and not row["regenerate"] and not row["pin_order"] and rendered and all(rendered)
         row["ok"] = bool(ok)
         failed += 0 if ok else 1
         rows.append(row)
