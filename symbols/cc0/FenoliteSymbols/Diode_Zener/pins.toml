@@ -42,7 +42,15 @@ filled = false
 
 [[symbol.graphic]]
 kind = "line"
-points = [["1.778mm", "1.524mm"], ["1.27mm", "1.27mm"], ["1.27mm", "-1.27mm"], ["0.762mm", "-1.524mm"]]
+points = [["1.778mm", "1.524mm"], ["1.27mm", "1.27mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.27mm", "1.27mm"], ["1.27mm", "-1.27mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.27mm", "-1.27mm"], ["0.762mm", "-1.524mm"]]
 
 [[symbol.graphic]]
 kind = "line"

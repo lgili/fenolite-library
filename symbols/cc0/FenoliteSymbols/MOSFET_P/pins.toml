@@ -68,15 +68,27 @@ points = [["-1.27mm", "1.016mm"], ["-1.27mm", "2.032mm"]]
 
 [[symbol.graphic]]
 kind = "line"
-points = [["-1.27mm", "1.524mm"], ["2.54mm", "1.524mm"], ["2.54mm", "2.54mm"]]
+points = [["-1.27mm", "1.524mm"], ["2.54mm", "1.524mm"]]
 
 [[symbol.graphic]]
 kind = "line"
-points = [["-1.27mm", "-1.524mm"], ["2.54mm", "-1.524mm"], ["2.54mm", "-2.54mm"]]
+points = [["2.54mm", "1.524mm"], ["2.54mm", "2.54mm"]]
 
 [[symbol.graphic]]
 kind = "line"
-points = [["-1.27mm", "0mm"], ["2.54mm", "0mm"], ["2.54mm", "-1.524mm"]]
+points = [["-1.27mm", "-1.524mm"], ["2.54mm", "-1.524mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["2.54mm", "-1.524mm"], ["2.54mm", "-2.54mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-1.27mm", "0mm"], ["2.54mm", "0mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["2.54mm", "0mm"], ["2.54mm", "-1.524mm"]]
 
 [[symbol.graphic]]
 kind = "circle"

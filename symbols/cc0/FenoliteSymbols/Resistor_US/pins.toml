@@ -38,4 +38,36 @@ rotation = "180deg"
 
 [[symbol.graphic]]
 kind = "line"
-points = [["-2.54mm", "0mm"], ["-2.222mm", "1.016mm"], ["-1.588mm", "-1.016mm"], ["-0.953mm", "1.016mm"], ["-0.318mm", "-1.016mm"], ["0.317mm", "1.016mm"], ["0.952mm", "-1.016mm"], ["1.588mm", "1.016mm"], ["2.222mm", "-1.016mm"], ["2.54mm", "0mm"]]
+points = [["-2.54mm", "0mm"], ["-2.222mm", "1.016mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-2.222mm", "1.016mm"], ["-1.588mm", "-1.016mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-1.588mm", "-1.016mm"], ["-0.953mm", "1.016mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-0.953mm", "1.016mm"], ["-0.318mm", "-1.016mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-0.318mm", "-1.016mm"], ["0.317mm", "1.016mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["0.317mm", "1.016mm"], ["0.952mm", "-1.016mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["0.952mm", "-1.016mm"], ["1.588mm", "1.016mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.588mm", "1.016mm"], ["2.222mm", "-1.016mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["2.222mm", "-1.016mm"], ["2.54mm", "0mm"]]

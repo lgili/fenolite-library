@@ -31,7 +31,7 @@ pin_names_hidden = false
 
 [[symbol.pins]]
 number = "1"
-at = ["-7.62mm", "0mm"]
+at = ["-7.62mm", "2.54mm"]
 length = "2.54mm"
 
 [[symbol.pins]]
@@ -42,10 +42,10 @@ rotation = "90deg"
 
 [[symbol.pins]]
 number = "3"
-at = ["7.62mm", "0mm"]
+at = ["7.62mm", "2.54mm"]
 length = "2.54mm"
 rotation = "180deg"
 
 [[symbol.graphic]]
 kind = "rect"
-points = [["-5.08mm", "-2.54mm"], ["5.08mm", "2.54mm"]]
+points = [["-5.08mm", "-2.54mm"], ["5.08mm", "5.08mm"]]

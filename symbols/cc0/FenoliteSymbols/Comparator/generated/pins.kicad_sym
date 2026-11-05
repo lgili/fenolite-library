@@ -25,13 +25,16 @@
 			(at 0 0 0)
 			(effects (font (size 1.27 1.27)) (justify left))
 		)
-		(pin_names (offset 0.508) (hide no))
+		(pin_names (offset 0.508) (hide yes))
 		(pin_numbers (hide no))
 		(symbol "Comparator_0_1"
 			(polyline (pts (xy -3.81 -5.08) (xy 3.81 0) (xy -3.81 5.08) (xy -3.81 -5.08)) (stroke (width 0.254) (type default)) (fill (type none)))
 			(polyline (pts (xy -5.08 -2.54) (xy -3.81 -2.54)) (stroke (width 0.254) (type default)) (fill (type none)))
 			(polyline (pts (xy -5.08 2.54) (xy -3.81 2.54)) (stroke (width 0.254) (type default)) (fill (type none)))
 			(polyline (pts (xy 3.81 0) (xy 5.08 0)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy -3.302 2.54) (xy -2.286 2.54)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy -2.794 2.032) (xy -2.794 3.048)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy -3.302 -2.54) (xy -2.286 -2.54)) (stroke (width 0.254) (type default)) (fill (type none)))
 		)
 		(symbol "Comparator_1_1"
 			(pin input line

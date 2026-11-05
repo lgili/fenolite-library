@@ -69,7 +69,25 @@ def leads(x):
     return [line((-2.54, 0), (-x, 0)), line((x, 0), (2.54, 0))]
 
 
-AMP = [line((-5.08, -2.54), (-3.81, -2.54)), line((-5.08, 2.54), (-3.81, 2.54)), line((3.81, 0), (5.08, 0))]
+AMP = [line((-5.08, -2.54), (-3.81, -2.54)), line((-5.08, 2.54), (-3.81, 2.54)), line((3.81, 0), (5.08, 0)),
+       # + and - drawn inside the triangle, so pin names (V+, V-) can stay hidden and never cross the numbers.
+       line((-3.302, 2.54), (-2.286, 2.54)), line((-2.794, 2.032), (-2.794, 3.048)), line((-3.302, -2.54), (-2.286, -2.54))]
+
+
+def segments(graphics):
+    """Split every multi-point line into two-point lines.
+
+    The pinned core's KiCad symbol writer emits only the first two points of a `line` graphic (core gap G-5),
+    so a zigzag or an arc drawn as one polyline would lose all but its first segment.
+    """
+    out = []
+    for g in graphics:
+        if g["kind"] == "line" and len(g["points"]) > 2:
+            extra = {k: v for k, v in g.items() if k not in ("kind", "points")}
+            out += [{"kind": "line", "points": [a, b], **extra} for a, b in zip(g["points"], g["points"][1:])]
+        else:
+            out.append(g)
+    return out
 
 
 def add(name, title, summary, ref, pins, placements, graphics, tags, hide_names=True, hide_numbers=False, category="Generic symbol"):
@@ -77,7 +95,7 @@ def add(name, title, summary, ref, pins, placements, graphics, tags, hide_names=
     if hide_numbers:
         sym["pin_numbers_hidden"] = True
     sym["pins"] = placements
-    sym["graphic"] = graphics
+    sym["graphic"] = segments(graphics)
     ROWS.append({"name": name, "title": title, "summary": summary, "category": category, "tags": tags,
                  "record": {"pin": [{"number": str(n), "name": nm, "type": t} for n, nm, t in pins], "symbol": sym}})
 
@@ -150,14 +168,14 @@ mos("MOSFET_P", "P-channel MOSFET", True)
 add("OpAmp", "Operational amplifier", "Generic single operational amplifier; pins 2 -IN, 3 +IN, 4 V-, 6 OUT, 7 V+ (common 8-pin single pin-out)", "U",
     [(2, "-", "input"), (3, "+", "input"), (4, "V-", "power_in"), (6, "~", "output"), (7, "V+", "power_in")],
     [pin(2, -7.62, -2.54), pin(3, -7.62, 2.54), pin(4, 0, -5.08, 90), pin(6, 7.62, 0, 180), pin(7, 0, 5.08, 270)],
-    [poly((-3.81, -5.08), (3.81, 0), (-3.81, 5.08), filled=False), *AMP], ["amplifier", "opamp"], hide_names=False)
+    [poly((-3.81, -5.08), (3.81, 0), (-3.81, 5.08), filled=False), *AMP], ["amplifier", "opamp"])
 add("Comparator", "Comparator", "Generic comparator; pins 2 -IN, 3 +IN, 4 V-, 7 OUT (open collector), 8 V+", "U",
     [(2, "-", "input"), (3, "+", "input"), (4, "V-", "power_in"), (7, "~", "open_collector"), (8, "V+", "power_in")],
     [pin(2, -7.62, -2.54), pin(3, -7.62, 2.54), pin(4, 0, -5.08, 90), pin(7, 7.62, 0, 180), pin(8, 0, 5.08, 270)],
-    [poly((-3.81, -5.08), (3.81, 0), (-3.81, 5.08), filled=False), *AMP], ["comparator"], hide_names=False)
+    [poly((-3.81, -5.08), (3.81, 0), (-3.81, 5.08), filled=False), *AMP], ["comparator"])
 add("Regulator_Linear", "Linear regulator, three terminals", "Generic three-terminal positive linear regulator; pins 1 VIN, 2 GND, 3 VOUT", "U",
     [(1, "VIN", "power_in"), (2, "GND", "power_in"), (3, "VOUT", "power_out")],
-    [pin(1, -7.62, 0, 0), pin(2, 0, -5.08, 90), pin(3, 7.62, 0, 180)], [rect((-5.08, -2.54), (5.08, 2.54))], ["ldo", "regulator"], hide_names=False)
+    [pin(1, -7.62, 2.54, 0), pin(2, 0, -5.08, 90), pin(3, 7.62, 2.54, 180)], [rect((-5.08, -2.54), (5.08, 5.08))], ["ldo", "regulator"], hide_names=False)
 add("Crystal", "Crystal, two terminals", "Generic quartz crystal, two terminals", "Y",
     [(1, "1", "passive"), (2, "2", "passive")], two,
     [*leads(1.524), rect((-0.762, -1.524), (0.762, 1.524)), line((-1.524, -1.27), (-1.524, 1.27)), line((1.524, -1.27), (1.524, 1.27))], ["crystal"], hide_numbers=True)

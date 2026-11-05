@@ -30,6 +30,8 @@
 		(symbol "Diode_Zener_0_1"
 			(polyline (pts (xy -1.27 -1.27) (xy 1.27 0) (xy -1.27 1.27) (xy -1.27 -1.27)) (stroke (width 0.254) (type default)) (fill (type none)))
 			(polyline (pts (xy 1.778 1.524) (xy 1.27 1.27)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 1.27 1.27) (xy 1.27 -1.27)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 1.27 -1.27) (xy 0.762 -1.524)) (stroke (width 0.254) (type default)) (fill (type none)))
 			(polyline (pts (xy -1.27 0) (xy 1.27 0)) (stroke (width 0.254) (type default)) (fill (type none)))
 			(polyline (pts (xy -2.54 0) (xy -1.27 0)) (stroke (width 0.254) (type default)) (fill (type none)))
 			(polyline (pts (xy 1.27 0) (xy 2.54 0)) (stroke (width 0.254) (type default)) (fill (type none)))

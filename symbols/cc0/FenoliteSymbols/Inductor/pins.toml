@@ -38,4 +38,128 @@ rotation = "180deg"
 
 [[symbol.graphic]]
 kind = "line"
-points = [["-2.54mm", "0mm"], ["-2.492mm", "0.243mm"], ["-2.354mm", "0.449mm"], ["-2.148mm", "0.587mm"], ["-1.905mm", "0.635mm"], ["-1.662mm", "0.587mm"], ["-1.456mm", "0.449mm"], ["-1.318mm", "0.243mm"], ["-1.27mm", "0mm"], ["-1.222mm", "0.243mm"], ["-1.084mm", "0.449mm"], ["-0.878mm", "0.587mm"], ["-0.635mm", "0.635mm"], ["-0.392mm", "0.587mm"], ["-0.186mm", "0.449mm"], ["-0.048mm", "0.243mm"], ["0mm", "0mm"], ["0.048mm", "0.243mm"], ["0.186mm", "0.449mm"], ["0.392mm", "0.587mm"], ["0.635mm", "0.635mm"], ["0.878mm", "0.587mm"], ["1.084mm", "0.449mm"], ["1.222mm", "0.243mm"], ["1.27mm", "0mm"], ["1.318mm", "0.243mm"], ["1.456mm", "0.449mm"], ["1.662mm", "0.587mm"], ["1.905mm", "0.635mm"], ["2.148mm", "0.587mm"], ["2.354mm", "0.449mm"], ["2.492mm", "0.243mm"], ["2.54mm", "0mm"]]
+points = [["-2.54mm", "0mm"], ["-2.492mm", "0.243mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-2.492mm", "0.243mm"], ["-2.354mm", "0.449mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-2.354mm", "0.449mm"], ["-2.148mm", "0.587mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-2.148mm", "0.587mm"], ["-1.905mm", "0.635mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-1.905mm", "0.635mm"], ["-1.662mm", "0.587mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-1.662mm", "0.587mm"], ["-1.456mm", "0.449mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-1.456mm", "0.449mm"], ["-1.318mm", "0.243mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-1.318mm", "0.243mm"], ["-1.27mm", "0mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-1.27mm", "0mm"], ["-1.222mm", "0.243mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-1.222mm", "0.243mm"], ["-1.084mm", "0.449mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-1.084mm", "0.449mm"], ["-0.878mm", "0.587mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-0.878mm", "0.587mm"], ["-0.635mm", "0.635mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-0.635mm", "0.635mm"], ["-0.392mm", "0.587mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-0.392mm", "0.587mm"], ["-0.186mm", "0.449mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-0.186mm", "0.449mm"], ["-0.048mm", "0.243mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-0.048mm", "0.243mm"], ["0mm", "0mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["0mm", "0mm"], ["0.048mm", "0.243mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["0.048mm", "0.243mm"], ["0.186mm", "0.449mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["0.186mm", "0.449mm"], ["0.392mm", "0.587mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["0.392mm", "0.587mm"], ["0.635mm", "0.635mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["0.635mm", "0.635mm"], ["0.878mm", "0.587mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["0.878mm", "0.587mm"], ["1.084mm", "0.449mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.084mm", "0.449mm"], ["1.222mm", "0.243mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.222mm", "0.243mm"], ["1.27mm", "0mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.27mm", "0mm"], ["1.318mm", "0.243mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.318mm", "0.243mm"], ["1.456mm", "0.449mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.456mm", "0.449mm"], ["1.662mm", "0.587mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.662mm", "0.587mm"], ["1.905mm", "0.635mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.905mm", "0.635mm"], ["2.148mm", "0.587mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["2.148mm", "0.587mm"], ["2.354mm", "0.449mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["2.354mm", "0.449mm"], ["2.492mm", "0.243mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["2.492mm", "0.243mm"], ["2.54mm", "0mm"]]

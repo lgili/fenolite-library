@@ -28,11 +28,11 @@
 		(pin_names (offset 0.508) (hide no))
 		(pin_numbers (hide no))
 		(symbol "Regulator_Linear_0_1"
-			(rectangle (start -5.08 -2.54) (end 5.08 2.54) (stroke (width 0.254) (type default)) (fill (type none)))
+			(rectangle (start -5.08 -2.54) (end 5.08 5.08) (stroke (width 0.254) (type default)) (fill (type none)))
 		)
 		(symbol "Regulator_Linear_1_1"
 			(pin power_in line
-				(at -7.62 0 0)
+				(at -7.62 2.54 0)
 				(length 2.54)
 				(name "VIN" (effects (font (size 1.27 1.27))))
 				(number "1" (effects (font (size 1.27 1.27))))
@@ -44,7 +44,7 @@
 				(number "2" (effects (font (size 1.27 1.27))))
 			)
 			(pin power_out line
-				(at 7.62 0 180)
+				(at 7.62 2.54 180)
 				(length 2.54)
 				(name "VOUT" (effects (font (size 1.27 1.27))))
 				(number "3" (effects (font (size 1.27 1.27))))

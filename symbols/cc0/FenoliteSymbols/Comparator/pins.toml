@@ -37,7 +37,7 @@ type = "power_in"
 
 [symbol]
 reference = "U"
-pin_names_hidden = false
+pin_names_hidden = true
 
 [[symbol.pins]]
 number = "2"
@@ -83,3 +83,15 @@ points = [["-5.08mm", "2.54mm"], ["-3.81mm", "2.54mm"]]
 [[symbol.graphic]]
 kind = "line"
 points = [["3.81mm", "0mm"], ["5.08mm", "0mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-3.302mm", "2.54mm"], ["-2.286mm", "2.54mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-2.794mm", "2.032mm"], ["-2.794mm", "3.048mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-3.302mm", "-2.54mm"], ["-2.286mm", "-2.54mm"]]

@@ -31,6 +31,8 @@
 			(polyline (pts (xy -2.54 -1.27) (xy 0 0) (xy -2.54 1.27) (xy -2.54 -1.27)) (stroke (width 0.254) (type default)) (fill (type none)))
 			(polyline (pts (xy 2.54 -1.27) (xy 0 0) (xy 2.54 1.27) (xy 2.54 -1.27)) (stroke (width 0.254) (type default)) (fill (type none)))
 			(polyline (pts (xy 0.508 1.524) (xy 0 1.27)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 0 1.27) (xy 0 -1.27)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 0 -1.27) (xy -0.508 -1.524)) (stroke (width 0.254) (type default)) (fill (type none)))
 		)
 		(symbol "TVS_Bidirectional_1_1"
 			(pin passive line
