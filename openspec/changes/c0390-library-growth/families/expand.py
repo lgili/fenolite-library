@@ -58,7 +58,7 @@ def toml_text(record: dict[str, object], comments: list[str]) -> str:
     ordered = [k for k in HEADER if k in record] + [k for k in record if k not in HEADER]
     for key in ordered:
         value = record[key]
-        if key in SECTIONS or key in ARRAY_TABLES:
+        if key in SECTIONS or (key in ARRAY_TABLES and isinstance(value, list)):
             continue
         lines.append(f"{_key(key)} = {_scalar(value)}")
     for key in ordered:
@@ -72,8 +72,7 @@ def toml_text(record: dict[str, object], comments: list[str]) -> str:
                     continue
                 for row in rows:
                     lines += ["", f"[[{key}.{sub}]]"] + [f"{_key(k)} = {_scalar(v)}" for k, v in row.items()]
-        elif key in ARRAY_TABLES:
-            assert isinstance(value, list)
+        elif key in ARRAY_TABLES and isinstance(value, list):  # a header's ``pin`` is one table
             for row in value:
                 lines += ["", f"[[{key}]]"] + [f"{_key(k)} = {_scalar(v)}" for k, v in row.items()]
     return "\n".join(lines) + "\n"
@@ -218,6 +217,18 @@ def write(rows: list[dict[str, object]], root: Path) -> None:
 FENOLITE_PIN = "e7673c811d5ca25d269c2d9c0f30e686f5148844"
 
 
+def _terminals(data: dict[str, object]) -> dict[str, int]:
+    """The explicit record's ``pins``: the terminal count the library check expects, counted as the core
+    counts a family record (an exposed pad or a numbered tab is one more terminal; a header has rows x
+    columns)."""
+    family = data.get("family")
+    if family == "nolead" and isinstance(data.get("ep"), dict):
+        return {"pins": int(data["pins"]) + 1}  # type: ignore[call-overload]
+    if family == "header":
+        return {"pins": int(data["rows"]) * int(data["columns"])}  # type: ignore[call-overload]
+    return {}
+
+
 def _footprint_record(row: dict[str, object], folder: Path) -> tuple[str, dict[str, object]]:
     """Run the c0260 generator on the row's family record and return the explicit record text the
     library's record parser reads, with the facts of the generation for PROVENANCE.json."""
@@ -270,6 +281,7 @@ def _footprint_record(row: dict[str, object], folder: Path) -> tuple[str, dict[s
                 "generator": "explicit",
                 "kind": fp.kind,
                 **{k: v for k, v in data.items() if k in ("pins", "pitch")},
+                **_terminals(data),
                 **{
                     k: {
                         n: (f"{b['min']}..{b['max']}" if isinstance(b, dict) else b)
