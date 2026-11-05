@@ -1,0 +1,69 @@
+{
+  "authors": [
+    "Fenolite contributors"
+  ],
+  "copyright": [
+    "Copyright (c) 2026 Fenolite contributors"
+  ],
+  "datasheets": [
+    {
+      "date": "2012-08-16",
+      "id": "D-0392",
+      "revision": "16-Aug-12",
+      "title": "Vishay Dale ILBB-0603 multilayer ferrite bead, document 34024",
+      "url": "https://www.vishay.com/docs/34024/ilbb0603.pdf",
+      "used": "Dimensional outline: length 1.6 ± 0.15, width 0.8 ± 0.15, height 0.8 ± 0.15, termination 0.36 ± 0.15 mm"
+    }
+  ],
+  "evidence": "INFERRED",
+  "featured": null,
+  "generation": {
+    "change": "c0390",
+    "explicit_record": "the generator's pads, graphics and bodies written as a generator='explicit' record (the record kind the library audit reads); outputs regenerate from package.toml",
+    "family_record": {
+      "body": {
+        "height": "0.65mm..0.95mm",
+        "length": "1.45mm..1.75mm",
+        "width": "0.65mm..0.95mm"
+      },
+      "evidence": "INFERRED",
+      "family": "chip",
+      "generate": {
+        "drawing": 1,
+        "lands": 1
+      },
+      "id": "FenoliteInductorSMD:CHIP0603_B1.6x0.8",
+      "polarity": "none",
+      "schema": "fenolite.package.v0",
+      "sources": [
+        "D-0392"
+      ],
+      "summary": "Multilayer chip ferrite bead 0603 (1608 metric), 1.6 x 0.8 x 0.8 mm body, calculated land",
+      "terminal": {
+        "length": "0.21mm..0.51mm"
+      }
+    },
+    "fenolite": "e7673c811d5ca25d269c2d9c0f30e686f5148844",
+    "findings": [],
+    "generator": "chip/1 lands/1 drawing/1 nominal; land: calculated lands/1 nominal (INFERRED)",
+    "table": "openspec/changes/c0390-library-growth/families/chip-ferrite.toml",
+    "tool": "fenolite"
+  },
+  "id": "FenoliteInductorSMD:CHIP0603_B1.6x0.8",
+  "kind": "footprint",
+  "licence_text_sha256": "0dd25be0803b1e2764b0323560013cdd5ad9ca92ba4780bd7db0cbe6ce821dd8",
+  "modification_notice": "2026-11-04: original item authored for fenolite-library (change c0390) with Fenolite's c0260 package generator from public package dimensions; no upstream design material.",
+  "origin": "authored",
+  "schema": "fenolite.provenance.v0",
+  "sources": [
+    "D-0392"
+  ],
+  "spdx": "CC0-1.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": null,
+  "version": "1.0.0"
+}

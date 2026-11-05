@@ -1,0 +1,74 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0392 Vishay Dale ILBB-0603 multilayer ferrite bead, document 34024 (16-Aug-12). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.package.v0"
+id = "FenoliteInductorSMD:CHIP0603_B1.6x0.8"
+version = "1.0.0"
+summary = "Multilayer chip ferrite bead 0603 (1608 metric), 1.6 x 0.8 x 0.8 mm body, calculated land"
+category = "Chip ferrite bead"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0392"]
+generator = "explicit"
+kind = "smd"
+family = "chip"
+body = { height = "0.65mm..0.95mm", length = "1.45mm..1.75mm", width = "0.65mm..0.95mm" }
+
+[[pad]]
+number = "1"
+shape = "roundrect"
+size = ["0.86mm", "1.01mm"]
+at = ["-0.745mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 116279
+
+[[pad]]
+number = "2"
+shape = "roundrect"
+size = ["0.86mm", "1.01mm"]
+at = ["0.745mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 116279
+
+[[graphic]]
+key = "F.Fab:0"
+kind = "line"
+layer = "F.Fab"
+points = [["-0.8mm", "-0.4mm"], ["0.8mm", "-0.4mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:1"
+kind = "line"
+layer = "F.Fab"
+points = [["0.8mm", "-0.4mm"], ["0.8mm", "0.4mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:2"
+kind = "line"
+layer = "F.Fab"
+points = [["0.8mm", "0.4mm"], ["-0.8mm", "0.4mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:3"
+kind = "line"
+layer = "F.Fab"
+points = [["-0.8mm", "0.4mm"], ["-0.8mm", "-0.4mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.CrtYd:4"
+kind = "rect"
+layer = "F.CrtYd"
+points = [["-1.68mm", "-1.01mm"], ["1.68mm", "1.01mm"]]
+width = "0.05mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.95mm"
+outline = [["-0.8mm", "-0.4mm"], ["0.8mm", "-0.4mm"], ["0.8mm", "0.4mm"], ["-0.8mm", "0.4mm"]]
+name = "body"
+z_min = "0mm"
+z_max = "0.95mm"

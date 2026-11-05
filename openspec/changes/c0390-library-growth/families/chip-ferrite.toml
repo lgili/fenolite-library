@@ -1,0 +1,27 @@
+# SPDX-License-Identifier: CC0-1.0
+# Chip ferrite beads, batch 1 of change c0390. Vishay ILBB-0603 dimensional outline (D-0392).
+# Land: calculator lands/1 (INFERRED).
+schema = "fenolite.c0390-family.v0"
+kind = "footprint"
+namespace = "FenoliteInductorSMD"
+category = "Chip ferrite bead"
+date = "2026-11-04"
+sources = ["D-0392"]
+tags = ["chip", "ferrite-bead", "inductor", "smd", "two-terminal"]
+
+[record]
+family = "chip"
+polarity = "none"
+
+[record.generate]
+lands = 1
+drawing = 1
+
+[[row]]
+name = "CHIP0603_B1.6x0.8"
+title = "Chip ferrite bead 0603 (1608 metric)"
+summary = "Multilayer chip ferrite bead 0603 (1608 metric), 1.6 x 0.8 x 0.8 mm body, calculated land"
+used = "Dimensional outline: length 1.6 ± 0.15, width 0.8 ± 0.15, height 0.8 ± 0.15, termination 0.36 ± 0.15 mm"
+tags = ["0603", "1608-metric"]
+record.body = { length = "1.45mm..1.75mm", width = "0.65mm..0.95mm", height = "0.65mm..0.95mm" }
+record.terminal = { length = "0.21mm..0.51mm" }
