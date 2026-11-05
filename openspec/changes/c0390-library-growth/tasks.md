@@ -19,6 +19,11 @@
   Proof: a verdict per source with the evidence; unclear sources listed for the maintainer
   (`licence-register.md`).
 - [ ] 9. M2 batches 6 to 9 (QFN/DFN/QFP, TO, DIP, headers and sockets).
+  Done so far (2026-11-05): batch 6 DFN/SON 14, QFN 65, TQFP/LQFP/MQFP 13 (Microchip D-0423); batch 8
+  PDIP/SPDIP 9 (D-0423); batch 9 pin headers 2.54 mm 80 (Samtec TSW, D-0424) and 1.27 mm 39 (Samtec FTSH,
+  D-0425). Proof: `families/prove.py` 220/220 (check with no finding, audit, byte-equal regeneration, 440
+  review sheets, counter-clockwise pin order). Open: TO (batch 7), 2.00 mm headers and sockets (no source
+  with post size and hole yet), exposed-pad QFP/SO (gap G-2), drawings left out per the batch note.
 - [ ] 10. M3 batches 10 to 12 (BGA, terminal blocks, USB, crystals, devices).
 - [ ] 11. M4 imports from accepted upstream libraries.
 - [ ] 12. Report per batch: family or source, licence, items, proof, commit, open points; no push.
