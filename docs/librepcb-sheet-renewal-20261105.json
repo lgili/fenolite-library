@@ -138,5 +138,71 @@
   ],
   "result": "every sheet is its own core's packaged template (page.html with viewer.css and viewer.js inlined) with the embedded data string and live flag filled in, plus the review content inserted at each </body>; the embedded data string, the live flag and the review content are byte-identical between old and new, so only the inlined viewer assets differ"
  },
- "not_claimed": "no new geometry, evidence or human review of the parts; no release or publication"
+ "not_claimed": "no new geometry, evidence or human review of the parts; no library release or publication",
+ "version_bump": {
+  "why": "library audit --base main (check.yml versions and audit jobs) raises library.version-rule for any item whose files changed since v1.0.0 without a higher version; the viewer-asset renewal above changed the four record.toml files. The version is part of the record digest, so the bump changes the digests and the reviews were accepted again.",
+  "decision": "relayed by the coordinating Fenolite session (Master) on 2026-11-05 as the maintainer's choice (option A): bump to 1.0.1 and re-accept, provided the version field is the only change",
+  "files_changed": "per item: record.toml header `version`, item.json `version`, PROVENANCE.json `version`; the device's item.json `depends` versions of its symbol and footprint. No generated definition, geometry, pin, pad or other field changed (git diff of the bump: only those version lines).",
+  "sheet_check": "core 3675515a sheets before and after the bump: the embedded data and the review content differ only in the version's last digit (0 → 1); the footprint and symbol scene sheets are byte-identical",
+  "core": "3675515adf5c8ee7a778cf2b30254401f12f54b4",
+  "commands": "per item: fenolite library check ITEM --json, then fenolite library review RECORD --accept --reviewer 'Luiz Carlos Gili' --sheet SHA --dry-run, then --confirm --plan PLAN_ID; then library check (exit 0, accepted); then fenolite library audit . --base b7e141ea (exit 0)",
+  "items": [
+   {
+    "id": "LibrePCBBaseReview:Resistor",
+    "record": "symbols/cc0/LibrePCBBaseReview/Resistor/record.toml",
+    "old_digest": "ec564da8f0087e3bda5711c7931fe193c954818abd785a28b1e98881316562fd",
+    "new_digest": "6381ab5baaee13695d8bead530b66edaea194dbef0bc7f4bc35f3b6acd7b377b",
+    "change": "version 1.0.0 → 1.0.1 only (forced by library.version-rule after the viewer-asset renewal)",
+    "old_sheet_sha256": "7f6eb16737b50122ed4033de84acd1aab802269e9c556cd1dac9330838fcb607",
+    "new_sheet_sha256": "d0fb83b01ef6f877532653c67d9c609afe99cc897955d4b5f7e343b8b90ac71f",
+    "plan_id": "3712899b7658c219",
+    "check_exit_after": 0,
+    "review_state_after": "accepted",
+    "record_sha256_after": "db7883f51212ac232bdd26416d36a37c298c851a72836f5be47a1476df1336bd",
+    "accepted": "re-accepted by a Claude agent on the maintainer's delegation, no new human review of the part"
+   },
+   {
+    "id": "LibrePCBBaseReview:RESC1608__0603_",
+    "record": "footprints/cc0/LibrePCBBaseReview/RESC1608__0603_/record.toml",
+    "old_digest": "af92ab847efdbd4307a1db62ef1aa279a6167f1465df8087f45ae1ef598c408b",
+    "new_digest": "7040a37120ac3a1e590b40adb452992503d9a9aa9454e4a0ea248a0719944b31",
+    "change": "version 1.0.0 → 1.0.1 only (forced by library.version-rule after the viewer-asset renewal)",
+    "old_sheet_sha256": "47b778f9b84f4a634d59ff06a510080d0b1a2f1d6916a732d29343c4b13825a8",
+    "new_sheet_sha256": "e6ef93b23a3bfae5493fefbdc88c555ef16d8bf8e772702e14488c474be681b2",
+    "plan_id": "fa620b4349d073c2",
+    "check_exit_after": 0,
+    "review_state_after": "accepted",
+    "record_sha256_after": "087381fc7c43da9017ce57a1a9eee68450472382fbf01bc1f4b32f0a6216883e",
+    "accepted": "re-accepted by a Claude agent on the maintainer's delegation, no new human review of the part"
+   },
+   {
+    "id": "LibrePCBBaseReview:RESC1608__0603__Density_Level_A__max_protrusion_",
+    "record": "footprints/cc0/LibrePCBBaseReview/RESC1608__0603__Density_Level_A__max_protrusion_/record.toml",
+    "old_digest": "7f196b611fd593d17b50845d9cac2c48ab9279b68dd63dbf411ba6e4c84f3439",
+    "new_digest": "2c36d563f5d1da652de63bc3963b209311547761f27e7171e026f75b8feb2bd4",
+    "change": "version 1.0.0 → 1.0.1 only (forced by library.version-rule after the viewer-asset renewal)",
+    "old_sheet_sha256": "f19d700547fdd6ea4d374f8dcbf0a54c97c5e9a927f44c3adfeb88bcdbf784af",
+    "new_sheet_sha256": "78193b84f4503e8de055bdbea2cd02bed2ec3354112c8c4e38e20dd27e9ba8f9",
+    "plan_id": "e460dd1cbb8200c3",
+    "check_exit_after": 0,
+    "review_state_after": "accepted",
+    "record_sha256_after": "4bc120db15535e6454b054ceec4fa30c39d3a90f0d9a7eacc485f948432518a6",
+    "accepted": "re-accepted by a Claude agent on the maintainer's delegation, no new human review of the part"
+   },
+   {
+    "id": "LibrePCBBaseReview:Resistor_1608__0603_",
+    "record": "devices/cc0/LibrePCBBaseReview/Resistor_1608__0603_/record.toml",
+    "old_digest": "5cff60a035db825b5d5cd2ecfd2057d48c5567ad6fa0fabf7ac10373a43657f7",
+    "new_digest": "cfeeb8bd9d6c1581f8ceea52bc3aae8630a33d5374ab77e688b33a1827a1fe3a",
+    "change": "version 1.0.0 → 1.0.1 only (forced by library.version-rule after the viewer-asset renewal)",
+    "old_sheet_sha256": "f163d022a5f8736e4d06e8957faf3a1fc2ddc70e64e211b6481391428d95059f",
+    "new_sheet_sha256": "00bb9d90141da98c6935fd1a7671a4f06725c7ce860a8bf9994aebbb700adecd",
+    "plan_id": "cb377c8141843f43",
+    "check_exit_after": 0,
+    "review_state_after": "accepted",
+    "record_sha256_after": "c77d281ec72cbae14ab5fa79708c9bce70956606b16f28c2776e67042f7e5ea1",
+    "accepted": "re-accepted by a Claude agent on the maintainer's delegation, no new human review of the part"
+   }
+  ]
+ }
 }

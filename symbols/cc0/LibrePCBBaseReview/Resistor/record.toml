@@ -1,6 +1,6 @@
 schema = "fenolite.pins.v0"
 id = "LibrePCBBaseReview:Resistor"
-version = "1.0.0"
+version = "1.0.1"
 summary = "Seeded from LibrePCB Base: Resistor"
 licence = "CC0-1.0"
 evidence = "CORPUS-VERIFIED (review 2026-11-05)"
@@ -35,11 +35,11 @@ body_style = 1
 [[reviewed_by]]
 who = "Luiz Carlos Gili"
 date = "2026-11-05"
-version = "1.0.0"
-digest = "ec564da8f0087e3bda5711c7931fe193c954818abd785a28b1e98881316562fd"
+version = "1.0.1"
+digest = "6381ab5baaee13695d8bead530b66edaea194dbef0bc7f4bc35f3b6acd7b377b"
 evidence = "CORPUS-VERIFIED"
-sheet_sha256 = "7f6eb16737b50122ed4033de84acd1aab802269e9c556cd1dac9330838fcb607"
+sheet_sha256 = "d0fb83b01ef6f877532653c67d9c609afe99cc897955d4b5f7e343b8b90ac71f"
 previous_evidence = "UNVERIFIED"
 fenolite_version = "0.7.0.dev0"
-record_sha256 = "684054266336e19ec57007b78a80c373a1480efc40ec345a7ebb31c48c8f028a"
+record_sha256 = "671bb1621165183ff86902313c2171ad71ec781441cec5373b049e5b3b0468a3"
 accepted_codes = ["library.pin-grid"]

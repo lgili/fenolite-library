@@ -11,6 +11,9 @@
   each review sheet (viewer.js, viewer.css, page.html) changed since `e7673c81`; record digests, embedded scenes
   and review content are byte-identical. A Claude agent renewed them on the maintainer's delegation, with no new
   human review of the parts (`docs/librepcb-sheet-renewal-20261105.json`).
+- Bump those four items to 1.0.1 (record, item.json, PROVENANCE.json, the device's depends): `library.version-rule`
+  requires it after the renewal changed their files. The version is part of the record digest, so a Claude agent
+  re-accepted them on the maintainer's delegation; the version is the only change, with no new human review.
 - `bench.yml` runs the recorded `verify-source` step read-only, as the `proof` job of `check.yml` does since
   1.0.0; its first run (41954400114) failed ecc83 (two project files, FEN-2001) and the Coldfire kit.
 - The pinned-Fenolite action runs `kicad-cli` in its container with `HOME` under `$RUNNER_TEMP`: the runner's uid
