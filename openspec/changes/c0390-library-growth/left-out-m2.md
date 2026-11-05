@@ -76,3 +76,10 @@ Image-only drawings not yet read: most PLCC, TSSOP/SSOP/SOIC, SOT, TO and the ve
 - p1452 3-Lead TO-252 D-PAK (K4): no land pattern, and the generator has no calibrated land for an SMD tab.
 - p50-55 DDPAK (EB, ET, EK): the land is given, but the pad length L1 has a maximum only, so the body cannot be placed against the land.
 - SOT-223 (p106-109) not read: already in M1 from Diodes (D-0406).
+
+## BGA (batch 10)
+Only drawings whose ball map follows from the table are taken (a full array, or a centred block seen on the bottom view).
+- p967 22-Ball CABGA (JY), p993 84-Ball (GQ), p1011/p1014 129-Ball (2H, GW), p1020 144-Ball (JWX), p1023 168-Ball (AFA), p1032 323-Ball (HX), p1039 61-Ball (5HX), p1048/p1051 78-Ball (5G, GA), p1055 64-Ball (7U), p1058 84-Ball (SX), p1061 100-Ball (SY), p1064 144-Ball (SZ), p1071 144-Ball (TZ): balls left out of the grid in a pattern shown only on the bottom-view drawing; needs the ball map read as a list.
+- p971 24-Ball (TD), p991 48-Ball (CD): the table gives no pitch.
+- p978 169-Ball (HF): no land pattern, and the land table has no calibrated ball ratio.
+- p1005 121-Ball (TE), p1029 169-Ball (7G NJ), p1044 64-Ball (GA): same values as 3XX, 7G J and 4G, which are taken.
