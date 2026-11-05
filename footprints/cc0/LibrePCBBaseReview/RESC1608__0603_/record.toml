@@ -3,7 +3,7 @@ id = "LibrePCBBaseReview:RESC1608__0603_"
 version = "1.0.0"
 summary = "Seeded from LibrePCB Base: RESC1608 (0603)"
 licence = "CC0-1.0"
-evidence = "CORPUS-VERIFIED (review 2026-11-04)"
+evidence = "CORPUS-VERIFIED (review 2026-11-05)"
 sources = ["D-0005"]
 origin = { library = "LibrePCB Base", version = "662a148d46ac785a84fd68b98e311322771a0bc2", element = "2a40ad27-1ab7-41ee-8f60-d70df83927a5", licence = "CC0-1.0" }
 generator = "explicit"
@@ -76,11 +76,11 @@ width = "0.1mm"
 
 [[reviewed_by]]
 who = "Luiz Carlos Gili"
-date = "2026-11-04"
+date = "2026-11-05"
 version = "1.0.0"
 digest = "af92ab847efdbd4307a1db62ef1aa279a6167f1465df8087f45ae1ef598c408b"
 evidence = "CORPUS-VERIFIED"
-sheet_sha256 = "f3c42914f77b11e3747fbff845d19eac09476f16b4247cc6282ddcf24f8c2c27"
+sheet_sha256 = "47b778f9b84f4a634d59ff06a510080d0b1a2f1d6916a732d29343c4b13825a8"
 previous_evidence = "UNVERIFIED"
 fenolite_version = "0.7.0.dev0"
-record_sha256 = "2a8cdbeaf02f8b7a7e51440dd547b90706437552c50a7bce280ae56430e7c33d"
+record_sha256 = "466f23fddb5e9a36a191525c418ab6d13f5ef13365f3b84441d00ec6a1d2630e"

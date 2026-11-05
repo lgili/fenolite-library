@@ -7,6 +7,10 @@
   (cropped to the board), builds each block's usage circuit for its sheet, and passes them with
   `failures.json` to `fenolite library gallery --renders`; an image that cannot be made is a placeholder
   naming why, listed in the job summary. The old page rewrite for a failed render is gone (c0405 task 3.2).
+- Renew the sheet hashes of the four reviewed LibrePCBBaseReview items for core `3675515a`: the viewer embedded in
+  each review sheet (viewer.js, viewer.css, page.html) changed since `e7673c81`; record digests, embedded scenes
+  and review content are byte-identical. A Claude agent renewed them on the maintainer's delegation, with no new
+  human review of the parts (`docs/librepcb-sheet-renewal-20261105.json`).
 - `bench.yml` runs the recorded `verify-source` step read-only, as the `proof` job of `check.yml` does since
   1.0.0; its first run (41954400114) failed ecc83 (two project files, FEN-2001) and the Coldfire kit.
 - The pinned-Fenolite action runs `kicad-cli` in its container with `HOME` under `$RUNNER_TEMP`: the runner's uid
