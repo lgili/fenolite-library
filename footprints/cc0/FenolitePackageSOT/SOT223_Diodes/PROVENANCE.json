@@ -1,0 +1,111 @@
+{
+  "authors": [
+    "Fenolite contributors"
+  ],
+  "copyright": [
+    "Copyright (c) 2026 Fenolite contributors"
+  ],
+  "datasheets": [
+    {
+      "date": "2017-03-06",
+      "id": "D-0406",
+      "revision": "2017-03-06",
+      "title": "Diodes Incorporated package information SOT223",
+      "url": "https://www.diodes.com/assets/Package-Files/SOT223.pdf",
+      "used": "Table: A 1.55-1.65, A1 0.010-0.15, b 0.60-0.80, b1 2.90-3.10, C 0.20-0.30, D 6.45-6.55, E 3.45-3.55, E1 6.90-7.10, e1 2.30, L 0.85-1.05 mm; pad layout C 2.30, C1 6.40, X 1.20, X1 3.30, Y 1.60, Y1 1.60 mm"
+    }
+  ],
+  "evidence": "INFERRED",
+  "featured": null,
+  "generation": {
+    "change": "c0390",
+    "explicit_record": "the generator's pads, graphics and bodies written as a generator='explicit' record (the record kind the library audit reads); outputs regenerate from package.toml",
+    "family_record": {
+      "arrangement": "sides",
+      "body": {
+        "height": "1.55mm..1.65mm",
+        "length": "6.45mm..6.55mm",
+        "standoff": "0.010mm..0.15mm",
+        "width": "3.45mm..3.55mm"
+      },
+      "evidence": "INFERRED",
+      "family": "gullwing",
+      "generate": {
+        "drawing": 1,
+        "lands": 1
+      },
+      "id": "FenolitePackageSOT:SOT223_Diodes",
+      "land": {
+        "pad": {
+          "length": "1.60mm",
+          "width": "1.20mm"
+        },
+        "row_spacing": "6.40mm",
+        "source": "D-0406 suggested pad layout",
+        "tab": {
+          "at": "3.20mm",
+          "length": "1.60mm",
+          "width": "3.30mm"
+        }
+      },
+      "lead": {
+        "length": "0.85mm..1.05mm",
+        "thickness": "0.20mm..0.30mm",
+        "width": "0.60mm..0.80mm"
+      },
+      "pins": 4,
+      "pitch": "2.30mm",
+      "schema": "fenolite.package.v0",
+      "side": [
+        {
+          "edge": "left",
+          "numbers": [
+            "1",
+            "2",
+            "3"
+          ],
+          "positions": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "sources": [
+        "D-0406"
+      ],
+      "span": "6.90mm..7.10mm",
+      "summary": "SOT-223, 3 leads and tab, 2.3 mm pitch, 6.5 x 3.5 mm body, Diodes Inc. suggested land",
+      "tab": {
+        "edge": "right",
+        "length": "0.85mm..1.05mm",
+        "number": "4",
+        "width": "2.90mm..3.10mm"
+      }
+    },
+    "fenolite": "e7673c811d5ca25d269c2d9c0f30e686f5148844",
+    "findings": [
+      "info package.land-override"
+    ],
+    "generator": "gullwing/1 manufacturer drawing/1; land: manufacturer D-0406 suggested pad layout",
+    "table": "openspec/changes/c0390-library-growth/families/sot-diodes.toml",
+    "tool": "fenolite"
+  },
+  "id": "FenolitePackageSOT:SOT223_Diodes",
+  "kind": "footprint",
+  "licence_text_sha256": "0dd25be0803b1e2764b0323560013cdd5ad9ca92ba4780bd7db0cbe6ce821dd8",
+  "modification_notice": "2026-11-04: original item authored for fenolite-library (change c0390) with Fenolite's c0260 package generator from public package dimensions; no upstream design material.",
+  "origin": "authored",
+  "schema": "fenolite.provenance.v0",
+  "sources": [
+    "D-0406"
+  ],
+  "spdx": "CC0-1.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": null,
+  "version": "1.0.0"
+}

@@ -1,0 +1,233 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0409 Diodes Incorporated package information SOT363 (2018-02-28). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.package.v0"
+id = "FenolitePackageSOT:SC70-6_Diodes"
+version = "1.0.0"
+summary = "SC-70-6 (SOT-363), 6 leads, 0.65 mm pitch, 2 x 1.25 mm body, Diodes Inc. suggested land"
+category = "SOT package"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0409"]
+generator = "explicit"
+kind = "smd"
+family = "gullwing"
+pins = 6
+pitch = "0.65mm"
+body = { height = "0.9mm..1.1mm", length = "1.8mm..2.2mm", standoff = "0mm..0.1mm", width = "1.15mm..1.35mm" }
+lead = { length = "0.25mm..0.4mm", thickness = "0.1mm..0.22mm", width = "0.1mm..0.3mm" }
+
+[[pad]]
+number = "1"
+shape = "roundrect"
+size = ["0.6mm", "0.42mm"]
+at = ["-0.95mm", "-0.65mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "2"
+shape = "roundrect"
+size = ["0.6mm", "0.42mm"]
+at = ["-0.95mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "3"
+shape = "roundrect"
+size = ["0.6mm", "0.42mm"]
+at = ["-0.95mm", "0.65mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "4"
+shape = "roundrect"
+size = ["0.6mm", "0.42mm"]
+at = ["0.95mm", "0.65mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "5"
+shape = "roundrect"
+size = ["0.6mm", "0.42mm"]
+at = ["0.95mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "6"
+shape = "roundrect"
+size = ["0.6mm", "0.42mm"]
+at = ["0.95mm", "-0.65mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[graphic]]
+key = "F.Fab:0"
+kind = "line"
+layer = "F.Fab"
+points = [["-0.3125mm", "-1mm"], ["0.625mm", "-1mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:1"
+kind = "line"
+layer = "F.Fab"
+points = [["0.625mm", "-1mm"], ["0.625mm", "1mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:2"
+kind = "line"
+layer = "F.Fab"
+points = [["0.625mm", "1mm"], ["-0.625mm", "1mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:3"
+kind = "line"
+layer = "F.Fab"
+points = [["-0.625mm", "1mm"], ["-0.625mm", "-0.6875mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:4"
+kind = "line"
+layer = "F.Fab"
+points = [["-0.625mm", "-0.6875mm"], ["-0.3125mm", "-1mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.SilkS:5"
+kind = "line"
+layer = "F.SilkS"
+points = [["-0.4125mm", "-1mm"], ["0.4125mm", "-1mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:6"
+kind = "line"
+layer = "F.SilkS"
+points = [["-0.4125mm", "1mm"], ["0.4125mm", "1mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:7"
+kind = "circle"
+layer = "F.SilkS"
+points = [["-1.575mm", "-0.65mm"], ["-1.5mm", "-0.65mm"]]
+width = "0.15mm"
+
+[[graphic]]
+key = "F.CrtYd:8"
+kind = "rect"
+layer = "F.CrtYd"
+points = [["-1.75mm", "-1.5mm"], ["1.75mm", "1.5mm"]]
+width = "0.05mm"
+
+[[component_body]]
+kind = "extruded"
+height = "1.1mm"
+outline = [["-0.625mm", "-1mm"], ["0.625mm", "-1mm"], ["0.625mm", "1mm"], ["-0.625mm", "1mm"]]
+name = "body"
+z_min = "0mm"
+z_max = "1.1mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.16mm"
+outline = [["-1.05mm", "-0.75mm"], ["-0.725mm", "-0.75mm"], ["-0.725mm", "-0.55mm"], ["-1.05mm", "-0.55mm"]]
+name = "lead:1:foot"
+z_min = "0mm"
+z_max = "0.16mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.55mm"
+outline = [["-0.725mm", "-0.75mm"], ["-0.625mm", "-0.75mm"], ["-0.625mm", "-0.55mm"], ["-0.725mm", "-0.55mm"]]
+name = "lead:1:shoulder"
+z_min = "0mm"
+z_max = "0.55mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.16mm"
+outline = [["-1.05mm", "-0.1mm"], ["-0.725mm", "-0.1mm"], ["-0.725mm", "0.1mm"], ["-1.05mm", "0.1mm"]]
+name = "lead:2:foot"
+z_min = "0mm"
+z_max = "0.16mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.55mm"
+outline = [["-0.725mm", "-0.1mm"], ["-0.625mm", "-0.1mm"], ["-0.625mm", "0.1mm"], ["-0.725mm", "0.1mm"]]
+name = "lead:2:shoulder"
+z_min = "0mm"
+z_max = "0.55mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.16mm"
+outline = [["-1.05mm", "0.55mm"], ["-0.725mm", "0.55mm"], ["-0.725mm", "0.75mm"], ["-1.05mm", "0.75mm"]]
+name = "lead:3:foot"
+z_min = "0mm"
+z_max = "0.16mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.55mm"
+outline = [["-0.725mm", "0.55mm"], ["-0.625mm", "0.55mm"], ["-0.625mm", "0.75mm"], ["-0.725mm", "0.75mm"]]
+name = "lead:3:shoulder"
+z_min = "0mm"
+z_max = "0.55mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.16mm"
+outline = [["0.725mm", "0.55mm"], ["1.05mm", "0.55mm"], ["1.05mm", "0.75mm"], ["0.725mm", "0.75mm"]]
+name = "lead:4:foot"
+z_min = "0mm"
+z_max = "0.16mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.55mm"
+outline = [["0.625mm", "0.55mm"], ["0.725mm", "0.55mm"], ["0.725mm", "0.75mm"], ["0.625mm", "0.75mm"]]
+name = "lead:4:shoulder"
+z_min = "0mm"
+z_max = "0.55mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.16mm"
+outline = [["0.725mm", "-0.1mm"], ["1.05mm", "-0.1mm"], ["1.05mm", "0.1mm"], ["0.725mm", "0.1mm"]]
+name = "lead:5:foot"
+z_min = "0mm"
+z_max = "0.16mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.55mm"
+outline = [["0.625mm", "-0.1mm"], ["0.725mm", "-0.1mm"], ["0.725mm", "0.1mm"], ["0.625mm", "0.1mm"]]
+name = "lead:5:shoulder"
+z_min = "0mm"
+z_max = "0.55mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.16mm"
+outline = [["0.725mm", "-0.75mm"], ["1.05mm", "-0.75mm"], ["1.05mm", "-0.55mm"], ["0.725mm", "-0.55mm"]]
+name = "lead:6:foot"
+z_min = "0mm"
+z_max = "0.16mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.55mm"
+outline = [["0.625mm", "-0.75mm"], ["0.725mm", "-0.75mm"], ["0.725mm", "-0.55mm"], ["0.625mm", "-0.55mm"]]
+name = "lead:6:shoulder"
+z_min = "0mm"
+z_max = "0.55mm"

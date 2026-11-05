@@ -1,0 +1,84 @@
+{
+  "authors": [
+    "Fenolite contributors"
+  ],
+  "copyright": [
+    "Copyright (c) 2026 Fenolite contributors"
+  ],
+  "datasheets": [
+    {
+      "date": "2021-01-06",
+      "id": "D-0411",
+      "revision": "2021-01-06",
+      "title": "Diodes Incorporated package information SOT563",
+      "url": "https://www.diodes.com/assets/Package-Files/SOT563.pdf",
+      "used": "Table: A 0.55-0.60, b 0.15-0.30, c 0.10-0.18, D 1.50-1.70, E 1.55-1.70, E1 1.10-1.25, e 0.50, L 0.10-0.30 mm; pad layout C 0.500, C1 1.270, G 0.600, X 0.300, Y 0.670, Y1 1.940 mm"
+    }
+  ],
+  "evidence": "INFERRED",
+  "featured": null,
+  "generation": {
+    "change": "c0390",
+    "explicit_record": "the generator's pads, graphics and bodies written as a generator='explicit' record (the record kind the library audit reads); outputs regenerate from package.toml",
+    "family_record": {
+      "arrangement": "dual",
+      "body": {
+        "height": "0.55mm..0.60mm",
+        "length": "1.50mm..1.70mm",
+        "width": "1.10mm..1.25mm"
+      },
+      "evidence": "INFERRED",
+      "family": "gullwing",
+      "generate": {
+        "drawing": 1,
+        "lands": 1
+      },
+      "id": "FenolitePackageSOT:SOT563_Diodes",
+      "land": {
+        "pad": {
+          "length": "0.67mm",
+          "width": "0.30mm"
+        },
+        "row_spacing": "1.27mm",
+        "source": "D-0411 suggested pad layout"
+      },
+      "lead": {
+        "length": "0.10mm..0.30mm",
+        "thickness": "0.10mm..0.18mm",
+        "width": "0.15mm..0.30mm"
+      },
+      "pins": 6,
+      "pitch": "0.50mm",
+      "schema": "fenolite.package.v0",
+      "sources": [
+        "D-0411"
+      ],
+      "span": "1.55mm..1.70mm",
+      "summary": "SOT-563, 6 leads, 0.5 mm pitch, 1.6 x 1.2 mm body, Diodes Inc. suggested land"
+    },
+    "fenolite": "e7673c811d5ca25d269c2d9c0f30e686f5148844",
+    "findings": [
+      "info package.land-override"
+    ],
+    "generator": "gullwing/1 manufacturer drawing/1; land: manufacturer D-0411 suggested pad layout",
+    "table": "openspec/changes/c0390-library-growth/families/sot-diodes.toml",
+    "tool": "fenolite"
+  },
+  "id": "FenolitePackageSOT:SOT563_Diodes",
+  "kind": "footprint",
+  "licence_text_sha256": "0dd25be0803b1e2764b0323560013cdd5ad9ca92ba4780bd7db0cbe6ce821dd8",
+  "modification_notice": "2026-11-04: original item authored for fenolite-library (change c0390) with Fenolite's c0260 package generator from public package dimensions; no upstream design material.",
+  "origin": "authored",
+  "schema": "fenolite.provenance.v0",
+  "sources": [
+    "D-0411"
+  ],
+  "spdx": "CC0-1.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": null,
+  "version": "1.0.0"
+}

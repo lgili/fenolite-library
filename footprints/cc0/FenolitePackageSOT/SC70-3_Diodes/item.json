@@ -1,0 +1,23 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageSOT.3dshapes/SC70-3_Diodes.step",
+    "generated/FenolitePackageSOT.pretty/SC70-3_Diodes.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageSOT:SC70-3_Diodes",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "SC-70-3 (SOT-323), 3 leads, 0.65 mm pitch, 2 x 1.25 mm body, Diodes Inc. suggested land",
+  "tags": [
+    "SC-70-3",
+    "SOT-323",
+    "gullwing",
+    "smd",
+    "sot"
+  ],
+  "title": "SC-70-3 (SOT323) package",
+  "version": "1.0.0"
+}

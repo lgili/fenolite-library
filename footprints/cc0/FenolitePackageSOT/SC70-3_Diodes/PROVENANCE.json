@@ -1,0 +1,107 @@
+{
+  "authors": [
+    "Fenolite contributors"
+  ],
+  "copyright": [
+    "Copyright (c) 2026 Fenolite contributors"
+  ],
+  "datasheets": [
+    {
+      "date": "2017-03-20",
+      "id": "D-0408",
+      "revision": "2017-03-20",
+      "title": "Diodes Incorporated package information SOT323",
+      "url": "https://www.diodes.com/assets/Package-Files/SOT323.pdf",
+      "used": "Table: A1 0.00-0.10, A2 0.90-1.00 (height taken as A1 + A2), b 0.25-0.40, c 0.10-0.18, D 1.80-2.20, E 2.00-2.20, E1 1.15-1.35, e1 1.20-1.40, L 0.25-0.40 mm; pad layout C 0.650, G 1.300, X 0.470, Y 0.600, Y1 2.500 mm"
+    }
+  ],
+  "evidence": "INFERRED",
+  "featured": null,
+  "generation": {
+    "change": "c0390",
+    "explicit_record": "the generator's pads, graphics and bodies written as a generator='explicit' record (the record kind the library audit reads); outputs regenerate from package.toml",
+    "family_record": {
+      "arrangement": "sides",
+      "body": {
+        "height": "0.90mm..1.10mm",
+        "length": "1.80mm..2.20mm",
+        "standoff": "0.00mm..0.10mm",
+        "width": "1.15mm..1.35mm"
+      },
+      "evidence": "INFERRED",
+      "family": "gullwing",
+      "generate": {
+        "drawing": 1,
+        "lands": 1
+      },
+      "id": "FenolitePackageSOT:SC70-3_Diodes",
+      "land": {
+        "pad": {
+          "length": "0.60mm",
+          "width": "0.47mm"
+        },
+        "row_spacing": "1.90mm",
+        "source": "D-0408 suggested pad layout"
+      },
+      "lead": {
+        "length": "0.25mm..0.40mm",
+        "thickness": "0.10mm..0.18mm",
+        "width": "0.25mm..0.40mm"
+      },
+      "pins": 3,
+      "pitch": "0.65mm",
+      "schema": "fenolite.package.v0",
+      "side": [
+        {
+          "edge": "left",
+          "numbers": [
+            "1",
+            "2"
+          ],
+          "positions": [
+            0,
+            2
+          ]
+        },
+        {
+          "edge": "right",
+          "numbers": [
+            "3"
+          ],
+          "positions": [
+            1
+          ]
+        }
+      ],
+      "sources": [
+        "D-0408"
+      ],
+      "span": "2.00mm..2.20mm",
+      "summary": "SC-70-3 (SOT-323), 3 leads, 0.65 mm pitch, 2 x 1.25 mm body, Diodes Inc. suggested land"
+    },
+    "fenolite": "e7673c811d5ca25d269c2d9c0f30e686f5148844",
+    "findings": [
+      "info package.land-override"
+    ],
+    "generator": "gullwing/1 manufacturer drawing/1; land: manufacturer D-0408 suggested pad layout",
+    "table": "openspec/changes/c0390-library-growth/families/sot-diodes.toml",
+    "tool": "fenolite"
+  },
+  "id": "FenolitePackageSOT:SC70-3_Diodes",
+  "kind": "footprint",
+  "licence_text_sha256": "0dd25be0803b1e2764b0323560013cdd5ad9ca92ba4780bd7db0cbe6ce821dd8",
+  "modification_notice": "2026-11-04: original item authored for fenolite-library (change c0390) with Fenolite's c0260 package generator from public package dimensions; no upstream design material.",
+  "origin": "authored",
+  "schema": "fenolite.provenance.v0",
+  "sources": [
+    "D-0408"
+  ],
+  "spdx": "CC0-1.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": null,
+  "version": "1.0.0"
+}
