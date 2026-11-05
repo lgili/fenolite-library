@@ -6,10 +6,11 @@ version = "1.0.0"
 fenolite = ">=0.7.0.dev0"
 
 [tools]
-# Core commit 3675515a of lgili/Fenolite `dev` (lote-20, CI 42021800567): every command the jobs require, the
-# c0279 task 4.6 point fix and the c0405 gallery (item images, `--renders`, block sheets drawn by Fenolite).
+# Core commit 5ab9d645 of lgili/Fenolite `dev` (lote-23, CI 42081905514): every command the jobs require,
+# the c0405 gallery, c0415 review content digest (`library review --pin-content`), c0418 gallery attribution
+# from each item's provenance and c0419 library symbol fields.
 # `licences.toml` equals its `cli/data/library-licences.toml` byte for byte.
-fenolite = "3675515adf5c8ee7a778cf2b30254401f12f54b4"
+fenolite = "5ab9d64529a47fbd03bb6748d0f40a4f23ef2ab1"
 uv = "0.12.23"
 kicad_cli = "10.0.6"
 # Official immutable 10.0.6 index + linux/amd64 manifest/config verified against registry bytes.

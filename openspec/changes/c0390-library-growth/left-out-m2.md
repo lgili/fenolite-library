@@ -64,3 +64,15 @@ Source: Microchip Packaging Specification DS00000049CH. Each line: PDF page, tit
 - p916 128-Lead Thin Quad Flatpack (6XX) - 10x10x1.0 mm Body [TQFP]: exposed pad (gullwing has none, gap G-2)
 
 Image-only drawings not yet read: most PLCC, TSSOP/SSOP/SOIC, SOT, TO and the vendor-alternate PDIP codes (PA, PD, PE, PG, PI, PL, PF, PJ).
+
+## TO (batch 7)
+- p113 3-Lead TO-92 (ZB), drawing C04-101B: same drawing as TO (p112).
+- p112 3-Lead TO-92 (TO), drawing C04-101B: inline 1.27 mm pitch; the drawing does not place the leads in the body depth, and the calculated drill (1.0 mm) leaves a 0.035 mm ring across the pitch.
+- p1442 3-Lead TO-92 (L/LL/N3): inline 1.27 mm pitch; calculated drill 1.0 mm in a 1.07 mm wide pad (0.035 mm ring). Needs the maker's hole or a staggered layout.
+- p117 5-Lead TO-220 (AT), drawing C04-036B: straight leads at 1.7018 mm; calculated drill 1.4 mm in a 1.5 mm wide pad (0.05 mm ring).
+- p1447 7-Lead TO-220 (K2): straight leads at 1.27 mm; calculated drill 1.3 mm is wider than the 1.07 mm pad.
+- p1446 3-Lead TO-220 (N5): same JEDEC TO-220 AB outline as AB (p116), which is taken.
+- p1440 3-Lead TO-39 (N2): round can; no generator for it.
+- p1452 3-Lead TO-252 D-PAK (K4): no land pattern, and the generator has no calibrated land for an SMD tab.
+- p50-55 DDPAK (EB, ET, EK): the land is given, but the pad length L1 has a maximum only, so the body cannot be placed against the land.
+- SOT-223 (p106-109) not read: already in M1 from Diodes (D-0406).

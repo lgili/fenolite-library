@@ -1,0 +1,78 @@
+{
+  "authors": [
+    "Fenolite contributors"
+  ],
+  "copyright": [
+    "Copyright (c) 2026 Fenolite contributors"
+  ],
+  "datasheets": [
+    {
+      "date": "2017-02-03",
+      "id": "D-0423",
+      "revision": "CH",
+      "title": "Microchip Packaging Specification, DS00000049CH",
+      "url": "https://ww1.microchip.com/downloads/en/PackagingSpec/00000049CH.pdf",
+      "used": "Microchip packaging specification DS00000049CH, PDF page 116, drawing C04-034B (inches, read from the page image): N 3, e .100 BSC, A .140/.190, A1 .020/.055, A2 .080/.115, E .357/.420, D .560/.650, D1 .330/.355, H1 .230/.270, L .500/.580, c .012/.024, b .015/.027/.040; offset A/2 - A2 = .0825 - .0975 = -.015 in"
+    }
+  ],
+  "evidence": "INFERRED",
+  "featured": null,
+  "generation": {
+    "change": "c0390",
+    "explicit_record": "the generator's pads, graphics and bodies written as a generator='explicit' record (the record kind the library audit reads); outputs regenerate from package.toml",
+    "family_record": {
+      "body": {
+        "height": "14.224mm..16.51mm",
+        "length": "9.0678mm..10.668mm",
+        "offset": "-0.381mm",
+        "width": "3.556mm..4.826mm"
+      },
+      "evidence": "INFERRED",
+      "family": "to",
+      "generate": {
+        "drawing": 1,
+        "lands": 1
+      },
+      "id": "FenolitePackageTO:TO-220-3_P2.54_Microchip-AB_Vertical",
+      "lead": {
+        "length": "12.7mm..14.732mm",
+        "thickness": "0.3048mm..0.6096mm",
+        "width": {
+          "max": "1.016mm",
+          "min": "0.381mm",
+          "nom": "0.6858mm"
+        }
+      },
+      "leads": 3,
+      "mount": "tht",
+      "pitch": "2.54mm",
+      "schema": "fenolite.package.v0",
+      "sources": [
+        "D-0423"
+      ],
+      "summary": "TO-220-3, 2.54 mm pitch, through-hole, upright"
+    },
+    "fenolite": "e7673c811d5ca25d269c2d9c0f30e686f5148844",
+    "findings": [],
+    "generator": "to/1 lands/1 drawing/1 nominal; land: calculated lands/1 nominal (INFERRED)",
+    "table": "openspec/changes/c0390-library-growth/families/to-microchip.toml",
+    "tool": "fenolite"
+  },
+  "id": "FenolitePackageTO:TO-220-3_P2.54_Microchip-AB_Vertical",
+  "kind": "footprint",
+  "licence_text_sha256": "0dd25be0803b1e2764b0323560013cdd5ad9ca92ba4780bd7db0cbe6ce821dd8",
+  "modification_notice": "2026-11-05: original item authored for fenolite-library (change c0390) with Fenolite's c0260 package generator from public package dimensions; no upstream design material.",
+  "origin": "authored",
+  "schema": "fenolite.provenance.v0",
+  "sources": [
+    "D-0423"
+  ],
+  "spdx": "CC0-1.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": null,
+  "version": "1.0.0"
+}

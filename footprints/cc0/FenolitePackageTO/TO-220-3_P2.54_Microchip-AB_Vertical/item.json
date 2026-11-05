@@ -1,0 +1,23 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageTO.3dshapes/TO-220-3_P2.54_Microchip-AB_Vertical.step",
+    "generated/FenolitePackageTO.pretty/TO-220-3_P2.54_Microchip-AB_Vertical.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageTO:TO-220-3_P2.54_Microchip-AB_Vertical",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "TO-220-3, 2.54 mm pitch, through-hole, upright",
+  "tags": [
+    "tht",
+    "to",
+    "to-220",
+    "to-220-3",
+    "vertical"
+  ],
+  "title": "TO-220, 3 leads, 2.54 mm pitch, upright (Microchip AB)",
+  "version": "1.0.0"
+}

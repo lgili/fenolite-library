@@ -1,0 +1,129 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0423 Microchip Packaging Specification, DS00000049CH (CH). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.package.v0"
+id = "FenolitePackageTO:TO-220-3_P2.54_Microchip-AB_Vertical"
+version = "1.0.0"
+summary = "TO-220-3, 2.54 mm pitch, through-hole, upright"
+category = "Transistor outline"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0423"]
+generator = "explicit"
+kind = "through_hole"
+family = "to"
+pitch = "2.54mm"
+body = { height = "14.224mm..16.51mm", length = "9.0678mm..10.668mm", offset = "-0.381mm", width = "3.556mm..4.826mm" }
+lead = { length = "12.7mm..14.732mm", thickness = "0.3048mm..0.6096mm", width = "0.381mm..1.016mm" }
+
+[[pad]]
+number = "1"
+shape = "rect"
+size = ["2.09mm", "2.09mm"]
+at = ["-2.54mm", "0mm"]
+kind = "thru_hole"
+drill = "1.39mm"
+layers = ["*.Cu", "*.Mask"]
+
+[[pad]]
+number = "2"
+shape = "circle"
+size = ["2.09mm", "2.09mm"]
+at = ["0mm", "0mm"]
+kind = "thru_hole"
+drill = "1.39mm"
+layers = ["*.Cu", "*.Mask"]
+
+[[pad]]
+number = "3"
+shape = "circle"
+size = ["2.09mm", "2.09mm"]
+at = ["2.54mm", "0mm"]
+kind = "thru_hole"
+drill = "1.39mm"
+layers = ["*.Cu", "*.Mask"]
+
+[[graphic]]
+key = "F.Fab:0"
+kind = "line"
+layer = "F.Fab"
+points = [["-3.93395mm", "-2.4765mm"], ["4.93395mm", "-2.4765mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:1"
+kind = "line"
+layer = "F.Fab"
+points = [["4.93395mm", "-2.4765mm"], ["4.93395mm", "1.7145mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:2"
+kind = "line"
+layer = "F.Fab"
+points = [["4.93395mm", "1.7145mm"], ["-4.93395mm", "1.7145mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:3"
+kind = "line"
+layer = "F.Fab"
+points = [["-4.93395mm", "1.7145mm"], ["-4.93395mm", "-1.4765mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:4"
+kind = "line"
+layer = "F.Fab"
+points = [["-4.93395mm", "-1.4765mm"], ["-3.93395mm", "-2.4765mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.SilkS:5"
+kind = "line"
+layer = "F.SilkS"
+points = [["-4.93395mm", "-2.4765mm"], ["4.93395mm", "-2.4765mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:6"
+kind = "line"
+layer = "F.SilkS"
+points = [["4.93395mm", "-2.4765mm"], ["4.93395mm", "1.7145mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:7"
+kind = "line"
+layer = "F.SilkS"
+points = [["-4.93395mm", "1.7145mm"], ["4.93395mm", "1.7145mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:8"
+kind = "line"
+layer = "F.SilkS"
+points = [["-4.93395mm", "-2.4765mm"], ["-4.93395mm", "1.7145mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:9"
+kind = "circle"
+layer = "F.SilkS"
+points = [["-5.32145mm", "0mm"], ["-5.24645mm", "0mm"]]
+width = "0.15mm"
+
+[[graphic]]
+key = "F.CrtYd:10"
+kind = "rect"
+layer = "F.CrtYd"
+points = [["-5.44mm", "-2.98mm"], ["5.44mm", "2.22mm"]]
+width = "0.05mm"
+
+[[component_body]]
+kind = "extruded"
+height = "16.51mm"
+outline = [["-4.93395mm", "-2.4765mm"], ["4.93395mm", "-2.4765mm"], ["4.93395mm", "1.7145mm"], ["-4.93395mm", "1.7145mm"]]
+name = "body"
+z_min = "0mm"
+z_max = "16.51mm"
