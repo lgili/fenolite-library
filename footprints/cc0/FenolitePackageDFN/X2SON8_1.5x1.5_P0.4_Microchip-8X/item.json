@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageDFN.3dshapes/X2SON8_1.5x1.5_P0.4_Microchip-8X.step",
+    "generated/FenolitePackageDFN.pretty/X2SON8_1.5x1.5_P0.4_Microchip-8X.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageDFN:X2SON8_1.5x1.5_P0.4_Microchip-8X",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "X2SON-8, 0.4 mm pitch, 1.5 x 1.5 mm body, 0.75 x 1.25 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "dfn",
+    "dual-row",
+    "exposed-pad",
+    "no-lead",
+    "smd",
+    "x2son",
+    "x2son-8"
+  ],
+  "title": "X2SON-8 1.5 x 1.5 mm, 0.4 mm pitch (Microchip 8X)",
+  "version": "1.0.0"
+}

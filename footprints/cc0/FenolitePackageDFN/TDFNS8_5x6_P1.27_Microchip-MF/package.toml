@@ -1,0 +1,251 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0423 Microchip Packaging Specification, DS00000049CH (CH). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.package.v0"
+id = "FenolitePackageDFN:TDFNS8_5x6_P1.27_Microchip-MF"
+version = "1.0.0"
+summary = "TDFN-S-8, 1.27 mm pitch, 5 x 6 mm body, 3.5 x 4.1 mm exposed-pad land, Microchip recommended land"
+category = "Dual flat no-lead package"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0423"]
+generator = "explicit"
+kind = "smd"
+family = "nolead"
+pins = 9
+pitch = "1.27mm"
+body = { height = "0.7mm..0.8mm", length = "5mm", standoff = "0mm..0.05mm", width = "6mm" }
+
+[[pad]]
+number = "1"
+shape = "roundrect"
+size = ["1.1mm", "0.45mm"]
+at = ["-2.85mm", "-1.905mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "2"
+shape = "roundrect"
+size = ["1.1mm", "0.45mm"]
+at = ["-2.85mm", "-0.635mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "3"
+shape = "roundrect"
+size = ["1.1mm", "0.45mm"]
+at = ["-2.85mm", "0.635mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "4"
+shape = "roundrect"
+size = ["1.1mm", "0.45mm"]
+at = ["-2.85mm", "1.905mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "5"
+shape = "roundrect"
+size = ["1.1mm", "0.45mm"]
+at = ["2.85mm", "1.905mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "6"
+shape = "roundrect"
+size = ["1.1mm", "0.45mm"]
+at = ["2.85mm", "0.635mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "7"
+shape = "roundrect"
+size = ["1.1mm", "0.45mm"]
+at = ["2.85mm", "-0.635mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "8"
+shape = "roundrect"
+size = ["1.1mm", "0.45mm"]
+at = ["2.85mm", "-1.905mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "EP"
+shape = "roundrect"
+size = ["3.5mm", "4.1mm"]
+at = ["0mm", "0mm"]
+layers = ["F.Cu", "F.Mask"]
+corner_ratio = 28571
+
+[[graphic]]
+key = "F.Fab:0"
+kind = "line"
+layer = "F.Fab"
+points = [["-2mm", "-2.5mm"], ["3mm", "-2.5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:1"
+kind = "line"
+layer = "F.Fab"
+points = [["3mm", "-2.5mm"], ["3mm", "2.5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:2"
+kind = "line"
+layer = "F.Fab"
+points = [["3mm", "2.5mm"], ["-3mm", "2.5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:3"
+kind = "line"
+layer = "F.Fab"
+points = [["-3mm", "2.5mm"], ["-3mm", "-1.5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:4"
+kind = "line"
+layer = "F.Fab"
+points = [["-3mm", "-1.5mm"], ["-2mm", "-2.5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.SilkS:5"
+kind = "line"
+layer = "F.SilkS"
+points = [["-3mm", "-2.5mm"], ["3mm", "-2.5mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:6"
+kind = "line"
+layer = "F.SilkS"
+points = [["3mm", "-1.4425mm"], ["3mm", "-1.0975mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:7"
+kind = "line"
+layer = "F.SilkS"
+points = [["3mm", "-0.1725mm"], ["3mm", "0.1725mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:8"
+kind = "line"
+layer = "F.SilkS"
+points = [["3mm", "1.0975mm"], ["3mm", "1.4425mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:9"
+kind = "line"
+layer = "F.SilkS"
+points = [["-3mm", "2.5mm"], ["3mm", "2.5mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:10"
+kind = "line"
+layer = "F.SilkS"
+points = [["-3mm", "-1.4425mm"], ["-3mm", "-1.0975mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:11"
+kind = "line"
+layer = "F.SilkS"
+points = [["-3mm", "-0.1725mm"], ["-3mm", "0.1725mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:12"
+kind = "line"
+layer = "F.SilkS"
+points = [["-3mm", "1.0975mm"], ["-3mm", "1.4425mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:13"
+kind = "line"
+layer = "F.SilkS"
+points = [["-3.2375mm", "-2.7375mm"], ["-2.2375mm", "-2.7375mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:14"
+kind = "line"
+layer = "F.SilkS"
+points = [["-3.2375mm", "-2.7375mm"], ["-3.2375mm", "-2.3675mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.CrtYd:15"
+kind = "rect"
+layer = "F.CrtYd"
+points = [["-3.9mm", "-3mm"], ["3.9mm", "3mm"]]
+width = "0.05mm"
+
+[[graphic]]
+key = "F.Paste:16"
+kind = "rect"
+layer = "F.Paste"
+points = [["-1.575mm", "-1.913332mm"], ["-0.175mm", "-0.82mm"]]
+filled = true
+
+[[graphic]]
+key = "F.Paste:17"
+kind = "rect"
+layer = "F.Paste"
+points = [["-1.575mm", "-0.546666mm"], ["-0.175mm", "0.546666mm"]]
+filled = true
+
+[[graphic]]
+key = "F.Paste:18"
+kind = "rect"
+layer = "F.Paste"
+points = [["-1.575mm", "0.82mm"], ["-0.175mm", "1.913332mm"]]
+filled = true
+
+[[graphic]]
+key = "F.Paste:19"
+kind = "rect"
+layer = "F.Paste"
+points = [["0.175mm", "-1.913332mm"], ["1.575mm", "-0.82mm"]]
+filled = true
+
+[[graphic]]
+key = "F.Paste:20"
+kind = "rect"
+layer = "F.Paste"
+points = [["0.175mm", "-0.546666mm"], ["1.575mm", "0.546666mm"]]
+filled = true
+
+[[graphic]]
+key = "F.Paste:21"
+kind = "rect"
+layer = "F.Paste"
+points = [["0.175mm", "0.82mm"], ["1.575mm", "1.913332mm"]]
+filled = true
+
+[[component_body]]
+kind = "extruded"
+height = "0.8mm"
+outline = [["-3mm", "-2.5mm"], ["3mm", "-2.5mm"], ["3mm", "2.5mm"], ["-3mm", "2.5mm"]]
+name = "body"
+z_min = "0mm"
+z_max = "0.8mm"
