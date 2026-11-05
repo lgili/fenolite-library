@@ -1,0 +1,86 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0422 Original generic schematic symbols authored for fenolite-library (change c0390) (c0390 batch 5). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.pins.v0"
+id = "FenoliteSymbols:Crystal_GND24"
+version = "1.0.0"
+summary = "Generic quartz crystal in a four-pad package; pins 1 and 3 crystal, 2 and 4 case ground"
+category = "Generic symbol"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422"]
+
+[[pin]]
+number = "1"
+name = "1"
+type = "passive"
+
+[[pin]]
+number = "2"
+name = "GND"
+type = "passive"
+
+[[pin]]
+number = "3"
+name = "3"
+type = "passive"
+
+[[pin]]
+number = "4"
+name = "GND"
+type = "passive"
+
+[symbol]
+reference = "Y"
+pin_names_hidden = true
+
+[[symbol.pins]]
+number = "1"
+at = ["-5.08mm", "0mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "3"
+at = ["5.08mm", "0mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "2"
+at = ["0mm", "-5.08mm"]
+length = "2.54mm"
+rotation = "90deg"
+
+[[symbol.pins]]
+number = "4"
+at = ["0mm", "5.08mm"]
+length = "2.54mm"
+rotation = "270deg"
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-2.54mm", "0mm"], ["-1.524mm", "0mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.524mm", "0mm"], ["2.54mm", "0mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["0mm", "-2.54mm"], ["0mm", "-1.524mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["0mm", "1.524mm"], ["0mm", "2.54mm"]]
+
+[[symbol.graphic]]
+kind = "rect"
+points = [["-0.762mm", "-1.524mm"], ["0.762mm", "1.524mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-1.524mm", "-1.27mm"], ["-1.524mm", "1.27mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.524mm", "-1.27mm"], ["1.524mm", "1.27mm"]]

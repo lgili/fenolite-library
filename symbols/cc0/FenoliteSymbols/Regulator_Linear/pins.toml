@@ -1,0 +1,51 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0422 Original generic schematic symbols authored for fenolite-library (change c0390) (c0390 batch 5). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.pins.v0"
+id = "FenoliteSymbols:Regulator_Linear"
+version = "1.0.0"
+summary = "Generic three-terminal positive linear regulator; pins 1 VIN, 2 GND, 3 VOUT"
+category = "Generic symbol"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422"]
+
+[[pin]]
+number = "1"
+name = "VIN"
+type = "power_in"
+
+[[pin]]
+number = "2"
+name = "GND"
+type = "power_in"
+
+[[pin]]
+number = "3"
+name = "VOUT"
+type = "power_out"
+
+[symbol]
+reference = "U"
+pin_names_hidden = false
+
+[[symbol.pins]]
+number = "1"
+at = ["-7.62mm", "0mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "2"
+at = ["0mm", "-5.08mm"]
+length = "2.54mm"
+rotation = "90deg"
+
+[[symbol.pins]]
+number = "3"
+at = ["7.62mm", "0mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.graphic]]
+kind = "rect"
+points = [["-5.08mm", "-2.54mm"], ["5.08mm", "2.54mm"]]

@@ -1,0 +1,20 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:Comparator",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic comparator; pins 2 -IN, 3 +IN, 4 V-, 7 OUT (open collector), 8 V+",
+  "tags": [
+    "comparator",
+    "generic",
+    "symbol"
+  ],
+  "title": "Comparator",
+  "version": "1.0.0"
+}

@@ -1,0 +1,21 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:OpAmp",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic single operational amplifier; pins 2 -IN, 3 +IN, 4 V-, 6 OUT, 7 V+ (common 8-pin single pin-out)",
+  "tags": [
+    "amplifier",
+    "generic",
+    "opamp",
+    "symbol"
+  ],
+  "title": "Operational amplifier",
+  "version": "1.0.0"
+}

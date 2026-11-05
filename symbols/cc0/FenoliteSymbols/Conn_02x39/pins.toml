@@ -1,0 +1,838 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0422 Original generic schematic symbols authored for fenolite-library (change c0390) (c0390 batch 5). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.pins.v0"
+id = "FenoliteSymbols:Conn_02x39"
+version = "1.0.0"
+summary = "Generic two-row connector, 78 pins, odd pins left, even pins right"
+category = "Generic connector symbol"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422"]
+
+[[pin]]
+number = "1"
+name = "Pin_1"
+type = "passive"
+
+[[pin]]
+number = "2"
+name = "Pin_2"
+type = "passive"
+
+[[pin]]
+number = "3"
+name = "Pin_3"
+type = "passive"
+
+[[pin]]
+number = "4"
+name = "Pin_4"
+type = "passive"
+
+[[pin]]
+number = "5"
+name = "Pin_5"
+type = "passive"
+
+[[pin]]
+number = "6"
+name = "Pin_6"
+type = "passive"
+
+[[pin]]
+number = "7"
+name = "Pin_7"
+type = "passive"
+
+[[pin]]
+number = "8"
+name = "Pin_8"
+type = "passive"
+
+[[pin]]
+number = "9"
+name = "Pin_9"
+type = "passive"
+
+[[pin]]
+number = "10"
+name = "Pin_10"
+type = "passive"
+
+[[pin]]
+number = "11"
+name = "Pin_11"
+type = "passive"
+
+[[pin]]
+number = "12"
+name = "Pin_12"
+type = "passive"
+
+[[pin]]
+number = "13"
+name = "Pin_13"
+type = "passive"
+
+[[pin]]
+number = "14"
+name = "Pin_14"
+type = "passive"
+
+[[pin]]
+number = "15"
+name = "Pin_15"
+type = "passive"
+
+[[pin]]
+number = "16"
+name = "Pin_16"
+type = "passive"
+
+[[pin]]
+number = "17"
+name = "Pin_17"
+type = "passive"
+
+[[pin]]
+number = "18"
+name = "Pin_18"
+type = "passive"
+
+[[pin]]
+number = "19"
+name = "Pin_19"
+type = "passive"
+
+[[pin]]
+number = "20"
+name = "Pin_20"
+type = "passive"
+
+[[pin]]
+number = "21"
+name = "Pin_21"
+type = "passive"
+
+[[pin]]
+number = "22"
+name = "Pin_22"
+type = "passive"
+
+[[pin]]
+number = "23"
+name = "Pin_23"
+type = "passive"
+
+[[pin]]
+number = "24"
+name = "Pin_24"
+type = "passive"
+
+[[pin]]
+number = "25"
+name = "Pin_25"
+type = "passive"
+
+[[pin]]
+number = "26"
+name = "Pin_26"
+type = "passive"
+
+[[pin]]
+number = "27"
+name = "Pin_27"
+type = "passive"
+
+[[pin]]
+number = "28"
+name = "Pin_28"
+type = "passive"
+
+[[pin]]
+number = "29"
+name = "Pin_29"
+type = "passive"
+
+[[pin]]
+number = "30"
+name = "Pin_30"
+type = "passive"
+
+[[pin]]
+number = "31"
+name = "Pin_31"
+type = "passive"
+
+[[pin]]
+number = "32"
+name = "Pin_32"
+type = "passive"
+
+[[pin]]
+number = "33"
+name = "Pin_33"
+type = "passive"
+
+[[pin]]
+number = "34"
+name = "Pin_34"
+type = "passive"
+
+[[pin]]
+number = "35"
+name = "Pin_35"
+type = "passive"
+
+[[pin]]
+number = "36"
+name = "Pin_36"
+type = "passive"
+
+[[pin]]
+number = "37"
+name = "Pin_37"
+type = "passive"
+
+[[pin]]
+number = "38"
+name = "Pin_38"
+type = "passive"
+
+[[pin]]
+number = "39"
+name = "Pin_39"
+type = "passive"
+
+[[pin]]
+number = "40"
+name = "Pin_40"
+type = "passive"
+
+[[pin]]
+number = "41"
+name = "Pin_41"
+type = "passive"
+
+[[pin]]
+number = "42"
+name = "Pin_42"
+type = "passive"
+
+[[pin]]
+number = "43"
+name = "Pin_43"
+type = "passive"
+
+[[pin]]
+number = "44"
+name = "Pin_44"
+type = "passive"
+
+[[pin]]
+number = "45"
+name = "Pin_45"
+type = "passive"
+
+[[pin]]
+number = "46"
+name = "Pin_46"
+type = "passive"
+
+[[pin]]
+number = "47"
+name = "Pin_47"
+type = "passive"
+
+[[pin]]
+number = "48"
+name = "Pin_48"
+type = "passive"
+
+[[pin]]
+number = "49"
+name = "Pin_49"
+type = "passive"
+
+[[pin]]
+number = "50"
+name = "Pin_50"
+type = "passive"
+
+[[pin]]
+number = "51"
+name = "Pin_51"
+type = "passive"
+
+[[pin]]
+number = "52"
+name = "Pin_52"
+type = "passive"
+
+[[pin]]
+number = "53"
+name = "Pin_53"
+type = "passive"
+
+[[pin]]
+number = "54"
+name = "Pin_54"
+type = "passive"
+
+[[pin]]
+number = "55"
+name = "Pin_55"
+type = "passive"
+
+[[pin]]
+number = "56"
+name = "Pin_56"
+type = "passive"
+
+[[pin]]
+number = "57"
+name = "Pin_57"
+type = "passive"
+
+[[pin]]
+number = "58"
+name = "Pin_58"
+type = "passive"
+
+[[pin]]
+number = "59"
+name = "Pin_59"
+type = "passive"
+
+[[pin]]
+number = "60"
+name = "Pin_60"
+type = "passive"
+
+[[pin]]
+number = "61"
+name = "Pin_61"
+type = "passive"
+
+[[pin]]
+number = "62"
+name = "Pin_62"
+type = "passive"
+
+[[pin]]
+number = "63"
+name = "Pin_63"
+type = "passive"
+
+[[pin]]
+number = "64"
+name = "Pin_64"
+type = "passive"
+
+[[pin]]
+number = "65"
+name = "Pin_65"
+type = "passive"
+
+[[pin]]
+number = "66"
+name = "Pin_66"
+type = "passive"
+
+[[pin]]
+number = "67"
+name = "Pin_67"
+type = "passive"
+
+[[pin]]
+number = "68"
+name = "Pin_68"
+type = "passive"
+
+[[pin]]
+number = "69"
+name = "Pin_69"
+type = "passive"
+
+[[pin]]
+number = "70"
+name = "Pin_70"
+type = "passive"
+
+[[pin]]
+number = "71"
+name = "Pin_71"
+type = "passive"
+
+[[pin]]
+number = "72"
+name = "Pin_72"
+type = "passive"
+
+[[pin]]
+number = "73"
+name = "Pin_73"
+type = "passive"
+
+[[pin]]
+number = "74"
+name = "Pin_74"
+type = "passive"
+
+[[pin]]
+number = "75"
+name = "Pin_75"
+type = "passive"
+
+[[pin]]
+number = "76"
+name = "Pin_76"
+type = "passive"
+
+[[pin]]
+number = "77"
+name = "Pin_77"
+type = "passive"
+
+[[pin]]
+number = "78"
+name = "Pin_78"
+type = "passive"
+
+[symbol]
+reference = "J"
+pin_names_hidden = true
+
+[[symbol.pins]]
+number = "1"
+at = ["-5.08mm", "0mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "2"
+at = ["5.08mm", "0mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "3"
+at = ["-5.08mm", "-2.54mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "4"
+at = ["5.08mm", "-2.54mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "5"
+at = ["-5.08mm", "-5.08mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "6"
+at = ["5.08mm", "-5.08mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "7"
+at = ["-5.08mm", "-7.62mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "8"
+at = ["5.08mm", "-7.62mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "9"
+at = ["-5.08mm", "-10.16mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "10"
+at = ["5.08mm", "-10.16mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "11"
+at = ["-5.08mm", "-12.7mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "12"
+at = ["5.08mm", "-12.7mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "13"
+at = ["-5.08mm", "-15.24mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "14"
+at = ["5.08mm", "-15.24mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "15"
+at = ["-5.08mm", "-17.78mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "16"
+at = ["5.08mm", "-17.78mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "17"
+at = ["-5.08mm", "-20.32mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "18"
+at = ["5.08mm", "-20.32mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "19"
+at = ["-5.08mm", "-22.86mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "20"
+at = ["5.08mm", "-22.86mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "21"
+at = ["-5.08mm", "-25.4mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "22"
+at = ["5.08mm", "-25.4mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "23"
+at = ["-5.08mm", "-27.94mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "24"
+at = ["5.08mm", "-27.94mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "25"
+at = ["-5.08mm", "-30.48mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "26"
+at = ["5.08mm", "-30.48mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "27"
+at = ["-5.08mm", "-33.02mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "28"
+at = ["5.08mm", "-33.02mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "29"
+at = ["-5.08mm", "-35.56mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "30"
+at = ["5.08mm", "-35.56mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "31"
+at = ["-5.08mm", "-38.1mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "32"
+at = ["5.08mm", "-38.1mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "33"
+at = ["-5.08mm", "-40.64mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "34"
+at = ["5.08mm", "-40.64mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "35"
+at = ["-5.08mm", "-43.18mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "36"
+at = ["5.08mm", "-43.18mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "37"
+at = ["-5.08mm", "-45.72mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "38"
+at = ["5.08mm", "-45.72mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "39"
+at = ["-5.08mm", "-48.26mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "40"
+at = ["5.08mm", "-48.26mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "41"
+at = ["-5.08mm", "-50.8mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "42"
+at = ["5.08mm", "-50.8mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "43"
+at = ["-5.08mm", "-53.34mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "44"
+at = ["5.08mm", "-53.34mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "45"
+at = ["-5.08mm", "-55.88mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "46"
+at = ["5.08mm", "-55.88mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "47"
+at = ["-5.08mm", "-58.42mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "48"
+at = ["5.08mm", "-58.42mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "49"
+at = ["-5.08mm", "-60.96mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "50"
+at = ["5.08mm", "-60.96mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "51"
+at = ["-5.08mm", "-63.5mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "52"
+at = ["5.08mm", "-63.5mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "53"
+at = ["-5.08mm", "-66.04mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "54"
+at = ["5.08mm", "-66.04mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "55"
+at = ["-5.08mm", "-68.58mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "56"
+at = ["5.08mm", "-68.58mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "57"
+at = ["-5.08mm", "-71.12mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "58"
+at = ["5.08mm", "-71.12mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "59"
+at = ["-5.08mm", "-73.66mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "60"
+at = ["5.08mm", "-73.66mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "61"
+at = ["-5.08mm", "-76.2mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "62"
+at = ["5.08mm", "-76.2mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "63"
+at = ["-5.08mm", "-78.74mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "64"
+at = ["5.08mm", "-78.74mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "65"
+at = ["-5.08mm", "-81.28mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "66"
+at = ["5.08mm", "-81.28mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "67"
+at = ["-5.08mm", "-83.82mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "68"
+at = ["5.08mm", "-83.82mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "69"
+at = ["-5.08mm", "-86.36mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "70"
+at = ["5.08mm", "-86.36mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "71"
+at = ["-5.08mm", "-88.9mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "72"
+at = ["5.08mm", "-88.9mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "73"
+at = ["-5.08mm", "-91.44mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "74"
+at = ["5.08mm", "-91.44mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "75"
+at = ["-5.08mm", "-93.98mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "76"
+at = ["5.08mm", "-93.98mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "77"
+at = ["-5.08mm", "-96.52mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "78"
+at = ["5.08mm", "-96.52mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.graphic]]
+kind = "rect"
+points = [["-2.54mm", "1.27mm"], ["2.54mm", "-97.79mm"]]

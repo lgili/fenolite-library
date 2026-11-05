@@ -64,6 +64,14 @@ def arc_points(cx, cy, r, a0, a1, n=8):
 ROWS: list[dict] = []
 
 
+def leads(x):
+    """Lead lines from the pin ends at +-2.54 mm to a body edge at +-x."""
+    return [line((-2.54, 0), (-x, 0)), line((x, 0), (2.54, 0))]
+
+
+AMP = [line((-5.08, -2.54), (-3.81, -2.54)), line((-5.08, 2.54), (-3.81, 2.54)), line((3.81, 0), (5.08, 0))]
+
+
 def add(name, title, summary, ref, pins, placements, graphics, tags, hide_names=True, hide_numbers=False, category="Generic symbol"):
     sym = {"reference": ref, "pin_names_hidden": hide_names}
     if hide_numbers:
@@ -81,11 +89,11 @@ zig = [(-2.54, 0)] + [(-2.2225 + 0.635 * i, 1.016 if i % 2 == 0 else -1.016) for
 add("Resistor_US", "Resistor (zigzag)", "Generic two-terminal resistor, zigzag", "R",
     [(1, "~", "passive"), (2, "~", "passive")], two, [line(*zig)], ["resistor"], hide_numbers=True)
 add("Capacitor", "Capacitor", "Generic non-polarized capacitor", "C",
-    [(1, "~", "passive"), (2, "~", "passive")], [pin(1, -3.81, 0, 0, 3.175), pin(2, 3.81, 0, 180, 3.175)],
-    [line((-0.635, -2.032), (-0.635, 2.032), width=0.508), line((0.635, -2.032), (0.635, 2.032), width=0.508)], ["capacitor"], hide_numbers=True)
+    [(1, "~", "passive"), (2, "~", "passive")], two,
+    [line((-0.635, -2.032), (-0.635, 2.032), width=0.508), line((0.635, -2.032), (0.635, 2.032), width=0.508), *leads(0.635)], ["capacitor"], hide_numbers=True)
 add("Capacitor_Polarized", "Capacitor, polarized", "Generic polarized capacitor, pin 1 positive", "C",
-    [(1, "+", "passive"), (2, "-", "passive")], [pin(1, -3.81, 0, 0, 2.794), pin(2, 3.81, 0, 180, 2.794)],
-    [rect((-1.016, -2.032), (-0.635, 2.032)), rect((0.635, -2.032), (1.016, 2.032), filled=True),
+    [(1, "+", "passive"), (2, "-", "passive")], two,
+    [*leads(1.016), rect((-1.016, -2.032), (-0.635, 2.032)), rect((0.635, -2.032), (1.016, 2.032), filled=True),
      line((-2.286, 1.524), (-1.524, 1.524)), line((-1.905, 1.143), (-1.905, 1.905))], ["capacitor", "polarized"], hide_numbers=True)
 hump = []
 for cx in (-1.905, -0.635, 0.635, 1.905):
@@ -93,24 +101,25 @@ for cx in (-1.905, -0.635, 0.635, 1.905):
 add("Inductor", "Inductor", "Generic inductor", "L",
     [(1, "~", "passive"), (2, "~", "passive")], two, [line(*hump)], ["inductor"], hide_numbers=True)
 add("Ferrite_Bead", "Ferrite bead", "Generic ferrite bead, filled box", "FB",
-    [(1, "~", "passive"), (2, "~", "passive")], [pin(1, -5.08, 0, 0, 3.556), pin(2, 5.08, 0, 180, 3.556)],
-    [rect((-1.524, -0.762), (1.524, 0.762), filled=True)], ["ferrite-bead", "inductor"], hide_numbers=True)
+    [(1, "~", "passive"), (2, "~", "passive")], two,
+    [rect((-1.524, -0.762), (1.524, 0.762), filled=True), *leads(1.524)], ["ferrite-bead", "inductor"], hide_numbers=True)
 tri = poly((-1.27, -1.27), (1.27, 0), (-1.27, 1.27), filled=False)
-dpins = [pin(1, 5.08, 0, 180, 3.81), pin(2, -5.08, 0, 0, 3.81)]
+DLEADS = [line((-2.54, 0), (-1.27, 0)), line((1.27, 0), (2.54, 0))]
+dpins = [pin(1, 5.08, 0, 180), pin(2, -5.08, 0, 0)]
 dnames = [(1, "K", "passive"), (2, "A", "passive")]
 add("Diode", "Diode", "Generic diode, pin 1 cathode, pin 2 anode", "D", dnames, dpins,
-    [tri, line((1.27, -1.27), (1.27, 1.27)), line((-1.27, 0), (1.27, 0))], ["diode"])
+    [tri, *DLEADS, line((1.27, -1.27), (1.27, 1.27)), line((-1.27, 0), (1.27, 0))], ["diode"])
 add("Diode_Schottky", "Schottky diode", "Generic Schottky diode, pin 1 cathode, pin 2 anode", "D", dnames, dpins,
-    [tri, line((1.778, 1.016), (1.778, 1.27), (1.27, 1.27), (1.27, -1.27), (0.762, -1.27), (0.762, -1.016)), line((-1.27, 0), (1.27, 0))], ["diode", "schottky"])
+    [tri, line((1.778, 1.016), (1.778, 1.27), (1.27, 1.27), (1.27, -1.27), (0.762, -1.27), (0.762, -1.016)), line((-1.27, 0), (1.27, 0)), *DLEADS], ["diode", "schottky"])
 add("Diode_Zener", "Zener diode", "Generic Zener diode, pin 1 cathode, pin 2 anode", "D", dnames, dpins,
-    [tri, line((1.778, 1.524), (1.27, 1.27), (1.27, -1.27), (0.762, -1.524)), line((-1.27, 0), (1.27, 0))], ["diode", "zener"])
+    [tri, line((1.778, 1.524), (1.27, 1.27), (1.27, -1.27), (0.762, -1.524)), line((-1.27, 0), (1.27, 0)), *DLEADS], ["diode", "zener"])
 add("TVS_Bidirectional", "TVS diode, bidirectional", "Generic bidirectional transient voltage suppressor", "D",
     [(1, "A1", "passive"), (2, "A2", "passive")], [pin(1, -5.08, 0, 0, 2.54), pin(2, 5.08, 0, 180, 2.54)],
     [poly((-2.54, -1.27), (0, 0), (-2.54, 1.27), filled=False), poly((2.54, -1.27), (0, 0), (2.54, 1.27), filled=False),
      line((0.508, 1.524), (0, 1.27), (0, -1.27), (-0.508, -1.524))], ["diode", "tvs"])
 arrow = lambda x, y: [line((x, y), (x + 1.016, y + 1.016)), poly((x + 1.016, y + 1.016), (x + 0.381, y + 0.889), (x + 0.889, y + 0.381))]
 add("LED", "Light-emitting diode", "Generic LED, pin 1 cathode, pin 2 anode", "D", dnames, dpins,
-    [tri, line((1.27, -1.27), (1.27, 1.27)), line((-1.27, 0), (1.27, 0)), *arrow(-0.508, 1.524), *arrow(0.508, 1.524)], ["diode", "led"])
+    [tri, *DLEADS, line((1.27, -1.27), (1.27, 1.27)), line((-1.27, 0), (1.27, 0)), *arrow(-0.508, 1.524), *arrow(0.508, 1.524)], ["diode", "led"])
 
 
 def bjt(name, title, pnp):
@@ -119,7 +128,7 @@ def bjt(name, title, pnp):
     g.append(poly((1.381, -1.345), (0.406, -1.207), (0.957, -2.023)) if pnp else poly((2.083, -2.254), (1.532, -1.438), (1.108, -2.116)))
     add(name, title, f"Generic {'PNP' if pnp else 'NPN'} bipolar transistor; pins 1 B, 2 E, 3 C (common SOT-23 pin-out)", "Q",
         [(1, "B", "input"), (2, "E", "passive"), (3, "C", "passive")],
-        [pin(1, -5.08, 0, 0, 4.572), pin(2, 2.54, -5.08, 90), pin(3, 2.54, 5.08, 270)], g, ["bjt", "pnp" if pnp else "npn", "transistor"])
+        [pin(1, -5.08, 0, 0), pin(2, 2.54, -5.08, 90), pin(3, 2.54, 5.08, 270)], [line((-2.54, 0), (-0.508, 0)), *g], ["bjt", "pnp" if pnp else "npn", "transistor"])
 
 
 bjt("BJT_NPN", "NPN transistor", False)
@@ -133,44 +142,44 @@ def mos(name, title, p):
     g.append(poly((-0.381, 0), (0.381, 0.381), (0.381, -0.381)) if p else poly((-1.27, 0), (-0.508, 0.381), (-0.508, -0.381)))
     add(name, title, f"Generic {'P' if p else 'N'}-channel enhancement MOSFET; pins 1 G, 2 S, 3 D (common SOT-23 pin-out)", "Q",
         [(1, "G", "input"), (2, "S", "passive"), (3, "D", "passive")],
-        [pin(1, -5.08, 0, 0, 3.048), pin(2, 2.54, -5.08, 90), pin(3, 2.54, 5.08, 270)], g, ["mosfet", "pmos" if p else "nmos", "transistor"])
+        [pin(1, -5.08, 0, 0), pin(2, 2.54, -5.08, 90), pin(3, 2.54, 5.08, 270)], [line((-2.54, 0), (-2.032, 0)), *g], ["mosfet", "pmos" if p else "nmos", "transistor"])
 
 
 mos("MOSFET_N", "N-channel MOSFET", False)
 mos("MOSFET_P", "P-channel MOSFET", True)
 add("OpAmp", "Operational amplifier", "Generic single operational amplifier; pins 2 -IN, 3 +IN, 4 V-, 6 OUT, 7 V+ (common 8-pin single pin-out)", "U",
     [(2, "-", "input"), (3, "+", "input"), (4, "V-", "power_in"), (6, "~", "output"), (7, "V+", "power_in")],
-    [pin(2, -7.62, -2.54, 0, 3.81), pin(3, -7.62, 2.54, 0, 3.81), pin(4, -1.27, -7.62, 90, 4.445), pin(6, 7.62, 0, 180, 3.81), pin(7, -1.27, 7.62, 270, 4.445)],
-    [poly((-3.81, -5.08), (3.81, 0), (-3.81, 5.08), filled=False)], ["amplifier", "opamp"], hide_names=False)
+    [pin(2, -7.62, -2.54), pin(3, -7.62, 2.54), pin(4, 0, -5.08, 90), pin(6, 7.62, 0, 180), pin(7, 0, 5.08, 270)],
+    [poly((-3.81, -5.08), (3.81, 0), (-3.81, 5.08), filled=False), *AMP], ["amplifier", "opamp"], hide_names=False)
 add("Comparator", "Comparator", "Generic comparator; pins 2 -IN, 3 +IN, 4 V-, 7 OUT (open collector), 8 V+", "U",
     [(2, "-", "input"), (3, "+", "input"), (4, "V-", "power_in"), (7, "~", "open_collector"), (8, "V+", "power_in")],
-    [pin(2, -7.62, -2.54, 0, 3.81), pin(3, -7.62, 2.54, 0, 3.81), pin(4, -1.27, -7.62, 90, 4.445), pin(7, 7.62, 0, 180, 3.81), pin(8, -1.27, 7.62, 270, 4.445)],
-    [poly((-3.81, -5.08), (3.81, 0), (-3.81, 5.08), filled=False)], ["comparator"], hide_names=False)
+    [pin(2, -7.62, -2.54), pin(3, -7.62, 2.54), pin(4, 0, -5.08, 90), pin(7, 7.62, 0, 180), pin(8, 0, 5.08, 270)],
+    [poly((-3.81, -5.08), (3.81, 0), (-3.81, 5.08), filled=False), *AMP], ["comparator"], hide_names=False)
 add("Regulator_Linear", "Linear regulator, three terminals", "Generic three-terminal positive linear regulator; pins 1 VIN, 2 GND, 3 VOUT", "U",
     [(1, "VIN", "power_in"), (2, "GND", "power_in"), (3, "VOUT", "power_out")],
     [pin(1, -7.62, 0, 0), pin(2, 0, -5.08, 90), pin(3, 7.62, 0, 180)], [rect((-5.08, -2.54), (5.08, 2.54))], ["ldo", "regulator"], hide_names=False)
 add("Crystal", "Crystal, two terminals", "Generic quartz crystal, two terminals", "Y",
-    [(1, "1", "passive"), (2, "2", "passive")], [pin(1, -3.81, 0, 0, 2.286), pin(2, 3.81, 0, 180, 2.286)],
-    [rect((-0.762, -1.524), (0.762, 1.524)), line((-1.524, -1.27), (-1.524, 1.27)), line((1.524, -1.27), (1.524, 1.27))], ["crystal"], hide_numbers=True)
+    [(1, "1", "passive"), (2, "2", "passive")], two,
+    [*leads(1.524), rect((-0.762, -1.524), (0.762, 1.524)), line((-1.524, -1.27), (-1.524, 1.27)), line((1.524, -1.27), (1.524, 1.27))], ["crystal"], hide_numbers=True)
 add("Crystal_GND24", "Crystal, four terminals", "Generic quartz crystal in a four-pad package; pins 1 and 3 crystal, 2 and 4 case ground", "Y",
     [(1, "1", "passive"), (2, "GND", "passive"), (3, "3", "passive"), (4, "GND", "passive")],
-    [pin(1, -3.81, 0, 0, 2.286), pin(3, 3.81, 0, 180, 2.286), pin(2, 0, -5.08, 90, 3.556), pin(4, 0, 5.08, 270, 3.556)],
-    [rect((-0.762, -1.524), (0.762, 1.524)), line((-1.524, -1.27), (-1.524, 1.27)), line((1.524, -1.27), (1.524, 1.27))], ["crystal"])
+    [pin(1, -5.08, 0), pin(3, 5.08, 0, 180), pin(2, 0, -5.08, 90), pin(4, 0, 5.08, 270)],
+    [*leads(1.524), line((0, -2.54), (0, -1.524)), line((0, 1.524), (0, 2.54)), rect((-0.762, -1.524), (0.762, 1.524)), line((-1.524, -1.27), (-1.524, 1.27)), line((1.524, -1.27), (1.524, 1.27))], ["crystal"])
 add("Fuse", "Fuse", "Generic fuse", "F", [(1, "~", "passive"), (2, "~", "passive")], two,
     [rect((-2.54, -0.762), (2.54, 0.762)), line((-2.54, 0), (2.54, 0))], ["fuse"], hide_numbers=True)
 
 for n in range(1, 41):
-    pl = [pin(i + 1, -5.08, -2.54 * i, 0, 3.81) for i in range(n)]
+    pl = [pin(i + 1, -5.08, -2.54 * i) for i in range(n)]
     add(f"Conn_01x{n:02d}", f"Connector, 1 row, {n} pins", f"Generic single-row connector, {n} pins, pin 1 at the top", "J",
         [(i + 1, f"Pin_{i + 1}", "passive") for i in range(n)], pl,
-        [rect((-1.27, 1.27), (1.27, -2.54 * (n - 1) - 1.27))], ["connector", "single-row"], category="Generic connector symbol")
+        [rect((-2.54, 1.27), (0, -2.54 * (n - 1) - 1.27))], ["connector", "single-row"], category="Generic connector symbol")
 for n in range(1, 41):
     pl = []
     for i in range(n):
-        pl += [pin(2 * i + 1, -5.08, -2.54 * i, 0, 3.81), pin(2 * i + 2, 5.08, -2.54 * i, 180, 3.81)]
+        pl += [pin(2 * i + 1, -5.08, -2.54 * i), pin(2 * i + 2, 5.08, -2.54 * i, 180)]
     add(f"Conn_02x{n:02d}", f"Connector, 2 rows, {2 * n} pins", f"Generic two-row connector, {2 * n} pins, odd pins left, even pins right", "J",
         [(i + 1, f"Pin_{i + 1}", "passive") for i in range(2 * n)], pl,
-        [rect((-1.27, 1.27), (1.27, -2.54 * (n - 1) - 1.27))], ["connector", "dual-row"], category="Generic connector symbol")
+        [rect((-2.54, 1.27), (2.54, -2.54 * (n - 1) - 1.27))], ["connector", "dual-row"], category="Generic connector symbol")
 
 
 def tv(v):

@@ -1,0 +1,21 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:Conn_02x28",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic two-row connector, 56 pins, odd pins left, even pins right",
+  "tags": [
+    "connector",
+    "dual-row",
+    "generic",
+    "symbol"
+  ],
+  "title": "Connector, 2 rows, 56 pins",
+  "version": "1.0.0"
+}

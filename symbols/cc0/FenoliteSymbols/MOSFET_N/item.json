@@ -1,0 +1,22 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:MOSFET_N",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic N-channel enhancement MOSFET; pins 1 G, 2 S, 3 D (common SOT-23 pin-out)",
+  "tags": [
+    "generic",
+    "mosfet",
+    "nmos",
+    "symbol",
+    "transistor"
+  ],
+  "title": "N-channel MOSFET",
+  "version": "1.0.0"
+}

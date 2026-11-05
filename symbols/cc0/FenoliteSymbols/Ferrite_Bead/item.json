@@ -1,0 +1,21 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:Ferrite_Bead",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic ferrite bead, filled box",
+  "tags": [
+    "ferrite-bead",
+    "generic",
+    "inductor",
+    "symbol"
+  ],
+  "title": "Ferrite bead",
+  "version": "1.0.0"
+}

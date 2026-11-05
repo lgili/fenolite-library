@@ -1,0 +1,22 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:MOSFET_P",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic P-channel enhancement MOSFET; pins 1 G, 2 S, 3 D (common SOT-23 pin-out)",
+  "tags": [
+    "generic",
+    "mosfet",
+    "pmos",
+    "symbol",
+    "transistor"
+  ],
+  "title": "P-channel MOSFET",
+  "version": "1.0.0"
+}

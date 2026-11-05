@@ -1,0 +1,21 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:Capacitor_Polarized",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic polarized capacitor, pin 1 positive",
+  "tags": [
+    "capacitor",
+    "generic",
+    "polarized",
+    "symbol"
+  ],
+  "title": "Capacitor, polarized",
+  "version": "1.0.0"
+}

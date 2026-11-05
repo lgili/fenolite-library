@@ -1,0 +1,59 @@
+(kicad_symbol_lib
+	(version 20241209)
+	(generator "fenolite")
+	(symbol "BJT_NPN"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "Q"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "BJT_NPN"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Description" "Generic NPN bipolar transistor; pins 1 B, 2 E, 3 C (common SOT-23 pin-out)"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "BJT_NPN_0_1"
+			(polyline (pts (xy -2.54 0) (xy -0.508 0)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy -0.508 -1.524) (xy -0.508 1.524)) (stroke (width 0.508) (type default)) (fill (type none)))
+			(polyline (pts (xy -0.508 0.635) (xy 2.54 2.54)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy -0.508 -0.635) (xy 2.54 -2.54)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(circle (center 1.016 0) (radius 2.794) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 2.083 -2.254) (xy 1.532 -1.438) (xy 1.108 -2.116) (xy 2.083 -2.254)) (stroke (width 0.254) (type default)) (fill (type background)))
+		)
+		(symbol "BJT_NPN_1_1"
+			(pin input line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "B" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at 2.54 -5.08 90)
+				(length 2.54)
+				(name "E" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at 2.54 5.08 270)
+				(length 2.54)
+				(name "C" (effects (font (size 1.27 1.27))))
+				(number "3" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+)

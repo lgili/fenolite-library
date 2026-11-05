@@ -1,0 +1,59 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0422 Original generic schematic symbols authored for fenolite-library (change c0390) (c0390 batch 5). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.pins.v0"
+id = "FenoliteSymbols:Conn_01x04"
+version = "1.0.0"
+summary = "Generic single-row connector, 4 pins, pin 1 at the top"
+category = "Generic connector symbol"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422"]
+
+[[pin]]
+number = "1"
+name = "Pin_1"
+type = "passive"
+
+[[pin]]
+number = "2"
+name = "Pin_2"
+type = "passive"
+
+[[pin]]
+number = "3"
+name = "Pin_3"
+type = "passive"
+
+[[pin]]
+number = "4"
+name = "Pin_4"
+type = "passive"
+
+[symbol]
+reference = "J"
+pin_names_hidden = true
+
+[[symbol.pins]]
+number = "1"
+at = ["-5.08mm", "0mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "2"
+at = ["-5.08mm", "-2.54mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "3"
+at = ["-5.08mm", "-5.08mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "4"
+at = ["-5.08mm", "-7.62mm"]
+length = "2.54mm"
+
+[[symbol.graphic]]
+kind = "rect"
+points = [["-2.54mm", "1.27mm"], ["0mm", "-8.89mm"]]

@@ -1,0 +1,20 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:Crystal_GND24",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic quartz crystal in a four-pad package; pins 1 and 3 crystal, 2 and 4 case ground",
+  "tags": [
+    "crystal",
+    "generic",
+    "symbol"
+  ],
+  "title": "Crystal, four terminals",
+  "version": "1.0.0"
+}

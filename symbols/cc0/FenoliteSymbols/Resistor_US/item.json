@@ -1,0 +1,20 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:Resistor_US",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic two-terminal resistor, zigzag",
+  "tags": [
+    "generic",
+    "resistor",
+    "symbol"
+  ],
+  "title": "Resistor (zigzag)",
+  "version": "1.0.0"
+}
