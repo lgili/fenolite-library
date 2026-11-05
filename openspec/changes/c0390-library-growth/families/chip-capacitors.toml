@@ -1,0 +1,117 @@
+# SPDX-License-Identifier: CC0-1.0
+# Chip capacitors (MLCC), batch 1 of change c0390. Bodies, maximum thickness and termination band range:
+# Vishay VJ Commercial Series, table DIMENSIONS (D-0391). Land: calculator lands/1 (INFERRED).
+schema = "fenolite.c0390-family.v0"
+kind = "footprint"
+namespace = "FenoliteCapacitorSMD"
+category = "Chip capacitor"
+date = "2026-11-04"
+sources = ["D-0391"]
+tags = ["capacitor", "chip", "mlcc", "smd", "two-terminal"]
+
+[record]
+family = "chip"
+polarity = "none"
+
+[record.generate]
+lands = 1
+drawing = 1
+
+[[row]]
+name = "CHIP0402_B1x0.5"
+title = "Chip capacitor 0402 (1005 metric)"
+summary = "Multilayer ceramic chip capacitor 0402 (1005 metric), 1 x 0.5 mm body, up to 0.60 mm thick, calculated land"
+used = "Table DIMENSIONS case code 0402: L 1.00 +0.10/-0.05, W 0.50 +0.10/-0.05, T max 0.60, P 0.10 to 0.41 mm"
+tags = ["0402", "1005-metric"]
+record.body = { length = { min = "0.95mm", nom = "1.00mm", max = "1.10mm" }, width = { min = "0.45mm", nom = "0.50mm", max = "0.60mm" }, height = "0.60mm max" }
+record.terminal = { length = "0.10mm..0.41mm" }
+
+[[row]]
+name = "CHIP0603_B1.6x0.8"
+title = "Chip capacitor 0603 (1608 metric)"
+summary = "Multilayer ceramic chip capacitor 0603 (1608 metric), 1.6 x 0.8 mm body, up to 0.97 mm thick, calculated land"
+used = "Table DIMENSIONS case code 0603: L 1.60 ± 0.15, W 0.80 ± 0.15, T max 0.97, P 0.30 to 0.55 mm"
+tags = ["0603", "1608-metric"]
+record.body = { length = "1.45mm..1.75mm", width = "0.65mm..0.95mm", height = "0.97mm max" }
+record.terminal = { length = "0.30mm..0.55mm" }
+
+[[row]]
+name = "CHIP0805_B2x1.25"
+title = "Chip capacitor 0805 (2012 metric)"
+summary = "Multilayer ceramic chip capacitor 0805 (2012 metric), 2 x 1.25 mm body, up to 1.45 mm thick, calculated land"
+used = "Table DIMENSIONS case code 0805: L 2.00 ± 0.20, W 1.25 ± 0.20, T max 1.45, P 0.25 to 0.76 mm"
+tags = ["0805", "2012-metric"]
+record.body = { length = "1.80mm..2.20mm", width = "1.05mm..1.45mm", height = "1.45mm max" }
+record.terminal = { length = "0.25mm..0.76mm" }
+
+[[row]]
+name = "CHIP1206_B3.2x1.6"
+title = "Chip capacitor 1206 (3216 metric)"
+summary = "Multilayer ceramic chip capacitor 1206 (3216 metric), 3.2 x 1.6 mm body, up to 1.70 mm thick, calculated land"
+used = "Table DIMENSIONS case code 1206: L 3.20 ± 0.25, W 1.60 ± 0.25, T max 1.70, P 0.25 to 0.76 mm"
+tags = ["1206", "3216-metric"]
+record.body = { length = "2.95mm..3.45mm", width = "1.35mm..1.85mm", height = "1.70mm max" }
+record.terminal = { length = "0.25mm..0.76mm" }
+
+[[row]]
+name = "CHIP1210_B3.2x2.5"
+title = "Chip capacitor 1210 (3225 metric)"
+summary = "Multilayer ceramic chip capacitor 1210 (3225 metric), 3.2 x 2.5 mm body, up to 1.70 mm thick, calculated land"
+used = "Table DIMENSIONS case code 1210: L 3.20 ± 0.25, W 2.50 ± 0.25, T max 1.70, P 0.25 to 0.76 mm"
+tags = ["1210", "3225-metric"]
+record.body = { length = "2.95mm..3.45mm", width = "2.25mm..2.75mm", height = "1.70mm max" }
+record.terminal = { length = "0.25mm..0.76mm" }
+
+[[row]]
+name = "CHIP1808_B4.57x2.03"
+title = "Chip capacitor 1808 (4520 metric)"
+summary = "Multilayer ceramic chip capacitor 1808 (4520 metric), 4.57 x 2.03 mm body, up to 2.18 mm thick, calculated land"
+used = "Table DIMENSIONS case code 1808: L 4.57 ± 0.30, W 2.03 ± 0.25, T max 2.18, P 0.25 to 0.90 mm"
+tags = ["1808", "4520-metric"]
+record.body = { length = "4.27mm..4.87mm", width = "1.78mm..2.28mm", height = "2.18mm max" }
+record.terminal = { length = "0.25mm..0.90mm" }
+
+[[row]]
+name = "CHIP1812_B4.5x3.2"
+title = "Chip capacitor 1812 (4532 metric)"
+summary = "Multilayer ceramic chip capacitor 1812 (4532 metric), 4.5 x 3.2 mm body, up to 2.18 mm thick, calculated land"
+used = "Table DIMENSIONS case code 1812: L 4.50 ± 0.30, W 3.20 ± 0.20, T max 2.18, P 0.25 to 0.90 mm"
+tags = ["1812", "4532-metric"]
+record.body = { length = "4.20mm..4.80mm", width = "3.00mm..3.40mm", height = "2.18mm max" }
+record.terminal = { length = "0.25mm..0.90mm" }
+
+[[row]]
+name = "CHIP1825_B4.5x6.4"
+title = "Chip capacitor 1825 (4564 metric)"
+summary = "Multilayer ceramic chip capacitor 1825 (4564 metric), 4.5 x 6.4 mm body, up to 2.18 mm thick, calculated land"
+used = "Table DIMENSIONS case code 1825: L 4.50 ± 0.30, W 6.40 ± 0.25, T max 2.18, P 0.25 to 0.90 mm"
+tags = ["1825", "4564-metric"]
+record.body = { length = "4.20mm..4.80mm", width = "6.15mm..6.65mm", height = "2.18mm max" }
+record.terminal = { length = "0.25mm..0.90mm" }
+
+[[row]]
+name = "CHIP2220_B5.59x5.08"
+title = "Chip capacitor 2220 (5650 metric)"
+summary = "Multilayer ceramic chip capacitor 2220 (5650 metric), 5.59 x 5.08 mm body, up to 2.18 mm thick, calculated land"
+used = "Table DIMENSIONS case code 2220: L 5.59 ± 0.25, W 5.08 ± 0.25, T max 2.18, P 0.25 to 0.95 mm"
+tags = ["2220", "5650-metric"]
+record.body = { length = "5.34mm..5.84mm", width = "4.83mm..5.33mm", height = "2.18mm max" }
+record.terminal = { length = "0.25mm..0.95mm" }
+
+[[row]]
+name = "CHIP2225_B5.59x6.35"
+title = "Chip capacitor 2225 (5664 metric)"
+summary = "Multilayer ceramic chip capacitor 2225 (5664 metric), 5.59 x 6.35 mm body, up to 2.18 mm thick, calculated land"
+used = "Table DIMENSIONS case code 2225: L 5.59 ± 0.25, W 6.35 ± 0.25, T max 2.18, P 0.25 to 0.95 mm"
+tags = ["2225", "5664-metric"]
+record.body = { length = "5.34mm..5.84mm", width = "6.10mm..6.60mm", height = "2.18mm max" }
+record.terminal = { length = "0.25mm..0.95mm" }
+
+[[row]]
+name = "CHIP3640_B9.14x10.2"
+title = "Chip capacitor 3640 (9210 metric)"
+summary = "Multilayer ceramic chip capacitor 3640 (9210 metric), 9.14 x 10.2 mm body, up to 2.18 mm thick, calculated land"
+used = "Table DIMENSIONS case code 3640: L 9.14 ± 0.38, W 10.20 ± 0.38, T max 2.18, P 0.25 to 1.00 mm"
+tags = ["3640", "9210-metric"]
+record.body = { length = "8.76mm..9.52mm", width = "9.82mm..10.58mm", height = "2.18mm max" }
+record.terminal = { length = "0.25mm..1.00mm" }

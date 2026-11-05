@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenoliteCapacitorSMD.3dshapes/CHIP2225_B5.59x6.35.step",
+    "generated/FenoliteCapacitorSMD.pretty/CHIP2225_B5.59x6.35.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenoliteCapacitorSMD:CHIP2225_B5.59x6.35",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Multilayer ceramic chip capacitor 2225 (5664 metric), 5.59 x 6.35 mm body, up to 2.18 mm thick, calculated land",
+  "tags": [
+    "2225",
+    "5664-metric",
+    "capacitor",
+    "chip",
+    "mlcc",
+    "smd",
+    "two-terminal"
+  ],
+  "title": "Chip capacitor 2225 (5664 metric)",
+  "version": "1.0.0"
+}

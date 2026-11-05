@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenoliteCapacitorSMD.3dshapes/CHIP0805_B2x1.25.step",
+    "generated/FenoliteCapacitorSMD.pretty/CHIP0805_B2x1.25.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenoliteCapacitorSMD:CHIP0805_B2x1.25",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Multilayer ceramic chip capacitor 0805 (2012 metric), 2 x 1.25 mm body, up to 1.45 mm thick, calculated land",
+  "tags": [
+    "0805",
+    "2012-metric",
+    "capacitor",
+    "chip",
+    "mlcc",
+    "smd",
+    "two-terminal"
+  ],
+  "title": "Chip capacitor 0805 (2012 metric)",
+  "version": "1.0.0"
+}

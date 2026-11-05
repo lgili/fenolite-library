@@ -1,0 +1,76 @@
+(footprint "CHIP0805_B2x1.25"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(descr "Multilayer ceramic chip capacitor 0805 (2012 metric), 2 x 1.25 mm body, up to 1.45 mm thick, calculated land; land pattern remains INFERRED and requires part-specific review")
+	(attr smd)
+	(property "Reference" "REF**"
+		(at 0 -2.26 0)
+		(layer "F.SilkS")
+		(uuid "884fbd03-963b-5a08-9879-af8e90dc3850")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CHIP0805_B2x1.25"
+		(at 0 2.26 0)
+		(layer "F.Fab")
+		(uuid "61275f23-7db0-5b0f-a79f-5d338eb07b5e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.82 0)
+		(size 1.16 1.51)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.086206)
+	)
+	(pad "2" smd roundrect
+		(at 0.82 0)
+		(size 1.16 1.51)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.086206)
+	)
+	(fp_line
+		(start -1 -0.625)
+		(end 1 -0.625)
+		(layer "F.Fab")
+		(width 0.1)
+		(fill no)
+	)
+	(fp_line
+		(start 1 -0.625)
+		(end 1 0.625)
+		(layer "F.Fab")
+		(width 0.1)
+		(fill no)
+	)
+	(fp_line
+		(start 1 0.625)
+		(end -1 0.625)
+		(layer "F.Fab")
+		(width 0.1)
+		(fill no)
+	)
+	(fp_line
+		(start -1 0.625)
+		(end -1 -0.625)
+		(layer "F.Fab")
+		(width 0.1)
+		(fill no)
+	)
+	(fp_rect
+		(start -1.9 -1.26)
+		(end 1.9 1.26)
+		(layer "F.CrtYd")
+		(width 0.05)
+		(fill no)
+	)
+)

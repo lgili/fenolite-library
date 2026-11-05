@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenoliteCapacitorSMD.3dshapes/CHIP1808_B4.57x2.03.step",
+    "generated/FenoliteCapacitorSMD.pretty/CHIP1808_B4.57x2.03.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenoliteCapacitorSMD:CHIP1808_B4.57x2.03",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Multilayer ceramic chip capacitor 1808 (4520 metric), 4.57 x 2.03 mm body, up to 2.18 mm thick, calculated land",
+  "tags": [
+    "1808",
+    "4520-metric",
+    "capacitor",
+    "chip",
+    "mlcc",
+    "smd",
+    "two-terminal"
+  ],
+  "title": "Chip capacitor 1808 (4520 metric)",
+  "version": "1.0.0"
+}
