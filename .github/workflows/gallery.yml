@@ -43,9 +43,14 @@ jobs:
     needs: release
     runs-on: ubuntu-24.04
     steps:
+      # The workflow's own ref gives the tooling (this action, the core pin, licences.toml); the tag gives the items.
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/checkout@v4
         with:
           ref: refs/tags/${{ needs.release.outputs.tag }}
+          path: release-tree
           fetch-depth: 0
           persist-credentials: false
       - uses: ./.github/actions/fenolite
@@ -58,6 +63,7 @@ jobs:
           run-id: ${{ github.event.workflow_run.id }}
           github-token: ${{ github.token }}
       - name: Release assets of the tag (the release run's artefact, or rebuilt twice and compared)
+        working-directory: release-tree
         env:
           TAG: ${{ needs.release.outputs.tag }}
         run: |
@@ -112,6 +118,7 @@ jobs:
           else: print('No successful benchmark table is available; the site makes no benchmark claim')
           PY
       - name: Generate attributed gallery and fresh Fenolite board renders
+        working-directory: release-tree
         run: |
           python - <<'PY'
           import html, json, os, re, shutil, subprocess, tempfile
@@ -169,7 +176,7 @@ jobs:
           PY
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site/
+          path: release-tree/site/
   deploy:
     needs: site
     # The github-pages environment accepts deployments from main only; runs on other refs build the site only.

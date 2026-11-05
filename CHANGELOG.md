@@ -6,6 +6,8 @@
   1.0.0; its first run (41954400114) failed ecc83 (two project files, FEN-2001) and the Coldfire kit.
 - The pinned-Fenolite action runs `kicad-cli` in its container with `HOME` under `$RUNNER_TEMP`: the runner's uid
   has no home in the image, so every call logged "Directory '/.cache' couldn't be created (error 13)" (c0405).
+- `gallery.yml` takes its tooling (the pinned-Fenolite action, the core pin, `licences.toml`) from the workflow's
+  ref and the items from the tag, checked out in `release-tree/`, so a pin bump on `main` renders older tags too.
 - `gallery.yml` no longer needs a published GitHub Release: from a library tag it rebuilds the release assets
   twice and compares them (or takes the `release-assets` artefact of the release run), deploys Pages only from
   `main` through the `github-pages` environment, takes the newest successful benchmark table, and a board
