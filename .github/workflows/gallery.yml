@@ -54,7 +54,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - uses: ./.github/actions/fenolite
-        with: {require: 'library gallery,library release,build,render', kicad: 'true'}
+        with: {require: 'library gallery,library release,build', kicad: 'true'}
       - if: github.event_name == 'workflow_run'
         uses: actions/download-artifact@v4
         with:
@@ -117,62 +117,87 @@ jobs:
               print('Benchmark table of bench run', prior['databaseId'])
           else: print('No successful benchmark table is available; the site makes no benchmark claim')
           PY
-      - name: Generate attributed gallery and fresh Fenolite board renders
+      - name: Board views and block sheets made fresh from each item, then the attributed gallery
         working-directory: release-tree
         run: |
           python - <<'PY'
-          import html, json, os, re, shutil, subprocess, tempfile
+          import json, os, shutil, subprocess, tempfile
           from pathlib import Path
-          release = Path(os.environ['RUNNER_TEMP']) / 'library-release'
+          temp = Path(os.environ['RUNNER_TEMP'])
+          release = temp / 'library-release'
+          renders = temp / 'gallery-renders'
+          renders.mkdir()
+          # The layers of fenolite.backends.kicad.plot; the bottom is mirrored, as seen from below.
+          SIDES = (('top.svg', 'F.Cu,F.SilkS,F.Fab,Edge.Cuts', []), ('bottom.svg', 'B.Cu,B.SilkS,B.Fab,Edge.Cuts', ['--mirror']))
 
-          def fenolite(row, command):
-              """Plan then confirm one writing command; the reason it failed, or None."""
-              planned = subprocess.run(['fenolite', *command, '--dry-run', '--json'], capture_output=True, text=True)
-              if planned.returncode: return command[0] + ' plan exited ' + str(planned.returncode) + ': ' + planned.stderr.strip()[-400:]
-              data = json.loads(planned.stdout)
-              plan = data['result'].get('plan_id')
-              done = subprocess.run(['fenolite', *command, *(['--confirm', '--plan', plan] if plan else ['--confirm']), '--json'], capture_output=True, text=True)
-              if done.returncode: return command[0] + ' exited ' + str(done.returncode) + ': ' + done.stderr.strip()[-400:]
-              failed = [re.sub(r'^\S+ was not produced: ', '', issue['message']) for issue in json.loads(done.stdout).get('issues', []) if issue.get('code') == 'render.failed']
-              return '; '.join(dict.fromkeys(failed)) or None
-          args = ['fenolite', 'library', 'gallery', '.', '--release', str(release), '--out', 'site']
+          def build(design, out):
+              """Plan then confirm `fenolite build`; the reason it failed, or None."""
+              planned = subprocess.run(['fenolite', 'build', str(design), '--out', str(out), '--dry-run', '--json'], capture_output=True, text=True)
+              if planned.returncode: return 'build plan exited ' + str(planned.returncode) + ': ' + planned.stderr.strip()[-400:]
+              plan = json.loads(planned.stdout)['result'].get('plan_id')
+              done = subprocess.run(['fenolite', 'build', str(design), '--out', str(out), *(['--confirm', '--plan', plan] if plan else ['--confirm']), '--json'], capture_output=True, text=True)
+              return 'build exited ' + str(done.returncode) + ': ' + done.stderr.strip()[-400:] if done.returncode else None
+
+          def board(source, folder):
+              """Top and bottom views cropped to the board, without the drawing sheet; the reason it failed, or None."""
+              with tempfile.TemporaryDirectory(prefix='gallery-') as temporary:
+                  out = Path(temporary) / 'build'
+                  reason = build(source / 'design.py', out)
+                  if reason: return reason
+                  boards = sorted(out.glob('*.kicad_pcb'))
+                  if len(boards) != 1: return 'the build wrote ' + str(len(boards)) + ' .kicad_pcb files'
+                  folder.mkdir(parents=True, exist_ok=True)
+                  for name, layers, extra in SIDES:
+                      run = subprocess.run(['kicad-cli', 'pcb', 'export', 'svg', '--mode-single', '--layers', layers, *extra,
+                                            '--page-size-mode', '2', '--exclude-drawing-sheet', '-o', str(folder / name), str(boards[0])],
+                                           capture_output=True, text=True)
+                      if run.returncode or not (folder / name).is_file():
+                          return 'kicad-cli ' + name + ' exited ' + str(run.returncode) + ': ' + (run.stderr or run.stdout).strip()[-400:]
+              return None
+
+          def block(source, folder):
+              """The sheet of the block in its usage circuit, which Fenolite draws; the reason it failed, or None."""
+              usages = sorted((source / 'usage').glob('*.py'))
+              if not usages: return 'the block has no usage circuit'
+              with tempfile.TemporaryDirectory(prefix='gallery-') as temporary:
+                  out = Path(temporary) / 'build'
+                  reason = build(usages[0], out)
+                  if reason: return reason
+                  sheets = sorted((out / 'sheets').glob('*.kicad_sch')) or sorted(out.glob('*.kicad_sch'))
+                  if not sheets: return 'the usage build wrote no schematic'
+                  folder.mkdir(parents=True, exist_ok=True)
+                  shutil.copyfile(sheets[0], folder / 'schematic.kicad_sch')
+              return None
+
+          index = json.loads((release / 'index.json').read_text())
+          failures = {}
+          for row in index['items']:
+              if row['kind'] not in ('board', 'block') or not row.get('gallery'): continue
+              root = Path(row['path'])
+              if json.loads((root / 'PROVENANCE.json').read_text()).get('trademarks', {}).get('restricted'): continue
+              # The item is copied, so a build never writes into the checked-out tag.
+              with tempfile.TemporaryDirectory(prefix='gallery-item-') as temporary:
+                  source = Path(temporary) / 'item'
+                  shutil.copytree(root, source)
+                  folder = renders / row['gallery'].rsplit('/', 1)[0]
+                  reason = (board if row['kind'] == 'board' else block)(source, folder)
+              if reason:
+                  failures[row['id']] = reason
+                  shutil.rmtree(folder, ignore_errors=True)
+              print(row['id'], 'NOT made: ' + reason if reason else 'made')
+          (renders / 'failures.json').write_text(json.dumps(failures, indent=2, sort_keys=True) + '\n')
+          # These are newly generated review images, never copied upstream pictures; one that cannot be made
+          # becomes a placeholder naming why, and never fails the whole site.
+          args = ['fenolite', 'library', 'gallery', '.', '--release', str(release), '--out', 'site', '--renders', str(renders)]
           planned = subprocess.run([*args, '--dry-run', '--json'], capture_output=True, text=True)
           if planned.returncode: raise SystemExit('library gallery plan failed: ' + planned.stderr)
           plan = json.loads(planned.stdout)['result']['plan_id']
-          subprocess.run([*args, '--confirm', '--plan', plan, '--json'], check=True, stdout=subprocess.DEVNULL)
-          index = json.loads((release / 'index.json').read_text())
-          missing = []
-          for row in index['items']:
-              if row['kind'] != 'board' or not row.get('gallery'): continue
-              root = Path(row['path'])
-              provenance = json.loads((root / 'PROVENANCE.json').read_text())
-              if provenance.get('trademarks', {}).get('restricted'): continue
-              destination = (Path('site') / row['gallery']).parent.resolve()
-              # These are newly generated review images, never copied upstream pictures.
-              with tempfile.TemporaryDirectory(prefix='gallery-') as temporary:
-                  source = Path(temporary) / 'item'
-                  shutil.copytree(root, source)
-                  build = Path(temporary) / 'build'
-                  reason = fenolite(row, ['build', str(source / 'design.py'), '--out', str(build)])
-                  if reason is None: reason = fenolite(row, ['render', str(build), '--out', str(destination), '--svg'])
-              views = (('front.svg', 'top.svg'), ('back.svg', 'bottom.svg'))
-              if reason is None and all((destination / before).is_file() for before, _ in views):
-                  for before, after in views: shutil.copyfile(destination / before, destination / after)
-                  print(row['id'], 'rendered')
-                  continue
-              # A failed render leaves the page without images and says why; it never fails the whole site.
-              reason = reason or 'the render wrote no front.svg/back.svg'
-              page = destination / 'index.html'
-              text, count = re.subn(r'<figure><img src="(top|bottom)\.svg"[^>]*><figcaption>[^<]*</figcaption></figure>', '', page.read_text())
-              if count != 2: raise SystemExit(row['id'] + ': unexpected board page layout, cannot remove its images')
-              note = '<p class="render-missing">No images: Fenolite could not render this board (' + html.escape(reason) + ').</p>'
-              page.write_text(text.replace('</h1>', '</h1>\n' + note, 1))
-              for before, after in views:
-                  for name in (before, after): (destination / name).unlink(missing_ok=True)
-              missing.append((row['id'], reason))
-              print(row['id'], 'NOT rendered:', reason)
+          done = subprocess.run([*args, '--confirm', '--plan', plan, '--json'], capture_output=True, text=True)
+          if done.returncode: raise SystemExit('library gallery failed: ' + done.stderr)
+          placeholders = json.loads(done.stdout)['result']['placeholders']
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
-              summary.write('Boards without images: ' + (', '.join(f'{item} ({why})' for item, why in missing) or 'none') + '\n')
+              summary.write('Placeholders: ' + (', '.join(f"{p['kind']} {p['id']} ({p['reason']})" for p in placeholders) or 'none') + '\n')
+          for p in placeholders: print('placeholder:', p['kind'], p['id'], p['reason'])
           PY
       - uses: actions/upload-pages-artifact@v3
         with:
