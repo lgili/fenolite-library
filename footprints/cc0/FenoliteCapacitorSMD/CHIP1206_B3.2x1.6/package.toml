@@ -1,0 +1,88 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0391 Vishay Vitramon VJ Commercial Series surface mount multilayer ceramic chip capacitors, document 45199 (08-May-2026). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.package.v0"
+id = "FenoliteCapacitorSMD:CHIP1206_B3.2x1.6"
+version = "1.0.0"
+summary = "Multilayer ceramic chip capacitor 1206 (3216 metric), 3.2 x 1.6 mm body, up to 1.70 mm thick, calculated land"
+category = "Chip capacitor"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0391"]
+generator = "explicit"
+kind = "smd"
+family = "chip"
+body = { length = "2.95mm..3.45mm", width = "1.35mm..1.85mm" }
+
+[[pad]]
+number = "1"
+shape = "roundrect"
+size = ["1.21mm", "1.91mm"]
+at = ["-1.42mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 82644
+
+[[pad]]
+number = "2"
+shape = "roundrect"
+size = ["1.21mm", "1.91mm"]
+at = ["1.42mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 82644
+
+[[graphic]]
+key = "F.Fab:0"
+kind = "line"
+layer = "F.Fab"
+points = [["-1.6mm", "-0.8mm"], ["1.6mm", "-0.8mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:1"
+kind = "line"
+layer = "F.Fab"
+points = [["1.6mm", "-0.8mm"], ["1.6mm", "0.8mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:2"
+kind = "line"
+layer = "F.Fab"
+points = [["1.6mm", "0.8mm"], ["-1.6mm", "0.8mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:3"
+kind = "line"
+layer = "F.Fab"
+points = [["-1.6mm", "0.8mm"], ["-1.6mm", "-0.8mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.SilkS:4"
+kind = "line"
+layer = "F.SilkS"
+points = [["-0.5775mm", "-0.8mm"], ["0.5775mm", "-0.8mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:5"
+kind = "line"
+layer = "F.SilkS"
+points = [["-0.5775mm", "0.8mm"], ["0.5775mm", "0.8mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.CrtYd:6"
+kind = "rect"
+layer = "F.CrtYd"
+points = [["-2.53mm", "-1.46mm"], ["2.53mm", "1.46mm"]]
+width = "0.05mm"
+
+[[component_body]]
+kind = "extruded"
+height = "1.7mm"
+outline = [["-1.6mm", "-0.8mm"], ["1.6mm", "-0.8mm"], ["1.6mm", "0.8mm"], ["-1.6mm", "0.8mm"]]
+name = "body"
+z_min = "0mm"
+z_max = "1.7mm"

@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageDFN.3dshapes/TDFNS8_5x6_P1.27_Microchip-MF.step",
+    "generated/FenolitePackageDFN.pretty/TDFNS8_5x6_P1.27_Microchip-MF.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageDFN:TDFNS8_5x6_P1.27_Microchip-MF",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "TDFN-S-8, 1.27 mm pitch, 5 x 6 mm body, 3.5 x 4.1 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "dfn",
+    "dual-row",
+    "exposed-pad",
+    "no-lead",
+    "smd",
+    "tdfn-s",
+    "tdfn-s-8"
+  ],
+  "title": "TDFN-S-8 5 x 6 mm, 1.27 mm pitch (Microchip MF)",
+  "version": "1.0.0"
+}

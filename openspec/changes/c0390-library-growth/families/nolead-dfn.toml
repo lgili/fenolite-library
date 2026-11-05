@@ -1,0 +1,228 @@
+# SPDX-License-Identifier: CC0-1.0
+# Dual-row no-lead packages (DFN, SON), batch 6 of change c0390. Outline dimensions and recommended land
+# patterns: Microchip Packaging Specification DS00000049CH (D-0423), one drawing per item (page and drawing
+# number in `used`). Land: the recommended land pattern as read ([land]). Drawings with non-rectangular or
+# split pads, without a land table, or whose land does not match the outline are left out (c0390 design.md).
+schema = "fenolite.c0390-family.v0"
+kind = "footprint"
+namespace = "FenolitePackageDFN"
+category = "Dual flat no-lead package"
+date = "2026-11-05"
+tags = ["dfn", "dual-row", "no-lead", "smd"]
+
+[record]
+family = "nolead"
+
+[record.generate]
+lands = 1
+drawing = 1
+
+[[row]]
+name = "TDFN8_2x3_P0.5_Microchip-MN"
+title = "TDFN-8 2 x 3 mm, 0.5 mm pitch (Microchip MN/MNY)"
+summary = "TDFN-8, 0.5 mm pitch, 2 x 3 mm body, 1.5 x 1.6 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 263, drawing C04-129-MN: N 8, e 0.50 BSC, A 0.70/0.75/0.80, A1 0.00/0.02/0.05, D 2.00 BSC, E 3.00 BSC, D2 1.35/1.40/1.45, E2 1.25/1.30/1.35, b 0.20/0.25/0.30, L 0.25/0.30/0.45; land C04-129-MN: E 0.50 BSC, X2 1.60, Y2 1.50, C 2.90, X1 0.25, Y1 0.85, V 0.30, EV 1.00; the same outline and land are listed for package codes MNY"
+tags = ["exposed-pad", "tdfn", "tdfn-8"]
+record.pins = 8
+record.pitch = "0.5mm"
+record.arrangement = "dual"
+record.body = { length = "2mm", width = "3mm", height = "0.7mm..0.8mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = { min = "0.25mm", nom = "0.3mm", max = "0.45mm" }, width = "0.2mm..0.3mm" }
+record.ep = { length = "1.35mm..1.45mm", width = "1.25mm..1.35mm" }
+record.land = { source = "D-0423 drawing C04-129-MN", pad = { length = "0.85mm", width = "0.25mm" }, row_spacing = "2.9mm", ep = { length = "1.6mm", width = "1.5mm" } }
+
+[[row]]
+name = "TDFNS8_5x6_P1.27_Microchip-MF"
+title = "TDFN-S-8 5 x 6 mm, 1.27 mm pitch (Microchip MF)"
+summary = "TDFN-S-8, 1.27 mm pitch, 5 x 6 mm body, 3.5 x 4.1 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 273, drawing C04-210B: N 8, e 1.27 BSC, A 0.70/0.75/0.80, A1 0.00/0.02/0.05, D 5.00 BSC, E 6.00 BSC, D2 4.00 BSC, E2 3.40 BSC, b 0.35/0.42/0.48, L 0.50/0.60/0.70; land C04-2210A: E 1.27 BSC, X2 3.50, Y2 4.10, C 5.70, X1 0.45, Y1 1.10"
+tags = ["exposed-pad", "tdfn-s", "tdfn-s-8"]
+record.pins = 8
+record.pitch = "1.27mm"
+record.arrangement = "dual"
+record.body = { length = "5mm", width = "6mm", height = "0.7mm..0.8mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.5mm..0.7mm", width = { min = "0.35mm", nom = "0.42mm", max = "0.48mm" } }
+record.ep = { length = "4mm", width = "3.4mm" }
+record.land = { source = "D-0423 drawing C04-2210A", pad = { length = "1.1mm", width = "0.45mm" }, row_spacing = "5.7mm", ep = { length = "4.1mm", width = "3.5mm" } }
+
+[[row]]
+name = "USON8_2x3_P0.5_Microchip-NP"
+title = "USON-8 2 x 3 mm, 0.5 mm pitch (Microchip NP)"
+summary = "USON-8, 0.5 mm pitch, 2 x 3 mm body, 0.25 x 1.65 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 279, drawing C04-203C: N 8, e 0.50 BSC, A 0.45/0.55/0.60, A1 0.00/0.02/0.05, D 2.00 BSC, E 3.00 BSC, D2 1.50/1.60/1.70, E2 0.10/0.20/0.30, b 0.20/0.25/0.30, L 0.40/0.45/0.50; land C04-2203B: E 0.50 BSC, X2 0.25, Y2 1.65, C 2.80, X1 0.30, Y1 0.90, G 0.20"
+tags = ["exposed-pad", "uson", "uson-8"]
+record.pins = 8
+record.pitch = "0.5mm"
+record.arrangement = "dual"
+record.body = { length = "2mm", width = "3mm", height = { min = "0.45mm", nom = "0.55mm", max = "0.6mm" }, standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.4mm..0.5mm", width = "0.2mm..0.3mm" }
+record.ep = { length = "1.5mm..1.7mm", width = "0.1mm..0.3mm" }
+record.land = { source = "D-0423 drawing C04-2203B", pad = { length = "0.9mm", width = "0.3mm" }, row_spacing = "2.8mm", ep = { length = "1.65mm", width = "0.25mm" } }
+
+[[row]]
+name = "USON8_2x3_P0.5_Microchip-PRX"
+title = "USON-8 2 x 3 mm, 0.5 mm pitch (Microchip PRX)"
+summary = "USON-8, 0.5 mm pitch, 2 x 3 mm body, 0.3 x 1.7 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 282, drawing C04-203C: N 8, e 0.50 BSC, A 0.45/0.55/0.60, A1 0.00/0.02/0.05, D 2.00 BSC, E 3.00 BSC, D2 1.50/1.60/1.70, E2 0.10/0.20/0.30, b 0.20/0.25/0.30, L 0.40/0.45/0.50; land C04-2203B: E 0.50 BSC, X2 0.30, Y2 1.70, C 2.80, X1 0.30, Y1 0.90, G 0.20"
+tags = ["exposed-pad", "uson", "uson-8"]
+record.pins = 8
+record.pitch = "0.5mm"
+record.arrangement = "dual"
+record.body = { length = "2mm", width = "3mm", height = { min = "0.45mm", nom = "0.55mm", max = "0.6mm" }, standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.4mm..0.5mm", width = "0.2mm..0.3mm" }
+record.ep = { length = "1.5mm..1.7mm", width = "0.1mm..0.3mm" }
+record.land = { source = "D-0423 drawing C04-2203B", pad = { length = "0.9mm", width = "0.3mm" }, row_spacing = "2.8mm", ep = { length = "1.7mm", width = "0.3mm" } }
+
+[[row]]
+name = "UDFN8_3x3_P0.65_Microchip-RF"
+title = "UDFN-8 3 x 3 mm, 0.65 mm pitch (Microchip RF)"
+summary = "UDFN-8, 0.65 mm pitch, 3 x 3 mm body, 1.6 x 2.4 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 285, drawing C04-254A: N 8, e 0.65 BSC, A 0.45/0.50/0.55, A1 0.00/0.02/0.05, D 3.00 BSC, E 3.00 BSC, D2 2.20/2.30/2.40, E2 1.40/1.50/1.60, b 0.25/0.30/0.35, L 0.35/0.45/0.55; land C04-2254A: E 0.65 BSC, X2 1.60, Y2 2.40, C 2.90, X1 0.35, Y1 0.85, G1 0.20, G2 0.30"
+tags = ["exposed-pad", "udfn", "udfn-8"]
+record.pins = 8
+record.pitch = "0.65mm"
+record.arrangement = "dual"
+record.body = { length = "3mm", width = "3mm", height = "0.45mm..0.55mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.55mm", width = "0.25mm..0.35mm" }
+record.ep = { length = "2.2mm..2.4mm", width = "1.4mm..1.6mm" }
+record.land = { source = "D-0423 drawing C04-2254A", pad = { length = "0.85mm", width = "0.35mm" }, row_spacing = "2.9mm", ep = { length = "2.4mm", width = "1.6mm" } }
+
+[[row]]
+name = "VDFN8_2x2_P0.5_Microchip-LZ"
+title = "VDFN-8 2 x 2 mm, 0.5 mm pitch (Microchip LZ)"
+summary = "VDFN-8, 0.5 mm pitch, 2 x 2 mm body, 0.9 x 1.7 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 305, drawing C04-198D: N 8, e 0.50 BSC, A 0.80/0.90/1.00, A1 0.00/0.02/0.05, D 2.00 BSC, E 2.00 BSC, D2 1.55/1.70/1.80, E2 0.75/0.90/1.00, b 0.18/0.25/0.30, L 0.20/0.30/0.40; land C04-2198D: E 0.50 BSC, C1 2.00, X1 0.35, Y1 0.65, G1 0.15, G2 0.23, V 0.30, EV 1.00, X2 1.70, Y2 0.90"
+tags = ["exposed-pad", "vdfn", "vdfn-8"]
+record.pins = 8
+record.pitch = "0.5mm"
+record.arrangement = "dual"
+record.body = { length = "2mm", width = "2mm", height = "0.8mm..1mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.2mm..0.4mm", width = { min = "0.18mm", nom = "0.25mm", max = "0.3mm" } }
+record.ep = { length = { min = "1.55mm", nom = "1.7mm", max = "1.8mm" }, width = { min = "0.75mm", nom = "0.9mm", max = "1mm" } }
+record.land = { source = "D-0423 drawing C04-2198D", pad = { length = "0.65mm", width = "0.35mm" }, row_spacing = "2mm", ep = { length = "1.7mm", width = "0.9mm" } }
+
+[[row]]
+name = "VDFN8_2x2_P0.5_Microchip-J8A"
+title = "VDFN-8 2 x 2 mm, 0.5 mm pitch (Microchip J8A)"
+summary = "VDFN-8, 0.5 mm pitch, 2 x 2 mm body, 0.95 x 1.95 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 308, drawing C04-1207A: N 8, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 2.00 BSC, E 2.00 BSC, D2 1.65/1.70/1.75, E2 0.85/0.90/0.95, b 0.20/0.25/0.30, L 0.25/0.30/0.35; land C04-3207A: E 0.50 BSC, X2 0.95, Y2 1.95, C 2.10, X1 0.30, Y1 0.70, G1 0.20, G2 0.23, V 0.30, EV 1.00"
+tags = ["exposed-pad", "vdfn", "vdfn-8"]
+record.pins = 8
+record.pitch = "0.5mm"
+record.arrangement = "dual"
+record.body = { length = "2mm", width = "2mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.25mm..0.35mm", width = "0.2mm..0.3mm" }
+record.ep = { length = "1.65mm..1.75mm", width = "0.85mm..0.95mm" }
+record.land = { source = "D-0423 drawing C04-3207A", pad = { length = "0.7mm", width = "0.3mm" }, row_spacing = "2.1mm", ep = { length = "1.95mm", width = "0.95mm" } }
+
+[[row]]
+name = "VDFN8_2x3_P0.5_Microchip-8Q"
+title = "VDFN-8 2 x 3 mm, 0.5 mm pitch (Microchip 8Q)"
+summary = "VDFN-8, 0.5 mm pitch, 2 x 3 mm body, 1.7 x 1.5 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 311, drawing C04-382A: N 8, e 0.50 BSC, A 0.70/0.75/0.80, A1 0.00/0.02/0.05, D 2.00 BSC, E 3.00 BSC, D2 1.40/1.50/1.60, E2 1.60/1.70/1.80, b 0.18/0.25/0.30, L 0.35/0.40/0.45; land C04-2382A: E 0.50 BSC, X2 1.50, Y2 1.70, C 2.84, X1 0.28, Y1 0.69, G1 0.20, V 0.30, EV 1.00"
+tags = ["exposed-pad", "vdfn", "vdfn-8"]
+record.pins = 8
+record.pitch = "0.5mm"
+record.arrangement = "dual"
+record.body = { length = "2mm", width = "3mm", height = "0.7mm..0.8mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = { min = "0.18mm", nom = "0.25mm", max = "0.3mm" } }
+record.ep = { length = "1.4mm..1.6mm", width = "1.6mm..1.8mm" }
+record.land = { source = "D-0423 drawing C04-2382A", pad = { length = "0.69mm", width = "0.28mm" }, row_spacing = "2.84mm", ep = { length = "1.5mm", width = "1.7mm" } }
+
+[[row]]
+name = "VDFN10_3x3_P0.5_Microchip-9Q"
+title = "VDFN-10 3 x 3 mm, 0.5 mm pitch (Microchip 9Q)"
+summary = "VDFN-10, 0.5 mm pitch, 3 x 3 mm body, 1.7 x 2.4 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 323, drawing C04-206A: N 10, e 0.50 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 3.00 BSC, E 3.00 BSC, D2 2.20/2.30/2.40, E2 1.50/1.60/1.70, b 0.18/0.25/0.30, L 0.35/0.40/0.45; land C04-2206A: E 0.50 BSC, Y2 1.70, X2 2.40, C 3.00, CH 0.28, X1 0.30, Y1 0.80, G1 0.20, G2 0.25 REF, V 0.30, VX 1.00, VY 1.00; the exposed-pad corner chamfer CH is not drawn"
+tags = ["exposed-pad", "vdfn", "vdfn-10"]
+record.pins = 10
+record.pitch = "0.5mm"
+record.arrangement = "dual"
+record.body = { length = "3mm", width = "3mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = { min = "0.18mm", nom = "0.25mm", max = "0.3mm" } }
+record.ep = { length = "2.2mm..2.4mm", width = "1.5mm..1.7mm" }
+record.land = { source = "D-0423 drawing C04-2206A", pad = { length = "0.8mm", width = "0.3mm" }, row_spacing = "3mm", ep = { length = "2.4mm", width = "1.7mm" } }
+
+[[row]]
+name = "VDFN14_4.5x3_P0.65_Microchip-4S"
+title = "VDFN-14 4.5 x 3 mm, 0.65 mm pitch (Microchip 4S)"
+summary = "VDFN-14, 0.65 mm pitch, 4.5 x 3 mm body, 1.65 x 4.25 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 329, drawing C04-405A: N 14, e 0.65 BSC, A 0.80/0.85/0.90, A1 0.00/0.02/0.05, D 4.50 BSC, E 3.00 BSC, D2 4.15/4.20/4.25, E2 1.55/1.60/1.65, b 0.29/0.32/0.35, L 0.35/0.40/0.45; land C04-2405A: E 0.65 BSC, X2 1.65, Y2 4.25, C 3.00, X1 0.35, Y1 0.85, G1 0.30, V 0.30, EV 1.00"
+tags = ["exposed-pad", "vdfn", "vdfn-14"]
+record.pins = 14
+record.pitch = "0.65mm"
+record.arrangement = "dual"
+record.body = { length = "4.5mm", width = "3mm", height = "0.8mm..0.9mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.35mm..0.45mm", width = "0.29mm..0.35mm" }
+record.ep = { length = "4.15mm..4.25mm", width = "1.55mm..1.65mm" }
+record.land = { source = "D-0423 drawing C04-2405A", pad = { length = "0.85mm", width = "0.35mm" }, row_spacing = "3mm", ep = { length = "4.25mm", width = "1.65mm" } }
+
+[[row]]
+name = "WDFN8_6x8_P1.27_Microchip-MN"
+title = "WDFN-8 6 x 8 mm, 1.27 mm pitch (Microchip MN)"
+summary = "WDFN-8, 1.27 mm pitch, 6 x 8 mm body, 6.1 x 4.9 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 343, drawing C04-172A: N 8, e 1.27 BSC, A 0.70/0.75/0.80, A1 0.00/0.02/0.05, D 6.00 BSC, E 8.00 BSC, D2 4.80 BSC, E2 6.00 BSC, b 0.35/0.40/0.45, L 0.45/0.50/0.55; land C04-2172A: E 1.27 BSC, X2 6.10, Y2 4.90, C1 7.80, X1 0.45, Y1 0.95, V 0.33, EV 1.20"
+tags = ["exposed-pad", "wdfn", "wdfn-8"]
+record.pins = 8
+record.pitch = "1.27mm"
+record.arrangement = "dual"
+record.body = { length = "6mm", width = "8mm", height = "0.7mm..0.8mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.45mm..0.55mm", width = "0.35mm..0.45mm" }
+record.ep = { length = "4.8mm", width = "6mm" }
+record.land = { source = "D-0423 drawing C04-2172A", pad = { length = "0.95mm", width = "0.45mm" }, row_spacing = "7.8mm", ep = { length = "4.9mm", width = "6.1mm" } }
+
+[[row]]
+name = "USON8_2x2_P0.4_Microchip-ND"
+title = "USON-8 2 x 2 mm, 0.4 mm pitch (Microchip ND)"
+summary = "USON-8, 0.4 mm pitch, 2 x 2 mm body, 0.85 x 1.7 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 347, drawing C04-200A: N 8, e 0.40 BSC, A 0.50/0.55/0.60, A1 0.00/0.02/0.05, D 2.00 BSC, E 2.00 BSC, D2 1.50/1.60/1.70, E2 0.65/0.75/0.85, b 0.15/0.20/0.25, L 0.20/0.30/0.40; land C04-2200A: E 0.40 BSC, X2 0.85, Y2 1.70, C 1.60, X1 0.20, Y1 0.35, G1 0.20, V 0.30, EV 1.00"
+tags = ["exposed-pad", "uson", "uson-8"]
+record.pins = 8
+record.pitch = "0.4mm"
+record.arrangement = "dual"
+record.body = { length = "2mm", width = "2mm", height = "0.5mm..0.6mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.2mm..0.4mm", width = "0.15mm..0.25mm" }
+record.ep = { length = "1.5mm..1.7mm", width = "0.65mm..0.85mm" }
+record.land = { source = "D-0423 drawing C04-2200A", pad = { length = "0.35mm", width = "0.2mm" }, row_spacing = "1.6mm", ep = { length = "1.7mm", width = "0.85mm" } }
+
+[[row]]
+name = "X2SON8_1.5x1.5_P0.4_Microchip-8X"
+title = "X2SON-8 1.5 x 1.5 mm, 0.4 mm pitch (Microchip 8X)"
+summary = "X2SON-8, 0.4 mm pitch, 1.5 x 1.5 mm body, 0.75 x 1.25 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 377, drawing C04-338A: N 8, e 0.40 BSC, A 0.30/0.35/0.40, A1 0.00/0.02/0.05, D 1.50 BSC, E 1.50 BSC, D2 1.15/1.20/1.25, E2 0.65/0.70/0.75, b 0.125/0.175/0.225, L 0.125/0.175/0.225; land C04-2338A: E 0.40 BSC, X2 1.25, Y2 0.75, C 1.70, X1 0.20, Y1 0.55, G1 0.20, G2 0.20, V 0.33"
+tags = ["exposed-pad", "x2son", "x2son-8"]
+record.pins = 8
+record.pitch = "0.4mm"
+record.arrangement = "dual"
+record.body = { length = "1.5mm", width = "1.5mm", height = "0.3mm..0.4mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.125mm..0.225mm", width = "0.125mm..0.225mm" }
+record.ep = { length = "1.15mm..1.25mm", width = "0.65mm..0.75mm" }
+record.land = { source = "D-0423 drawing C04-2338A", pad = { length = "0.55mm", width = "0.2mm" }, row_spacing = "1.7mm", ep = { length = "1.25mm", width = "0.75mm" } }
+
+[[row]]
+name = "X2SON8_2x2_P0.4_Microchip-NR"
+title = "X2SON-8 2 x 2 mm, 0.4 mm pitch (Microchip NR/XX8E)"
+summary = "X2SON-8, 0.4 mm pitch, 2 x 2 mm body, 0.8 x 1.6 mm exposed-pad land, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 380, drawing C04-201-NR-A: N 8, e 0.40 BSC, A 0.34/0.37/0.40, A1 0.00/0.02/0.05, D 2.00 BSC, E 2.00 BSC, D2 1.55/1.60/1.65, E2 0.70/0.75/0.80, b 0.15/0.20/0.25, L 0.25/0.30/0.35; land C04-2201-NR-A: E 0.40 BSC, X2 0.80, Y2 1.60, C 1.60, X1 0.20, Y1 0.40, G1 0.20; the same outline and land are listed for package codes XX8E"
+tags = ["exposed-pad", "x2son", "x2son-8"]
+record.pins = 8
+record.pitch = "0.4mm"
+record.arrangement = "dual"
+record.body = { length = "2mm", width = "2mm", height = "0.34mm..0.4mm", standoff = { min = "0mm", nom = "0.02mm", max = "0.05mm" } }
+record.terminal = { length = "0.25mm..0.35mm", width = "0.15mm..0.25mm" }
+record.ep = { length = "1.55mm..1.65mm", width = "0.7mm..0.8mm" }
+record.land = { source = "D-0423 drawing C04-2201-NR-A", pad = { length = "0.4mm", width = "0.2mm" }, row_spacing = "1.6mm", ep = { length = "1.6mm", width = "0.8mm" } }

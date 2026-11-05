@@ -1,0 +1,21 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:Regulator_Linear",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic three-terminal positive linear regulator; pins 1 VIN, 2 GND, 3 VOUT",
+  "tags": [
+    "generic",
+    "ldo",
+    "regulator",
+    "symbol"
+  ],
+  "title": "Linear regulator, three terminals",
+  "version": "1.0.0"
+}

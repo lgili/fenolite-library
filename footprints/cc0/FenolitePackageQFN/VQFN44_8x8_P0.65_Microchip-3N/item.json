@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/VQFN44_8x8_P0.65_Microchip-3N.step",
+    "generated/FenolitePackageQFN.pretty/VQFN44_8x8_P0.65_Microchip-3N.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:VQFN44_8x8_P0.65_Microchip-3N",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VQFN-44, 0.65 mm pitch, 8 x 8 mm body, 6.6 x 6.6 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "vqfn",
+    "vqfn-44"
+  ],
+  "title": "VQFN-44 8 x 8 mm, 0.65 mm pitch (Microchip 3N)",
+  "version": "1.0.0"
+}

@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenoliteResistorSMD.3dshapes/CHIP1218_B3.1x4.6.step",
+    "generated/FenoliteResistorSMD.pretty/CHIP1218_B3.1x4.6.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenoliteResistorSMD:CHIP1218_B3.1x4.6",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Chip resistor 1218 (3246 metric), 3.1 x 4.6 mm body, calculated land",
+  "tags": [
+    "1218",
+    "3246-metric",
+    "chip",
+    "resistor",
+    "smd",
+    "two-terminal"
+  ],
+  "title": "Chip resistor 1218 (3246 metric)",
+  "version": "1.0.0"
+}

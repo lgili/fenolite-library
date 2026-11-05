@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageDFN.3dshapes/VDFN10_3x3_P0.5_Microchip-9Q.step",
+    "generated/FenolitePackageDFN.pretty/VDFN10_3x3_P0.5_Microchip-9Q.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageDFN:VDFN10_3x3_P0.5_Microchip-9Q",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VDFN-10, 0.5 mm pitch, 3 x 3 mm body, 1.7 x 2.4 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "dfn",
+    "dual-row",
+    "exposed-pad",
+    "no-lead",
+    "smd",
+    "vdfn",
+    "vdfn-10"
+  ],
+  "title": "VDFN-10 3 x 3 mm, 0.5 mm pitch (Microchip 9Q)",
+  "version": "1.0.0"
+}

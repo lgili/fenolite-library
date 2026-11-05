@@ -1,0 +1,21 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:Diode_Schottky",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic Schottky diode, pin 1 cathode, pin 2 anode",
+  "tags": [
+    "diode",
+    "generic",
+    "schottky",
+    "symbol"
+  ],
+  "title": "Schottky diode",
+  "version": "1.0.0"
+}

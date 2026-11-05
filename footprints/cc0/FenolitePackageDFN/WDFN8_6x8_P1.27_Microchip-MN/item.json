@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageDFN.3dshapes/WDFN8_6x8_P1.27_Microchip-MN.step",
+    "generated/FenolitePackageDFN.pretty/WDFN8_6x8_P1.27_Microchip-MN.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageDFN:WDFN8_6x8_P1.27_Microchip-MN",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "WDFN-8, 1.27 mm pitch, 6 x 8 mm body, 6.1 x 4.9 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "dfn",
+    "dual-row",
+    "exposed-pad",
+    "no-lead",
+    "smd",
+    "wdfn",
+    "wdfn-8"
+  ],
+  "title": "WDFN-8 6 x 8 mm, 1.27 mm pitch (Microchip MN)",
+  "version": "1.0.0"
+}

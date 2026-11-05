@@ -1,0 +1,269 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0422 Original generic schematic symbols authored for fenolite-library (change c0390) (c0390 batch 5). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.pins.v0"
+id = "FenoliteSymbols:Conn_01x25"
+version = "1.0.0"
+summary = "Generic single-row connector, 25 pins, pin 1 at the top"
+category = "Generic connector symbol"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422"]
+
+[[pin]]
+number = "1"
+name = "Pin_1"
+type = "passive"
+
+[[pin]]
+number = "2"
+name = "Pin_2"
+type = "passive"
+
+[[pin]]
+number = "3"
+name = "Pin_3"
+type = "passive"
+
+[[pin]]
+number = "4"
+name = "Pin_4"
+type = "passive"
+
+[[pin]]
+number = "5"
+name = "Pin_5"
+type = "passive"
+
+[[pin]]
+number = "6"
+name = "Pin_6"
+type = "passive"
+
+[[pin]]
+number = "7"
+name = "Pin_7"
+type = "passive"
+
+[[pin]]
+number = "8"
+name = "Pin_8"
+type = "passive"
+
+[[pin]]
+number = "9"
+name = "Pin_9"
+type = "passive"
+
+[[pin]]
+number = "10"
+name = "Pin_10"
+type = "passive"
+
+[[pin]]
+number = "11"
+name = "Pin_11"
+type = "passive"
+
+[[pin]]
+number = "12"
+name = "Pin_12"
+type = "passive"
+
+[[pin]]
+number = "13"
+name = "Pin_13"
+type = "passive"
+
+[[pin]]
+number = "14"
+name = "Pin_14"
+type = "passive"
+
+[[pin]]
+number = "15"
+name = "Pin_15"
+type = "passive"
+
+[[pin]]
+number = "16"
+name = "Pin_16"
+type = "passive"
+
+[[pin]]
+number = "17"
+name = "Pin_17"
+type = "passive"
+
+[[pin]]
+number = "18"
+name = "Pin_18"
+type = "passive"
+
+[[pin]]
+number = "19"
+name = "Pin_19"
+type = "passive"
+
+[[pin]]
+number = "20"
+name = "Pin_20"
+type = "passive"
+
+[[pin]]
+number = "21"
+name = "Pin_21"
+type = "passive"
+
+[[pin]]
+number = "22"
+name = "Pin_22"
+type = "passive"
+
+[[pin]]
+number = "23"
+name = "Pin_23"
+type = "passive"
+
+[[pin]]
+number = "24"
+name = "Pin_24"
+type = "passive"
+
+[[pin]]
+number = "25"
+name = "Pin_25"
+type = "passive"
+
+[symbol]
+reference = "J"
+pin_names_hidden = true
+
+[[symbol.pins]]
+number = "1"
+at = ["-5.08mm", "0mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "2"
+at = ["-5.08mm", "-2.54mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "3"
+at = ["-5.08mm", "-5.08mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "4"
+at = ["-5.08mm", "-7.62mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "5"
+at = ["-5.08mm", "-10.16mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "6"
+at = ["-5.08mm", "-12.7mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "7"
+at = ["-5.08mm", "-15.24mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "8"
+at = ["-5.08mm", "-17.78mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "9"
+at = ["-5.08mm", "-20.32mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "10"
+at = ["-5.08mm", "-22.86mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "11"
+at = ["-5.08mm", "-25.4mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "12"
+at = ["-5.08mm", "-27.94mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "13"
+at = ["-5.08mm", "-30.48mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "14"
+at = ["-5.08mm", "-33.02mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "15"
+at = ["-5.08mm", "-35.56mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "16"
+at = ["-5.08mm", "-38.1mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "17"
+at = ["-5.08mm", "-40.64mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "18"
+at = ["-5.08mm", "-43.18mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "19"
+at = ["-5.08mm", "-45.72mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "20"
+at = ["-5.08mm", "-48.26mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "21"
+at = ["-5.08mm", "-50.8mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "22"
+at = ["-5.08mm", "-53.34mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "23"
+at = ["-5.08mm", "-55.88mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "24"
+at = ["-5.08mm", "-58.42mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "25"
+at = ["-5.08mm", "-60.96mm"]
+length = "2.54mm"
+
+[[symbol.graphic]]
+kind = "rect"
+points = [["-2.54mm", "1.27mm"], ["0mm", "-62.23mm"]]

@@ -1,0 +1,76 @@
+(footprint "CHIP01005_B0.4x0.2"
+	(version 20241229)
+	(generator "fenolite")
+	(generator_version "9.0")
+	(descr "Chip resistor 01005 (0402 metric), 0.4 x 0.2 mm body, calculated land; land pattern remains INFERRED and requires part-specific review")
+	(attr smd)
+	(property "Reference" "REF**"
+		(at 0 -1.64 0)
+		(layer "F.SilkS")
+		(uuid "cdd0cc6d-c44f-5d02-b2d4-038443db7b78")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CHIP01005_B0.4x0.2"
+		(at 0 1.64 0)
+		(layer "F.Fab")
+		(uuid "aff5dcd5-8200-55b7-af1e-60ad6acfa2f2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.335 0)
+		(size 0.35 0.28)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.2)
+	)
+	(pad "2" smd roundrect
+		(at 0.335 0)
+		(size 0.35 0.28)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.2)
+	)
+	(fp_line
+		(start -0.2 -0.1)
+		(end 0.2 -0.1)
+		(layer "F.Fab")
+		(width 0.1)
+		(fill no)
+	)
+	(fp_line
+		(start 0.2 -0.1)
+		(end 0.2 0.1)
+		(layer "F.Fab")
+		(width 0.1)
+		(fill no)
+	)
+	(fp_line
+		(start 0.2 0.1)
+		(end -0.2 0.1)
+		(layer "F.Fab")
+		(width 0.1)
+		(fill no)
+	)
+	(fp_line
+		(start -0.2 0.1)
+		(end -0.2 -0.1)
+		(layer "F.Fab")
+		(width 0.1)
+		(fill no)
+	)
+	(fp_rect
+		(start -1.01 -0.64)
+		(end 1.01 0.64)
+		(layer "F.CrtYd")
+		(width 0.05)
+		(fill no)
+	)
+)

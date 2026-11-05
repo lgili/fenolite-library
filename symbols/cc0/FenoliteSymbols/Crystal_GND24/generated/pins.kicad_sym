@@ -1,0 +1,66 @@
+(kicad_symbol_lib
+	(version 20241209)
+	(generator "fenolite")
+	(symbol "Crystal_GND24"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "Y"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "Crystal_GND24"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Description" "Generic quartz crystal in a four-pad package; pins 1 and 3 crystal, 2 and 4 case ground"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "Crystal_GND24_0_1"
+			(polyline (pts (xy -2.54 0) (xy -1.524 0)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 1.524 0) (xy 2.54 0)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 0 -2.54) (xy 0 -1.524)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 0 1.524) (xy 0 2.54)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(rectangle (start -0.762 -1.524) (end 0.762 1.524) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy -1.524 -1.27) (xy -1.524 1.27)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 1.524 -1.27) (xy 1.524 1.27)) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "Crystal_GND24_1_1"
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at 0 -5.08 90)
+				(length 2.54)
+				(name "GND" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "3" (effects (font (size 1.27 1.27))))
+				(number "3" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at 0 5.08 270)
+				(length 2.54)
+				(name "GND" (effects (font (size 1.27 1.27))))
+				(number "4" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+)

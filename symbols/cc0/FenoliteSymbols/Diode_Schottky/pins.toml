@@ -1,0 +1,73 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0422 Original generic schematic symbols authored for fenolite-library (change c0390) (c0390 batch 5). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.pins.v0"
+id = "FenoliteSymbols:Diode_Schottky"
+version = "1.0.0"
+summary = "Generic Schottky diode, pin 1 cathode, pin 2 anode"
+category = "Generic symbol"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422"]
+
+[[pin]]
+number = "1"
+name = "K"
+type = "passive"
+
+[[pin]]
+number = "2"
+name = "A"
+type = "passive"
+
+[symbol]
+reference = "D"
+pin_names_hidden = true
+
+[[symbol.pins]]
+number = "1"
+at = ["5.08mm", "0mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "2"
+at = ["-5.08mm", "0mm"]
+length = "2.54mm"
+
+[[symbol.graphic]]
+kind = "polygon"
+points = [["-1.27mm", "-1.27mm"], ["1.27mm", "0mm"], ["-1.27mm", "1.27mm"]]
+filled = false
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.778mm", "1.016mm"], ["1.778mm", "1.27mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.778mm", "1.27mm"], ["1.27mm", "1.27mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.27mm", "1.27mm"], ["1.27mm", "-1.27mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.27mm", "-1.27mm"], ["0.762mm", "-1.27mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["0.762mm", "-1.27mm"], ["0.762mm", "-1.016mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-1.27mm", "0mm"], ["1.27mm", "0mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-2.54mm", "0mm"], ["-1.27mm", "0mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.27mm", "0mm"], ["2.54mm", "0mm"]]

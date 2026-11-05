@@ -1,0 +1,20 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:Inductor",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic inductor",
+  "tags": [
+    "generic",
+    "inductor",
+    "symbol"
+  ],
+  "title": "Inductor",
+  "version": "1.0.0"
+}

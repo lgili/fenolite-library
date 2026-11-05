@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/UQFN20_4x4_P0.5_Microchip-GZ.step",
+    "generated/FenolitePackageQFN.pretty/UQFN20_4x4_P0.5_Microchip-GZ.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:UQFN20_4x4_P0.5_Microchip-GZ",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "UQFN-20, 0.5 mm pitch, 4 x 4 mm body, 2.8 x 2.8 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "uqfn",
+    "uqfn-20"
+  ],
+  "title": "UQFN-20 4 x 4 mm, 0.5 mm pitch (Microchip GZ)",
+  "version": "1.0.0"
+}

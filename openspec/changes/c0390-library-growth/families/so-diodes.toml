@@ -1,0 +1,131 @@
+# SPDX-License-Identifier: CC0-1.0
+# Small-outline dual-row packages, batch 4 of change c0390. Outline dimensions and suggested pad layouts:
+# Diodes Incorporated package information files (D-0412 to D-0421). Land: the suggested pad layout as read
+# ([land]). SO-8EP and TSSOP-16 are left out: the gullwing generator has no exposed pad, and the TSSOP-16
+# table lists an unexplained pad.
+schema = "fenolite.c0390-family.v0"
+kind = "footprint"
+namespace = "FenolitePackageSO"
+category = "Small-outline package"
+date = "2026-11-04"
+tags = ["dual-row", "gullwing", "smd"]
+
+[record]
+family = "gullwing"
+arrangement = "dual"
+
+[record.generate]
+lands = 1
+drawing = 1
+
+[[row]]
+name = "SOIC8_Diodes"
+title = "SOIC-8 (SO-8) narrow body package"
+summary = "SOIC-8, 1.27 mm pitch, 4.9 x 3.9 mm body, Diodes Inc. suggested land"
+sources = ["D-0412"]
+used = "Table: A 1.40-1.50, A1 0.10-0.20, b 0.30-0.50, c 0.15-0.25, D 4.85-4.95, E 5.90-6.10, E1 3.80-3.90, e 1.27, L 0.62-0.82 mm; pad layout C 1.27, X 0.802, X1 4.612, Y 1.505, Y1 6.50 mm (row spacing Y1 - Y)"
+tags = ["SO-8", "SOIC-8", "soic"]
+record.pins = 8
+record.pitch = "1.27mm"
+record.body = { length = "4.85mm..4.95mm", width = "3.80mm..3.90mm", height = "1.40mm..1.50mm", standoff = "0.10mm..0.20mm" }
+record.span = "5.90mm..6.10mm"
+record.lead = { length = "0.62mm..0.82mm", width = "0.30mm..0.50mm", thickness = "0.15mm..0.25mm" }
+record.land = { source = "D-0412 suggested pad layout", pad = { length = "1.505mm", width = "0.802mm" }, row_spacing = "4.995mm" }
+
+[[row]]
+name = "SOIC14_Diodes"
+title = "SOIC-14 (SO-14) narrow body package"
+summary = "SOIC-14, 1.27 mm pitch, 8.65 x 3.9 mm body, Diodes Inc. suggested land"
+sources = ["D-0414"]
+used = "Table: A 1.75 max, A1 0.10-0.25, b 0.31-0.51, c 0.10-0.25, D 8.55-8.75, E 5.80-6.20, E1 3.80-4.00, e 1.27 BSC, L 0.40-1.27 mm; pad layout C 1.270, C1 5.400, G 3.900, X 0.600, Y 1.500 mm"
+tags = ["SO-14", "SOIC-14", "soic"]
+record.pins = 14
+record.pitch = "1.27mm"
+record.body = { length = "8.55mm..8.75mm", width = "3.80mm..4.00mm", height = "1.75mm max", standoff = "0.10mm..0.25mm" }
+record.span = "5.80mm..6.20mm"
+record.lead = { length = "0.40mm..1.27mm", width = "0.31mm..0.51mm", thickness = "0.10mm..0.25mm" }
+record.land = { source = "D-0414 suggested pad layout", pad = { length = "1.50mm", width = "0.60mm" }, row_spacing = "5.40mm" }
+
+[[row]]
+name = "SOIC16_Diodes"
+title = "SOIC-16 (SO-16) narrow body package"
+summary = "SOIC-16, 1.27 mm pitch, 9.9 x 3.9 mm body, Diodes Inc. suggested land"
+sources = ["D-0415"]
+used = "Table: A 1.260 max, A1 0.10-0.23, b 0.31-0.51, c 0.10-0.25, D 9.80-10.00, E 5.90-6.10, E1 3.80-4.00, e 1.27 BSC, L 0.40-1.27 mm; pad layout C 1.270, X 0.670, X1 9.560, Y 1.450, Y1 6.400 mm (row spacing Y1 - Y)"
+tags = ["SO-16", "SOIC-16", "soic"]
+record.pins = 16
+record.pitch = "1.27mm"
+record.body = { length = "9.80mm..10.00mm", width = "3.80mm..4.00mm", height = "1.26mm max", standoff = "0.10mm..0.23mm" }
+record.span = "5.90mm..6.10mm"
+record.lead = { length = "0.40mm..1.27mm", width = "0.31mm..0.51mm", thickness = "0.10mm..0.25mm" }
+record.land = { source = "D-0415 suggested pad layout", pad = { length = "1.45mm", width = "0.67mm" }, row_spacing = "4.95mm" }
+
+[[row]]
+name = "TSSOP8_Diodes"
+title = "TSSOP-8 package"
+summary = "TSSOP-8, 0.65 mm pitch, 3 x 4.4 mm body, Diodes Inc. suggested land"
+sources = ["D-0416"]
+used = "Table: A 1.20 max, A1 0.05-0.15, b 0.19-0.30, c 0.09-0.20, D 2.90-3.10, E 6.40, E1 4.30-4.50, e 0.65, L 0.45-0.75 mm; pad layout X 0.45, Y 1.78, C1 7.72, C2 0.65, C3 4.16 mm (row spacing C3 + Y)"
+tags = ["TSSOP-8", "tssop"]
+record.pins = 8
+record.pitch = "0.65mm"
+record.body = { length = "2.90mm..3.10mm", width = "4.30mm..4.50mm", height = "1.20mm max", standoff = "0.05mm..0.15mm" }
+record.span = "6.40mm"
+record.lead = { length = "0.45mm..0.75mm", width = "0.19mm..0.30mm", thickness = "0.09mm..0.20mm" }
+record.land = { source = "D-0416 suggested pad layout", pad = { length = "1.78mm", width = "0.45mm" }, row_spacing = "5.94mm" }
+
+[[row]]
+name = "TSSOP14_Diodes"
+title = "TSSOP-14 package"
+summary = "TSSOP-14, 0.65 mm pitch, 5 x 4.4 mm body, Diodes Inc. suggested land"
+sources = ["D-0417"]
+used = "Table: A 4.9-5.10 (body length), B 4.30-4.50 (body width), C 1.2 max (height), F1 0.45-0.75 (lead length), G 0.65 (pitch), K 0.19-0.30 (lead width), L 6.40 (span) mm; pad layout X 0.45, Y 1.45, C1 5.9, C2 0.65 mm"
+tags = ["TSSOP-14", "tssop"]
+record.pins = 14
+record.pitch = "0.65mm"
+record.body = { length = "4.90mm..5.10mm", width = "4.30mm..4.50mm", height = "1.20mm max" }
+record.span = "6.40mm"
+record.lead = { length = "0.45mm..0.75mm", width = "0.19mm..0.30mm" }
+record.land = { source = "D-0417 suggested pad layout", pad = { length = "1.45mm", width = "0.45mm" }, row_spacing = "5.90mm" }
+
+[[row]]
+name = "TSSOP20_Diodes"
+title = "TSSOP-20 package"
+summary = "TSSOP-20, 0.65 mm pitch, 6.5 x 4.4 mm body, Diodes Inc. suggested land"
+sources = ["D-0419"]
+used = "Table: A 1.20 max, A1 0.05-0.15, b 0.19-0.30, c 0.09-0.20, D 6.40-6.60, E 6.20-6.60, E1 4.30-4.50, e 0.65 BSC, L 0.45-0.75 mm; pad layout C 0.650, X 0.420, Y 1.780, Y1 4.160, Y2 7.720 mm (row spacing Y1 + Y)"
+tags = ["TSSOP-20", "tssop"]
+record.pins = 20
+record.pitch = "0.65mm"
+record.body = { length = "6.40mm..6.60mm", width = "4.30mm..4.50mm", height = "1.20mm max", standoff = "0.05mm..0.15mm" }
+record.span = "6.20mm..6.60mm"
+record.lead = { length = "0.45mm..0.75mm", width = "0.19mm..0.30mm", thickness = "0.09mm..0.20mm" }
+record.land = { source = "D-0419 suggested pad layout", pad = { length = "1.78mm", width = "0.42mm" }, row_spacing = "5.94mm" }
+
+[[row]]
+name = "MSOP8_Diodes"
+title = "MSOP-8 package"
+summary = "MSOP-8, 0.65 mm pitch, 3 x 3 mm body, Diodes Inc. suggested land"
+sources = ["D-0420"]
+used = "Table: A 1.10 max, A1 0.05-0.15, b 0.22-0.38, c 0.08-0.23, D 2.90-3.10, E 4.70-5.10, E1 2.90-3.10, e 0.65, L 0.40-0.80 mm; pad layout C 0.650, X 0.450, Y 1.350, Y1 5.300 mm (row spacing Y1 - Y)"
+tags = ["MSOP-8", "VSSOP-8", "msop"]
+record.pins = 8
+record.pitch = "0.65mm"
+record.body = { length = "2.90mm..3.10mm", width = "2.90mm..3.10mm", height = "1.10mm max", standoff = "0.05mm..0.15mm" }
+record.span = "4.70mm..5.10mm"
+record.lead = { length = "0.40mm..0.80mm", width = "0.22mm..0.38mm", thickness = "0.08mm..0.23mm" }
+record.land = { source = "D-0420 suggested pad layout", pad = { length = "1.35mm", width = "0.45mm" }, row_spacing = "3.95mm" }
+
+[[row]]
+name = "MSOP10_Diodes"
+title = "MSOP-10 package"
+summary = "MSOP-10, 0.5 mm pitch, 3 x 3 mm body, Diodes Inc. suggested land"
+sources = ["D-0421"]
+used = "Table: A 1.10 max, A1 0.05-0.15, b 0.17-0.27, c 0.08-0.23, D 2.95-3.05, e 0.50, E 4.80-5.00, E1 2.95-3.05, L 0.40-0.80 mm; pad layout C 0.50, X 0.30, Y 1.35, Y1 5.30 mm (row spacing Y1 - Y)"
+tags = ["MSOP-10", "VSSOP-10", "msop"]
+record.pins = 10
+record.pitch = "0.50mm"
+record.body = { length = "2.95mm..3.05mm", width = "2.95mm..3.05mm", height = "1.10mm max", standoff = "0.05mm..0.15mm" }
+record.span = "4.80mm..5.00mm"
+record.lead = { length = "0.40mm..0.80mm", width = "0.17mm..0.27mm", thickness = "0.08mm..0.23mm" }
+record.land = { source = "D-0421 suggested pad layout", pad = { length = "1.35mm", width = "0.30mm" }, row_spacing = "3.95mm" }

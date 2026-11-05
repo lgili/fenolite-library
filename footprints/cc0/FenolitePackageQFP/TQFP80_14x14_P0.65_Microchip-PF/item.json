@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFP.3dshapes/TQFP80_14x14_P0.65_Microchip-PF.step",
+    "generated/FenolitePackageQFP.pretty/TQFP80_14x14_P0.65_Microchip-PF.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFP:TQFP80_14x14_P0.65_Microchip-PF",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "TQFP-80, 0.65 mm pitch, 14 x 14 mm body, Microchip recommended land",
+  "tags": [
+    "gullwing",
+    "qfp",
+    "quad",
+    "smd",
+    "tqfp",
+    "tqfp-80"
+  ],
+  "title": "TQFP-80 14 x 14 mm, 0.65 mm pitch (Microchip PF)",
+  "version": "1.0.0"
+}

@@ -1,0 +1,44 @@
+{
+  "authors": [
+    "Fenolite contributors"
+  ],
+  "copyright": [
+    "Copyright (c) 2026 Fenolite contributors"
+  ],
+  "datasheets": [
+    {
+      "date": "2026-11-04",
+      "id": "D-0422",
+      "revision": "c0390 batch 5",
+      "title": "Original generic schematic symbols authored for fenolite-library (change c0390)",
+      "url": "https://github.com/lgili/fenolite-library/tree/main/openspec/changes/c0390-library-growth/families",
+      "used": "Original generic schematic drawings authored for fenolite-library; no manufacturer data."
+    }
+  ],
+  "evidence": "INFERRED",
+  "featured": null,
+  "generation": {
+    "change": "c0390",
+    "explicit_record": "explicit pin placements and graphics; generated/pins.kicad_sym regenerates from pins.toml",
+    "fenolite": "e7673c811d5ca25d269c2d9c0f30e686f5148844",
+    "table": "openspec/changes/c0390-library-growth/families/symbols.toml",
+    "tool": "fenolite"
+  },
+  "id": "FenoliteSymbols:Conn_02x19",
+  "kind": "symbol",
+  "licence_text_sha256": "0dd25be0803b1e2764b0323560013cdd5ad9ca92ba4780bd7db0cbe6ce821dd8",
+  "modification_notice": "2026-11-04: original item authored for fenolite-library (change c0390) with Fenolite's pin-table records from generic device-class conventions; no upstream design material.",
+  "origin": "authored",
+  "schema": "fenolite.provenance.v0",
+  "sources": [
+    "D-0422"
+  ],
+  "spdx": "CC0-1.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": null,
+  "version": "1.0.0"
+}

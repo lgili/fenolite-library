@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/VQFN80_11x11_P0.5_Microchip-6FX.step",
+    "generated/FenolitePackageQFN.pretty/VQFN80_11x11_P0.5_Microchip-6FX.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:VQFN80_11x11_P0.5_Microchip-6FX",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VQFN-80, 0.5 mm pitch, 11 x 11 mm body, 9.7 x 9.7 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "vqfn",
+    "vqfn-80"
+  ],
+  "title": "VQFN-80 11 x 11 mm, 0.5 mm pitch (Microchip 6FX/8FX)",
+  "version": "1.0.0"
+}

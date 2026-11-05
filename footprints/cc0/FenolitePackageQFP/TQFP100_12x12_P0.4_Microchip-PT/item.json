@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFP.3dshapes/TQFP100_12x12_P0.4_Microchip-PT.step",
+    "generated/FenolitePackageQFP.pretty/TQFP100_12x12_P0.4_Microchip-PT.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFP:TQFP100_12x12_P0.4_Microchip-PT",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "TQFP-100, 0.4 mm pitch, 12 x 12 mm body, Microchip recommended land",
+  "tags": [
+    "gullwing",
+    "qfp",
+    "quad",
+    "smd",
+    "tqfp",
+    "tqfp-100"
+  ],
+  "title": "TQFP-100 12 x 12 mm, 0.4 mm pitch (Microchip PT)",
+  "version": "1.0.0"
+}

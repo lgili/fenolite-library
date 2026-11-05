@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/VQFN68_8x8_P0.4_Microchip-VY.step",
+    "generated/FenolitePackageQFN.pretty/VQFN68_8x8_P0.4_Microchip-VY.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:VQFN68_8x8_P0.4_Microchip-VY",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VQFN-68, 0.4 mm pitch, 8 x 8 mm body, 6.3 x 6.3 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "vqfn",
+    "vqfn-68"
+  ],
+  "title": "VQFN-68 8 x 8 mm, 0.4 mm pitch (Microchip VY)",
+  "version": "1.0.0"
+}

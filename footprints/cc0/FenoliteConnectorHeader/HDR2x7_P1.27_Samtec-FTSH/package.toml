@@ -1,0 +1,354 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0425 Samtec FTSH series, through-hole micro header, 1.27 mm pitch, catalogue page F-226 (F-226). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.package.v0"
+id = "FenoliteConnectorHeader:HDR2x7_P1.27_Samtec-FTSH"
+version = "1.0.0"
+summary = "2 x 7 pin header, 1.27 mm pitch, vertical, through-hole"
+category = "Pin header"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0425"]
+generator = "explicit"
+kind = "through_hole"
+family = "header"
+pins = 14
+pitch = "1.27mm"
+body = { height = "2.51mm", width = "3.43mm" }
+
+[[pad]]
+number = "1"
+shape = "rect"
+size = ["1.07mm", "1.07mm"]
+at = ["-3.81mm", "-0.635mm"]
+kind = "thru_hole"
+drill = "0.6mm"
+layers = ["*.Cu", "*.Mask"]
+
+[[pad]]
+number = "2"
+shape = "circle"
+size = ["1.07mm", "1.07mm"]
+at = ["-3.81mm", "0.635mm"]
+kind = "thru_hole"
+drill = "0.6mm"
+layers = ["*.Cu", "*.Mask"]
+
+[[pad]]
+number = "3"
+shape = "circle"
+size = ["1.07mm", "1.07mm"]
+at = ["-2.54mm", "-0.635mm"]
+kind = "thru_hole"
+drill = "0.6mm"
+layers = ["*.Cu", "*.Mask"]
+
+[[pad]]
+number = "4"
+shape = "circle"
+size = ["1.07mm", "1.07mm"]
+at = ["-2.54mm", "0.635mm"]
+kind = "thru_hole"
+drill = "0.6mm"
+layers = ["*.Cu", "*.Mask"]
+
+[[pad]]
+number = "5"
+shape = "circle"
+size = ["1.07mm", "1.07mm"]
+at = ["-1.27mm", "-0.635mm"]
+kind = "thru_hole"
+drill = "0.6mm"
+layers = ["*.Cu", "*.Mask"]
+
+[[pad]]
+number = "6"
+shape = "circle"
+size = ["1.07mm", "1.07mm"]
+at = ["-1.27mm", "0.635mm"]
+kind = "thru_hole"
+drill = "0.6mm"
+layers = ["*.Cu", "*.Mask"]
+
+[[pad]]
+number = "7"
+shape = "circle"
+size = ["1.07mm", "1.07mm"]
+at = ["0mm", "-0.635mm"]
+kind = "thru_hole"
+drill = "0.6mm"
+layers = ["*.Cu", "*.Mask"]
+
+[[pad]]
+number = "8"
+shape = "circle"
+size = ["1.07mm", "1.07mm"]
+at = ["0mm", "0.635mm"]
+kind = "thru_hole"
+drill = "0.6mm"
+layers = ["*.Cu", "*.Mask"]
+
+[[pad]]
+number = "9"
+shape = "circle"
+size = ["1.07mm", "1.07mm"]
+at = ["1.27mm", "-0.635mm"]
+kind = "thru_hole"
+drill = "0.6mm"
+layers = ["*.Cu", "*.Mask"]
+
+[[pad]]
+number = "10"
+shape = "circle"
+size = ["1.07mm", "1.07mm"]
+at = ["1.27mm", "0.635mm"]
+kind = "thru_hole"
+drill = "0.6mm"
+layers = ["*.Cu", "*.Mask"]
+
+[[pad]]
+number = "11"
+shape = "circle"
+size = ["1.07mm", "1.07mm"]
+at = ["2.54mm", "-0.635mm"]
+kind = "thru_hole"
+drill = "0.6mm"
+layers = ["*.Cu", "*.Mask"]
+
+[[pad]]
+number = "12"
+shape = "circle"
+size = ["1.07mm", "1.07mm"]
+at = ["2.54mm", "0.635mm"]
+kind = "thru_hole"
+drill = "0.6mm"
+layers = ["*.Cu", "*.Mask"]
+
+[[pad]]
+number = "13"
+shape = "circle"
+size = ["1.07mm", "1.07mm"]
+at = ["3.81mm", "-0.635mm"]
+kind = "thru_hole"
+drill = "0.6mm"
+layers = ["*.Cu", "*.Mask"]
+
+[[pad]]
+number = "14"
+shape = "circle"
+size = ["1.07mm", "1.07mm"]
+at = ["3.81mm", "0.635mm"]
+kind = "thru_hole"
+drill = "0.6mm"
+layers = ["*.Cu", "*.Mask"]
+
+[[graphic]]
+key = "F.Fab:0"
+kind = "line"
+layer = "F.Fab"
+points = [["-3.5875mm", "-1.715mm"], ["4.445mm", "-1.715mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:1"
+kind = "line"
+layer = "F.Fab"
+points = [["4.445mm", "-1.715mm"], ["4.445mm", "1.715mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:2"
+kind = "line"
+layer = "F.Fab"
+points = [["4.445mm", "1.715mm"], ["-4.445mm", "1.715mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:3"
+kind = "line"
+layer = "F.Fab"
+points = [["-4.445mm", "1.715mm"], ["-4.445mm", "-0.8575mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:4"
+kind = "line"
+layer = "F.Fab"
+points = [["-4.445mm", "-0.8575mm"], ["-3.5875mm", "-1.715mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.SilkS:5"
+kind = "line"
+layer = "F.SilkS"
+points = [["-4.445mm", "-1.715mm"], ["4.445mm", "-1.715mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:6"
+kind = "line"
+layer = "F.SilkS"
+points = [["4.445mm", "-1.715mm"], ["4.445mm", "-1.4075mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:7"
+kind = "line"
+layer = "F.SilkS"
+points = [["4.445mm", "1.4075mm"], ["4.445mm", "1.715mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:8"
+kind = "line"
+layer = "F.SilkS"
+points = [["-4.445mm", "1.715mm"], ["4.445mm", "1.715mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:9"
+kind = "line"
+layer = "F.SilkS"
+points = [["-4.445mm", "-1.715mm"], ["-4.445mm", "-1.4075mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:10"
+kind = "line"
+layer = "F.SilkS"
+points = [["-4.445mm", "1.4075mm"], ["-4.445mm", "1.715mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:11"
+kind = "circle"
+layer = "F.SilkS"
+points = [["-4.8325mm", "-0.635mm"], ["-4.7575mm", "-0.635mm"]]
+width = "0.15mm"
+
+[[graphic]]
+key = "F.CrtYd:12"
+kind = "rect"
+layer = "F.CrtYd"
+points = [["-4.95mm", "-2.22mm"], ["4.95mm", "2.22mm"]]
+width = "0.05mm"
+
+[[component_body]]
+kind = "extruded"
+height = "2.51mm"
+outline = [["-4.445mm", "-1.715mm"], ["4.445mm", "-1.715mm"], ["4.445mm", "1.715mm"], ["-4.445mm", "1.715mm"]]
+name = "body"
+z_min = "0mm"
+z_max = "2.51mm"
+
+[[component_body]]
+kind = "extruded"
+height = "5.56mm"
+outline = [["-4.01mm", "-0.835mm"], ["-3.61mm", "-0.835mm"], ["-3.61mm", "-0.435mm"], ["-4.01mm", "-0.435mm"]]
+name = "pin:1"
+z_min = "-2.29mm"
+z_max = "5.56mm"
+
+[[component_body]]
+kind = "extruded"
+height = "5.56mm"
+outline = [["-4.01mm", "0.435mm"], ["-3.61mm", "0.435mm"], ["-3.61mm", "0.835mm"], ["-4.01mm", "0.835mm"]]
+name = "pin:2"
+z_min = "-2.29mm"
+z_max = "5.56mm"
+
+[[component_body]]
+kind = "extruded"
+height = "5.56mm"
+outline = [["-2.74mm", "-0.835mm"], ["-2.34mm", "-0.835mm"], ["-2.34mm", "-0.435mm"], ["-2.74mm", "-0.435mm"]]
+name = "pin:3"
+z_min = "-2.29mm"
+z_max = "5.56mm"
+
+[[component_body]]
+kind = "extruded"
+height = "5.56mm"
+outline = [["-2.74mm", "0.435mm"], ["-2.34mm", "0.435mm"], ["-2.34mm", "0.835mm"], ["-2.74mm", "0.835mm"]]
+name = "pin:4"
+z_min = "-2.29mm"
+z_max = "5.56mm"
+
+[[component_body]]
+kind = "extruded"
+height = "5.56mm"
+outline = [["-1.47mm", "-0.835mm"], ["-1.07mm", "-0.835mm"], ["-1.07mm", "-0.435mm"], ["-1.47mm", "-0.435mm"]]
+name = "pin:5"
+z_min = "-2.29mm"
+z_max = "5.56mm"
+
+[[component_body]]
+kind = "extruded"
+height = "5.56mm"
+outline = [["-1.47mm", "0.435mm"], ["-1.07mm", "0.435mm"], ["-1.07mm", "0.835mm"], ["-1.47mm", "0.835mm"]]
+name = "pin:6"
+z_min = "-2.29mm"
+z_max = "5.56mm"
+
+[[component_body]]
+kind = "extruded"
+height = "5.56mm"
+outline = [["-0.2mm", "-0.835mm"], ["0.2mm", "-0.835mm"], ["0.2mm", "-0.435mm"], ["-0.2mm", "-0.435mm"]]
+name = "pin:7"
+z_min = "-2.29mm"
+z_max = "5.56mm"
+
+[[component_body]]
+kind = "extruded"
+height = "5.56mm"
+outline = [["-0.2mm", "0.435mm"], ["0.2mm", "0.435mm"], ["0.2mm", "0.835mm"], ["-0.2mm", "0.835mm"]]
+name = "pin:8"
+z_min = "-2.29mm"
+z_max = "5.56mm"
+
+[[component_body]]
+kind = "extruded"
+height = "5.56mm"
+outline = [["1.07mm", "-0.835mm"], ["1.47mm", "-0.835mm"], ["1.47mm", "-0.435mm"], ["1.07mm", "-0.435mm"]]
+name = "pin:9"
+z_min = "-2.29mm"
+z_max = "5.56mm"
+
+[[component_body]]
+kind = "extruded"
+height = "5.56mm"
+outline = [["1.07mm", "0.435mm"], ["1.47mm", "0.435mm"], ["1.47mm", "0.835mm"], ["1.07mm", "0.835mm"]]
+name = "pin:10"
+z_min = "-2.29mm"
+z_max = "5.56mm"
+
+[[component_body]]
+kind = "extruded"
+height = "5.56mm"
+outline = [["2.34mm", "-0.835mm"], ["2.74mm", "-0.835mm"], ["2.74mm", "-0.435mm"], ["2.34mm", "-0.435mm"]]
+name = "pin:11"
+z_min = "-2.29mm"
+z_max = "5.56mm"
+
+[[component_body]]
+kind = "extruded"
+height = "5.56mm"
+outline = [["2.34mm", "0.435mm"], ["2.74mm", "0.435mm"], ["2.74mm", "0.835mm"], ["2.34mm", "0.835mm"]]
+name = "pin:12"
+z_min = "-2.29mm"
+z_max = "5.56mm"
+
+[[component_body]]
+kind = "extruded"
+height = "5.56mm"
+outline = [["3.61mm", "-0.835mm"], ["4.01mm", "-0.835mm"], ["4.01mm", "-0.435mm"], ["3.61mm", "-0.435mm"]]
+name = "pin:13"
+z_min = "-2.29mm"
+z_max = "5.56mm"
+
+[[component_body]]
+kind = "extruded"
+height = "5.56mm"
+outline = [["3.61mm", "0.435mm"], ["4.01mm", "0.435mm"], ["4.01mm", "0.835mm"], ["3.61mm", "0.835mm"]]
+name = "pin:14"
+z_min = "-2.29mm"
+z_max = "5.56mm"

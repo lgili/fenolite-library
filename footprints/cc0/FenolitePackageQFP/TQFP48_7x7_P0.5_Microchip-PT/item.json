@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFP.3dshapes/TQFP48_7x7_P0.5_Microchip-PT.step",
+    "generated/FenolitePackageQFP.pretty/TQFP48_7x7_P0.5_Microchip-PT.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFP:TQFP48_7x7_P0.5_Microchip-PT",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "TQFP-48, 0.5 mm pitch, 7 x 7 mm body, Microchip recommended land",
+  "tags": [
+    "gullwing",
+    "qfp",
+    "quad",
+    "smd",
+    "tqfp",
+    "tqfp-48"
+  ],
+  "title": "TQFP-48 7 x 7 mm, 0.5 mm pitch (Microchip PT/Y8)",
+  "version": "1.0.0"
+}

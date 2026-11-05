@@ -1,0 +1,214 @@
+# SPDX-License-Identifier: CC0-1.0
+# Quad flat packages (TQFP, LQFP, MQFP), batch 6 of change c0390. Outline dimensions and recommended land
+# patterns: Microchip Packaging Specification DS00000049CH (D-0423), one drawing per item (page and drawing
+# number in `used`; tables printed as images were read from the page and are marked so). Land: the
+# recommended land pattern as read ([land]). Packages with an exposed pad wait for gap G-2.
+schema = "fenolite.c0390-family.v0"
+kind = "footprint"
+namespace = "FenolitePackageQFP"
+category = "Quad flat package"
+date = "2026-11-05"
+tags = ["gullwing", "qfp", "quad", "smd"]
+
+[record]
+family = "gullwing"
+arrangement = "quad"
+
+[record.generate]
+lands = 1
+drawing = 1
+
+[[row]]
+name = "LQFP64_10x10_P0.5_Microchip-PL"
+title = "LQFP-64 10 x 10 mm, 0.5 mm pitch (Microchip PL)"
+summary = "LQFP-64, 0.5 mm pitch, 10 x 10 mm body, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 848, drawing C04-0053A: N 64, e 0.50 BSC, A -/-/1.60, A1 0.05/-/0.15, D 12.00 BSC, E 12.00 BSC, D1 10.00 BSC, E1 10.00 BSC, b 0.17/0.22/0.27, c 0.09/-/0.20, L 0.45/0.60/0.75; land C04-2053A: E 0.50 BSC, C1 11.40, C2 11.40, X 0.30, Y 1.50, G 0.20"
+tags = ["lqfp", "lqfp-64"]
+record.pins = 64
+record.pitch = "0.5mm"
+record.body = { length = "10mm", width = "10mm", height = "1.6mm", standoff = "0.05mm..0.15mm" }
+record.span_x = "12mm"
+record.span_y = "12mm"
+record.lead = { length = "0.45mm..0.75mm", width = "0.17mm..0.27mm", thickness = "0.09mm..0.2mm" }
+record.land = { source = "D-0423 drawing C04-2053A", pad = { length = "1.5mm", width = "0.3mm" }, row_spacing_x = "11.4mm", row_spacing_y = "11.4mm" }
+
+[[row]]
+name = "LQFP100_14x14_P0.5_Microchip-PL"
+title = "LQFP-100 14 x 14 mm, 0.5 mm pitch (Microchip PL)"
+summary = "LQFP-100, 0.5 mm pitch, 14 x 14 mm body, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 851, drawing C04-233A: N 100, e 0.50 BSC, A -/-/1.60, A1 0.05/-/0.15, D 16.00 BSC, E 16.00 BSC, D1 14.00 BSC, E1 14.00 BSC, b 0.17/0.22/0.27, c 0.09/-/0.20, L 0.45/0.60/0.75; land C04-2233A: E 0.50 BSC, C1 15.40, C2 15.40, X 0.30, Y 1.50, G 0.20"
+tags = ["lqfp", "lqfp-100"]
+record.pins = 100
+record.pitch = "0.5mm"
+record.body = { length = "14mm", width = "14mm", height = "1.6mm", standoff = "0.05mm..0.15mm" }
+record.span_x = "16mm"
+record.span_y = "16mm"
+record.lead = { length = "0.45mm..0.75mm", width = "0.17mm..0.27mm", thickness = "0.09mm..0.2mm" }
+record.land = { source = "D-0423 drawing C04-2233A", pad = { length = "1.5mm", width = "0.3mm" }, row_spacing_x = "15.4mm", row_spacing_y = "15.4mm" }
+
+[[row]]
+name = "LQFP160_24x24_P0.5_Microchip-6G"
+title = "LQFP-160 24 x 24 mm, 0.5 mm pitch (Microchip 6G)"
+summary = "LQFP-160, 0.5 mm pitch, 24 x 24 mm body, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 859, drawing C04-432A: N 160, e 0.50 BSC, A -/-/1.60, A1 0.05/0.10/0.15, D 26.00 BSC, E 26.00 BSC, D1 24.00 BSC, E1 24.00 BSC, b 0.17/0.20/0.27, c 0.09/-/0.20, L 0.45/0.60/0.75; land C04-2432A: E 0.50 BSC, C1 25.40, C2 25.40, X 0.30, Y 1.50, G 0.20"
+tags = ["lqfp", "lqfp-160"]
+record.pins = 160
+record.pitch = "0.5mm"
+record.body = { length = "24mm", width = "24mm", height = "1.6mm", standoff = "0.05mm..0.15mm" }
+record.span_x = "26mm"
+record.span_y = "26mm"
+record.lead = { length = "0.45mm..0.75mm", width = { min = "0.17mm", nom = "0.2mm", max = "0.27mm" }, thickness = "0.09mm..0.2mm" }
+record.land = { source = "D-0423 drawing C04-2432A", pad = { length = "1.5mm", width = "0.3mm" }, row_spacing_x = "25.4mm", row_spacing_y = "25.4mm" }
+
+[[row]]
+name = "TQFP44_10x10_P0.8_Microchip-PT"
+title = "TQFP-44 10 x 10 mm, 0.8 mm pitch (Microchip PT)"
+summary = "TQFP-44, 0.8 mm pitch, 10 x 10 mm body, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 881, drawing C04-076C: N 44, e 0.80 BSC, A -/-/1.20, A1 0.05/-/0.15, D 12.00 BSC, E 12.00 BSC, D1 10.00 BSC, E1 10.00 BSC, b 0.30/0.37/0.45, c 0.09/-/0.20, L 0.45/0.60/0.75; land C04-2076B: E 0.80 BSC, C1 11.40, C2 11.40, X1 0.55, Y1 1.50, G 0.25"
+tags = ["tqfp", "tqfp-44"]
+record.pins = 44
+record.pitch = "0.8mm"
+record.body = { length = "10mm", width = "10mm", height = "1.2mm", standoff = "0.05mm..0.15mm" }
+record.span_x = "12mm"
+record.span_y = "12mm"
+record.lead = { length = "0.45mm..0.75mm", width = { min = "0.3mm", nom = "0.37mm", max = "0.45mm" }, thickness = "0.09mm..0.2mm" }
+record.land = { source = "D-0423 drawing C04-2076B", pad = { length = "1.5mm", width = "0.55mm" }, row_spacing_x = "11.4mm", row_spacing_y = "11.4mm" }
+
+[[row]]
+name = "TQFP48_7x7_P0.5_Microchip-PT"
+title = "TQFP-48 7 x 7 mm, 0.5 mm pitch (Microchip PT/Y8)"
+summary = "TQFP-48, 0.5 mm pitch, 7 x 7 mm body, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 889, drawing C04-300-PT: N 48, e 0.50 BSC, A -/-/1.20, A1 0.05/-/0.15, D 9.00 BSC, E 9.00 BSC, D1 7.00 BSC, E1 7.00 BSC, b 0.17/0.22/0.27, c 0.09/-/0.16, L 0.45/0.60/0.75; land C04-2300-PT: E 0.50 BSC, C1 8.40, C2 8.40, X1 0.30, Y1 1.50, G 0.20; the same outline and land are listed for package codes Y8"
+tags = ["tqfp", "tqfp-48"]
+record.pins = 48
+record.pitch = "0.5mm"
+record.body = { length = "7mm", width = "7mm", height = "1.2mm", standoff = "0.05mm..0.15mm" }
+record.span_x = "9mm"
+record.span_y = "9mm"
+record.lead = { length = "0.45mm..0.75mm", width = "0.17mm..0.27mm", thickness = "0.09mm..0.16mm" }
+record.land = { source = "D-0423 drawing C04-2300-PT", pad = { length = "1.5mm", width = "0.3mm" }, row_spacing_x = "8.4mm", row_spacing_y = "8.4mm" }
+
+[[row]]
+name = "TQFP64_10x10_P0.5_Microchip-PT"
+title = "TQFP-64 10 x 10 mm, 0.5 mm pitch (Microchip PT)"
+summary = "TQFP-64, 0.5 mm pitch, 10 x 10 mm body, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 897, drawing C04-085C: N 64, e 0.50 BSC, A -/-/1.20, A1 0.05/-/0.15, D 12.00 BSC, E 12.00 BSC, D1 10.00 BSC, E1 10.00 BSC, b 0.17/0.22/0.27, c 0.09/-/0.20, L 0.45/0.60/0.75; land C04-2085B: E 0.50 BSC, C1 11.40, C2 11.40, X1 0.30, Y1 1.50, G 0.20"
+tags = ["tqfp", "tqfp-64"]
+record.pins = 64
+record.pitch = "0.5mm"
+record.body = { length = "10mm", width = "10mm", height = "1.2mm", standoff = "0.05mm..0.15mm" }
+record.span_x = "12mm"
+record.span_y = "12mm"
+record.lead = { length = "0.45mm..0.75mm", width = "0.17mm..0.27mm", thickness = "0.09mm..0.2mm" }
+record.land = { source = "D-0423 drawing C04-2085B", pad = { length = "1.5mm", width = "0.3mm" }, row_spacing_x = "11.4mm", row_spacing_y = "11.4mm" }
+
+[[row]]
+name = "TQFP32_7x7_P0.8_Microchip-PT"
+title = "TQFP-32 7 x 7 mm, 0.8 mm pitch (Microchip PT)"
+summary = "TQFP-32, 0.8 mm pitch, 7 x 7 mm body, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 878, drawing C04-074B: N 32, e 0.80 BSC, A -/-/1.20, A1 0.05/-/0.15, D 9.00 BSC, E 9.00 BSC, D1 7.00 BSC, E1 7.00 BSC, b 0.30/0.37/0.45, c 0.09/-/0.20, L 0.45/0.60/0.75; land C04-2074B: E 0.80 BSC, C1 8.50, C2 8.50, X1 0.55, Y1 1.60; table printed as an image in the PDF, read from the page"
+tags = ["tqfp", "tqfp-32"]
+record.pins = 32
+record.pitch = "0.8mm"
+record.body = { length = "7mm", width = "7mm", height = "1.2mm", standoff = "0.05mm..0.15mm" }
+record.span_x = "9mm"
+record.span_y = "9mm"
+record.lead = { length = "0.45mm..0.75mm", width = { min = "0.3mm", nom = "0.37mm", max = "0.45mm" }, thickness = "0.09mm..0.2mm" }
+record.land = { source = "D-0423 drawing C04-2074B", pad = { length = "1.6mm", width = "0.55mm" }, row_spacing_x = "8.5mm", row_spacing_y = "8.5mm" }
+
+[[row]]
+name = "TQFP80_14x14_P0.65_Microchip-PF"
+title = "TQFP-80 14 x 14 mm, 0.65 mm pitch (Microchip PF)"
+summary = "TQFP-80, 0.65 mm pitch, 14 x 14 mm body, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 905, drawing C04-116B: N 80, e 0.65 BSC, A -/-/1.20, A1 0.05/-/0.15, D 16.00 BSC, E 16.00 BSC, D1 14.00 BSC, E1 14.00 BSC, b 0.22/0.32/0.38, c 0.09/-/0.20, L 0.45/0.60/0.75; land C04-2116C: E 0.65 BSC, C1 15.40, C2 15.40, X1 0.45, Y1 1.50; table printed as an image in the PDF, read from the page"
+tags = ["tqfp", "tqfp-80"]
+record.pins = 80
+record.pitch = "0.65mm"
+record.body = { length = "14mm", width = "14mm", height = "1.2mm", standoff = "0.05mm..0.15mm" }
+record.span_x = "16mm"
+record.span_y = "16mm"
+record.lead = { length = "0.45mm..0.75mm", width = { min = "0.22mm", nom = "0.32mm", max = "0.38mm" }, thickness = "0.09mm..0.2mm" }
+record.land = { source = "D-0423 drawing C04-2116C", pad = { length = "1.5mm", width = "0.45mm" }, row_spacing_x = "15.4mm", row_spacing_y = "15.4mm" }
+
+[[row]]
+name = "TQFP80_12x12_P0.5_Microchip-PT"
+title = "TQFP-80 12 x 12 mm, 0.5 mm pitch (Microchip PT)"
+summary = "TQFP-80, 0.5 mm pitch, 12 x 12 mm body, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 907, drawing C04-092B: N 80, e 0.50 BSC, A -/-/1.20, A1 0.05/-/0.15, D 14.00 BSC, E 14.00 BSC, D1 12.00 BSC, E1 12.00 BSC, b 0.17/0.22/0.27, c 0.09/-/0.20, L 0.45/0.60/0.75; land C04-2092B: E 0.50 BSC, C1 13.40, C2 13.40, X1 0.30, Y1 1.50; table printed as an image in the PDF, read from the page"
+tags = ["tqfp", "tqfp-80"]
+record.pins = 80
+record.pitch = "0.5mm"
+record.body = { length = "12mm", width = "12mm", height = "1.2mm", standoff = "0.05mm..0.15mm" }
+record.span_x = "14mm"
+record.span_y = "14mm"
+record.lead = { length = "0.45mm..0.75mm", width = "0.17mm..0.27mm", thickness = "0.09mm..0.2mm" }
+record.land = { source = "D-0423 drawing C04-2092B", pad = { length = "1.5mm", width = "0.3mm" }, row_spacing_x = "13.4mm", row_spacing_y = "13.4mm" }
+
+[[row]]
+name = "TQFP100_14x14_P0.5_Microchip-PF"
+title = "TQFP-100 14 x 14 mm, 0.5 mm pitch (Microchip PF)"
+summary = "TQFP-100, 0.5 mm pitch, 14 x 14 mm body, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 909, drawing C04-110B: N 100, e 0.50 BSC, A -/-/1.20, A1 0.05/-/0.15, D 16.00 BSC, E 16.00 BSC, D1 14.00 BSC, E1 14.00 BSC, b 0.17/0.22/0.27, c 0.09/-/0.20, L 0.45/0.60/0.75; land C04-2110B: E 0.50 BSC, C1 15.40, C2 15.40, X1 0.30, Y1 1.50; table printed as an image in the PDF, read from the page"
+tags = ["tqfp", "tqfp-100"]
+record.pins = 100
+record.pitch = "0.5mm"
+record.body = { length = "14mm", width = "14mm", height = "1.2mm", standoff = "0.05mm..0.15mm" }
+record.span_x = "16mm"
+record.span_y = "16mm"
+record.lead = { length = "0.45mm..0.75mm", width = "0.17mm..0.27mm", thickness = "0.09mm..0.2mm" }
+record.land = { source = "D-0423 drawing C04-2110B", pad = { length = "1.5mm", width = "0.3mm" }, row_spacing_x = "15.4mm", row_spacing_y = "15.4mm" }
+
+[[row]]
+name = "TQFP100_12x12_P0.4_Microchip-PT"
+title = "TQFP-100 12 x 12 mm, 0.4 mm pitch (Microchip PT)"
+summary = "TQFP-100, 0.4 mm pitch, 12 x 12 mm body, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 911, drawing C04-100B: N 100, e 0.40 BSC, A -/-/1.20, A1 0.05/-/0.15, D 14.00 BSC, E 14.00 BSC, D1 12.00 BSC, E1 12.00 BSC, b 0.13/0.18/0.23, c 0.09/-/0.20, L 0.45/0.60/0.75; land C04-2100B: E 0.40 BSC, C1 13.40, C2 13.40, X1 0.20, Y1 1.50; table printed as an image in the PDF, read from the page"
+tags = ["tqfp", "tqfp-100"]
+record.pins = 100
+record.pitch = "0.4mm"
+record.body = { length = "12mm", width = "12mm", height = "1.2mm", standoff = "0.05mm..0.15mm" }
+record.span_x = "14mm"
+record.span_y = "14mm"
+record.lead = { length = "0.45mm..0.75mm", width = "0.13mm..0.23mm", thickness = "0.09mm..0.2mm" }
+record.land = { source = "D-0423 drawing C04-2100B", pad = { length = "1.5mm", width = "0.2mm" }, row_spacing_x = "13.4mm", row_spacing_y = "13.4mm" }
+
+[[row]]
+name = "MQFP44_10x10_P0.8_Microchip-KW"
+title = "MQFP-44 10 x 10 mm, 0.8 mm pitch (Microchip KW/PQ)"
+summary = "MQFP-44, 0.8 mm pitch, 10 x 10 mm body, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 866, drawing C04-071B: N 44, e 0.80 BSC, A -/-/2.45, A1 0.00/-/0.25, D 13.20 BSC, E 13.20 BSC, D1 10.00 BSC, E1 10.00 BSC, b 0.29/-/0.45, c 0.11/-/0.23, L 0.73/0.88/1.03; land C04-2071B: E 0.80 BSC, C1 12.30, C2 12.30, X1 0.55, Y1 1.90; table printed as an image in the PDF, read from the page; the same outline and land are listed for package codes PQ"
+tags = ["mqfp", "mqfp-44"]
+record.pins = 44
+record.pitch = "0.8mm"
+record.body = { length = "10mm", width = "10mm", height = "2.45mm", standoff = "0mm..0.25mm" }
+record.span_x = "13.2mm"
+record.span_y = "13.2mm"
+record.lead = { length = "0.73mm..1.03mm", width = "0.29mm..0.45mm", thickness = "0.11mm..0.23mm" }
+record.land = { source = "D-0423 drawing C04-2071B", pad = { length = "1.9mm", width = "0.55mm" }, row_spacing_x = "12.3mm", row_spacing_y = "12.3mm" }
+
+[[row]]
+name = "MQFP64_14x14_P0.8_Microchip-BU"
+title = "MQFP-64 14 x 14 mm, 0.8 mm pitch (Microchip BU)"
+summary = "MQFP-64, 0.8 mm pitch, 14 x 14 mm body, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 870, drawing C04-022B: N 64, e 0.80 BSC, A -/-/3.15, A1 0.00/-/0.25, D 17.20 BSC, E 17.20 BSC, D1 14.00 BSC, E1 14.00 BSC, b 0.29/-/0.45, c 0.11/-/0.23, L 0.73/0.88/1.03; land C04-2022B: E 0.80 BSC, C1 16.10, C2 16.10, X1 0.55, Y1 1.80; table printed as an image in the PDF, read from the page"
+tags = ["mqfp", "mqfp-64"]
+record.pins = 64
+record.pitch = "0.8mm"
+record.body = { length = "14mm", width = "14mm", height = "3.15mm", standoff = "0mm..0.25mm" }
+record.span_x = "17.2mm"
+record.span_y = "17.2mm"
+record.lead = { length = "0.73mm..1.03mm", width = "0.29mm..0.45mm", thickness = "0.11mm..0.23mm" }
+record.land = { source = "D-0423 drawing C04-2022B", pad = { length = "1.8mm", width = "0.55mm" }, row_spacing_x = "16.1mm", row_spacing_y = "16.1mm" }

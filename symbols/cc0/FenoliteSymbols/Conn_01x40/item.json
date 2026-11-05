@@ -1,0 +1,21 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:Conn_01x40",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic single-row connector, 40 pins, pin 1 at the top",
+  "tags": [
+    "connector",
+    "generic",
+    "single-row",
+    "symbol"
+  ],
+  "title": "Connector, 1 row, 40 pins",
+  "version": "1.0.0"
+}

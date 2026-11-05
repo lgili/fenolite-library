@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageDFN.3dshapes/USON8_2x2_P0.4_Microchip-ND.step",
+    "generated/FenolitePackageDFN.pretty/USON8_2x2_P0.4_Microchip-ND.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageDFN:USON8_2x2_P0.4_Microchip-ND",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "USON-8, 0.4 mm pitch, 2 x 2 mm body, 0.85 x 1.7 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "dfn",
+    "dual-row",
+    "exposed-pad",
+    "no-lead",
+    "smd",
+    "uson",
+    "uson-8"
+  ],
+  "title": "USON-8 2 x 2 mm, 0.4 mm pitch (Microchip ND)",
+  "version": "1.0.0"
+}

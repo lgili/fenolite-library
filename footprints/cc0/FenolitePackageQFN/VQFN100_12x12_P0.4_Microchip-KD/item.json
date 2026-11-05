@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/VQFN100_12x12_P0.4_Microchip-KD.step",
+    "generated/FenolitePackageQFN.pretty/VQFN100_12x12_P0.4_Microchip-KD.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:VQFN100_12x12_P0.4_Microchip-KD",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VQFN-100, 0.4 mm pitch, 12 x 12 mm body, 8.1 x 8.1 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "vqfn",
+    "vqfn-100"
+  ],
+  "title": "VQFN-100 12 x 12 mm, 0.4 mm pitch (Microchip KD)",
+  "version": "1.0.0"
+}

@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/UQFN16_3x3_P0.5_Microchip-MV.step",
+    "generated/FenolitePackageQFN.pretty/UQFN16_3x3_P0.5_Microchip-MV.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:UQFN16_3x3_P0.5_Microchip-MV",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "UQFN-16, 0.5 mm pitch, 3 x 3 mm body, 1.7 x 1.7 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "uqfn",
+    "uqfn-16"
+  ],
+  "title": "UQFN-16 3 x 3 mm, 0.5 mm pitch (Microchip MV)",
+  "version": "1.0.0"
+}

@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenoliteResistorSMD.3dshapes/CHIP0201_B0.6x0.3.step",
+    "generated/FenoliteResistorSMD.pretty/CHIP0201_B0.6x0.3.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenoliteResistorSMD:CHIP0201_B0.6x0.3",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Chip resistor 0201 (0603 metric), 0.6 x 0.3 mm body, calculated land",
+  "tags": [
+    "0201",
+    "0603-metric",
+    "chip",
+    "resistor",
+    "smd",
+    "two-terminal"
+  ],
+  "title": "Chip resistor 0201 (0603 metric)",
+  "version": "1.0.0"
+}

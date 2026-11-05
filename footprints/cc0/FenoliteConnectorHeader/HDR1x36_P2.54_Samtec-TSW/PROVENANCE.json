@@ -1,0 +1,80 @@
+{
+  "authors": [
+    "Fenolite contributors"
+  ],
+  "copyright": [
+    "Copyright (c) 2026 Fenolite contributors"
+  ],
+  "datasheets": [
+    {
+      "date": "2025-11-07",
+      "id": "D-0424",
+      "revision": "F-226",
+      "title": "Samtec TSW/HTSW series, through-hole .025\" square post header, 2.54 mm pitch, catalogue page F-226",
+      "url": "https://suddendocs.samtec.com/catalog_english/tsw_th.pdf",
+      "used": "Samtec TSW catalogue page: TSW-1-36-07-x-S; .025\" (0.64 mm) square post, pin centers .100\" (2.54 mm), lead style -07 A 10.92, B 2.54, C 5.84 mm, insulator 2.48 mm wide, recommended hole 1.02 mm +/- 0.03 mm"
+    }
+  ],
+  "evidence": "INFERRED",
+  "featured": null,
+  "generation": {
+    "change": "c0390",
+    "explicit_record": "the generator's pads, graphics and bodies written as a generator='explicit' record (the record kind the library audit reads); outputs regenerate from package.toml",
+    "family_record": {
+      "body": {
+        "height": "2.54mm",
+        "width": "2.48mm"
+      },
+      "columns": 36,
+      "evidence": "INFERRED",
+      "family": "header",
+      "generate": {
+        "drawing": 1,
+        "lands": 1
+      },
+      "id": "FenoliteConnectorHeader:HDR1x36_P2.54_Samtec-TSW",
+      "land": {
+        "drill": "0.99mm..1.05mm",
+        "source": "D-0424 recommended hole size"
+      },
+      "mount": "tht",
+      "orientation": "vertical",
+      "pin": {
+        "length_above": "5.84mm",
+        "length_below": "2.54mm",
+        "width": "0.64mm"
+      },
+      "pitch": "2.54mm",
+      "rows": 1,
+      "schema": "fenolite.package.v0",
+      "sources": [
+        "D-0424"
+      ],
+      "summary": "1 x 36 pin header, 2.54 mm pitch, vertical, through-hole"
+    },
+    "fenolite": "e7673c811d5ca25d269c2d9c0f30e686f5148844",
+    "findings": [
+      "info package.land-override"
+    ],
+    "generator": "header/1 manufacturer drawing/1; land: manufacturer D-0424 recommended hole size",
+    "table": "openspec/changes/c0390-library-growth/families/header-2.54.toml",
+    "tool": "fenolite"
+  },
+  "id": "FenoliteConnectorHeader:HDR1x36_P2.54_Samtec-TSW",
+  "kind": "footprint",
+  "licence_text_sha256": "0dd25be0803b1e2764b0323560013cdd5ad9ca92ba4780bd7db0cbe6ce821dd8",
+  "modification_notice": "2026-11-05: original item authored for fenolite-library (change c0390) with Fenolite's c0260 package generator from public package dimensions; no upstream design material.",
+  "origin": "authored",
+  "schema": "fenolite.provenance.v0",
+  "sources": [
+    "D-0424"
+  ],
+  "spdx": "CC0-1.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": null,
+  "version": "1.0.0"
+}

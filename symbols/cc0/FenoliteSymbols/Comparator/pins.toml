@@ -1,0 +1,97 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0422 Original generic schematic symbols authored for fenolite-library (change c0390) (c0390 batch 5). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.pins.v0"
+id = "FenoliteSymbols:Comparator"
+version = "1.0.0"
+summary = "Generic comparator; pins 2 -IN, 3 +IN, 4 V-, 7 OUT (open collector), 8 V+"
+category = "Generic symbol"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422"]
+
+[[pin]]
+number = "2"
+name = "-"
+type = "input"
+
+[[pin]]
+number = "3"
+name = "+"
+type = "input"
+
+[[pin]]
+number = "4"
+name = "V-"
+type = "power_in"
+
+[[pin]]
+number = "7"
+name = "~"
+type = "open_collector"
+
+[[pin]]
+number = "8"
+name = "V+"
+type = "power_in"
+
+[symbol]
+reference = "U"
+pin_names_hidden = true
+
+[[symbol.pins]]
+number = "2"
+at = ["-7.62mm", "-2.54mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "3"
+at = ["-7.62mm", "2.54mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "4"
+at = ["0mm", "-5.08mm"]
+length = "2.54mm"
+rotation = "90deg"
+
+[[symbol.pins]]
+number = "7"
+at = ["7.62mm", "0mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "8"
+at = ["0mm", "5.08mm"]
+length = "2.54mm"
+rotation = "270deg"
+
+[[symbol.graphic]]
+kind = "polygon"
+points = [["-3.81mm", "-5.08mm"], ["3.81mm", "0mm"], ["-3.81mm", "5.08mm"]]
+filled = false
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-5.08mm", "-2.54mm"], ["-3.81mm", "-2.54mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-5.08mm", "2.54mm"], ["-3.81mm", "2.54mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["3.81mm", "0mm"], ["5.08mm", "0mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-3.302mm", "2.54mm"], ["-2.286mm", "2.54mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-2.794mm", "2.032mm"], ["-2.794mm", "3.048mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-3.302mm", "-2.54mm"], ["-2.286mm", "-2.54mm"]]

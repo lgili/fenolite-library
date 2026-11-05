@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenoliteDiodeSMD.3dshapes/SOD323_Diodes.step",
+    "generated/FenoliteDiodeSMD.pretty/SOD323_Diodes.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenoliteDiodeSMD:SOD323_Diodes",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "SOD-323, 1.7 x 1.3 mm body, cathode pad 1, Diodes Inc. suggested land",
+  "tags": [
+    "SOD-323",
+    "diode",
+    "molded",
+    "polarized",
+    "smd",
+    "two-terminal"
+  ],
+  "title": "SOD-323 molded diode package",
+  "version": "1.0.0"
+}

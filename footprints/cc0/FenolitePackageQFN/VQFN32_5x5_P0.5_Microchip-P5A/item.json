@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/VQFN32_5x5_P0.5_Microchip-P5A.step",
+    "generated/FenolitePackageQFN.pretty/VQFN32_5x5_P0.5_Microchip-P5A.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:VQFN32_5x5_P0.5_Microchip-P5A",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VQFN-32, 0.5 mm pitch, 5 x 5 mm body, 3.7 x 3.7 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "vqfn",
+    "vqfn-32"
+  ],
+  "title": "VQFN-32 5 x 5 mm, 0.5 mm pitch (Microchip P5A)",
+  "version": "1.0.0"
+}

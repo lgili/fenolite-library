@@ -1,0 +1,153 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0424 Samtec TSW/HTSW series, through-hole .025" square post header, 2.54 mm pitch, catalogue page F-226 (F-226). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.package.v0"
+id = "FenoliteConnectorHeader:HDR1x3_P2.54_Samtec-TSW"
+version = "1.0.0"
+summary = "1 x 3 pin header, 2.54 mm pitch, vertical, through-hole"
+category = "Pin header"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0424"]
+generator = "explicit"
+kind = "through_hole"
+family = "header"
+pins = 3
+pitch = "2.54mm"
+body = { height = "2.54mm", width = "2.48mm" }
+
+[[pad]]
+number = "1"
+shape = "rect"
+size = ["1.72mm", "1.72mm"]
+at = ["-2.54mm", "0mm"]
+kind = "thru_hole"
+drill = "1.02mm"
+layers = ["*.Cu", "*.Mask"]
+
+[[pad]]
+number = "2"
+shape = "circle"
+size = ["1.72mm", "1.72mm"]
+at = ["0mm", "0mm"]
+kind = "thru_hole"
+drill = "1.02mm"
+layers = ["*.Cu", "*.Mask"]
+
+[[pad]]
+number = "3"
+shape = "circle"
+size = ["1.72mm", "1.72mm"]
+at = ["2.54mm", "0mm"]
+kind = "thru_hole"
+drill = "1.02mm"
+layers = ["*.Cu", "*.Mask"]
+
+[[graphic]]
+key = "F.Fab:0"
+kind = "line"
+layer = "F.Fab"
+points = [["-3.19mm", "-1.24mm"], ["3.81mm", "-1.24mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:1"
+kind = "line"
+layer = "F.Fab"
+points = [["3.81mm", "-1.24mm"], ["3.81mm", "1.24mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:2"
+kind = "line"
+layer = "F.Fab"
+points = [["3.81mm", "1.24mm"], ["-3.81mm", "1.24mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:3"
+kind = "line"
+layer = "F.Fab"
+points = [["-3.81mm", "1.24mm"], ["-3.81mm", "-0.62mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:4"
+kind = "line"
+layer = "F.Fab"
+points = [["-3.81mm", "-0.62mm"], ["-3.19mm", "-1.24mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.SilkS:5"
+kind = "line"
+layer = "F.SilkS"
+points = [["-3.81mm", "-1.24mm"], ["3.81mm", "-1.24mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:6"
+kind = "line"
+layer = "F.SilkS"
+points = [["3.81mm", "-1.24mm"], ["3.81mm", "1.24mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:7"
+kind = "line"
+layer = "F.SilkS"
+points = [["-3.81mm", "1.24mm"], ["3.81mm", "1.24mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:8"
+kind = "line"
+layer = "F.SilkS"
+points = [["-3.81mm", "-1.24mm"], ["-3.81mm", "1.24mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:9"
+kind = "circle"
+layer = "F.SilkS"
+points = [["-4.1975mm", "0mm"], ["-4.1225mm", "0mm"]]
+width = "0.15mm"
+
+[[graphic]]
+key = "F.CrtYd:10"
+kind = "rect"
+layer = "F.CrtYd"
+points = [["-4.31mm", "-1.74mm"], ["4.31mm", "1.74mm"]]
+width = "0.05mm"
+
+[[component_body]]
+kind = "extruded"
+height = "2.54mm"
+outline = [["-3.81mm", "-1.24mm"], ["3.81mm", "-1.24mm"], ["3.81mm", "1.24mm"], ["-3.81mm", "1.24mm"]]
+name = "body"
+z_min = "0mm"
+z_max = "2.54mm"
+
+[[component_body]]
+kind = "extruded"
+height = "8.38mm"
+outline = [["-2.86mm", "-0.32mm"], ["-2.22mm", "-0.32mm"], ["-2.22mm", "0.32mm"], ["-2.86mm", "0.32mm"]]
+name = "pin:1"
+z_min = "-2.54mm"
+z_max = "8.38mm"
+
+[[component_body]]
+kind = "extruded"
+height = "8.38mm"
+outline = [["-0.32mm", "-0.32mm"], ["0.32mm", "-0.32mm"], ["0.32mm", "0.32mm"], ["-0.32mm", "0.32mm"]]
+name = "pin:2"
+z_min = "-2.54mm"
+z_max = "8.38mm"
+
+[[component_body]]
+kind = "extruded"
+height = "8.38mm"
+outline = [["2.22mm", "-0.32mm"], ["2.86mm", "-0.32mm"], ["2.86mm", "0.32mm"], ["2.22mm", "0.32mm"]]
+name = "pin:3"
+z_min = "-2.54mm"
+z_max = "8.38mm"

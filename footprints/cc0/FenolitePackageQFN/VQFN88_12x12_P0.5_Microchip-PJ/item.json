@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/VQFN88_12x12_P0.5_Microchip-PJ.step",
+    "generated/FenolitePackageQFN.pretty/VQFN88_12x12_P0.5_Microchip-PJ.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:VQFN88_12x12_P0.5_Microchip-PJ",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VQFN-88, 0.5 mm pitch, 12 x 12 mm body, 6.1 x 6.1 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "vqfn",
+    "vqfn-88"
+  ],
+  "title": "VQFN-88 12 x 12 mm, 0.5 mm pitch (Microchip PJ)",
+  "version": "1.0.0"
+}

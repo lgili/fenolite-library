@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/VQFN20_3x3_P0.5_Microchip-LXX.step",
+    "generated/FenolitePackageQFN.pretty/VQFN20_3x3_P0.5_Microchip-LXX.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:VQFN20_3x3_P0.5_Microchip-LXX",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VQFN-20, 0.5 mm pitch, 3 x 3 mm body, Microchip recommended land",
+  "tags": [
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "vqfn",
+    "vqfn-20"
+  ],
+  "title": "VQFN-20 3 x 3 mm, 0.5 mm pitch (Microchip LXX)",
+  "version": "1.0.0"
+}

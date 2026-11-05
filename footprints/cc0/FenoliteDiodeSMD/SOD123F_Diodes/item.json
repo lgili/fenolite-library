@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenoliteDiodeSMD.3dshapes/SOD123F_Diodes.step",
+    "generated/FenoliteDiodeSMD.pretty/SOD123F_Diodes.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenoliteDiodeSMD:SOD123F_Diodes",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "SOD-123F, 2.7 x 1.8 mm body, cathode pad 1, Diodes Inc. suggested land",
+  "tags": [
+    "SOD-123F",
+    "diode",
+    "molded",
+    "polarized",
+    "smd",
+    "two-terminal"
+  ],
+  "title": "SOD-123F flat-lead molded diode package",
+  "version": "1.0.0"
+}

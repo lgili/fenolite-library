@@ -1,0 +1,88 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0390 YAGEO RC_L series chip resistors 0075 to 2512, product specification (V.14). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.package.v0"
+id = "FenoliteResistorSMD:CHIP1210_B3.1x2.6"
+version = "1.0.0"
+summary = "Chip resistor 1210 (3225 metric), 3.1 x 2.6 mm body, calculated land"
+category = "Chip resistor"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0390"]
+generator = "explicit"
+kind = "smd"
+family = "chip"
+body = { height = "0.45mm..0.65mm", length = "3mm..3.2mm", width = "2.45mm..2.75mm" }
+
+[[pad]]
+number = "1"
+shape = "roundrect"
+size = ["1mm", "2.81mm"]
+at = ["-1.4mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 100000
+
+[[pad]]
+number = "2"
+shape = "roundrect"
+size = ["1mm", "2.81mm"]
+at = ["1.4mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 100000
+
+[[graphic]]
+key = "F.Fab:0"
+kind = "line"
+layer = "F.Fab"
+points = [["-1.55mm", "-1.3mm"], ["1.55mm", "-1.3mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:1"
+kind = "line"
+layer = "F.Fab"
+points = [["1.55mm", "-1.3mm"], ["1.55mm", "1.3mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:2"
+kind = "line"
+layer = "F.Fab"
+points = [["1.55mm", "1.3mm"], ["-1.55mm", "1.3mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:3"
+kind = "line"
+layer = "F.Fab"
+points = [["-1.55mm", "1.3mm"], ["-1.55mm", "-1.3mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.SilkS:4"
+kind = "line"
+layer = "F.SilkS"
+points = [["-0.6625mm", "-1.3mm"], ["0.6625mm", "-1.3mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:5"
+kind = "line"
+layer = "F.SilkS"
+points = [["-0.6625mm", "1.3mm"], ["0.6625mm", "1.3mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.CrtYd:6"
+kind = "rect"
+layer = "F.CrtYd"
+points = [["-2.4mm", "-1.91mm"], ["2.4mm", "1.91mm"]]
+width = "0.05mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.65mm"
+outline = [["-1.55mm", "-1.3mm"], ["1.55mm", "-1.3mm"], ["1.55mm", "1.3mm"], ["-1.55mm", "1.3mm"]]
+name = "body"
+z_min = "0mm"
+z_max = "0.65mm"

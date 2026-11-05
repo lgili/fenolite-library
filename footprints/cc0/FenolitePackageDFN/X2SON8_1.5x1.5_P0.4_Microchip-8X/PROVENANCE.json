@@ -1,0 +1,95 @@
+{
+  "authors": [
+    "Fenolite contributors"
+  ],
+  "copyright": [
+    "Copyright (c) 2026 Fenolite contributors"
+  ],
+  "datasheets": [
+    {
+      "date": "2017-02-03",
+      "id": "D-0423",
+      "revision": "CH",
+      "title": "Microchip Packaging Specification, DS00000049CH",
+      "url": "https://ww1.microchip.com/downloads/en/PackagingSpec/00000049CH.pdf",
+      "used": "Microchip packaging specification DS00000049CH, PDF page 377, drawing C04-338A: N 8, e 0.40 BSC, A 0.30/0.35/0.40, A1 0.00/0.02/0.05, D 1.50 BSC, E 1.50 BSC, D2 1.15/1.20/1.25, E2 0.65/0.70/0.75, b 0.125/0.175/0.225, L 0.125/0.175/0.225; land C04-2338A: E 0.40 BSC, X2 1.25, Y2 0.75, C 1.70, X1 0.20, Y1 0.55, G1 0.20, G2 0.20, V 0.33"
+    }
+  ],
+  "evidence": "INFERRED",
+  "featured": null,
+  "generation": {
+    "change": "c0390",
+    "explicit_record": "the generator's pads, graphics and bodies written as a generator='explicit' record (the record kind the library audit reads); outputs regenerate from package.toml",
+    "family_record": {
+      "arrangement": "dual",
+      "body": {
+        "height": "0.3mm..0.4mm",
+        "length": "1.5mm",
+        "standoff": {
+          "max": "0.05mm",
+          "min": "0mm",
+          "nom": "0.02mm"
+        },
+        "width": "1.5mm"
+      },
+      "ep": {
+        "length": "1.15mm..1.25mm",
+        "width": "0.65mm..0.75mm"
+      },
+      "evidence": "INFERRED",
+      "family": "nolead",
+      "generate": {
+        "drawing": 1,
+        "lands": 1
+      },
+      "id": "FenolitePackageDFN:X2SON8_1.5x1.5_P0.4_Microchip-8X",
+      "land": {
+        "ep": {
+          "length": "1.25mm",
+          "width": "0.75mm"
+        },
+        "pad": {
+          "length": "0.55mm",
+          "width": "0.2mm"
+        },
+        "row_spacing": "1.7mm",
+        "source": "D-0423 drawing C04-2338A"
+      },
+      "pins": 8,
+      "pitch": "0.4mm",
+      "schema": "fenolite.package.v0",
+      "sources": [
+        "D-0423"
+      ],
+      "summary": "X2SON-8, 0.4 mm pitch, 1.5 x 1.5 mm body, 0.75 x 1.25 mm exposed-pad land, Microchip recommended land",
+      "terminal": {
+        "length": "0.125mm..0.225mm",
+        "width": "0.125mm..0.225mm"
+      }
+    },
+    "fenolite": "e7673c811d5ca25d269c2d9c0f30e686f5148844",
+    "findings": [
+      "info package.land-override"
+    ],
+    "generator": "nolead/1 manufacturer drawing/1; land: manufacturer D-0423 drawing C04-2338A",
+    "table": "openspec/changes/c0390-library-growth/families/nolead-dfn.toml",
+    "tool": "fenolite"
+  },
+  "id": "FenolitePackageDFN:X2SON8_1.5x1.5_P0.4_Microchip-8X",
+  "kind": "footprint",
+  "licence_text_sha256": "0dd25be0803b1e2764b0323560013cdd5ad9ca92ba4780bd7db0cbe6ce821dd8",
+  "modification_notice": "2026-11-05: original item authored for fenolite-library (change c0390) with Fenolite's c0260 package generator from public package dimensions; no upstream design material.",
+  "origin": "authored",
+  "schema": "fenolite.provenance.v0",
+  "sources": [
+    "D-0423"
+  ],
+  "spdx": "CC0-1.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": null,
+  "version": "1.0.0"
+}

@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/VQFN16_4x4_P0.65_Microchip-7E.step",
+    "generated/FenolitePackageQFN.pretty/VQFN16_4x4_P0.65_Microchip-7E.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:VQFN16_4x4_P0.65_Microchip-7E",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VQFN-16, 0.65 mm pitch, 4 x 4 mm body, 2.2 x 2.2 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "vqfn",
+    "vqfn-16"
+  ],
+  "title": "VQFN-16 4 x 4 mm, 0.65 mm pitch (Microchip 7E)",
+  "version": "1.0.0"
+}

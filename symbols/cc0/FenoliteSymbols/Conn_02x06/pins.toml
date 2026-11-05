@@ -1,0 +1,145 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0422 Original generic schematic symbols authored for fenolite-library (change c0390) (c0390 batch 5). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.pins.v0"
+id = "FenoliteSymbols:Conn_02x06"
+version = "1.0.0"
+summary = "Generic two-row connector, 12 pins, odd pins left, even pins right"
+category = "Generic connector symbol"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422"]
+
+[[pin]]
+number = "1"
+name = "Pin_1"
+type = "passive"
+
+[[pin]]
+number = "2"
+name = "Pin_2"
+type = "passive"
+
+[[pin]]
+number = "3"
+name = "Pin_3"
+type = "passive"
+
+[[pin]]
+number = "4"
+name = "Pin_4"
+type = "passive"
+
+[[pin]]
+number = "5"
+name = "Pin_5"
+type = "passive"
+
+[[pin]]
+number = "6"
+name = "Pin_6"
+type = "passive"
+
+[[pin]]
+number = "7"
+name = "Pin_7"
+type = "passive"
+
+[[pin]]
+number = "8"
+name = "Pin_8"
+type = "passive"
+
+[[pin]]
+number = "9"
+name = "Pin_9"
+type = "passive"
+
+[[pin]]
+number = "10"
+name = "Pin_10"
+type = "passive"
+
+[[pin]]
+number = "11"
+name = "Pin_11"
+type = "passive"
+
+[[pin]]
+number = "12"
+name = "Pin_12"
+type = "passive"
+
+[symbol]
+reference = "J"
+pin_names_hidden = true
+
+[[symbol.pins]]
+number = "1"
+at = ["-5.08mm", "0mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "2"
+at = ["5.08mm", "0mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "3"
+at = ["-5.08mm", "-2.54mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "4"
+at = ["5.08mm", "-2.54mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "5"
+at = ["-5.08mm", "-5.08mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "6"
+at = ["5.08mm", "-5.08mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "7"
+at = ["-5.08mm", "-7.62mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "8"
+at = ["5.08mm", "-7.62mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "9"
+at = ["-5.08mm", "-10.16mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "10"
+at = ["5.08mm", "-10.16mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "11"
+at = ["-5.08mm", "-12.7mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "12"
+at = ["5.08mm", "-12.7mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.graphic]]
+kind = "rect"
+points = [["-2.54mm", "1.27mm"], ["2.54mm", "-13.97mm"]]

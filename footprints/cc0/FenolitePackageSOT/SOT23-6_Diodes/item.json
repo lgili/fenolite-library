@@ -1,0 +1,23 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageSOT.3dshapes/SOT23-6_Diodes.step",
+    "generated/FenolitePackageSOT.pretty/SOT23-6_Diodes.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageSOT:SOT23-6_Diodes",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "SOT-23-6, 6 leads, 0.95 mm pitch, 2.9 x 1.6 mm body, Diodes Inc. suggested land",
+  "tags": [
+    "SOT-23-6",
+    "SOT26",
+    "gullwing",
+    "smd",
+    "sot"
+  ],
+  "title": "SOT-23-6 (SOT26) package",
+  "version": "1.0.0"
+}

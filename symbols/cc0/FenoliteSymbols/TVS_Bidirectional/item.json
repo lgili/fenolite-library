@@ -1,0 +1,21 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:TVS_Bidirectional",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic bidirectional transient voltage suppressor",
+  "tags": [
+    "diode",
+    "generic",
+    "symbol",
+    "tvs"
+  ],
+  "title": "TVS diode, bidirectional",
+  "version": "1.0.0"
+}

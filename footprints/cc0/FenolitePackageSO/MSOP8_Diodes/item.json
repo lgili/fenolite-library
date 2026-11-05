@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageSO.3dshapes/MSOP8_Diodes.step",
+    "generated/FenolitePackageSO.pretty/MSOP8_Diodes.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageSO:MSOP8_Diodes",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "MSOP-8, 0.65 mm pitch, 3 x 3 mm body, Diodes Inc. suggested land",
+  "tags": [
+    "MSOP-8",
+    "VSSOP-8",
+    "dual-row",
+    "gullwing",
+    "msop",
+    "smd"
+  ],
+  "title": "MSOP-8 package",
+  "version": "1.0.0"
+}

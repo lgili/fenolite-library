@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/VQFN56_7x7_P0.4_Microchip-2G.step",
+    "generated/FenolitePackageQFN.pretty/VQFN56_7x7_P0.4_Microchip-2G.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:VQFN56_7x7_P0.4_Microchip-2G",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VQFN-56, 0.4 mm pitch, 7 x 7 mm body, 4.7 x 4.7 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "vqfn",
+    "vqfn-56"
+  ],
+  "title": "VQFN-56 7 x 7 mm, 0.4 mm pitch (Microchip 2G)",
+  "version": "1.0.0"
+}

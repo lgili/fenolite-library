@@ -1,0 +1,100 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0422 Original generic schematic symbols authored for fenolite-library (change c0390) (c0390 batch 5). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.pins.v0"
+id = "FenoliteSymbols:MOSFET_N"
+version = "1.0.0"
+summary = "Generic N-channel enhancement MOSFET; pins 1 G, 2 S, 3 D (common SOT-23 pin-out)"
+category = "Generic symbol"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422"]
+
+[[pin]]
+number = "1"
+name = "G"
+type = "input"
+
+[[pin]]
+number = "2"
+name = "S"
+type = "passive"
+
+[[pin]]
+number = "3"
+name = "D"
+type = "passive"
+
+[symbol]
+reference = "Q"
+pin_names_hidden = true
+
+[[symbol.pins]]
+number = "1"
+at = ["-5.08mm", "0mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "2"
+at = ["2.54mm", "-5.08mm"]
+length = "2.54mm"
+rotation = "90deg"
+
+[[symbol.pins]]
+number = "3"
+at = ["2.54mm", "5.08mm"]
+length = "2.54mm"
+rotation = "270deg"
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-2.54mm", "0mm"], ["-2.032mm", "0mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-2.032mm", "-1.905mm"], ["-2.032mm", "1.905mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-1.27mm", "-2.032mm"], ["-1.27mm", "-1.016mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-1.27mm", "-0.508mm"], ["-1.27mm", "0.508mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-1.27mm", "1.016mm"], ["-1.27mm", "2.032mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-1.27mm", "1.524mm"], ["2.54mm", "1.524mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["2.54mm", "1.524mm"], ["2.54mm", "2.54mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-1.27mm", "-1.524mm"], ["2.54mm", "-1.524mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["2.54mm", "-1.524mm"], ["2.54mm", "-2.54mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-1.27mm", "0mm"], ["2.54mm", "0mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["2.54mm", "0mm"], ["2.54mm", "-1.524mm"]]
+
+[[symbol.graphic]]
+kind = "circle"
+points = [["0.635mm", "0mm"], ["3.429mm", "0mm"]]
+
+[[symbol.graphic]]
+kind = "polygon"
+points = [["-1.27mm", "0mm"], ["-0.508mm", "0.381mm"], ["-0.508mm", "-0.381mm"]]
+filled = true

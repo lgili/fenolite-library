@@ -1,0 +1,82 @@
+{
+  "authors": [
+    "Fenolite contributors"
+  ],
+  "copyright": [
+    "Copyright (c) 2026 Fenolite contributors"
+  ],
+  "datasheets": [
+    {
+      "date": "2016-04-11",
+      "id": "D-0397",
+      "revision": "2016-04-11",
+      "title": "Diodes Incorporated package information SOD523",
+      "url": "https://www.diodes.com/assets/Package-Files/SOD523.pdf",
+      "used": "Table: A 0.55-0.65, b 0.26-0.34, c 0.11-0.17, D 0.75-0.85, E 1.15-1.25, He 1.55-1.65, L 0.10-0.30 mm; pad layout G 0.80, X 0.60, X1 2.00, Y 0.70 mm"
+    }
+  ],
+  "evidence": "INFERRED",
+  "featured": null,
+  "generation": {
+    "change": "c0390",
+    "explicit_record": "the generator's pads, graphics and bodies written as a generator='explicit' record (the record kind the library audit reads); outputs regenerate from package.toml",
+    "family_record": {
+      "body": {
+        "height": "0.55mm..0.65mm",
+        "length": "1.15mm..1.25mm",
+        "width": "0.75mm..0.85mm"
+      },
+      "evidence": "INFERRED",
+      "family": "molded",
+      "generate": {
+        "drawing": 1,
+        "lands": 1
+      },
+      "id": "FenoliteDiodeSMD:SOD523_Diodes",
+      "land": {
+        "pad": {
+          "length": "0.60mm",
+          "width": "0.70mm"
+        },
+        "row_spacing": "1.40mm",
+        "source": "D-0397 suggested pad layout"
+      },
+      "lead": {
+        "length": "0.10mm..0.30mm",
+        "width": "0.26mm..0.34mm"
+      },
+      "lead_style": "flat",
+      "polarity": "pad1",
+      "schema": "fenolite.package.v0",
+      "sources": [
+        "D-0397"
+      ],
+      "span": "1.55mm..1.65mm",
+      "summary": "SOD-523, 1.2 x 0.8 mm body, cathode pad 1, Diodes Inc. suggested land"
+    },
+    "fenolite": "e7673c811d5ca25d269c2d9c0f30e686f5148844",
+    "findings": [
+      "info package.land-override"
+    ],
+    "generator": "molded/1 manufacturer drawing/1; land: manufacturer D-0397 suggested pad layout",
+    "table": "openspec/changes/c0390-library-growth/families/molded-diodes.toml",
+    "tool": "fenolite"
+  },
+  "id": "FenoliteDiodeSMD:SOD523_Diodes",
+  "kind": "footprint",
+  "licence_text_sha256": "0dd25be0803b1e2764b0323560013cdd5ad9ca92ba4780bd7db0cbe6ce821dd8",
+  "modification_notice": "2026-11-04: original item authored for fenolite-library (change c0390) with Fenolite's c0260 package generator from public package dimensions; no upstream design material.",
+  "origin": "authored",
+  "schema": "fenolite.provenance.v0",
+  "sources": [
+    "D-0397"
+  ],
+  "spdx": "CC0-1.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": null,
+  "version": "1.0.0"
+}

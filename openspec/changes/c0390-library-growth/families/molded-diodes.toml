@@ -1,0 +1,119 @@
+# SPDX-License-Identifier: CC0-1.0
+# Molded two-terminal packages, batch 2 of change c0390. Outline dimensions and suggested pad layouts:
+# Diodes Incorporated package information files (D-0393 to D-0401). Pad 1 is the cathode (polarity pad1).
+# Land: the suggested pad layout as read ([land]); pad length X along the leads, width Y, row spacing G + X.
+# Names use the core's manufacturer-drawing form <name>_<Maker>, which carries no generic size claim.
+schema = "fenolite.c0390-family.v0"
+kind = "footprint"
+namespace = "FenoliteDiodeSMD"
+category = "Molded diode package"
+date = "2026-11-04"
+tags = ["diode", "molded", "polarized", "smd", "two-terminal"]
+
+[record]
+family = "molded"
+lead_style = "flat"
+polarity = "pad1"
+
+[record.generate]
+lands = 1
+drawing = 1
+
+[[row]]
+name = "SOD123_Diodes"
+title = "SOD-123 molded diode package"
+summary = "SOD-123, 2.65 x 1.55 mm body, cathode pad 1, Diodes Inc. suggested land"
+sources = ["D-0393"]
+used = "Table: A 1.00-1.35, A1 0.00-0.10, b 0.52-0.62, D 1.40-1.70, E 2.55-2.85, He 3.55-3.85, L 0.25-0.40 mm; pad layout X 0.900, X1 4.050, Y 0.950 mm"
+tags = ["SOD-123"]
+record.body = { length = { min = "2.55mm", nom = "2.65mm", max = "2.85mm" }, width = { min = "1.40mm", nom = "1.55mm", max = "1.70mm" }, height = "1.00mm..1.35mm", standoff = "0.00mm..0.10mm" }
+record.span = { min = "3.55mm", nom = "3.65mm", max = "3.85mm" }
+record.lead = { length = "0.25mm..0.40mm", width = "0.52mm..0.62mm" }
+record.land = { source = "D-0393 suggested pad layout", pad = { length = "0.90mm", width = "0.95mm" }, row_spacing = "3.15mm" }
+
+[[row]]
+name = "SOD123F_Diodes"
+title = "SOD-123F flat-lead molded diode package"
+summary = "SOD-123F, 2.7 x 1.8 mm body, cathode pad 1, Diodes Inc. suggested land"
+sources = ["D-0394"]
+used = "Table: A 0.81-1.15, b 0.80-1.35, c 0.05-0.30, D 1.70-1.90, E 2.60-2.80, He 3.30-3.70, L 0.35-0.85 mm; pad layout G 1.90, X 1.00, X1 3.90, Y 1.50 mm"
+tags = ["SOD-123F"]
+record.body = { length = "2.60mm..2.80mm", width = "1.70mm..1.90mm", height = "0.81mm..1.15mm" }
+record.span = "3.30mm..3.70mm"
+record.lead = { length = "0.35mm..0.85mm", width = "0.80mm..1.35mm" }
+record.land = { source = "D-0394 suggested pad layout", pad = { length = "1.00mm", width = "1.50mm" }, row_spacing = "2.90mm" }
+
+[[row]]
+name = "SOD323_Diodes"
+title = "SOD-323 molded diode package"
+summary = "SOD-323, 1.7 x 1.3 mm body, cathode pad 1, Diodes Inc. suggested land"
+sources = ["D-0395"]
+used = "Table: A1 0.00-0.10, A2 1.00-1.10 (height taken as A1 + A2), b 0.25-0.35, D 1.20-1.40, E 1.60-1.80, He 2.30-2.70, L 0.20-0.40 mm; pad layout X 0.590, X1 2.700, Y 0.450 mm"
+tags = ["SOD-323"]
+record.body = { length = "1.60mm..1.80mm", width = "1.20mm..1.40mm", height = "1.00mm..1.20mm", standoff = "0.00mm..0.10mm" }
+record.span = "2.30mm..2.70mm"
+record.lead = { length = "0.20mm..0.40mm", width = "0.25mm..0.35mm" }
+record.land = { source = "D-0395 suggested pad layout", pad = { length = "0.59mm", width = "0.45mm" }, row_spacing = "2.11mm" }
+
+[[row]]
+name = "SOD323F_Diodes"
+title = "SOD-323F flat-lead molded diode package"
+summary = "SOD-323F, 1.7 x 1.25 mm body, cathode pad 1, Diodes Inc. suggested land"
+sources = ["D-0396"]
+used = "Table: A 0.60-0.75, b 0.25-0.35, c 0.05-0.26, D 1.15-1.35, E 1.60-1.80, He 2.30-2.70, L1 0.30-0.50 mm; pad layout G 1.280, X 0.710, X1 2.700, Y 0.403 mm"
+tags = ["SOD-323F"]
+record.body = { length = "1.60mm..1.80mm", width = "1.15mm..1.35mm", height = "0.60mm..0.75mm" }
+record.span = "2.30mm..2.70mm"
+record.lead = { length = "0.30mm..0.50mm", width = "0.25mm..0.35mm" }
+record.land = { source = "D-0396 suggested pad layout", pad = { length = "0.71mm", width = "0.403mm" }, row_spacing = "1.99mm" }
+
+[[row]]
+name = "SOD523_Diodes"
+title = "SOD-523 molded diode package"
+summary = "SOD-523, 1.2 x 0.8 mm body, cathode pad 1, Diodes Inc. suggested land"
+sources = ["D-0397"]
+used = "Table: A 0.55-0.65, b 0.26-0.34, c 0.11-0.17, D 0.75-0.85, E 1.15-1.25, He 1.55-1.65, L 0.10-0.30 mm; pad layout G 0.80, X 0.60, X1 2.00, Y 0.70 mm"
+tags = ["SOD-523"]
+record.body = { length = "1.15mm..1.25mm", width = "0.75mm..0.85mm", height = "0.55mm..0.65mm" }
+record.span = "1.55mm..1.65mm"
+record.lead = { length = "0.10mm..0.30mm", width = "0.26mm..0.34mm" }
+record.land = { source = "D-0397 suggested pad layout", pad = { length = "0.60mm", width = "0.70mm" }, row_spacing = "1.40mm" }
+
+[[row]]
+name = "SMA_Diodes"
+title = "SMA (DO-214AC) molded diode package"
+summary = "SMA (DO-214AC), 4.3 x 2.6 mm body, cathode pad 1, Diodes Inc. suggested land"
+sources = ["D-0398"]
+used = "Table: A 2.29-2.92 (body width), B 4.00-4.60 (body length), C 1.27-1.63 (lead width), E 4.80-5.59 (span), H 0.76-1.52 (lead length), J 1.96-2.40 (height) mm; pad layout C 4.00, G 1.50, X 2.50, X1 6.50, Y 1.70 mm"
+tags = ["DO-214AC", "SMA"]
+record.lead_style = "inward"
+record.body = { length = "4.00mm..4.60mm", width = "2.29mm..2.92mm", height = "1.96mm..2.40mm" }
+record.span = "4.80mm..5.59mm"
+record.lead = { length = "0.76mm..1.52mm", width = "1.27mm..1.63mm" }
+record.land = { source = "D-0398 suggested pad layout", pad = { length = "2.50mm", width = "1.70mm" }, row_spacing = "4.00mm" }
+
+[[row]]
+name = "SMB_Diodes"
+title = "SMB (DO-214AA) molded diode package"
+summary = "SMB (DO-214AA), 4.3 x 3.6 mm body, cathode pad 1, Diodes Inc. suggested land"
+sources = ["D-0399"]
+used = "Table: A 2.00-2.50 (height), A1 0.05-0.20, b 1.96-2.21, c 0.15-0.31, D 3.30-3.94 (body width), E 5.00-5.59 (span), E1 4.06-4.57 (body length), L 0.76-1.52 mm; pad layout C 4.30, G 1.80, X 2.50, X1 6.80, Y 2.30 mm"
+tags = ["DO-214AA", "SMB"]
+record.lead_style = "inward"
+record.body = { length = "4.06mm..4.57mm", width = "3.30mm..3.94mm", height = "2.00mm..2.50mm", standoff = "0.05mm..0.20mm" }
+record.span = "5.00mm..5.59mm"
+record.lead = { length = "0.76mm..1.52mm", width = "1.96mm..2.21mm" }
+record.land = { source = "D-0399 suggested pad layout", pad = { length = "2.50mm", width = "2.30mm" }, row_spacing = "4.30mm" }
+
+[[row]]
+name = "SMC_Diodes"
+title = "SMC (DO-214AB) molded diode package"
+summary = "SMC (DO-214AB), 6.9 x 5.9 mm body, cathode pad 1, Diodes Inc. suggested land"
+sources = ["D-0400"]
+used = "Table: A 5.59-6.22 (body width), B 6.60-7.11 (body length), C 2.75-3.18 (lead width), E 7.75-8.13 (span), H 0.76-1.52 (lead length), J 2.00-2.50 (height) mm; pad layout C 6.90, G 4.40, X 2.50, X1 9.40, Y 3.30 mm"
+tags = ["DO-214AB", "SMC"]
+record.lead_style = "inward"
+record.body = { length = "6.60mm..7.11mm", width = "5.59mm..6.22mm", height = "2.00mm..2.50mm" }
+record.span = "7.75mm..8.13mm"
+record.lead = { length = "0.76mm..1.52mm", width = "2.75mm..3.18mm" }
+record.land = { source = "D-0400 suggested pad layout", pad = { length = "2.50mm", width = "3.30mm" }, row_spacing = "6.90mm" }

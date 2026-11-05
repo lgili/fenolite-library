@@ -1,0 +1,91 @@
+{
+  "authors": [
+    "Fenolite contributors"
+  ],
+  "copyright": [
+    "Copyright (c) 2026 Fenolite contributors"
+  ],
+  "datasheets": [
+    {
+      "date": "2017-02-03",
+      "id": "D-0423",
+      "revision": "CH",
+      "title": "Microchip Packaging Specification, DS00000049CH",
+      "url": "https://ww1.microchip.com/downloads/en/PackagingSpec/00000049CH.pdf",
+      "used": "Microchip packaging specification DS00000049CH, PDF page 878, drawing C04-074B: N 32, e 0.80 BSC, A -/-/1.20, A1 0.05/-/0.15, D 9.00 BSC, E 9.00 BSC, D1 7.00 BSC, E1 7.00 BSC, b 0.30/0.37/0.45, c 0.09/-/0.20, L 0.45/0.60/0.75; land C04-2074B: E 0.80 BSC, C1 8.50, C2 8.50, X1 0.55, Y1 1.60; table printed as an image in the PDF, read from the page"
+    }
+  ],
+  "evidence": "INFERRED",
+  "featured": null,
+  "generation": {
+    "change": "c0390",
+    "explicit_record": "the generator's pads, graphics and bodies written as a generator='explicit' record (the record kind the library audit reads); outputs regenerate from package.toml",
+    "family_record": {
+      "arrangement": "quad",
+      "body": {
+        "height": "1.2mm",
+        "length": "7mm",
+        "standoff": "0.05mm..0.15mm",
+        "width": "7mm"
+      },
+      "evidence": "INFERRED",
+      "family": "gullwing",
+      "generate": {
+        "drawing": 1,
+        "lands": 1
+      },
+      "id": "FenolitePackageQFP:TQFP32_7x7_P0.8_Microchip-PT",
+      "land": {
+        "pad": {
+          "length": "1.6mm",
+          "width": "0.55mm"
+        },
+        "row_spacing_x": "8.5mm",
+        "row_spacing_y": "8.5mm",
+        "source": "D-0423 drawing C04-2074B"
+      },
+      "lead": {
+        "length": "0.45mm..0.75mm",
+        "thickness": "0.09mm..0.2mm",
+        "width": {
+          "max": "0.45mm",
+          "min": "0.3mm",
+          "nom": "0.37mm"
+        }
+      },
+      "pins": 32,
+      "pitch": "0.8mm",
+      "schema": "fenolite.package.v0",
+      "sources": [
+        "D-0423"
+      ],
+      "span_x": "9mm",
+      "span_y": "9mm",
+      "summary": "TQFP-32, 0.8 mm pitch, 7 x 7 mm body, Microchip recommended land"
+    },
+    "fenolite": "e7673c811d5ca25d269c2d9c0f30e686f5148844",
+    "findings": [
+      "info package.land-override"
+    ],
+    "generator": "gullwing/1 manufacturer drawing/1; land: manufacturer D-0423 drawing C04-2074B",
+    "table": "openspec/changes/c0390-library-growth/families/gullwing-qfp.toml",
+    "tool": "fenolite"
+  },
+  "id": "FenolitePackageQFP:TQFP32_7x7_P0.8_Microchip-PT",
+  "kind": "footprint",
+  "licence_text_sha256": "0dd25be0803b1e2764b0323560013cdd5ad9ca92ba4780bd7db0cbe6ce821dd8",
+  "modification_notice": "2026-11-05: original item authored for fenolite-library (change c0390) with Fenolite's c0260 package generator from public package dimensions; no upstream design material.",
+  "origin": "authored",
+  "schema": "fenolite.provenance.v0",
+  "sources": [
+    "D-0423"
+  ],
+  "spdx": "CC0-1.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": null,
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageDIP.3dshapes/DIP40_W15.24_Microchip-P.step",
+    "generated/FenolitePackageDIP.pretty/DIP40_W15.24_Microchip-P.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageDIP:DIP40_W15.24_Microchip-P",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "PDIP-40, 2.54 mm pitch, 600 mil (15.24 mm) row spacing, through-hole",
+  "tags": [
+    "dip",
+    "dual-row",
+    "pdip",
+    "pdip-40",
+    "tht"
+  ],
+  "title": "PDIP-40, 600 mil rows, 2.54 mm pitch (Microchip P)",
+  "version": "1.0.0"
+}

@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/QFN24_4x4_P0.5_Microchip-RU.step",
+    "generated/FenolitePackageQFN.pretty/QFN24_4x4_P0.5_Microchip-RU.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:QFN24_4x4_P0.5_Microchip-RU",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "QFN-24, 0.5 mm pitch, 4 x 4 mm body, 2.6 x 2.6 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "qfn-24",
+    "quad",
+    "smd"
+  ],
+  "title": "QFN-24 4 x 4 mm, 0.5 mm pitch (Microchip RU)",
+  "version": "1.0.0"
+}

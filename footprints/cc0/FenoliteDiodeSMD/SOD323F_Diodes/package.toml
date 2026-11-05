@@ -1,0 +1,103 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0396 Diodes Incorporated package information SOD323F (2017-03-24). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.package.v0"
+id = "FenoliteDiodeSMD:SOD323F_Diodes"
+version = "1.0.0"
+summary = "SOD-323F, 1.7 x 1.25 mm body, cathode pad 1, Diodes Inc. suggested land"
+category = "Molded diode package"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0396"]
+generator = "explicit"
+kind = "smd"
+family = "molded"
+body = { height = "0.6mm..0.75mm", length = "1.6mm..1.8mm", width = "1.15mm..1.35mm" }
+lead = { length = "0.3mm..0.5mm", width = "0.25mm..0.35mm" }
+
+[[pad]]
+number = "1"
+shape = "roundrect"
+size = ["0.71mm", "0.403mm"]
+at = ["-0.995mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[pad]]
+number = "2"
+shape = "roundrect"
+size = ["0.71mm", "0.403mm"]
+at = ["0.995mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 200000
+
+[[graphic]]
+key = "F.Fab:0"
+kind = "line"
+layer = "F.Fab"
+points = [["-0.85mm", "-0.625mm"], ["0.85mm", "-0.625mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:1"
+kind = "line"
+layer = "F.Fab"
+points = [["0.85mm", "-0.625mm"], ["0.85mm", "0.625mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:2"
+kind = "line"
+layer = "F.Fab"
+points = [["0.85mm", "0.625mm"], ["-0.85mm", "0.625mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:3"
+kind = "line"
+layer = "F.Fab"
+points = [["-0.85mm", "0.625mm"], ["-0.85mm", "-0.625mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:4"
+kind = "line"
+layer = "F.Fab"
+points = [["-0.51mm", "-0.625mm"], ["-0.51mm", "0.625mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.SilkS:5"
+kind = "line"
+layer = "F.SilkS"
+points = [["-0.85mm", "-0.625mm"], ["0.85mm", "-0.625mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:6"
+kind = "line"
+layer = "F.SilkS"
+points = [["-0.85mm", "0.625mm"], ["0.85mm", "0.625mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:7"
+kind = "line"
+layer = "F.SilkS"
+points = [["-1.5875mm", "-0.2015mm"], ["-1.5875mm", "0.2015mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.CrtYd:8"
+kind = "rect"
+layer = "F.CrtYd"
+points = [["-1.85mm", "-1.13mm"], ["1.85mm", "1.13mm"]]
+width = "0.05mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.75mm"
+outline = [["-0.85mm", "-0.625mm"], ["0.85mm", "-0.625mm"], ["0.85mm", "0.625mm"], ["-0.85mm", "0.625mm"]]
+name = "body"
+z_min = "0mm"
+z_max = "0.75mm"

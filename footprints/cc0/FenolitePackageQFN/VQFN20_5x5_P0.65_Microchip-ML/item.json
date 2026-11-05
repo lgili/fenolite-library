@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/VQFN20_5x5_P0.65_Microchip-ML.step",
+    "generated/FenolitePackageQFN.pretty/VQFN20_5x5_P0.65_Microchip-ML.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:VQFN20_5x5_P0.65_Microchip-ML",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VQFN-20, 0.65 mm pitch, 5 x 5 mm body, 3.35 x 3.35 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "quad",
+    "smd",
+    "vqfn",
+    "vqfn-20"
+  ],
+  "title": "VQFN-20 5 x 5 mm, 0.65 mm pitch (Microchip ML/MQ)",
+  "version": "1.0.0"
+}

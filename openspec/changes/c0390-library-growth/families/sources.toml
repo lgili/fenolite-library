@@ -1,0 +1,265 @@
+# SPDX-License-Identifier: CC0-1.0
+# Documents read for package dimensions (change c0390). Each becomes the same D-id in the library's
+# sources.toml. Read for numerical facts only; no drawing, CAD file or 3D model is copied.
+schema = "fenolite.c0390-sources.v0"
+
+[D-0390]
+title = "YAGEO RC_L series chip resistors 0075 to 2512, product specification"
+url = "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+revision = "V.14"
+date = "2025-11-14"
+retrieved = "2026-11-04"
+licence = "YAGEO copyright; read for numerical facts only, nothing copied"
+used = "Table 1 (L, W, H, I1, I2 with tolerances) of RC0075 to RC2512: chip resistor bodies and terminal ranges."
+
+[D-0391]
+title = "Vishay Vitramon VJ Commercial Series surface mount multilayer ceramic chip capacitors, document 45199"
+url = "https://www.vishay.com/docs/45199/vjcommercialseries.pdf"
+revision = "08-May-2026"
+date = "2026-05-08"
+retrieved = "2026-11-04"
+licence = "Vishay copyright; read for numerical facts only, nothing copied"
+used = "Table DIMENSIONS (L, W, maximum T, termination P minimum and maximum) of case codes 0402 to 3640: chip capacitor bodies and terminal ranges."
+
+[D-0392]
+title = "Vishay Dale ILBB-0603 multilayer ferrite bead, document 34024"
+url = "https://www.vishay.com/docs/34024/ilbb0603.pdf"
+revision = "16-Aug-12"
+date = "2012-08-16"
+retrieved = "2026-11-04"
+licence = "Vishay copyright; read for numerical facts only, nothing copied"
+used = "Dimensional outline (length, width, height, termination band with tolerances): 0603 ferrite bead body."
+
+[D-0393]
+title = "Diodes Incorporated package information SOD123"
+url = "https://www.diodes.com/assets/Package-Files/SOD123.pdf"
+revision = "2017-03-16"
+date = "2017-03-16"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the SOD123 package."
+
+[D-0394]
+title = "Diodes Incorporated package information SOD123F"
+url = "https://www.diodes.com/assets/Package-Files/SOD123F-Standard.pdf"
+revision = "2017-05-30"
+date = "2017-05-30"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the SOD123F package."
+
+[D-0395]
+title = "Diodes Incorporated package information SOD323"
+url = "https://www.diodes.com/assets/Package-Files/SOD323.pdf"
+revision = "2017-03-16"
+date = "2017-03-16"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the SOD323 package."
+
+[D-0396]
+title = "Diodes Incorporated package information SOD323F"
+url = "https://www.diodes.com/assets/Package-Files/SOD323F.pdf"
+revision = "2017-03-24"
+date = "2017-03-24"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the SOD323F package."
+
+[D-0397]
+title = "Diodes Incorporated package information SOD523"
+url = "https://www.diodes.com/assets/Package-Files/SOD523.pdf"
+revision = "2016-04-11"
+date = "2016-04-11"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the SOD523 package."
+
+[D-0398]
+title = "Diodes Incorporated package information SMA"
+url = "https://www.diodes.com/assets/Package-Files/SMA.pdf"
+revision = "2017-03-14"
+date = "2017-03-14"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the SMA package."
+
+[D-0399]
+title = "Diodes Incorporated package information SMB"
+url = "https://www.diodes.com/assets/Package-Files/SMB.pdf"
+revision = "2019-08-30"
+date = "2019-08-30"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the SMB package."
+
+[D-0400]
+title = "Diodes Incorporated package information SMC"
+url = "https://www.diodes.com/assets/Package-Files/SMC.pdf"
+revision = "2017-03-14"
+date = "2017-03-14"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the SMC package."
+
+[D-0404]
+title = "Diodes Incorporated package information SOT25"
+url = "https://www.diodes.com/assets/Package-Files/SOT25.pdf"
+revision = "2017-04-11"
+date = "2017-04-11"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the SOT25 package."
+
+[D-0405]
+title = "Diodes Incorporated package information SOT26"
+url = "https://www.diodes.com/assets/Package-Files/SOT26.pdf"
+revision = "2021-03-02"
+date = "2021-03-02"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the SOT26 package."
+
+[D-0406]
+title = "Diodes Incorporated package information SOT223"
+url = "https://www.diodes.com/assets/Package-Files/SOT223.pdf"
+revision = "2017-03-06"
+date = "2017-03-06"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the SOT223 package."
+
+[D-0408]
+title = "Diodes Incorporated package information SOT323"
+url = "https://www.diodes.com/assets/Package-Files/SOT323.pdf"
+revision = "2017-03-20"
+date = "2017-03-20"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the SOT323 package."
+
+[D-0409]
+title = "Diodes Incorporated package information SOT363"
+url = "https://www.diodes.com/assets/Package-Files/SOT363.pdf"
+revision = "2018-02-28"
+date = "2018-02-28"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the SOT363 package."
+
+[D-0411]
+title = "Diodes Incorporated package information SOT563"
+url = "https://www.diodes.com/assets/Package-Files/SOT563.pdf"
+revision = "2021-01-06"
+date = "2021-01-06"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the SOT563 package."
+
+[D-0412]
+title = "Diodes Incorporated package information SO-8"
+url = "https://www.diodes.com/assets/Package-Files/SO-8.pdf"
+revision = "2017-03-14"
+date = "2017-03-14"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the SO-8 package."
+
+[D-0414]
+title = "Diodes Incorporated package information SO-14"
+url = "https://www.diodes.com/assets/Package-Files/SO-14.pdf"
+revision = "2024-04-08"
+date = "2024-04-08"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the SO-14 package."
+
+[D-0415]
+title = "Diodes Incorporated package information SO-16"
+url = "https://www.diodes.com/assets/Package-Files/SO-16.pdf"
+revision = "2015-10-30"
+date = "2015-10-30"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the SO-16 package."
+
+[D-0416]
+title = "Diodes Incorporated package information TSSOP-8"
+url = "https://www.diodes.com/assets/Package-Files/TSSOP-8.pdf"
+revision = "2015-06-11"
+date = "2015-06-11"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the TSSOP-8 package."
+
+[D-0417]
+title = "Diodes Incorporated package information TSSOP-14"
+url = "https://www.diodes.com/assets/Package-Files/TSSOP-14.pdf"
+revision = "2015-06-11"
+date = "2015-06-11"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the TSSOP-14 package."
+
+[D-0419]
+title = "Diodes Incorporated package information TSSOP-20"
+url = "https://www.diodes.com/assets/Package-Files/TSSOP-20.pdf"
+revision = "2019-04-02"
+date = "2019-04-02"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the TSSOP-20 package."
+
+[D-0420]
+title = "Diodes Incorporated package information MSOP-8"
+url = "https://www.diodes.com/assets/Package-Files/MSOP-8.pdf"
+revision = "2021-09-17"
+date = "2021-09-17"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the MSOP-8 package."
+
+[D-0421]
+title = "Diodes Incorporated package information MSOP-10"
+url = "https://www.diodes.com/assets/Package-Files/MSOP-10.pdf"
+revision = "2018-01-16"
+date = "2018-01-16"
+retrieved = "2026-11-04"
+licence = "Diodes Incorporated copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimensions table and suggested pad layout of the MSOP-10 package."
+
+[D-0422]
+title = "Original generic schematic symbols authored for fenolite-library (change c0390)"
+url = "https://github.com/lgili/fenolite-library/tree/main/openspec/changes/c0390-library-growth/families"
+revision = "c0390 batch 5"
+date = "2026-11-04"
+retrieved = "2026-11-04"
+licence = "CC0-1.0"
+used = "All symbol coordinates, pin placements and graphics authored here (symbols_table.py); no third-party symbol file read."
+
+[D-0423]
+title = "Microchip Packaging Specification, DS00000049CH"
+url = "https://ww1.microchip.com/downloads/en/PackagingSpec/00000049CH.pdf"
+revision = "CH"
+date = "2017-02-03"
+retrieved = "2026-11-05"
+licence = "Microchip Technology copyright; read for numerical facts only, nothing copied"
+used = "Package outline dimension tables and recommended land pattern tables of the QFN, DFN and SON packages (page and drawing number per item)."
+
+[D-0424]
+title = "Samtec TSW/HTSW series, through-hole .025\" square post header, 2.54 mm pitch, catalogue page F-226"
+url = "https://suddendocs.samtec.com/catalog_english/tsw_th.pdf"
+revision = "F-226"
+date = "2025-11-07"
+retrieved = "2026-11-05"
+licence = "Samtec copyright; read for numerical facts only, nothing copied"
+used = "Post size, pin centers, lead style -07 lengths, insulator widths and the recommended hole size of the TSW header."
+
+[D-0425]
+title = "Samtec FTSH series, through-hole micro header, 1.27 mm pitch, catalogue page F-226"
+url = "https://suddendocs.samtec.com/catalog_english/ftsh_th.pdf"
+revision = "F-226"
+date = "2025-10-20"
+retrieved = "2026-11-05"
+licence = "Samtec copyright; read for numerical facts only, nothing copied"
+used = "Post size, pitch, lead style -01 length, insulator height and width and the tail length of the FTSH header."

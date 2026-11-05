@@ -1,0 +1,23 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageSO.3dshapes/TSSOP14_Diodes.step",
+    "generated/FenolitePackageSO.pretty/TSSOP14_Diodes.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageSO:TSSOP14_Diodes",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "TSSOP-14, 0.65 mm pitch, 5 x 4.4 mm body, Diodes Inc. suggested land",
+  "tags": [
+    "TSSOP-14",
+    "dual-row",
+    "gullwing",
+    "smd",
+    "tssop"
+  ],
+  "title": "TSSOP-14 package",
+  "version": "1.0.0"
+}

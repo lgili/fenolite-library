@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFN.3dshapes/QFN40_5x5_P0.4_Microchip-MP_EP3.5x3.5.step",
+    "generated/FenolitePackageQFN.pretty/QFN40_5x5_P0.4_Microchip-MP_EP3.5x3.5.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFN:QFN40_5x5_P0.4_Microchip-MP_EP3.5x3.5",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "QFN-40, 0.4 mm pitch, 5 x 5 mm body, 3.6 x 3.6 mm exposed-pad land, Microchip recommended land",
+  "tags": [
+    "exposed-pad",
+    "no-lead",
+    "qfn",
+    "qfn-40",
+    "quad",
+    "smd"
+  ],
+  "title": "QFN-40 5 x 5 mm, 0.4 mm pitch (Microchip MP)",
+  "version": "1.0.0"
+}

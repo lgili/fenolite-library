@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenoliteDiodeSMD.3dshapes/SMC_Diodes.step",
+    "generated/FenoliteDiodeSMD.pretty/SMC_Diodes.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenoliteDiodeSMD:SMC_Diodes",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "SMC (DO-214AB), 6.9 x 5.9 mm body, cathode pad 1, Diodes Inc. suggested land",
+  "tags": [
+    "DO-214AB",
+    "SMC",
+    "diode",
+    "molded",
+    "polarized",
+    "smd",
+    "two-terminal"
+  ],
+  "title": "SMC (DO-214AB) molded diode package",
+  "version": "1.0.0"
+}

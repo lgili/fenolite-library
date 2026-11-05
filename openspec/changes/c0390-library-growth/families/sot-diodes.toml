@@ -1,0 +1,112 @@
+# SPDX-License-Identifier: CC0-1.0
+# SOT and SC-70 packages, batch 3 of change c0390. Outline dimensions and suggested pad layouts:
+# Diodes Incorporated package information files (D-0404 to D-0411). Land: the suggested pad layout as read
+# ([land]): pad length along the leads, pad width across them, row spacing between the pad centres.
+# SOT-23 (3 leads), SOT-523 and SOT-89 are left out: their tables give no unambiguous pitch or pad layout.
+schema = "fenolite.c0390-family.v0"
+kind = "footprint"
+namespace = "FenolitePackageSOT"
+category = "SOT package"
+date = "2026-11-04"
+tags = ["gullwing", "smd", "sot"]
+
+[record]
+family = "gullwing"
+
+[record.generate]
+lands = 1
+drawing = 1
+
+[[row]]
+name = "SOT23-5_Diodes"
+title = "SOT-23-5 (SOT25) package"
+summary = "SOT-23-5, 5 leads, 0.95 mm pitch, 2.9 x 1.6 mm body, Diodes Inc. suggested land"
+sources = ["D-0404"]
+used = "Table: A 0.35-0.50 (lead width), B 1.50-1.70 (body width), C 2.70-3.00 (span), D 0.95 (pitch), H 2.90-3.10 (body length), J 0.013-0.10 (standoff), K 1.00-1.30 (height), L 0.35-0.55, M 0.10-0.20 mm; pad layout C1 2.40, C2 0.95, G 1.60, X 0.55, Y 0.80, Z 3.20 mm"
+tags = ["SOT-23-5", "SOT25", "SC-74A"]
+record.pins = 5
+record.pitch = "0.95mm"
+record.arrangement = "sides"
+record.body = { length = "2.90mm..3.10mm", width = "1.50mm..1.70mm", height = "1.00mm..1.30mm", standoff = "0.013mm..0.10mm" }
+record.span = "2.70mm..3.00mm"
+record.lead = { length = "0.35mm..0.55mm", width = "0.35mm..0.50mm", thickness = "0.10mm..0.20mm" }
+record.side = [{ edge = "left", numbers = ["1", "2", "3"], positions = [0, 1, 2] }, { edge = "right", numbers = ["5", "4"], positions = [0, 2] }]
+record.land = { source = "D-0404 suggested pad layout", pad = { length = "0.80mm", width = "0.55mm" }, row_spacing = "2.40mm" }
+
+[[row]]
+name = "SOT23-6_Diodes"
+title = "SOT-23-6 (SOT26) package"
+summary = "SOT-23-6, 6 leads, 0.95 mm pitch, 2.9 x 1.6 mm body, Diodes Inc. suggested land"
+sources = ["D-0405"]
+used = "Table: A1 0.013-0.10, A2 1.00-1.30 (height taken as A1 + A2), b 0.35-0.50, c 0.10-0.20, D 2.90-3.10, e 0.95, E 2.70-3.00, E1 1.50-1.70, L 0.35-0.55 mm; pad layout C 2.40, C1 0.95, G 1.60, X 0.55, Y 0.80, Y1 3.20 mm"
+tags = ["SOT-23-6", "SOT26"]
+record.pins = 6
+record.pitch = "0.95mm"
+record.arrangement = "dual"
+record.body = { length = "2.90mm..3.10mm", width = "1.50mm..1.70mm", height = "1.013mm..1.40mm", standoff = "0.013mm..0.10mm" }
+record.span = "2.70mm..3.00mm"
+record.lead = { length = "0.35mm..0.55mm", width = "0.35mm..0.50mm", thickness = "0.10mm..0.20mm" }
+record.land = { source = "D-0405 suggested pad layout", pad = { length = "0.80mm", width = "0.55mm" }, row_spacing = "2.40mm" }
+
+[[row]]
+name = "SOT223_Diodes"
+title = "SOT-223 package with tab"
+summary = "SOT-223, 3 leads and tab, 2.3 mm pitch, 6.5 x 3.5 mm body, Diodes Inc. suggested land"
+sources = ["D-0406"]
+used = "Table: A 1.55-1.65, A1 0.010-0.15, b 0.60-0.80, b1 2.90-3.10, C 0.20-0.30, D 6.45-6.55, E 3.45-3.55, E1 6.90-7.10, e1 2.30, L 0.85-1.05 mm; pad layout C 2.30, C1 6.40, X 1.20, X1 3.30, Y 1.60, Y1 1.60 mm"
+tags = ["SOT-223", "TO-261"]
+record.pins = 4
+record.pitch = "2.30mm"
+record.arrangement = "sides"
+record.body = { length = "6.45mm..6.55mm", width = "3.45mm..3.55mm", height = "1.55mm..1.65mm", standoff = "0.010mm..0.15mm" }
+record.span = "6.90mm..7.10mm"
+record.lead = { length = "0.85mm..1.05mm", width = "0.60mm..0.80mm", thickness = "0.20mm..0.30mm" }
+record.side = [{ edge = "left", numbers = ["1", "2", "3"], positions = [0, 1, 2] }]
+record.tab = { number = "4", width = "2.90mm..3.10mm", length = "0.85mm..1.05mm", edge = "right" }
+record.land = { source = "D-0406 suggested pad layout", pad = { length = "1.60mm", width = "1.20mm" }, row_spacing = "6.40mm", tab = { length = "1.60mm", width = "3.30mm", at = "3.20mm" } }
+
+[[row]]
+name = "SC70-3_Diodes"
+title = "SC-70-3 (SOT323) package"
+summary = "SC-70-3 (SOT-323), 3 leads, 0.65 mm pitch, 2 x 1.25 mm body, Diodes Inc. suggested land"
+sources = ["D-0408"]
+used = "Table: A1 0.00-0.10, A2 0.90-1.00 (height taken as A1 + A2), b 0.25-0.40, c 0.10-0.18, D 1.80-2.20, E 2.00-2.20, E1 1.15-1.35, e1 1.20-1.40, L 0.25-0.40 mm; pad layout C 0.650, G 1.300, X 0.470, Y 0.600, Y1 2.500 mm"
+tags = ["SC-70-3", "SOT-323"]
+record.pins = 3
+record.pitch = "0.65mm"
+record.arrangement = "sides"
+record.body = { length = "1.80mm..2.20mm", width = "1.15mm..1.35mm", height = "0.90mm..1.10mm", standoff = "0.00mm..0.10mm" }
+record.span = "2.00mm..2.20mm"
+record.lead = { length = "0.25mm..0.40mm", width = "0.25mm..0.40mm", thickness = "0.10mm..0.18mm" }
+record.side = [{ edge = "left", numbers = ["1", "2"], positions = [0, 2] }, { edge = "right", numbers = ["3"], positions = [1] }]
+record.land = { source = "D-0408 suggested pad layout", pad = { length = "0.60mm", width = "0.47mm" }, row_spacing = "1.90mm" }
+
+[[row]]
+name = "SC70-6_Diodes"
+title = "SC-70-6 (SOT363) package"
+summary = "SC-70-6 (SOT-363), 6 leads, 0.65 mm pitch, 2 x 1.25 mm body, Diodes Inc. suggested land"
+sources = ["D-0409"]
+used = "Table: A1 0.00-0.10, A2 0.90-1.00 (height taken as A1 + A2), b 0.10-0.30, c 0.10-0.22, D 1.80-2.20, E 2.00-2.20, E1 1.15-1.35, L 0.25-0.40 mm; pad layout C 0.650, G 1.300, X 0.420, Y 0.600, Y1 2.500 mm"
+tags = ["SC-70-6", "SC-88", "SOT-363"]
+record.pins = 6
+record.pitch = "0.65mm"
+record.arrangement = "dual"
+record.body = { length = "1.80mm..2.20mm", width = "1.15mm..1.35mm", height = "0.90mm..1.10mm", standoff = "0.00mm..0.10mm" }
+record.span = "2.00mm..2.20mm"
+record.lead = { length = "0.25mm..0.40mm", width = "0.10mm..0.30mm", thickness = "0.10mm..0.22mm" }
+record.land = { source = "D-0409 suggested pad layout", pad = { length = "0.60mm", width = "0.42mm" }, row_spacing = "1.90mm" }
+
+[[row]]
+name = "SOT563_Diodes"
+title = "SOT-563 package"
+summary = "SOT-563, 6 leads, 0.5 mm pitch, 1.6 x 1.2 mm body, Diodes Inc. suggested land"
+sources = ["D-0411"]
+used = "Table: A 0.55-0.60, b 0.15-0.30, c 0.10-0.18, D 1.50-1.70, E 1.55-1.70, E1 1.10-1.25, e 0.50, L 0.10-0.30 mm; pad layout C 0.500, C1 1.270, G 0.600, X 0.300, Y 0.670, Y1 1.940 mm"
+tags = ["SOT-563", "SC-89-6"]
+record.pins = 6
+record.pitch = "0.50mm"
+record.arrangement = "dual"
+record.body = { length = "1.50mm..1.70mm", width = "1.10mm..1.25mm", height = "0.55mm..0.60mm" }
+record.span = "1.55mm..1.70mm"
+record.lead = { length = "0.10mm..0.30mm", width = "0.15mm..0.30mm", thickness = "0.10mm..0.18mm" }
+record.land = { source = "D-0411 suggested pad layout", pad = { length = "0.67mm", width = "0.30mm" }, row_spacing = "1.27mm" }

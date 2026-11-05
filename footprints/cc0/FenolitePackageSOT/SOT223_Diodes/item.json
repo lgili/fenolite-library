@@ -1,0 +1,23 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageSOT.3dshapes/SOT223_Diodes.step",
+    "generated/FenolitePackageSOT.pretty/SOT223_Diodes.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageSOT:SOT223_Diodes",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "SOT-223, 3 leads and tab, 2.3 mm pitch, 6.5 x 3.5 mm body, Diodes Inc. suggested land",
+  "tags": [
+    "SOT-223",
+    "TO-261",
+    "gullwing",
+    "smd",
+    "sot"
+  ],
+  "title": "SOT-223 package with tab",
+  "version": "1.0.0"
+}

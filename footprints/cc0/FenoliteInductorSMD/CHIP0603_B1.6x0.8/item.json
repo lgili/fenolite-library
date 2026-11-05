@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenoliteInductorSMD.3dshapes/CHIP0603_B1.6x0.8.step",
+    "generated/FenoliteInductorSMD.pretty/CHIP0603_B1.6x0.8.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenoliteInductorSMD:CHIP0603_B1.6x0.8",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Multilayer chip ferrite bead 0603 (1608 metric), 1.6 x 0.8 x 0.8 mm body, calculated land",
+  "tags": [
+    "0603",
+    "1608-metric",
+    "chip",
+    "ferrite-bead",
+    "inductor",
+    "smd",
+    "two-terminal"
+  ],
+  "title": "Chip ferrite bead 0603 (1608 metric)",
+  "version": "1.0.0"
+}

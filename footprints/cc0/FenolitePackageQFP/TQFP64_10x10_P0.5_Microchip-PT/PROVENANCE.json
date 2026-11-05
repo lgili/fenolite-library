@@ -1,0 +1,87 @@
+{
+  "authors": [
+    "Fenolite contributors"
+  ],
+  "copyright": [
+    "Copyright (c) 2026 Fenolite contributors"
+  ],
+  "datasheets": [
+    {
+      "date": "2017-02-03",
+      "id": "D-0423",
+      "revision": "CH",
+      "title": "Microchip Packaging Specification, DS00000049CH",
+      "url": "https://ww1.microchip.com/downloads/en/PackagingSpec/00000049CH.pdf",
+      "used": "Microchip packaging specification DS00000049CH, PDF page 897, drawing C04-085C: N 64, e 0.50 BSC, A -/-/1.20, A1 0.05/-/0.15, D 12.00 BSC, E 12.00 BSC, D1 10.00 BSC, E1 10.00 BSC, b 0.17/0.22/0.27, c 0.09/-/0.20, L 0.45/0.60/0.75; land C04-2085B: E 0.50 BSC, C1 11.40, C2 11.40, X1 0.30, Y1 1.50, G 0.20"
+    }
+  ],
+  "evidence": "INFERRED",
+  "featured": null,
+  "generation": {
+    "change": "c0390",
+    "explicit_record": "the generator's pads, graphics and bodies written as a generator='explicit' record (the record kind the library audit reads); outputs regenerate from package.toml",
+    "family_record": {
+      "arrangement": "quad",
+      "body": {
+        "height": "1.2mm",
+        "length": "10mm",
+        "standoff": "0.05mm..0.15mm",
+        "width": "10mm"
+      },
+      "evidence": "INFERRED",
+      "family": "gullwing",
+      "generate": {
+        "drawing": 1,
+        "lands": 1
+      },
+      "id": "FenolitePackageQFP:TQFP64_10x10_P0.5_Microchip-PT",
+      "land": {
+        "pad": {
+          "length": "1.5mm",
+          "width": "0.3mm"
+        },
+        "row_spacing_x": "11.4mm",
+        "row_spacing_y": "11.4mm",
+        "source": "D-0423 drawing C04-2085B"
+      },
+      "lead": {
+        "length": "0.45mm..0.75mm",
+        "thickness": "0.09mm..0.2mm",
+        "width": "0.17mm..0.27mm"
+      },
+      "pins": 64,
+      "pitch": "0.5mm",
+      "schema": "fenolite.package.v0",
+      "sources": [
+        "D-0423"
+      ],
+      "span_x": "12mm",
+      "span_y": "12mm",
+      "summary": "TQFP-64, 0.5 mm pitch, 10 x 10 mm body, Microchip recommended land"
+    },
+    "fenolite": "e7673c811d5ca25d269c2d9c0f30e686f5148844",
+    "findings": [
+      "info package.land-override"
+    ],
+    "generator": "gullwing/1 manufacturer drawing/1; land: manufacturer D-0423 drawing C04-2085B",
+    "table": "openspec/changes/c0390-library-growth/families/gullwing-qfp.toml",
+    "tool": "fenolite"
+  },
+  "id": "FenolitePackageQFP:TQFP64_10x10_P0.5_Microchip-PT",
+  "kind": "footprint",
+  "licence_text_sha256": "0dd25be0803b1e2764b0323560013cdd5ad9ca92ba4780bd7db0cbe6ce821dd8",
+  "modification_notice": "2026-11-05: original item authored for fenolite-library (change c0390) with Fenolite's c0260 package generator from public package dimensions; no upstream design material.",
+  "origin": "authored",
+  "schema": "fenolite.provenance.v0",
+  "sources": [
+    "D-0423"
+  ],
+  "spdx": "CC0-1.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": null,
+  "version": "1.0.0"
+}
