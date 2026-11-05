@@ -1,4 +1,0 @@
-(sym_lib_table
-	(lib (name power) (type KiCad) (uri ${KIPRJMOD}/lib/power.kicad_sym) (options "") (descr ""))
-	(lib (name video_schlib) (type KiCad) (uri ${KIPRJMOD}/lib/video_schlib.kicad_sym) (options "") (descr ""))
-)

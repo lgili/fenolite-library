@@ -1,8 +1,0 @@
-(sym_lib_table
-	(version 7)
-	(lib (name "Imported") (type "KiCad") (uri "${KIPRJMOD}/lib/Imported.kicad_sym") (options "") (descr ""))
-	(lib (name "Logos") (type "KiCad") (uri "${KIPRJMOD}/lib/Logos.kicad_sym") (options "") (descr ""))
-	(lib (name "OSHW") (type "KiCad") (uri "${KIPRJMOD}/lib/OSHW.kicad_sym") (options "") (descr ""))
-	(lib (name "TinyTapeout") (type "KiCad") (uri "${KIPRJMOD}/lib/TinyTapeout.kicad_sym") (options "") (descr ""))
-	(lib (name "flyingcarsfootprints") (type "KiCad") (uri "${KIPRJMOD}/lib/flyingcarsfootprints.kicad_sym") (options "") (descr ""))
-)

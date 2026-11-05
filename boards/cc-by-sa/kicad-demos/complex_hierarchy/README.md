@@ -1,3 +1,0 @@
-# Complex hierarchy (KiCad demo) — external1.0.2 candidate
-
-Original authors, upstream notices and byte-identical CC-BY-SA-4.0 LICENSE remain intact. Immutable upstream97acc80c223d75520c03fc44cab63cd9a3202c42, demos/complex_hierarchy. Actual core5b0853b718e54f2ce487a2545a3ed44df7bd0f9a, explicit target10. Raw import member is verbatim; strict source proof is recorded through reviewed plans. No model assets or official library payloads are included; 68nominal3D references/10unique names do not prove model geometry/licences. Every native notice/unjudged scope remains visible. The historical1.0.1 item stays outside this candidate. No authoritative promotion, publication, human review or full-CI success is inferred.

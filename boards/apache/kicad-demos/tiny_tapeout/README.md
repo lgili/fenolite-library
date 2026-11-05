@@ -1,3 +1,0 @@
-# Tiny Tapeout — external1.0.2 pilot
-
-Pat Deegan attribution and unchanged Apache-2.0 LICENSE/NOTICE are preserved. Immutable upstream97acc80c223d75520c03fc44cab63cd9a3202c42, demos/tiny_tapeout; four CAD files, nominal tables, no active siblingDRU or custom worksheet. Core18351e40, explicit target10. No3D/official library payload is included; nominal131refs/27unique model names do not establish model licences or geometry equality. Current proof and notices are recorded by actual reviewed CLI plans. Old accepted differences are historical outside this item; no new acceptance entries or skip reasons are invented. This is a review candidate, not authoritative publication or human approval.
