@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageSO.3dshapes/SOIC14_Diodes.step",
+    "generated/FenolitePackageSO.pretty/SOIC14_Diodes.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageSO:SOIC14_Diodes",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "SOIC-14, 1.27 mm pitch, 8.65 x 3.9 mm body, Diodes Inc. suggested land",
+  "tags": [
+    "SO-14",
+    "SOIC-14",
+    "dual-row",
+    "gullwing",
+    "smd",
+    "soic"
+  ],
+  "title": "SOIC-14 (SO-14) narrow body package",
+  "version": "1.0.0"
+}

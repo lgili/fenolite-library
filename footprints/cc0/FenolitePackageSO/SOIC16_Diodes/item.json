@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageSO.3dshapes/SOIC16_Diodes.step",
+    "generated/FenolitePackageSO.pretty/SOIC16_Diodes.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageSO:SOIC16_Diodes",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "SOIC-16, 1.27 mm pitch, 9.9 x 3.9 mm body, Diodes Inc. suggested land",
+  "tags": [
+    "SO-16",
+    "SOIC-16",
+    "dual-row",
+    "gullwing",
+    "smd",
+    "soic"
+  ],
+  "title": "SOIC-16 (SO-16) narrow body package",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageSO.3dshapes/TSSOP8_Diodes.step",
+    "generated/FenolitePackageSO.pretty/TSSOP8_Diodes.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageSO:TSSOP8_Diodes",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "TSSOP-8, 0.65 mm pitch, 3 x 4.4 mm body, Diodes Inc. suggested land",
+  "tags": [
+    "TSSOP-8",
+    "dual-row",
+    "gullwing",
+    "smd",
+    "tssop"
+  ],
+  "title": "TSSOP-8 package",
+  "version": "1.0.0"
+}
