@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenoliteResistorSMD.3dshapes/CHIP008004_B0.3x0.15.step",
+    "generated/FenoliteResistorSMD.pretty/CHIP008004_B0.3x0.15.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenoliteResistorSMD:CHIP008004_B0.3x0.15",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Chip resistor 008004 (0201 metric), 0.3 x 0.15 mm body, calculated land",
+  "tags": [
+    "008004",
+    "0201-metric",
+    "chip",
+    "resistor",
+    "smd",
+    "two-terminal"
+  ],
+  "title": "Chip resistor 008004 (0201 metric)",
+  "version": "1.0.0"
+}

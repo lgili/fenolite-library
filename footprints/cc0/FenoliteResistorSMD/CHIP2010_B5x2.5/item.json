@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenoliteResistorSMD.3dshapes/CHIP2010_B5x2.5.step",
+    "generated/FenoliteResistorSMD.pretty/CHIP2010_B5x2.5.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenoliteResistorSMD:CHIP2010_B5x2.5",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Chip resistor 2010 (5025 metric), 5 x 2.5 mm body, calculated land",
+  "tags": [
+    "2010",
+    "5025-metric",
+    "chip",
+    "resistor",
+    "smd",
+    "two-terminal"
+  ],
+  "title": "Chip resistor 2010 (5025 metric)",
+  "version": "1.0.0"
+}
