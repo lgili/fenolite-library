@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFP.3dshapes/LQFP100_14x14_P0.5_Microchip-PL.step",
+    "generated/FenolitePackageQFP.pretty/LQFP100_14x14_P0.5_Microchip-PL.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFP:LQFP100_14x14_P0.5_Microchip-PL",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "LQFP-100, 0.5 mm pitch, 14 x 14 mm body, Microchip recommended land",
+  "tags": [
+    "gullwing",
+    "lqfp",
+    "lqfp-100",
+    "qfp",
+    "quad",
+    "smd"
+  ],
+  "title": "LQFP-100 14 x 14 mm, 0.5 mm pitch (Microchip PL)",
+  "version": "1.0.0"
+}

@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFP.3dshapes/MQFP64_14x14_P0.8_Microchip-BU.step",
+    "generated/FenolitePackageQFP.pretty/MQFP64_14x14_P0.8_Microchip-BU.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFP:MQFP64_14x14_P0.8_Microchip-BU",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "MQFP-64, 0.8 mm pitch, 14 x 14 mm body, Microchip recommended land",
+  "tags": [
+    "gullwing",
+    "mqfp",
+    "mqfp-64",
+    "qfp",
+    "quad",
+    "smd"
+  ],
+  "title": "MQFP-64 14 x 14 mm, 0.8 mm pitch (Microchip BU)",
+  "version": "1.0.0"
+}

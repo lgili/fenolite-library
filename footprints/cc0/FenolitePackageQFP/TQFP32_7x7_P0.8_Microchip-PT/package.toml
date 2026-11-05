@@ -1,0 +1,844 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0423 Microchip Packaging Specification, DS00000049CH (CH). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.package.v0"
+id = "FenolitePackageQFP:TQFP32_7x7_P0.8_Microchip-PT"
+version = "1.0.0"
+summary = "TQFP-32, 0.8 mm pitch, 7 x 7 mm body, Microchip recommended land"
+category = "Quad flat package"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0423"]
+generator = "explicit"
+kind = "smd"
+family = "gullwing"
+pins = 32
+pitch = "0.8mm"
+body = { height = "1.2mm", length = "7mm", standoff = "0.05mm..0.15mm", width = "7mm" }
+lead = { length = "0.45mm..0.75mm", thickness = "0.09mm..0.2mm", width = "0.3mm..0.45mm" }
+
+[[pad]]
+number = "1"
+shape = "roundrect"
+size = ["1.6mm", "0.55mm"]
+at = ["-4.25mm", "-2.8mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "2"
+shape = "roundrect"
+size = ["1.6mm", "0.55mm"]
+at = ["-4.25mm", "-2mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "3"
+shape = "roundrect"
+size = ["1.6mm", "0.55mm"]
+at = ["-4.25mm", "-1.2mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "4"
+shape = "roundrect"
+size = ["1.6mm", "0.55mm"]
+at = ["-4.25mm", "-0.4mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "5"
+shape = "roundrect"
+size = ["1.6mm", "0.55mm"]
+at = ["-4.25mm", "0.4mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "6"
+shape = "roundrect"
+size = ["1.6mm", "0.55mm"]
+at = ["-4.25mm", "1.2mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "7"
+shape = "roundrect"
+size = ["1.6mm", "0.55mm"]
+at = ["-4.25mm", "2mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "8"
+shape = "roundrect"
+size = ["1.6mm", "0.55mm"]
+at = ["-4.25mm", "2.8mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "9"
+shape = "roundrect"
+size = ["0.55mm", "1.6mm"]
+at = ["-2.8mm", "4.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "10"
+shape = "roundrect"
+size = ["0.55mm", "1.6mm"]
+at = ["-2mm", "4.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "11"
+shape = "roundrect"
+size = ["0.55mm", "1.6mm"]
+at = ["-1.2mm", "4.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "12"
+shape = "roundrect"
+size = ["0.55mm", "1.6mm"]
+at = ["-0.4mm", "4.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "13"
+shape = "roundrect"
+size = ["0.55mm", "1.6mm"]
+at = ["0.4mm", "4.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "14"
+shape = "roundrect"
+size = ["0.55mm", "1.6mm"]
+at = ["1.2mm", "4.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "15"
+shape = "roundrect"
+size = ["0.55mm", "1.6mm"]
+at = ["2mm", "4.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "16"
+shape = "roundrect"
+size = ["0.55mm", "1.6mm"]
+at = ["2.8mm", "4.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "17"
+shape = "roundrect"
+size = ["1.6mm", "0.55mm"]
+at = ["4.25mm", "2.8mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "18"
+shape = "roundrect"
+size = ["1.6mm", "0.55mm"]
+at = ["4.25mm", "2mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "19"
+shape = "roundrect"
+size = ["1.6mm", "0.55mm"]
+at = ["4.25mm", "1.2mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "20"
+shape = "roundrect"
+size = ["1.6mm", "0.55mm"]
+at = ["4.25mm", "0.4mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "21"
+shape = "roundrect"
+size = ["1.6mm", "0.55mm"]
+at = ["4.25mm", "-0.4mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "22"
+shape = "roundrect"
+size = ["1.6mm", "0.55mm"]
+at = ["4.25mm", "-1.2mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "23"
+shape = "roundrect"
+size = ["1.6mm", "0.55mm"]
+at = ["4.25mm", "-2mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "24"
+shape = "roundrect"
+size = ["1.6mm", "0.55mm"]
+at = ["4.25mm", "-2.8mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "25"
+shape = "roundrect"
+size = ["0.55mm", "1.6mm"]
+at = ["2.8mm", "-4.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "26"
+shape = "roundrect"
+size = ["0.55mm", "1.6mm"]
+at = ["2mm", "-4.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "27"
+shape = "roundrect"
+size = ["0.55mm", "1.6mm"]
+at = ["1.2mm", "-4.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "28"
+shape = "roundrect"
+size = ["0.55mm", "1.6mm"]
+at = ["0.4mm", "-4.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "29"
+shape = "roundrect"
+size = ["0.55mm", "1.6mm"]
+at = ["-0.4mm", "-4.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "30"
+shape = "roundrect"
+size = ["0.55mm", "1.6mm"]
+at = ["-1.2mm", "-4.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "31"
+shape = "roundrect"
+size = ["0.55mm", "1.6mm"]
+at = ["-2mm", "-4.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[pad]]
+number = "32"
+shape = "roundrect"
+size = ["0.55mm", "1.6mm"]
+at = ["-2.8mm", "-4.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 181818
+
+[[graphic]]
+key = "F.Fab:0"
+kind = "line"
+layer = "F.Fab"
+points = [["-2.5mm", "-3.5mm"], ["3.5mm", "-3.5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:1"
+kind = "line"
+layer = "F.Fab"
+points = [["3.5mm", "-3.5mm"], ["3.5mm", "3.5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:2"
+kind = "line"
+layer = "F.Fab"
+points = [["3.5mm", "3.5mm"], ["-3.5mm", "3.5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:3"
+kind = "line"
+layer = "F.Fab"
+points = [["-3.5mm", "3.5mm"], ["-3.5mm", "-2.5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:4"
+kind = "line"
+layer = "F.Fab"
+points = [["-3.5mm", "-2.5mm"], ["-2.5mm", "-3.5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.SilkS:5"
+kind = "circle"
+layer = "F.SilkS"
+points = [["-5.375mm", "-2.8mm"], ["-5.3mm", "-2.8mm"]]
+width = "0.15mm"
+
+[[graphic]]
+key = "F.CrtYd:6"
+kind = "rect"
+layer = "F.CrtYd"
+points = [["-5.55mm", "-5.55mm"], ["5.55mm", "5.55mm"]]
+width = "0.05mm"
+
+[[component_body]]
+kind = "extruded"
+height = "1.2mm"
+standoff = "0.05mm"
+outline = [["-3.5mm", "-3.5mm"], ["3.5mm", "-3.5mm"], ["3.5mm", "3.5mm"], ["-3.5mm", "3.5mm"]]
+name = "body"
+z_min = "0.05mm"
+z_max = "1.2mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["-4.5mm", "-2.985mm"], ["-3.9mm", "-2.985mm"], ["-3.9mm", "-2.615mm"], ["-4.5mm", "-2.615mm"]]
+name = "lead:1:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["-3.9mm", "-2.985mm"], ["-3.5mm", "-2.985mm"], ["-3.5mm", "-2.615mm"], ["-3.9mm", "-2.615mm"]]
+name = "lead:1:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["-4.5mm", "-2.185mm"], ["-3.9mm", "-2.185mm"], ["-3.9mm", "-1.815mm"], ["-4.5mm", "-1.815mm"]]
+name = "lead:2:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["-3.9mm", "-2.185mm"], ["-3.5mm", "-2.185mm"], ["-3.5mm", "-1.815mm"], ["-3.9mm", "-1.815mm"]]
+name = "lead:2:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["-4.5mm", "-1.385mm"], ["-3.9mm", "-1.385mm"], ["-3.9mm", "-1.015mm"], ["-4.5mm", "-1.015mm"]]
+name = "lead:3:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["-3.9mm", "-1.385mm"], ["-3.5mm", "-1.385mm"], ["-3.5mm", "-1.015mm"], ["-3.9mm", "-1.015mm"]]
+name = "lead:3:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["-4.5mm", "-0.585mm"], ["-3.9mm", "-0.585mm"], ["-3.9mm", "-0.215mm"], ["-4.5mm", "-0.215mm"]]
+name = "lead:4:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["-3.9mm", "-0.585mm"], ["-3.5mm", "-0.585mm"], ["-3.5mm", "-0.215mm"], ["-3.9mm", "-0.215mm"]]
+name = "lead:4:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["-4.5mm", "0.215mm"], ["-3.9mm", "0.215mm"], ["-3.9mm", "0.585mm"], ["-4.5mm", "0.585mm"]]
+name = "lead:5:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["-3.9mm", "0.215mm"], ["-3.5mm", "0.215mm"], ["-3.5mm", "0.585mm"], ["-3.9mm", "0.585mm"]]
+name = "lead:5:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["-4.5mm", "1.015mm"], ["-3.9mm", "1.015mm"], ["-3.9mm", "1.385mm"], ["-4.5mm", "1.385mm"]]
+name = "lead:6:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["-3.9mm", "1.015mm"], ["-3.5mm", "1.015mm"], ["-3.5mm", "1.385mm"], ["-3.9mm", "1.385mm"]]
+name = "lead:6:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["-4.5mm", "1.815mm"], ["-3.9mm", "1.815mm"], ["-3.9mm", "2.185mm"], ["-4.5mm", "2.185mm"]]
+name = "lead:7:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["-3.9mm", "1.815mm"], ["-3.5mm", "1.815mm"], ["-3.5mm", "2.185mm"], ["-3.9mm", "2.185mm"]]
+name = "lead:7:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["-4.5mm", "2.615mm"], ["-3.9mm", "2.615mm"], ["-3.9mm", "2.985mm"], ["-4.5mm", "2.985mm"]]
+name = "lead:8:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["-3.9mm", "2.615mm"], ["-3.5mm", "2.615mm"], ["-3.5mm", "2.985mm"], ["-3.9mm", "2.985mm"]]
+name = "lead:8:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["-2.985mm", "3.9mm"], ["-2.615mm", "3.9mm"], ["-2.615mm", "4.5mm"], ["-2.985mm", "4.5mm"]]
+name = "lead:9:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["-2.985mm", "3.5mm"], ["-2.615mm", "3.5mm"], ["-2.615mm", "3.9mm"], ["-2.985mm", "3.9mm"]]
+name = "lead:9:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["-2.185mm", "3.9mm"], ["-1.815mm", "3.9mm"], ["-1.815mm", "4.5mm"], ["-2.185mm", "4.5mm"]]
+name = "lead:10:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["-2.185mm", "3.5mm"], ["-1.815mm", "3.5mm"], ["-1.815mm", "3.9mm"], ["-2.185mm", "3.9mm"]]
+name = "lead:10:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["-1.385mm", "3.9mm"], ["-1.015mm", "3.9mm"], ["-1.015mm", "4.5mm"], ["-1.385mm", "4.5mm"]]
+name = "lead:11:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["-1.385mm", "3.5mm"], ["-1.015mm", "3.5mm"], ["-1.015mm", "3.9mm"], ["-1.385mm", "3.9mm"]]
+name = "lead:11:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["-0.585mm", "3.9mm"], ["-0.215mm", "3.9mm"], ["-0.215mm", "4.5mm"], ["-0.585mm", "4.5mm"]]
+name = "lead:12:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["-0.585mm", "3.5mm"], ["-0.215mm", "3.5mm"], ["-0.215mm", "3.9mm"], ["-0.585mm", "3.9mm"]]
+name = "lead:12:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["0.215mm", "3.9mm"], ["0.585mm", "3.9mm"], ["0.585mm", "4.5mm"], ["0.215mm", "4.5mm"]]
+name = "lead:13:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["0.215mm", "3.5mm"], ["0.585mm", "3.5mm"], ["0.585mm", "3.9mm"], ["0.215mm", "3.9mm"]]
+name = "lead:13:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["1.015mm", "3.9mm"], ["1.385mm", "3.9mm"], ["1.385mm", "4.5mm"], ["1.015mm", "4.5mm"]]
+name = "lead:14:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["1.015mm", "3.5mm"], ["1.385mm", "3.5mm"], ["1.385mm", "3.9mm"], ["1.015mm", "3.9mm"]]
+name = "lead:14:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["1.815mm", "3.9mm"], ["2.185mm", "3.9mm"], ["2.185mm", "4.5mm"], ["1.815mm", "4.5mm"]]
+name = "lead:15:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["1.815mm", "3.5mm"], ["2.185mm", "3.5mm"], ["2.185mm", "3.9mm"], ["1.815mm", "3.9mm"]]
+name = "lead:15:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["2.615mm", "3.9mm"], ["2.985mm", "3.9mm"], ["2.985mm", "4.5mm"], ["2.615mm", "4.5mm"]]
+name = "lead:16:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["2.615mm", "3.5mm"], ["2.985mm", "3.5mm"], ["2.985mm", "3.9mm"], ["2.615mm", "3.9mm"]]
+name = "lead:16:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["3.9mm", "2.615mm"], ["4.5mm", "2.615mm"], ["4.5mm", "2.985mm"], ["3.9mm", "2.985mm"]]
+name = "lead:17:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["3.5mm", "2.615mm"], ["3.9mm", "2.615mm"], ["3.9mm", "2.985mm"], ["3.5mm", "2.985mm"]]
+name = "lead:17:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["3.9mm", "1.815mm"], ["4.5mm", "1.815mm"], ["4.5mm", "2.185mm"], ["3.9mm", "2.185mm"]]
+name = "lead:18:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["3.5mm", "1.815mm"], ["3.9mm", "1.815mm"], ["3.9mm", "2.185mm"], ["3.5mm", "2.185mm"]]
+name = "lead:18:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["3.9mm", "1.015mm"], ["4.5mm", "1.015mm"], ["4.5mm", "1.385mm"], ["3.9mm", "1.385mm"]]
+name = "lead:19:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["3.5mm", "1.015mm"], ["3.9mm", "1.015mm"], ["3.9mm", "1.385mm"], ["3.5mm", "1.385mm"]]
+name = "lead:19:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["3.9mm", "0.215mm"], ["4.5mm", "0.215mm"], ["4.5mm", "0.585mm"], ["3.9mm", "0.585mm"]]
+name = "lead:20:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["3.5mm", "0.215mm"], ["3.9mm", "0.215mm"], ["3.9mm", "0.585mm"], ["3.5mm", "0.585mm"]]
+name = "lead:20:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["3.9mm", "-0.585mm"], ["4.5mm", "-0.585mm"], ["4.5mm", "-0.215mm"], ["3.9mm", "-0.215mm"]]
+name = "lead:21:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["3.5mm", "-0.585mm"], ["3.9mm", "-0.585mm"], ["3.9mm", "-0.215mm"], ["3.5mm", "-0.215mm"]]
+name = "lead:21:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["3.9mm", "-1.385mm"], ["4.5mm", "-1.385mm"], ["4.5mm", "-1.015mm"], ["3.9mm", "-1.015mm"]]
+name = "lead:22:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["3.5mm", "-1.385mm"], ["3.9mm", "-1.385mm"], ["3.9mm", "-1.015mm"], ["3.5mm", "-1.015mm"]]
+name = "lead:22:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["3.9mm", "-2.185mm"], ["4.5mm", "-2.185mm"], ["4.5mm", "-1.815mm"], ["3.9mm", "-1.815mm"]]
+name = "lead:23:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["3.5mm", "-2.185mm"], ["3.9mm", "-2.185mm"], ["3.9mm", "-1.815mm"], ["3.5mm", "-1.815mm"]]
+name = "lead:23:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["3.9mm", "-2.985mm"], ["4.5mm", "-2.985mm"], ["4.5mm", "-2.615mm"], ["3.9mm", "-2.615mm"]]
+name = "lead:24:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["3.5mm", "-2.985mm"], ["3.9mm", "-2.985mm"], ["3.9mm", "-2.615mm"], ["3.5mm", "-2.615mm"]]
+name = "lead:24:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["2.615mm", "-4.5mm"], ["2.985mm", "-4.5mm"], ["2.985mm", "-3.9mm"], ["2.615mm", "-3.9mm"]]
+name = "lead:25:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["2.615mm", "-3.9mm"], ["2.985mm", "-3.9mm"], ["2.985mm", "-3.5mm"], ["2.615mm", "-3.5mm"]]
+name = "lead:25:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["1.815mm", "-4.5mm"], ["2.185mm", "-4.5mm"], ["2.185mm", "-3.9mm"], ["1.815mm", "-3.9mm"]]
+name = "lead:26:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["1.815mm", "-3.9mm"], ["2.185mm", "-3.9mm"], ["2.185mm", "-3.5mm"], ["1.815mm", "-3.5mm"]]
+name = "lead:26:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["1.015mm", "-4.5mm"], ["1.385mm", "-4.5mm"], ["1.385mm", "-3.9mm"], ["1.015mm", "-3.9mm"]]
+name = "lead:27:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["1.015mm", "-3.9mm"], ["1.385mm", "-3.9mm"], ["1.385mm", "-3.5mm"], ["1.015mm", "-3.5mm"]]
+name = "lead:27:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["0.215mm", "-4.5mm"], ["0.585mm", "-4.5mm"], ["0.585mm", "-3.9mm"], ["0.215mm", "-3.9mm"]]
+name = "lead:28:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["0.215mm", "-3.9mm"], ["0.585mm", "-3.9mm"], ["0.585mm", "-3.5mm"], ["0.215mm", "-3.5mm"]]
+name = "lead:28:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["-0.585mm", "-4.5mm"], ["-0.215mm", "-4.5mm"], ["-0.215mm", "-3.9mm"], ["-0.585mm", "-3.9mm"]]
+name = "lead:29:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["-0.585mm", "-3.9mm"], ["-0.215mm", "-3.9mm"], ["-0.215mm", "-3.5mm"], ["-0.585mm", "-3.5mm"]]
+name = "lead:29:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["-1.385mm", "-4.5mm"], ["-1.015mm", "-4.5mm"], ["-1.015mm", "-3.9mm"], ["-1.385mm", "-3.9mm"]]
+name = "lead:30:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["-1.385mm", "-3.9mm"], ["-1.015mm", "-3.9mm"], ["-1.015mm", "-3.5mm"], ["-1.385mm", "-3.5mm"]]
+name = "lead:30:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["-2.185mm", "-4.5mm"], ["-1.815mm", "-4.5mm"], ["-1.815mm", "-3.9mm"], ["-2.185mm", "-3.9mm"]]
+name = "lead:31:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["-2.185mm", "-3.9mm"], ["-1.815mm", "-3.9mm"], ["-1.815mm", "-3.5mm"], ["-2.185mm", "-3.5mm"]]
+name = "lead:31:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.145mm"
+outline = [["-2.985mm", "-4.5mm"], ["-2.615mm", "-4.5mm"], ["-2.615mm", "-3.9mm"], ["-2.985mm", "-3.9mm"]]
+name = "lead:32:foot"
+z_min = "0mm"
+z_max = "0.145mm"
+
+[[component_body]]
+kind = "extruded"
+height = "0.625mm"
+outline = [["-2.985mm", "-3.9mm"], ["-2.615mm", "-3.9mm"], ["-2.615mm", "-3.5mm"], ["-2.985mm", "-3.5mm"]]
+name = "lead:32:shoulder"
+z_min = "0mm"
+z_max = "0.625mm"

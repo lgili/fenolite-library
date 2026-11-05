@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageQFP.3dshapes/LQFP160_24x24_P0.5_Microchip-6G.step",
+    "generated/FenolitePackageQFP.pretty/LQFP160_24x24_P0.5_Microchip-6G.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageQFP:LQFP160_24x24_P0.5_Microchip-6G",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "LQFP-160, 0.5 mm pitch, 24 x 24 mm body, Microchip recommended land",
+  "tags": [
+    "gullwing",
+    "lqfp",
+    "lqfp-160",
+    "qfp",
+    "quad",
+    "smd"
+  ],
+  "title": "LQFP-160 24 x 24 mm, 0.5 mm pitch (Microchip 6G)",
+  "version": "1.0.0"
+}
