@@ -4,6 +4,11 @@
 
 - `bench.yml` runs the recorded `verify-source` step read-only, as the `proof` job of `check.yml` does since
   1.0.0; its first run (41954400114) failed ecc83 (two project files, FEN-2001) and the Coldfire kit.
+- `gallery.yml` no longer needs a published GitHub Release: from a library tag it rebuilds the release assets
+  twice and compares them (or takes the `release-assets` artefact of the release run), deploys Pages only from
+  `main` through the `github-pages` environment, takes the newest successful benchmark table, and a board
+  whose render fails keeps a page without images that names why (pic_programmer on core `e7673c81`: a
+  footprint `point` written with an angle, which KiCad 10.0.6 refuses; fixed in the core, c0279 task 4.6).
 
 ## [1.0.0] - 2026-11-05
 

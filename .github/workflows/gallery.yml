@@ -6,14 +6,14 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: Existing published release tag whose assets passed the release job
+        description: Existing library tag vMAJOR.MINOR.PATCH; the job rebuilds its release assets from that tag
         required: true
         type: string
 permissions:
   contents: read
   actions: read
 concurrency:
-  group: library-gallery
+  group: library-gallery-${{ github.ref }}
   cancel-in-progress: false
 jobs:
   release:
@@ -39,92 +39,148 @@ jobs:
           if not re.fullmatch(r'v[0-9]+\.[0-9]+\.[0-9]+', tag): raise SystemExit('Invalid release tag')
           with open(os.environ['GITHUB_OUTPUT'], 'a') as out: out.write('tag=' + tag + '\n')
           PY
-  pages:
+  site:
     needs: release
     runs-on: ubuntu-24.04
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    permissions:
-      contents: read
-      actions: read
-      pages: write
-      id-token: write
     steps:
-      - if: vars.LIBRARY_PAGES_ENABLED != 'true'
-        run: |
-          echo 'Configure required reviewers for github-pages, then explicitly enable LIBRARY_PAGES_ENABLED.'
-          exit 1
       - uses: actions/checkout@v4
         with:
-          ref: ${{ needs.release.outputs.tag }}
+          ref: refs/tags/${{ needs.release.outputs.tag }}
+          fetch-depth: 0
           persist-credentials: false
       - uses: ./.github/actions/fenolite
-        with: {require: 'library gallery,library check,render', kicad: 'true'}
-      - env:
+        with: {require: 'library gallery,library release,build,render', kicad: 'true'}
+      - if: github.event_name == 'workflow_run'
+        uses: actions/download-artifact@v4
+        with:
+          name: release-assets
+          path: ${{ runner.temp }}/library-release
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ github.token }}
+      - name: Release assets of the tag (the release run's artefact, or rebuilt twice and compared)
+        env:
           TAG: ${{ needs.release.outputs.tag }}
-          GH_TOKEN: ${{ github.token }}
         run: |
-          mkdir -p "$RUNNER_TEMP/library-release"
-          gh release download "$TAG" --repo "$GITHUB_REPOSITORY" --dir "$RUNNER_TEMP/library-release"
+          python - <<'PY'
+          import json, os, shutil, subprocess, tomllib
+          from pathlib import Path
+          temp = Path(os.environ['RUNNER_TEMP'])
+          release = temp / 'library-release'
+          tag = os.environ['TAG']
+          head = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
+          if subprocess.check_output(['git', 'rev-parse', tag + '^{commit}'], text=True).strip() != head:
+              raise SystemExit('Checkout differs from the tag')
+          meta = tomllib.loads(Path('library.toml').read_text())
+          if tag != 'v' + meta['version']: raise SystemExit('Tag and library.toml version differ')
+          if not (release / 'index.json').is_file():
+              builds = []
+              for name in ('release-a', 'release-b'):
+                  out = temp / name
+                  args = ['fenolite', 'library', 'release', '.', '--version', meta['version'], '--out', str(out)]
+                  planned = subprocess.run([*args, '--dry-run', '--json'], capture_output=True, text=True)
+                  if planned.returncode: raise SystemExit('library release plan failed: ' + planned.stderr)
+                  plan = json.loads(planned.stdout)['result']['plan_id']
+                  subprocess.run([*args, '--confirm', '--plan', plan, '--json'], check=True, stdout=subprocess.DEVNULL)
+                  builds.append({path.name: path.read_bytes() for path in out.iterdir() if path.is_file()})
+              if not builds[0] or builds[0] != builds[1]: raise SystemExit('Release rebuild differs byte for byte')
+              shutil.copytree(temp / 'release-a', release)
+          index = json.loads((release / 'index.json').read_text())
+          if index.get('commit') != head: raise SystemExit('Release index commit differs from the checked-out tag')
+          if 'v' + index['version'] != tag: raise SystemExit('Release index version differs from the tag')
+          PY
           cd "$RUNNER_TEMP/library-release"
           sha256sum --check SHA256SUMS
-          python - <<'PY'
-          import json, os, subprocess
-          from pathlib import Path
-          index = json.loads(Path('index.json').read_text())
-          head = subprocess.check_output(['git', '-C', os.environ['GITHUB_WORKSPACE'], 'rev-parse', 'HEAD'], text=True).strip()
-          if index.get('commit') != head: raise SystemExit('Release index commit differs from the checked-out tag')
-          if 'v' + index['version'] != os.environ['TAG']: raise SystemExit('Release index version differs from the tag')
-          PY
-      - name: Read the latest available benchmark artefact
+      - name: Read the latest successful benchmark artefact
         env:
           GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
         run: |
           python - <<'PY'
           import json, os, shutil, subprocess
           from pathlib import Path
-          runs = json.loads(subprocess.check_output(['gh', 'run', 'list', '--workflow', 'bench.yml', '--limit', '20', '--json', 'databaseId,status'], text=True))
-          prior = next((run for run in runs if run['status'] == 'completed'), None)
+          runs = json.loads(subprocess.check_output(['gh', 'run', 'list', '--workflow', 'bench.yml', '--limit', '20', '--json', 'databaseId,status,conclusion'], text=True))
+          prior = next((run for run in runs if run['status'] == 'completed' and run['conclusion'] == 'success'), None)
+          table = None
           if prior:
               target = Path(os.environ['RUNNER_TEMP']) / 'gallery-benchmark'
               run = subprocess.run(['gh', 'run', 'download', str(prior['databaseId']), '--name', 'library-benchmark', '--dir', str(target)])
               table = next(target.rglob('bench.json'), None) if run.returncode == 0 else None
-              if table:
-                  json.loads(table.read_text())
-                  shutil.copyfile(table, Path(os.environ['RUNNER_TEMP']) / 'library-release/bench.json')
-              else: print('No completed benchmark table is available; the site makes no benchmark claim')
+          if table:
+              json.loads(table.read_text())
+              shutil.copyfile(table, Path(os.environ['RUNNER_TEMP']) / 'library-release/bench.json')
+              print('Benchmark table of bench run', prior['databaseId'])
+          else: print('No successful benchmark table is available; the site makes no benchmark claim')
           PY
       - name: Generate attributed gallery and fresh Fenolite board renders
         run: |
           python - <<'PY'
-          import json, os, shutil, subprocess, tempfile
+          import html, json, os, re, shutil, subprocess, tempfile
           from pathlib import Path
           release = Path(os.environ['RUNNER_TEMP']) / 'library-release'
+
+          def fenolite(row, command):
+              """Plan then confirm one writing command; the reason it failed, or None."""
+              planned = subprocess.run(['fenolite', *command, '--dry-run', '--json'], capture_output=True, text=True)
+              if planned.returncode: return command[0] + ' plan exited ' + str(planned.returncode) + ': ' + planned.stderr.strip()[-400:]
+              data = json.loads(planned.stdout)
+              plan = data['result'].get('plan_id')
+              done = subprocess.run(['fenolite', *command, *(['--confirm', '--plan', plan] if plan else ['--confirm']), '--json'], capture_output=True, text=True)
+              if done.returncode: return command[0] + ' exited ' + str(done.returncode) + ': ' + done.stderr.strip()[-400:]
+              failed = [re.sub(r'^\S+ was not produced: ', '', issue['message']) for issue in json.loads(done.stdout).get('issues', []) if issue.get('code') == 'render.failed']
+              return '; '.join(dict.fromkeys(failed)) or None
           args = ['fenolite', 'library', 'gallery', '.', '--release', str(release), '--out', 'site']
-          planned = subprocess.run([*args, '--dry-run', '--json'], capture_output=True, text=True, check=True)
+          planned = subprocess.run([*args, '--dry-run', '--json'], capture_output=True, text=True)
+          if planned.returncode: raise SystemExit('library gallery plan failed: ' + planned.stderr)
           plan = json.loads(planned.stdout)['result']['plan_id']
-          subprocess.run([*args, '--confirm', '--plan', plan, '--json'], check=True)
+          subprocess.run([*args, '--confirm', '--plan', plan, '--json'], check=True, stdout=subprocess.DEVNULL)
           index = json.loads((release / 'index.json').read_text())
+          missing = []
           for row in index['items']:
               if row['kind'] != 'board' or not row.get('gallery'): continue
               root = Path(row['path'])
               provenance = json.loads((root / 'PROVENANCE.json').read_text())
               if provenance.get('trademarks', {}).get('restricted'): continue
-              destination = (Path('site') / row['gallery']).parent
+              destination = (Path('site') / row['gallery']).parent.resolve()
               # These are newly generated review images, never copied upstream pictures.
               with tempfile.TemporaryDirectory(prefix='gallery-') as temporary:
                   source = Path(temporary) / 'item'
                   shutil.copytree(root, source)
                   build = Path(temporary) / 'build'
-                  subprocess.run(['fenolite', 'build', str(source / 'design.py'), '--out', str(build), '--confirm', '--json'], check=True)
-                  subprocess.run(['fenolite', 'render', str(build), '--out', str(destination), '--svg', '--confirm', '--json'], check=True)
-              for before, after in (('front.svg', 'top.svg'), ('back.svg', 'bottom.svg')):
-                  if not (destination / before).is_file(): raise SystemExit('Render is missing ' + str(destination / before))
-                  shutil.copyfile(destination / before, destination / after)
+                  reason = fenolite(row, ['build', str(source / 'design.py'), '--out', str(build)])
+                  if reason is None: reason = fenolite(row, ['render', str(build), '--out', str(destination), '--svg'])
+              views = (('front.svg', 'top.svg'), ('back.svg', 'bottom.svg'))
+              if reason is None and all((destination / before).is_file() for before, _ in views):
+                  for before, after in views: shutil.copyfile(destination / before, destination / after)
+                  print(row['id'], 'rendered')
+                  continue
+              # A failed render leaves the page without images and says why; it never fails the whole site.
+              reason = reason or 'the render wrote no front.svg/back.svg'
+              page = destination / 'index.html'
+              text, count = re.subn(r'<figure><img src="(top|bottom)\.svg"[^>]*><figcaption>[^<]*</figcaption></figure>', '', page.read_text())
+              if count != 2: raise SystemExit(row['id'] + ': unexpected board page layout, cannot remove its images')
+              note = '<p class="render-missing">No images: Fenolite could not render this board (' + html.escape(reason) + ').</p>'
+              page.write_text(text.replace('</h1>', '</h1>\n' + note, 1))
+              for before, after in views:
+                  for name in (before, after): (destination / name).unlink(missing_ok=True)
+              missing.append((row['id'], reason))
+              print(row['id'], 'NOT rendered:', reason)
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('Boards without images: ' + (', '.join(f'{item} ({why})' for item, why in missing) or 'none') + '\n')
           PY
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site/
+  deploy:
+    needs: site
+    # The github-pages environment accepts deployments from main only; runs on other refs build the site only.
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
       - id: deployment
         uses: actions/deploy-pages@v4
