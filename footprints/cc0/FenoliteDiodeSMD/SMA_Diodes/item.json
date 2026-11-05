@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenoliteDiodeSMD.3dshapes/SMA_Diodes.step",
+    "generated/FenoliteDiodeSMD.pretty/SMA_Diodes.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenoliteDiodeSMD:SMA_Diodes",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "SMA (DO-214AC), 4.3 x 2.6 mm body, cathode pad 1, Diodes Inc. suggested land",
+  "tags": [
+    "DO-214AC",
+    "SMA",
+    "diode",
+    "molded",
+    "polarized",
+    "smd",
+    "two-terminal"
+  ],
+  "title": "SMA (DO-214AC) molded diode package",
+  "version": "1.0.0"
+}

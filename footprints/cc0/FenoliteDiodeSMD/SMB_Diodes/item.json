@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenoliteDiodeSMD.3dshapes/SMB_Diodes.step",
+    "generated/FenoliteDiodeSMD.pretty/SMB_Diodes.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenoliteDiodeSMD:SMB_Diodes",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "SMB (DO-214AA), 4.3 x 3.6 mm body, cathode pad 1, Diodes Inc. suggested land",
+  "tags": [
+    "DO-214AA",
+    "SMB",
+    "diode",
+    "molded",
+    "polarized",
+    "smd",
+    "two-terminal"
+  ],
+  "title": "SMB (DO-214AA) molded diode package",
+  "version": "1.0.0"
+}
