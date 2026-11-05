@@ -3,12 +3,12 @@
     {
       "id": "LibrePCBBaseReview:Resistor",
       "kind": "symbol",
-      "version": "1.0.0"
+      "version": "1.0.1"
     },
     {
       "id": "LibrePCBBaseReview:RESC1608__0603_",
       "kind": "footprint",
-      "version": "1.0.0"
+      "version": "1.0.1"
     }
   ],
   "executes": false,
@@ -22,5 +22,5 @@
   "summary": "Seeded from LibrePCB Base: Resistor 1608 (0603)",
   "tags": [],
   "title": "Resistor_1608__0603_",
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
