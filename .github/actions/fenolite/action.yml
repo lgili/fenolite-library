@@ -105,7 +105,9 @@ runs:
         cat > "$RUNNER_TEMP/kicad-bin/kicad-cli" <<'SH'
         #!/usr/bin/env bash
         set -euo pipefail
-        exec docker run --rm --user "$(id -u):$(id -g)" \
+        # kicad-cli runs as the runner's uid, which has no home in the image (HOME=/): give it a writable one
+        mkdir -p "$RUNNER_TEMP/kicad-home"
+        exec docker run --rm --user "$(id -u):$(id -g)" --env HOME="$RUNNER_TEMP/kicad-home" \
           --volume "$GITHUB_WORKSPACE:$GITHUB_WORKSPACE" --volume "$RUNNER_TEMP:$RUNNER_TEMP" \
           --workdir "$PWD" --entrypoint kicad-cli "$FENOLITE_KICAD_IMAGE" "$@"
         SH
