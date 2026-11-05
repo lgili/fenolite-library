@@ -3,7 +3,10 @@
 # Copyright (c) 2026 Fenolite contributors
 """Prove c0390 items with the pinned Fenolite, in one process (change c0390, design section 4).
 
-    PY prove.py ITEM_FOLDER... --root LIBRARY --sheets DIR --report FILE
+    PY prove.py ITEM_FOLDER... --root LIBRARY --sheets REL_DIR --report FILE
+
+--sheets is relative to --root (the CLI refuses absolute sheet folders); use a gitignored folder such as
+build/c0390-sheets.
 
 Per item: `library check` (read back, rules, no error finding), `library audit --item` (licence, provenance,
 sources, notice), the CI `regenerate` comparison (explicit record -> KiCad bytes) plus the STEP body, and the
@@ -78,21 +81,25 @@ def main() -> None:
     parser.add_argument("--report", type=Path, required=True)
     args = parser.parse_args()
     root = args.root.resolve()
-    sheets = args.sheets.resolve()
+    if args.sheets.is_absolute():
+        parser.error("--sheets must be a folder relative to --root (the CLI refuses absolute sheet folders)")
+    sheets = root / args.sheets
     os.chdir(root)
     rows = []
     failed = 0
     for item in args.items:
         rel = item.resolve().relative_to(root).as_posix()
         row: dict[str, object] = {"item": rel}
-        code, reply = cli(["library", "check", rel, "--sheets", str(sheets)])
+        code, reply = cli(["library", "check", rel, "--sheets", args.sheets.as_posix(), "--confirm"])
         issues = reply.get("issues", []) if isinstance(reply, dict) else []
         row["check"] = {"exit": code, "issues": [f"{i['severity']} {i['code']}" for i in issues]}  # type: ignore[index,union-attr]
         rendered = []
         for entry in reply.get("result", {}).get("items", []):  # type: ignore[union-attr]
-            sheet = sheets / entry["sheet"]["path"]
-            text = sheet.read_text(encoding="utf-8") if sheet.is_file() else ""
-            rendered.append(bool(text) and "<svg" in text)
+            listed = entry.get("sheet") or []
+            for sheet_entry in listed if isinstance(listed, list) else [listed]:
+                sheet = sheets / sheet_entry["path"]
+                text = sheet.read_text(encoding="utf-8") if sheet.is_file() else ""
+                rendered.append(bool(text) and "<svg" in text)
         row["sheets"] = {"count": len(rendered), "rendered": sum(rendered)}
         code_a, reply_a = cli(["library", "audit", ".", "--item", rel])
         row["audit"] = {
