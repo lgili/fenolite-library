@@ -1,0 +1,1292 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0423 Microchip Packaging Specification, DS00000049CH (CH). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.package.v0"
+id = "FenolitePackageBGA:TFBGA169_10x10_P0.75_Microchip-7G"
+version = "1.0.0"
+summary = "TFBGA-169, 0.75 mm pitch, 13 x 13 full array, 10 x 10 mm body"
+category = "Ball grid array"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0423"]
+generator = "explicit"
+kind = "smd"
+family = "grid"
+pitch = "0.75mm"
+body = { length = "10mm", width = "10mm" }
+
+[[pad]]
+number = "A1"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-4.5mm", "-4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "A2"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3.75mm", "-4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "A3"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3mm", "-4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "A4"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-2.25mm", "-4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "A5"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-1.5mm", "-4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "A6"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-0.75mm", "-4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "A7"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0mm", "-4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "A8"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0.75mm", "-4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "A9"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["1.5mm", "-4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "A10"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["2.25mm", "-4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "A11"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3mm", "-4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "A12"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3.75mm", "-4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "A13"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["4.5mm", "-4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "B1"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-4.5mm", "-3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "B2"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3.75mm", "-3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "B3"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3mm", "-3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "B4"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-2.25mm", "-3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "B5"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-1.5mm", "-3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "B6"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-0.75mm", "-3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "B7"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0mm", "-3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "B8"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0.75mm", "-3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "B9"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["1.5mm", "-3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "B10"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["2.25mm", "-3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "B11"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3mm", "-3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "B12"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3.75mm", "-3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "B13"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["4.5mm", "-3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "C1"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-4.5mm", "-3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "C2"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3.75mm", "-3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "C3"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3mm", "-3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "C4"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-2.25mm", "-3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "C5"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-1.5mm", "-3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "C6"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-0.75mm", "-3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "C7"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0mm", "-3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "C8"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0.75mm", "-3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "C9"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["1.5mm", "-3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "C10"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["2.25mm", "-3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "C11"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3mm", "-3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "C12"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3.75mm", "-3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "C13"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["4.5mm", "-3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "D1"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-4.5mm", "-2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "D2"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3.75mm", "-2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "D3"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3mm", "-2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "D4"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-2.25mm", "-2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "D5"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-1.5mm", "-2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "D6"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-0.75mm", "-2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "D7"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0mm", "-2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "D8"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0.75mm", "-2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "D9"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["1.5mm", "-2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "D10"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["2.25mm", "-2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "D11"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3mm", "-2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "D12"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3.75mm", "-2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "D13"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["4.5mm", "-2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "E1"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-4.5mm", "-1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "E2"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3.75mm", "-1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "E3"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3mm", "-1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "E4"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-2.25mm", "-1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "E5"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-1.5mm", "-1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "E6"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-0.75mm", "-1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "E7"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0mm", "-1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "E8"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0.75mm", "-1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "E9"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["1.5mm", "-1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "E10"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["2.25mm", "-1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "E11"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3mm", "-1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "E12"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3.75mm", "-1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "E13"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["4.5mm", "-1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "F1"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-4.5mm", "-0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "F2"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3.75mm", "-0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "F3"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3mm", "-0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "F4"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-2.25mm", "-0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "F5"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-1.5mm", "-0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "F6"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-0.75mm", "-0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "F7"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0mm", "-0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "F8"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0.75mm", "-0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "F9"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["1.5mm", "-0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "F10"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["2.25mm", "-0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "F11"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3mm", "-0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "F12"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3.75mm", "-0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "F13"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["4.5mm", "-0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "G1"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-4.5mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "G2"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3.75mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "G3"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "G4"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-2.25mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "G5"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-1.5mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "G6"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-0.75mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "G7"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "G8"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0.75mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "G9"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["1.5mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "G10"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["2.25mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "G11"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "G12"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3.75mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "G13"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["4.5mm", "0mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "H1"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-4.5mm", "0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "H2"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3.75mm", "0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "H3"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3mm", "0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "H4"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-2.25mm", "0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "H5"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-1.5mm", "0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "H6"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-0.75mm", "0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "H7"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0mm", "0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "H8"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0.75mm", "0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "H9"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["1.5mm", "0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "H10"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["2.25mm", "0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "H11"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3mm", "0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "H12"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3.75mm", "0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "H13"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["4.5mm", "0.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "J1"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-4.5mm", "1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "J2"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3.75mm", "1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "J3"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3mm", "1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "J4"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-2.25mm", "1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "J5"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-1.5mm", "1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "J6"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-0.75mm", "1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "J7"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0mm", "1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "J8"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0.75mm", "1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "J9"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["1.5mm", "1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "J10"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["2.25mm", "1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "J11"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3mm", "1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "J12"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3.75mm", "1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "J13"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["4.5mm", "1.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "K1"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-4.5mm", "2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "K2"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3.75mm", "2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "K3"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3mm", "2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "K4"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-2.25mm", "2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "K5"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-1.5mm", "2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "K6"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-0.75mm", "2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "K7"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0mm", "2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "K8"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0.75mm", "2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "K9"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["1.5mm", "2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "K10"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["2.25mm", "2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "K11"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3mm", "2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "K12"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3.75mm", "2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "K13"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["4.5mm", "2.25mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "L1"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-4.5mm", "3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "L2"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3.75mm", "3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "L3"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3mm", "3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "L4"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-2.25mm", "3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "L5"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-1.5mm", "3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "L6"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-0.75mm", "3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "L7"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0mm", "3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "L8"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0.75mm", "3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "L9"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["1.5mm", "3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "L10"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["2.25mm", "3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "L11"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3mm", "3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "L12"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3.75mm", "3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "L13"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["4.5mm", "3mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "M1"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-4.5mm", "3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "M2"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3.75mm", "3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "M3"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3mm", "3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "M4"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-2.25mm", "3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "M5"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-1.5mm", "3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "M6"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-0.75mm", "3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "M7"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0mm", "3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "M8"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0.75mm", "3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "M9"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["1.5mm", "3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "M10"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["2.25mm", "3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "M11"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3mm", "3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "M12"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3.75mm", "3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "M13"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["4.5mm", "3.75mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "N1"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-4.5mm", "4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "N2"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3.75mm", "4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "N3"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-3mm", "4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "N4"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-2.25mm", "4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "N5"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-1.5mm", "4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "N6"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["-0.75mm", "4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "N7"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0mm", "4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "N8"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["0.75mm", "4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "N9"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["1.5mm", "4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "N10"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["2.25mm", "4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "N11"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3mm", "4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "N12"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["3.75mm", "4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[pad]]
+number = "N13"
+shape = "circle"
+size = ["0.35mm", "0.35mm"]
+at = ["4.5mm", "4.5mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+
+[[graphic]]
+key = "F.Fab:0"
+kind = "line"
+layer = "F.Fab"
+points = [["-4mm", "-5mm"], ["5mm", "-5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:1"
+kind = "line"
+layer = "F.Fab"
+points = [["5mm", "-5mm"], ["5mm", "5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:2"
+kind = "line"
+layer = "F.Fab"
+points = [["5mm", "5mm"], ["-5mm", "5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:3"
+kind = "line"
+layer = "F.Fab"
+points = [["-5mm", "5mm"], ["-5mm", "-4mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:4"
+kind = "line"
+layer = "F.Fab"
+points = [["-5mm", "-4mm"], ["-4mm", "-5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.SilkS:5"
+kind = "line"
+layer = "F.SilkS"
+points = [["-5mm", "-5mm"], ["5mm", "-5mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:6"
+kind = "line"
+layer = "F.SilkS"
+points = [["5mm", "-5mm"], ["5mm", "5mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:7"
+kind = "line"
+layer = "F.SilkS"
+points = [["-5mm", "5mm"], ["5mm", "5mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:8"
+kind = "line"
+layer = "F.SilkS"
+points = [["-5mm", "-5mm"], ["-5mm", "5mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:9"
+kind = "line"
+layer = "F.SilkS"
+points = [["-5.2375mm", "-5.2375mm"], ["-4.2375mm", "-5.2375mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:10"
+kind = "line"
+layer = "F.SilkS"
+points = [["-5.2375mm", "-5.2375mm"], ["-5.2375mm", "-4.2375mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.CrtYd:11"
+kind = "rect"
+layer = "F.CrtYd"
+points = [["-5.5mm", "-5.5mm"], ["5.5mm", "5.5mm"]]
+width = "0.05mm"
+
+[[component_body]]
+kind = "extruded"
+height = "1.1mm"
+standoff = "0.21mm"
+outline = [["-5mm", "-5mm"], ["5mm", "-5mm"], ["5mm", "5mm"], ["-5mm", "5mm"]]
+name = "body"
+z_min = "0.21mm"
+z_max = "1.1mm"

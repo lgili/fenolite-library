@@ -1,0 +1,146 @@
+# SPDX-License-Identifier: CC0-1.0
+# Ball grid arrays, batch 10 of change c0390. Dimensions and recommended land patterns: Microchip Packaging
+# Specification DS00000049CH (D-0423), text tables in millimetres (page and drawing in `used`). Only
+# drawings whose ball map follows from the table are taken: full arrays (N = rows x columns, from the
+# overall ball pitch D1/E1 and the pitch e) and one centred block (4G, checked on its bottom view). The land
+# is the manufacturer's contact pad diameter. Body: length D, width E (all square here).
+schema = "fenolite.c0390-family.v0"
+kind = "footprint"
+namespace = "FenolitePackageBGA"
+category = "Ball grid array"
+date = "2026-11-05"
+tags = ["bga", "grid", "smd"]
+
+[record]
+family = "grid"
+
+[record.generate]
+lands = 1
+drawing = 1
+
+[[row]]
+name = "LFBGA169_11x11_P0.8_Microchip-6JX"
+title = "LFBGA-169, 11 x 11 mm, 13 x 13 balls at 0.8 mm (Microchip 6JX)"
+summary = "LFBGA-169, 0.8 mm pitch, 13 x 13 full array, 11 x 11 mm body"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF pages 975-976, drawings C04-439A and C04-2439A (mm): N 169, e 0.80 BSC, A 1.33/1.445/1.56, A1 0.40/0.45/0.50, D 11.00 BSC, D1 9.60 BSC, E 11.00 BSC, E1 9.60 BSC, b 0.40/0.45/0.50; land E 0.80, C1 9.60, C2 9.60, X1 0.50, G 0.30"
+tags = ["lfbga", "bga-169"]
+record.rows = 13
+record.columns = 13
+record.pitch = "0.8mm"
+record.body = { length = "11mm", width = "11mm", height = { min = "1.33mm", nom = "1.445mm", max = "1.56mm" }, standoff = { min = "0.40mm", nom = "0.45mm", max = "0.50mm" } }
+record.ball = { diameter = { min = "0.40mm", nom = "0.45mm", max = "0.50mm" } }
+record.land = { source = "D-0423 recommended land pattern C04-2439A", pad_diameter = "0.50mm" }
+
+[[row]]
+name = "LFBGA196_12x12_P0.8_Microchip-RG"
+title = "LFBGA-196, 12 x 12 mm, 14 x 14 balls at 0.8 mm (Microchip RG)"
+summary = "LFBGA-196, 0.8 mm pitch, 14 x 14 full array, 12 x 12 mm body"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF pages 981-982, drawings C04-237A and C04-2237A (mm): N 196, e 0.80 BSC, A 1.52/1.62/1.70, A1 0.31/0.36/0.41, E 12.00 BSC, E1 10.40 BSC, D 12.00 BSC, D1 10.40 BSC, b 0.41/0.46/0.51; land E1/E2 0.80, C1 10.40, C2 10.40, X 0.40"
+tags = ["lfbga", "bga-196"]
+record.rows = 14
+record.columns = 14
+record.pitch = "0.8mm"
+record.body = { length = "12mm", width = "12mm", height = { min = "1.52mm", nom = "1.62mm", max = "1.70mm" }, standoff = { min = "0.31mm", nom = "0.36mm", max = "0.41mm" } }
+record.ball = { diameter = { min = "0.41mm", nom = "0.46mm", max = "0.51mm" } }
+record.land = { source = "D-0423 recommended land pattern C04-2237A", pad_diameter = "0.40mm" }
+
+[[row]]
+name = "TFBGA100_7x7_P0.65_Microchip-GJX"
+title = "TFBGA-100, 7 x 7 mm, 10 x 10 balls at 0.65 mm (Microchip GJX)"
+summary = "TFBGA-100, 0.65 mm pitch, 10 x 10 full array, 7 x 7 mm body, 0.35 mm lands"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF pages 996-997, drawings C04-328A and C04-2328A (mm): N 100, e 0.65 BSC, A 1.06 max, A1 0.18/0.26, A2 0.45/0.50/0.55, D 7.00 BSC, D1 5.85 BSC, E 7.00 BSC, E1 5.85 BSC, b 0.30/0.35/0.40; land E 0.65, X 0.35, C1 5.85, C2 5.85"
+tags = ["tfbga", "bga-100"]
+record.rows = 10
+record.columns = 10
+record.pitch = "0.65mm"
+record.body = { length = "7mm", width = "7mm", height = "1.06mm max", standoff = "0.18mm min" }
+record.ball = { diameter = { min = "0.30mm", nom = "0.35mm", max = "0.40mm" } }
+record.land = { source = "D-0423 recommended land pattern C04-2328A", pad_diameter = "0.35mm" }
+
+[[row]]
+name = "TFBGA100_7x7_P0.65_Microchip-GJ"
+title = "TFBGA-100, 7 x 7 mm, 10 x 10 balls at 0.65 mm (Microchip GJ)"
+summary = "TFBGA-100, 0.65 mm pitch, 10 x 10 full array, 7 x 7 mm body, 0.45 mm lands"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF pages 999-1000, drawings C04-320A and C04-2320A (mm): N 100, e 0.65 BSC, A 1.06 max, A1 0.18/0.26, A2 0.45/0.50/0.55, A3 0.30 REF, D 7.00 BSC, D1 5.85 BSC, E 7.00 BSC, E1 5.85 BSC, b 0.30/0.35/0.40; land E 0.65, C1 5.85, C2 5.85, X1 0.45, G 0.20"
+tags = ["tfbga", "bga-100"]
+record.rows = 10
+record.columns = 10
+record.pitch = "0.65mm"
+record.body = { length = "7mm", width = "7mm", height = "1.06mm max", standoff = "0.18mm min" }
+record.ball = { diameter = { min = "0.30mm", nom = "0.35mm", max = "0.40mm" } }
+record.land = { source = "D-0423 recommended land pattern C04-2320A", pad_diameter = "0.45mm" }
+
+[[row]]
+name = "TFBGA121_8x8_P0.65_Microchip-3XX"
+title = "TFBGA-121, 8 x 8 mm, 11 x 11 balls at 0.65 mm (Microchip 3XX, TE)"
+summary = "TFBGA-121, 0.65 mm pitch, 11 x 11 full array, 8 x 8 mm body"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF pages 1002-1003, drawings C04-212B-3XX and C04-2212B-3XX (mm): N 121, eD/eE 0.65 BSC, A 1.08 max, A1 0.21/0.32, A2 0.40/0.45/0.50, D 8.00 BSC, D1 6.50 BSC, E 8.00 BSC, E1 6.50 BSC, b .035 (read 0.35)/0.40/0.45; land E 0.65, C1 6.50, C2 6.50, B 0.35. The TE drawing (pages 1005-1006) gives the same values"
+tags = ["tfbga", "bga-121"]
+record.rows = 11
+record.columns = 11
+record.pitch = "0.65mm"
+record.body = { length = "8mm", width = "8mm", height = "1.08mm max", standoff = "0.21mm min" }
+record.ball = { diameter = { min = "0.35mm", nom = "0.40mm", max = "0.45mm" } }
+record.land = { source = "D-0423 recommended land pattern C04-2212B-3XX", pad_diameter = "0.35mm" }
+
+[[row]]
+name = "TFBGA169_10x10_P0.75_Microchip-7G"
+title = "TFBGA-169, 10 x 10 mm, 13 x 13 balls at 0.75 mm (Microchip 7G)"
+summary = "TFBGA-169, 0.75 mm pitch, 13 x 13 full array, 10 x 10 mm body"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF pages 1026-1027, drawings C04-377-J and C04-2377-J (mm): N 169, e 0.75 BSC, A 1.10 max, A1 0.21/0.32, D 10.00, E 10.00, b 0.35/0.40/0.45; land E 0.75, C1 9.00, C2 9.00, b 0.35. The NJ drawing (pages 1029-1030) gives the same values"
+tags = ["tfbga", "bga-169"]
+record.rows = 13
+record.columns = 13
+record.pitch = "0.75mm"
+record.body = { length = "10mm", width = "10mm", height = "1.10mm max", standoff = "0.21mm min" }
+record.ball = { diameter = { min = "0.35mm", nom = "0.40mm", max = "0.45mm" } }
+record.land = { source = "D-0423 recommended land pattern C04-2377-J", pad_diameter = "0.35mm" }
+
+[[row]]
+name = "UFBGA25_3x3_P0.5_Microchip-FE"
+title = "UFBGA-25, 3 x 3 mm, 5 x 5 balls at 0.5 mm (Microchip FE)"
+summary = "UFBGA-25, 0.5 mm pitch, 5 x 5 full array, 3 x 3 mm body"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF pages 1035-1036, drawings C04-411A and C04-2411A (mm): N 25, e 0.50 BSC, A 0.51/0.61/0.71, A1 0.18/0.23/0.28, A2 0.22/0.25/0.28, D 3.00 BSC, D1 2.00 BSC, E 3.00 BSC, E1 2.00 BSC, b 0.25/0.30/0.35; land E 0.50, C1 2.00, C2 2.00, X1 0.25, G 0.25"
+tags = ["ufbga", "bga-25"]
+record.rows = 5
+record.columns = 5
+record.pitch = "0.5mm"
+record.body = { length = "3mm", width = "3mm", height = { min = "0.51mm", nom = "0.61mm", max = "0.71mm" }, standoff = { min = "0.18mm", nom = "0.23mm", max = "0.28mm" } }
+record.ball = { diameter = { min = "0.25mm", nom = "0.30mm", max = "0.35mm" } }
+record.land = { source = "D-0423 recommended land pattern C04-2411A", pad_diameter = "0.25mm" }
+
+[[row]]
+name = "VFBGA64_7x7_P0.65_Microchip-4G"
+title = "VFBGA-64, 7 x 7 mm, 10 x 10 grid less the centre 6 x 6 at 0.65 mm (Microchip 4G, GA)"
+summary = "VFBGA-64, 0.65 mm pitch, two outer rings of a 10 x 10 grid, 7 x 7 mm body"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF pages 1041-1043, drawings C04-370A and C04-2370A (mm): N 64, e 0.65 BSC, A 1.00 max, A1 0.16/0.25, A3 0.45 REF, E 7.00 BSC, E1 5.85 BSC, D 7.00 BSC, D1 5.85 BSC, b 0.25/0.30/0.35; bottom view: rows A-K by columns 1-10, two outer rings, the centre 6 x 6 empty; land E1/E2 0.65, C1 5.85, C2 5.85, X 0.25. The GA drawing (pages 1044-1046) gives the same values"
+tags = ["vfbga", "bga-64"]
+record.rows = 10
+record.columns = 10
+record.pitch = "0.65mm"
+record.depopulated = { center = "6x6" }
+record.body = { length = "7mm", width = "7mm", height = "1.00mm max", standoff = "0.16mm..0.25mm" }
+record.ball = { diameter = { min = "0.25mm", nom = "0.30mm", max = "0.35mm" } }
+record.land = { source = "D-0423 recommended land pattern C04-2370A", pad_diameter = "0.25mm" }
+
+[[row]]
+name = "WFBGA169_11x11_P0.8_Microchip-TN"
+title = "WFBGA-169, 11 x 11 mm, 13 x 13 balls at 0.8 mm (Microchip TN)"
+summary = "WFBGA-169, 0.8 mm pitch, 13 x 13 full array, 11 x 11 mm body, 0.8 mm high"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF pages 1067-1068, drawings C04-336A and C04-2336A (mm): N 169, e 0.80 BSC, A 0.80 max, A1 0.12/0.17, A2 0.35/0.40/0.45, A3 0.26 REF, D 11.00 BSC, D1 9.60 BSC, E 11.00 BSC, E1 9.60 BSC, b 0.20/0.25/0.30; land E 0.80, C1 9.60, C2 9.60, X1 0.33, G 0.25"
+tags = ["wfbga", "bga-169"]
+record.rows = 13
+record.columns = 13
+record.pitch = "0.8mm"
+record.body = { length = "11mm", width = "11mm", height = "0.80mm max", standoff = "0.12mm min" }
+record.ball = { diameter = { min = "0.20mm", nom = "0.25mm", max = "0.30mm" } }
+record.land = { source = "D-0423 recommended land pattern C04-2336A", pad_diameter = "0.33mm" }

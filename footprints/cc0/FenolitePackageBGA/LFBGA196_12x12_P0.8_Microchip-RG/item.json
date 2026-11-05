@@ -1,0 +1,23 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageBGA.3dshapes/LFBGA196_12x12_P0.8_Microchip-RG.step",
+    "generated/FenolitePackageBGA.pretty/LFBGA196_12x12_P0.8_Microchip-RG.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageBGA:LFBGA196_12x12_P0.8_Microchip-RG",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "LFBGA-196, 0.8 mm pitch, 14 x 14 full array, 12 x 12 mm body",
+  "tags": [
+    "bga",
+    "bga-196",
+    "grid",
+    "lfbga",
+    "smd"
+  ],
+  "title": "LFBGA-196, 12 x 12 mm, 14 x 14 balls at 0.8 mm (Microchip RG)",
+  "version": "1.0.0"
+}
