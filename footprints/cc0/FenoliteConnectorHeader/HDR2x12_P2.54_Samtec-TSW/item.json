@@ -1,0 +1,25 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenoliteConnectorHeader.3dshapes/HDR2x12_P2.54_Samtec-TSW.step",
+    "generated/FenoliteConnectorHeader.pretty/HDR2x12_P2.54_Samtec-TSW.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenoliteConnectorHeader:HDR2x12_P2.54_Samtec-TSW",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "2 x 12 pin header, 2.54 mm pitch, vertical, through-hole",
+  "tags": [
+    "2x12",
+    "connector",
+    "dual-row",
+    "header",
+    "pin-header",
+    "tht",
+    "tsw"
+  ],
+  "title": "Pin header 2 x 12, 2.54 mm pitch, vertical (Samtec TSW)",
+  "version": "1.0.0"
+}
