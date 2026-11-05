@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+- `bench.yml` runs the recorded `verify-source` step read-only, as the `proof` job of `check.yml` does since
+  1.0.0; its first run (41954400114) failed ecc83 (two project files, FEN-2001) and the Coldfire kit.
+
 ## [1.0.0] - 2026-11-05
 
 First release (Fenolite changes c0266, c0273, c0279): the authored `FenoliteDevices` device, symbol and

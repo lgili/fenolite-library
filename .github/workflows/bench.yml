@@ -72,8 +72,18 @@ jobs:
                       with (reports / f'{index}-replay.json').open('w') as out:
                           replay = subprocess.run(['fenolite', 'library', 'replay', str(root), '--with-current', '--json'], stdout=out)
                       row['replay_exit'] = replay.returncode
+                      # The recorded verify-source step, read-only (as the proof job of check.yml): out/ is the
+                      # item, upstream/ the fetched commit, write options dropped.
+                      steps = [s['argv'] for s in provenance.get('conversion', {}).get('steps', []) if s['argv'][:1] == ['verify-source']]
+                      recorded = steps[-1][2:] if steps else ['--against', 'upstream/' + upstream['path']]
+                      argv, skip = [], False
+                      for arg in recorded:
+                          if skip: skip = False
+                          elif arg in ('--provenance', '--timestamp', '--plan', '--accept', '--reason'): skip = True
+                          elif arg not in ('--record', '--confirm', '--no-backup', '--json'):
+                              argv.append(str(root / arg[4:]) if arg.startswith('out/') else str(source / arg[9:]) if arg.startswith('upstream/') else arg)
                       with (reports / f'{index}-verify.json').open('w') as out:
-                          proof = subprocess.run(['fenolite', 'verify-source', str(root / 'design.py'), '--against', str(source / upstream['path']), '--provenance', str(root / 'PROVENANCE.json'), '--json'], stdout=out)
+                          proof = subprocess.run(['fenolite', 'verify-source', str(root / 'design.py'), *argv, '--provenance', str(root / 'PROVENANCE.json'), '--json'], stdout=out)
                       row['proof_exit'] = proof.returncode
                       reply = json.loads((reports / f'{index}-verify.json').read_text())
                       row.update({key: reply.get('result', {}).get(key, []) for key in ('levels', 'differences')})
