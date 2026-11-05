@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: CC0-1.0
+# Transistor outlines, batch 7 of change c0390: TO-220 through-hole, mounted upright.
+# Dimensions: Microchip Packaging Specification DS00000049CH (D-0423), printed in inches (page and drawing
+# in `used`), converted at 25.4 mm/inch. No land pattern is given for these drawings, so the c0260 land
+# table calculates the drill and pad from the upper lead width and thickness. Axes: leads along x, the
+# molded front face toward +y; body.offset is the body centre's distance from the lead row, A/2 - A2 (the
+# tab toward -y). Drawings left out, with the reason: openspec/changes/c0390-library-growth/left-out-m2.md.
+schema = "fenolite.c0390-family.v0"
+kind = "footprint"
+namespace = "FenolitePackageTO"
+category = "Transistor outline"
+date = "2026-11-05"
+tags = ["to"]
+
+[record]
+family = "to"
+
+[record.generate]
+lands = 1
+drawing = 1
+
+[[row]]
+name = "TO-220-3_P2.54_Microchip-AB_Vertical"
+title = "TO-220, 3 leads, 2.54 mm pitch, upright (Microchip AB)"
+summary = "TO-220-3, 2.54 mm pitch, through-hole, upright"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 116, drawing C04-034B (inches, read from the page image): N 3, e .100 BSC, A .140/.190, A1 .020/.055, A2 .080/.115, E .357/.420, D .560/.650, D1 .330/.355, H1 .230/.270, L .500/.580, c .012/.024, b .015/.027/.040; offset A/2 - A2 = .0825 - .0975 = -.015 in"
+tags = ["to-220", "to-220-3", "tht", "vertical"]
+record.mount = "tht"
+record.leads = 3
+record.pitch = "2.54mm"
+record.body = { length = "9.0678mm..10.668mm", width = "3.556mm..4.826mm", height = "14.224mm..16.51mm", offset = "-0.381mm" }
+record.lead = { width = { min = "0.381mm", nom = "0.6858mm", max = "1.016mm" }, thickness = "0.3048mm..0.6096mm", length = "12.7mm..14.732mm" }
