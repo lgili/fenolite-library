@@ -1,0 +1,23 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageDIP.3dshapes/DIP20_W7.62_Microchip-P.step",
+    "generated/FenolitePackageDIP.pretty/DIP20_W7.62_Microchip-P.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageDIP:DIP20_W7.62_Microchip-P",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "PDIP-20, 2.54 mm pitch, 300 mil (7.62 mm) row spacing, through-hole",
+  "tags": [
+    "dip",
+    "dual-row",
+    "pdip",
+    "pdip-20",
+    "tht"
+  ],
+  "title": "PDIP-20, 300 mil rows, 2.54 mm pitch (Microchip P)",
+  "version": "1.0.0"
+}

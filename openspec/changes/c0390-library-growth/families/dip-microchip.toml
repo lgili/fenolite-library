@@ -1,0 +1,136 @@
+# SPDX-License-Identifier: CC0-1.0
+# Plastic dual in-line packages (PDIP, SPDIP), batch 8 of change c0390. Dimensions: Microchip Packaging
+# Specification DS00000049CH (D-0423); the tables are printed in inches as images and were read from the
+# page (page and drawing number in `used`), converted at 25.4 mm/inch. Row spacing: the 300 or 600 mil of
+# the drawing title (the tables list shoulder width E and overall eB only). No land pattern is given for
+# these drawings, so drill and pad are the c0260 land table's, calculated from the lower lead width b.
+schema = "fenolite.c0390-family.v0"
+kind = "footprint"
+namespace = "FenolitePackageDIP"
+category = "Dual in-line package"
+date = "2026-11-05"
+tags = ["dip", "dual-row", "tht"]
+
+[record]
+family = "dip"
+
+[record.generate]
+lands = 1
+drawing = 1
+
+[[row]]
+name = "DIP8_W7.62_Microchip-P"
+title = "PDIP-8, 300 mil rows, 2.54 mm pitch (Microchip P)"
+summary = "PDIP-8, 2.54 mm pitch, 300 mil (7.62 mm) row spacing, through-hole"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 127, drawing C04-018D (inches, read from the page image): N 8, e .100 BSC, A .210 max, E1 .240/.250/.280, D .348/.365/.400, L .115/.130/.150, c .008/.010/.015, b .014/.018/.022; row spacing 300 mil from the drawing title"
+tags = ["pdip", "pdip-8"]
+record.pins = 8
+record.pitch = "2.54mm"
+record.row_spacing = "7.62mm"
+record.body = { length = { min = "8.8392mm", nom = "9.271mm", max = "10.16mm" }, width = { min = "6.096mm", nom = "6.35mm", max = "7.112mm" }, height = "5.334mm max" }
+record.lead = { width = "0.3556mm..0.5588mm", thickness = { min = "0.2032mm", nom = "0.254mm", max = "0.381mm" }, length = { min = "2.921mm", nom = "3.302mm", max = "3.81mm" } }
+
+[[row]]
+name = "DIP14_W7.62_Microchip-P"
+title = "PDIP-14, 300 mil rows, 2.54 mm pitch (Microchip P)"
+summary = "PDIP-14, 2.54 mm pitch, 300 mil (7.62 mm) row spacing, through-hole"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 130, drawing C04-005B (inches, read from the page image): N 14, e .100 BSC, A .210 max, E1 .240/.250/.280, D .735/.750/.775, L .115/.130/.150, c .008/.010/.015, b .014/.018/.022; row spacing 300 mil from the drawing title"
+tags = ["pdip", "pdip-14"]
+record.pins = 14
+record.pitch = "2.54mm"
+record.row_spacing = "7.62mm"
+record.body = { length = { min = "18.669mm", nom = "19.05mm", max = "19.685mm" }, width = { min = "6.096mm", nom = "6.35mm", max = "7.112mm" }, height = "5.334mm max" }
+record.lead = { width = "0.3556mm..0.5588mm", thickness = { min = "0.2032mm", nom = "0.254mm", max = "0.381mm" }, length = { min = "2.921mm", nom = "3.302mm", max = "3.81mm" } }
+
+[[row]]
+name = "DIP16_W7.62_Microchip-P"
+title = "PDIP-16, 300 mil rows, 2.54 mm pitch (Microchip P)"
+summary = "PDIP-16, 2.54 mm pitch, 300 mil (7.62 mm) row spacing, through-hole"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 132, drawing C04-017B (inches, read from the page image): N 16, e .100 BSC, A .210 max, E1 .240/.250/.280, D .735/.755/.775, L .115/.130/.150, c .008/.010/.015, b .014/.018/.022; row spacing 300 mil from the drawing title"
+tags = ["pdip", "pdip-16"]
+record.pins = 16
+record.pitch = "2.54mm"
+record.row_spacing = "7.62mm"
+record.body = { length = "18.669mm..19.685mm", width = { min = "6.096mm", nom = "6.35mm", max = "7.112mm" }, height = "5.334mm max" }
+record.lead = { width = "0.3556mm..0.5588mm", thickness = { min = "0.2032mm", nom = "0.254mm", max = "0.381mm" }, length = { min = "2.921mm", nom = "3.302mm", max = "3.81mm" } }
+
+[[row]]
+name = "DIP18_W7.62_Microchip-P"
+title = "PDIP-18, 300 mil rows, 2.54 mm pitch (Microchip P)"
+summary = "PDIP-18, 2.54 mm pitch, 300 mil (7.62 mm) row spacing, through-hole"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 134, drawing C04-007B (inches, read from the page image): N 18, e .100 BSC, A .210 max, E1 .240/.250/.280, D .880/.900/.920, L .115/.130/.150, c .008/.010/.014, b .014/.018/.022; row spacing 300 mil from the drawing title"
+tags = ["pdip", "pdip-18"]
+record.pins = 18
+record.pitch = "2.54mm"
+record.row_spacing = "7.62mm"
+record.body = { length = "22.352mm..23.368mm", width = { min = "6.096mm", nom = "6.35mm", max = "7.112mm" }, height = "5.334mm max" }
+record.lead = { width = "0.3556mm..0.5588mm", thickness = { min = "0.2032mm", nom = "0.254mm", max = "0.3556mm" }, length = { min = "2.921mm", nom = "3.302mm", max = "3.81mm" } }
+
+[[row]]
+name = "DIP20_W7.62_Microchip-P"
+title = "PDIP-20, 300 mil rows, 2.54 mm pitch (Microchip P)"
+summary = "PDIP-20, 2.54 mm pitch, 300 mil (7.62 mm) row spacing, through-hole"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 135, drawing C04-019B (inches, read from the page image): N 20, e .100 BSC, A .210 max, E1 .240/.250/.280, D .980/1.030/1.060, L .115/.130/.150, c .008/.010/.015, b .014/.018/.022; row spacing 300 mil from the drawing title"
+tags = ["pdip", "pdip-20"]
+record.pins = 20
+record.pitch = "2.54mm"
+record.row_spacing = "7.62mm"
+record.body = { length = { min = "24.892mm", nom = "26.162mm", max = "26.924mm" }, width = { min = "6.096mm", nom = "6.35mm", max = "7.112mm" }, height = "5.334mm max" }
+record.lead = { width = "0.3556mm..0.5588mm", thickness = { min = "0.2032mm", nom = "0.254mm", max = "0.381mm" }, length = { min = "2.921mm", nom = "3.302mm", max = "3.81mm" } }
+
+[[row]]
+name = "DIP24_W15.24_Microchip-P"
+title = "PDIP-24, 600 mil rows, 2.54 mm pitch (Microchip P)"
+summary = "PDIP-24, 2.54 mm pitch, 600 mil (15.24 mm) row spacing, through-hole"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 136, drawing C04-081B (inches, read from the page image): N 24, e .100 BSC, A .250 max, E1 .485/-/.580, D 1.150/-/1.290, L .115/-/.200, c .008/-/.015, b .014/-/.022; row spacing 600 mil from the drawing title"
+tags = ["pdip", "pdip-24"]
+record.pins = 24
+record.pitch = "2.54mm"
+record.row_spacing = "15.24mm"
+record.body = { length = "29.21mm..32.766mm", width = "12.319mm..14.732mm", height = "6.35mm max" }
+record.lead = { width = "0.3556mm..0.5588mm", thickness = "0.2032mm..0.381mm", length = "2.921mm..5.08mm" }
+
+[[row]]
+name = "DIP28_W15.24_Microchip-P"
+title = "PDIP-28, 600 mil rows, 2.54 mm pitch (Microchip P)"
+summary = "PDIP-28, 2.54 mm pitch, 600 mil (15.24 mm) row spacing, through-hole"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 138, drawing C04-079B (inches, read from the page image): N 28, e .100 BSC, A .250 max, E1 .485/-/.580, D 1.380/-/1.565, L .115/-/.200, c .008/-/.015, b .014/-/.022; row spacing 600 mil from the drawing title"
+tags = ["pdip", "pdip-28"]
+record.pins = 28
+record.pitch = "2.54mm"
+record.row_spacing = "15.24mm"
+record.body = { length = "35.052mm..39.751mm", width = "12.319mm..14.732mm", height = "6.35mm max" }
+record.lead = { width = "0.3556mm..0.5588mm", thickness = "0.2032mm..0.381mm", length = "2.921mm..5.08mm" }
+
+[[row]]
+name = "DIP40_W15.24_Microchip-P"
+title = "PDIP-40, 600 mil rows, 2.54 mm pitch (Microchip P)"
+summary = "PDIP-40, 2.54 mm pitch, 600 mil (15.24 mm) row spacing, through-hole"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 140, drawing C04-016B (inches, read from the page image): N 40, e .100 BSC, A .250 max, E1 .485/-/.580, D 1.980/-/2.095, L .115/-/.200, c .008/-/.015, b .014/-/.023; row spacing 600 mil from the drawing title"
+tags = ["pdip", "pdip-40"]
+record.pins = 40
+record.pitch = "2.54mm"
+record.row_spacing = "15.24mm"
+record.body = { length = "50.292mm..53.213mm", width = "12.319mm..14.732mm", height = "6.35mm max" }
+record.lead = { width = "0.3556mm..0.5842mm", thickness = "0.2032mm..0.381mm", length = "2.921mm..5.08mm" }
+
+[[row]]
+name = "DIP28_W7.62_Microchip-SP"
+title = "SPDIP-28, 300 mil rows, 2.54 mm pitch (Microchip SP)"
+summary = "SPDIP-28, 2.54 mm pitch, 300 mil (7.62 mm) row spacing, through-hole"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, PDF page 147, drawing C04-070B (inches, read from the page image): N 28, e .100 BSC, A .200 max, E1 .240/.285/.295, D 1.345/1.365/1.400, L .110/.130/.150, c .008/.010/.015, b .014/.018/.022; row spacing 300 mil from the drawing title"
+tags = ["spdip", "spdip-28"]
+record.pins = 28
+record.pitch = "2.54mm"
+record.row_spacing = "7.62mm"
+record.body = { length = { min = "34.163mm", nom = "34.671mm", max = "35.56mm" }, width = { min = "6.096mm", nom = "7.239mm", max = "7.493mm" }, height = "5.08mm max" }
+record.lead = { width = "0.3556mm..0.5588mm", thickness = { min = "0.2032mm", nom = "0.254mm", max = "0.381mm" }, length = "2.794mm..3.81mm" }
