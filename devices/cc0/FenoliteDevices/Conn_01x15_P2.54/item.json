@@ -1,0 +1,32 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteSymbols:Conn_01x15",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenoliteConnectorHeader:HDR1x15_P2.54_Samtec-TSW",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:Conn_01x15_P2.54",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic 1 x 15 pin header, 2.54 mm pitch, through-hole",
+  "tags": [
+    "2.54mm",
+    "connector",
+    "device",
+    "generic",
+    "header"
+  ],
+  "title": "Pin header 1x15, 2.54 mm",
+  "version": "1.0.0"
+}

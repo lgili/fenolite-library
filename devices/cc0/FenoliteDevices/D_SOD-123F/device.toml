@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Generic device authored for fenolite-library (change c0390): FenoliteSymbols:Diode with FenoliteDiodeSMD:SOD123F_Diodes. No manufacturer or orderable part is claimed; sources are those of the symbol and footprint.
+schema = "fenolite.device.v1"
+id = "FenoliteDevices:D_SOD-123F"
+version = "1.0.0"
+summary = "Generic diode in SOD-123F, pad 1 cathode"
+category = "Generic device"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422", "D-0394"]
+symbol = "FenoliteSymbols:Diode"
+footprint = "FenoliteDiodeSMD:SOD123F_Diodes"
+ref_prefix = "D"
+value = "D_SOD-123F"
+ends = ["A", "K"]
+
+[pins]
+K = "1"
+A = "2"

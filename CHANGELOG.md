@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-11-06
+
+The basic components with symbol and footprint joined (c0390 batch 12).
+
+- Change c0390, milestone M3 batch 12: 182 generic devices (`FenoliteDevices`), each joining a
+  `FenoliteSymbols` symbol with a library footprint and mapping its pins to the pads, so a design can place a
+  resistor, capacitor, inductor, ferrite bead, fuse, LED, diode (plain, Schottky, Zener, bidirectional TVS),
+  NPN/PNP transistor, N/P MOSFET, linear regulator, crystal or 1- and 2-row pin header in one step. No
+  manufacturer, part number or rating is claimed; the sources are those of the symbol and footprint.
+- Batch 12 footprints: SOT-23-3 (Microchip TT, D-0423, with its recommended land) and two four-pad SMD
+  crystals, 3225 and 5032 (Abracon ABM8 and ABM3B outlines, D-0426 and D-0427; land calculated from the
+  terminals because the recommended lands use another pad pitch). Left out, with reasons: `left-out-m2.md`.
+- `expand.py` builds device tables (`kind = "device"`, depends on the symbol and footprint) and
+  `prove.py` skips regeneration for device records, which generate no file.
+
 ## [1.1.0] - 2026-11-05
 
 The c0390 library growth (M1, M2 and the first M3 batch) and the Fenolite pin `5ab9d645`.

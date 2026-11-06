@@ -1,0 +1,51 @@
+{
+  "authors": [
+    "Fenolite contributors"
+  ],
+  "copyright": [
+    "Copyright (c) 2026 Fenolite contributors"
+  ],
+  "datasheets": [
+    {
+      "date": "2026-11-04",
+      "id": "D-0422",
+      "revision": "c0390 batch 5",
+      "title": "Original generic schematic symbols authored for fenolite-library (change c0390)",
+      "url": "https://github.com/lgili/fenolite-library/tree/main/openspec/changes/c0390-library-growth/families",
+      "used": "symbol pins 1, 2 on pads 1, 2"
+    },
+    {
+      "date": "2012-08-16",
+      "id": "D-0392",
+      "revision": "16-Aug-12",
+      "title": "Vishay Dale ILBB-0603 multilayer ferrite bead, document 34024",
+      "url": "https://www.vishay.com/docs/34024/ilbb0603.pdf",
+      "used": "symbol pins 1, 2 on pads 1, 2"
+    }
+  ],
+  "evidence": "INFERRED",
+  "featured": null,
+  "generation": {
+    "change": "c0390",
+    "table": "openspec/changes/c0390-library-growth/families/devices-basic.toml",
+    "tool": "fenolite"
+  },
+  "id": "FenoliteDevices:FB_0603",
+  "kind": "device",
+  "licence_text_sha256": "0dd25be0803b1e2764b0323560013cdd5ad9ca92ba4780bd7db0cbe6ce821dd8",
+  "modification_notice": "2026-11-05: original item authored for fenolite-library (change c0390) with a generic device record joining a library symbol and footprint; no upstream design material.",
+  "origin": "authored",
+  "schema": "fenolite.provenance.v0",
+  "sources": [
+    "D-0422",
+    "D-0392"
+  ],
+  "spdx": "CC0-1.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": null,
+  "version": "1.0.0"
+}

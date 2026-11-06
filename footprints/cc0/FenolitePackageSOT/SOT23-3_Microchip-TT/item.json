@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageSOT.3dshapes/SOT23-3_Microchip-TT.step",
+    "generated/FenolitePackageSOT.pretty/SOT23-3_Microchip-TT.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageSOT:SOT23-3_Microchip-TT",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "SOT-23-3, 3 leads, 0.95 mm pitch, 2.9 x 1.3 mm body, Microchip recommended land",
+  "tags": [
+    "SOT-23",
+    "SOT-23-3",
+    "TO-236",
+    "gullwing",
+    "smd",
+    "sot"
+  ],
+  "title": "SOT-23 package, 3 leads (Microchip TT)",
+  "version": "1.0.0"
+}

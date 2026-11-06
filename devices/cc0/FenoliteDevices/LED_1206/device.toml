@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Generic device authored for fenolite-library (change c0390): FenoliteSymbols:LED with FenoliteResistorSMD:CHIP1206_B3.1x1.6. No manufacturer or orderable part is claimed; sources are those of the symbol and footprint.
+schema = "fenolite.device.v1"
+id = "FenoliteDevices:LED_1206"
+version = "1.0.0"
+summary = "Generic 1206 chip LED on the 1206 chip-resistor land, pad 1 cathode (the land carries no polarity mark)"
+category = "Generic device"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422", "D-0390"]
+symbol = "FenoliteSymbols:LED"
+footprint = "FenoliteResistorSMD:CHIP1206_B3.1x1.6"
+ref_prefix = "D"
+value = "LED_1206"
+ends = ["A", "K"]
+
+[pins]
+K = "1"
+A = "2"

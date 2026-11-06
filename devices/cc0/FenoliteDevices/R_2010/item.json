@@ -1,0 +1,31 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteSymbols:Resistor",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenoliteResistorSMD:CHIP2010_B5x2.5",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:R_2010",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic 2010 chip resistor",
+  "tags": [
+    "2010",
+    "device",
+    "generic",
+    "resistor"
+  ],
+  "title": "Resistor, 2010 chip",
+  "version": "1.0.0"
+}

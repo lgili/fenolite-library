@@ -1,0 +1,31 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteSymbols:Fuse",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenoliteResistorSMD:CHIP0603_B1.6x0.8",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:Fuse_0603",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic 0603 chip fuse on the 0603 chip-resistor land",
+  "tags": [
+    "0603",
+    "device",
+    "fuse",
+    "generic"
+  ],
+  "title": "Fuse, 0603 chip",
+  "version": "1.0.0"
+}

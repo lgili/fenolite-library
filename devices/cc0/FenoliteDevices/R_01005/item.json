@@ -1,0 +1,31 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteSymbols:Resistor",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenoliteResistorSMD:CHIP01005_B0.4x0.2",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:R_01005",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic 01005 chip resistor",
+  "tags": [
+    "01005",
+    "device",
+    "generic",
+    "resistor"
+  ],
+  "title": "Resistor, 01005 chip",
+  "version": "1.0.0"
+}

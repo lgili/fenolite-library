@@ -83,3 +83,10 @@ Only drawings whose ball map follows from the table are taken (a full array, or 
 - p971 24-Ball (TD), p991 48-Ball (CD): the table gives no pitch.
 - p978 169-Ball (HF): no land pattern, and the land table has no calibrated ball ratio.
 - p1005 121-Ball (TE), p1029 169-Ball (7G NJ), p1044 64-Ball (GA): same values as 3XX, 7G J and 4G, which are taken.
+
+## SOT, crystals and devices (batch 12)
+- p96-98 3-Lead SOT-89 (MB), drawings C04-029C and C04-2029C: the land joins pad 2 and the tab into one T-shaped copper area, which the gullwing record cannot express.
+- p70-71 3-Lead SOT-23 (NB): same land as TT (C04-2104A), which is taken.
+- Abracon ABM8 and ABM3B recommended lands: the pads sit at 2.3 and 4.0 mm, the terminals at 2.1 and 3.8 mm; a record has no land pitch, so the land is calculated from the terminals instead.
+- Abracon ABM10 (2520): the bottom-view dimensions do not add up to the body (0.1 + 0.65 + 0.6 + 0.65 = 2.0 with no lower margin), so the terminal size is ambiguous.
+- Chip LEDs: the devices use the chip-resistor lands of the same case size; a land with a cathode mark needs an LED datasheet with its land.

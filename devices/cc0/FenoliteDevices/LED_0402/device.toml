@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Generic device authored for fenolite-library (change c0390): FenoliteSymbols:LED with FenoliteResistorSMD:CHIP0402_B1x0.5. No manufacturer or orderable part is claimed; sources are those of the symbol and footprint.
+schema = "fenolite.device.v1"
+id = "FenoliteDevices:LED_0402"
+version = "1.0.0"
+summary = "Generic 0402 chip LED on the 0402 chip-resistor land, pad 1 cathode (the land carries no polarity mark)"
+category = "Generic device"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422", "D-0390"]
+symbol = "FenoliteSymbols:LED"
+footprint = "FenoliteResistorSMD:CHIP0402_B1x0.5"
+ref_prefix = "D"
+value = "LED_0402"
+ends = ["A", "K"]
+
+[pins]
+K = "1"
+A = "2"

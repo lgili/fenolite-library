@@ -1,0 +1,48 @@
+# SPDX-License-Identifier: CC0-1.0
+# Four-pad ceramic SMD crystals, batch 12 of change c0390. Outline dimensions: Abracon datasheets (D-0426,
+# D-0427), read from the mechanical drawing (page in `used`). The recommended land patterns place the pads
+# at a different pitch from the terminals (reference values only), which a record cannot express, so the
+# c0260 land table calculates the land from the terminals (INFERRED). Axes: the long side of the body lies
+# along the pin rows (y). Pad 1 is the datasheet's pin 1 (top view: 1 and 3 the crystal, 2 and 4 the lid),
+# numbered counter-clockwise; the generator puts pad 1 at the top left.
+schema = "fenolite.c0390-family.v0"
+kind = "footprint"
+namespace = "FenoliteCrystal"
+category = "Crystal"
+date = "2026-11-05"
+tags = ["crystal", "no-lead", "smd"]
+
+[record]
+family = "nolead"
+
+[record.generate]
+lands = 1
+drawing = 1
+
+[[row]]
+name = "Crystal_SMD_3225-4Pin_3.2x2.5mm_Abracon-ABM8"
+title = "Crystal, SMD 3225, 4 pads, 3.2 x 2.5 mm (Abracon ABM8 outline)"
+summary = "Ceramic SMD crystal 3.2 x 2.5 mm, 4 pads, 2.1 mm pad pitch, calculated land"
+sources = ["D-0426"]
+used = "Abracon ABM8 datasheet, page 2, outline drawing (mm): body 3.2 +/- 0.20 x 2.5 +/- 0.20, height 0.80 max; bottom view: terminal 0.9 +/- 0.10 along the long side with 1.2 +/- 0.10 between, 0.70 +/- 0.10 across with 0.80 +/- 0.10 between; pitch 0.9 + 1.2 = 2.1; pull-back (2.5 - 2 x 0.70 - 0.80) / 2 = 0.15. Recommended land (reference): 1.3 x 1.05 pads, 1.0 and 0.7 apart, centres 2.3 x 1.75, not used"
+tags = ["crystal", "3225", "4-pin"]
+record.pins = 4
+record.pitch = "2.1mm"
+record.arrangement = "dual"
+record.body = { length = "3.0mm..3.4mm", width = "2.3mm..2.7mm", height = "0.8mm max" }
+record.terminal = { length = "0.6mm..0.8mm", width = "0.8mm..1.0mm" }
+record.pull_back = "0.15mm"
+
+[[row]]
+name = "Crystal_SMD_5032-4Pin_5.0x3.2mm_Abracon-ABM3B"
+title = "Crystal, SMD 5032, 4 pads, 5.0 x 3.2 mm (Abracon ABM3B outline)"
+summary = "Ceramic SMD crystal 5.0 x 3.2 mm, 4 pads, 3.8 mm pad pitch, calculated land"
+sources = ["D-0427"]
+used = "Abracon ABM3B datasheet, revision U, page 3, mechanical dimensions (mm): body 5.00 +/- 0.10 x 3.20 +/- 0.10, height 1.10 max; bottom view: terminal 1.20 +/- 0.15 along the long side with 2.60 between, 0.80 +/- 0.15 across with 1.40 between; pitch 1.20 + 2.60 = 3.80; pull-back (3.20 - 2 x 0.80 - 1.40) / 2 = 0.10. Recommended land (reference): 1.80 x 1.20 pads, centres 4.00 x 2.40, not used"
+tags = ["crystal", "5032", "4-pin"]
+record.pins = 4
+record.pitch = "3.8mm"
+record.arrangement = "dual"
+record.body = { length = "4.9mm..5.1mm", width = "3.1mm..3.3mm", height = "1.1mm max" }
+record.terminal = { length = "0.65mm..0.95mm", width = "1.05mm..1.35mm" }
+record.pull_back = "0.1mm"

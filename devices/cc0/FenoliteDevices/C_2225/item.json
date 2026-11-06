@@ -1,0 +1,31 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteSymbols:Capacitor",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenoliteCapacitorSMD:CHIP2225_B5.59x6.35",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:C_2225",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic 2225 chip capacitor (non-polarized)",
+  "tags": [
+    "2225",
+    "capacitor",
+    "device",
+    "generic"
+  ],
+  "title": "Capacitor, 2225 chip",
+  "version": "1.0.0"
+}

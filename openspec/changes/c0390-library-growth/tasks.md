@@ -25,6 +25,12 @@
   review sheets, counter-clockwise pin order). Open: TO (batch 7), 2.00 mm headers and sockets (no source
   with post size and hole yet), exposed-pad QFP/SO (gap G-2), drawings left out per the batch note.
 - [ ] 10. M3 batches 10 to 12 (BGA, terminal blocks, USB, crystals, devices).
+  Done so far (2026-11-05): batch 10 BGA 9 (D-0423, released in 1.1.0); batch 12 the SOT-23-3 footprint
+  (Microchip TT, D-0423), two four-pad SMD crystals 3225 and 5032 (Abracon outlines D-0426, D-0427, calculated
+  land) and 182 generic devices (`families/devices_table.py`): each joins a FenoliteSymbols symbol with a
+  library footprint (R, C, L, ferrite bead, fuse, LED, diode, Schottky, Zener, TVS, NPN/PNP, N/P MOSFET,
+  linear regulator, crystal, 1- and 2-row headers). Open: terminal blocks, USB, HC-49 and TO-92 (need the
+  maker's hole), SOT-89 (left out), chip LED land with a polarity mark.
 - [ ] 11. M4 imports from accepted upstream libraries.
 - [ ] 12. Report per batch: family or source, licence, items, proof, commit, open points; no push.
 

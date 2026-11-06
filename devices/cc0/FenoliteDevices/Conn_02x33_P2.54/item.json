@@ -1,0 +1,32 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteSymbols:Conn_02x33",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenoliteConnectorHeader:HDR2x33_P2.54_Samtec-TSW",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:Conn_02x33_P2.54",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic 2 x 33 pin header, 2.54 mm pitch, odd pins in the first row, through-hole",
+  "tags": [
+    "2.54mm",
+    "connector",
+    "device",
+    "generic",
+    "header"
+  ],
+  "title": "Pin header 2x33, 2.54 mm",
+  "version": "1.0.0"
+}

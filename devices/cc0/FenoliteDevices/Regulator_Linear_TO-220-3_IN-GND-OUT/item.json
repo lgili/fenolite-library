@@ -1,0 +1,31 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteSymbols:Regulator_Linear",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenolitePackageTO:TO-220-3_P2.54_Microchip-AB_Vertical",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:Regulator_Linear_TO-220-3_IN-GND-OUT",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic three-terminal linear regulator in TO-220 upright with the 78xx-style pin-out: pad 1 VIN, pad 2 GND, pad 3 VOUT",
+  "tags": [
+    "device",
+    "generic",
+    "regulator",
+    "to-220"
+  ],
+  "title": "Linear regulator, TO-220, pins IN, GND, OUT",
+  "version": "1.0.0"
+}

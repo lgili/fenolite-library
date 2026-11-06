@@ -1,0 +1,31 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Generic device authored for fenolite-library (change c0390): FenoliteSymbols:Conn_02x07 with FenoliteConnectorHeader:HDR2x7_P2.54_Samtec-TSW. No manufacturer or orderable part is claimed; sources are those of the symbol and footprint.
+schema = "fenolite.device.v1"
+id = "FenoliteDevices:Conn_02x07_P2.54"
+version = "1.0.0"
+summary = "Generic 2 x 7 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+category = "Generic device"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422", "D-0424"]
+symbol = "FenoliteSymbols:Conn_02x07"
+footprint = "FenoliteConnectorHeader:HDR2x7_P2.54_Samtec-TSW"
+ref_prefix = "J"
+value = "Conn_02x07_P2.54"
+
+[pins]
+P1 = "1"
+P2 = "2"
+P3 = "3"
+P4 = "4"
+P5 = "5"
+P6 = "6"
+P7 = "7"
+P8 = "8"
+P9 = "9"
+P10 = "10"
+P11 = "11"
+P12 = "12"
+P13 = "13"
+P14 = "14"

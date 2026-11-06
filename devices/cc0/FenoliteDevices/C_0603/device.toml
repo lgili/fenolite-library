@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Generic device authored for fenolite-library (change c0390): FenoliteSymbols:Capacitor with FenoliteCapacitorSMD:CHIP0603_B1.6x0.8. No manufacturer or orderable part is claimed; sources are those of the symbol and footprint.
+schema = "fenolite.device.v1"
+id = "FenoliteDevices:C_0603"
+version = "1.0.0"
+summary = "Generic 0603 chip capacitor (non-polarized)"
+category = "Generic device"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422", "D-0391"]
+symbol = "FenoliteSymbols:Capacitor"
+footprint = "FenoliteCapacitorSMD:CHIP0603_B1.6x0.8"
+ref_prefix = "C"
+value = "C_0603"
+ends = ["P1", "P2"]
+
+[pins]
+P1 = "1"
+P2 = "2"

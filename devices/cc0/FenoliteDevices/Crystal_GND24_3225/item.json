@@ -1,0 +1,31 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteSymbols:Crystal_GND24",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenoliteCrystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_Abracon-ABM8",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:Crystal_GND24_3225",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic four-pad SMD crystal 3225: pads 1 and 3 the crystal, pads 2 and 4 the lid (GND)",
+  "tags": [
+    "3225",
+    "crystal",
+    "device",
+    "generic"
+  ],
+  "title": "Crystal, SMD 3225, 4 pads",
+  "version": "1.0.0"
+}

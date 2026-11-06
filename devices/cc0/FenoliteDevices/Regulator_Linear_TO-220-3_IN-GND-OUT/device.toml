@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Generic device authored for fenolite-library (change c0390): FenoliteSymbols:Regulator_Linear with FenolitePackageTO:TO-220-3_P2.54_Microchip-AB_Vertical. No manufacturer or orderable part is claimed; sources are those of the symbol and footprint.
+schema = "fenolite.device.v1"
+id = "FenoliteDevices:Regulator_Linear_TO-220-3_IN-GND-OUT"
+version = "1.0.0"
+summary = "Generic three-terminal linear regulator in TO-220 upright with the 78xx-style pin-out: pad 1 VIN, pad 2 GND, pad 3 VOUT"
+category = "Generic device"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422", "D-0423"]
+symbol = "FenoliteSymbols:Regulator_Linear"
+footprint = "FenolitePackageTO:TO-220-3_P2.54_Microchip-AB_Vertical"
+ref_prefix = "U"
+value = "Regulator_Linear_TO-220-3_IN-GND-OUT"
+
+[pins]
+VIN = "1"
+GND = "2"
+VOUT = "3"

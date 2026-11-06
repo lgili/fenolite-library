@@ -1,0 +1,31 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteSymbols:Capacitor",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenoliteCapacitorSMD:CHIP2220_B5.59x5.08",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:C_2220",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic 2220 chip capacitor (non-polarized)",
+  "tags": [
+    "2220",
+    "capacitor",
+    "device",
+    "generic"
+  ],
+  "title": "Capacitor, 2220 chip",
+  "version": "1.0.0"
+}

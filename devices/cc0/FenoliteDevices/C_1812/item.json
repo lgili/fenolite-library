@@ -1,0 +1,31 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteSymbols:Capacitor",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenoliteCapacitorSMD:CHIP1812_B4.5x3.2",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:C_1812",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic 1812 chip capacitor (non-polarized)",
+  "tags": [
+    "1812",
+    "capacitor",
+    "device",
+    "generic"
+  ],
+  "title": "Capacitor, 1812 chip",
+  "version": "1.0.0"
+}

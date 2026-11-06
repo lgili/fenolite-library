@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Generic device authored for fenolite-library (change c0390): FenoliteSymbols:BJT_NPN with FenolitePackageSOT:SOT23-3_Microchip-TT. No manufacturer or orderable part is claimed; sources are those of the symbol and footprint.
+schema = "fenolite.device.v1"
+id = "FenoliteDevices:Q_NPN_SOT-23"
+version = "1.0.0"
+summary = "Generic NPN bipolar transistor in SOT-23 with the common pin-out of the symbol: B 1, E 2, C 3"
+category = "Generic device"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422", "D-0423"]
+symbol = "FenoliteSymbols:BJT_NPN"
+footprint = "FenolitePackageSOT:SOT23-3_Microchip-TT"
+ref_prefix = "Q"
+value = "Q_NPN_SOT-23"
+
+[pins]
+B = "1"
+E = "2"
+C = "3"
