@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageSO.3dshapes/SOIC8_NoPin6_Diodes.step",
+    "generated/FenolitePackageSO.pretty/SOIC8_NoPin6_Diodes.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageSO:SOIC8_NoPin6_Diodes",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "SOIC-8 outline, 7 leads (position 6 empty), 1.27 mm pitch, 4.9 x 3.9 mm body, Diodes Inc. suggested land",
+  "tags": [
+    "SO-8",
+    "SOIC-7",
+    "SOIC-8",
+    "gullwing",
+    "smd",
+    "soic"
+  ],
+  "title": "SOIC-8 narrow body with pin 6 omitted (7 leads)",
+  "version": "1.0.0"
+}

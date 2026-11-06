@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: CC0-1.0
+# SOIC-8 with one lead position left empty, batch 13 of change c0390: the SOIC-8 outline and suggested pad
+# layout of the Diodes Incorporated package information file (D-0412), with no lead and no pad at position 6
+# (a 7-lead small outline used where a wider creepage distance is needed around pin 5 or pin 7).
+schema = "fenolite.c0390-family.v0"
+kind = "footprint"
+namespace = "FenolitePackageSO"
+category = "Small-outline package"
+date = "2026-11-06"
+tags = ["gullwing", "smd", "soic"]
+
+[record]
+family = "gullwing"
+
+[record.generate]
+lands = 1
+drawing = 1
+
+[[row]]
+name = "SOIC8_NoPin6_Diodes"
+title = "SOIC-8 narrow body with pin 6 omitted (7 leads)"
+summary = "SOIC-8 outline, 7 leads (position 6 empty), 1.27 mm pitch, 4.9 x 3.9 mm body, Diodes Inc. suggested land"
+sources = ["D-0412"]
+used = "Table: A 1.40-1.50, A1 0.10-0.20, b 0.30-0.50, c 0.15-0.25, D 4.85-4.95, E 5.90-6.10, E1 3.80-3.90, e 1.27, L 0.62-0.82 mm; pad layout C 1.27, X 0.802, X1 4.612, Y 1.505, Y1 6.50 mm (row spacing Y1 - Y); lead and pad 6 omitted"
+tags = ["SO-8", "SOIC-8", "SOIC-7", "soic"]
+record.pins = 7
+record.pitch = "1.27mm"
+record.arrangement = "sides"
+record.body = { length = "4.85mm..4.95mm", width = "3.80mm..3.90mm", height = "1.40mm..1.50mm", standoff = "0.10mm..0.20mm" }
+record.span = "5.90mm..6.10mm"
+record.lead = { length = "0.62mm..0.82mm", width = "0.30mm..0.50mm", thickness = "0.15mm..0.25mm" }
+record.side = [{ edge = "left", numbers = ["1", "2", "3", "4"], positions = [0, 1, 2, 3] }, { edge = "right", numbers = ["8", "7", "5"], positions = [0, 1, 3] }]
+record.land = { source = "D-0412 suggested pad layout", pad = { length = "1.505mm", width = "0.802mm" }, row_spacing = "4.995mm" }

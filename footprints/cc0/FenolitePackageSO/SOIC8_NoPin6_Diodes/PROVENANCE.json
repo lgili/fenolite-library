@@ -1,0 +1,115 @@
+{
+  "authors": [
+    "Fenolite contributors"
+  ],
+  "copyright": [
+    "Copyright (c) 2026 Fenolite contributors"
+  ],
+  "datasheets": [
+    {
+      "date": "2017-03-14",
+      "id": "D-0412",
+      "revision": "2017-03-14",
+      "title": "Diodes Incorporated package information SO-8",
+      "url": "https://www.diodes.com/assets/Package-Files/SO-8.pdf",
+      "used": "Table: A 1.40-1.50, A1 0.10-0.20, b 0.30-0.50, c 0.15-0.25, D 4.85-4.95, E 5.90-6.10, E1 3.80-3.90, e 1.27, L 0.62-0.82 mm; pad layout C 1.27, X 0.802, X1 4.612, Y 1.505, Y1 6.50 mm (row spacing Y1 - Y); lead and pad 6 omitted"
+    }
+  ],
+  "evidence": "INFERRED",
+  "featured": null,
+  "generation": {
+    "change": "c0390",
+    "explicit_record": "the generator's pads, graphics and bodies written as a generator='explicit' record (the record kind the library audit reads); outputs regenerate from package.toml",
+    "family_record": {
+      "arrangement": "sides",
+      "body": {
+        "height": "1.40mm..1.50mm",
+        "length": "4.85mm..4.95mm",
+        "standoff": "0.10mm..0.20mm",
+        "width": "3.80mm..3.90mm"
+      },
+      "evidence": "INFERRED",
+      "family": "gullwing",
+      "generate": {
+        "drawing": 1,
+        "lands": 1
+      },
+      "id": "FenolitePackageSO:SOIC8_NoPin6_Diodes",
+      "land": {
+        "pad": {
+          "length": "1.505mm",
+          "width": "0.802mm"
+        },
+        "row_spacing": "4.995mm",
+        "source": "D-0412 suggested pad layout"
+      },
+      "lead": {
+        "length": "0.62mm..0.82mm",
+        "thickness": "0.15mm..0.25mm",
+        "width": "0.30mm..0.50mm"
+      },
+      "pins": 7,
+      "pitch": "1.27mm",
+      "schema": "fenolite.package.v0",
+      "side": [
+        {
+          "edge": "left",
+          "numbers": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "positions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "edge": "right",
+          "numbers": [
+            "8",
+            "7",
+            "5"
+          ],
+          "positions": [
+            0,
+            1,
+            3
+          ]
+        }
+      ],
+      "sources": [
+        "D-0412"
+      ],
+      "span": "5.90mm..6.10mm",
+      "summary": "SOIC-8 outline, 7 leads (position 6 empty), 1.27 mm pitch, 4.9 x 3.9 mm body, Diodes Inc. suggested land"
+    },
+    "fenolite": "e7673c811d5ca25d269c2d9c0f30e686f5148844",
+    "findings": [
+      "info package.land-override"
+    ],
+    "generator": "gullwing/1 manufacturer drawing/1; land: manufacturer D-0412 suggested pad layout",
+    "table": "openspec/changes/c0390-library-growth/families/so-pin-omitted.toml",
+    "tool": "fenolite"
+  },
+  "id": "FenolitePackageSO:SOIC8_NoPin6_Diodes",
+  "kind": "footprint",
+  "licence_text_sha256": "0dd25be0803b1e2764b0323560013cdd5ad9ca92ba4780bd7db0cbe6ce821dd8",
+  "modification_notice": "2026-11-06: original item authored for fenolite-library (change c0390) with Fenolite's c0260 package generator from public package dimensions; no upstream design material.",
+  "origin": "authored",
+  "schema": "fenolite.provenance.v0",
+  "sources": [
+    "D-0412"
+  ],
+  "spdx": "CC0-1.0",
+  "trademarks": {
+    "marks": [],
+    "note": "",
+    "restricted": false
+  },
+  "upstream": null,
+  "version": "1.0.0"
+}
