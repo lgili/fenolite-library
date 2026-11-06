@@ -281,3 +281,12 @@ date = "2024-08-27"
 retrieved = "2026-11-05"
 licence = "Abracon copyright; read for numerical facts only, nothing copied"
 used = "Mechanical dimensions: body size and height, terminal sizes and spacing, pin numbering."
+
+[D-0428]
+title = "Vishay SFH617A optocoupler, phototransistor output, datasheet"
+url = "https://www.vishay.com/docs/83740/sfh617a.pdf"
+revision = "2.5"
+date = "2025-08-18"
+retrieved = "2026-11-06"
+licence = "Vishay copyright; read for numerical facts only, nothing copied"
+used = "Package dimensions and footprint of the SMD-4 option 7 (DIP-4 with gull-wing leads, 7.62 mm rows)."

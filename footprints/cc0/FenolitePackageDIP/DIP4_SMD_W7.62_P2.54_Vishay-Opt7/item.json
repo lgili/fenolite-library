@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageDIP.3dshapes/DIP4_SMD_W7.62_P2.54_Vishay-Opt7.step",
+    "generated/FenolitePackageDIP.pretty/DIP4_SMD_W7.62_P2.54_Vishay-Opt7.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageDIP:DIP4_SMD_W7.62_P2.54_Vishay-Opt7",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "4-lead SMD DIP (SMD-4), 2.54 mm pitch, 7.62 mm row centres, 10.16 mm lead span, Vishay footprint",
+  "tags": [
+    "DIP-4",
+    "SMD-4",
+    "dip",
+    "gullwing",
+    "optocoupler",
+    "smd"
+  ],
+  "title": "DIP-4 with gull-wing leads, 7.62 mm rows, 10.16 mm span (Vishay option 7)",
+  "version": "1.0.0"
+}

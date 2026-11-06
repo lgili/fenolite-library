@@ -1,0 +1,136 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0428 Vishay SFH617A optocoupler, phototransistor output, datasheet (2.5). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.package.v0"
+id = "FenolitePackageDIP:DIP4_SMD_W7.62_P2.54_Vishay-Opt7"
+version = "1.0.0"
+summary = "4-lead SMD DIP (SMD-4), 2.54 mm pitch, 7.62 mm row centres, 10.16 mm lead span, Vishay footprint"
+category = "Dual in-line package"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0428"]
+generator = "explicit"
+kind = "smd"
+family = "gullwing"
+pins = 4
+pitch = "2.54mm"
+body = { height = "3.2mm..3.8mm", length = "4.08mm..5.08mm", standoff = "0.05mm..0.6mm", width = "6mm..7mm" }
+lead = { thickness = "0.26mm", width = "0.4mm..0.6mm" }
+
+[[pad]]
+number = "1"
+shape = "roundrect"
+size = ["1.52mm", "1.78mm"]
+at = ["-4.765mm", "-1.27mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 65789
+
+[[pad]]
+number = "2"
+shape = "roundrect"
+size = ["1.52mm", "1.78mm"]
+at = ["-4.765mm", "1.27mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 65789
+
+[[pad]]
+number = "3"
+shape = "roundrect"
+size = ["1.52mm", "1.78mm"]
+at = ["4.765mm", "1.27mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 65789
+
+[[pad]]
+number = "4"
+shape = "roundrect"
+size = ["1.52mm", "1.78mm"]
+at = ["4.765mm", "-1.27mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 65789
+
+[[graphic]]
+key = "F.Fab:0"
+kind = "line"
+layer = "F.Fab"
+points = [["-2.25mm", "-2.29mm"], ["3.25mm", "-2.29mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:1"
+kind = "line"
+layer = "F.Fab"
+points = [["3.25mm", "-2.29mm"], ["3.25mm", "2.29mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:2"
+kind = "line"
+layer = "F.Fab"
+points = [["3.25mm", "2.29mm"], ["-3.25mm", "2.29mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:3"
+kind = "line"
+layer = "F.Fab"
+points = [["-3.25mm", "2.29mm"], ["-3.25mm", "-1.29mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:4"
+kind = "line"
+layer = "F.Fab"
+points = [["-3.25mm", "-1.29mm"], ["-2.25mm", "-2.29mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.SilkS:5"
+kind = "line"
+layer = "F.SilkS"
+points = [["-3.25mm", "-2.29mm"], ["3.25mm", "-2.29mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:6"
+kind = "line"
+layer = "F.SilkS"
+points = [["3.25mm", "-2.29mm"], ["3.25mm", "2.29mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:7"
+kind = "line"
+layer = "F.SilkS"
+points = [["-3.25mm", "2.29mm"], ["3.25mm", "2.29mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:8"
+kind = "line"
+layer = "F.SilkS"
+points = [["-3.25mm", "-2.29mm"], ["-3.25mm", "2.29mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:9"
+kind = "circle"
+layer = "F.SilkS"
+points = [["-5.85mm", "-1.27mm"], ["-5.775mm", "-1.27mm"]]
+width = "0.15mm"
+
+[[graphic]]
+key = "F.CrtYd:10"
+kind = "rect"
+layer = "F.CrtYd"
+points = [["-6.03mm", "-2.79mm"], ["6.03mm", "2.79mm"]]
+width = "0.05mm"
+
+[[component_body]]
+kind = "extruded"
+height = "3.8mm"
+standoff = "0.05mm"
+outline = [["-3.25mm", "-2.29mm"], ["3.25mm", "-2.29mm"], ["3.25mm", "2.29mm"], ["-3.25mm", "2.29mm"]]
+name = "body"
+z_min = "0.05mm"
+z_max = "3.8mm"
