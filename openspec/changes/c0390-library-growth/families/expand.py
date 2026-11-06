@@ -11,6 +11,9 @@ generator on the row's family record, writes the generated pads, graphics and bo
 `package.toml` (the record kind the library audit of the pinned core reads), the KiCad footprint the CI
 `regenerate` job reproduces from it, Fenolite's STEP body, LICENSE, NOTICE, PROVENANCE.json (with the
 family record and the generator stamp) and item.json.
+A `device` table writes `devices/cc0/<Namespace>/<name>/device.toml`: a generic device that joins a
+library symbol and footprint with a pin map, its sources taken from both and its `depends` their exact
+versions; it claims no manufacturer or orderable part.
 The same tables give the same bytes: no clock, no randomness, sorted keys.
 """
 
@@ -29,9 +32,10 @@ TABLES_PATH = "openspec/changes/c0390-library-growth/families"
 SECTIONS = ("generate", "land", "symbol")
 ARRAY_TABLES = ("side", "mechanical", "pin", "variant")
 HEADER = ("schema", "id", "version", "summary", "category", "licence", "evidence", "sources")
-KIND_FOLDER = {"footprint": "footprints", "symbol": "symbols"}
-RECORD_FILE = {"footprint": "package.toml", "symbol": "pins.toml"}
-SCHEMA = {"footprint": "fenolite.package.v0", "symbol": "fenolite.pins.v0"}
+DEVICE_SECTIONS = ("pins", "ratings", "properties")
+KIND_FOLDER = {"footprint": "footprints", "symbol": "symbols", "device": "devices"}
+RECORD_FILE = {"footprint": "package.toml", "symbol": "pins.toml", "device": "device.toml"}
+SCHEMA = {"footprint": "fenolite.package.v0", "symbol": "fenolite.pins.v0", "device": "fenolite.device.v1"}
 CC0_DIGEST = "0dd25be0803b1e2764b0323560013cdd5ad9ca92ba4780bd7db0cbe6ce821dd8"
 
 
@@ -53,17 +57,22 @@ def _key(key: str) -> str:
     return key if re.fullmatch(r"[A-Za-z0-9_-]+", key) else json.dumps(key)
 
 
+def _section(key: str, value: object) -> bool:
+    # A device's ``symbol`` is a lib id (text), not the pins record's ``[symbol]`` table.
+    return (key in SECTIONS or key in DEVICE_SECTIONS) and isinstance(value, dict)
+
+
 def toml_text(record: dict[str, object], comments: list[str]) -> str:
     lines = [f"# {c}" for c in comments]
     ordered = [k for k in HEADER if k in record] + [k for k in record if k not in HEADER]
     for key in ordered:
         value = record[key]
-        if key in SECTIONS or (key in ARRAY_TABLES and isinstance(value, list)):
+        if _section(key, value) or (key in ARRAY_TABLES and isinstance(value, list)):
             continue
         lines.append(f"{_key(key)} = {_scalar(value)}")
     for key in ordered:
         value = record[key]
-        if key in SECTIONS:
+        if _section(key, value):
             assert isinstance(value, dict)
             plain = {k: v for k, v in value.items() if not (isinstance(v, list) and v and all(isinstance(x, dict) for x in v) and k in ("pins", "graphic"))}
             lines += ["", f"[{key}]"] + [f"{_key(k)} = {_scalar(v)}" for k, v in plain.items()]
@@ -138,6 +147,8 @@ def write(rows: list[dict[str, object]], root: Path) -> None:
             shutil.rmtree(folder)
         folder.mkdir(parents=True)
         kind = str(row["kind"])
+        if kind == "device":
+            row["sources"] = _device_sources(root, row["record"])  # type: ignore[arg-type]
         record: dict[str, object] = {
             "schema": SCHEMA[kind],
             "id": ident,
@@ -162,22 +173,28 @@ def write(rows: list[dict[str, object]], root: Path) -> None:
                     "used": row["used"] or src["used"],
                 }
             )
-        comments = [
-            "SPDX-License-Identifier: CC0-1.0",
-            "Copyright (c) 2026 Fenolite contributors",
-            f"Authored for fenolite-library (change {CHANGE}) from public package dimensions: "
-            + ", ".join(f"{c['id']} {c['title']} ({c['revision']})" for c in cited)
-            + ". Numbers only; no drawing, CAD file or 3D model copied.",
-        ]
+        if kind == "device":
+            joined = f"{record['symbol']} with {record['footprint']}"
+            origin_line = (
+                f"Generic device authored for fenolite-library (change {CHANGE}): {joined}. No manufacturer or "
+                "orderable part is claimed; sources are those of the symbol and footprint."
+            )
+        else:
+            origin_line = (
+                f"Authored for fenolite-library (change {CHANGE}) from public package dimensions: "
+                + ", ".join(f"{c['id']} {c['title']} ({c['revision']})" for c in cited)
+                + ". Numbers only; no drawing, CAD file or 3D model copied."
+            )
+        comments = ["SPDX-License-Identifier: CC0-1.0", "Copyright (c) 2026 Fenolite contributors", origin_line]
         row["comments"] = comments
-        if kind == "symbol":
+        if kind in ("symbol", "device"):
             (folder / RECORD_FILE[kind]).write_text(toml_text(record, comments), encoding="utf-8")
         (folder / "LICENSE").write_bytes(cc0)
-        what = (
-            "Fenolite's c0260 package generator from public package dimensions"
-            if kind == "footprint"
-            else "Fenolite's pin-table records from generic device-class conventions"
-        )
+        what = {
+            "footprint": "Fenolite's c0260 package generator from public package dimensions",
+            "symbol": "Fenolite's pin-table records from generic device-class conventions",
+            "device": "a generic device record joining a library symbol and footprint",
+        }[kind]
         notice_line = (
             f"{row['date']}: original item authored for fenolite-library (change {CHANGE}) with {what}; "
             "no upstream design material."
@@ -215,6 +232,27 @@ def write(rows: list[dict[str, object]], root: Path) -> None:
 
 
 FENOLITE_PIN = "e7673c811d5ca25d269c2d9c0f30e686f5148844"
+
+
+def _item(root: Path, ident: str, kind: str) -> dict[str, object]:
+    namespace, name = ident.split(":", 1)
+    path = root / KIND_FOLDER[kind] / "cc0" / namespace / name / "item.json"
+    if not path.is_file():
+        raise SystemExit(f"{ident}: no {kind} item at {path.relative_to(root)}")
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _device_sources(root: Path, record: dict[str, object]) -> list[str]:
+    """The D-ids of the symbol's and footprint's records, in order, without repeats."""
+    found: list[str] = []
+    for key, kind in (("symbol", "symbol"), ("footprint", "footprint")):
+        ident = str(record[key])
+        item = _item(root, ident, kind)
+        record_file = next(f for f in item["files"] if f.endswith(".toml"))  # type: ignore[union-attr]
+        namespace, name = ident.split(":", 1)
+        data = tomllib.loads((root / KIND_FOLDER[kind] / "cc0" / namespace / name / record_file).read_text(encoding="utf-8"))
+        found += [s for s in data.get("sources", []) if s not in found]
+    return found
 
 
 def _terminals(data: dict[str, object]) -> dict[str, int]:
@@ -377,7 +415,21 @@ def build(rows: list[dict[str, object]], root: Path) -> None:
         meta_path = folder / ".c0390-item.json"
         meta = json.loads(meta_path.read_text(encoding="utf-8"))
         meta_path.unlink()
-        if kind == "symbol":
+        depends: list[dict[str, object]] = []
+        if kind == "device":
+            try:
+                text = (folder / "device.toml").read_text(encoding="utf-8")
+                records.parse_record(text, file="device.toml")
+                for key in ("symbol", "footprint"):
+                    dep = _item(root, str(row["record"][key]), key)  # type: ignore[index]
+                    depends.append({"id": dep["id"], "kind": key, "version": dep["version"]})
+            except (Exception, SystemExit) as exc:  # noqa: BLE001 - reported per item, the batch stops
+                failures.append((str(folder.relative_to(root)), f"{type(exc).__name__}: {exc}"))
+                shutil.rmtree(folder)
+                continue
+            files = ["device.toml"]
+            namespace, name = str(row["namespace"]), str(row["name"])
+        elif kind == "symbol":
             try:
                 text = (folder / "pins.toml").read_text(encoding="utf-8")
                 parsed = records.parse_record(text, file="pins.toml")
@@ -424,7 +476,7 @@ def build(rows: list[dict[str, object]], root: Path) -> None:
             provenance["generation"] = facts
             (folder / "PROVENANCE.json").write_text(canonical_json(provenance), encoding="utf-8")
         item = {
-            "depends": [],
+            "depends": depends,
             "executes": False,
             "files": sorted(files),
             "id": f"{namespace}:{name}",

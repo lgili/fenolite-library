@@ -79,6 +79,8 @@ def regenerate(folder: Path) -> list[str]:
     problems = []
     for record in sorted(folder.glob("*.toml")):
         data = tomllib.loads(record.read_text(encoding="utf-8"))
+        if data["schema"] not in ("fenolite.package.v0", "fenolite.pins.v0"):
+            continue  # a device record generates no file; check, audit and its sheet prove it
         parsed = records.parse_record(record.read_text(encoding="utf-8"), file=str(record))
         if data["schema"] == "fenolite.package.v0":
             definition = records.footprint_def(parsed)
