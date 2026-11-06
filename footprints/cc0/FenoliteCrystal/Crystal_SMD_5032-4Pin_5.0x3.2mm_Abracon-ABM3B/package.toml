@@ -1,0 +1,127 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0427 Abracon ABM3B series ceramic SMD crystal, 5.0 x 3.2 mm, datasheet (U). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.package.v0"
+id = "FenoliteCrystal:Crystal_SMD_5032-4Pin_5.0x3.2mm_Abracon-ABM3B"
+version = "1.0.0"
+summary = "Ceramic SMD crystal 5.0 x 3.2 mm, 4 pads, 3.8 mm pad pitch, calculated land"
+category = "Crystal"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0427"]
+generator = "explicit"
+kind = "smd"
+family = "nolead"
+pins = 4
+pitch = "3.8mm"
+body = { length = "4.9mm..5.1mm", width = "3.1mm..3.3mm" }
+
+[[pad]]
+number = "1"
+shape = "roundrect"
+size = ["1.05mm", "1.29mm"]
+at = ["-1.175mm", "-1.9mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 95238
+
+[[pad]]
+number = "2"
+shape = "roundrect"
+size = ["1.05mm", "1.29mm"]
+at = ["-1.175mm", "1.9mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 95238
+
+[[pad]]
+number = "3"
+shape = "roundrect"
+size = ["1.05mm", "1.29mm"]
+at = ["1.175mm", "1.9mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 95238
+
+[[pad]]
+number = "4"
+shape = "roundrect"
+size = ["1.05mm", "1.29mm"]
+at = ["1.175mm", "-1.9mm"]
+layers = ["F.Cu", "F.Paste", "F.Mask"]
+corner_ratio = 95238
+
+[[graphic]]
+key = "F.Fab:0"
+kind = "line"
+layer = "F.Fab"
+points = [["-0.8mm", "-2.5mm"], ["1.6mm", "-2.5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:1"
+kind = "line"
+layer = "F.Fab"
+points = [["1.6mm", "-2.5mm"], ["1.6mm", "2.5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:2"
+kind = "line"
+layer = "F.Fab"
+points = [["1.6mm", "2.5mm"], ["-1.6mm", "2.5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:3"
+kind = "line"
+layer = "F.Fab"
+points = [["-1.6mm", "2.5mm"], ["-1.6mm", "-1.7mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.Fab:4"
+kind = "line"
+layer = "F.Fab"
+points = [["-1.6mm", "-1.7mm"], ["-0.8mm", "-2.5mm"]]
+width = "0.1mm"
+
+[[graphic]]
+key = "F.SilkS:5"
+kind = "line"
+layer = "F.SilkS"
+points = [["-0.4125mm", "-2.5mm"], ["0.4125mm", "-2.5mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:6"
+kind = "line"
+layer = "F.SilkS"
+points = [["1.6mm", "-1.0175mm"], ["1.6mm", "1.0175mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:7"
+kind = "line"
+layer = "F.SilkS"
+points = [["-0.4125mm", "2.5mm"], ["0.4125mm", "2.5mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.SilkS:8"
+kind = "line"
+layer = "F.SilkS"
+points = [["-1.6mm", "-1.0175mm"], ["-1.6mm", "1.0175mm"]]
+width = "0.125mm"
+
+[[graphic]]
+key = "F.CrtYd:9"
+kind = "rect"
+layer = "F.CrtYd"
+points = [["-2.2mm", "-3.05mm"], ["2.2mm", "3.05mm"]]
+width = "0.05mm"
+
+[[component_body]]
+kind = "extruded"
+height = "1.1mm"
+outline = [["-1.6mm", "-2.5mm"], ["1.6mm", "-2.5mm"], ["1.6mm", "2.5mm"], ["-1.6mm", "2.5mm"]]
+name = "body"
+z_min = "0mm"
+z_max = "1.1mm"

@@ -1,0 +1,23 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenoliteCrystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm_Abracon-ABM8.step",
+    "generated/FenoliteCrystal.pretty/Crystal_SMD_3225-4Pin_3.2x2.5mm_Abracon-ABM8.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenoliteCrystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_Abracon-ABM8",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Ceramic SMD crystal 3.2 x 2.5 mm, 4 pads, 2.1 mm pad pitch, calculated land",
+  "tags": [
+    "3225",
+    "4-pin",
+    "crystal",
+    "no-lead",
+    "smd"
+  ],
+  "title": "Crystal, SMD 3225, 4 pads, 3.2 x 2.5 mm (Abracon ABM8 outline)",
+  "version": "1.0.0"
+}

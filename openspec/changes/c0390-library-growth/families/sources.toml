@@ -263,3 +263,21 @@ date = "2025-10-20"
 retrieved = "2026-11-05"
 licence = "Samtec copyright; read for numerical facts only, nothing copied"
 used = "Post size, pitch, lead style -01 length, insulator height and width and the tail length of the FTSH header."
+
+[D-0426]
+title = "Abracon ABM8 ceramic SMD crystal, 3.2 x 2.5 x 0.8 mm, datasheet"
+url = "https://abracon.com/Resonators/ABM8.pdf"
+revision = "revised 07-29-20"
+date = "2020-07-29"
+retrieved = "2026-11-05"
+licence = "Abracon copyright; read for numerical facts only, nothing copied"
+used = "Outline drawing: body size and height, terminal sizes and spacing, pin numbering."
+
+[D-0427]
+title = "Abracon ABM3B series ceramic SMD crystal, 5.0 x 3.2 mm, datasheet"
+url = "https://abracon.com/Resonators/ABM3B.pdf"
+revision = "U"
+date = "2024-08-27"
+retrieved = "2026-11-05"
+licence = "Abracon copyright; read for numerical facts only, nothing copied"
+used = "Mechanical dimensions: body size and height, terminal sizes and spacing, pin numbering."
