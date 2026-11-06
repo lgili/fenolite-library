@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-11-06
+
+The basic components with symbol and footprint joined (c0390 batch 12).
+
 - Change c0390, milestone M3 batch 12: 182 generic devices (`FenoliteDevices`), each joining a
   `FenoliteSymbols` symbol with a library footprint and mapping its pins to the pads, so a design can place a
   resistor, capacitor, inductor, ferrite bead, fuse, LED, diode (plain, Schottky, Zener, bidirectional TVS),
