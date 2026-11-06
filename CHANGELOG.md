@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+- Change c0390, milestone M3 batch 13: eight generic symbols (optocoupler with phototransistor output,
+  varistor, NTC thermistor, gas discharge tube, relay with a normally open or a changeover contact, common-mode
+  choke, dual Zener with common anode); footprints SC-70-5 (Microchip LT, D-0423, with its land), SOIC-8 with
+  pin 6 omitted (Diodes SOIC-8 data, D-0412) and the 4-lead SMD DIP (Vishay option 7 footprint, D-0428); and
+  seven devices: ferrite bead and inductor 0805/1206, single op-amp in SC-70-5, dual Zener in SOT-23 and the
+  SMD-4 optocoupler.
+
 ## [1.2.0] - 2026-11-06
 
 The basic components with symbol and footprint joined (c0390 batch 12).

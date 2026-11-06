@@ -31,6 +31,10 @@
   library footprint (R, C, L, ferrite bead, fuse, LED, diode, Schottky, Zener, TVS, NPN/PNP, N/P MOSFET,
   linear regulator, crystal, 1- and 2-row headers). Open: terminal blocks, USB, HC-49 and TO-92 (need the
   maker's hole), SOT-89 (left out), chip LED land with a polarity mark.
+  Batch 13 (2026-11-06): 8 generic symbols (`symbols-more.toml`), SC-70-5, SOIC-8 without pin 6, SMD-4 DIP
+  and 7 devices (`devices-more.toml`). Open: generator families for through-hole radial and box capacitors,
+  disc varistors and thermistors, relays, fuse holders, chokes, wire-to-board headers and power modules;
+  SMD aluminium electrolytics (no land source that allows scripted download yet).
 - [ ] 11. M4 imports from accepted upstream libraries.
 - [ ] 12. Report per batch: family or source, licence, items, proof, commit, open points; no push.
 
