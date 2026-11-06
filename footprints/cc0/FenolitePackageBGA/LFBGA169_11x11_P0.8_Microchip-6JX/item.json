@@ -1,0 +1,23 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageBGA.3dshapes/LFBGA169_11x11_P0.8_Microchip-6JX.step",
+    "generated/FenolitePackageBGA.pretty/LFBGA169_11x11_P0.8_Microchip-6JX.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageBGA:LFBGA169_11x11_P0.8_Microchip-6JX",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "LFBGA-169, 0.8 mm pitch, 13 x 13 full array, 11 x 11 mm body",
+  "tags": [
+    "bga",
+    "bga-169",
+    "grid",
+    "lfbga",
+    "smd"
+  ],
+  "title": "LFBGA-169, 11 x 11 mm, 13 x 13 balls at 0.8 mm (Microchip 6JX)",
+  "version": "1.0.0"
+}

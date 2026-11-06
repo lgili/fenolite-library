@@ -1,0 +1,23 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageBGA.3dshapes/WFBGA169_11x11_P0.8_Microchip-TN.step",
+    "generated/FenolitePackageBGA.pretty/WFBGA169_11x11_P0.8_Microchip-TN.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageBGA:WFBGA169_11x11_P0.8_Microchip-TN",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "WFBGA-169, 0.8 mm pitch, 13 x 13 full array, 11 x 11 mm body, 0.8 mm high",
+  "tags": [
+    "bga",
+    "bga-169",
+    "grid",
+    "smd",
+    "wfbga"
+  ],
+  "title": "WFBGA-169, 11 x 11 mm, 13 x 13 balls at 0.8 mm (Microchip TN)",
+  "version": "1.0.0"
+}

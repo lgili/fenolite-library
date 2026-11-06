@@ -1,0 +1,23 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageBGA.3dshapes/TFBGA100_7x7_P0.65_Microchip-GJX.step",
+    "generated/FenolitePackageBGA.pretty/TFBGA100_7x7_P0.65_Microchip-GJX.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageBGA:TFBGA100_7x7_P0.65_Microchip-GJX",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "TFBGA-100, 0.65 mm pitch, 10 x 10 full array, 7 x 7 mm body, 0.35 mm lands",
+  "tags": [
+    "bga",
+    "bga-100",
+    "grid",
+    "smd",
+    "tfbga"
+  ],
+  "title": "TFBGA-100, 7 x 7 mm, 10 x 10 balls at 0.65 mm (Microchip GJX)",
+  "version": "1.0.0"
+}

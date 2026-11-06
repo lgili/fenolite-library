@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-11-05
+
+The c0390 library growth (M1, M2 and the first M3 batch) and the Fenolite pin `5ab9d645`.
+
+- Change c0390, milestone M3 batch 10: nine ball grid arrays (LFBGA, TFBGA, UFBGA, VFBGA, WFBGA; 25 to 196
+  balls, 0.5 to 0.8 mm pitch) from the Microchip packaging specification (D-0423) with its land patterns. Only
+  full arrays and one centred block are taken; the others need the ball map read from the drawing
+  (`left-out-m2.md`).
 - Pin Fenolite `5ab9d645` (`dev`, lote-23): c0415 review content digest, c0418 gallery attribution from each
   item's `PROVENANCE.json` (the seeded LibrePCB items get the derived-from line instead of "Authored for
   fenolite-library") and c0419 library symbol fields. The viewer files equal those of `3675515a`, so the four

@@ -1,0 +1,23 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageBGA.3dshapes/VFBGA64_7x7_P0.65_Microchip-4G.step",
+    "generated/FenolitePackageBGA.pretty/VFBGA64_7x7_P0.65_Microchip-4G.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageBGA:VFBGA64_7x7_P0.65_Microchip-4G",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "VFBGA-64, 0.65 mm pitch, two outer rings of a 10 x 10 grid, 7 x 7 mm body",
+  "tags": [
+    "bga",
+    "bga-64",
+    "grid",
+    "smd",
+    "vfbga"
+  ],
+  "title": "VFBGA-64, 7 x 7 mm, 10 x 10 grid less the centre 6 x 6 at 0.65 mm (Microchip 4G, GA)",
+  "version": "1.0.0"
+}

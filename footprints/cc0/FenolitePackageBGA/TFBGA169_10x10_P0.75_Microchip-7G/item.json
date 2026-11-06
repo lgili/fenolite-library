@@ -1,0 +1,23 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageBGA.3dshapes/TFBGA169_10x10_P0.75_Microchip-7G.step",
+    "generated/FenolitePackageBGA.pretty/TFBGA169_10x10_P0.75_Microchip-7G.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageBGA:TFBGA169_10x10_P0.75_Microchip-7G",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "TFBGA-169, 0.75 mm pitch, 13 x 13 full array, 10 x 10 mm body",
+  "tags": [
+    "bga",
+    "bga-169",
+    "grid",
+    "smd",
+    "tfbga"
+  ],
+  "title": "TFBGA-169, 10 x 10 mm, 13 x 13 balls at 0.75 mm (Microchip 7G)",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageBGA.3dshapes/UFBGA25_3x3_P0.5_Microchip-FE.step",
+    "generated/FenolitePackageBGA.pretty/UFBGA25_3x3_P0.5_Microchip-FE.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageBGA:UFBGA25_3x3_P0.5_Microchip-FE",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "UFBGA-25, 0.5 mm pitch, 5 x 5 full array, 3 x 3 mm body",
+  "tags": [
+    "bga",
+    "bga-25",
+    "grid",
+    "smd",
+    "ufbga"
+  ],
+  "title": "UFBGA-25, 3 x 3 mm, 5 x 5 balls at 0.5 mm (Microchip FE)",
+  "version": "1.0.0"
+}
