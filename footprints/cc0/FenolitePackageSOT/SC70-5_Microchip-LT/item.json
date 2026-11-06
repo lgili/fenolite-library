@@ -1,0 +1,24 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/FenolitePackageSOT.3dshapes/SC70-5_Microchip-LT.step",
+    "generated/FenolitePackageSOT.pretty/SC70-5_Microchip-LT.kicad_mod",
+    "package.toml"
+  ],
+  "id": "FenolitePackageSOT:SC70-5_Microchip-LT",
+  "kind": "footprint",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "SC-70-5 (SOT-353), 5 leads, 0.65 mm pitch, 2.0 x 1.25 mm body, Microchip recommended land",
+  "tags": [
+    "SC-70-5",
+    "SC-88A",
+    "SOT-353",
+    "gullwing",
+    "smd",
+    "sot"
+  ],
+  "title": "SC-70 package, 5 leads (Microchip LT)",
+  "version": "1.0.0"
+}
