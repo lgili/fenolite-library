@@ -1,0 +1,32 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteSymbols:Diode_Zener_Dual_CommonAnode",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenolitePackageSOT:SOT23-3_Microchip-TT",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:D_Zener_Dual_CommonAnode_SOT-23",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic dual Zener diode with a common anode in SOT-23: pad 1 K1, pad 2 K2, pad 3 A",
+  "tags": [
+    "device",
+    "diode",
+    "generic",
+    "sot-23",
+    "zener"
+  ],
+  "title": "Dual Zener diode, common anode, SOT-23",
+  "version": "1.0.0"
+}
