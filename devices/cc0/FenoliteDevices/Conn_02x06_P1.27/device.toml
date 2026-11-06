@@ -1,0 +1,29 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Generic device authored for fenolite-library (change c0390): FenoliteSymbols:Conn_02x06 with FenoliteConnectorHeader:HDR2x6_P1.27_Samtec-FTSH. No manufacturer or orderable part is claimed; sources are those of the symbol and footprint.
+schema = "fenolite.device.v1"
+id = "FenoliteDevices:Conn_02x06_P1.27"
+version = "1.0.0"
+summary = "Generic 2 x 6 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+category = "Generic device"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422", "D-0425"]
+symbol = "FenoliteSymbols:Conn_02x06"
+footprint = "FenoliteConnectorHeader:HDR2x6_P1.27_Samtec-FTSH"
+ref_prefix = "J"
+value = "Conn_02x06_P1.27"
+
+[pins]
+P1 = "1"
+P2 = "2"
+P3 = "3"
+P4 = "4"
+P5 = "5"
+P6 = "6"
+P7 = "7"
+P8 = "8"
+P9 = "9"
+P10 = "10"
+P11 = "11"
+P12 = "12"

@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Generic device authored for fenolite-library (change c0390): FenoliteSymbols:Crystal_GND24 with FenoliteCrystal:Crystal_SMD_5032-4Pin_5.0x3.2mm_Abracon-ABM3B. No manufacturer or orderable part is claimed; sources are those of the symbol and footprint.
+schema = "fenolite.device.v1"
+id = "FenoliteDevices:Crystal_GND24_5032"
+version = "1.0.0"
+summary = "Generic four-pad SMD crystal 5032: pads 1 and 3 the crystal, pads 2 and 4 the lid (GND)"
+category = "Generic device"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422", "D-0427"]
+symbol = "FenoliteSymbols:Crystal_GND24"
+footprint = "FenoliteCrystal:Crystal_SMD_5032-4Pin_5.0x3.2mm_Abracon-ABM3B"
+ref_prefix = "Y"
+value = "Crystal_GND24_5032"
+
+[pins]
+X1 = "1"
+X2 = "3"
+GND = { map = { 2 = "2", 4 = "4" } }

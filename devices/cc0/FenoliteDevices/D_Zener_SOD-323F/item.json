@@ -1,0 +1,32 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteSymbols:Diode_Zener",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenoliteDiodeSMD:SOD323F_Diodes",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:D_Zener_SOD-323F",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic Zener diode in SOD-323F, pad 1 cathode",
+  "tags": [
+    "device",
+    "diode",
+    "generic",
+    "sod-323f",
+    "zener"
+  ],
+  "title": "Zener diode, SOD-323F",
+  "version": "1.0.0"
+}

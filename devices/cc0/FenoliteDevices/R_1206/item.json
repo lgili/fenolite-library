@@ -1,0 +1,31 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteSymbols:Resistor",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenoliteResistorSMD:CHIP1206_B3.1x1.6",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:R_1206",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic 1206 chip resistor",
+  "tags": [
+    "1206",
+    "device",
+    "generic",
+    "resistor"
+  ],
+  "title": "Resistor, 1206 chip",
+  "version": "1.0.0"
+}

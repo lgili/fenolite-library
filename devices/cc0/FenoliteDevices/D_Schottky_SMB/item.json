@@ -1,0 +1,32 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteSymbols:Diode_Schottky",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenoliteDiodeSMD:SMB_Diodes",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:D_Schottky_SMB",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic Schottky diode in SMB, pad 1 cathode",
+  "tags": [
+    "device",
+    "diode",
+    "generic",
+    "schottky",
+    "smb"
+  ],
+  "title": "Schottky diode, SMB",
+  "version": "1.0.0"
+}

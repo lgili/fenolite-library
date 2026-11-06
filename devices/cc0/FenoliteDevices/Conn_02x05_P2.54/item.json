@@ -1,0 +1,32 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteSymbols:Conn_02x05",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenoliteConnectorHeader:HDR2x5_P2.54_Samtec-TSW",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:Conn_02x05_P2.54",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic 2 x 5 pin header, 2.54 mm pitch, odd pins in the first row, through-hole",
+  "tags": [
+    "2.54mm",
+    "connector",
+    "device",
+    "generic",
+    "header"
+  ],
+  "title": "Pin header 2x05, 2.54 mm",
+  "version": "1.0.0"
+}

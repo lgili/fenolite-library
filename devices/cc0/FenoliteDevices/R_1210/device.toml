@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Generic device authored for fenolite-library (change c0390): FenoliteSymbols:Resistor with FenoliteResistorSMD:CHIP1210_B3.1x2.6. No manufacturer or orderable part is claimed; sources are those of the symbol and footprint.
+schema = "fenolite.device.v1"
+id = "FenoliteDevices:R_1210"
+version = "1.0.0"
+summary = "Generic 1210 chip resistor"
+category = "Generic device"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422", "D-0390"]
+symbol = "FenoliteSymbols:Resistor"
+footprint = "FenoliteResistorSMD:CHIP1210_B3.1x2.6"
+ref_prefix = "R"
+value = "R_1210"
+ends = ["P1", "P2"]
+
+[pins]
+P1 = "1"
+P2 = "2"

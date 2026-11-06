@@ -1,0 +1,32 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteSymbols:Conn_02x20",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenoliteConnectorHeader:HDR2x20_P1.27_Samtec-FTSH",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:Conn_02x20_P1.27",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic 2 x 20 pin header, 1.27 mm pitch, odd pins in the first row, through-hole",
+  "tags": [
+    "1.27mm",
+    "connector",
+    "device",
+    "generic",
+    "header"
+  ],
+  "title": "Pin header 2x20, 1.27 mm",
+  "version": "1.0.0"
+}

@@ -1,0 +1,31 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteSymbols:Capacitor",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenoliteCapacitorSMD:CHIP1210_B3.2x2.5",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:C_1210",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic 1210 chip capacitor (non-polarized)",
+  "tags": [
+    "1210",
+    "capacitor",
+    "device",
+    "generic"
+  ],
+  "title": "Capacitor, 1210 chip",
+  "version": "1.0.0"
+}

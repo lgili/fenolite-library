@@ -1,0 +1,2249 @@
+# SPDX-License-Identifier: CC0-1.0
+# Generic devices, batch 12 (first part) of change c0390, written by devices_table.py: each joins a
+# FenoliteSymbols symbol with a fenolite-library footprint and maps pins to pads. Sources come from the
+# symbol and footprint records; no manufacturer, part number or rating is claimed.
+schema = "fenolite.c0390-family.v0"
+kind = "device"
+namespace = "FenoliteDevices"
+category = "Generic device"
+date = "2026-11-05"
+tags = ["device", "generic"]
+
+[[row]]
+name = "R_008004"
+title = "Resistor, 008004 chip"
+summary = "Generic 008004 chip resistor"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["resistor", "008004"]
+record.symbol = "FenoliteSymbols:Resistor"
+record.footprint = "FenoliteResistorSMD:CHIP008004_B0.3x0.15"
+record.ref_prefix = "R"
+record.value = "R_008004"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "R_01005"
+title = "Resistor, 01005 chip"
+summary = "Generic 01005 chip resistor"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["resistor", "01005"]
+record.symbol = "FenoliteSymbols:Resistor"
+record.footprint = "FenoliteResistorSMD:CHIP01005_B0.4x0.2"
+record.ref_prefix = "R"
+record.value = "R_01005"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "R_0201"
+title = "Resistor, 0201 chip"
+summary = "Generic 0201 chip resistor"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["resistor", "0201"]
+record.symbol = "FenoliteSymbols:Resistor"
+record.footprint = "FenoliteResistorSMD:CHIP0201_B0.6x0.3"
+record.ref_prefix = "R"
+record.value = "R_0201"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "R_0402"
+title = "Resistor, 0402 chip"
+summary = "Generic 0402 chip resistor"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["resistor", "0402"]
+record.symbol = "FenoliteSymbols:Resistor"
+record.footprint = "FenoliteResistorSMD:CHIP0402_B1x0.5"
+record.ref_prefix = "R"
+record.value = "R_0402"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "R_0603"
+title = "Resistor, 0603 chip"
+summary = "Generic 0603 chip resistor"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["resistor", "0603"]
+record.symbol = "FenoliteSymbols:Resistor"
+record.footprint = "FenoliteResistorSMD:CHIP0603_B1.6x0.8"
+record.ref_prefix = "R"
+record.value = "R_0603"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "R_0805"
+title = "Resistor, 0805 chip"
+summary = "Generic 0805 chip resistor"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["resistor", "0805"]
+record.symbol = "FenoliteSymbols:Resistor"
+record.footprint = "FenoliteResistorSMD:CHIP0805_B2x1.25"
+record.ref_prefix = "R"
+record.value = "R_0805"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "R_1206"
+title = "Resistor, 1206 chip"
+summary = "Generic 1206 chip resistor"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["resistor", "1206"]
+record.symbol = "FenoliteSymbols:Resistor"
+record.footprint = "FenoliteResistorSMD:CHIP1206_B3.1x1.6"
+record.ref_prefix = "R"
+record.value = "R_1206"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "R_1210"
+title = "Resistor, 1210 chip"
+summary = "Generic 1210 chip resistor"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["resistor", "1210"]
+record.symbol = "FenoliteSymbols:Resistor"
+record.footprint = "FenoliteResistorSMD:CHIP1210_B3.1x2.6"
+record.ref_prefix = "R"
+record.value = "R_1210"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "R_1218"
+title = "Resistor, 1218 chip"
+summary = "Generic 1218 chip resistor"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["resistor", "1218"]
+record.symbol = "FenoliteSymbols:Resistor"
+record.footprint = "FenoliteResistorSMD:CHIP1218_B3.1x4.6"
+record.ref_prefix = "R"
+record.value = "R_1218"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "R_2010"
+title = "Resistor, 2010 chip"
+summary = "Generic 2010 chip resistor"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["resistor", "2010"]
+record.symbol = "FenoliteSymbols:Resistor"
+record.footprint = "FenoliteResistorSMD:CHIP2010_B5x2.5"
+record.ref_prefix = "R"
+record.value = "R_2010"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "R_2512"
+title = "Resistor, 2512 chip"
+summary = "Generic 2512 chip resistor"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["resistor", "2512"]
+record.symbol = "FenoliteSymbols:Resistor"
+record.footprint = "FenoliteResistorSMD:CHIP2512_B6.35x3.1"
+record.ref_prefix = "R"
+record.value = "R_2512"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "C_0402"
+title = "Capacitor, 0402 chip"
+summary = "Generic 0402 chip capacitor (non-polarized)"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["capacitor", "0402"]
+record.symbol = "FenoliteSymbols:Capacitor"
+record.footprint = "FenoliteCapacitorSMD:CHIP0402_B1x0.5"
+record.ref_prefix = "C"
+record.value = "C_0402"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "C_0603"
+title = "Capacitor, 0603 chip"
+summary = "Generic 0603 chip capacitor (non-polarized)"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["capacitor", "0603"]
+record.symbol = "FenoliteSymbols:Capacitor"
+record.footprint = "FenoliteCapacitorSMD:CHIP0603_B1.6x0.8"
+record.ref_prefix = "C"
+record.value = "C_0603"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "C_0805"
+title = "Capacitor, 0805 chip"
+summary = "Generic 0805 chip capacitor (non-polarized)"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["capacitor", "0805"]
+record.symbol = "FenoliteSymbols:Capacitor"
+record.footprint = "FenoliteCapacitorSMD:CHIP0805_B2x1.25"
+record.ref_prefix = "C"
+record.value = "C_0805"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "C_1206"
+title = "Capacitor, 1206 chip"
+summary = "Generic 1206 chip capacitor (non-polarized)"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["capacitor", "1206"]
+record.symbol = "FenoliteSymbols:Capacitor"
+record.footprint = "FenoliteCapacitorSMD:CHIP1206_B3.2x1.6"
+record.ref_prefix = "C"
+record.value = "C_1206"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "C_1210"
+title = "Capacitor, 1210 chip"
+summary = "Generic 1210 chip capacitor (non-polarized)"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["capacitor", "1210"]
+record.symbol = "FenoliteSymbols:Capacitor"
+record.footprint = "FenoliteCapacitorSMD:CHIP1210_B3.2x2.5"
+record.ref_prefix = "C"
+record.value = "C_1210"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "C_1808"
+title = "Capacitor, 1808 chip"
+summary = "Generic 1808 chip capacitor (non-polarized)"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["capacitor", "1808"]
+record.symbol = "FenoliteSymbols:Capacitor"
+record.footprint = "FenoliteCapacitorSMD:CHIP1808_B4.57x2.03"
+record.ref_prefix = "C"
+record.value = "C_1808"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "C_1812"
+title = "Capacitor, 1812 chip"
+summary = "Generic 1812 chip capacitor (non-polarized)"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["capacitor", "1812"]
+record.symbol = "FenoliteSymbols:Capacitor"
+record.footprint = "FenoliteCapacitorSMD:CHIP1812_B4.5x3.2"
+record.ref_prefix = "C"
+record.value = "C_1812"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "C_1825"
+title = "Capacitor, 1825 chip"
+summary = "Generic 1825 chip capacitor (non-polarized)"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["capacitor", "1825"]
+record.symbol = "FenoliteSymbols:Capacitor"
+record.footprint = "FenoliteCapacitorSMD:CHIP1825_B4.5x6.4"
+record.ref_prefix = "C"
+record.value = "C_1825"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "C_2220"
+title = "Capacitor, 2220 chip"
+summary = "Generic 2220 chip capacitor (non-polarized)"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["capacitor", "2220"]
+record.symbol = "FenoliteSymbols:Capacitor"
+record.footprint = "FenoliteCapacitorSMD:CHIP2220_B5.59x5.08"
+record.ref_prefix = "C"
+record.value = "C_2220"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "C_2225"
+title = "Capacitor, 2225 chip"
+summary = "Generic 2225 chip capacitor (non-polarized)"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["capacitor", "2225"]
+record.symbol = "FenoliteSymbols:Capacitor"
+record.footprint = "FenoliteCapacitorSMD:CHIP2225_B5.59x6.35"
+record.ref_prefix = "C"
+record.value = "C_2225"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "C_3640"
+title = "Capacitor, 3640 chip"
+summary = "Generic 3640 chip capacitor (non-polarized)"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["capacitor", "3640"]
+record.symbol = "FenoliteSymbols:Capacitor"
+record.footprint = "FenoliteCapacitorSMD:CHIP3640_B9.14x10.2"
+record.ref_prefix = "C"
+record.value = "C_3640"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "L_0603"
+title = "Inductor, 0603 chip"
+summary = "Generic 0603 chip inductor"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["inductor", "0603"]
+record.symbol = "FenoliteSymbols:Inductor"
+record.footprint = "FenoliteInductorSMD:CHIP0603_B1.6x0.8"
+record.ref_prefix = "L"
+record.value = "L_0603"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "FB_0603"
+title = "Ferrite bead, 0603 chip"
+summary = "Generic 0603 chip ferrite bead on the 0603 inductor land"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["ferrite", "0603"]
+record.symbol = "FenoliteSymbols:Ferrite_Bead"
+record.footprint = "FenoliteInductorSMD:CHIP0603_B1.6x0.8"
+record.ref_prefix = "FB"
+record.value = "FB_0603"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "Fuse_0603"
+title = "Fuse, 0603 chip"
+summary = "Generic 0603 chip fuse on the 0603 chip-resistor land"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["fuse", "0603"]
+record.symbol = "FenoliteSymbols:Fuse"
+record.footprint = "FenoliteResistorSMD:CHIP0603_B1.6x0.8"
+record.ref_prefix = "F"
+record.value = "Fuse_0603"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "Fuse_0805"
+title = "Fuse, 0805 chip"
+summary = "Generic 0805 chip fuse on the 0805 chip-resistor land"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["fuse", "0805"]
+record.symbol = "FenoliteSymbols:Fuse"
+record.footprint = "FenoliteResistorSMD:CHIP0805_B2x1.25"
+record.ref_prefix = "F"
+record.value = "Fuse_0805"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "Fuse_1206"
+title = "Fuse, 1206 chip"
+summary = "Generic 1206 chip fuse on the 1206 chip-resistor land"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["fuse", "1206"]
+record.symbol = "FenoliteSymbols:Fuse"
+record.footprint = "FenoliteResistorSMD:CHIP1206_B3.1x1.6"
+record.ref_prefix = "F"
+record.value = "Fuse_1206"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "LED_0402"
+title = "LED, 0402 chip"
+summary = "Generic 0402 chip LED on the 0402 chip-resistor land, pad 1 cathode (the land carries no polarity mark)"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["led", "0402"]
+record.symbol = "FenoliteSymbols:LED"
+record.footprint = "FenoliteResistorSMD:CHIP0402_B1x0.5"
+record.ref_prefix = "D"
+record.value = "LED_0402"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "LED_0603"
+title = "LED, 0603 chip"
+summary = "Generic 0603 chip LED on the 0603 chip-resistor land, pad 1 cathode (the land carries no polarity mark)"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["led", "0603"]
+record.symbol = "FenoliteSymbols:LED"
+record.footprint = "FenoliteResistorSMD:CHIP0603_B1.6x0.8"
+record.ref_prefix = "D"
+record.value = "LED_0603"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "LED_0805"
+title = "LED, 0805 chip"
+summary = "Generic 0805 chip LED on the 0805 chip-resistor land, pad 1 cathode (the land carries no polarity mark)"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["led", "0805"]
+record.symbol = "FenoliteSymbols:LED"
+record.footprint = "FenoliteResistorSMD:CHIP0805_B2x1.25"
+record.ref_prefix = "D"
+record.value = "LED_0805"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "LED_1206"
+title = "LED, 1206 chip"
+summary = "Generic 1206 chip LED on the 1206 chip-resistor land, pad 1 cathode (the land carries no polarity mark)"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["led", "1206"]
+record.symbol = "FenoliteSymbols:LED"
+record.footprint = "FenoliteResistorSMD:CHIP1206_B3.1x1.6"
+record.ref_prefix = "D"
+record.value = "LED_1206"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "Q_NPN_SOT-23"
+title = "NPN bipolar transistor, SOT-23"
+summary = "Generic NPN bipolar transistor in SOT-23 with the common pin-out of the symbol: B 1, E 2, C 3"
+used = "symbol pins 1, 2, 3 on pads 1, 2, 3 (B on pad 1, E on pad 2, C on pad 3)"
+tags = ["transistor", "sot-23"]
+record.symbol = "FenoliteSymbols:BJT_NPN"
+record.footprint = "FenolitePackageSOT:SOT23-3_Microchip-TT"
+record.ref_prefix = "Q"
+record.value = "Q_NPN_SOT-23"
+record.pins = { B = "1", E = "2", C = "3" }
+
+[[row]]
+name = "Q_PNP_SOT-23"
+title = "PNP bipolar transistor, SOT-23"
+summary = "Generic PNP bipolar transistor in SOT-23 with the common pin-out of the symbol: B 1, E 2, C 3"
+used = "symbol pins 1, 2, 3 on pads 1, 2, 3 (B on pad 1, E on pad 2, C on pad 3)"
+tags = ["transistor", "sot-23"]
+record.symbol = "FenoliteSymbols:BJT_PNP"
+record.footprint = "FenolitePackageSOT:SOT23-3_Microchip-TT"
+record.ref_prefix = "Q"
+record.value = "Q_PNP_SOT-23"
+record.pins = { B = "1", E = "2", C = "3" }
+
+[[row]]
+name = "Q_NMOS_SOT-23"
+title = "N-channel MOSFET, SOT-23"
+summary = "Generic N-channel MOSFET in SOT-23 with the common pin-out of the symbol: G 1, S 2, D 3"
+used = "symbol pins 1, 2, 3 on pads 1, 2, 3 (G on pad 1, S on pad 2, D on pad 3)"
+tags = ["transistor", "sot-23"]
+record.symbol = "FenoliteSymbols:MOSFET_N"
+record.footprint = "FenolitePackageSOT:SOT23-3_Microchip-TT"
+record.ref_prefix = "Q"
+record.value = "Q_NMOS_SOT-23"
+record.pins = { G = "1", S = "2", D = "3" }
+
+[[row]]
+name = "Q_PMOS_SOT-23"
+title = "P-channel MOSFET, SOT-23"
+summary = "Generic P-channel MOSFET in SOT-23 with the common pin-out of the symbol: G 1, S 2, D 3"
+used = "symbol pins 1, 2, 3 on pads 1, 2, 3 (G on pad 1, S on pad 2, D on pad 3)"
+tags = ["transistor", "sot-23"]
+record.symbol = "FenoliteSymbols:MOSFET_P"
+record.footprint = "FenolitePackageSOT:SOT23-3_Microchip-TT"
+record.ref_prefix = "Q"
+record.value = "Q_PMOS_SOT-23"
+record.pins = { G = "1", S = "2", D = "3" }
+
+[[row]]
+name = "Crystal_GND24_3225"
+title = "Crystal, SMD 3225, 4 pads"
+summary = "Generic four-pad SMD crystal 3225: pads 1 and 3 the crystal, pads 2 and 4 the lid (GND)"
+used = "symbol pins 1 to 4 on pads 1 to 4"
+tags = ["crystal", "3225"]
+record.symbol = "FenoliteSymbols:Crystal_GND24"
+record.footprint = "FenoliteCrystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_Abracon-ABM8"
+record.ref_prefix = "Y"
+record.value = "Crystal_GND24_3225"
+record.pins = { X1 = "1", X2 = "3", GND = { map = { "2" = "2", "4" = "4" } } }
+
+[[row]]
+name = "Crystal_GND24_5032"
+title = "Crystal, SMD 5032, 4 pads"
+summary = "Generic four-pad SMD crystal 5032: pads 1 and 3 the crystal, pads 2 and 4 the lid (GND)"
+used = "symbol pins 1 to 4 on pads 1 to 4"
+tags = ["crystal", "5032"]
+record.symbol = "FenoliteSymbols:Crystal_GND24"
+record.footprint = "FenoliteCrystal:Crystal_SMD_5032-4Pin_5.0x3.2mm_Abracon-ABM3B"
+record.ref_prefix = "Y"
+record.value = "Crystal_GND24_5032"
+record.pins = { X1 = "1", X2 = "3", GND = { map = { "2" = "2", "4" = "4" } } }
+
+[[row]]
+name = "D_SOD-523"
+title = "Diode, SOD-523"
+summary = "Generic diode in SOD-523, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "sod-523"]
+record.symbol = "FenoliteSymbols:Diode"
+record.footprint = "FenoliteDiodeSMD:SOD523_Diodes"
+record.ref_prefix = "D"
+record.value = "D_SOD-523"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_Schottky_SOD-523"
+title = "Schottky diode, SOD-523"
+summary = "Generic Schottky diode in SOD-523, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "schottky", "sod-523"]
+record.symbol = "FenoliteSymbols:Diode_Schottky"
+record.footprint = "FenoliteDiodeSMD:SOD523_Diodes"
+record.ref_prefix = "D"
+record.value = "D_Schottky_SOD-523"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_SOD-323"
+title = "Diode, SOD-323"
+summary = "Generic diode in SOD-323, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "sod-323"]
+record.symbol = "FenoliteSymbols:Diode"
+record.footprint = "FenoliteDiodeSMD:SOD323_Diodes"
+record.ref_prefix = "D"
+record.value = "D_SOD-323"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_Schottky_SOD-323"
+title = "Schottky diode, SOD-323"
+summary = "Generic Schottky diode in SOD-323, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "schottky", "sod-323"]
+record.symbol = "FenoliteSymbols:Diode_Schottky"
+record.footprint = "FenoliteDiodeSMD:SOD323_Diodes"
+record.ref_prefix = "D"
+record.value = "D_Schottky_SOD-323"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_SOD-323F"
+title = "Diode, SOD-323F"
+summary = "Generic diode in SOD-323F, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "sod-323f"]
+record.symbol = "FenoliteSymbols:Diode"
+record.footprint = "FenoliteDiodeSMD:SOD323F_Diodes"
+record.ref_prefix = "D"
+record.value = "D_SOD-323F"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_Schottky_SOD-323F"
+title = "Schottky diode, SOD-323F"
+summary = "Generic Schottky diode in SOD-323F, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "schottky", "sod-323f"]
+record.symbol = "FenoliteSymbols:Diode_Schottky"
+record.footprint = "FenoliteDiodeSMD:SOD323F_Diodes"
+record.ref_prefix = "D"
+record.value = "D_Schottky_SOD-323F"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_SOD-123"
+title = "Diode, SOD-123"
+summary = "Generic diode in SOD-123, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "sod-123"]
+record.symbol = "FenoliteSymbols:Diode"
+record.footprint = "FenoliteDiodeSMD:SOD123_Diodes"
+record.ref_prefix = "D"
+record.value = "D_SOD-123"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_Schottky_SOD-123"
+title = "Schottky diode, SOD-123"
+summary = "Generic Schottky diode in SOD-123, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "schottky", "sod-123"]
+record.symbol = "FenoliteSymbols:Diode_Schottky"
+record.footprint = "FenoliteDiodeSMD:SOD123_Diodes"
+record.ref_prefix = "D"
+record.value = "D_Schottky_SOD-123"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_SOD-123F"
+title = "Diode, SOD-123F"
+summary = "Generic diode in SOD-123F, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "sod-123f"]
+record.symbol = "FenoliteSymbols:Diode"
+record.footprint = "FenoliteDiodeSMD:SOD123F_Diodes"
+record.ref_prefix = "D"
+record.value = "D_SOD-123F"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_Schottky_SOD-123F"
+title = "Schottky diode, SOD-123F"
+summary = "Generic Schottky diode in SOD-123F, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "schottky", "sod-123f"]
+record.symbol = "FenoliteSymbols:Diode_Schottky"
+record.footprint = "FenoliteDiodeSMD:SOD123F_Diodes"
+record.ref_prefix = "D"
+record.value = "D_Schottky_SOD-123F"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_SMA"
+title = "Diode, SMA"
+summary = "Generic diode in SMA, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "sma"]
+record.symbol = "FenoliteSymbols:Diode"
+record.footprint = "FenoliteDiodeSMD:SMA_Diodes"
+record.ref_prefix = "D"
+record.value = "D_SMA"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_Schottky_SMA"
+title = "Schottky diode, SMA"
+summary = "Generic Schottky diode in SMA, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "schottky", "sma"]
+record.symbol = "FenoliteSymbols:Diode_Schottky"
+record.footprint = "FenoliteDiodeSMD:SMA_Diodes"
+record.ref_prefix = "D"
+record.value = "D_Schottky_SMA"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_SMB"
+title = "Diode, SMB"
+summary = "Generic diode in SMB, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "smb"]
+record.symbol = "FenoliteSymbols:Diode"
+record.footprint = "FenoliteDiodeSMD:SMB_Diodes"
+record.ref_prefix = "D"
+record.value = "D_SMB"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_Schottky_SMB"
+title = "Schottky diode, SMB"
+summary = "Generic Schottky diode in SMB, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "schottky", "smb"]
+record.symbol = "FenoliteSymbols:Diode_Schottky"
+record.footprint = "FenoliteDiodeSMD:SMB_Diodes"
+record.ref_prefix = "D"
+record.value = "D_Schottky_SMB"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_SMC"
+title = "Diode, SMC"
+summary = "Generic diode in SMC, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "smc"]
+record.symbol = "FenoliteSymbols:Diode"
+record.footprint = "FenoliteDiodeSMD:SMC_Diodes"
+record.ref_prefix = "D"
+record.value = "D_SMC"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_Schottky_SMC"
+title = "Schottky diode, SMC"
+summary = "Generic Schottky diode in SMC, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "schottky", "smc"]
+record.symbol = "FenoliteSymbols:Diode_Schottky"
+record.footprint = "FenoliteDiodeSMD:SMC_Diodes"
+record.ref_prefix = "D"
+record.value = "D_Schottky_SMC"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_Zener_SOD-523"
+title = "Zener diode, SOD-523"
+summary = "Generic Zener diode in SOD-523, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "zener", "sod-523"]
+record.symbol = "FenoliteSymbols:Diode_Zener"
+record.footprint = "FenoliteDiodeSMD:SOD523_Diodes"
+record.ref_prefix = "D"
+record.value = "D_Zener_SOD-523"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_Zener_SOD-323"
+title = "Zener diode, SOD-323"
+summary = "Generic Zener diode in SOD-323, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "zener", "sod-323"]
+record.symbol = "FenoliteSymbols:Diode_Zener"
+record.footprint = "FenoliteDiodeSMD:SOD323_Diodes"
+record.ref_prefix = "D"
+record.value = "D_Zener_SOD-323"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_Zener_SOD-323F"
+title = "Zener diode, SOD-323F"
+summary = "Generic Zener diode in SOD-323F, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "zener", "sod-323f"]
+record.symbol = "FenoliteSymbols:Diode_Zener"
+record.footprint = "FenoliteDiodeSMD:SOD323F_Diodes"
+record.ref_prefix = "D"
+record.value = "D_Zener_SOD-323F"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_Zener_SOD-123"
+title = "Zener diode, SOD-123"
+summary = "Generic Zener diode in SOD-123, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "zener", "sod-123"]
+record.symbol = "FenoliteSymbols:Diode_Zener"
+record.footprint = "FenoliteDiodeSMD:SOD123_Diodes"
+record.ref_prefix = "D"
+record.value = "D_Zener_SOD-123"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_Zener_SOD-123F"
+title = "Zener diode, SOD-123F"
+summary = "Generic Zener diode in SOD-123F, pad 1 cathode"
+used = "K (symbol pin 1) on pad 1, A (pin 2) on pad 2"
+tags = ["diode", "zener", "sod-123f"]
+record.symbol = "FenoliteSymbols:Diode_Zener"
+record.footprint = "FenoliteDiodeSMD:SOD123F_Diodes"
+record.ref_prefix = "D"
+record.value = "D_Zener_SOD-123F"
+record.ends = ["A", "K"]
+record.pins = { K = "1", A = "2" }
+
+[[row]]
+name = "D_TVS_Bidirectional_SMA"
+title = "Bidirectional TVS diode, SMA"
+summary = "Generic bidirectional TVS diode in SMA"
+used = "A1 (symbol pin 1) on pad 1, A2 (pin 2) on pad 2"
+tags = ["diode", "tvs", "sma"]
+record.symbol = "FenoliteSymbols:TVS_Bidirectional"
+record.footprint = "FenoliteDiodeSMD:SMA_Diodes"
+record.ref_prefix = "D"
+record.value = "D_TVS_Bidirectional_SMA"
+record.ends = ["A1", "A2"]
+record.pins = { A1 = "1", A2 = "2" }
+
+[[row]]
+name = "D_TVS_Bidirectional_SMB"
+title = "Bidirectional TVS diode, SMB"
+summary = "Generic bidirectional TVS diode in SMB"
+used = "A1 (symbol pin 1) on pad 1, A2 (pin 2) on pad 2"
+tags = ["diode", "tvs", "smb"]
+record.symbol = "FenoliteSymbols:TVS_Bidirectional"
+record.footprint = "FenoliteDiodeSMD:SMB_Diodes"
+record.ref_prefix = "D"
+record.value = "D_TVS_Bidirectional_SMB"
+record.ends = ["A1", "A2"]
+record.pins = { A1 = "1", A2 = "2" }
+
+[[row]]
+name = "D_TVS_Bidirectional_SMC"
+title = "Bidirectional TVS diode, SMC"
+summary = "Generic bidirectional TVS diode in SMC"
+used = "A1 (symbol pin 1) on pad 1, A2 (pin 2) on pad 2"
+tags = ["diode", "tvs", "smc"]
+record.symbol = "FenoliteSymbols:TVS_Bidirectional"
+record.footprint = "FenoliteDiodeSMD:SMC_Diodes"
+record.ref_prefix = "D"
+record.value = "D_TVS_Bidirectional_SMC"
+record.ends = ["A1", "A2"]
+record.pins = { A1 = "1", A2 = "2" }
+
+[[row]]
+name = "Regulator_Linear_SOT-223_GND-OUT-IN"
+title = "Linear regulator, SOT-223, pins GND/ADJ, OUT, IN"
+summary = "Generic three-terminal linear regulator in SOT-223 with the 1117-style pin-out: pad 1 GND/ADJ, pad 2 and tab VOUT, pad 3 VIN"
+used = "VIN (symbol pin 1) on pad 3, GND (2) on pad 1, VOUT (3) on pad 2 and tab 4"
+tags = ["regulator", "sot-223"]
+record.symbol = "FenoliteSymbols:Regulator_Linear"
+record.footprint = "FenolitePackageSOT:SOT223_Diodes"
+record.ref_prefix = "U"
+record.value = "Regulator_Linear_SOT-223_GND-OUT-IN"
+record.pins = { VIN = { map = { "1" = "3" } }, GND = { map = { "2" = "1" } }, VOUT = { map = { "3" = ["2", "4"] } } }
+
+[[row]]
+name = "Regulator_Linear_TO-220-3_IN-GND-OUT"
+title = "Linear regulator, TO-220, pins IN, GND, OUT"
+summary = "Generic three-terminal linear regulator in TO-220 upright with the 78xx-style pin-out: pad 1 VIN, pad 2 GND, pad 3 VOUT"
+used = "VIN (symbol pin 1) on pad 1, GND (2) on pad 2, VOUT (3) on pad 3"
+tags = ["regulator", "to-220"]
+record.symbol = "FenoliteSymbols:Regulator_Linear"
+record.footprint = "FenolitePackageTO:TO-220-3_P2.54_Microchip-AB_Vertical"
+record.ref_prefix = "U"
+record.value = "Regulator_Linear_TO-220-3_IN-GND-OUT"
+record.pins = { VIN = "1", GND = "2", VOUT = "3" }
+
+[[row]]
+name = "Conn_01x01_P2.54"
+title = "Pin header 1x01, 2.54 mm"
+summary = "Generic 1 x 1 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 1 on pads 1 to 1"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x01"
+record.footprint = "FenoliteConnectorHeader:HDR1x1_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x01_P2.54"
+record.pins = { P1 = "1" }
+
+[[row]]
+name = "Conn_01x02_P2.54"
+title = "Pin header 1x02, 2.54 mm"
+summary = "Generic 1 x 2 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 2 on pads 1 to 2"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x02"
+record.footprint = "FenoliteConnectorHeader:HDR1x2_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x02_P2.54"
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "Conn_01x03_P2.54"
+title = "Pin header 1x03, 2.54 mm"
+summary = "Generic 1 x 3 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 3 on pads 1 to 3"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x03"
+record.footprint = "FenoliteConnectorHeader:HDR1x3_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x03_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3" }
+
+[[row]]
+name = "Conn_01x04_P2.54"
+title = "Pin header 1x04, 2.54 mm"
+summary = "Generic 1 x 4 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 4 on pads 1 to 4"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x04"
+record.footprint = "FenoliteConnectorHeader:HDR1x4_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x04_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4" }
+
+[[row]]
+name = "Conn_01x05_P2.54"
+title = "Pin header 1x05, 2.54 mm"
+summary = "Generic 1 x 5 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 5 on pads 1 to 5"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x05"
+record.footprint = "FenoliteConnectorHeader:HDR1x5_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x05_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5" }
+
+[[row]]
+name = "Conn_01x06_P2.54"
+title = "Pin header 1x06, 2.54 mm"
+summary = "Generic 1 x 6 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 6 on pads 1 to 6"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x06"
+record.footprint = "FenoliteConnectorHeader:HDR1x6_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x06_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6" }
+
+[[row]]
+name = "Conn_01x07_P2.54"
+title = "Pin header 1x07, 2.54 mm"
+summary = "Generic 1 x 7 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 7 on pads 1 to 7"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x07"
+record.footprint = "FenoliteConnectorHeader:HDR1x7_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x07_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7" }
+
+[[row]]
+name = "Conn_01x08_P2.54"
+title = "Pin header 1x08, 2.54 mm"
+summary = "Generic 1 x 8 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 8 on pads 1 to 8"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x08"
+record.footprint = "FenoliteConnectorHeader:HDR1x8_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x08_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8" }
+
+[[row]]
+name = "Conn_01x09_P2.54"
+title = "Pin header 1x09, 2.54 mm"
+summary = "Generic 1 x 9 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 9 on pads 1 to 9"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x09"
+record.footprint = "FenoliteConnectorHeader:HDR1x9_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x09_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9" }
+
+[[row]]
+name = "Conn_01x10_P2.54"
+title = "Pin header 1x10, 2.54 mm"
+summary = "Generic 1 x 10 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 10 on pads 1 to 10"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x10"
+record.footprint = "FenoliteConnectorHeader:HDR1x10_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x10_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10" }
+
+[[row]]
+name = "Conn_01x11_P2.54"
+title = "Pin header 1x11, 2.54 mm"
+summary = "Generic 1 x 11 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 11 on pads 1 to 11"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x11"
+record.footprint = "FenoliteConnectorHeader:HDR1x11_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x11_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11" }
+
+[[row]]
+name = "Conn_01x12_P2.54"
+title = "Pin header 1x12, 2.54 mm"
+summary = "Generic 1 x 12 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 12 on pads 1 to 12"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x12"
+record.footprint = "FenoliteConnectorHeader:HDR1x12_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x12_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12" }
+
+[[row]]
+name = "Conn_01x13_P2.54"
+title = "Pin header 1x13, 2.54 mm"
+summary = "Generic 1 x 13 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 13 on pads 1 to 13"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x13"
+record.footprint = "FenoliteConnectorHeader:HDR1x13_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x13_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13" }
+
+[[row]]
+name = "Conn_01x14_P2.54"
+title = "Pin header 1x14, 2.54 mm"
+summary = "Generic 1 x 14 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 14 on pads 1 to 14"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x14"
+record.footprint = "FenoliteConnectorHeader:HDR1x14_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x14_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14" }
+
+[[row]]
+name = "Conn_01x15_P2.54"
+title = "Pin header 1x15, 2.54 mm"
+summary = "Generic 1 x 15 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 15 on pads 1 to 15"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x15"
+record.footprint = "FenoliteConnectorHeader:HDR1x15_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x15_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15" }
+
+[[row]]
+name = "Conn_01x16_P2.54"
+title = "Pin header 1x16, 2.54 mm"
+summary = "Generic 1 x 16 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 16 on pads 1 to 16"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x16"
+record.footprint = "FenoliteConnectorHeader:HDR1x16_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x16_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16" }
+
+[[row]]
+name = "Conn_01x17_P2.54"
+title = "Pin header 1x17, 2.54 mm"
+summary = "Generic 1 x 17 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 17 on pads 1 to 17"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x17"
+record.footprint = "FenoliteConnectorHeader:HDR1x17_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x17_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17" }
+
+[[row]]
+name = "Conn_01x18_P2.54"
+title = "Pin header 1x18, 2.54 mm"
+summary = "Generic 1 x 18 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 18 on pads 1 to 18"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x18"
+record.footprint = "FenoliteConnectorHeader:HDR1x18_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x18_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18" }
+
+[[row]]
+name = "Conn_01x19_P2.54"
+title = "Pin header 1x19, 2.54 mm"
+summary = "Generic 1 x 19 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 19 on pads 1 to 19"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x19"
+record.footprint = "FenoliteConnectorHeader:HDR1x19_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x19_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19" }
+
+[[row]]
+name = "Conn_01x20_P2.54"
+title = "Pin header 1x20, 2.54 mm"
+summary = "Generic 1 x 20 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 20 on pads 1 to 20"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x20"
+record.footprint = "FenoliteConnectorHeader:HDR1x20_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x20_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20" }
+
+[[row]]
+name = "Conn_01x21_P2.54"
+title = "Pin header 1x21, 2.54 mm"
+summary = "Generic 1 x 21 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 21 on pads 1 to 21"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x21"
+record.footprint = "FenoliteConnectorHeader:HDR1x21_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x21_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21" }
+
+[[row]]
+name = "Conn_01x22_P2.54"
+title = "Pin header 1x22, 2.54 mm"
+summary = "Generic 1 x 22 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 22 on pads 1 to 22"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x22"
+record.footprint = "FenoliteConnectorHeader:HDR1x22_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x22_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22" }
+
+[[row]]
+name = "Conn_01x23_P2.54"
+title = "Pin header 1x23, 2.54 mm"
+summary = "Generic 1 x 23 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 23 on pads 1 to 23"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x23"
+record.footprint = "FenoliteConnectorHeader:HDR1x23_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x23_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23" }
+
+[[row]]
+name = "Conn_01x24_P2.54"
+title = "Pin header 1x24, 2.54 mm"
+summary = "Generic 1 x 24 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 24 on pads 1 to 24"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x24"
+record.footprint = "FenoliteConnectorHeader:HDR1x24_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x24_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24" }
+
+[[row]]
+name = "Conn_01x25_P2.54"
+title = "Pin header 1x25, 2.54 mm"
+summary = "Generic 1 x 25 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 25 on pads 1 to 25"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x25"
+record.footprint = "FenoliteConnectorHeader:HDR1x25_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x25_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25" }
+
+[[row]]
+name = "Conn_01x26_P2.54"
+title = "Pin header 1x26, 2.54 mm"
+summary = "Generic 1 x 26 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 26 on pads 1 to 26"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x26"
+record.footprint = "FenoliteConnectorHeader:HDR1x26_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x26_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26" }
+
+[[row]]
+name = "Conn_01x27_P2.54"
+title = "Pin header 1x27, 2.54 mm"
+summary = "Generic 1 x 27 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 27 on pads 1 to 27"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x27"
+record.footprint = "FenoliteConnectorHeader:HDR1x27_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x27_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27" }
+
+[[row]]
+name = "Conn_01x28_P2.54"
+title = "Pin header 1x28, 2.54 mm"
+summary = "Generic 1 x 28 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 28 on pads 1 to 28"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x28"
+record.footprint = "FenoliteConnectorHeader:HDR1x28_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x28_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28" }
+
+[[row]]
+name = "Conn_01x29_P2.54"
+title = "Pin header 1x29, 2.54 mm"
+summary = "Generic 1 x 29 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 29 on pads 1 to 29"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x29"
+record.footprint = "FenoliteConnectorHeader:HDR1x29_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x29_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29" }
+
+[[row]]
+name = "Conn_01x30_P2.54"
+title = "Pin header 1x30, 2.54 mm"
+summary = "Generic 1 x 30 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 30 on pads 1 to 30"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x30"
+record.footprint = "FenoliteConnectorHeader:HDR1x30_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x30_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30" }
+
+[[row]]
+name = "Conn_01x31_P2.54"
+title = "Pin header 1x31, 2.54 mm"
+summary = "Generic 1 x 31 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 31 on pads 1 to 31"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x31"
+record.footprint = "FenoliteConnectorHeader:HDR1x31_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x31_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31" }
+
+[[row]]
+name = "Conn_01x32_P2.54"
+title = "Pin header 1x32, 2.54 mm"
+summary = "Generic 1 x 32 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 32 on pads 1 to 32"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x32"
+record.footprint = "FenoliteConnectorHeader:HDR1x32_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x32_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32" }
+
+[[row]]
+name = "Conn_01x33_P2.54"
+title = "Pin header 1x33, 2.54 mm"
+summary = "Generic 1 x 33 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 33 on pads 1 to 33"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x33"
+record.footprint = "FenoliteConnectorHeader:HDR1x33_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x33_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33" }
+
+[[row]]
+name = "Conn_01x34_P2.54"
+title = "Pin header 1x34, 2.54 mm"
+summary = "Generic 1 x 34 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 34 on pads 1 to 34"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x34"
+record.footprint = "FenoliteConnectorHeader:HDR1x34_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x34_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34" }
+
+[[row]]
+name = "Conn_01x35_P2.54"
+title = "Pin header 1x35, 2.54 mm"
+summary = "Generic 1 x 35 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 35 on pads 1 to 35"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x35"
+record.footprint = "FenoliteConnectorHeader:HDR1x35_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x35_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35" }
+
+[[row]]
+name = "Conn_01x36_P2.54"
+title = "Pin header 1x36, 2.54 mm"
+summary = "Generic 1 x 36 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 36 on pads 1 to 36"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x36"
+record.footprint = "FenoliteConnectorHeader:HDR1x36_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x36_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36" }
+
+[[row]]
+name = "Conn_01x37_P2.54"
+title = "Pin header 1x37, 2.54 mm"
+summary = "Generic 1 x 37 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 37 on pads 1 to 37"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x37"
+record.footprint = "FenoliteConnectorHeader:HDR1x37_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x37_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37" }
+
+[[row]]
+name = "Conn_01x38_P2.54"
+title = "Pin header 1x38, 2.54 mm"
+summary = "Generic 1 x 38 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 38 on pads 1 to 38"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x38"
+record.footprint = "FenoliteConnectorHeader:HDR1x38_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x38_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38" }
+
+[[row]]
+name = "Conn_01x39_P2.54"
+title = "Pin header 1x39, 2.54 mm"
+summary = "Generic 1 x 39 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 39 on pads 1 to 39"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x39"
+record.footprint = "FenoliteConnectorHeader:HDR1x39_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x39_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39" }
+
+[[row]]
+name = "Conn_01x40_P2.54"
+title = "Pin header 1x40, 2.54 mm"
+summary = "Generic 1 x 40 pin header, 2.54 mm pitch, through-hole"
+used = "symbol pins 1 to 40 on pads 1 to 40"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_01x40"
+record.footprint = "FenoliteConnectorHeader:HDR1x40_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_01x40_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40" }
+
+[[row]]
+name = "Conn_02x01_P2.54"
+title = "Pin header 2x01, 2.54 mm"
+summary = "Generic 2 x 1 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 2 on pads 1 to 2 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x01"
+record.footprint = "FenoliteConnectorHeader:HDR2x1_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x01_P2.54"
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "Conn_02x02_P2.54"
+title = "Pin header 2x02, 2.54 mm"
+summary = "Generic 2 x 2 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 4 on pads 1 to 4 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x02"
+record.footprint = "FenoliteConnectorHeader:HDR2x2_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x02_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4" }
+
+[[row]]
+name = "Conn_02x03_P2.54"
+title = "Pin header 2x03, 2.54 mm"
+summary = "Generic 2 x 3 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 6 on pads 1 to 6 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x03"
+record.footprint = "FenoliteConnectorHeader:HDR2x3_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x03_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6" }
+
+[[row]]
+name = "Conn_02x04_P2.54"
+title = "Pin header 2x04, 2.54 mm"
+summary = "Generic 2 x 4 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 8 on pads 1 to 8 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x04"
+record.footprint = "FenoliteConnectorHeader:HDR2x4_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x04_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8" }
+
+[[row]]
+name = "Conn_02x05_P2.54"
+title = "Pin header 2x05, 2.54 mm"
+summary = "Generic 2 x 5 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 10 on pads 1 to 10 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x05"
+record.footprint = "FenoliteConnectorHeader:HDR2x5_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x05_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10" }
+
+[[row]]
+name = "Conn_02x06_P2.54"
+title = "Pin header 2x06, 2.54 mm"
+summary = "Generic 2 x 6 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 12 on pads 1 to 12 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x06"
+record.footprint = "FenoliteConnectorHeader:HDR2x6_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x06_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12" }
+
+[[row]]
+name = "Conn_02x07_P2.54"
+title = "Pin header 2x07, 2.54 mm"
+summary = "Generic 2 x 7 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 14 on pads 1 to 14 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x07"
+record.footprint = "FenoliteConnectorHeader:HDR2x7_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x07_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14" }
+
+[[row]]
+name = "Conn_02x08_P2.54"
+title = "Pin header 2x08, 2.54 mm"
+summary = "Generic 2 x 8 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 16 on pads 1 to 16 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x08"
+record.footprint = "FenoliteConnectorHeader:HDR2x8_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x08_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16" }
+
+[[row]]
+name = "Conn_02x09_P2.54"
+title = "Pin header 2x09, 2.54 mm"
+summary = "Generic 2 x 9 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 18 on pads 1 to 18 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x09"
+record.footprint = "FenoliteConnectorHeader:HDR2x9_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x09_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18" }
+
+[[row]]
+name = "Conn_02x10_P2.54"
+title = "Pin header 2x10, 2.54 mm"
+summary = "Generic 2 x 10 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 20 on pads 1 to 20 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x10"
+record.footprint = "FenoliteConnectorHeader:HDR2x10_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x10_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20" }
+
+[[row]]
+name = "Conn_02x11_P2.54"
+title = "Pin header 2x11, 2.54 mm"
+summary = "Generic 2 x 11 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 22 on pads 1 to 22 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x11"
+record.footprint = "FenoliteConnectorHeader:HDR2x11_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x11_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22" }
+
+[[row]]
+name = "Conn_02x12_P2.54"
+title = "Pin header 2x12, 2.54 mm"
+summary = "Generic 2 x 12 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 24 on pads 1 to 24 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x12"
+record.footprint = "FenoliteConnectorHeader:HDR2x12_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x12_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24" }
+
+[[row]]
+name = "Conn_02x13_P2.54"
+title = "Pin header 2x13, 2.54 mm"
+summary = "Generic 2 x 13 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 26 on pads 1 to 26 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x13"
+record.footprint = "FenoliteConnectorHeader:HDR2x13_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x13_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26" }
+
+[[row]]
+name = "Conn_02x14_P2.54"
+title = "Pin header 2x14, 2.54 mm"
+summary = "Generic 2 x 14 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 28 on pads 1 to 28 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x14"
+record.footprint = "FenoliteConnectorHeader:HDR2x14_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x14_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28" }
+
+[[row]]
+name = "Conn_02x15_P2.54"
+title = "Pin header 2x15, 2.54 mm"
+summary = "Generic 2 x 15 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 30 on pads 1 to 30 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x15"
+record.footprint = "FenoliteConnectorHeader:HDR2x15_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x15_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30" }
+
+[[row]]
+name = "Conn_02x16_P2.54"
+title = "Pin header 2x16, 2.54 mm"
+summary = "Generic 2 x 16 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 32 on pads 1 to 32 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x16"
+record.footprint = "FenoliteConnectorHeader:HDR2x16_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x16_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32" }
+
+[[row]]
+name = "Conn_02x17_P2.54"
+title = "Pin header 2x17, 2.54 mm"
+summary = "Generic 2 x 17 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 34 on pads 1 to 34 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x17"
+record.footprint = "FenoliteConnectorHeader:HDR2x17_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x17_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34" }
+
+[[row]]
+name = "Conn_02x18_P2.54"
+title = "Pin header 2x18, 2.54 mm"
+summary = "Generic 2 x 18 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 36 on pads 1 to 36 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x18"
+record.footprint = "FenoliteConnectorHeader:HDR2x18_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x18_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36" }
+
+[[row]]
+name = "Conn_02x19_P2.54"
+title = "Pin header 2x19, 2.54 mm"
+summary = "Generic 2 x 19 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 38 on pads 1 to 38 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x19"
+record.footprint = "FenoliteConnectorHeader:HDR2x19_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x19_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38" }
+
+[[row]]
+name = "Conn_02x20_P2.54"
+title = "Pin header 2x20, 2.54 mm"
+summary = "Generic 2 x 20 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 40 on pads 1 to 40 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x20"
+record.footprint = "FenoliteConnectorHeader:HDR2x20_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x20_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40" }
+
+[[row]]
+name = "Conn_02x21_P2.54"
+title = "Pin header 2x21, 2.54 mm"
+summary = "Generic 2 x 21 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 42 on pads 1 to 42 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x21"
+record.footprint = "FenoliteConnectorHeader:HDR2x21_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x21_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42" }
+
+[[row]]
+name = "Conn_02x22_P2.54"
+title = "Pin header 2x22, 2.54 mm"
+summary = "Generic 2 x 22 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 44 on pads 1 to 44 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x22"
+record.footprint = "FenoliteConnectorHeader:HDR2x22_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x22_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44" }
+
+[[row]]
+name = "Conn_02x23_P2.54"
+title = "Pin header 2x23, 2.54 mm"
+summary = "Generic 2 x 23 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 46 on pads 1 to 46 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x23"
+record.footprint = "FenoliteConnectorHeader:HDR2x23_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x23_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46" }
+
+[[row]]
+name = "Conn_02x24_P2.54"
+title = "Pin header 2x24, 2.54 mm"
+summary = "Generic 2 x 24 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 48 on pads 1 to 48 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x24"
+record.footprint = "FenoliteConnectorHeader:HDR2x24_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x24_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48" }
+
+[[row]]
+name = "Conn_02x25_P2.54"
+title = "Pin header 2x25, 2.54 mm"
+summary = "Generic 2 x 25 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 50 on pads 1 to 50 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x25"
+record.footprint = "FenoliteConnectorHeader:HDR2x25_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x25_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50" }
+
+[[row]]
+name = "Conn_02x26_P2.54"
+title = "Pin header 2x26, 2.54 mm"
+summary = "Generic 2 x 26 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 52 on pads 1 to 52 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x26"
+record.footprint = "FenoliteConnectorHeader:HDR2x26_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x26_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52" }
+
+[[row]]
+name = "Conn_02x27_P2.54"
+title = "Pin header 2x27, 2.54 mm"
+summary = "Generic 2 x 27 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 54 on pads 1 to 54 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x27"
+record.footprint = "FenoliteConnectorHeader:HDR2x27_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x27_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54" }
+
+[[row]]
+name = "Conn_02x28_P2.54"
+title = "Pin header 2x28, 2.54 mm"
+summary = "Generic 2 x 28 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 56 on pads 1 to 56 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x28"
+record.footprint = "FenoliteConnectorHeader:HDR2x28_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x28_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56" }
+
+[[row]]
+name = "Conn_02x29_P2.54"
+title = "Pin header 2x29, 2.54 mm"
+summary = "Generic 2 x 29 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 58 on pads 1 to 58 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x29"
+record.footprint = "FenoliteConnectorHeader:HDR2x29_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x29_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58" }
+
+[[row]]
+name = "Conn_02x30_P2.54"
+title = "Pin header 2x30, 2.54 mm"
+summary = "Generic 2 x 30 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 60 on pads 1 to 60 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x30"
+record.footprint = "FenoliteConnectorHeader:HDR2x30_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x30_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60" }
+
+[[row]]
+name = "Conn_02x31_P2.54"
+title = "Pin header 2x31, 2.54 mm"
+summary = "Generic 2 x 31 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 62 on pads 1 to 62 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x31"
+record.footprint = "FenoliteConnectorHeader:HDR2x31_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x31_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60", P61 = "61", P62 = "62" }
+
+[[row]]
+name = "Conn_02x32_P2.54"
+title = "Pin header 2x32, 2.54 mm"
+summary = "Generic 2 x 32 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 64 on pads 1 to 64 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x32"
+record.footprint = "FenoliteConnectorHeader:HDR2x32_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x32_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60", P61 = "61", P62 = "62", P63 = "63", P64 = "64" }
+
+[[row]]
+name = "Conn_02x33_P2.54"
+title = "Pin header 2x33, 2.54 mm"
+summary = "Generic 2 x 33 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 66 on pads 1 to 66 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x33"
+record.footprint = "FenoliteConnectorHeader:HDR2x33_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x33_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60", P61 = "61", P62 = "62", P63 = "63", P64 = "64", P65 = "65", P66 = "66" }
+
+[[row]]
+name = "Conn_02x34_P2.54"
+title = "Pin header 2x34, 2.54 mm"
+summary = "Generic 2 x 34 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 68 on pads 1 to 68 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x34"
+record.footprint = "FenoliteConnectorHeader:HDR2x34_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x34_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60", P61 = "61", P62 = "62", P63 = "63", P64 = "64", P65 = "65", P66 = "66", P67 = "67", P68 = "68" }
+
+[[row]]
+name = "Conn_02x35_P2.54"
+title = "Pin header 2x35, 2.54 mm"
+summary = "Generic 2 x 35 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 70 on pads 1 to 70 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x35"
+record.footprint = "FenoliteConnectorHeader:HDR2x35_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x35_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60", P61 = "61", P62 = "62", P63 = "63", P64 = "64", P65 = "65", P66 = "66", P67 = "67", P68 = "68", P69 = "69", P70 = "70" }
+
+[[row]]
+name = "Conn_02x36_P2.54"
+title = "Pin header 2x36, 2.54 mm"
+summary = "Generic 2 x 36 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 72 on pads 1 to 72 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x36"
+record.footprint = "FenoliteConnectorHeader:HDR2x36_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x36_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60", P61 = "61", P62 = "62", P63 = "63", P64 = "64", P65 = "65", P66 = "66", P67 = "67", P68 = "68", P69 = "69", P70 = "70", P71 = "71", P72 = "72" }
+
+[[row]]
+name = "Conn_02x37_P2.54"
+title = "Pin header 2x37, 2.54 mm"
+summary = "Generic 2 x 37 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 74 on pads 1 to 74 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x37"
+record.footprint = "FenoliteConnectorHeader:HDR2x37_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x37_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60", P61 = "61", P62 = "62", P63 = "63", P64 = "64", P65 = "65", P66 = "66", P67 = "67", P68 = "68", P69 = "69", P70 = "70", P71 = "71", P72 = "72", P73 = "73", P74 = "74" }
+
+[[row]]
+name = "Conn_02x38_P2.54"
+title = "Pin header 2x38, 2.54 mm"
+summary = "Generic 2 x 38 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 76 on pads 1 to 76 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x38"
+record.footprint = "FenoliteConnectorHeader:HDR2x38_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x38_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60", P61 = "61", P62 = "62", P63 = "63", P64 = "64", P65 = "65", P66 = "66", P67 = "67", P68 = "68", P69 = "69", P70 = "70", P71 = "71", P72 = "72", P73 = "73", P74 = "74", P75 = "75", P76 = "76" }
+
+[[row]]
+name = "Conn_02x39_P2.54"
+title = "Pin header 2x39, 2.54 mm"
+summary = "Generic 2 x 39 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 78 on pads 1 to 78 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x39"
+record.footprint = "FenoliteConnectorHeader:HDR2x39_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x39_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60", P61 = "61", P62 = "62", P63 = "63", P64 = "64", P65 = "65", P66 = "66", P67 = "67", P68 = "68", P69 = "69", P70 = "70", P71 = "71", P72 = "72", P73 = "73", P74 = "74", P75 = "75", P76 = "76", P77 = "77", P78 = "78" }
+
+[[row]]
+name = "Conn_02x40_P2.54"
+title = "Pin header 2x40, 2.54 mm"
+summary = "Generic 2 x 40 pin header, 2.54 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 80 on pads 1 to 80 (odd pins first row)"
+tags = ["connector", "header", "2.54mm"]
+record.symbol = "FenoliteSymbols:Conn_02x40"
+record.footprint = "FenoliteConnectorHeader:HDR2x40_P2.54_Samtec-TSW"
+record.ref_prefix = "J"
+record.value = "Conn_02x40_P2.54"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60", P61 = "61", P62 = "62", P63 = "63", P64 = "64", P65 = "65", P66 = "66", P67 = "67", P68 = "68", P69 = "69", P70 = "70", P71 = "71", P72 = "72", P73 = "73", P74 = "74", P75 = "75", P76 = "76", P77 = "77", P78 = "78", P79 = "79", P80 = "80" }
+
+[[row]]
+name = "Conn_02x02_P1.27"
+title = "Pin header 2x02, 1.27 mm"
+summary = "Generic 2 x 2 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 4 on pads 1 to 4 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x02"
+record.footprint = "FenoliteConnectorHeader:HDR2x2_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x02_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4" }
+
+[[row]]
+name = "Conn_02x03_P1.27"
+title = "Pin header 2x03, 1.27 mm"
+summary = "Generic 2 x 3 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 6 on pads 1 to 6 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x03"
+record.footprint = "FenoliteConnectorHeader:HDR2x3_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x03_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6" }
+
+[[row]]
+name = "Conn_02x04_P1.27"
+title = "Pin header 2x04, 1.27 mm"
+summary = "Generic 2 x 4 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 8 on pads 1 to 8 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x04"
+record.footprint = "FenoliteConnectorHeader:HDR2x4_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x04_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8" }
+
+[[row]]
+name = "Conn_02x05_P1.27"
+title = "Pin header 2x05, 1.27 mm"
+summary = "Generic 2 x 5 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 10 on pads 1 to 10 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x05"
+record.footprint = "FenoliteConnectorHeader:HDR2x5_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x05_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10" }
+
+[[row]]
+name = "Conn_02x06_P1.27"
+title = "Pin header 2x06, 1.27 mm"
+summary = "Generic 2 x 6 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 12 on pads 1 to 12 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x06"
+record.footprint = "FenoliteConnectorHeader:HDR2x6_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x06_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12" }
+
+[[row]]
+name = "Conn_02x07_P1.27"
+title = "Pin header 2x07, 1.27 mm"
+summary = "Generic 2 x 7 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 14 on pads 1 to 14 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x07"
+record.footprint = "FenoliteConnectorHeader:HDR2x7_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x07_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14" }
+
+[[row]]
+name = "Conn_02x08_P1.27"
+title = "Pin header 2x08, 1.27 mm"
+summary = "Generic 2 x 8 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 16 on pads 1 to 16 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x08"
+record.footprint = "FenoliteConnectorHeader:HDR2x8_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x08_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16" }
+
+[[row]]
+name = "Conn_02x09_P1.27"
+title = "Pin header 2x09, 1.27 mm"
+summary = "Generic 2 x 9 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 18 on pads 1 to 18 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x09"
+record.footprint = "FenoliteConnectorHeader:HDR2x9_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x09_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18" }
+
+[[row]]
+name = "Conn_02x10_P1.27"
+title = "Pin header 2x10, 1.27 mm"
+summary = "Generic 2 x 10 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 20 on pads 1 to 20 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x10"
+record.footprint = "FenoliteConnectorHeader:HDR2x10_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x10_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20" }
+
+[[row]]
+name = "Conn_02x11_P1.27"
+title = "Pin header 2x11, 1.27 mm"
+summary = "Generic 2 x 11 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 22 on pads 1 to 22 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x11"
+record.footprint = "FenoliteConnectorHeader:HDR2x11_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x11_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22" }
+
+[[row]]
+name = "Conn_02x12_P1.27"
+title = "Pin header 2x12, 1.27 mm"
+summary = "Generic 2 x 12 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 24 on pads 1 to 24 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x12"
+record.footprint = "FenoliteConnectorHeader:HDR2x12_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x12_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24" }
+
+[[row]]
+name = "Conn_02x13_P1.27"
+title = "Pin header 2x13, 1.27 mm"
+summary = "Generic 2 x 13 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 26 on pads 1 to 26 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x13"
+record.footprint = "FenoliteConnectorHeader:HDR2x13_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x13_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26" }
+
+[[row]]
+name = "Conn_02x14_P1.27"
+title = "Pin header 2x14, 1.27 mm"
+summary = "Generic 2 x 14 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 28 on pads 1 to 28 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x14"
+record.footprint = "FenoliteConnectorHeader:HDR2x14_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x14_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28" }
+
+[[row]]
+name = "Conn_02x15_P1.27"
+title = "Pin header 2x15, 1.27 mm"
+summary = "Generic 2 x 15 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 30 on pads 1 to 30 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x15"
+record.footprint = "FenoliteConnectorHeader:HDR2x15_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x15_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30" }
+
+[[row]]
+name = "Conn_02x16_P1.27"
+title = "Pin header 2x16, 1.27 mm"
+summary = "Generic 2 x 16 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 32 on pads 1 to 32 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x16"
+record.footprint = "FenoliteConnectorHeader:HDR2x16_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x16_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32" }
+
+[[row]]
+name = "Conn_02x17_P1.27"
+title = "Pin header 2x17, 1.27 mm"
+summary = "Generic 2 x 17 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 34 on pads 1 to 34 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x17"
+record.footprint = "FenoliteConnectorHeader:HDR2x17_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x17_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34" }
+
+[[row]]
+name = "Conn_02x18_P1.27"
+title = "Pin header 2x18, 1.27 mm"
+summary = "Generic 2 x 18 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 36 on pads 1 to 36 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x18"
+record.footprint = "FenoliteConnectorHeader:HDR2x18_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x18_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36" }
+
+[[row]]
+name = "Conn_02x19_P1.27"
+title = "Pin header 2x19, 1.27 mm"
+summary = "Generic 2 x 19 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 38 on pads 1 to 38 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x19"
+record.footprint = "FenoliteConnectorHeader:HDR2x19_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x19_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38" }
+
+[[row]]
+name = "Conn_02x20_P1.27"
+title = "Pin header 2x20, 1.27 mm"
+summary = "Generic 2 x 20 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 40 on pads 1 to 40 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x20"
+record.footprint = "FenoliteConnectorHeader:HDR2x20_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x20_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40" }
+
+[[row]]
+name = "Conn_02x21_P1.27"
+title = "Pin header 2x21, 1.27 mm"
+summary = "Generic 2 x 21 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 42 on pads 1 to 42 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x21"
+record.footprint = "FenoliteConnectorHeader:HDR2x21_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x21_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42" }
+
+[[row]]
+name = "Conn_02x22_P1.27"
+title = "Pin header 2x22, 1.27 mm"
+summary = "Generic 2 x 22 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 44 on pads 1 to 44 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x22"
+record.footprint = "FenoliteConnectorHeader:HDR2x22_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x22_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44" }
+
+[[row]]
+name = "Conn_02x23_P1.27"
+title = "Pin header 2x23, 1.27 mm"
+summary = "Generic 2 x 23 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 46 on pads 1 to 46 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x23"
+record.footprint = "FenoliteConnectorHeader:HDR2x23_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x23_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46" }
+
+[[row]]
+name = "Conn_02x24_P1.27"
+title = "Pin header 2x24, 1.27 mm"
+summary = "Generic 2 x 24 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 48 on pads 1 to 48 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x24"
+record.footprint = "FenoliteConnectorHeader:HDR2x24_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x24_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48" }
+
+[[row]]
+name = "Conn_02x25_P1.27"
+title = "Pin header 2x25, 1.27 mm"
+summary = "Generic 2 x 25 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 50 on pads 1 to 50 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x25"
+record.footprint = "FenoliteConnectorHeader:HDR2x25_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x25_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50" }
+
+[[row]]
+name = "Conn_02x26_P1.27"
+title = "Pin header 2x26, 1.27 mm"
+summary = "Generic 2 x 26 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 52 on pads 1 to 52 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x26"
+record.footprint = "FenoliteConnectorHeader:HDR2x26_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x26_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52" }
+
+[[row]]
+name = "Conn_02x27_P1.27"
+title = "Pin header 2x27, 1.27 mm"
+summary = "Generic 2 x 27 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 54 on pads 1 to 54 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x27"
+record.footprint = "FenoliteConnectorHeader:HDR2x27_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x27_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54" }
+
+[[row]]
+name = "Conn_02x28_P1.27"
+title = "Pin header 2x28, 1.27 mm"
+summary = "Generic 2 x 28 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 56 on pads 1 to 56 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x28"
+record.footprint = "FenoliteConnectorHeader:HDR2x28_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x28_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56" }
+
+[[row]]
+name = "Conn_02x29_P1.27"
+title = "Pin header 2x29, 1.27 mm"
+summary = "Generic 2 x 29 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 58 on pads 1 to 58 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x29"
+record.footprint = "FenoliteConnectorHeader:HDR2x29_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x29_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58" }
+
+[[row]]
+name = "Conn_02x30_P1.27"
+title = "Pin header 2x30, 1.27 mm"
+summary = "Generic 2 x 30 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 60 on pads 1 to 60 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x30"
+record.footprint = "FenoliteConnectorHeader:HDR2x30_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x30_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60" }
+
+[[row]]
+name = "Conn_02x31_P1.27"
+title = "Pin header 2x31, 1.27 mm"
+summary = "Generic 2 x 31 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 62 on pads 1 to 62 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x31"
+record.footprint = "FenoliteConnectorHeader:HDR2x31_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x31_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60", P61 = "61", P62 = "62" }
+
+[[row]]
+name = "Conn_02x32_P1.27"
+title = "Pin header 2x32, 1.27 mm"
+summary = "Generic 2 x 32 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 64 on pads 1 to 64 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x32"
+record.footprint = "FenoliteConnectorHeader:HDR2x32_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x32_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60", P61 = "61", P62 = "62", P63 = "63", P64 = "64" }
+
+[[row]]
+name = "Conn_02x33_P1.27"
+title = "Pin header 2x33, 1.27 mm"
+summary = "Generic 2 x 33 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 66 on pads 1 to 66 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x33"
+record.footprint = "FenoliteConnectorHeader:HDR2x33_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x33_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60", P61 = "61", P62 = "62", P63 = "63", P64 = "64", P65 = "65", P66 = "66" }
+
+[[row]]
+name = "Conn_02x34_P1.27"
+title = "Pin header 2x34, 1.27 mm"
+summary = "Generic 2 x 34 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 68 on pads 1 to 68 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x34"
+record.footprint = "FenoliteConnectorHeader:HDR2x34_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x34_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60", P61 = "61", P62 = "62", P63 = "63", P64 = "64", P65 = "65", P66 = "66", P67 = "67", P68 = "68" }
+
+[[row]]
+name = "Conn_02x35_P1.27"
+title = "Pin header 2x35, 1.27 mm"
+summary = "Generic 2 x 35 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 70 on pads 1 to 70 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x35"
+record.footprint = "FenoliteConnectorHeader:HDR2x35_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x35_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60", P61 = "61", P62 = "62", P63 = "63", P64 = "64", P65 = "65", P66 = "66", P67 = "67", P68 = "68", P69 = "69", P70 = "70" }
+
+[[row]]
+name = "Conn_02x36_P1.27"
+title = "Pin header 2x36, 1.27 mm"
+summary = "Generic 2 x 36 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 72 on pads 1 to 72 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x36"
+record.footprint = "FenoliteConnectorHeader:HDR2x36_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x36_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60", P61 = "61", P62 = "62", P63 = "63", P64 = "64", P65 = "65", P66 = "66", P67 = "67", P68 = "68", P69 = "69", P70 = "70", P71 = "71", P72 = "72" }
+
+[[row]]
+name = "Conn_02x37_P1.27"
+title = "Pin header 2x37, 1.27 mm"
+summary = "Generic 2 x 37 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 74 on pads 1 to 74 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x37"
+record.footprint = "FenoliteConnectorHeader:HDR2x37_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x37_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60", P61 = "61", P62 = "62", P63 = "63", P64 = "64", P65 = "65", P66 = "66", P67 = "67", P68 = "68", P69 = "69", P70 = "70", P71 = "71", P72 = "72", P73 = "73", P74 = "74" }
+
+[[row]]
+name = "Conn_02x38_P1.27"
+title = "Pin header 2x38, 1.27 mm"
+summary = "Generic 2 x 38 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 76 on pads 1 to 76 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x38"
+record.footprint = "FenoliteConnectorHeader:HDR2x38_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x38_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60", P61 = "61", P62 = "62", P63 = "63", P64 = "64", P65 = "65", P66 = "66", P67 = "67", P68 = "68", P69 = "69", P70 = "70", P71 = "71", P72 = "72", P73 = "73", P74 = "74", P75 = "75", P76 = "76" }
+
+[[row]]
+name = "Conn_02x39_P1.27"
+title = "Pin header 2x39, 1.27 mm"
+summary = "Generic 2 x 39 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 78 on pads 1 to 78 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x39"
+record.footprint = "FenoliteConnectorHeader:HDR2x39_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x39_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60", P61 = "61", P62 = "62", P63 = "63", P64 = "64", P65 = "65", P66 = "66", P67 = "67", P68 = "68", P69 = "69", P70 = "70", P71 = "71", P72 = "72", P73 = "73", P74 = "74", P75 = "75", P76 = "76", P77 = "77", P78 = "78" }
+
+[[row]]
+name = "Conn_02x40_P1.27"
+title = "Pin header 2x40, 1.27 mm"
+summary = "Generic 2 x 40 pin header, 1.27 mm pitch, odd pins in the first row, through-hole"
+used = "symbol pins 1 to 80 on pads 1 to 80 (odd pins first row)"
+tags = ["connector", "header", "1.27mm"]
+record.symbol = "FenoliteSymbols:Conn_02x40"
+record.footprint = "FenoliteConnectorHeader:HDR2x40_P1.27_Samtec-FTSH"
+record.ref_prefix = "J"
+record.value = "Conn_02x40_P1.27"
+record.pins = { P1 = "1", P2 = "2", P3 = "3", P4 = "4", P5 = "5", P6 = "6", P7 = "7", P8 = "8", P9 = "9", P10 = "10", P11 = "11", P12 = "12", P13 = "13", P14 = "14", P15 = "15", P16 = "16", P17 = "17", P18 = "18", P19 = "19", P20 = "20", P21 = "21", P22 = "22", P23 = "23", P24 = "24", P25 = "25", P26 = "26", P27 = "27", P28 = "28", P29 = "29", P30 = "30", P31 = "31", P32 = "32", P33 = "33", P34 = "34", P35 = "35", P36 = "36", P37 = "37", P38 = "38", P39 = "39", P40 = "40", P41 = "41", P42 = "42", P43 = "43", P44 = "44", P45 = "45", P46 = "46", P47 = "47", P48 = "48", P49 = "49", P50 = "50", P51 = "51", P52 = "52", P53 = "53", P54 = "54", P55 = "55", P56 = "56", P57 = "57", P58 = "58", P59 = "59", P60 = "60", P61 = "61", P62 = "62", P63 = "63", P64 = "64", P65 = "65", P66 = "66", P67 = "67", P68 = "68", P69 = "69", P70 = "70", P71 = "71", P72 = "72", P73 = "73", P74 = "74", P75 = "75", P76 = "76", P77 = "77", P78 = "78", P79 = "79", P80 = "80" }

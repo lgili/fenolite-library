@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Generic device authored for fenolite-library (change c0390): FenoliteSymbols:Conn_01x09 with FenoliteConnectorHeader:HDR1x9_P2.54_Samtec-TSW. No manufacturer or orderable part is claimed; sources are those of the symbol and footprint.
+schema = "fenolite.device.v1"
+id = "FenoliteDevices:Conn_01x09_P2.54"
+version = "1.0.0"
+summary = "Generic 1 x 9 pin header, 2.54 mm pitch, through-hole"
+category = "Generic device"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422", "D-0424"]
+symbol = "FenoliteSymbols:Conn_01x09"
+footprint = "FenoliteConnectorHeader:HDR1x9_P2.54_Samtec-TSW"
+ref_prefix = "J"
+value = "Conn_01x09_P2.54"
+
+[pins]
+P1 = "1"
+P2 = "2"
+P3 = "3"
+P4 = "4"
+P5 = "5"
+P6 = "6"
+P7 = "7"
+P8 = "8"
+P9 = "9"

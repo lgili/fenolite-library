@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Generic device authored for fenolite-library (change c0390): FenoliteSymbols:Diode_Zener with FenoliteDiodeSMD:SOD323_Diodes. No manufacturer or orderable part is claimed; sources are those of the symbol and footprint.
+schema = "fenolite.device.v1"
+id = "FenoliteDevices:D_Zener_SOD-323"
+version = "1.0.0"
+summary = "Generic Zener diode in SOD-323, pad 1 cathode"
+category = "Generic device"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422", "D-0395"]
+symbol = "FenoliteSymbols:Diode_Zener"
+footprint = "FenoliteDiodeSMD:SOD323_Diodes"
+ref_prefix = "D"
+value = "D_Zener_SOD-323"
+ends = ["A", "K"]
+
+[pins]
+K = "1"
+A = "2"
