@@ -1,0 +1,22 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:Choke_Common_Mode",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic common-mode choke, two coupled windings; pins 1-2 first winding, 3-4 second winding",
+  "tags": [
+    "choke",
+    "common-mode",
+    "generic",
+    "inductor",
+    "symbol"
+  ],
+  "title": "Common-mode choke",
+  "version": "1.0.0"
+}

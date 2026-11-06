@@ -1,0 +1,22 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:Diode_Zener_Dual_CommonAnode",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Two Zener diodes with a common anode; pins 1 K1, 2 K2, 3 common A (common SOT-23 pin-out)",
+  "tags": [
+    "diode",
+    "dual",
+    "generic",
+    "symbol",
+    "zener"
+  ],
+  "title": "Dual Zener diode, common anode",
+  "version": "1.0.0"
+}

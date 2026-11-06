@@ -1,0 +1,21 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:Relay_SPST_NO",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic relay with one normally open contact; pins 1 and 2 coil, 3 common, 4 normally open",
+  "tags": [
+    "generic",
+    "relay",
+    "spst",
+    "symbol"
+  ],
+  "title": "Relay, one normally open contact",
+  "version": "1.0.0"
+}

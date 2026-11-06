@@ -199,6 +199,77 @@ for n in range(1, 41):
         [(i + 1, f"Pin_{i + 1}", "passive") for i in range(2 * n)], pl,
         [rect((-2.54, 1.27), (2.54, -2.54 * (n - 1) - 1.27))], ["connector", "dual-row"], category="Generic connector symbol")
 
+FIRST_BATCH = len(ROWS)  # rows above: batch 5 (symbols.toml); rows below: batch 13 (symbols-more.toml)
+
+
+def head_at(tip, d, size=0.6):
+    """A filled arrow head whose tip is at ``tip``, pointing along the unit vector ``d``."""
+    n = (-d[1], d[0])
+    base = (tip[0] - size * d[0], tip[1] - size * d[1])
+    return poly(tip, (base[0] + 0.5 * size * n[0], base[1] + 0.5 * size * n[1]), (base[0] - 0.5 * size * n[0], base[1] - 0.5 * size * n[1]))
+
+
+# Optocoupler, LED input and NPN phototransistor output (common 4-pin pin-out: 1 A, 2 K, 3 E, 4 C).
+add("Optocoupler_NPN", "Optocoupler, phototransistor output", "Generic optocoupler with an LED input and an NPN "
+    "phototransistor output; pins 1 A, 2 K, 3 E, 4 C (common 4-pin pin-out)", "U",
+    [(1, "A", "passive"), (2, "K", "passive"), (3, "E", "passive"), (4, "C", "passive")],
+    [pin(1, -7.62, 2.54), pin(2, -7.62, -2.54), pin(3, 7.62, -2.54, 180), pin(4, 7.62, 2.54, 180)],
+    [rect((-5.08, -3.81), (5.08, 3.81)),
+     line((-5.08, 2.54), (-2.54, 2.54), (-2.54, 1.016)), line((-2.54, -0.508), (-2.54, -2.54), (-5.08, -2.54)),
+     poly((-3.556, 1.016), (-1.524, 1.016), (-2.54, -0.508), filled=False), line((-3.556, -0.508), (-1.524, -0.508)),
+     line((-1.016, 0.762), (0.254, 0.762)), head_at((0.508, 0.762), (1, 0)),
+     line((-1.016, -0.254), (0.254, -0.254)), head_at((0.508, -0.254), (1, 0)),
+     line((1.524, -1.524), (1.524, 1.524), width=0.508), line((1.524, 0.635), (3.048, 2.54), (5.08, 2.54)),
+     line((1.524, -0.635), (3.048, -2.54), (5.08, -2.54)), head_at((2.667, -2.064), (0.625, -0.781))],
+    ["optocoupler", "isolation"])
+add("Varistor", "Varistor", "Generic varistor (voltage-dependent resistor)", "RV",
+    [(1, "~", "passive"), (2, "~", "passive")], two,
+    [rect((-2.54, -1.016), (2.54, 1.016)), line((-3.302, -1.778), (-2.54, -1.778), (2.54, 1.778))], ["varistor", "protection"], hide_numbers=True)
+add("Thermistor_NTC", "Thermistor, NTC", "Generic negative-temperature-coefficient thermistor", "TH",
+    [(1, "~", "passive"), (2, "~", "passive")], two,
+    [rect((-2.54, -1.016), (2.54, 1.016)), line((-2.54, -1.778), (2.54, 1.778), (3.302, 1.778)),
+     line((-2.032, 1.524), (-1.016, 1.524))], ["thermistor", "ntc"], hide_numbers=True)
+add("Gas_Discharge_Tube", "Gas discharge tube (surge arrester)", "Generic two-electrode gas discharge tube surge arrester", "GDT",
+    [(1, "~", "passive"), (2, "~", "passive")], two,
+    [circle((0, 0), 1.905), line((-2.54, 0), (-0.508, 0)), line((0.508, 0), (2.54, 0)),
+     line((-0.508, -0.762), (-0.508, 0.762)), line((0.508, -0.762), (0.508, 0.762))], ["gdt", "protection", "surge-arrester"], hide_numbers=True)
+COIL = [rect((-6.35, -1.27), (-3.81, 1.27)), line((-5.08, 2.54), (-5.08, 1.27)), line((-5.08, -1.27), (-5.08, -2.54))]
+add("Relay_SPST_NO", "Relay, one normally open contact", "Generic relay with one normally open contact; pins 1 and 2 coil, "
+    "3 common, 4 normally open", "K",
+    [(1, "~", "passive"), (2, "~", "passive"), (3, "COM", "passive"), (4, "NO", "passive")],
+    [pin(1, -5.08, 5.08, 270), pin(2, -5.08, -5.08, 90), pin(3, 2.54, -5.08, 90), pin(4, 2.54, 5.08, 270)],
+    [*COIL, line((2.54, -2.54), (2.54, -1.27), (3.81, 1.016)), line((2.54, 2.54), (2.54, 1.27)),
+     line((-3.81, 0), (-2.54, 0)), line((-1.778, 0), (-0.508, 0)), line((0.254, 0), (1.524, 0)), line((2.286, 0), (3.175, 0))],
+    ["relay", "spst"])
+add("Relay_SPDT", "Relay, one changeover contact", "Generic relay with one changeover contact; pins 1 and 2 coil, "
+    "3 common, 4 normally open, 5 normally closed", "K",
+    [(1, "~", "passive"), (2, "~", "passive"), (3, "COM", "passive"), (4, "NO", "passive"), (5, "NC", "passive")],
+    [pin(1, -5.08, 5.08, 270), pin(2, -5.08, -5.08, 90), pin(3, 2.54, -5.08, 90), pin(4, 0, 5.08, 270), pin(5, 5.08, 5.08, 270)],
+    [*COIL, line((2.54, -2.54), (2.54, -1.27), (4.064, 1.27)), line((0, 2.54), (0, 1.27), (1.524, 1.27)),
+     line((5.08, 2.54), (5.08, 1.27), (3.556, 1.27)),
+     line((-3.81, 0), (-2.54, 0)), line((-1.778, 0), (-0.508, 0)), line((0.254, 0), (1.524, 0)), line((2.286, 0), (3.302, 0))],
+    ["relay", "spdt"])
+humps = lambda y: [q for i, cx in enumerate((-1.905, -0.635, 0.635, 1.905)) for q in arc_points(cx, y, 0.635, 180, 0)[(1 if i else 0):]]
+add("Choke_Common_Mode", "Common-mode choke", "Generic common-mode choke, two coupled windings; pins 1-2 first winding, "
+    "3-4 second winding", "L",
+    [(1, "1", "passive"), (2, "2", "passive"), (3, "3", "passive"), (4, "4", "passive")],
+    [pin(1, -5.08, 2.54), pin(2, 5.08, 2.54, 180), pin(3, -5.08, -2.54), pin(4, 5.08, -2.54, 180)],
+    [line(*humps(2.54)), line(*[(x, -y) for x, y in humps(2.54)]), line((-2.54, 0.508), (2.54, 0.508)), line((-2.54, -0.508), (2.54, -0.508))],
+    ["choke", "common-mode", "inductor"], hide_numbers=True)
+
+
+def zener_up(x):
+    return [poly((x - 1.27, -1.016), (x + 1.27, -1.016), (x, 1.016), filled=False),
+            line((x - 1.778, 1.524), (x - 1.27, 1.016), (x + 1.27, 1.016), (x + 1.778, 0.508)),
+            line((x, 2.54), (x, 1.016)), line((x, -1.016), (x, -2.54))]
+
+
+add("Diode_Zener_Dual_CommonAnode", "Dual Zener diode, common anode", "Two Zener diodes with a common anode; pins 1 K1, "
+    "2 K2, 3 common A (common SOT-23 pin-out)", "D",
+    [(1, "K1", "passive"), (2, "K2", "passive"), (3, "A", "passive")],
+    [pin(1, -2.54, 5.08, 270), pin(2, 2.54, 5.08, 270), pin(3, 0, -5.08, 90)],
+    [*zener_up(-2.54), *zener_up(2.54), line((-2.54, -2.54), (2.54, -2.54))], ["diode", "zener", "dual"])
+
 
 def tv(v):
     if isinstance(v, bool):
@@ -224,8 +295,12 @@ sources = ["D-0422"]
 used = "Original generic schematic drawings authored for fenolite-library; no manufacturer data."
 tags = ["generic", "symbol"]
 ''']
-for r in ROWS:
-    out.append(f'''
+
+
+def rows_text(rows):
+    text = []
+    for r in rows:
+        text.append(f'''
 [[row]]
 name = {json.dumps(r["name"])}
 title = {json.dumps(r["title"])}
@@ -235,5 +310,10 @@ tags = {tv(r["tags"])}
 record.pin = {tv(r["record"]["pin"])}
 record.symbol = {tv(r["record"]["symbol"])}
 ''')
-Path(__file__).with_name("symbols.toml").write_text("".join(out), encoding="utf-8")
-print(len(ROWS), "symbols")
+    return text
+
+
+Path(__file__).with_name("symbols.toml").write_text("".join(out + rows_text(ROWS[:FIRST_BATCH])), encoding="utf-8")
+MORE = out[0].replace("batch 5 of change c0390", "batch 13 of change c0390").replace('date = "2026-11-04"', 'date = "2026-11-06"')
+Path(__file__).with_name("symbols-more.toml").write_text(MORE + "".join(rows_text(ROWS[FIRST_BATCH:])), encoding="utf-8")
+print(FIRST_BATCH, "symbols in symbols.toml,", len(ROWS) - FIRST_BATCH, "in symbols-more.toml")

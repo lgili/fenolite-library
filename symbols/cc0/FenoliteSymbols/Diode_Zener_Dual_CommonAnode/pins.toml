@@ -1,0 +1,102 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0422 Original generic schematic symbols authored for fenolite-library (change c0390) (c0390 batch 5). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.pins.v0"
+id = "FenoliteSymbols:Diode_Zener_Dual_CommonAnode"
+version = "1.0.0"
+summary = "Two Zener diodes with a common anode; pins 1 K1, 2 K2, 3 common A (common SOT-23 pin-out)"
+category = "Generic symbol"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422"]
+
+[[pin]]
+number = "1"
+name = "K1"
+type = "passive"
+
+[[pin]]
+number = "2"
+name = "K2"
+type = "passive"
+
+[[pin]]
+number = "3"
+name = "A"
+type = "passive"
+
+[symbol]
+reference = "D"
+pin_names_hidden = true
+
+[[symbol.pins]]
+number = "1"
+at = ["-2.54mm", "5.08mm"]
+length = "2.54mm"
+rotation = "270deg"
+
+[[symbol.pins]]
+number = "2"
+at = ["2.54mm", "5.08mm"]
+length = "2.54mm"
+rotation = "270deg"
+
+[[symbol.pins]]
+number = "3"
+at = ["0mm", "-5.08mm"]
+length = "2.54mm"
+rotation = "90deg"
+
+[[symbol.graphic]]
+kind = "polygon"
+points = [["-3.81mm", "-1.016mm"], ["-1.27mm", "-1.016mm"], ["-2.54mm", "1.016mm"]]
+filled = false
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-4.318mm", "1.524mm"], ["-3.81mm", "1.016mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-3.81mm", "1.016mm"], ["-1.27mm", "1.016mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-1.27mm", "1.016mm"], ["-0.762mm", "0.508mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-2.54mm", "2.54mm"], ["-2.54mm", "1.016mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-2.54mm", "-1.016mm"], ["-2.54mm", "-2.54mm"]]
+
+[[symbol.graphic]]
+kind = "polygon"
+points = [["1.27mm", "-1.016mm"], ["3.81mm", "-1.016mm"], ["2.54mm", "1.016mm"]]
+filled = false
+
+[[symbol.graphic]]
+kind = "line"
+points = [["0.762mm", "1.524mm"], ["1.27mm", "1.016mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.27mm", "1.016mm"], ["3.81mm", "1.016mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["3.81mm", "1.016mm"], ["4.318mm", "0.508mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["2.54mm", "2.54mm"], ["2.54mm", "1.016mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["2.54mm", "-1.016mm"], ["2.54mm", "-2.54mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-2.54mm", "-2.54mm"], ["2.54mm", "-2.54mm"]]
