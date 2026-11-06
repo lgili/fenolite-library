@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Generic device authored for fenolite-library (change c0390): FenoliteSymbols:Optocoupler_NPN with FenolitePackageDIP:DIP4_SMD_W7.62_P2.54_Vishay-Opt7. No manufacturer or orderable part is claimed; sources are those of the symbol and footprint.
+schema = "fenolite.device.v1"
+id = "FenoliteDevices:Optocoupler_NPN_DIP4-SMD"
+version = "1.0.0"
+summary = "Generic optocoupler with an NPN phototransistor output in a 4-lead SMD DIP: pad 1 A, 2 K, 3 E, 4 C"
+category = "Generic device"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422", "D-0428"]
+symbol = "FenoliteSymbols:Optocoupler_NPN"
+footprint = "FenolitePackageDIP:DIP4_SMD_W7.62_P2.54_Vishay-Opt7"
+ref_prefix = "U"
+value = "Optocoupler_NPN_DIP4-SMD"
+
+[pins]
+A = "1"
+K = "2"
+E = "3"
+C = "4"

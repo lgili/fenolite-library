@@ -1,0 +1,22 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Generic device authored for fenolite-library (change c0390): FenoliteSymbols:OpAmp with FenolitePackageSOT:SC70-5_Microchip-LT. No manufacturer or orderable part is claimed; sources are those of the symbol and footprint.
+schema = "fenolite.device.v1"
+id = "FenoliteDevices:OpAmp_Single_SC70-5"
+version = "1.0.0"
+summary = "Generic single op-amp in SC-70-5 with the common pin-out: pad 1 +IN, 2 V-, 3 -IN, 4 OUT, 5 V+"
+category = "Generic device"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422", "D-0423"]
+symbol = "FenoliteSymbols:OpAmp"
+footprint = "FenolitePackageSOT:SC70-5_Microchip-LT"
+ref_prefix = "U"
+value = "OpAmp_Single_SC70-5"
+
+[pins]
+INP = { map = { 3 = "1" } }
+VN = { map = { 4 = "2" } }
+INN = { map = { 2 = "3" } }
+OUT = { map = { 6 = "4" } }
+VP = { map = { 7 = "5" } }

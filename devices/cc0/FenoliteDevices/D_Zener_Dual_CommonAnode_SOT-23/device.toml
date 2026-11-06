@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Generic device authored for fenolite-library (change c0390): FenoliteSymbols:Diode_Zener_Dual_CommonAnode with FenolitePackageSOT:SOT23-3_Microchip-TT. No manufacturer or orderable part is claimed; sources are those of the symbol and footprint.
+schema = "fenolite.device.v1"
+id = "FenoliteDevices:D_Zener_Dual_CommonAnode_SOT-23"
+version = "1.0.0"
+summary = "Generic dual Zener diode with a common anode in SOT-23: pad 1 K1, pad 2 K2, pad 3 A"
+category = "Generic device"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422", "D-0423"]
+symbol = "FenoliteSymbols:Diode_Zener_Dual_CommonAnode"
+footprint = "FenolitePackageSOT:SOT23-3_Microchip-TT"
+ref_prefix = "D"
+value = "D_Zener_Dual_CommonAnode_SOT-23"
+
+[pins]
+K1 = "1"
+K2 = "2"
+A = "3"

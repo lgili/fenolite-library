@@ -1,0 +1,31 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteSymbols:Inductor",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenoliteResistorSMD:CHIP0805_B2x1.25",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:L_0805",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic 0805 chip inductor on the 0805 chip-resistor land",
+  "tags": [
+    "0805",
+    "device",
+    "generic",
+    "inductor"
+  ],
+  "title": "Inductor, 0805 chip",
+  "version": "1.0.0"
+}

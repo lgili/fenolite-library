@@ -159,7 +159,63 @@ def toml_value(value):
     return json.dumps(value)
 
 
+def rows_more():
+    """Batch 13: devices on the footprints and symbols added after batch 12."""
+    out = []
+    for kind, symbol, prefix, what in (("FB", "Ferrite_Bead", "FB", "ferrite bead"), ("L", "Inductor", "L", "inductor")):
+        for case in ("0805", "1206"):
+            out.append(row(f"{kind}_{case}", f"{what[0].upper()}{what[1:]}, {case} chip",
+                           f"Generic {case} chip {what} on the {case} chip-resistor land",
+                           f"FenoliteSymbols:{symbol}", f"FenoliteResistorSMD:{RESISTORS[case]}", prefix, two(), ("P1", "P2"),
+                           (kind.lower() == "fb" and "ferrite" or "inductor", case), "symbol pins 1, 2 on pads 1, 2"))
+    out.append(row("OpAmp_Single_SC70-5", "Operational amplifier, single, SC-70-5",
+                   "Generic single op-amp in SC-70-5 with the common pin-out: pad 1 +IN, 2 V-, 3 -IN, 4 OUT, 5 V+",
+                   "FenoliteSymbols:OpAmp", "FenolitePackageSOT:SC70-5_Microchip-LT", "U",
+                   {"INP": {"map": {"3": "1"}}, "VN": {"map": {"4": "2"}}, "INN": {"map": {"2": "3"}},
+                    "OUT": {"map": {"6": "4"}}, "VP": {"map": {"7": "5"}}}, None, ("opamp", "sc-70-5"),
+                   "+IN (symbol pin 3) on pad 1, V- (4) on pad 2, -IN (2) on pad 3, OUT (6) on pad 4, V+ (7) on pad 5"))
+    out.append(row("D_Zener_Dual_CommonAnode_SOT-23", "Dual Zener diode, common anode, SOT-23",
+                   "Generic dual Zener diode with a common anode in SOT-23: pad 1 K1, pad 2 K2, pad 3 A",
+                   "FenoliteSymbols:Diode_Zener_Dual_CommonAnode", SOT23, "D", {"K1": "1", "K2": "2", "A": "3"}, None,
+                   ("diode", "zener", "sot-23"), "symbol pins 1, 2, 3 on pads 1, 2, 3"))
+    out.append(row("Optocoupler_NPN_DIP4-SMD", "Optocoupler, phototransistor output, 4-lead SMD DIP",
+                   "Generic optocoupler with an NPN phototransistor output in a 4-lead SMD DIP: pad 1 A, 2 K, 3 E, 4 C",
+                   "FenoliteSymbols:Optocoupler_NPN", "FenolitePackageDIP:DIP4_SMD_W7.62_P2.54_Vishay-Opt7", "U",
+                   {"A": "1", "K": "2", "E": "3", "C": "4"}, None, ("optocoupler", "dip-4", "smd"),
+                   "symbol pins 1 to 4 on pads 1 to 4"))
+    return out
+
+
+def write_table(path, rows_, header, date):
+    lines = header + [
+        'schema = "fenolite.c0390-family.v0"',
+        'kind = "device"',
+        'namespace = "FenoliteDevices"',
+        'category = "Generic device"',
+        f'date = "{date}"',
+        'tags = ["device", "generic"]',
+    ]
+    for r in rows_:
+        lines += ["", "[[row]]"]
+        for key in ("name", "title", "summary", "used"):
+            lines.append(f"{key} = {json.dumps(r[key])}")
+        lines.append(f"tags = {toml_value(r['tags'])}")
+        for key, value in r["record"].items():
+            lines.append(f"record.{key} = {toml_value(value)}")
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print(f"{path.name}: {len(rows_)} rows")
+
+
 def main():
+    write_table(HERE / "devices-more.toml", rows_more(), [
+        "# SPDX-License-Identifier: CC0-1.0",
+        "# Generic devices, batch 13 of change c0390, written by devices_table.py: each joins a FenoliteSymbols",
+        "# symbol with a fenolite-library footprint and maps pins to pads. Sources come from the symbol and",
+        "# footprint records; no manufacturer, part number or rating is claimed.",
+    ], "2026-11-06")
+
+
+def main_batch12():
     lines = [
         "# SPDX-License-Identifier: CC0-1.0",
         "# Generic devices, batch 12 (first part) of change c0390, written by devices_table.py: each joins a",
@@ -184,4 +240,5 @@ def main():
 
 
 if __name__ == "__main__":
+    main_batch12()
     main()

@@ -1,0 +1,32 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteSymbols:Optocoupler_NPN",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenolitePackageDIP:DIP4_SMD_W7.62_P2.54_Vishay-Opt7",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:Optocoupler_NPN_DIP4-SMD",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic optocoupler with an NPN phototransistor output in a 4-lead SMD DIP: pad 1 A, 2 K, 3 E, 4 C",
+  "tags": [
+    "device",
+    "dip-4",
+    "generic",
+    "optocoupler",
+    "smd"
+  ],
+  "title": "Optocoupler, phototransistor output, 4-lead SMD DIP",
+  "version": "1.0.0"
+}

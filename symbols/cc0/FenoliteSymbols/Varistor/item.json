@@ -1,0 +1,21 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:Varistor",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic varistor (voltage-dependent resistor)",
+  "tags": [
+    "generic",
+    "protection",
+    "symbol",
+    "varistor"
+  ],
+  "title": "Varistor",
+  "version": "1.0.0"
+}
