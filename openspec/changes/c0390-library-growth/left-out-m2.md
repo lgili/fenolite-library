@@ -90,3 +90,8 @@ Only drawings whose ball map follows from the table are taken (a full array, or 
 - Abracon ABM8 and ABM3B recommended lands: the pads sit at 2.3 and 4.0 mm, the terminals at 2.1 and 3.8 mm; a record has no land pitch, so the land is calculated from the terminals instead.
 - Abracon ABM10 (2520): the bottom-view dimensions do not add up to the body (0.1 + 0.65 + 0.6 + 0.65 = 2.0 with no lower margin), so the terminal size is ambiguous.
 - Chip LEDs: the devices use the chip-resistor lands of the same case size; a land with a cathode mark needs an LED datasheet with its land.
+
+## Batch 13
+- SMD aluminium electrolytic capacitors: Panasonic's land-pattern PDF refuses scripted download (HTTP 567) and the Nichicon catalogue URLs tried return 404; left until a land source that allows download is found.
+- Through-hole radial and box capacitors, disc varistors and thermistors, relays, fuse holders, chokes, wire-to-board headers and power modules: the pinned core has no generator family for these bodies (the `to`, `dip` and `header` families do not fit); symbols for most of them are in this batch.
+- Microchip SC-70-5 (LT) table lists an "exposed pad length" D2 2.50-2.70 mm, which does not belong to a leaded SC-70; it is not used.

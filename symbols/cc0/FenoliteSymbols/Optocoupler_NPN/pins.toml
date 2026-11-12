@@ -1,0 +1,130 @@
+# SPDX-License-Identifier: CC0-1.0
+# Copyright (c) 2026 Fenolite contributors
+# Authored for fenolite-library (change c0390) from public package dimensions: D-0422 Original generic schematic symbols authored for fenolite-library (change c0390) (c0390 batch 5). Numbers only; no drawing, CAD file or 3D model copied.
+schema = "fenolite.pins.v0"
+id = "FenoliteSymbols:Optocoupler_NPN"
+version = "1.0.0"
+summary = "Generic optocoupler with an LED input and an NPN phototransistor output; pins 1 A, 2 K, 3 E, 4 C (common 4-pin pin-out)"
+category = "Generic symbol"
+licence = "CC0-1.0"
+evidence = "INFERRED"
+sources = ["D-0422"]
+
+[[pin]]
+number = "1"
+name = "A"
+type = "passive"
+
+[[pin]]
+number = "2"
+name = "K"
+type = "passive"
+
+[[pin]]
+number = "3"
+name = "E"
+type = "passive"
+
+[[pin]]
+number = "4"
+name = "C"
+type = "passive"
+
+[symbol]
+reference = "U"
+pin_names_hidden = true
+
+[[symbol.pins]]
+number = "1"
+at = ["-7.62mm", "2.54mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "2"
+at = ["-7.62mm", "-2.54mm"]
+length = "2.54mm"
+
+[[symbol.pins]]
+number = "3"
+at = ["7.62mm", "-2.54mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.pins]]
+number = "4"
+at = ["7.62mm", "2.54mm"]
+length = "2.54mm"
+rotation = "180deg"
+
+[[symbol.graphic]]
+kind = "rect"
+points = [["-5.08mm", "-3.81mm"], ["5.08mm", "3.81mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-5.08mm", "2.54mm"], ["-2.54mm", "2.54mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-2.54mm", "2.54mm"], ["-2.54mm", "1.016mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-2.54mm", "-0.508mm"], ["-2.54mm", "-2.54mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-2.54mm", "-2.54mm"], ["-5.08mm", "-2.54mm"]]
+
+[[symbol.graphic]]
+kind = "polygon"
+points = [["-3.556mm", "1.016mm"], ["-1.524mm", "1.016mm"], ["-2.54mm", "-0.508mm"]]
+filled = false
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-3.556mm", "-0.508mm"], ["-1.524mm", "-0.508mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-1.016mm", "0.762mm"], ["0.254mm", "0.762mm"]]
+
+[[symbol.graphic]]
+kind = "polygon"
+points = [["0.508mm", "0.762mm"], ["-0.092mm", "1.062mm"], ["-0.092mm", "0.462mm"]]
+filled = true
+
+[[symbol.graphic]]
+kind = "line"
+points = [["-1.016mm", "-0.254mm"], ["0.254mm", "-0.254mm"]]
+
+[[symbol.graphic]]
+kind = "polygon"
+points = [["0.508mm", "-0.254mm"], ["-0.092mm", "0.046mm"], ["-0.092mm", "-0.554mm"]]
+filled = true
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.524mm", "-1.524mm"], ["1.524mm", "1.524mm"]]
+width = "0.508mm"
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.524mm", "0.635mm"], ["3.048mm", "2.54mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["3.048mm", "2.54mm"], ["5.08mm", "2.54mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["1.524mm", "-0.635mm"], ["3.048mm", "-2.54mm"]]
+
+[[symbol.graphic]]
+kind = "line"
+points = [["3.048mm", "-2.54mm"], ["5.08mm", "-2.54mm"]]
+
+[[symbol.graphic]]
+kind = "polygon"
+points = [["2.667mm", "-2.064mm"], ["2.526mm", "-1.408mm"], ["2.058mm", "-1.783mm"]]
+filled = true

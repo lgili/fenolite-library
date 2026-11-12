@@ -1,0 +1,22 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:Gas_Discharge_Tube",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic two-electrode gas discharge tube surge arrester",
+  "tags": [
+    "gdt",
+    "generic",
+    "protection",
+    "surge-arrester",
+    "symbol"
+  ],
+  "title": "Gas discharge tube (surge arrester)",
+  "version": "1.0.0"
+}

@@ -1,0 +1,32 @@
+# SPDX-License-Identifier: CC0-1.0
+# DIP packages with gull-wing leads for surface mounting, batch 13 of change c0390. Outline and footprint:
+# Vishay datasheet (D-0428), read from the package-dimension page (page in `used`). Land: the footprint as
+# read ([land]): pad length along the leads, pad width along the row, row spacing between the pad centres.
+schema = "fenolite.c0390-family.v0"
+kind = "footprint"
+namespace = "FenolitePackageDIP"
+category = "Dual in-line package"
+date = "2026-11-06"
+tags = ["dip", "gullwing", "smd"]
+
+[record]
+family = "gullwing"
+arrangement = "dual"
+
+[record.generate]
+lands = 1
+drawing = 1
+
+[[row]]
+name = "DIP4_SMD_W7.62_P2.54_Vishay-Opt7"
+title = "DIP-4 with gull-wing leads, 7.62 mm rows, 10.16 mm span (Vishay option 7)"
+summary = "4-lead SMD DIP (SMD-4), 2.54 mm pitch, 7.62 mm row centres, 10.16 mm lead span, Vishay footprint"
+sources = ["D-0428"]
+used = "Vishay SFH617A datasheet, revision 2.5, page 7, package dimensions and option 7: body 4.58 +/- 0.5 along the row, 6.5 +/- 0.5 across, height 3.5 +/- 0.3, standoff 0.35 +0.25/-0.3, pitch 2.54 +/- 0.25, lead width 0.5 +/- 0.1, thickness 0.26, foot 0.6 min, span 10.16 +/- 0.3; footprint: pads 1.52 x 1.78, pitch 2.54, 8 min between rows, 11.05 overall (row spacing 11.05 - 1.52 = 9.53)"
+tags = ["DIP-4", "SMD-4", "optocoupler"]
+record.pins = 4
+record.pitch = "2.54mm"
+record.body = { length = "4.08mm..5.08mm", width = "6.0mm..7.0mm", height = "3.2mm..3.8mm", standoff = "0.05mm..0.60mm" }
+record.span = "9.86mm..10.46mm"
+record.lead = { length = "0.6mm min", width = "0.4mm..0.6mm", thickness = "0.26mm" }
+record.land = { source = "D-0428 option 7 footprint", pad = { length = "1.52mm", width = "1.78mm" }, row_spacing = "9.53mm" }

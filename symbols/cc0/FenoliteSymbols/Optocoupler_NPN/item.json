@@ -1,0 +1,21 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:Optocoupler_NPN",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic optocoupler with an LED input and an NPN phototransistor output; pins 1 A, 2 K, 3 E, 4 C (common 4-pin pin-out)",
+  "tags": [
+    "generic",
+    "isolation",
+    "optocoupler",
+    "symbol"
+  ],
+  "title": "Optocoupler, phototransistor output",
+  "version": "1.0.0"
+}

@@ -287,3 +287,11 @@ url = "https://abracon.com/Resonators/ABM3B.pdf"
 licence = "Abracon copyright; read for numerical facts only, nothing copied"
 retrieved = "2026-11-05"
 used = "c0390 authored footprints: mechanical dimensions, body size and height, terminal sizes and spacing, pin numbering."
+
+[sources.D-0428]
+id = "D-0428"
+title = "Vishay SFH617A optocoupler, phototransistor output, datasheet (revision 2.5, 2025-08-18)"
+url = "https://www.vishay.com/docs/83740/sfh617a.pdf"
+licence = "Vishay copyright; read for numerical facts only, nothing copied"
+retrieved = "2026-11-06"
+used = "c0390 authored footprints: package dimensions and footprint of the SMD-4 option 7 (DIP-4 with gull-wing leads)."

@@ -1,0 +1,21 @@
+{
+  "depends": [],
+  "executes": false,
+  "files": [
+    "generated/pins.kicad_sym",
+    "pins.toml"
+  ],
+  "id": "FenoliteSymbols:Relay_SPDT",
+  "kind": "symbol",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic relay with one changeover contact; pins 1 and 2 coil, 3 common, 4 normally open, 5 normally closed",
+  "tags": [
+    "generic",
+    "relay",
+    "spdt",
+    "symbol"
+  ],
+  "title": "Relay, one changeover contact",
+  "version": "1.0.0"
+}

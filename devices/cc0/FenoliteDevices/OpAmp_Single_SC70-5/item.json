@@ -1,0 +1,31 @@
+{
+  "depends": [
+    {
+      "id": "FenoliteSymbols:OpAmp",
+      "kind": "symbol",
+      "version": "1.0.0"
+    },
+    {
+      "id": "FenolitePackageSOT:SC70-5_Microchip-LT",
+      "kind": "footprint",
+      "version": "1.0.0"
+    }
+  ],
+  "executes": false,
+  "files": [
+    "device.toml"
+  ],
+  "id": "FenoliteDevices:OpAmp_Single_SC70-5",
+  "kind": "device",
+  "schema": "fenolite.library-item.v0",
+  "spdx": "CC0-1.0",
+  "summary": "Generic single op-amp in SC-70-5 with the common pin-out: pad 1 +IN, 2 V-, 3 -IN, 4 OUT, 5 V+",
+  "tags": [
+    "device",
+    "generic",
+    "opamp",
+    "sc-70-5"
+  ],
+  "title": "Operational amplifier, single, SC-70-5",
+  "version": "1.0.0"
+}

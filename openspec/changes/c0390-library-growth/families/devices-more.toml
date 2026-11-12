@@ -1,0 +1,98 @@
+# SPDX-License-Identifier: CC0-1.0
+# Generic devices, batch 13 of change c0390, written by devices_table.py: each joins a FenoliteSymbols
+# symbol with a fenolite-library footprint and maps pins to pads. Sources come from the symbol and
+# footprint records; no manufacturer, part number or rating is claimed.
+schema = "fenolite.c0390-family.v0"
+kind = "device"
+namespace = "FenoliteDevices"
+category = "Generic device"
+date = "2026-11-06"
+tags = ["device", "generic"]
+
+[[row]]
+name = "FB_0805"
+title = "Ferrite bead, 0805 chip"
+summary = "Generic 0805 chip ferrite bead on the 0805 chip-resistor land"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["ferrite", "0805"]
+record.symbol = "FenoliteSymbols:Ferrite_Bead"
+record.footprint = "FenoliteResistorSMD:CHIP0805_B2x1.25"
+record.ref_prefix = "FB"
+record.value = "FB_0805"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "FB_1206"
+title = "Ferrite bead, 1206 chip"
+summary = "Generic 1206 chip ferrite bead on the 1206 chip-resistor land"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["ferrite", "1206"]
+record.symbol = "FenoliteSymbols:Ferrite_Bead"
+record.footprint = "FenoliteResistorSMD:CHIP1206_B3.1x1.6"
+record.ref_prefix = "FB"
+record.value = "FB_1206"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "L_0805"
+title = "Inductor, 0805 chip"
+summary = "Generic 0805 chip inductor on the 0805 chip-resistor land"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["inductor", "0805"]
+record.symbol = "FenoliteSymbols:Inductor"
+record.footprint = "FenoliteResistorSMD:CHIP0805_B2x1.25"
+record.ref_prefix = "L"
+record.value = "L_0805"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "L_1206"
+title = "Inductor, 1206 chip"
+summary = "Generic 1206 chip inductor on the 1206 chip-resistor land"
+used = "symbol pins 1, 2 on pads 1, 2"
+tags = ["inductor", "1206"]
+record.symbol = "FenoliteSymbols:Inductor"
+record.footprint = "FenoliteResistorSMD:CHIP1206_B3.1x1.6"
+record.ref_prefix = "L"
+record.value = "L_1206"
+record.ends = ["P1", "P2"]
+record.pins = { P1 = "1", P2 = "2" }
+
+[[row]]
+name = "OpAmp_Single_SC70-5"
+title = "Operational amplifier, single, SC-70-5"
+summary = "Generic single op-amp in SC-70-5 with the common pin-out: pad 1 +IN, 2 V-, 3 -IN, 4 OUT, 5 V+"
+used = "+IN (symbol pin 3) on pad 1, V- (4) on pad 2, -IN (2) on pad 3, OUT (6) on pad 4, V+ (7) on pad 5"
+tags = ["opamp", "sc-70-5"]
+record.symbol = "FenoliteSymbols:OpAmp"
+record.footprint = "FenolitePackageSOT:SC70-5_Microchip-LT"
+record.ref_prefix = "U"
+record.value = "OpAmp_Single_SC70-5"
+record.pins = { INP = { map = { "3" = "1" } }, VN = { map = { "4" = "2" } }, INN = { map = { "2" = "3" } }, OUT = { map = { "6" = "4" } }, VP = { map = { "7" = "5" } } }
+
+[[row]]
+name = "D_Zener_Dual_CommonAnode_SOT-23"
+title = "Dual Zener diode, common anode, SOT-23"
+summary = "Generic dual Zener diode with a common anode in SOT-23: pad 1 K1, pad 2 K2, pad 3 A"
+used = "symbol pins 1, 2, 3 on pads 1, 2, 3"
+tags = ["diode", "zener", "sot-23"]
+record.symbol = "FenoliteSymbols:Diode_Zener_Dual_CommonAnode"
+record.footprint = "FenolitePackageSOT:SOT23-3_Microchip-TT"
+record.ref_prefix = "D"
+record.value = "D_Zener_Dual_CommonAnode_SOT-23"
+record.pins = { K1 = "1", K2 = "2", A = "3" }
+
+[[row]]
+name = "Optocoupler_NPN_DIP4-SMD"
+title = "Optocoupler, phototransistor output, 4-lead SMD DIP"
+summary = "Generic optocoupler with an NPN phototransistor output in a 4-lead SMD DIP: pad 1 A, 2 K, 3 E, 4 C"
+used = "symbol pins 1 to 4 on pads 1 to 4"
+tags = ["optocoupler", "dip-4", "smd"]
+record.symbol = "FenoliteSymbols:Optocoupler_NPN"
+record.footprint = "FenolitePackageDIP:DIP4_SMD_W7.62_P2.54_Vishay-Opt7"
+record.ref_prefix = "U"
+record.value = "Optocoupler_NPN_DIP4-SMD"
+record.pins = { A = "1", K = "2", E = "3", C = "4" }

@@ -1,0 +1,66 @@
+(kicad_symbol_lib
+	(version 20241209)
+	(generator "fenolite")
+	(symbol "Diode_Zener_Dual_CommonAnode"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "Diode_Zener_Dual_CommonAnode"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 0 -2.54 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Datasheet" ""
+			(at 0 -5.08 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Description" "Two Zener diodes with a common anode; pins 1 K1, 2 K2, 3 common A (common SOT-23 pin-out)"
+			(at 0 0 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(pin_names (offset 0.508) (hide yes))
+		(pin_numbers (hide no))
+		(symbol "Diode_Zener_Dual_CommonAnode_0_1"
+			(polyline (pts (xy -3.81 -1.016) (xy -1.27 -1.016) (xy -2.54 1.016) (xy -3.81 -1.016)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy -4.318 1.524) (xy -3.81 1.016)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy -3.81 1.016) (xy -1.27 1.016)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy -1.27 1.016) (xy -0.762 0.508)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy -2.54 2.54) (xy -2.54 1.016)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy -2.54 -1.016) (xy -2.54 -2.54)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 1.27 -1.016) (xy 3.81 -1.016) (xy 2.54 1.016) (xy 1.27 -1.016)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 0.762 1.524) (xy 1.27 1.016)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 1.27 1.016) (xy 3.81 1.016)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 3.81 1.016) (xy 4.318 0.508)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 2.54 2.54) (xy 2.54 1.016)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy 2.54 -1.016) (xy 2.54 -2.54)) (stroke (width 0.254) (type default)) (fill (type none)))
+			(polyline (pts (xy -2.54 -2.54) (xy 2.54 -2.54)) (stroke (width 0.254) (type default)) (fill (type none)))
+		)
+		(symbol "Diode_Zener_Dual_CommonAnode_1_1"
+			(pin passive line
+				(at -2.54 5.08 270)
+				(length 2.54)
+				(name "K1" (effects (font (size 1.27 1.27))))
+				(number "1" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at 2.54 5.08 270)
+				(length 2.54)
+				(name "K2" (effects (font (size 1.27 1.27))))
+				(number "2" (effects (font (size 1.27 1.27))))
+			)
+			(pin passive line
+				(at 0 -5.08 90)
+				(length 2.54)
+				(name "A" (effects (font (size 1.27 1.27))))
+				(number "3" (effects (font (size 1.27 1.27))))
+			)
+		)
+	)
+)

@@ -1,0 +1,33 @@
+# SPDX-License-Identifier: CC0-1.0
+# SC-70-5 from the Microchip Packaging Specification DS00000049CH (D-0423), batch 13 of change c0390. Outline
+# in millimetres from the package page and land from the "recommended land pattern" page (drawing numbers in
+# `used`, read from the page images). Land: pad length Y, pad width X, row spacing C.
+schema = "fenolite.c0390-family.v0"
+kind = "footprint"
+namespace = "FenolitePackageSOT"
+category = "SOT package"
+date = "2026-11-06"
+tags = ["gullwing", "smd", "sot"]
+
+[record]
+family = "gullwing"
+
+[record.generate]
+lands = 1
+drawing = 1
+
+[[row]]
+name = "SC70-5_Microchip-LT"
+title = "SC-70 package, 5 leads (Microchip LT)"
+summary = "SC-70-5 (SOT-353), 5 leads, 0.65 mm pitch, 2.0 x 1.25 mm body, Microchip recommended land"
+sources = ["D-0423"]
+used = "Microchip packaging specification DS00000049CH, page 62, drawing C04-061D sheet 2: N 5, e 0.65 BSC, A 0.80-1.10, A1 0.00-0.10, A2 0.80-1.00, D 2.00 BSC (overall length), E 2.10 BSC (overall width), E1 1.25 BSC (body width), b 0.15-0.40, L 0.10-0.20-0.46, c 0.08-0.26 mm; land page 63, drawing C04-2061B: E 0.65, C 2.20, X 0.45, Y 0.95, G 1.25, Gx 0.20 mm"
+tags = ["SC-70-5", "SOT-353", "SC-88A"]
+record.pins = 5
+record.pitch = "0.65mm"
+record.arrangement = "sides"
+record.body = { length = "2.00mm", width = "1.25mm", height = "0.80mm..1.10mm", standoff = "0.00mm..0.10mm" }
+record.span = "2.10mm"
+record.lead = { length = { min = "0.10mm", nom = "0.20mm", max = "0.46mm" }, width = "0.15mm..0.40mm", thickness = "0.08mm..0.26mm" }
+record.side = [{ edge = "left", numbers = ["1", "2", "3"], positions = [0, 1, 2] }, { edge = "right", numbers = ["5", "4"], positions = [0, 2] }]
+record.land = { source = "D-0423 recommended land pattern, drawing C04-2061B", pad = { length = "0.95mm", width = "0.45mm" }, row_spacing = "2.20mm" }
